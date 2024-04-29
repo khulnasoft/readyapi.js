@@ -1,8 +1,8 @@
-# Scalar API Reference for AdonisJS
+# Ready API Reference for AdonisJS
 
 AdonisJS is a TypeScript-first web framework for building web apps and API servers. It comes with support for testing, modern tooling, an ecosystem of official packages, and more.
 
-And you know what? There’s also a great [community package to add OpenAPI support](https://github.com/ad-on-is/adonis-autoswagger) and it comes with the Scalar API reference by default.
+And you know what? There’s also a great [community package to add OpenAPI support](https://github.com/ad-on-is/adonis-autoswagger) and it comes with the Ready API reference by default.
 
 ## Create a new AdonisJS project (optional)
 

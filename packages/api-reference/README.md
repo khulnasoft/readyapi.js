@@ -1,4 +1,4 @@
-# Scalar API Reference
+# Ready API Reference
 
 [![Version](https://img.shields.io/npm/v/%40scalar/api-reference)](https://www.npmjs.com/package/@readyapi/api-reference)
 [![Downloads](https://img.shields.io/npm/dm/%40scalar/api-reference)](https://www.npmjs.com/package/@readyapi/api-reference)

@@ -1,4 +1,4 @@
-# Scalar API Client
+# Ready API Client
 
 [![Version](https://img.shields.io/npm/v/%40scalar/api-client)](https://www.npmjs.com/package/@readyapi/api-client)
 [![Downloads](https://img.shields.io/npm/dm/%40scalar/api-client)](https://www.npmjs.com/package/@readyapi/api-client)

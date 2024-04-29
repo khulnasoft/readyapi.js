@@ -100,7 +100,7 @@ export const createApiClientProxy = () => {
         })
       } catch (error) {
         console.error('ERROR', error)
-        const data = 'Scalar API Client Proxy Error'
+        const data = 'Ready API Client Proxy Error'
         res.status(500)
         res.json({
           data,

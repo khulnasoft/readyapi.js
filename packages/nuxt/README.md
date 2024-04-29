@@ -1,4 +1,4 @@
-# Scalar API Reference Nuxt Module
+# Ready API Reference Nuxt Module
 
 [![Version](https://img.shields.io/npm/v/%40scalar/nuxt)](https://www.npmjs.com/package/@scalar/nuxt)
 [![Downloads](https://img.shields.io/npm/dm/%40scalar/nuxt)](https://www.npmjs.com/package/@scalar/nuxt)

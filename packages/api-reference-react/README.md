@@ -1,4 +1,4 @@
-# Scalar API Reference React Component
+# Ready API Reference React Component
 
 [![Version](https://img.shields.io/npm/v/%40scalar/api-reference-react)](https://www.npmjs.com/package/@readyapi/api-reference-react)
 [![Downloads](https://img.shields.io/npm/dm/%40scalar/api-reference-react)](https://www.npmjs.com/package/@readyapi/api-reference-react)

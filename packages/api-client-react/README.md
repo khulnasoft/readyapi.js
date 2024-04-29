@@ -1,4 +1,4 @@
-# Scalar API Client React
+# Ready API Client React
 
 [![Version](https://img.shields.io/npm/v/%40scalar/api-client-react)](https://www.npmjs.com/package/@readyapi/api-client-react)
 [![Downloads](https://img.shields.io/npm/dm/%40scalar/api-client-react)](https://www.npmjs.com/package/@readyapi/api-client-react)

@@ -1,4 +1,4 @@
-# Scalar API Reference for Fastify
+# Ready API Reference for Fastify
 
 Fastify is a pretty popular server for Node.js, a lot of people consider it to be the modern successor of Express. Anyway, if you’re working with Fastify, there’s great support for the OpenAPI standard. And with our package you can render an interactive API reference with just a few additional lines of code.
 

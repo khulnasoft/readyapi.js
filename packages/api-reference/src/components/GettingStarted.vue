@@ -49,7 +49,7 @@ function handleEmitPetstore() {
       </div>
       <h1 class="start-h1">Swagger Editor</h1>
       <p class="start-p">
-        Welcome to the Scalar API References + Swagger Editor, a Free &
+        Welcome to the Ready API References + Swagger Editor, a Free &
         Open-Source tool that takes your Swagger/OAS file and generates
         Beautiful API references.
       </p>

@@ -1,4 +1,4 @@
-# Scalar API Reference
+# Ready API Reference
 
 [![CI](https://github.com/khulnasoft/readyapi.js/actions/workflows/ci.yml/badge.svg)](https://github.com/khulnasoft/readyapi.js/actions/workflows/ci.yml)
 [![Release](https://github.com/khulnasoft/readyapi.js/actions/workflows/release.yml/badge.svg)](https://github.com/khulnasoft/readyapi.js/actions/workflows/release.yml)
@@ -113,7 +113,7 @@ If you’d like to add a request proxy for the API client (to avoid CORS issues)
 
 ### With Nuxt
 
-You can easily run Scalar API References in Nuxt via the module:
+You can easily run Ready API References in Nuxt via the module:
 
 ```bash
 npx nuxi module add @scalar/nuxt
@@ -363,7 +363,7 @@ the [Docusaurus package](https://github.com/khulnasoft/readyapi.js/tree/main/pac
 
 There’s [a community package to generate OpenAPI files in AdonisJS,](https://github.com/hanspagel/adonis-autoswagger)
 and it comes with support for the
-Scalar API reference already.
+Ready API reference already.
 
 We wrote
 a [detailed integration guide for AdonisJS](https://github.com/khulnasoft/readyapi.js/tree/main/documentation/adonisjs.md).

@@ -1,6 +1,6 @@
 {
   "name": "@readyapi/hono-api-reference",
-  "description": "A middleware for using the Scalar API reference in Hono",
+  "description": "A middleware for using the Ready API reference in Hono",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",
   "homepage": "https://github.com/khulnasoft/readyapi.js",

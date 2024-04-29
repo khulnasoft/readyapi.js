@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/npm/l/%40scalar%2Fecho-server)](https://www.npmjs.com/package/@readyapi/echo-server)
 [![Discord](https://img.shields.io/discord/1135330207960678410?style=flat&color=5865F2)](https://discord.gg/8HeZcRGPFS)
 
-The Scalar Echo Server is an Express server, which replies with the request data. Works well with the Scalar API Client.
+The Scalar Echo Server is an Express server, which replies with the request data. Works well with the Ready API Client.
 
 ## Installation
 
