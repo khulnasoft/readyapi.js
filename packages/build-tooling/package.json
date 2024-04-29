@@ -2,11 +2,11 @@
   "name": "@readyapi/build-tooling",
   "description": "Build tooling and helpers",
   "license": "MIT",
-  "author": "Scalar (https://github.com/scalar)",
+  "author": "KhulnaSoft (https://github.com/khulnasoft)",
   "homepage": "https://github.com/khulnasoft/readyapi.js",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "keywords": [],
-  "version": "0.1.2",
+  "version": "0.0.1",
   "engines": {
     "node": ">=18"
   },
