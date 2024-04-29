@@ -2,7 +2,7 @@
   "name": "@readyapi/nestjs-api-reference",
   "description": "A middleware for using the Ready API reference with NestJS",
   "license": "MIT",
-  "author": "KhulnaSoft (https://github.com/khulnasoft)",
+  "author": "Scalar (https://github.com/scalar)",
   "homepage": "https://github.com/khulnasoft/readyapi.js",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "version": "0.3.15",
@@ -39,14 +39,14 @@
   },
   "dependencies": {
     "@readyapi/api-reference": "workspace:*",
-    "express": "^4.18.2"
+    "express": "^4.19.2"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
     "fastify": "^4.26.2",
     "tsup": "^7.2.0",
     "vite": "^5.2.10",
-    "vitest": "^1.5.0"
+    "vitest": "^1.5.2"
   },
   "peerDependencies": {
     "express": "^4.0.0"

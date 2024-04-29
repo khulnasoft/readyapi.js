@@ -2,7 +2,7 @@
   "name": "@readyapi/api-reference-react",
   "description": "The react client only integration for api references",
   "license": "MIT",
-  "author": "KhulnaSoft (https://github.com/khulnasoft)",
+  "author": "Scalar (https://github.com/scalar)",
   "homepage": "https://github.com/khulnasoft/readyapi.js",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "keywords": [
@@ -42,17 +42,17 @@
     "@readyapi/api-reference": "workspace:*"
   },
   "devDependencies": {
-    "@types/react": "^18.2.60",
-    "@types/react-dom": "^18.2.19",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.2.1",
     "character-entities": "^2.0.2",
     "decode-named-character-reference": "^1.0.2",
     "path": "^0.12.7",
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "vite": "^5.2.10",
-    "vite-plugin-dts": "^3.6.3",
+    "vite-plugin-dts": "^3.9.0",
     "vite-plugin-lib-inject-css": "^2.0.1",
-    "vue": "^3.4.21"
+    "vue": "^3.4.26"
   },
   "peerDependencies": {
     "react": "^18.0.0",

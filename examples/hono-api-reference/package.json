@@ -1,7 +1,7 @@
 {
   "name": "@readyapi-examples/hono-api-reference",
   "license": "MIT",
-  "author": "KhulnaSoft (https://github.com/khulnasoft)",
+  "author": "Scalar (https://github.com/scalar)",
   "homepage": "https://github.com/khulnasoft/readyapi.js",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "private": true,
@@ -12,13 +12,13 @@
     "dev": "nodemon --exec \"vite-node src/index.ts\" --ext ts --quiet --watch ../../packages/hono-api-reference --watch ./"
   },
   "dependencies": {
-    "@hono/node-server": "^1.11.0",
+    "@hono/node-server": "^1.11.1",
     "@hono/zod-openapi": "^0.8.6",
     "@readyapi/hono-api-reference": "workspace:*",
-    "hono": "^4.2.7"
+    "hono": "^4.2.9"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1",
-    "vite-node": "^1.2.2"
+    "nodemon": "^3.1.0",
+    "vite-node": "^1.5.2"
   }
 }

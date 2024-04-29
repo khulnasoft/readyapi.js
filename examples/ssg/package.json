@@ -1,7 +1,7 @@
 {
   "name": "@readyapi-examples/ssg",
   "license": "MIT",
-  "author": "KhulnaSoft (https://github.com/khulnasoft)",
+  "author": "Scalar (https://github.com/scalar)",
   "homepage": "https://github.com/khulnasoft/readyapi.js",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "version": "0.1.0",
@@ -17,13 +17,13 @@
   "type": "module",
   "dependencies": {
     "@readyapi/api-reference": "workspace:*",
-    "vue": "^3.4.21"
+    "vue": "^3.4.26"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
-    "typescript": "^5.4.3",
+    "typescript": "^5.4.5",
     "vite": "^5.2.10",
-    "vite-ssg": "^0.23.6",
-    "vue-tsc": "^1.8.19"
+    "vite-ssg": "^0.23.7",
+    "vue-tsc": "^1.8.27"
   }
 }

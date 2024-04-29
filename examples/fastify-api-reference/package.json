@@ -1,7 +1,7 @@
 {
   "name": "@readyapi-examples/fastify-api-reference",
   "license": "MIT",
-  "author": "KhulnaSoft (https://github.com/khulnasoft)",
+  "author": "Scalar (https://github.com/scalar)",
   "homepage": "https://github.com/khulnasoft/readyapi.js",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "version": "0.5.2",
@@ -15,14 +15,14 @@
   },
   "type": "module",
   "dependencies": {
-    "@fastify/swagger": "^8.10.1",
+    "@fastify/swagger": "^8.14.0",
     "@readyapi/fastify-api-reference": "workspace:*",
     "fastify": "^4.26.2"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1",
-    "typescript": "^5.4.3",
+    "nodemon": "^3.1.0",
+    "typescript": "^5.4.5",
     "vite": "^5.2.10",
-    "vite-node": "^1.2.2"
+    "vite-node": "^1.5.2"
   }
 }

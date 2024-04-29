@@ -2,7 +2,7 @@
   "name": "@readyapi/docusaurus",
   "description": "Docusaurus integration for api references",
   "license": "MIT",
-  "author": "KhulnaSoft (https://github.com/khulnasoft)",
+  "author": "Scalar (https://github.com/scalar)",
   "homepage": "https://github.com/khulnasoft/readyapi.js",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "keywords": [
@@ -38,11 +38,11 @@
     "@readyapi/api-reference-react": "workspace:*"
   },
   "devDependencies": {
-    "@docusaurus/types": "^3.1.1",
-    "@types/react": "^18.2.60",
-    "@types/react-dom": "^18.2.19",
+    "@docusaurus/types": "^3.2.1",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
     "path": "^0.12.7",
-    "react": "^18.2.0"
+    "react": "^18.3.1"
   },
   "peerDependencies": {
     "react": "^18.0.0"

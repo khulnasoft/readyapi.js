@@ -2,7 +2,7 @@
   "name": "@readyapi/mock-server",
   "description": "OpenAPI mock server server",
   "license": "MIT",
-  "author": "KhulnaSoft (https://github.com/khulnasoft)",
+  "author": "Scalar (https://github.com/scalar)",
   "homepage": "https://github.com/khulnasoft/readyapi.js",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "keywords": [
@@ -36,21 +36,21 @@
     "directory": "packages/mock-server"
   },
   "dependencies": {
-    "@hono/node-server": "^1.11.0",
+    "@hono/node-server": "^1.11.1",
     "@readyapi/api-reference": "workspace:*",
     "@readyapi/oas-utils": "workspace:*",
     "@readyapi/openapi-parser": "^0.3.2",
-    "hono": "^4.2.7",
-    "vite-node": "^1.2.2"
+    "hono": "^4.2.9",
+    "vite-node": "^1.5.2"
   },
   "devDependencies": {
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-typescript": "^11.1.6",
-    "@types/node": "^20.8.4",
+    "@types/node": "^20.12.7",
     "execa": "^8.0.1",
-    "rollup": "^4.16.4",
+    "rollup": "^4.17.1",
     "strip-ansi": "^7.1.0",
     "tslib": "^2.6.2",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.5"
   }
 }
