@@ -2,7 +2,7 @@
   "name": "@readyapi/use-codemirror",
   "description": "CodeMirror for Vue",
   "license": "MIT",
-  "author": "Scalar (https://github.com/scalar)",
+  "author": "Readyapi (https://github.com/readyapi)",
   "homepage": "https://github.com/khulnasoft/readyapi.js",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "keywords": [
@@ -11,7 +11,7 @@
     "vue",
     "vue3"
   ],
-  "version": "0.10.1",
+  "version": "0.0.1",
   "engines": {
     "node": ">=18"
   },
