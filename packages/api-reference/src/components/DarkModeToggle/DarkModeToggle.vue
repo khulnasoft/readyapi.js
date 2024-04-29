@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ScalarIcon } from '@scalar/components'
+import { ScalarIcon } from '@readyapi/components'
 
 defineProps<{
   isDarkMode: boolean

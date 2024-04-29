@@ -1,5 +1,5 @@
 {
-  "name": "@scalar/docusaurus",
+  "name": "@readyapi/docusaurus",
   "description": "Docusaurus integration for api references",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",

@@ -4,7 +4,7 @@
   "commit": ["@changesets/cli/commit", { "skipCI": false }],
   "fixed": [],
   "linked": [
-    ["@readyapi/api-reference", "@scalar/fastify-api-reference"]
+    ["@readyapi/api-reference", "@readyapi/fastify-api-reference"]
   ],
   "access": "public",
   "baseBranch": "main",

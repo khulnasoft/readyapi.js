@@ -1,4 +1,4 @@
-# @scalar/echo-server
+# @readyapi/echo-server
 
 ## 0.6.1
 

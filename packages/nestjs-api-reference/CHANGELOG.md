@@ -1,4 +1,4 @@
-# @scalar/nestjs-api-reference
+# @readyapi/nestjs-api-reference
 
 ## 0.3.15
 

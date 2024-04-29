@@ -5,7 +5,7 @@
 ### Patch Changes
 
 - Updated dependencies [fc2c90f]
-  - @scalar/components@0.6.0
+  - @readyapi/components@0.6.0
 
 ## 1.2.9
 
@@ -13,14 +13,14 @@
 
 - Updated dependencies [0a77380]
   - @readyapi/themes@0.7.6
-  - @scalar/components@0.5.5
+  - @readyapi/components@0.5.5
 
 ## 1.2.8
 
 ### Patch Changes
 
 - Updated dependencies [2700c5c]
-  - @scalar/components@0.5.5
+  - @readyapi/components@0.5.5
   - @readyapi/themes@0.7.5
 
 ## 1.2.7
@@ -29,7 +29,7 @@
 
 - Updated dependencies [79485ff]
 - Updated dependencies [92b5b2a]
-  - @scalar/components@0.5.4
+  - @readyapi/components@0.5.4
 
 ## 1.2.6
 
@@ -38,7 +38,7 @@
 - Updated dependencies [86d1363]
 - Updated dependencies [bc3f3af]
   - @readyapi/themes@0.7.4
-  - @scalar/components@0.5.3
+  - @readyapi/components@0.5.3
 
 ## 1.2.5
 
@@ -46,7 +46,7 @@
 
 - Updated dependencies [e8ef57e]
 - Updated dependencies [1353154]
-  - @scalar/components@0.5.2
+  - @readyapi/components@0.5.2
 
 ## 1.2.4
 
@@ -54,7 +54,7 @@
 
 - Updated dependencies [4d31b19]
   - @readyapi/themes@0.7.3
-  - @scalar/components@0.5.1
+  - @readyapi/components@0.5.1
 
 ## 1.2.3
 
@@ -62,8 +62,8 @@
 
 - Updated dependencies [96ded16]
 - Updated dependencies [24662c3]
-  - @scalar/use-codemirror@0.10.1
-  - @scalar/components@0.5.1
+  - @readyapi/use-codemirror@0.10.1
+  - @readyapi/components@0.5.1
 
 ## 1.2.2
 
@@ -71,7 +71,7 @@
 
 - Updated dependencies [85a0074]
   - @readyapi/themes@0.7.2
-  - @scalar/components@0.5.0
+  - @readyapi/components@0.5.0
 
 ## 1.2.1
 
@@ -80,7 +80,7 @@
 - d77acdd: fix: missing css font
 - Updated dependencies [d77acdd]
   - @readyapi/themes@0.7.1
-  - @scalar/components@0.5.0
+  - @readyapi/components@0.5.0
 
 ## 1.2.0
 
@@ -93,11 +93,11 @@
 - 22f2858: chore: ran syncpack to update packages
 - Updated dependencies [22f2858]
 - Updated dependencies [0e64a36]
-  - @scalar/use-codemirror@0.10.0
+  - @readyapi/use-codemirror@0.10.0
   - @scalar/use-tooltip@0.6.0
-  - @scalar/components@0.5.0
+  - @readyapi/components@0.5.0
   - @readyapi/oas-utils@0.1.6
-  - @scalar/use-modal@0.3.0
+  - @readyapi/use-modal@0.3.0
   - @readyapi/themes@0.7.0
 
 ## 1.1.16
@@ -107,9 +107,9 @@
 - Updated dependencies [e6d1b81]
 - Updated dependencies [3ba9774]
 - Updated dependencies [3ba9774]
-  - @scalar/use-modal@0.2.10
+  - @readyapi/use-modal@0.2.10
   - @readyapi/oas-utils@0.1.5
-  - @scalar/components@0.4.11
+  - @readyapi/components@0.4.11
 
 ## 1.1.15
 
@@ -123,7 +123,7 @@
 ### Patch Changes
 
 - Updated dependencies [95bac72]
-  - @scalar/components@0.4.10
+  - @readyapi/components@0.4.10
 
 ## 1.1.13
 
@@ -137,7 +137,7 @@
 
 - c14568f: feat: add custom security option
 - Updated dependencies [c14568f]
-  - @scalar/components@0.4.9
+  - @readyapi/components@0.4.9
   - @readyapi/oas-utils@0.1.3
 
 ## 1.1.11
@@ -160,7 +160,7 @@
 
 - Updated dependencies [d70bda7]
   - @readyapi/themes@0.6.7
-  - @scalar/components@0.4.8
+  - @readyapi/components@0.4.8
 
 ## 1.1.8
 
@@ -172,22 +172,22 @@
 - Updated dependencies [6889ad9]
 - Updated dependencies [ae193a8]
   - @readyapi/themes@0.6.6
-  - @scalar/use-codemirror@0.9.1
-  - @scalar/components@0.4.8
+  - @readyapi/use-codemirror@0.9.1
+  - @readyapi/components@0.4.8
 
 ## 1.1.7
 
 ### Patch Changes
 
 - Updated dependencies [f861efa]
-  - @scalar/components@0.4.7
+  - @readyapi/components@0.4.7
 
 ## 1.1.6
 
 ### Patch Changes
 
 - Updated dependencies [7d0092e]
-  - @scalar/components@0.4.6
+  - @readyapi/components@0.4.6
 
 ## 1.1.5
 
@@ -200,7 +200,7 @@
 ### Patch Changes
 
 - Updated dependencies [42b385b]
-  - @scalar/components@0.4.5
+  - @readyapi/components@0.4.5
 
 ## 1.1.3
 
@@ -208,7 +208,7 @@
 
 - Updated dependencies [0c5e22c]
   - @readyapi/themes@0.6.5
-  - @scalar/components@0.4.4
+  - @readyapi/components@0.4.4
 
 ## 1.1.2
 
@@ -245,7 +245,7 @@
 
 - Updated dependencies [68cda2b]
   - @readyapi/themes@0.6.4
-  - @scalar/components@0.4.4
+  - @readyapi/components@0.4.4
 
 ## 1.0.1
 
@@ -253,7 +253,7 @@
 
 - Updated dependencies [bbbba1f]
 - Updated dependencies [897990b]
-  - @scalar/components@0.4.4
+  - @readyapi/components@0.4.4
   - @readyapi/themes@0.6.3
 
 ## 1.0.0
@@ -266,7 +266,7 @@
 
 - 6036d25: fix: allow application/vnd.api+json return type
 - Updated dependencies [7fb8273]
-  - @scalar/use-codemirror@0.9.0
+  - @readyapi/use-codemirror@0.9.0
   - @readyapi/oas-utils@0.1.0
 
 ## 0.12.18
@@ -275,7 +275,7 @@
 
 - cecf074: Migrate to oas utils for basic spec operations
 - Updated dependencies [cecf074]
-  - @scalar/use-codemirror@0.8.10
+  - @readyapi/use-codemirror@0.8.10
   - @readyapi/oas-utils@0.0.4
 
 ## 0.12.17
@@ -288,10 +288,10 @@
 - Updated dependencies [ddc9b17]
 - Updated dependencies [775646a]
 - Updated dependencies [ef3a015]
-  - @scalar/components@0.4.3
+  - @readyapi/components@0.4.3
   - @readyapi/themes@0.6.2
-  - @scalar/use-codemirror@0.8.9
-  - @scalar/use-modal@0.2.9
+  - @readyapi/use-codemirror@0.8.9
+  - @readyapi/use-modal@0.2.9
 
 ## 0.12.16
 
@@ -299,7 +299,7 @@
 
 - Updated dependencies [4ef178f]
   - @readyapi/themes@0.6.1
-  - @scalar/components@0.4.2
+  - @readyapi/components@0.4.2
 
 ## 0.12.15
 
@@ -308,7 +308,7 @@
 - Updated dependencies [ad2b95a]
 - Updated dependencies [ad2b95a]
   - @readyapi/themes@0.6.0
-  - @scalar/components@0.4.2
+  - @readyapi/components@0.4.2
 
 ## 0.12.14
 
@@ -316,7 +316,7 @@
 
 - 3b672cc: fix: revert css changes to components lib
 - Updated dependencies [3b672cc]
-  - @scalar/components@0.4.2
+  - @readyapi/components@0.4.2
 
 ## 0.12.13
 
@@ -324,7 +324,7 @@
 
 - c5e8b13: feat: hide secret credentials
 - Updated dependencies [c5e8b13]
-  - @scalar/components@0.4.1
+  - @readyapi/components@0.4.1
 
 ## 0.12.12
 
@@ -333,8 +333,8 @@
 - 5bc2ebf: Add syntax highlighting back to codemirror
 - Updated dependencies [407a3af]
 - Updated dependencies [5bc2ebf]
-  - @scalar/components@0.4.0
-  - @scalar/use-codemirror@0.8.8
+  - @readyapi/components@0.4.0
+  - @readyapi/use-codemirror@0.8.8
 
 ## 0.12.11
 
@@ -347,7 +347,7 @@
 ### Patch Changes
 
 - Updated dependencies [5a94530]
-  - @scalar/use-codemirror@0.8.7
+  - @readyapi/use-codemirror@0.8.7
 
 ## 0.12.9
 
@@ -355,7 +355,7 @@
 
 - 6857b8d: fix: api client syntax highlighting
 - Updated dependencies [6857b8d]
-  - @scalar/components@0.3.0
+  - @readyapi/components@0.3.0
 
 ## 0.12.8
 
@@ -363,7 +363,7 @@
 
 - Updated dependencies [51acf2c]
   - @readyapi/themes@0.5.10
-  - @scalar/components@0.2.6
+  - @readyapi/components@0.2.6
 
 ## 0.12.7
 
@@ -371,7 +371,7 @@
 
 - Updated dependencies [c103201]
 - Updated dependencies [d2728c8]
-  - @scalar/components@0.2.6
+  - @readyapi/components@0.2.6
   - @readyapi/themes@0.5.9
 
 ## 0.12.6
@@ -388,9 +388,9 @@
 - 7ea052b: chore: remove some languages from CodeMirror
 - Updated dependencies [1669b27]
 - Updated dependencies [7ea052b]
-  - @scalar/use-codemirror@0.8.6
-  - @scalar/components@0.2.5
-  - @scalar/use-modal@0.2.8
+  - @readyapi/use-codemirror@0.8.6
+  - @readyapi/components@0.2.5
+  - @readyapi/use-modal@0.2.8
   - @readyapi/themes@0.5.8
 
 ## 0.12.4
@@ -399,9 +399,9 @@
 
 - c6b95ca: chore: upgrade from Vite 4 to Vite 5
 - Updated dependencies [c6b95ca]
-  - @scalar/use-codemirror@0.8.5
-  - @scalar/components@0.2.4
-  - @scalar/use-modal@0.2.7
+  - @readyapi/use-codemirror@0.8.5
+  - @readyapi/components@0.2.4
+  - @readyapi/use-modal@0.2.7
   - @readyapi/themes@0.5.7
 
 ## 0.12.3
@@ -409,7 +409,7 @@
 ### Patch Changes
 
 - Updated dependencies [3ade0d1]
-  - @scalar/use-modal@0.2.6
+  - @readyapi/use-modal@0.2.6
 
 ## 0.12.2
 
@@ -418,9 +418,9 @@
 - c23b2cb: fix: set max height on request body codemirror
 - 5b3f7d9: fix: updated scroll region padding to for chrome update
 - Updated dependencies [5b3f7d9]
-  - @scalar/use-modal@0.2.5
+  - @readyapi/use-modal@0.2.5
   - @readyapi/themes@0.5.6
-  - @scalar/components@0.2.3
+  - @readyapi/components@0.2.3
 
 ## 0.12.1
 
@@ -442,9 +442,9 @@
 - Updated dependencies [92a8b9f]
 - Updated dependencies [abfb086]
   - @scalar/use-keyboard-event@0.5.9
-  - @scalar/use-codemirror@0.8.4
-  - @scalar/components@0.2.3
-  - @scalar/use-modal@0.2.4
+  - @readyapi/use-codemirror@0.8.4
+  - @readyapi/components@0.2.3
+  - @readyapi/use-modal@0.2.4
   - @readyapi/themes@0.5.5
 
 ## 0.11.5
@@ -464,7 +464,7 @@
 ### Patch Changes
 
 - Updated dependencies [d4fff0de]
-  - @scalar/use-codemirror@0.8.3
+  - @readyapi/use-codemirror@0.8.3
 
 ## 0.11.2
 
@@ -472,14 +472,14 @@
 
 - f8650e4f: Bundle codemirror and update packages
 - Updated dependencies [f8650e4f]
-  - @scalar/use-codemirror@0.8.2
+  - @readyapi/use-codemirror@0.8.2
 
 ## 0.11.1
 
 ### Patch Changes
 
 - Updated dependencies [b1f3cb49]
-  - @scalar/use-codemirror@0.8.1
+  - @readyapi/use-codemirror@0.8.1
 
 ## 0.11.0
 
@@ -490,7 +490,7 @@
 ### Patch Changes
 
 - Updated dependencies [612431b4]
-  - @scalar/use-codemirror@0.8.0
+  - @readyapi/use-codemirror@0.8.0
 
 ## 0.10.2
 
@@ -498,14 +498,14 @@
 
 - 6da73708: feat: handle application/zip responses in the API client
 - Updated dependencies [6da73708]
-  - @scalar/use-codemirror@0.7.22
+  - @readyapi/use-codemirror@0.7.22
 
 ## 0.10.1
 
 ### Patch Changes
 
 - Updated dependencies [cd7afa70]
-  - @scalar/use-codemirror@0.7.21
+  - @readyapi/use-codemirror@0.7.21
 
 ## 0.10.0
 
@@ -518,7 +518,7 @@
 ### Patch Changes
 
 - Updated dependencies [3d712d74]
-  - @scalar/use-codemirror@0.7.20
+  - @readyapi/use-codemirror@0.7.20
 
 ## 0.9.3
 
@@ -534,8 +534,8 @@
 - 81543f42: chore: add support for Node 18
 - Updated dependencies [81543f42]
   - @scalar/use-keyboard-event@0.5.7
-  - @scalar/use-codemirror@0.7.19
-  - @scalar/use-modal@0.2.3
+  - @readyapi/use-codemirror@0.7.19
+  - @readyapi/use-modal@0.2.3
   - @readyapi/themes@0.5.4
 
 ## 0.9.1
@@ -544,7 +544,7 @@
 
 - 479a7e3e: fix: bumped @codemirror/state dependency
 - Updated dependencies [479a7e3e]
-  - @scalar/use-codemirror@0.7.18
+  - @readyapi/use-codemirror@0.7.18
 
 ## 0.9.0
 
@@ -559,7 +559,7 @@
 
 - b8ce7fd5: feat: show body and formData parameters (Swagger 2.0)
 - Updated dependencies [5ca138ee]
-  - @scalar/use-modal@0.2.2
+  - @readyapi/use-modal@0.2.2
   - @readyapi/themes@0.5.3
 
 ## 0.8.10
@@ -588,7 +588,7 @@
 
 - c171c9d9: fix: request body doesn’t reset on navigating to a request without a body
 - Updated dependencies [c171c9d9]
-  - @scalar/use-codemirror@0.7.17
+  - @readyapi/use-codemirror@0.7.17
 
 ## 0.8.6
 
@@ -615,8 +615,8 @@
 - 5d6b539b: feat: toggle parameters to include/exclude them in/from the request
 - a1319e8b: Switched internal component library to use ScalarComponents instead
 - Updated dependencies [a1319e8b]
-  - @scalar/use-codemirror@0.7.16
-  - @scalar/use-modal@0.2.1
+  - @readyapi/use-codemirror@0.7.16
+  - @readyapi/use-modal@0.2.1
   - @readyapi/themes@0.5.1
 
 ## 0.8.2
@@ -641,7 +641,7 @@
 
 - 349589a: feat: expose spec content updates
 - Updated dependencies [f38bb61]
-  - @scalar/use-modal@0.2.0
+  - @readyapi/use-modal@0.2.0
   - @readyapi/themes@0.5.0
 
 ## 0.7.37
@@ -670,8 +670,8 @@
 - 35dffe4: chore: include @scalar dependencies in the bundle
 - Updated dependencies [35dffe4]
   - @scalar/use-keyboard-event@0.5.6
-  - @scalar/use-codemirror@0.7.15
-  - @scalar/use-modal@0.1.9
+  - @readyapi/use-codemirror@0.7.15
+  - @readyapi/use-modal@0.1.9
 
 ## 0.7.33
 
@@ -680,8 +680,8 @@
 - c3b215f: chore: no pinned peer dependency versions
 - Updated dependencies [c3b215f]
   - @scalar/use-keyboard-event@0.5.5
-  - @scalar/use-codemirror@0.7.14
-  - @scalar/use-modal@0.1.8
+  - @readyapi/use-codemirror@0.7.14
+  - @readyapi/use-modal@0.1.8
   - @readyapi/themes@0.4.2
 
 ## 0.7.32
@@ -691,8 +691,8 @@
 - 55246e5: chore: rewrite all package.jsons (including their prod, dev and peer dependency requirements)
 - Updated dependencies [55246e5]
   - @scalar/use-keyboard-event@0.5.4
-  - @scalar/use-codemirror@0.7.13
-  - @scalar/use-modal@0.1.7
+  - @readyapi/use-codemirror@0.7.13
+  - @readyapi/use-modal@0.1.7
   - @readyapi/themes@0.4.1
 
 ## 0.7.31
@@ -720,8 +720,8 @@
 - dab853a: chore: remove unused dependencies
 - Updated dependencies [f4681d5]
 - Updated dependencies [dab853a]
-  - @scalar/use-codemirror@0.7.12
-  - @scalar/use-modal@0.1.6
+  - @readyapi/use-codemirror@0.7.12
+  - @readyapi/use-modal@0.1.6
 
 ## 0.7.27
 
@@ -734,8 +734,8 @@
 - Updated dependencies [b0835a2]
 - Updated dependencies [509db1e]
 - Updated dependencies [a4f1b08]
-  - @scalar/use-modal@0.1.5
-  - @scalar/use-codemirror@0.7.11
+  - @readyapi/use-modal@0.1.5
+  - @readyapi/use-codemirror@0.7.11
 
 ## 0.7.26
 
@@ -763,7 +763,7 @@
 - ce04794a: fix: issue where browser froze with JSON being passed into codemirror body
 - Updated dependencies [64f8a018]
 - Updated dependencies [7c3091c6]
-  - @scalar/use-codemirror@0.7.10
+  - @readyapi/use-codemirror@0.7.10
 
 ## 0.7.22
 
@@ -780,7 +780,7 @@
 - aa24dbe6: fix: api client reset CSS
 - ae247253: refactor: move generateRequest helpers to @readyapi/api-reference
 - Updated dependencies [aa24dbe6]
-  - @scalar/use-codemirror@0.7.9
+  - @readyapi/use-codemirror@0.7.9
 
 ## 0.7.20
 
@@ -816,7 +816,7 @@
 - af4ec8d3: update discord links
 - Updated dependencies [af4ec8d3]
   - @scalar/use-keyboard-event@0.5.3
-  - @scalar/use-codemirror@0.7.8
+  - @readyapi/use-codemirror@0.7.8
   - @readyapi/themes@0.3.11
 
 ## 0.7.15
@@ -827,8 +827,8 @@
 - 1cbcabd7: lots of amazing fixes from when we missed last patch
 - Updated dependencies [1cbcabd7]
   - @scalar/use-keyboard-event@0.5.2
-  - @scalar/use-codemirror@0.7.7
-  - @scalar/use-modal@0.1.4
+  - @readyapi/use-codemirror@0.7.7
+  - @readyapi/use-modal@0.1.4
   - @readyapi/themes@0.3.10
 
 ## 0.7.14
@@ -844,7 +844,7 @@
 ### Patch Changes
 
 - Updated dependencies [be239745]
-  - @scalar/use-codemirror@0.7.6
+  - @readyapi/use-codemirror@0.7.6
 
 ## 0.7.12
 
@@ -859,7 +859,7 @@
 
 - 7b6c21e5: request history ui and some other small type changes
 - Updated dependencies [7b6c21e5]
-  - @scalar/use-modal@0.1.3
+  - @readyapi/use-modal@0.1.3
 
 ## 0.7.10
 
@@ -885,8 +885,8 @@
 
 - b76f4d1e: Reference search + some app hover states
 - Updated dependencies [b76f4d1e]
-  - @scalar/use-codemirror@0.7.5
-  - @scalar/use-modal@0.1.2
+  - @readyapi/use-codemirror@0.7.5
+  - @readyapi/use-modal@0.1.2
   - @readyapi/themes@0.3.6
 
 ## 0.7.7
@@ -900,7 +900,7 @@
 ### Patch Changes
 
 - Updated dependencies [4985562c]
-  - @scalar/use-codemirror@0.7.4
+  - @readyapi/use-codemirror@0.7.4
   - @readyapi/themes@0.3.5
 
 ## 0.7.5
@@ -908,7 +908,7 @@
 ### Patch Changes
 
 - Updated dependencies [58af0623]
-  - @scalar/use-codemirror@0.7.3
+  - @readyapi/use-codemirror@0.7.3
 
 ## 0.7.4
 
@@ -924,7 +924,7 @@
 
 - 8823d7a1: cleanup ui
 - Updated dependencies [8823d7a1]
-  - @scalar/use-codemirror@0.7.2
+  - @readyapi/use-codemirror@0.7.2
 
 ## 0.7.2
 
@@ -935,9 +935,9 @@
 - Updated dependencies [449305f4]
 - Updated dependencies [3e912c75]
 - Updated dependencies [048555c6]
-  - @scalar/use-modal@0.1.1
+  - @readyapi/use-modal@0.1.1
   - @scalar/use-keyboard-event@0.5.1
-  - @scalar/use-codemirror@0.7.1
+  - @readyapi/use-codemirror@0.7.1
   - @readyapi/themes@0.3.3
 
 ## 0.7.1
@@ -969,7 +969,7 @@
 - Updated dependencies [b184bdf2]
 - Updated dependencies [3b1fec80]
 - Updated dependencies [addd9fa2]
-  - @scalar/use-codemirror@0.7.0
+  - @readyapi/use-codemirror@0.7.0
   - @scalar/default-theme@0.3.1
 
 ## 0.6.0
@@ -984,7 +984,7 @@
 - Updated dependencies [ef080a26]
 - Updated dependencies [87fda5af]
   - @scalar/use-keyboard-event@0.5.0
-  - @scalar/use-codemirror@0.6.0
+  - @readyapi/use-codemirror@0.6.0
   - @readyapi/themes@0.3.0
 
 ## 0.5.5
@@ -992,21 +992,21 @@
 ### Patch Changes
 
 - Updated dependencies [81336114]
-  - @scalar/use-codemirror@0.5.4
+  - @readyapi/use-codemirror@0.5.4
 
 ## 0.5.4
 
 ### Patch Changes
 
 - Updated dependencies [068669b6]
-  - @scalar/use-codemirror@0.5.3
+  - @readyapi/use-codemirror@0.5.3
 
 ## 0.5.3
 
 ### Patch Changes
 
 - Updated dependencies [ac492d94]
-  - @scalar/use-codemirror@0.5.2
+  - @readyapi/use-codemirror@0.5.2
 
 ## 0.5.2
 
@@ -1015,7 +1015,7 @@
 - d51aebe5: chore: remove source files from packages
 - Updated dependencies [d51aebe5]
   - @scalar/use-keyboard-event@0.4.2
-  - @scalar/use-codemirror@0.5.1
+  - @readyapi/use-codemirror@0.5.1
 
 ## 0.5.1
 
@@ -1027,7 +1027,7 @@
 
 ### Minor Changes
 
-- 0902d82c: \* refactor: add the CodeMirror component to @scalar/use-codemirror, use it everywhere
+- 0902d82c: \* refactor: add the CodeMirror component to @readyapi/use-codemirror, use it everywhere
   - feat: allow to pass forceDarkMode to the CodeMirror component
 
 ### Patch Changes
@@ -1037,7 +1037,7 @@
 - Updated dependencies [0902d82c]
 - Updated dependencies [10498d9d]
 - Updated dependencies [494083a0]
-  - @scalar/use-codemirror@0.5.0
+  - @readyapi/use-codemirror@0.5.0
   - @scalar/use-keyboard-event@0.4.1
   - @readyapi/themes@0.2.1
 
@@ -1051,7 +1051,7 @@
 
 - Updated dependencies [5057e213]
   - @readyapi/themes@0.2.0
-  - @scalar/use-codemirror@0.4.0
+  - @readyapi/use-codemirror@0.4.0
   - @scalar/use-keyboard-event@0.4.0
 
 ## 0.3.4
@@ -1066,7 +1066,7 @@
 
 - 6420305b: fix: only require nunjucks where it’s needed
 - Updated dependencies [6420305b]
-  - @scalar/use-codemirror@0.3.1
+  - @readyapi/use-codemirror@0.3.1
 
 ## 0.3.2
 
@@ -1091,7 +1091,7 @@
 ### Patch Changes
 
 - Updated dependencies [b0f5221]
-  - @scalar/use-codemirror@0.3.0
+  - @readyapi/use-codemirror@0.3.0
   - @scalar/use-keyboard-event@0.3.0
 
 ## 0.2.1
@@ -1110,7 +1110,7 @@
 ### Patch Changes
 
 - Updated dependencies
-  - @scalar/use-codemirror@0.2.0
+  - @readyapi/use-codemirror@0.2.0
   - @scalar/use-keyboard-event@0.2.0
 
 ## 0.1.21
@@ -1222,7 +1222,7 @@
 
 - fix: externalize dependencies
 - Updated dependencies
-  - @scalar/use-codemirror@0.1.4
+  - @readyapi/use-codemirror@0.1.4
   - @scalar/use-keyboard-event@0.1.4
 
 ## 0.1.3
@@ -1231,7 +1231,7 @@
 
 - fix: add CSS file to swagger editor
 - Updated dependencies
-  - @scalar/use-codemirror@0.1.3
+  - @readyapi/use-codemirror@0.1.3
   - @scalar/use-keyboard-event@0.1.3
 
 ## 0.1.2
@@ -1240,7 +1240,7 @@
 
 - 7cd41bc: fix: point main entry to dist folder
 - Updated dependencies [7cd41bc]
-  - @scalar/use-codemirror@0.1.2
+  - @readyapi/use-codemirror@0.1.2
   - @scalar/use-keyboard-event@0.1.2
 
 ## 0.1.1
@@ -1249,5 +1249,5 @@
 
 - f46e320: Initial release 👀
 - Updated dependencies [f46e320]
-  - @scalar/use-codemirror@0.1.1
+  - @readyapi/use-codemirror@0.1.1
   - @scalar/use-keyboard-event@0.1.1

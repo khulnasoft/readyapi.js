@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { HttpMethod } from '@readyapi/api-client'
-import { ScalarCodeBlock, ScalarIcon } from '@scalar/components'
+import { ScalarCodeBlock, ScalarIcon } from '@readyapi/components'
 import type {
   CustomRequestExample,
   TransformedOperation,

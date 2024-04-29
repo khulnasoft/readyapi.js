@@ -1,4 +1,4 @@
-# @scalar/use-codemirror
+# @readyapi/use-codemirror
 
 ## 0.10.1
 
@@ -279,7 +279,7 @@
 
 ### Minor Changes
 
-- 0902d82c: \* refactor: add the CodeMirror component to @scalar/use-codemirror, use it everywhere
+- 0902d82c: \* refactor: add the CodeMirror component to @readyapi/use-codemirror, use it everywhere
   - feat: allow to pass forceDarkMode to the CodeMirror component
 
 ### Patch Changes

@@ -14,7 +14,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@scalar/echo-server": "workspace:*",
+    "@readyapi/echo-server": "workspace:*",
     "dotenv": "^16.3.1"
   },
   "devDependencies": {

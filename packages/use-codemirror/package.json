@@ -1,5 +1,5 @@
 {
-  "name": "@scalar/use-codemirror",
+  "name": "@readyapi/use-codemirror",
   "description": "CodeMirror for Vue",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",

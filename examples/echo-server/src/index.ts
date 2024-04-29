@@ -1,4 +1,4 @@
-import { createEchoServer } from '@scalar/echo-server'
+import { createEchoServer } from '@readyapi/echo-server'
 import 'dotenv/config'
 
 const port = process.env.PORT || 5052

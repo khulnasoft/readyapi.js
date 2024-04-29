@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-// import { CodeMirror } from '@scalar/use-codemirror'
+// import { CodeMirror } from '@readyapi/use-codemirror'
 // import { getExampleFromSchema, prettyPrintJson } from '../../helpers'
 import type { TransformedOperation } from '@readyapi/oas-utils'
 

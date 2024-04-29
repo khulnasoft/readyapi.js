@@ -44,11 +44,11 @@
   "dependencies": {
     "@floating-ui/vue": "^1.0.2",
     "@headlessui/vue": "^1.7.20",
-    "@scalar/components": "workspace:*",
+    "@readyapi/components": "workspace:*",
     "@scalar/openapi-parser": "^0.3.2",
     "@readyapi/themes": "workspace:*",
-    "@scalar/use-codemirror": "workspace:*",
-    "@scalar/use-modal": "workspace:*",
+    "@readyapi/use-codemirror": "workspace:*",
+    "@readyapi/use-modal": "workspace:*",
     "@scalar/use-tooltip": "workspace:*",
     "@vueuse/core": "^10.9.0",
     "axios": "^1.6.8",
@@ -60,7 +60,7 @@
   },
   "devDependencies": {
     "@readyapi/api-client-proxy": "workspace:*",
-    "@scalar/echo-server": "workspace:*",
+    "@readyapi/echo-server": "workspace:*",
     "@readyapi/oas-utils": "workspace:*",
     "@types/content-type": "^1.1.6",
     "@vitejs/plugin-vue": "^5.0.4",

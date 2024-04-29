@@ -6,7 +6,7 @@
 
 - Updated dependencies [fc2c90f]
   - @readyapi/api-reference@1.22.15
-  - @scalar/mock-server@0.1.50
+  - @readyapi/mock-server@0.1.50
 
 ## 0.2.52
 
@@ -14,7 +14,7 @@
 
 - Updated dependencies [b8e3f09]
   - @readyapi/api-reference@1.22.14
-  - @scalar/mock-server@0.1.49
+  - @readyapi/mock-server@0.1.49
 
 ## 0.2.51
 
@@ -23,7 +23,7 @@
 - Updated dependencies [c05c90e]
 - Updated dependencies [2700c5c]
   - @readyapi/api-reference@1.22.13
-  - @scalar/mock-server@0.1.48
+  - @readyapi/mock-server@0.1.48
 
 ## 0.2.50
 
@@ -31,7 +31,7 @@
 
 - Updated dependencies [55398db]
   - @readyapi/api-reference@1.22.12
-  - @scalar/mock-server@0.1.47
+  - @readyapi/mock-server@0.1.47
 
 ## 0.2.49
 
@@ -40,14 +40,14 @@
 - Updated dependencies [b24b455]
 - Updated dependencies [43e1217]
   - @readyapi/api-reference@1.22.11
-  - @scalar/mock-server@0.1.46
+  - @readyapi/mock-server@0.1.46
 
 ## 0.2.48
 
 ### Patch Changes
 
 - @readyapi/api-reference@1.22.10
-- @scalar/mock-server@0.1.45
+- @readyapi/mock-server@0.1.45
 
 ## 0.2.47
 
@@ -56,7 +56,7 @@
 - Updated dependencies [6f68b40]
 - Updated dependencies [4d31b19]
   - @readyapi/api-reference@1.22.9
-  - @scalar/mock-server@0.1.44
+  - @readyapi/mock-server@0.1.44
 
 ## 0.2.46
 
@@ -64,7 +64,7 @@
 
 - Updated dependencies [24662c3]
   - @readyapi/api-reference@1.22.8
-  - @scalar/mock-server@0.1.43
+  - @readyapi/mock-server@0.1.43
 
 ## 0.2.45
 
@@ -72,7 +72,7 @@
 
 - Updated dependencies [c408cf5]
   - @readyapi/api-reference@1.22.7
-  - @scalar/mock-server@0.1.42
+  - @readyapi/mock-server@0.1.42
 
 ## 0.2.44
 
@@ -81,7 +81,7 @@
 - Updated dependencies [cf12a95]
 - Updated dependencies [7b37c63]
   - @readyapi/api-reference@1.22.6
-  - @scalar/mock-server@0.1.41
+  - @readyapi/mock-server@0.1.41
 
 ## 0.2.43
 
@@ -89,7 +89,7 @@
 
 - Updated dependencies [d03ab0f]
   - @readyapi/api-reference@1.22.5
-  - @scalar/mock-server@0.1.40
+  - @readyapi/mock-server@0.1.40
 
 ## 0.2.42
 
@@ -97,21 +97,21 @@
 
 - Updated dependencies [adc0693]
   - @readyapi/api-reference@1.22.4
-  - @scalar/mock-server@0.1.39
+  - @readyapi/mock-server@0.1.39
 
 ## 0.2.41
 
 ### Patch Changes
 
 - @readyapi/api-reference@1.22.3
-- @scalar/mock-server@0.1.38
+- @readyapi/mock-server@0.1.38
 
 ## 0.2.40
 
 ### Patch Changes
 
 - @readyapi/api-reference@1.22.2
-- @scalar/mock-server@0.1.37
+- @readyapi/mock-server@0.1.37
 
 ## 0.2.39
 
@@ -119,7 +119,7 @@
 
 - Updated dependencies [8dc1640]
   - @readyapi/api-reference@1.22.1
-  - @scalar/mock-server@0.1.36
+  - @readyapi/mock-server@0.1.36
 
 ## 0.2.38
 
@@ -131,7 +131,7 @@
 - Updated dependencies [0e64a36]
 - Updated dependencies [3afec45]
   - @readyapi/api-reference@1.22.0
-  - @scalar/mock-server@0.1.35
+  - @readyapi/mock-server@0.1.35
   - @readyapi/oas-utils@0.1.6
 
 ## 0.2.37
@@ -140,7 +140,7 @@
 
 - Updated dependencies [851017a]
   - @readyapi/api-reference@1.21.2
-  - @scalar/mock-server@0.1.34
+  - @readyapi/mock-server@0.1.34
 
 ## 0.2.36
 
@@ -148,7 +148,7 @@
 
 - Updated dependencies [b4abb34]
   - @readyapi/api-reference@1.21.1
-  - @scalar/mock-server@0.1.33
+  - @readyapi/mock-server@0.1.33
 
 ## 0.2.35
 
@@ -156,7 +156,7 @@
 
 - Updated dependencies [51d4997]
   - @readyapi/api-reference@1.20.32
-  - @scalar/mock-server@0.1.32
+  - @readyapi/mock-server@0.1.32
 
 ## 0.2.34
 
@@ -164,7 +164,7 @@
 
 - Updated dependencies [b903a2f]
   - @readyapi/api-reference@1.20.31
-  - @scalar/mock-server@0.1.31
+  - @readyapi/mock-server@0.1.31
 
 ## 0.2.33
 
@@ -176,7 +176,7 @@
 - Updated dependencies [3d4d83e]
   - @readyapi/api-reference@1.20.30
   - @readyapi/oas-utils@0.1.5
-  - @scalar/mock-server@0.1.30
+  - @readyapi/mock-server@0.1.30
 
 ## 0.2.32
 
@@ -185,7 +185,7 @@
 - Updated dependencies [24b3c2a]
   - @readyapi/oas-utils@0.1.4
   - @readyapi/api-reference@1.20.29
-  - @scalar/mock-server@0.1.29
+  - @readyapi/mock-server@0.1.29
 
 ## 0.2.31
 
@@ -194,7 +194,7 @@
 - Updated dependencies [622f31b]
 - Updated dependencies [f2c2ce8]
   - @readyapi/api-reference@1.20.28
-  - @scalar/mock-server@0.1.28
+  - @readyapi/mock-server@0.1.28
 
 ## 0.2.30
 
@@ -202,7 +202,7 @@
 
 - Updated dependencies [605f522]
   - @readyapi/api-reference@1.20.27
-  - @scalar/mock-server@0.1.27
+  - @readyapi/mock-server@0.1.27
 
 ## 0.2.29
 
@@ -210,7 +210,7 @@
 
 - Updated dependencies [050410a]
   - @readyapi/api-reference@1.20.26
-  - @scalar/mock-server@0.1.26
+  - @readyapi/mock-server@0.1.26
 
 ## 0.2.28
 
@@ -218,7 +218,7 @@
 
 - Updated dependencies [1504d3b]
   - @readyapi/api-reference@1.20.25
-  - @scalar/mock-server@0.1.25
+  - @readyapi/mock-server@0.1.25
 
 ## 0.2.27
 
@@ -226,14 +226,14 @@
 
 - Updated dependencies [ab58747]
   - @readyapi/api-reference@1.20.24
-  - @scalar/mock-server@0.1.24
+  - @readyapi/mock-server@0.1.24
 
 ## 0.2.26
 
 ### Patch Changes
 
 - @readyapi/api-reference@1.20.23
-- @scalar/mock-server@0.1.23
+- @readyapi/mock-server@0.1.23
 
 ## 0.2.25
 
@@ -241,14 +241,14 @@
 
 - Updated dependencies [4089634]
   - @readyapi/api-reference@1.20.22
-  - @scalar/mock-server@0.1.22
+  - @readyapi/mock-server@0.1.22
 
 ## 0.2.24
 
 ### Patch Changes
 
 - @readyapi/api-reference@1.20.21
-- @scalar/mock-server@0.1.21
+- @readyapi/mock-server@0.1.21
 
 ## 0.2.23
 
@@ -257,7 +257,7 @@
 - Updated dependencies [c14568f]
   - @readyapi/oas-utils@0.1.3
   - @readyapi/api-reference@1.20.20
-  - @scalar/mock-server@0.1.20
+  - @readyapi/mock-server@0.1.20
 
 ## 0.2.22
 
@@ -265,7 +265,7 @@
 
 - Updated dependencies [c99f6ff]
   - @readyapi/api-reference@1.20.18
-  - @scalar/mock-server@0.1.19
+  - @readyapi/mock-server@0.1.19
 
 ## 0.2.21
 
@@ -273,7 +273,7 @@
 
 - Updated dependencies [5b4c8a5]
   - @readyapi/api-reference@1.20.17
-  - @scalar/mock-server@0.1.18
+  - @readyapi/mock-server@0.1.18
 
 ## 0.2.20
 
@@ -281,7 +281,7 @@
 
 - Updated dependencies [5232eab]
   - @readyapi/api-reference@1.20.16
-  - @scalar/mock-server@0.1.17
+  - @readyapi/mock-server@0.1.17
 
 ## 0.2.19
 
@@ -289,7 +289,7 @@
 
 - Updated dependencies [8f03345]
   - @readyapi/api-reference@1.20.15
-  - @scalar/mock-server@0.1.16
+  - @readyapi/mock-server@0.1.16
 
 ## 0.2.18
 
@@ -297,7 +297,7 @@
 
 - Updated dependencies [78f2ab3]
   - @readyapi/api-reference@1.20.14
-  - @scalar/mock-server@0.1.15
+  - @readyapi/mock-server@0.1.15
 
 ## 0.2.17
 
@@ -306,7 +306,7 @@
 - Updated dependencies [8b0691b]
   - @readyapi/api-reference@1.20.13
   - @readyapi/oas-utils@0.1.2
-  - @scalar/mock-server@0.1.14
+  - @readyapi/mock-server@0.1.14
 
 ## 0.2.16
 
@@ -314,7 +314,7 @@
 
 - Updated dependencies [999dfc9]
   - @readyapi/api-reference@1.20.12
-  - @scalar/mock-server@0.1.13
+  - @readyapi/mock-server@0.1.13
 
 ## 0.2.15
 
@@ -322,7 +322,7 @@
 
 - Updated dependencies [d70bda7]
   - @readyapi/api-reference@1.20.11
-  - @scalar/mock-server@0.1.12
+  - @readyapi/mock-server@0.1.12
 
 ## 0.2.14
 
@@ -331,7 +331,7 @@
 - Updated dependencies [ae193a8]
 - Updated dependencies [bec8e52]
   - @readyapi/api-reference@1.20.10
-  - @scalar/mock-server@0.1.11
+  - @readyapi/mock-server@0.1.11
 
 ## 0.2.13
 
@@ -347,14 +347,14 @@
 - Updated dependencies [5260d07]
 - Updated dependencies [f861efa]
   - @readyapi/api-reference@1.20.9
-  - @scalar/mock-server@0.1.10
+  - @readyapi/mock-server@0.1.10
 
 ## 0.2.11
 
 ### Patch Changes
 
 - @readyapi/api-reference@1.20.8
-- @scalar/mock-server@0.1.9
+- @readyapi/mock-server@0.1.9
 
 ## 0.2.10
 
@@ -363,14 +363,14 @@
 - Updated dependencies [1e658b0]
 - Updated dependencies [06c57ca]
   - @readyapi/api-reference@1.20.7
-  - @scalar/mock-server@0.1.8
+  - @readyapi/mock-server@0.1.8
 
 ## 0.2.9
 
 ### Patch Changes
 
 - @readyapi/api-reference@1.20.6
-- @scalar/mock-server@0.1.7
+- @readyapi/mock-server@0.1.7
 
 ## 0.2.8
 
@@ -378,14 +378,14 @@
 
 - Updated dependencies [0c5e22c]
   - @readyapi/api-reference@1.20.5
-  - @scalar/mock-server@0.1.6
+  - @readyapi/mock-server@0.1.6
 
 ## 0.2.7
 
 ### Patch Changes
 
 - @readyapi/api-reference@1.20.4
-- @scalar/mock-server@0.1.5
+- @readyapi/mock-server@0.1.5
 
 ## 0.2.6
 
@@ -393,7 +393,7 @@
 
 - Updated dependencies [61a97e2]
   - @readyapi/api-reference@1.20.3
-  - @scalar/mock-server@0.1.4
+  - @readyapi/mock-server@0.1.4
 
 ## 0.2.5
 
@@ -401,7 +401,7 @@
 
 - Updated dependencies [9fe930c]
   - @readyapi/api-reference@1.20.2
-  - @scalar/mock-server@0.1.3
+  - @readyapi/mock-server@0.1.3
 
 ## 0.2.4
 
@@ -413,7 +413,7 @@
 - Updated dependencies [01476a9]
 - Updated dependencies [083e0a1]
   - @readyapi/api-reference@1.20.1
-  - @scalar/mock-server@0.1.2
+  - @readyapi/mock-server@0.1.2
 
 ## 0.2.3
 
@@ -437,7 +437,7 @@
 - Updated dependencies [41f0d86]
 - Updated dependencies [31aae5e]
   - @readyapi/api-reference@1.20.0
-  - @scalar/mock-server@0.1.1
+  - @readyapi/mock-server@0.1.1
 
 ## 0.2.0
 
@@ -450,7 +450,7 @@
 - 0399390: chore: update dependencies
 - Updated dependencies [a866e91]
 - Updated dependencies [0399390]
-  - @scalar/mock-server@0.1.0
+  - @readyapi/mock-server@0.1.0
 
 ## 0.1.0
 
@@ -461,9 +461,9 @@
 
 ### Patch Changes
 
-- 96b85ef: feat: new @scalar/mock-server package
+- 96b85ef: feat: new @readyapi/mock-server package
 - Updated dependencies [96b85ef]
-  - @scalar/mock-server@0.0.2
+  - @readyapi/mock-server@0.0.2
 
 ## 0.0.1
 

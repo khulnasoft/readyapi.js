@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ScalarIcon } from '@scalar/components'
+import { ScalarIcon } from '@readyapi/components'
 import { type TargetId } from 'httpsnippet-lite'
 import { ref } from 'vue'
 

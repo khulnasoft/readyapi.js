@@ -1,5 +1,5 @@
 {
-  "name": "@scalar/express-api-reference",
+  "name": "@readyapi/express-api-reference",
   "description": "A middleware for using the Scalar API reference with Express",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",

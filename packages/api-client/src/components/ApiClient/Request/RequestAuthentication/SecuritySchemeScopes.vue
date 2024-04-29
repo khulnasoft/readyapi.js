@@ -6,7 +6,7 @@ import {
   ListboxOption,
   ListboxOptions,
 } from '@headlessui/vue'
-import { ScalarIcon } from '@scalar/components'
+import { ScalarIcon } from '@readyapi/components'
 import { ResetStyles } from '@readyapi/themes'
 import { computed, ref } from 'vue'
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ScalarButton } from '@scalar/components'
+import { ScalarButton } from '@readyapi/components'
 
 import GridRow from './GridRow.vue'
 

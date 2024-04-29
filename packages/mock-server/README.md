@@ -5,14 +5,14 @@ A server returning fake data based on an OpenAPI specification
 ## Installation
 
 ```bash
-npm install @scalar/mock-server
+npm install @readyapi/mock-server
 ```
 
 ## Usage
 
 ```ts
 import { serve } from '@hono/node-server'
-import { createMockServer } from '@scalar/mock-server'
+import { createMockServer } from '@readyapi/mock-server'
 
 // Your OpenAPI specification
 const specification = {

@@ -16,7 +16,7 @@
   "type": "module",
   "dependencies": {
     "@fastify/swagger": "^8.10.1",
-    "@scalar/fastify-api-reference": "workspace:*",
+    "@readyapi/fastify-api-reference": "workspace:*",
     "fastify": "^4.26.2"
   },
   "devDependencies": {

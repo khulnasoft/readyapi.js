@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ScalarButton } from '@scalar/components'
+import { ScalarButton } from '@readyapi/components'
 import { type ThemeId, themeLabels } from '@readyapi/themes'
 
 import placeholderSpecification from '../../../../specifications/scalar-galaxy-3.1.json?raw'

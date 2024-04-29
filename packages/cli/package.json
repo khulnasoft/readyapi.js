@@ -37,7 +37,7 @@
     "@hono/node-server": "^1.11.0",
     "@parcel/watcher": "^2.4.1",
     "@readyapi/api-reference": "workspace:*",
-    "@scalar/mock-server": "workspace:*",
+    "@readyapi/mock-server": "workspace:*",
     "@readyapi/oas-utils": "workspace:*",
     "@scalar/openapi-parser": "^0.3.2",
     "commander": "^12.0.0",

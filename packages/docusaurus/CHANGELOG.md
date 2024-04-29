@@ -1,4 +1,4 @@
-# @scalar/docusaurus
+# @readyapi/docusaurus
 
 ## 0.2.15
 

@@ -1,4 +1,4 @@
-# @scalar/express-api-reference
+# @readyapi/express-api-reference
 
 ## 0.4.15
 
@@ -1272,4 +1272,4 @@
 
 ### Patch Changes
 
-- 4eb480e: say hello to the new @scalar/express-api-reference middleware :)
+- 4eb480e: say hello to the new @readyapi/express-api-reference middleware :)

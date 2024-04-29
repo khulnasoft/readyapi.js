@@ -228,7 +228,7 @@ Read more: [@readyapi/nextjs-api-reference](https://github.com/khulnasoft/readya
 Our fastify plugin makes it so easy to render a reference, there’s no excuse to not have documentation for your API:
 
 ```ts
-await fastify.register(require('@scalar/fastify-api-reference'), {
+await fastify.register(require('@readyapi/fastify-api-reference'), {
   routePrefix: '/reference',
   configuration: {
     spec: () => fastify.swagger(),
@@ -239,7 +239,7 @@ await fastify.register(require('@scalar/fastify-api-reference'), {
 Actually, it’s executing the `fastify.swagger()` call by default (if available). So that’s all you need to add:
 
 ```ts
-await fastify.register(require('@scalar/fastify-api-reference'), {
+await fastify.register(require('@readyapi/fastify-api-reference'), {
   routePrefix: '/reference',
 })
 ```
@@ -248,7 +248,7 @@ We wrote
 a [detailed integration guide for Fastify](https://github.com/khulnasoft/readyapi.js/tree/main/documentation/fastify.md), too.
 
 Read more about the
-package: [@scalar/fastify-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/fastify-api-reference)
+package: [@readyapi/fastify-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/fastify-api-reference)
 
 ### With Platformatic
 
@@ -261,7 +261,7 @@ API reference is installed and configured automatically.
 Our Hono middleware makes it so easy to render a reference:
 
 ```ts
-import { apiReference } from '@scalar/hono-api-reference'
+import { apiReference } from '@readyapi/hono-api-reference'
 
 app.get(
   '/reference',
@@ -273,7 +273,7 @@ app.get(
 )
 ```
 
-Read more: [@scalar/hono-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/hono-api-reference)
+Read more: [@readyapi/hono-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/hono-api-reference)
 
 ### With ElysiaJS
 
@@ -299,7 +299,7 @@ new Elysia()
 Our Express middleware makes it so easy to render a reference:
 
 ```ts
-import { apiReference } from '@scalar/express-api-reference'
+import { apiReference } from '@readyapi/express-api-reference'
 
 app.use(
   '/reference',
@@ -311,14 +311,14 @@ app.use(
 )
 ```
 
-Read more: [@scalar/express-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/express-api-reference)
+Read more: [@readyapi/express-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/express-api-reference)
 
 ### With NestJS
 
 Our NestJS middleware makes it so easy to render a reference:
 
 ```ts
-import { apiReference } from '@scalar/nestjs-api-reference'
+import { apiReference } from '@readyapi/nestjs-api-reference'
 
 app.use(
   '/reference',
@@ -330,7 +330,7 @@ app.use(
 )
 ```
 
-Read more: [@scalar/nestjs-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/nestjs-api-reference)
+Read more: [@readyapi/nestjs-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/nestjs-api-reference)
 
 ### With Docusaurus
 
@@ -338,11 +338,11 @@ Our Docusaurus plugin makes it easy to render API references. Simple add the
 following to your Docusaurus config:
 
 ```ts
-import type { ScalarOptions } from '@scalar/docusaurus'
+import type { ScalarOptions } from '@readyapi/docusaurus'
 
 plugins: [
   [
-    '@scalar/docusaurus',
+    '@readyapi/docusaurus',
     {
       label: 'Scalar',
       route: '/scalar',
@@ -652,12 +652,12 @@ This repository contains all our open source projects, and there’s definitely 
 | [@readyapi/api-client](https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-client)                       | API testing client                                |
 | [@readyapi/api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-reference)                 | beautiful API references                          |
 | [@scalar/cli](https://github.com/khulnasoft/readyapi.js/tree/main/packages/cli)                                     | CLI to work with OpenAPi files                    |
-| [@scalar/echo-server](https://github.com/khulnasoft/readyapi.js/tree/main/packages/echo-server)                     | a server that replies with the request data       |
-| [@scalar/express-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/express-api-reference) | Express plugin                                    |
-| [@scalar/fastify-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/fastify-api-reference) | Fastify plugin                                    |
-| [@scalar/hono-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/hono-api-reference)       | Hono middleware                                   |
-| [@scalar/mock-server](https://github.com/khulnasoft/readyapi.js/tree/main/packages/mock-server)                     | fake data based on an OpenAPI specification files |
-| [@scalar/nestjs-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/nestjs-api-reference)   | NestJS middleware                                 |
+| [@readyapi/echo-server](https://github.com/khulnasoft/readyapi.js/tree/main/packages/echo-server)                     | a server that replies with the request data       |
+| [@readyapi/express-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/express-api-reference) | Express plugin                                    |
+| [@readyapi/fastify-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/fastify-api-reference) | Fastify plugin                                    |
+| [@readyapi/hono-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/hono-api-reference)       | Hono middleware                                   |
+| [@readyapi/mock-server](https://github.com/khulnasoft/readyapi.js/tree/main/packages/mock-server)                     | fake data based on an OpenAPI specification files |
+| [@readyapi/nestjs-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/nestjs-api-reference)   | NestJS middleware                                 |
 | [@readyapi/nextjs-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/nestjs-api-reference)   | Next.js adapter                                   |
 | [@scalar/swagger-editor](https://github.com/khulnasoft/readyapi.js/tree/main/packages/swagger-editor)               | editor tailored to write OpenAPI files            |
 | [@scalar/swagger-parser](https://github.com/khulnasoft/readyapi.js/tree/main/packages/swagger-parser)               | parse OpenAPI files                               |

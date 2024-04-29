@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ScalarCodeBlock, ScalarIcon } from '@scalar/components'
+import { ScalarCodeBlock, ScalarIcon } from '@readyapi/components'
 import type { TransformedOperation } from '@readyapi/oas-utils'
 import { computed, ref } from 'vue'
 

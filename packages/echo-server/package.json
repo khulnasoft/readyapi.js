@@ -1,5 +1,5 @@
 {
-  "name": "@scalar/echo-server",
+  "name": "@readyapi/echo-server",
   "description": "an express server which replies with the request data",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",

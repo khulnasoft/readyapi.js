@@ -1,4 +1,4 @@
-# @scalar/hono-api-reference
+# @readyapi/hono-api-reference
 
 ## 0.5.15
 

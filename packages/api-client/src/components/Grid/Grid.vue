@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ScalarIcon } from '@scalar/components'
+import { ScalarIcon } from '@readyapi/components'
 import type { BaseParameter } from '@readyapi/oas-utils'
 import { ref } from 'vue'
 

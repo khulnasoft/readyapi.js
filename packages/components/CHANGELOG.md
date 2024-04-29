@@ -1,4 +1,4 @@
-# @scalar/components
+# @readyapi/components
 
 ## 0.6.0
 

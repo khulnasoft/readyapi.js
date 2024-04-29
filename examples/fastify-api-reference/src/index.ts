@@ -1,5 +1,5 @@
 import '@fastify/swagger'
-import fastifyApiReference from '@scalar/fastify-api-reference'
+import fastifyApiReference from '@readyapi/fastify-api-reference'
 import Fastify from 'fastify'
 
 // Init Fastify

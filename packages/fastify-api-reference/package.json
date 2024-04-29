@@ -1,5 +1,5 @@
 {
-  "name": "@scalar/fastify-api-reference",
+  "name": "@readyapi/fastify-api-reference",
   "description": "a fastify plugin to render an API reference from an OpenAPI file",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",

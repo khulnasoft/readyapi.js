@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { HttpMethod } from '@readyapi/api-client'
-import { ScalarIcon, ScalarIconButton } from '@scalar/components'
+import { ScalarIcon, ScalarIconButton } from '@readyapi/components'
 import type { TransformedOperation } from '@readyapi/oas-utils'
 
 import { useClipboard } from '../../../hooks'

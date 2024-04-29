@@ -1,4 +1,4 @@
-# @scalar/build-tooling
+# @readyapi/build-tooling
 
 ## 0.1.2
 

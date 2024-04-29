@@ -199,7 +199,7 @@ Did it work? OMG, this is so cool! It didn’t? [Create a new issue](https://git
 Congratulations, you’ve come really far. And I have good news for you, you’re just a few lines of code away from a stunning API reference for your Fastify project. Time to pull our package:
 
 ```
-npm install @scalar/fastify-api-reference
+npm install @readyapi/fastify-api-reference
 ```
 
 Put the following snippet into your `index.js` right before the `await fastify.ready`
@@ -207,7 +207,7 @@ Put the following snippet into your `index.js` right before the `await fastify.r
 ```js
 // …
 // Render the API reference
-import ScalarApiReference from '@scalar/fastify-api-reference'
+import ScalarApiReference from '@readyapi/fastify-api-reference'
 
 await fastify.register(ScalarApiReference, {
   routePrefix: '/reference',
@@ -229,7 +229,7 @@ That’s it, you made it! You can keep adding routes to Fastify now and the refe
 You can customize a ton! Just pass a `configuration` object to the plugin:
 
 ```js
-import ScalarApiReference from '@scalar/fastify-api-reference'
+import ScalarApiReference from '@readyapi/fastify-api-reference'
 
 await fastify.register(ScalarApiReference, {
   routePrefix: '/reference',
@@ -248,7 +248,7 @@ TypeScript should give you a nice autocomplete for all options. If you’re more
 Auto-generated OpenAPI files are great, but some OpenAPI purists argue it’s worth to handcraft your OpenAPI files. If you’re one of them, feel free to just pass an URL to your existing OpenAPI file:
 
 ```js
-import ScalarApiReference from '@scalar/fastify-api-reference'
+import ScalarApiReference from '@readyapi/fastify-api-reference'
 
 await fastify.register(ScalarApiReference, {
   routePrefix: '/reference',

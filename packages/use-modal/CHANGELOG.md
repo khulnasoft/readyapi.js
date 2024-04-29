@@ -1,4 +1,4 @@
-# @scalar/use-modal
+# @readyapi/use-modal
 
 ## 0.3.0
 

@@ -5,7 +5,7 @@ import {
   getSecretCredentialsFromAuthentication,
   useAuthenticationStore,
 } from '@readyapi/api-client'
-import { ScalarCodeBlock, ScalarIcon } from '@scalar/components'
+import { ScalarCodeBlock, ScalarIcon } from '@readyapi/components'
 import {
   type ExampleRequestSSRKey,
   type SSRState,

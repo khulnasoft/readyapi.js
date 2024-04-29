@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ScalarIcon } from '@scalar/components'
+import { ScalarIcon } from '@readyapi/components'
 import type { OpenAPIV3, OpenAPIV3_1 } from '@scalar/openapi-parser'
 import { computed, onMounted, onServerPrefetch } from 'vue'
 

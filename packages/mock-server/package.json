@@ -1,5 +1,5 @@
 {
-  "name": "@scalar/mock-server",
+  "name": "@readyapi/mock-server",
   "description": "OpenAPI mock server server",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",

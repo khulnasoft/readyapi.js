@@ -1,4 +1,4 @@
-# @scalar/mock-server
+# @readyapi/mock-server
 
 ## 0.1.50
 
@@ -384,4 +384,4 @@
 
 ### Patch Changes
 
-- 96b85ef: feat: new @scalar/mock-server package
+- 96b85ef: feat: new @readyapi/mock-server package

@@ -72,7 +72,7 @@ import PageLink from '../components/PageLink.vue'
       </PageLink>
       <PageLink href="http://localhost:5063/scalar">
         <template #title>Docusaurus</template>
-        <template #description>@scalar/docusaurus</template>
+        <template #description>@readyapi/docusaurus</template>
       </PageLink>
       <PageLink href="http://localhost:5058">
         <template #title>Next.js</template>
@@ -84,26 +84,26 @@ import PageLink from '../components/PageLink.vue'
       </PageLink>
       <PageLink href="http://localhost:5053">
         <template #title>Fastify</template>
-        <template #description>@scalar/fastify-api-reference</template>
+        <template #description>@readyapi/fastify-api-reference</template>
       </PageLink>
       <PageLink href="http://localhost:5054">
         <template #title>Hono</template>
-        <template #description>@scalar/hono-api-reference</template>
+        <template #description>@readyapi/hono-api-reference</template>
       </PageLink>
       <PageLink href="http://localhost:5055">
         <template #title>Express</template>
-        <template #description>@scalar/express-api-reference</template>
+        <template #description>@readyapi/express-api-reference</template>
       </PageLink>
       <PageLink href="http://localhost:5056">
         <template #title>NestJS (Express)</template>
-        <template #description>@scalar/nestjs-api-reference</template>
+        <template #description>@readyapi/nestjs-api-reference</template>
       </PageLink>
       <PageLink href="http://localhost:5057">
         <template #title>NestJS (Fastify)</template>
-        <template #description>@scalar/nestjs-api-reference</template>
+        <template #description>@readyapi/nestjs-api-reference</template>
       </PageLink>
     </div>
-    <h1>@scalar/components</h1>
+    <h1>@readyapi/components</h1>
     <div class="page-links">
       <PageLink href="http://localhost:5100">
         <template #title>Components</template>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ScalarIcon } from '@scalar/components'
-import { useModal } from '@scalar/use-modal'
+import { ScalarIcon } from '@readyapi/components'
+import { useModal } from '@readyapi/use-modal'
 import { isMacOS } from '@scalar/use-tooltip'
 import { useMagicKeys, whenever } from '@vueuse/core'
 

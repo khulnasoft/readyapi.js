@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'src/index.ts',
-      name: '@scalar/echo-server',
+      name: '@readyapi/echo-server',
       fileName: 'index',
       formats: ['es', 'cjs'],
     },

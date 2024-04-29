@@ -1,5 +1,5 @@
 {
-  "name": "@scalar/nestjs-api-reference",
+  "name": "@readyapi/nestjs-api-reference",
   "description": "A middleware for using the Scalar API reference with NestJS",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",

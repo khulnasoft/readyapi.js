@@ -136,7 +136,7 @@ importers:
       '@mdx-js/react':
         specifier: ^3.0.0
         version: 3.0.1(@types/react@18.2.60)(react@18.2.0)
-      '@scalar/docusaurus':
+      '@readyapi/docusaurus':
         specifier: workspace:*
         version: link:../../packages/docusaurus
       clsx:
@@ -167,7 +167,7 @@ importers:
 
   examples/echo-server:
     dependencies:
-      '@scalar/echo-server':
+      '@readyapi/echo-server':
         specifier: workspace:*
         version: link:../../packages/echo-server
       dotenv:
@@ -186,7 +186,7 @@ importers:
 
   examples/express-api-reference:
     dependencies:
-      '@scalar/express-api-reference':
+      '@readyapi/express-api-reference':
         specifier: workspace:*
         version: link:../../packages/express-api-reference
       express:
@@ -214,7 +214,7 @@ importers:
       '@fastify/swagger':
         specifier: ^8.10.1
         version: 8.14.0
-      '@scalar/fastify-api-reference':
+      '@readyapi/fastify-api-reference':
         specifier: workspace:*
         version: link:../../packages/fastify-api-reference
       fastify:
@@ -242,7 +242,7 @@ importers:
       '@hono/zod-openapi':
         specifier: ^0.8.6
         version: 0.8.6(hono@4.2.8)(zod@3.22.4)
-      '@scalar/hono-api-reference':
+      '@readyapi/hono-api-reference':
         specifier: workspace:*
         version: link:../../packages/hono-api-reference
       hono:
@@ -273,7 +273,7 @@ importers:
       '@nestjs/swagger':
         specifier: ^7.1.17
         version: 7.3.0(@nestjs/common@10.3.3)(@nestjs/core@10.3.3)(reflect-metadata@0.1.14)
-      '@scalar/nestjs-api-reference':
+      '@readyapi/nestjs-api-reference':
         specifier: workspace:*
         version: link:../../packages/nestjs-api-reference
       reflect-metadata:
@@ -364,7 +364,7 @@ importers:
       '@nestjs/swagger':
         specifier: ^7.1.17
         version: 7.3.0(@nestjs/common@10.3.3)(@nestjs/core@10.3.3)(reflect-metadata@0.1.14)
-      '@scalar/nestjs-api-reference':
+      '@readyapi/nestjs-api-reference':
         specifier: workspace:*
         version: link:../../packages/nestjs-api-reference
       reflect-metadata:
@@ -615,7 +615,7 @@ importers:
       '@headlessui/vue':
         specifier: ^1.7.20
         version: 1.7.20(vue@3.4.21)
-      '@scalar/components':
+      '@readyapi/components':
         specifier: workspace:*
         version: link:../components
       '@scalar/openapi-parser':
@@ -624,10 +624,10 @@ importers:
       '@readyapi/themes':
         specifier: workspace:*
         version: link:../themes
-      '@scalar/use-codemirror':
+      '@readyapi/use-codemirror':
         specifier: workspace:*
         version: link:../use-codemirror
-      '@scalar/use-modal':
+      '@readyapi/use-modal':
         specifier: workspace:*
         version: link:../use-modal
       '@scalar/use-tooltip':
@@ -658,7 +658,7 @@ importers:
       '@readyapi/api-client-proxy':
         specifier: workspace:*
         version: link:../api-client-proxy
-      '@scalar/echo-server':
+      '@readyapi/echo-server':
         specifier: workspace:*
         version: link:../echo-server
       '@readyapi/oas-utils':
@@ -701,7 +701,7 @@ importers:
         specifier: ^4.18.2
         version: 4.18.2
     devDependencies:
-      '@scalar/echo-server':
+      '@readyapi/echo-server':
         specifier: workspace:*
         version: link:../echo-server
       '@types/cors':
@@ -777,7 +777,7 @@ importers:
       '@readyapi/api-client':
         specifier: workspace:*
         version: link:../api-client
-      '@scalar/components':
+      '@readyapi/components':
         specifier: workspace:*
         version: link:../components
       '@readyapi/oas-utils':
@@ -792,7 +792,7 @@ importers:
       '@readyapi/themes':
         specifier: workspace:*
         version: link:../themes
-      '@scalar/use-modal':
+      '@readyapi/use-modal':
         specifier: workspace:*
         version: link:../use-modal
       '@scalar/use-tooltip':
@@ -1020,7 +1020,7 @@ importers:
       '@readyapi/api-reference':
         specifier: workspace:*
         version: link:../api-reference
-      '@scalar/mock-server':
+      '@readyapi/mock-server':
         specifier: workspace:*
         version: link:../mock-server
       '@readyapi/oas-utils':
@@ -1509,7 +1509,7 @@ importers:
         specifier: ^2.4.1
         version: 2.4.1
     devDependencies:
-      '@scalar/build-tooling':
+      '@readyapi/build-tooling':
         specifier: workspace:*
         version: link:../build-tooling
       '@scalar/openapi-parser':

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ScalarCodeBlock } from '@scalar/components'
+import { ScalarCodeBlock } from '@readyapi/components'
 import contentType from 'content-type'
 import { computed } from 'vue'
 

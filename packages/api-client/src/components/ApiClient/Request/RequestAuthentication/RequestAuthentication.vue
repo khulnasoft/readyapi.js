@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ScalarButton } from '@scalar/components'
+import { ScalarButton } from '@readyapi/components'
 import type { OpenAPIV3_1 } from '@scalar/openapi-parser'
 import { ref } from 'vue'
 
