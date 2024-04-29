@@ -1,0 +1,52 @@
+{
+  "name": "@readyapi-examples/docusaurus",
+  "license": "MIT",
+  "author": "KhulnaSoft (https://github.com/khulnasoft)",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "docusaurus build",
+    "clear": "docusaurus clear",
+    "deploy": "docusaurus deploy",
+    "dev": "docusaurus start --port=5063 --no-open",
+    "docusaurus": "docusaurus",
+    "serve": "docusaurus serve",
+    "swizzle": "docusaurus swizzle",
+    "typecheck": "tsc",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "write-translations": "docusaurus write-translations"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
+    ]
+  },
+  "dependencies": {
+    "@docusaurus/core": "^3.1.1",
+    "@docusaurus/preset-classic": "^3.1.1",
+    "@mdx-js/react": "^3.0.0",
+    "@scalar/docusaurus": "workspace:*",
+    "clsx": "^2.0.0",
+    "prism-react-renderer": "^2.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "^3.1.1",
+    "@docusaurus/tsconfig": "^3.1.1",
+    "@docusaurus/types": "^3.1.1",
+    "typescript": "^5.4.3"
+  }
+}

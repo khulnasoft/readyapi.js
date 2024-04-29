@@ -1,0 +1,13 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@2.3.1/schema.json",
+  "changelog": "@changesets/cli/changelog",
+  "commit": ["@changesets/cli/commit", { "skipCI": false }],
+  "fixed": [],
+  "linked": [
+    ["@readyapi/api-reference", "@scalar/fastify-api-reference"]
+  ],
+  "access": "public",
+  "baseBranch": "main",
+  "updateInternalDependencies": "patch",
+  "ignore": ["@readyapi-examples/*"]
+}

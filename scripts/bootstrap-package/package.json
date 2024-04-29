@@ -1,0 +1,49 @@
+{
+  "name": "bootstrap-package",
+  "description": "package description...",
+  "license": "MIT",
+  "author": "KhulnaSoft (https://github.com/khulnasoft)",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
+  "keywords": [],
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "vite build && pnpm types:build && tsc-alias -p tsconfig.build.json",
+    "dev": "vite",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint .  --fix",
+    "preview": "vite preview",
+    "test": "vitest",
+    "types:build": "vue-tsc -p tsconfig.build.json",
+    "types:check": "vue-tsc --noEmit --skipLibCheck --composite false"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    "import": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ],
+  "module": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khulnasoft/readyapi.js.git",
+    "directory": "packages/bootstrap-package"
+  },
+  "devDependencies": {
+    "@scalar/build-tooling": "workspace:*",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.1.1",
+    "vite-svg-loader": "^5.1.0",
+    "vue": "^3.3.0",
+    "tsc-alias": "^1.8.8"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.0"
+  }
+}

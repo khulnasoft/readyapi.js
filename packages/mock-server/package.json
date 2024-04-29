@@ -1,0 +1,56 @@
+{
+  "name": "@scalar/mock-server",
+  "description": "OpenAPI mock server server",
+  "license": "MIT",
+  "author": "KhulnaSoft (https://github.com/khulnasoft)",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
+  "keywords": [
+    "scalar",
+    "openapi",
+    "swagger",
+    "cli"
+  ],
+  "version": "0.1.50",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "rm -Rf dist/ && tsc && rollup -c",
+    "cli:link": "pnpm run build && npm unlink -g && npm link",
+    "test": "vitest",
+    "types:check": "tsc --noEmit --skipLibCheck"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "dist/src/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js"
+  },
+  "files": [
+    "./dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scalar/cli.git",
+    "directory": "packages/mock-server"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.11.0",
+    "@readyapi/api-reference": "workspace:*",
+    "@readyapi/oas-utils": "workspace:*",
+    "@scalar/openapi-parser": "^0.3.2",
+    "hono": "^4.2.7",
+    "vite-node": "^1.2.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.8.4",
+    "execa": "^8.0.1",
+    "rollup": "^4.16.4",
+    "strip-ansi": "^7.1.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.3"
+  }
+}

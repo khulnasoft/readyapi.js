@@ -1,0 +1,63 @@
+{
+  "name": "@readyapi/nextjs-api-reference",
+  "description": "a Next.js component to render API references from an OpenAPI file",
+  "license": "MIT",
+  "author": "KhulnaSoft (https://github.com/khulnasoft)",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
+  "keywords": [
+    "api",
+    "documentation",
+    "next.js",
+    "nextjs",
+    "openapi",
+    "swagger"
+  ],
+  "version": "0.3.15",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "pnpm types:check && pnpm build-only",
+    "build-only": "vite build",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint .  --fix",
+    "types:check": "tsc --noEmit --skipLibCheck"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ],
+  "module": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khulnasoft/readyapi.js.git",
+    "directory": "packages/nextjs-api-reference"
+  },
+  "dependencies": {
+    "@readyapi/api-reference": "workspace:*"
+  },
+  "devDependencies": {
+    "@readyapi/api-reference": "workspace:*",
+    "@types/node": "^20.8.4",
+    "@types/react": "^18.2.60",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vite": "^5.2.10",
+    "vite-plugin-dts": "^3.6.3"
+  },
+  "peerDependencies": {
+    "next": "^13 || ^14",
+    "react": "^18"
+  }
+}

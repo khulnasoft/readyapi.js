@@ -1,0 +1,44 @@
+name: Check build, types, and units tests are passing
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  ci:
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        node-version: [18, 20, 21]
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 8
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install
+      - name: Turborepo cache
+        uses: dtinth/setup-github-actions-caching-for-turbo@v1
+      - if: matrix.node-version == 20
+        name: Check code style
+        run: pnpm format:check
+      - name: Build
+        run: pnpm turbo build
+      - name: Check types
+        run: pnpm turbo types:check
+      - name: Run tests
+        run: pnpm test:ci
+      - if: matrix.node-version == 20
+        name: Send bundle stats and build information to RelativeCI
+        uses: relative-ci/agent-action@v2
+        with:
+          key: ${{ secrets.ORG_REPO_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          webpackStatsFile: ./packages/api-reference/dist/browser/webpack-stats.json

@@ -1,0 +1,40 @@
+{
+  "name": "@readyapi-examples/web",
+  "license": "MIT",
+  "author": "KhulnaSoft (https://github.com/khulnasoft)",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
+  "version": "0.4.2",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "vue-tsc && vite build",
+    "dev": "vite",
+    "lint": "eslint \"src/**/*.{js,vue}\"",
+    "lint:fix": "eslint \"src/**/*.{js,vue}\" --fix",
+    "preview": "vite preview"
+  },
+  "type": "module",
+  "dependencies": {
+    "@readyapi/api-client": "workspace:*",
+    "@readyapi/api-reference": "workspace:*",
+    "@readyapi/themes": "workspace:*",
+    "@vueuse/core": "^10.9.0",
+    "monaco-editor": "^0.47.0",
+    "vue": "^3.4.21",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.21.1",
+    "postcss": "^8.4.38",
+    "postcss-nested": "^6.0.1",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.10",
+    "vue-tsc": "^1.8.19"
+  }
+}

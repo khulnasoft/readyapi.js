@@ -1,0 +1,50 @@
+{
+  "name": "@scalar/docusaurus",
+  "description": "Docusaurus integration for api references",
+  "license": "MIT",
+  "author": "KhulnaSoft (https://github.com/khulnasoft)",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
+  "keywords": [
+    "api",
+    "client",
+    "docusaurus",
+    "postman alternative",
+    "rest",
+    "testing",
+    "react"
+  ],
+  "version": "0.2.15",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc --declaration && cp ./src/theme.css ./dist/",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint .  --fix",
+    "types:check": "tsc --noEmit --skipLibCheck"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khulnasoft/readyapi.js.git",
+    "directory": "packages/docusaurus"
+  },
+  "dependencies": {
+    "@readyapi/api-reference-react": "workspace:*"
+  },
+  "devDependencies": {
+    "@docusaurus/types": "^3.1.1",
+    "@types/react": "^18.2.60",
+    "@types/react-dom": "^18.2.19",
+    "path": "^0.12.7",
+    "react": "^18.2.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0"
+  }
+}

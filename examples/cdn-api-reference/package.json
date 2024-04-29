@@ -1,0 +1,32 @@
+{
+  "name": "@readyapi-examples/cdn-api-reference",
+  "license": "MIT",
+  "author": "KhulnaSoft (https://github.com/khulnasoft)",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "nodemon --exec \"vite-node src/index.ts\" --ext ts --quiet --watch ./",
+    "format": "pnpm prettier --write .",
+    "format:check": "pnpm prettier --check .",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint .  --fix",
+    "types:check": "tsc --noEmit --skipLibCheck"
+  },
+  "type": "module",
+  "dependencies": {
+    "@fastify/static": "^7.0.1",
+    "fastify": "^4.26.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.4",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.10",
+    "vite-node": "^1.2.2"
+  }
+}
