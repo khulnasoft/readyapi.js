@@ -646,12 +646,12 @@ We are API nerds. You too? Let’s chat on Discord: <https://discord.gg/scalar>
 
 This repository contains all our open source projects, and there’s definitely more to discover.
 
-| Package                                                                                                    | Description                                       |
-| ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| Package                                                                                                               | Description                                       |
+| --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
 | [@readyapi/api-client-proxy](https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-client-proxy)           | API request proxy                                 |
 | [@readyapi/api-client](https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-client)                       | API testing client                                |
 | [@readyapi/api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-reference)                 | beautiful API references                          |
-| [@scalar/cli](https://github.com/khulnasoft/readyapi.js/tree/main/packages/cli)                                     | CLI to work with OpenAPi files                    |
+| [@scalar/cli](https://github.com/khulnasoft/readyapi.js/tree/main/packages/cli)                                       | CLI to work with OpenAPi files                    |
 | [@readyapi/echo-server](https://github.com/khulnasoft/readyapi.js/tree/main/packages/echo-server)                     | a server that replies with the request data       |
 | [@readyapi/express-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/express-api-reference) | Express plugin                                    |
 | [@readyapi/fastify-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/fastify-api-reference) | Fastify plugin                                    |
@@ -659,8 +659,8 @@ This repository contains all our open source projects, and there’s definitely 
 | [@readyapi/mock-server](https://github.com/khulnasoft/readyapi.js/tree/main/packages/mock-server)                     | fake data based on an OpenAPI specification files |
 | [@readyapi/nestjs-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/nestjs-api-reference)   | NestJS middleware                                 |
 | [@readyapi/nextjs-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/nestjs-api-reference)   | Next.js adapter                                   |
-| [@scalar/swagger-editor](https://github.com/khulnasoft/readyapi.js/tree/main/packages/swagger-editor)               | editor tailored to write OpenAPI files            |
-| [@scalar/swagger-parser](https://github.com/khulnasoft/readyapi.js/tree/main/packages/swagger-parser)               | parse OpenAPI files                               |
+| [@scalar/swagger-editor](https://github.com/khulnasoft/readyapi.js/tree/main/packages/swagger-editor)                 | editor tailored to write OpenAPI files            |
+| [@scalar/swagger-parser](https://github.com/khulnasoft/readyapi.js/tree/main/packages/swagger-parser)                 | parse OpenAPI files                               |
 
 ## Contributors
 

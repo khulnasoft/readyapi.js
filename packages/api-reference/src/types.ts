@@ -3,7 +3,11 @@ import type {
   ContentType,
   TransformedOperation,
 } from '@readyapi/oas-utils'
-import type { OpenAPIV2, OpenAPIV3, OpenAPIV3_1 } from '@readyapi/openapi-parser'
+import type {
+  OpenAPIV2,
+  OpenAPIV3,
+  OpenAPIV3_1,
+} from '@readyapi/openapi-parser'
 import type { ThemeId } from '@readyapi/themes'
 import type { UseSeoMetaInput } from '@unhead/schema'
 import type { HarRequest } from 'httpsnippet-lite'
