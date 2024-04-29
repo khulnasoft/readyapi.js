@@ -116,7 +116,7 @@ If you’d like to add a request proxy for the API client (to avoid CORS issues)
 You can easily run Ready API References in Nuxt via the module:
 
 ```bash
-npx nuxi module add @scalar/nuxt
+npx nuxi module add @readyapi/nuxt
 ```
 
 If you are using Nuxt server routes, you can enable scalar simply by enabling `openAPI` in the nitro
@@ -124,7 +124,7 @@ config in your `nuxt.config.ts`:
 
 ```ts
 export default defineNuxtConfig({
-  modules: ['@scalar/nuxt'],
+  modules: ['@readyapi/nuxt'],
   nitro: {
     experimental: {
       openAPI: true,
@@ -137,7 +137,7 @@ If you would like to add your own OpenAPI spec file, you can do so with the foll
 
 ```ts
 export default defineNuxtConfig({
-  modules: ['@scalar/nuxt'],
+  modules: ['@readyapi/nuxt'],
   scalar: {
     spec: {
       url: 'https://cdn.scalar.com/spec/openapi_petstore.json',
@@ -146,7 +146,7 @@ export default defineNuxtConfig({
 })
 ```
 
-Read more: [@scalar/nuxt](https://github.com/khulnasoft/readyapi.js/tree/main/packages/nuxt)
+Read more: [@readyapi/nuxt](https://github.com/khulnasoft/readyapi.js/tree/main/packages/nuxt)
 
 ### With Vue.js
 

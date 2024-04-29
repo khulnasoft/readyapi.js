@@ -1,4 +1,4 @@
-# @scalar/use-tooltip
+# @readyapi/use-tooltip
 
 ## 0.6.0
 

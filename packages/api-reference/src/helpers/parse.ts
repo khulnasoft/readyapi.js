@@ -1,6 +1,6 @@
 /**
  * Unfortunately, this file is very messy. I think we should get rid of it entirely. :)
- * TODO: Slowly remove all the transformed properties and use the raw output of @scalar/openapi-parser instead.
+ * TODO: Slowly remove all the transformed properties and use the raw output of @readyapi/openapi-parser instead.
  */
 import { type RequestMethod, validRequestMethods } from '@readyapi/api-client'
 import {
@@ -9,7 +9,7 @@ import {
   type OpenAPIV3_1,
   type ResolvedOpenAPI,
   openapi,
-} from '@scalar/openapi-parser'
+} from '@readyapi/openapi-parser'
 
 // AnyStringOrObject
 import type { Spec } from '../types'

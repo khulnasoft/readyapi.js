@@ -6,7 +6,7 @@ import {
   ScalarSearchResultList,
 } from '@readyapi/components'
 import { type TransformedOperation } from '@readyapi/oas-utils'
-import type { OpenAPIV3_1 } from '@scalar/openapi-parser'
+import type { OpenAPIV3_1 } from '@readyapi/openapi-parser'
 import { FlowModal, type ModalState } from '@readyapi/use-modal'
 import { useMagicKeys, whenever } from '@vueuse/core'
 import Fuse from 'fuse.js'

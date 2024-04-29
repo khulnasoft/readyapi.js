@@ -4,7 +4,7 @@ import {
   useRequestStore,
 } from '@readyapi/api-client'
 import type { TransformedOperation } from '@readyapi/oas-utils'
-import type { OpenAPIV3 } from '@scalar/openapi-parser'
+import type { OpenAPIV3 } from '@readyapi/openapi-parser'
 
 import { getApiClientRequest } from '../helpers'
 import { useServerStore } from '../stores/useServerStore'

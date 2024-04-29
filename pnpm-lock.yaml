@@ -618,7 +618,7 @@ importers:
       '@readyapi/components':
         specifier: workspace:*
         version: link:../components
-      '@scalar/openapi-parser':
+      '@readyapi/openapi-parser':
         specifier: ^0.3.2
         version: 0.3.2
       '@readyapi/themes':
@@ -630,7 +630,7 @@ importers:
       '@readyapi/use-modal':
         specifier: workspace:*
         version: link:../use-modal
-      '@scalar/use-tooltip':
+      '@readyapi/use-tooltip':
         specifier: workspace:*
         version: link:../use-tooltip
       '@vueuse/core':
@@ -783,7 +783,7 @@ importers:
       '@readyapi/oas-utils':
         specifier: workspace:*
         version: link:../oas-utils
-      '@scalar/openapi-parser':
+      '@readyapi/openapi-parser':
         specifier: ^0.3.2
         version: 0.3.2
       '@scalar/snippetz':
@@ -795,7 +795,7 @@ importers:
       '@readyapi/use-modal':
         specifier: workspace:*
         version: link:../use-modal
-      '@scalar/use-tooltip':
+      '@readyapi/use-tooltip':
         specifier: workspace:*
         version: link:../use-tooltip
       '@unhead/schema':
@@ -1026,7 +1026,7 @@ importers:
       '@readyapi/oas-utils':
         specifier: workspace:*
         version: link:../oas-utils
-      '@scalar/openapi-parser':
+      '@readyapi/openapi-parser':
         specifier: ^0.3.2
         version: 0.3.2
       commander:
@@ -1369,7 +1369,7 @@ importers:
       '@readyapi/oas-utils':
         specifier: workspace:*
         version: link:../oas-utils
-      '@scalar/openapi-parser':
+      '@readyapi/openapi-parser':
         specifier: ^0.3.2
         version: 0.3.2
       hono:
@@ -1512,7 +1512,7 @@ importers:
       '@readyapi/build-tooling':
         specifier: workspace:*
         version: link:../build-tooling
-      '@scalar/openapi-parser':
+      '@readyapi/openapi-parser':
         specifier: ^0.3.2
         version: 0.3.2
       axios:
@@ -8827,7 +8827,7 @@ packages:
       string-argv: 0.3.2
     dev: true
 
-  /@scalar/openapi-parser@0.3.2:
+  /@readyapi/openapi-parser@0.3.2:
     resolution: {integrity: sha512-o38wF1rKqCc7R0zFMta5rPTiY4cWwVcZPJkV1OCcnPsF2eE79uPkhYU2j/kdocJXVwMqqAe9a6+0o4R8YjgPVw==}
     engines: {node: '>=18'}
     dependencies:

@@ -39,7 +39,7 @@
     "@readyapi/api-reference": "workspace:*",
     "@readyapi/mock-server": "workspace:*",
     "@readyapi/oas-utils": "workspace:*",
-    "@scalar/openapi-parser": "^0.3.2",
+    "@readyapi/openapi-parser": "^0.3.2",
     "commander": "^12.0.0",
     "hono": "^4.2.7",
     "kleur": "^4.1.5",

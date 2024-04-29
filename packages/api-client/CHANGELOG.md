@@ -94,7 +94,7 @@
 - Updated dependencies [22f2858]
 - Updated dependencies [0e64a36]
   - @readyapi/use-codemirror@0.10.0
-  - @scalar/use-tooltip@0.6.0
+  - @readyapi/use-tooltip@0.6.0
   - @readyapi/components@0.5.0
   - @readyapi/oas-utils@0.1.6
   - @readyapi/use-modal@0.3.0
@@ -260,7 +260,7 @@
 
 ### Minor Changes
 
-- 7fb8273: Migrate to @scalar/openapi-parser
+- 7fb8273: Migrate to @readyapi/openapi-parser
 
 ### Patch Changes
 

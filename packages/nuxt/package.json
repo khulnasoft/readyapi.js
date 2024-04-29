@@ -1,5 +1,5 @@
 {
-  "name": "@scalar/nuxt",
+  "name": "@readyapi/nuxt",
   "description": "Nuxt integration for Ready API references",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",

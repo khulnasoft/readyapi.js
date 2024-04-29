@@ -1,4 +1,4 @@
-# @scalar/nuxt
+# @readyapi/nuxt
 
 ## 0.0.25
 

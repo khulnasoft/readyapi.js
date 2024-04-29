@@ -143,7 +143,7 @@
 - 3afec45: feat: render images in tag descriptions
 - Updated dependencies [22f2858]
 - Updated dependencies [0e64a36]
-  - @scalar/use-tooltip@0.6.0
+  - @readyapi/use-tooltip@0.6.0
   - @readyapi/api-client@1.2.0
   - @readyapi/components@0.5.0
   - @readyapi/oas-utils@0.1.6
@@ -483,7 +483,7 @@
 
 ### Minor Changes
 
-- 7fb8273: Migrate to @scalar/openapi-parser
+- 7fb8273: Migrate to @readyapi/openapi-parser
 
 ### Patch Changes
 
@@ -548,7 +548,7 @@
   - @readyapi/themes@0.6.2
   - @scalar/swagger-parser@0.5.21
   - @readyapi/use-modal@0.2.9
-  - @scalar/use-tooltip@0.5.12
+  - @readyapi/use-tooltip@0.5.12
 
 ## 1.18.1
 
@@ -700,7 +700,7 @@
 - Updated dependencies [7ea052b]
   - @scalar/swagger-editor@0.10.8
   - @scalar/swagger-parser@0.5.18
-  - @scalar/use-tooltip@0.5.11
+  - @readyapi/use-tooltip@0.5.11
   - @readyapi/api-client@0.12.5
   - @readyapi/components@0.2.5
   - @readyapi/use-modal@0.2.8
@@ -715,7 +715,7 @@
 - Updated dependencies [c6b95ca]
   - @scalar/swagger-editor@0.10.7
   - @scalar/swagger-parser@0.5.17
-  - @scalar/use-tooltip@0.5.10
+  - @readyapi/use-tooltip@0.5.10
   - @readyapi/api-client@0.12.4
   - @readyapi/components@0.2.4
   - @scalar/use-toasts@0.5.15
@@ -785,7 +785,7 @@
   - @scalar/swagger-editor@0.10.5
   - @scalar/swagger-parser@0.5.16
   - @readyapi/use-codemirror@0.8.4
-  - @scalar/use-tooltip@0.5.9
+  - @readyapi/use-tooltip@0.5.9
   - @readyapi/components@0.2.3
   - @scalar/use-toasts@0.5.14
   - @readyapi/use-modal@0.2.4
@@ -1022,7 +1022,7 @@
   - @scalar/swagger-parser@0.5.14
   - @readyapi/use-codemirror@0.7.19
   - @scalar/use-clipboard@0.5.13
-  - @scalar/use-tooltip@0.5.8
+  - @readyapi/use-tooltip@0.5.8
   - @readyapi/api-client@0.9.2
   - @readyapi/components@0.2.2
   - @scalar/use-toasts@0.5.13
@@ -1417,7 +1417,7 @@
   - @scalar/swagger-parser@0.5.12
   - @readyapi/use-codemirror@0.7.15
   - @scalar/use-clipboard@0.5.9
-  - @scalar/use-tooltip@0.5.7
+  - @readyapi/use-tooltip@0.5.7
   - @readyapi/api-client@0.7.34
   - @scalar/use-toasts@0.5.9
   - @readyapi/use-modal@0.1.9
@@ -1431,7 +1431,7 @@
   - @scalar/use-keyboard-event@0.5.5
   - @scalar/swagger-editor@0.7.9
   - @readyapi/use-codemirror@0.7.14
-  - @scalar/use-tooltip@0.5.6
+  - @readyapi/use-tooltip@0.5.6
   - @readyapi/api-client@0.7.33
   - @scalar/use-toasts@0.5.8
   - @readyapi/use-modal@0.1.8
@@ -1450,7 +1450,7 @@
   - @scalar/swagger-parser@0.5.11
   - @readyapi/use-codemirror@0.7.13
   - @scalar/use-clipboard@0.5.7
-  - @scalar/use-tooltip@0.5.5
+  - @readyapi/use-tooltip@0.5.5
   - @readyapi/api-client@0.7.32
   - @scalar/use-toasts@0.5.7
   - @readyapi/use-modal@0.1.7
@@ -1905,7 +1905,7 @@
   - @scalar/swagger-parser@0.5.3
   - @readyapi/use-codemirror@0.7.8
   - @scalar/use-clipboard@0.5.5
-  - @scalar/use-tooltip@0.5.4
+  - @readyapi/use-tooltip@0.5.4
   - @readyapi/api-client@0.7.16
   - @scalar/use-toasts@0.5.5
   - @readyapi/themes@0.3.11
@@ -1933,7 +1933,7 @@
   - @scalar/swagger-editor@0.6.19
   - @readyapi/use-codemirror@0.7.7
   - @scalar/use-clipboard@0.5.4
-  - @scalar/use-tooltip@0.5.3
+  - @readyapi/use-tooltip@0.5.3
   - @scalar/use-toasts@0.5.4
   - @readyapi/use-modal@0.1.4
   - @readyapi/themes@0.3.10
@@ -2113,7 +2113,7 @@
   - @scalar/swagger-parser@0.5.1
   - @readyapi/use-codemirror@0.7.1
   - @scalar/use-clipboard@0.5.2
-  - @scalar/use-tooltip@0.5.2
+  - @readyapi/use-tooltip@0.5.2
   - @scalar/use-toasts@0.5.2
   - @readyapi/themes@0.3.3
 
@@ -2152,7 +2152,7 @@
   - @readyapi/use-codemirror@0.7.0
   - @scalar/default-theme@0.3.1
   - @readyapi/api-client@0.7.0
-  - @scalar/use-tooltip@0.5.1
+  - @readyapi/use-tooltip@0.5.1
   - @scalar/use-toasts@0.5.1
   - @scalar/use-clipboard@0.5.1
 
@@ -2182,7 +2182,7 @@
   - @readyapi/use-codemirror@0.6.0
   - @readyapi/themes@0.3.0
   - @scalar/use-clipboard@0.5.0
-  - @scalar/use-tooltip@0.5.0
+  - @readyapi/use-tooltip@0.5.0
   - @readyapi/api-client@0.6.0
   - @scalar/use-toasts@0.5.0
 
@@ -2232,7 +2232,7 @@
   - @scalar/swagger-parser@0.4.3
   - @readyapi/use-codemirror@0.5.1
   - @scalar/use-clipboard@0.4.2
-  - @scalar/use-tooltip@0.4.2
+  - @readyapi/use-tooltip@0.4.2
   - @readyapi/api-client@0.5.2
 
 ## 0.5.1
@@ -2268,7 +2268,7 @@
   - @scalar/swagger-parser@0.4.1
   - @readyapi/themes@0.2.1
   - @scalar/use-clipboard@0.4.1
-  - @scalar/use-tooltip@0.4.1
+  - @readyapi/use-tooltip@0.4.1
   - @scalar/use-toasts@0.4.1
 
 ## 0.4.0
@@ -2287,7 +2287,7 @@
   - @scalar/use-clipboard@0.4.0
   - @scalar/use-keyboard-event@0.4.0
   - @scalar/use-toasts@0.4.0
-  - @scalar/use-tooltip@0.4.0
+  - @readyapi/use-tooltip@0.4.0
 
 ## 0.3.4
 
@@ -2336,7 +2336,7 @@
   - @scalar/use-clipboard@0.3.0
   - @scalar/use-keyboard-event@0.3.0
   - @scalar/use-toasts@0.3.0
-  - @scalar/use-tooltip@0.3.0
+  - @readyapi/use-tooltip@0.3.0
 
 ## 0.2.1
 
@@ -2361,7 +2361,7 @@
   - @scalar/swagger-parser@0.2.0
   - @scalar/use-clipboard@0.2.0
   - @scalar/use-keyboard-event@0.2.0
-  - @scalar/use-tooltip@0.2.0
+  - @readyapi/use-tooltip@0.2.0
 
 ## 0.1.31
 
@@ -2574,7 +2574,7 @@
   - @readyapi/api-client@0.1.4
   - @scalar/swagger-editor@0.1.4
   - @scalar/use-clipboard@0.1.4
-  - @scalar/use-tooltip@0.1.4
+  - @readyapi/use-tooltip@0.1.4
 
 ## 0.1.4
 
@@ -2586,7 +2586,7 @@
   - @scalar/swagger-editor@0.1.3
   - @scalar/use-clipboard@0.1.3
   - @readyapi/use-codemirror@0.1.3
-  - @scalar/use-tooltip@0.1.3
+  - @readyapi/use-tooltip@0.1.3
 
 ## 0.1.3
 
@@ -2604,7 +2604,7 @@
   - @scalar/swagger-editor@0.1.2
   - @scalar/use-clipboard@0.1.2
   - @readyapi/use-codemirror@0.1.2
-  - @scalar/use-tooltip@0.1.2
+  - @readyapi/use-tooltip@0.1.2
 
 ## 0.1.1
 
@@ -2616,4 +2616,4 @@
   - @scalar/swagger-editor@0.1.1
   - @scalar/use-clipboard@0.1.1
   - @readyapi/use-codemirror@0.1.1
-  - @scalar/use-tooltip@0.1.1
+  - @readyapi/use-tooltip@0.1.1

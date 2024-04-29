@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { ScalarIcon } from '@readyapi/components'
-import type { OpenAPIV3, OpenAPIV3_1 } from '@scalar/openapi-parser'
+import type { OpenAPIV3, OpenAPIV3_1 } from '@readyapi/openapi-parser'
 import { computed, onMounted, onServerPrefetch } from 'vue'
 
 import { useAuthenticationStore } from '../../../../stores'

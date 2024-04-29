@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { CodeMirror } from '@readyapi/use-codemirror'
 import { FlowModal, useModal } from '@readyapi/use-modal'
-import { isMacOS } from '@scalar/use-tooltip'
+import { isMacOS } from '@readyapi/use-tooltip'
 import { useMagicKeys, whenever } from '@vueuse/core'
 import { computed, ref } from 'vue'
 
