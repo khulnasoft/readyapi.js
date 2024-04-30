@@ -1,44 +1,44 @@
 import type { App } from 'vue'
 
-import { ScalarButton } from './components/ScalarButton'
-import { ScalarCodeBlock } from './components/ScalarCodeBlock'
-import { type Icon, ScalarIcon } from './components/ScalarIcon'
-import { ScalarIconButton } from './components/ScalarIconButton'
-import { ScalarLoading, useLoadingState } from './components/ScalarLoading'
-import { ScalarModal, useModal } from './components/ScalarModal'
-import { ScalarSearchInput } from './components/ScalarSearchInput'
+import { ReadyapiButton } from './components/ReadyapiButton'
+import { ReadyapiCodeBlock } from './components/ReadyapiCodeBlock'
+import { type Icon, ReadyapiIcon } from './components/ReadyapiIcon'
+import { ReadyapiIconButton } from './components/ReadyapiIconButton'
+import { ReadyapiLoading, useLoadingState } from './components/ReadyapiLoading'
+import { ReadyapiModal, useModal } from './components/ReadyapiModal'
+import { ReadyapiSearchInput } from './components/ReadyapiSearchInput'
 import {
-  ScalarSearchResultItem,
-  ScalarSearchResultList,
-} from './components/ScalarSearchResults'
-import { ScalarTextField } from './components/ScalarTextField'
+  ReadyapiSearchResultItem,
+  ReadyapiSearchResultList,
+} from './components/ReadyapiSearchResults'
+import { ReadyapiTextField } from './components/ReadyapiTextField'
 import './tailwind/tailwind.css'
 
 export default {
   install: (app: App) => {
-    app.component('ScalarButton', ScalarButton)
-    app.component('ScalarIcon', ScalarIcon)
-    app.component('ScalarIconButton', ScalarIconButton)
-    app.component('ScalarLoading', ScalarLoading)
-    app.component('ScalarModal', ScalarModal)
-    app.component('ScalarSearchInput', ScalarSearchInput)
-    app.component('ScalarSearchResultItem', ScalarSearchResultItem)
-    app.component('ScalarSearchResultList', ScalarSearchResultList)
-    app.component('ScalarTextField', ScalarTextField)
+    app.component('ReadyapiButton', ReadyapiButton)
+    app.component('ReadyapiIcon', ReadyapiIcon)
+    app.component('ReadyapiIconButton', ReadyapiIconButton)
+    app.component('ReadyapiLoading', ReadyapiLoading)
+    app.component('ReadyapiModal', ReadyapiModal)
+    app.component('ReadyapiSearchInput', ReadyapiSearchInput)
+    app.component('ReadyapiSearchResultItem', ReadyapiSearchResultItem)
+    app.component('ReadyapiSearchResultList', ReadyapiSearchResultList)
+    app.component('ReadyapiTextField', ReadyapiTextField)
   },
 }
 
 export {
-  ScalarButton,
-  ScalarCodeBlock,
-  ScalarIcon,
-  ScalarIconButton,
-  ScalarLoading,
-  ScalarModal,
-  ScalarSearchInput,
-  ScalarSearchResultItem,
-  ScalarSearchResultList,
-  ScalarTextField,
+  ReadyapiButton,
+  ReadyapiCodeBlock,
+  ReadyapiIcon,
+  ReadyapiIconButton,
+  ReadyapiLoading,
+  ReadyapiModal,
+  ReadyapiSearchInput,
+  ReadyapiSearchResultItem,
+  ReadyapiSearchResultList,
+  ReadyapiTextField,
   type Icon,
   useLoadingState,
   useModal,
