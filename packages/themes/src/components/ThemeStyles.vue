@@ -18,6 +18,6 @@ withDefaults(
   <component
     :is="'style'"
     v-if="id !== 'none'">
-    {{ getThemeById(id, { layer: 'scalar-theme' }) }}
+    {{ getThemeById(id, { layer: 'readyapi-theme' }) }}
   </component>
 </template>

@@ -1,16 +1,16 @@
 {
   "name": "@readyapi/themes",
-  "description": "the default CSS variables for all Scalar packages",
+  "description": "the default CSS variables for all Readyapi packages",
   "license": "MIT",
-  "author": "Scalar (https://github.com/scalar)",
+  "author": "KhulnaSoft (https://github.com/khulnasoft)",
   "homepage": "https://github.com/khulnasoft/readyapi.js",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "keywords": [
     "css",
     "css-variables",
-    "scalar"
+    "readyapi"
   ],
-  "version": "0.7.6",
+  "version": "0.0.1",
   "engines": {
     "node": ">=18"
   },
