@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import {
+  ReadyapiCodeBlock,
+  ReadyapiIcon,
+} from '@ready-api.khulnasoft.components'
+import {
   HttpMethod,
   getRequestFromAuthentication,
   getSecretCredentialsFromAuthentication,
   useAuthenticationStore,
 } from '@readyapi/api-client'
-import { ReadyapiCodeBlock, ReadyapiIcon } from '@ready-api.khulnasoft.components'
 import {
   type ExampleRequestSSRKey,
   type SSRState,
@@ -15,7 +18,7 @@ import {
   getRequestFromOperation,
   ssrState,
 } from '@readyapi/oas-utils'
-import { snippetz } from '@readyapi/snippetz'
+import { snippetz } from '@scalar/snippetz'
 import { HTTPSnippet } from 'httpsnippet-lite'
 import {
   computed,

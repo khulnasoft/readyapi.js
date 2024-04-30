@@ -2,7 +2,7 @@
   "name": "@readyapi/use-codemirror",
   "description": "CodeMirror for Vue",
   "license": "MIT",
-  "author": "Readyapi (https://github.com/readyapi)",
+  "author": "KhulnaSoft (https://github.com/khulnasoft)",
   "homepage": "https://github.com/khulnasoft/readyapi.js",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "keywords": [
