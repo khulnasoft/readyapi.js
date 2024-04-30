@@ -2,7 +2,7 @@
   "name": "@readyapi-examples/nestjs-api-reference-express",
   "description": "Nest TypeScript starter repository with fastify as http adapter",
   "license": "MIT",
-  "author": "Scalar (https://github.com/scalar)",
+  "author": "KhulnaSoft (https://github.com/khulnasoft)",
   "homepage": "https://github.com/khulnasoft/readyapi.js",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "version": "1.0.0",

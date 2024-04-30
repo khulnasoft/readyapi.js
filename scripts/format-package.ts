@@ -49,7 +49,7 @@ const sortKeys = ['dependencies', 'devDependencies', 'scripts']
 /** Provide hardcoded overrides for some fields */
 const overrides: Record<string, unknown> = {
   license: 'MIT',
-  author: 'Scalar (https://github.com/scalar)',
+  author: 'KhulnaSoft (https://github.com/khulnasoft)',
   bugs: 'https://github.com/khulnasoft/readyapi.js/issues/new/choose',
   homepage: 'https://github.com/khulnasoft/readyapi.js',
 }
