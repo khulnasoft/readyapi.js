@@ -5,7 +5,7 @@ Readyapis internal component library now open sourced and [almost] ready to use!
 ## Install
 
 ```bash
-pnpm i @readyapi/theme @ready-api.khulnasoft.components
+pnpm i @readyapi/theme @readyapi/components
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ Then to use the components
 
 ```vue
 <script setup lang="ts">
-import { ReadyapiButton, ReadyapiTextField } from '@ready-api.khulnasoft.components'
+import { ReadyapiButton, ReadyapiTextField } from '@readyapi/components'
 </script>
 
 <template>

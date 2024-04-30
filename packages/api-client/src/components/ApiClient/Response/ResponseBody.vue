@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ReadyapiCodeBlock } from '@ready-api.khulnasoft.components'
+import { ReadyapiCodeBlock } from '@readyapi/components'
 import contentType from 'content-type'
 import { computed } from 'vue'
 

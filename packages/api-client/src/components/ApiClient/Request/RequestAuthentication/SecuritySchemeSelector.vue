@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ReadyapiIcon } from '@ready-api.khulnasoft.components'
+import { ReadyapiIcon } from '@readyapi/components'
 import type { OpenAPIV3, OpenAPIV3_1 } from '@readyapi/openapi-parser'
 import { computed, onMounted, onServerPrefetch } from 'vue'
 

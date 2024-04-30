@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ReadyapiCodeBlock, ReadyapiIcon } from '@ready-api.khulnasoft.components'
+import { ReadyapiCodeBlock, ReadyapiIcon } from '@readyapi/components'
 import type { TransformedOperation } from '@readyapi/oas-utils'
 import { computed, ref } from 'vue'
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ReadyapiButton } from '@ready-api.khulnasoft.components'
+import { ReadyapiButton } from '@readyapi/components'
 
 import GridRow from './GridRow.vue'
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
-import { ReadyapiIcon } from '@ready-api.khulnasoft.components'
+import { ReadyapiIcon } from '@readyapi/components'
 import { useElementHover } from '@vueuse/core'
 import { ref } from 'vue'
 

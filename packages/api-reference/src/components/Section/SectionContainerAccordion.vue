@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
-import { ReadyapiIcon } from '@ready-api.khulnasoft.components'
+import { ReadyapiIcon } from '@readyapi/components'
 </script>
 <template>
   <div class="section-accordion-wrapper">

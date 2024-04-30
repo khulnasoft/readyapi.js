@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ReadyapiButton } from '@ready-api.khulnasoft.components'
+import { ReadyapiButton } from '@readyapi/components'
 import { type ThemeId, themeLabels } from '@readyapi/themes'
 
 import placeholderSpecification from '../../../../specifications/readyapi-galaxy-3.1.json?raw'
@@ -416,7 +416,11 @@ function handleEmitPetstore() {
       var(--readyapi-border-color) 1px,
       transparent 1px
     ),
-    linear-gradient(to bottom, var(--readyapi-border-color) 1px, transparent 1px);
+    linear-gradient(
+      to bottom,
+      var(--readyapi-border-color) 1px,
+      transparent 1px
+    );
 }
 .start-logo svg {
   width: 100%;

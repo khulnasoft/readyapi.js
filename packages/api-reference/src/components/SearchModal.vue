@@ -4,7 +4,7 @@ import {
   ReadyapiSearchInput,
   ReadyapiSearchResultItem,
   ReadyapiSearchResultList,
-} from '@ready-api.khulnasoft.components'
+} from '@readyapi/components'
 import { type TransformedOperation } from '@readyapi/oas-utils'
 import type { OpenAPIV3_1 } from '@readyapi/openapi-parser'
 import { FlowModal, type ModalState } from '@readyapi/use-modal'

@@ -5,7 +5,7 @@
 ### Patch Changes
 
 - Updated dependencies [fc2c90f]
-  - @ready-api.khulnasoft.components@0.6.0
+  - @readyapi/components@0.6.0
 
 ## 1.2.9
 
@@ -13,14 +13,14 @@
 
 - Updated dependencies [0a77380]
   - @readyapi/themes@0.7.6
-  - @ready-api.khulnasoft.components@0.5.5
+  - @readyapi/components@0.5.5
 
 ## 1.2.8
 
 ### Patch Changes
 
 - Updated dependencies [2700c5c]
-  - @ready-api.khulnasoft.components@0.5.5
+  - @readyapi/components@0.5.5
   - @readyapi/themes@0.7.5
 
 ## 1.2.7
@@ -29,7 +29,7 @@
 
 - Updated dependencies [79485ff]
 - Updated dependencies [92b5b2a]
-  - @ready-api.khulnasoft.components@0.5.4
+  - @readyapi/components@0.5.4
 
 ## 1.2.6
 
@@ -38,7 +38,7 @@
 - Updated dependencies [86d1363]
 - Updated dependencies [bc3f3af]
   - @readyapi/themes@0.7.4
-  - @ready-api.khulnasoft.components@0.5.3
+  - @readyapi/components@0.5.3
 
 ## 1.2.5
 
@@ -46,7 +46,7 @@
 
 - Updated dependencies [e8ef57e]
 - Updated dependencies [1353154]
-  - @ready-api.khulnasoft.components@0.5.2
+  - @readyapi/components@0.5.2
 
 ## 1.2.4
 
@@ -54,7 +54,7 @@
 
 - Updated dependencies [4d31b19]
   - @readyapi/themes@0.7.3
-  - @ready-api.khulnasoft.components@0.5.1
+  - @readyapi/components@0.5.1
 
 ## 1.2.3
 
@@ -63,7 +63,7 @@
 - Updated dependencies [96ded16]
 - Updated dependencies [24662c3]
   - @readyapi/use-codemirror@0.10.1
-  - @ready-api.khulnasoft.components@0.5.1
+  - @readyapi/components@0.5.1
 
 ## 1.2.2
 
@@ -71,7 +71,7 @@
 
 - Updated dependencies [85a0074]
   - @readyapi/themes@0.7.2
-  - @ready-api.khulnasoft.components@0.5.0
+  - @readyapi/components@0.5.0
 
 ## 1.2.1
 
@@ -80,7 +80,7 @@
 - d77acdd: fix: missing css font
 - Updated dependencies [d77acdd]
   - @readyapi/themes@0.7.1
-  - @ready-api.khulnasoft.components@0.5.0
+  - @readyapi/components@0.5.0
 
 ## 1.2.0
 
@@ -95,7 +95,7 @@
 - Updated dependencies [0e64a36]
   - @readyapi/use-codemirror@0.10.0
   - @readyapi/use-tooltip@0.6.0
-  - @ready-api.khulnasoft.components@0.5.0
+  - @readyapi/components@0.5.0
   - @readyapi/oas-utils@0.1.6
   - @readyapi/use-modal@0.3.0
   - @readyapi/themes@0.7.0
@@ -109,7 +109,7 @@
 - Updated dependencies [3ba9774]
   - @readyapi/use-modal@0.2.10
   - @readyapi/oas-utils@0.1.5
-  - @ready-api.khulnasoft.components@0.4.11
+  - @readyapi/components@0.4.11
 
 ## 1.1.15
 
@@ -123,7 +123,7 @@
 ### Patch Changes
 
 - Updated dependencies [95bac72]
-  - @ready-api.khulnasoft.components@0.4.10
+  - @readyapi/components@0.4.10
 
 ## 1.1.13
 
@@ -137,7 +137,7 @@
 
 - c14568f: feat: add custom security option
 - Updated dependencies [c14568f]
-  - @ready-api.khulnasoft.components@0.4.9
+  - @readyapi/components@0.4.9
   - @readyapi/oas-utils@0.1.3
 
 ## 1.1.11
@@ -160,7 +160,7 @@
 
 - Updated dependencies [d70bda7]
   - @readyapi/themes@0.6.7
-  - @ready-api.khulnasoft.components@0.4.8
+  - @readyapi/components@0.4.8
 
 ## 1.1.8
 
@@ -173,21 +173,21 @@
 - Updated dependencies [ae193a8]
   - @readyapi/themes@0.6.6
   - @readyapi/use-codemirror@0.9.1
-  - @ready-api.khulnasoft.components@0.4.8
+  - @readyapi/components@0.4.8
 
 ## 1.1.7
 
 ### Patch Changes
 
 - Updated dependencies [f861efa]
-  - @ready-api.khulnasoft.components@0.4.7
+  - @readyapi/components@0.4.7
 
 ## 1.1.6
 
 ### Patch Changes
 
 - Updated dependencies [7d0092e]
-  - @ready-api.khulnasoft.components@0.4.6
+  - @readyapi/components@0.4.6
 
 ## 1.1.5
 
@@ -200,7 +200,7 @@
 ### Patch Changes
 
 - Updated dependencies [42b385b]
-  - @ready-api.khulnasoft.components@0.4.5
+  - @readyapi/components@0.4.5
 
 ## 1.1.3
 
@@ -208,7 +208,7 @@
 
 - Updated dependencies [0c5e22c]
   - @readyapi/themes@0.6.5
-  - @ready-api.khulnasoft.components@0.4.4
+  - @readyapi/components@0.4.4
 
 ## 1.1.2
 
@@ -245,7 +245,7 @@
 
 - Updated dependencies [68cda2b]
   - @readyapi/themes@0.6.4
-  - @ready-api.khulnasoft.components@0.4.4
+  - @readyapi/components@0.4.4
 
 ## 1.0.1
 
@@ -253,7 +253,7 @@
 
 - Updated dependencies [bbbba1f]
 - Updated dependencies [897990b]
-  - @ready-api.khulnasoft.components@0.4.4
+  - @readyapi/components@0.4.4
   - @readyapi/themes@0.6.3
 
 ## 1.0.0
@@ -288,7 +288,7 @@
 - Updated dependencies [ddc9b17]
 - Updated dependencies [775646a]
 - Updated dependencies [ef3a015]
-  - @ready-api.khulnasoft.components@0.4.3
+  - @readyapi/components@0.4.3
   - @readyapi/themes@0.6.2
   - @readyapi/use-codemirror@0.8.9
   - @readyapi/use-modal@0.2.9
@@ -299,7 +299,7 @@
 
 - Updated dependencies [4ef178f]
   - @readyapi/themes@0.6.1
-  - @ready-api.khulnasoft.components@0.4.2
+  - @readyapi/components@0.4.2
 
 ## 0.12.15
 
@@ -308,7 +308,7 @@
 - Updated dependencies [ad2b95a]
 - Updated dependencies [ad2b95a]
   - @readyapi/themes@0.6.0
-  - @ready-api.khulnasoft.components@0.4.2
+  - @readyapi/components@0.4.2
 
 ## 0.12.14
 
@@ -316,7 +316,7 @@
 
 - 3b672cc: fix: revert css changes to components lib
 - Updated dependencies [3b672cc]
-  - @ready-api.khulnasoft.components@0.4.2
+  - @readyapi/components@0.4.2
 
 ## 0.12.13
 
@@ -324,7 +324,7 @@
 
 - c5e8b13: feat: hide secret credentials
 - Updated dependencies [c5e8b13]
-  - @ready-api.khulnasoft.components@0.4.1
+  - @readyapi/components@0.4.1
 
 ## 0.12.12
 
@@ -333,7 +333,7 @@
 - 5bc2ebf: Add syntax highlighting back to codemirror
 - Updated dependencies [407a3af]
 - Updated dependencies [5bc2ebf]
-  - @ready-api.khulnasoft.components@0.4.0
+  - @readyapi/components@0.4.0
   - @readyapi/use-codemirror@0.8.8
 
 ## 0.12.11
@@ -355,7 +355,7 @@
 
 - 6857b8d: fix: api client syntax highlighting
 - Updated dependencies [6857b8d]
-  - @ready-api.khulnasoft.components@0.3.0
+  - @readyapi/components@0.3.0
 
 ## 0.12.8
 
@@ -363,7 +363,7 @@
 
 - Updated dependencies [51acf2c]
   - @readyapi/themes@0.5.10
-  - @ready-api.khulnasoft.components@0.2.6
+  - @readyapi/components@0.2.6
 
 ## 0.12.7
 
@@ -371,7 +371,7 @@
 
 - Updated dependencies [c103201]
 - Updated dependencies [d2728c8]
-  - @ready-api.khulnasoft.components@0.2.6
+  - @readyapi/components@0.2.6
   - @readyapi/themes@0.5.9
 
 ## 0.12.6
@@ -389,7 +389,7 @@
 - Updated dependencies [1669b27]
 - Updated dependencies [7ea052b]
   - @readyapi/use-codemirror@0.8.6
-  - @ready-api.khulnasoft.components@0.2.5
+  - @readyapi/components@0.2.5
   - @readyapi/use-modal@0.2.8
   - @readyapi/themes@0.5.8
 
@@ -400,7 +400,7 @@
 - c6b95ca: chore: upgrade from Vite 4 to Vite 5
 - Updated dependencies [c6b95ca]
   - @readyapi/use-codemirror@0.8.5
-  - @ready-api.khulnasoft.components@0.2.4
+  - @readyapi/components@0.2.4
   - @readyapi/use-modal@0.2.7
   - @readyapi/themes@0.5.7
 
@@ -420,7 +420,7 @@
 - Updated dependencies [5b3f7d9]
   - @readyapi/use-modal@0.2.5
   - @readyapi/themes@0.5.6
-  - @ready-api.khulnasoft.components@0.2.3
+  - @readyapi/components@0.2.3
 
 ## 0.12.1
 
@@ -443,7 +443,7 @@
 - Updated dependencies [abfb086]
   - @readyapi/use-keyboard-event@0.5.9
   - @readyapi/use-codemirror@0.8.4
-  - @ready-api.khulnasoft.components@0.2.3
+  - @readyapi/components@0.2.3
   - @readyapi/use-modal@0.2.4
   - @readyapi/themes@0.5.5
 

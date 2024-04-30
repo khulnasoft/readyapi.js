@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ReadyapiCodeBlock } from '@ready-api.khulnasoft.components'
+import { ReadyapiCodeBlock } from '@readyapi/components'
 import { getExampleFromSchema, prettyPrintJson } from '@readyapi/oas-utils'
 
 defineProps<{

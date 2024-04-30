@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import { type Icon, ReadyapiIcon, ReadyapiIconButton } from '@ready-api.khulnasoft.components'
+import {
+  type Icon,
+  ReadyapiIcon,
+  ReadyapiIconButton,
+} from '@readyapi/components'
 
 import { scrollToId, sleep } from '../../helpers'
 import { useNavState } from '../../hooks'

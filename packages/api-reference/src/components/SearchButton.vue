@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ReadyapiIcon } from '@ready-api.khulnasoft.components'
+import { ReadyapiIcon } from '@readyapi/components'
 import { useModal } from '@readyapi/use-modal'
 import { isMacOS } from '@readyapi/use-tooltip'
 import { useMagicKeys, whenever } from '@vueuse/core'

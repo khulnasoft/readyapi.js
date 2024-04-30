@@ -13,7 +13,7 @@ export default defineConfig({
     lib: {
       // Could also be a dictionary or array of multiple entry points
       entry: './src/index.ts',
-      name: '@ready-api.khulnasoft.components',
+      name: '@readyapi/components',
       formats: ['es', 'cjs'],
       fileName: 'index',
       // the proper extensions will be added

@@ -103,7 +103,7 @@ import PageLink from '../components/PageLink.vue'
         <template #description>@readyapi/nestjs-api-reference</template>
       </PageLink>
     </div>
-    <h1>@ready-api.khulnasoft.components</h1>
+    <h1>@readyapi/components</h1>
     <div class="page-links">
       <PageLink href="http://localhost:5100">
         <template #title>Components</template>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { HttpMethod } from '@readyapi/api-client'
-import { ReadyapiIcon, ReadyapiIconButton } from '@ready-api.khulnasoft.components'
+import { ReadyapiIcon, ReadyapiIconButton } from '@readyapi/components'
 import type { TransformedOperation } from '@readyapi/oas-utils'
 
 import { useClipboard } from '../../../hooks'

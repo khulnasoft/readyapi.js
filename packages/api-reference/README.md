@@ -70,7 +70,9 @@ Making requests to other domains is restricted in the browser and requires [CORS
 
 ```vue
 <ApiReference
-  :configuration="{ proxy: 'https://api.ready-api.khulnasoft.com/request-proxy' }" />
+  :configuration="{
+    proxy: 'https://api.ready-api.khulnasoft.com/request-proxy',
+  }" />
 ```
 
 #### showSidebar?: boolean

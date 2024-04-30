@@ -184,7 +184,10 @@ onMounted(() => {
   flex-direction: column;
   border-right: 1px solid
     var(--readyapi-sidebar-border-color, var(--readyapi-border-color));
-  background: var(--readyapi-sidebar-background-1, var(--readyapi-background-1));
+  background: var(
+    --readyapi-sidebar-background-1,
+    var(--readyapi-background-1)
+  );
   --readyapi-sidebar-level: 0;
 }
 .sidebar-pages {

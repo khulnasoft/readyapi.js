@@ -56,7 +56,9 @@ export default defineNuxtModule<ModuleOptions>({
     addComponent({
       name: 'ReadyapiApiReference',
       export: 'default',
-      filePath: resolver.resolve('./runtime/components/ReadyapiApiReference.vue'),
+      filePath: resolver.resolve(
+        './runtime/components/ReadyapiApiReference.vue',
+      ),
     })
 
     // Add the route for the docs

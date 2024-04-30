@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ReadyapiIcon } from '@ready-api.khulnasoft.components'
+import { ReadyapiIcon } from '@readyapi/components'
 
 import { useSidebar } from '../hooks'
 

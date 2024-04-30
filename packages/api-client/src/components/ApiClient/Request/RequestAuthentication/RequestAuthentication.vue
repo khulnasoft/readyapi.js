@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ReadyapiButton } from '@ready-api.khulnasoft.components'
+import { ReadyapiButton } from '@readyapi/components'
 import type { OpenAPIV3_1 } from '@readyapi/openapi-parser'
 import { ref } from 'vue'
 

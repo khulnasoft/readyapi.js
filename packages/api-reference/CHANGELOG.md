@@ -6,7 +6,7 @@
 
 - fc2c90f: feat: cleanup component library icons
 - Updated dependencies [fc2c90f]
-  - @ready-api.khulnasoft.components@0.6.0
+  - @readyapi/components@0.6.0
   - @readyapi/api-client@1.2.10
 
 ## 1.22.14
@@ -17,7 +17,7 @@
 - Updated dependencies [0a77380]
   - @readyapi/themes@0.7.6
   - @readyapi/api-client@1.2.9
-  - @ready-api.khulnasoft.components@0.5.5
+  - @readyapi/components@0.5.5
 
 ## 1.22.13
 
@@ -26,7 +26,7 @@
 - c05c90e: feat: add image support to tag, operation and webhook descriptions
 - 2700c5c: feat: separate google fonts from theme, add withDefaultFonts setting
 - Updated dependencies [2700c5c]
-  - @ready-api.khulnasoft.components@0.5.5
+  - @readyapi/components@0.5.5
   - @readyapi/themes@0.7.5
   - @readyapi/api-client@1.2.8
 
@@ -37,7 +37,7 @@
 - 55398db: fix: summary markdown, add default browser styling
 - Updated dependencies [79485ff]
 - Updated dependencies [92b5b2a]
-  - @ready-api.khulnasoft.components@0.5.4
+  - @readyapi/components@0.5.4
   - @readyapi/api-client@1.2.7
 
 ## 1.22.11
@@ -49,7 +49,7 @@
 - Updated dependencies [86d1363]
 - Updated dependencies [bc3f3af]
   - @readyapi/themes@0.7.4
-  - @ready-api.khulnasoft.components@0.5.3
+  - @readyapi/components@0.5.3
   - @readyapi/api-client@1.2.6
 
 ## 1.22.10
@@ -58,7 +58,7 @@
 
 - Updated dependencies [e8ef57e]
 - Updated dependencies [1353154]
-  - @ready-api.khulnasoft.components@0.5.2
+  - @readyapi/components@0.5.2
   - @readyapi/api-client@1.2.5
 
 ## 1.22.9
@@ -70,7 +70,7 @@
 - Updated dependencies [4d31b19]
   - @readyapi/themes@0.7.3
   - @readyapi/api-client@1.2.4
-  - @ready-api.khulnasoft.components@0.5.1
+  - @readyapi/components@0.5.1
 
 ## 1.22.8
 
@@ -78,7 +78,7 @@
 
 - 24662c3: feat: rebuild search modal
 - Updated dependencies [24662c3]
-  - @ready-api.khulnasoft.components@0.5.1
+  - @readyapi/components@0.5.1
   - @readyapi/api-client@1.2.3
 
 ## 1.22.7
@@ -113,7 +113,7 @@
 - Updated dependencies [85a0074]
   - @readyapi/themes@0.7.2
   - @readyapi/api-client@1.2.2
-  - @ready-api.khulnasoft.components@0.5.0
+  - @readyapi/components@0.5.0
 
 ## 1.22.2
 
@@ -122,7 +122,7 @@
 - Updated dependencies [d77acdd]
   - @readyapi/api-client@1.2.1
   - @readyapi/themes@0.7.1
-  - @ready-api.khulnasoft.components@0.5.0
+  - @readyapi/components@0.5.0
 
 ## 1.22.1
 
@@ -145,7 +145,7 @@
 - Updated dependencies [0e64a36]
   - @readyapi/use-tooltip@0.6.0
   - @readyapi/api-client@1.2.0
-  - @ready-api.khulnasoft.components@0.5.0
+  - @readyapi/components@0.5.0
   - @readyapi/oas-utils@0.1.6
   - @readyapi/use-modal@0.3.0
   - @readyapi/themes@0.7.0
@@ -187,7 +187,7 @@
 - Updated dependencies [3ba9774]
   - @readyapi/use-modal@0.2.10
   - @readyapi/oas-utils@0.1.5
-  - @ready-api.khulnasoft.components@0.4.11
+  - @readyapi/components@0.4.11
   - @readyapi/api-client@1.1.16
 
 ## 1.20.29
@@ -234,7 +234,7 @@
 ### Patch Changes
 
 - Updated dependencies [95bac72]
-  - @ready-api.khulnasoft.components@0.4.10
+  - @readyapi/components@0.4.10
   - @readyapi/api-client@1.1.14
 
 ## 1.20.22
@@ -256,7 +256,7 @@
 
 - Updated dependencies [c14568f]
   - @readyapi/api-client@1.1.12
-  - @ready-api.khulnasoft.components@0.4.9
+  - @readyapi/components@0.4.9
   - @readyapi/oas-utils@0.1.3
 
 ## 1.20.18
@@ -317,7 +317,7 @@
 - Updated dependencies [d70bda7]
   - @readyapi/themes@0.6.7
   - @readyapi/api-client@1.1.9
-  - @ready-api.khulnasoft.components@0.4.8
+  - @readyapi/components@0.4.8
 
 ## 1.20.10
 
@@ -330,7 +330,7 @@
 - Updated dependencies [ae193a8]
   - @readyapi/themes@0.6.6
   - @readyapi/api-client@1.1.8
-  - @ready-api.khulnasoft.components@0.4.8
+  - @readyapi/components@0.4.8
 
 ## 1.20.9
 
@@ -339,7 +339,7 @@
 - 5260d07: feat: description for any
 - f861efa: chore: changed svg rendering strategy
 - Updated dependencies [f861efa]
-  - @ready-api.khulnasoft.components@0.4.7
+  - @readyapi/components@0.4.7
   - @readyapi/api-client@1.1.7
 
 ## 1.20.8
@@ -347,7 +347,7 @@
 ### Patch Changes
 
 - Updated dependencies [7d0092e]
-  - @ready-api.khulnasoft.components@0.4.6
+  - @readyapi/components@0.4.6
   - @readyapi/api-client@1.1.6
 
 ## 1.20.7
@@ -364,7 +364,7 @@
 ### Patch Changes
 
 - Updated dependencies [42b385b]
-  - @ready-api.khulnasoft.components@0.4.5
+  - @readyapi/components@0.4.5
   - @readyapi/api-client@1.1.4
 
 ## 1.20.5
@@ -375,7 +375,7 @@
 - Updated dependencies [0c5e22c]
   - @readyapi/themes@0.6.5
   - @readyapi/api-client@1.1.3
-  - @ready-api.khulnasoft.components@0.4.4
+  - @readyapi/components@0.4.4
 
 ## 1.20.4
 
@@ -459,7 +459,7 @@
 - Updated dependencies [68cda2b]
   - @readyapi/themes@0.6.4
   - @readyapi/api-client@1.0.2
-  - @ready-api.khulnasoft.components@0.4.4
+  - @readyapi/components@0.4.4
   - @readyapi/swagger-editor@1.0.2
 
 ## 1.19.2
@@ -468,7 +468,7 @@
 
 - Updated dependencies [bbbba1f]
 - Updated dependencies [897990b]
-  - @ready-api.khulnasoft.components@0.4.4
+  - @readyapi/components@0.4.4
   - @readyapi/themes@0.6.3
   - @readyapi/api-client@1.0.1
   - @readyapi/swagger-editor@1.0.1
@@ -544,7 +544,7 @@
 - Updated dependencies [775646a]
 - Updated dependencies [ef3a015]
   - @readyapi/api-client@0.12.17
-  - @ready-api.khulnasoft.components@0.4.3
+  - @readyapi/components@0.4.3
   - @readyapi/themes@0.6.2
   - @readyapi/swagger-parser@0.5.21
   - @readyapi/use-modal@0.2.9
@@ -557,7 +557,7 @@
 - Updated dependencies [4ef178f]
   - @readyapi/themes@0.6.1
   - @readyapi/api-client@0.12.16
-  - @ready-api.khulnasoft.components@0.4.2
+  - @readyapi/components@0.4.2
   - @readyapi/swagger-editor@0.11.1
 
 ## 1.18.0
@@ -574,7 +574,7 @@
   - @readyapi/swagger-editor@0.11.0
   - @readyapi/themes@0.6.0
   - @readyapi/api-client@0.12.15
-  - @ready-api.khulnasoft.components@0.4.2
+  - @readyapi/components@0.4.2
 
 ## 1.17.16
 
@@ -595,7 +595,7 @@
   - @readyapi/swagger-editor@0.10.15
   - @readyapi/swagger-parser@0.5.20
   - @readyapi/api-client@0.12.14
-  - @ready-api.khulnasoft.components@0.4.2
+  - @readyapi/components@0.4.2
 
 ## 1.17.14
 
@@ -611,7 +611,7 @@
 - c5e8b13: feat: hide secret credentials
 - Updated dependencies [c5e8b13]
   - @readyapi/api-client@0.12.13
-  - @ready-api.khulnasoft.components@0.4.1
+  - @readyapi/components@0.4.1
   - @readyapi/swagger-editor@0.10.14
 
 ## 1.17.12
@@ -623,7 +623,7 @@
 - 5bc2ebf: Add syntax highlighting back to codemirror
 - Updated dependencies [407a3af]
 - Updated dependencies [5bc2ebf]
-  - @ready-api.khulnasoft.components@0.4.0
+  - @readyapi/components@0.4.0
   - @readyapi/swagger-editor@0.10.13
   - @readyapi/swagger-parser@0.5.19
   - @readyapi/api-client@0.12.12
@@ -649,7 +649,7 @@
 
 - 6857b8d: fix: api client syntax highlighting
 - Updated dependencies [6857b8d]
-  - @ready-api.khulnasoft.components@0.3.0
+  - @readyapi/components@0.3.0
   - @readyapi/api-client@0.12.9
   - @readyapi/swagger-editor@0.10.11
 
@@ -660,7 +660,7 @@
 - Updated dependencies [51acf2c]
   - @readyapi/themes@0.5.10
   - @readyapi/api-client@0.12.8
-  - @ready-api.khulnasoft.components@0.2.6
+  - @readyapi/components@0.2.6
   - @readyapi/swagger-editor@0.10.10
 
 ## 1.17.7
@@ -673,7 +673,7 @@
 - 36630da: chore: remove coinmarketcap example
 - Updated dependencies [c103201]
 - Updated dependencies [d2728c8]
-  - @ready-api.khulnasoft.components@0.2.6
+  - @readyapi/components@0.2.6
   - @readyapi/themes@0.5.9
   - @readyapi/api-client@0.12.7
   - @readyapi/swagger-editor@0.10.9
@@ -702,7 +702,7 @@
   - @readyapi/swagger-parser@0.5.18
   - @readyapi/use-tooltip@0.5.11
   - @readyapi/api-client@0.12.5
-  - @ready-api.khulnasoft.components@0.2.5
+  - @readyapi/components@0.2.5
   - @readyapi/use-modal@0.2.8
   - @readyapi/themes@0.5.8
 
@@ -717,7 +717,7 @@
   - @readyapi/swagger-parser@0.5.17
   - @readyapi/use-tooltip@0.5.10
   - @readyapi/api-client@0.12.4
-  - @ready-api.khulnasoft.components@0.2.4
+  - @readyapi/components@0.2.4
   - @readyapi/use-toasts@0.5.15
   - @readyapi/use-modal@0.2.7
   - @readyapi/themes@0.5.7
@@ -747,7 +747,7 @@
   - @readyapi/api-client@0.12.2
   - @readyapi/use-modal@0.2.5
   - @readyapi/themes@0.5.6
-  - @ready-api.khulnasoft.components@0.2.3
+  - @readyapi/components@0.2.3
   - @readyapi/swagger-editor@0.10.6
 
 ## 1.16.2
@@ -786,7 +786,7 @@
   - @readyapi/swagger-parser@0.5.16
   - @readyapi/use-codemirror@0.8.4
   - @readyapi/use-tooltip@0.5.9
-  - @ready-api.khulnasoft.components@0.2.3
+  - @readyapi/components@0.2.3
   - @readyapi/use-toasts@0.5.14
   - @readyapi/use-modal@0.2.4
   - @readyapi/themes@0.5.5
@@ -1024,7 +1024,7 @@
   - @readyapi/use-clipboard@0.5.13
   - @readyapi/use-tooltip@0.5.8
   - @readyapi/api-client@0.9.2
-  - @ready-api.khulnasoft.components@0.2.2
+  - @readyapi/components@0.2.2
   - @readyapi/use-toasts@0.5.13
   - @readyapi/use-modal@0.2.3
   - @readyapi/themes@0.5.4
@@ -1072,7 +1072,7 @@
   - @readyapi/use-modal@0.2.2
   - @readyapi/themes@0.5.3
   - @readyapi/use-clipboard@0.5.12
-  - @ready-api.khulnasoft.components@0.2.1
+  - @readyapi/components@0.2.1
 
 ## 1.13.4
 
@@ -1098,7 +1098,7 @@
 - Updated dependencies [6d777194]
   - @readyapi/swagger-editor@0.9.4
   - @readyapi/api-client@0.8.9
-  - @ready-api.khulnasoft.components@0.2.1
+  - @readyapi/components@0.2.1
   - @readyapi/themes@0.5.2
 
 ## 1.13.1
@@ -1201,7 +1201,7 @@
 - 432d16fe: feat: add an OpenAuth2 interface
 - Updated dependencies [1c4f4c88]
 - Updated dependencies [2d7e3e6e]
-  - @ready-api.khulnasoft.components@0.2.0
+  - @readyapi/components@0.2.0
   - @readyapi/swagger-editor@0.9.1
 
 ## 1.11.1
@@ -1256,7 +1256,7 @@
 - Updated dependencies [a1319e8b]
 - Updated dependencies [d1caa4ee]
   - @readyapi/api-client@0.8.3
-  - @ready-api.khulnasoft.components@0.1.0
+  - @readyapi/components@0.1.0
   - @readyapi/swagger-editor@0.8.4
   - @readyapi/swagger-parser@0.5.13
   - @readyapi/use-codemirror@0.7.16

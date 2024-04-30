@@ -1,14 +1,11 @@
 <script setup lang="ts">
 import {
-  ReadyapiCodeBlock,
-  ReadyapiIcon,
-} from '@ready-api.khulnasoft.components'
-import {
   HttpMethod,
   getRequestFromAuthentication,
   getSecretCredentialsFromAuthentication,
   useAuthenticationStore,
 } from '@readyapi/api-client'
+import { ReadyapiCodeBlock, ReadyapiIcon } from '@readyapi/components'
 import {
   type ExampleRequestSSRKey,
   type SSRState,

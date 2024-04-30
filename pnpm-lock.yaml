@@ -615,7 +615,7 @@ importers:
       '@headlessui/vue':
         specifier: ^1.7.21
         version: 1.7.21(vue@3.4.26)
-      '@ready-api.khulnasoft.components':
+      '@readyapi/components':
         specifier: workspace:*
         version: link:../components
       '@readyapi/openapi-parser':
@@ -774,7 +774,7 @@ importers:
       '@headlessui/vue':
         specifier: ^1.7.21
         version: 1.7.21(vue@3.4.26)
-      '@ready-api.khulnasoft.components':
+      '@readyapi/components':
         specifier: workspace:*
         version: link:../components
       '@readyapi/api-client':

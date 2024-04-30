@@ -1,4 +1,4 @@
-# @ready-api.khulnasoft.components
+# @readyapi/components
 
 ## 0.0.1
 

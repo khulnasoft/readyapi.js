@@ -62,8 +62,8 @@
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.21",
-    "@ready-api.khulnasoft.components": "workspace:*",
     "@readyapi/api-client": "workspace:*",
+    "@readyapi/components": "workspace:*",
     "@readyapi/oas-utils": "workspace:*",
     "@readyapi/openapi-parser": "^0.3.2",
     "@readyapi/themes": "workspace:*",

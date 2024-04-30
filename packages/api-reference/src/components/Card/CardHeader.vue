@@ -27,7 +27,8 @@ const props = defineProps<CardContentProps>()
   padding: 9px 0 9px 12px;
   flex-shrink: 0;
 }
-.readyapi-card-header.readyapi-card--borderless + :deep(.readyapi-card-content) {
+.readyapi-card-header.readyapi-card--borderless
+  + :deep(.readyapi-card-content) {
   margin-top: -9px;
 }
 .readyapi-card-header-slots {
