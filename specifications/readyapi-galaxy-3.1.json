@@ -7,7 +7,7 @@
     "contact": {
       "name": "Marc from Readyapi",
       "url": "https://ready-api.khulnasoft.com",
-      "email": "marc@ready-api.khulnasoft.com"
+      "email": "info@khulnasoft.com"
     }
   },
   "servers": [
@@ -572,7 +572,7 @@
           "email": {
             "type": "string",
             "format": "email",
-            "examples": ["marc@ready-api.khulnasoft.com"]
+            "examples": ["info@khulnasoft.com"]
           },
           "password": {
             "type": "string",
@@ -597,7 +597,7 @@
           "email": {
             "type": "string",
             "format": "email",
-            "examples": ["marc@ready-api.khulnasoft.com"]
+            "examples": ["info@khulnasoft.com"]
           }
         }
       },
@@ -608,7 +608,7 @@
           "email": {
             "type": "string",
             "format": "email",
-            "examples": ["marc@ready-api.khulnasoft.com"]
+            "examples": ["info@khulnasoft.com"]
           },
           "password": {
             "type": "string",

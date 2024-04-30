@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+readyapi_fastapi/__init__.py
+readyapi_fastapi/readyapi_fastapi.py
+readyapi_fastapi.egg-info/PKG-INFO
+readyapi_fastapi.egg-info/SOURCES.txt
+readyapi_fastapi.egg-info/dependency_links.txt
+readyapi_fastapi.egg-info/top_level.txt

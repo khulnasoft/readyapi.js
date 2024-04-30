@@ -47,7 +47,7 @@ info:
   contact:
     name: Marc from Readyapi
     url: https://ready-api.khulnasoft.com
-    email: marc@ready-api.khulnasoft.com
+    email: info@khulnasoft.com
 servers:
   - url: https://galaxy.ready-api.khulnasoft.com
 security:
@@ -427,7 +427,7 @@ components:
           type: string
           format: email
           examples:
-            - marc@ready-api.khulnasoft.com
+            - info@khulnasoft.com
         password:
           type: string
           minLength: 8
@@ -453,7 +453,7 @@ components:
           type: string
           format: email
           examples:
-            - marc@ready-api.khulnasoft.com
+            - info@khulnasoft.com
     Credentials:
       type: object
       required:
@@ -464,7 +464,7 @@ components:
           type: string
           format: email
           examples:
-            - marc@ready-api.khulnasoft.com
+            - info@khulnasoft.com
         password:
           type: string
           examples:

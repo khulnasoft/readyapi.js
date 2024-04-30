@@ -7,8 +7,8 @@ setup(
     install_requires=[
         # Add your package dependencies here
     ],
-    author='Marc Laventure',
-    author_email='marc@ready-api.khulnasoft.com',
+    author='KhulnaSoft DevOps',
+    author_email='info@khulnasoft.com',
     description='This plugin provides an easy way to render a beautiful API reference based on a OpenAPI/Swagger file with FastAPI.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',

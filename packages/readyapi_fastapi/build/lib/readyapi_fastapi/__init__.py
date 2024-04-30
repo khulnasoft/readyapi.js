@@ -1,0 +1,1 @@
+from .readyapi_fastapi import get_readyapi_api_reference

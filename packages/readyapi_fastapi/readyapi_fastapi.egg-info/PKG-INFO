@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: readyapi-fastapi
+Version: 1.0.1
+Summary: This plugin provides an easy way to render a beautiful API reference based on a OpenAPI/Swagger file with FastAPI.
+Home-page: https://github.com/khulnasoft/readyapi.js
+Author: KhulnaSoft DevOps
+Author-email: info@khulnasoft.com
+Description-Content-Type: text/markdown
+
+# Readyapi FastAPI API Reference Plugin
+
+![fastapi](fastapi.png)
+
+## Installation
+
+```bash
+pip install readyapi-fastapi
+```
+
+## Usage
+
+FastAPI makes it super easy to enable readyapi with their out of the box OpenAPI support
+
+```python
+from fastapi import FastAPI
+from readyapi_fastapi import get_readyapi_api_reference
+
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
+@app.get("/readyapi", include_in_schema=False)
+async def readyapi_html():
+    return get_readyapi_api_reference(
+        openapi_url=app.openapi_url,
+    )
+
+```
