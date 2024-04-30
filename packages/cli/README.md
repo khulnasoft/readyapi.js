@@ -7,7 +7,7 @@
 
 Command-line interface to work with OpenAPI files
 
-![Demo Video](https://github.com/readyapi/cli/assets/6374090/ebd02178-503d-4a70-b292-a52a74b35008)
+![Demo Video](https://github.com/readyapi/readyapi.js/assets/6374090/ebd02178-503d-4a70-b292-a52a74b35008)
 
 ## Features
 
