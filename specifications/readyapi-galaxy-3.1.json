@@ -1,18 +1,18 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "Scalar Galaxy",
-    "description": "The Scalar Galaxy is an example OpenAPI specification to test OpenAPI tools and libraries. It’s a fictional universe with fictional planets and fictional data. Get all the data for all planets.\n\n## Resources\n\n* https://github.com/khulnasoft/readyapi.js\n* https://github.com/OAI/OpenAPI-Specification\n* https://scalar.com\n\n## Markdown Support\n\nAll descriptions *can* contain ~~tons of text~~ **Markdown**. [If GitHub supports the syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax), chances are we’re supporting it, too.\n\n<details>\n  <summary>Examples</summary>\n\n  ### Blockquotes\n\n  > I love OpenAPI. <3\n\n  ### Tables\n\n  | Feature          | Availability |\n  | ---------------- | ------------ |\n  | Markdown Support | ✓            |\n\n  ### Accordion\n\n  ```html\n  <details>\n    <summary>Using Details Tags</summary>\n    <p>HTML Example</p>\n  </details>\n  ```\n\n  ### Images\n\n  Yes, there’s support for images, too!\n\n  ![Empty placeholder image showing the width/height](https://images.placeholders.dev/?width=1280&height=720)\n\n</details>\n",
+    "title": "Readyapi Galaxy",
+    "description": "The Readyapi Galaxy is an example OpenAPI specification to test OpenAPI tools and libraries. It’s a fictional universe with fictional planets and fictional data. Get all the data for all planets.\n\n## Resources\n\n* https://github.com/khulnasoft/readyapi.js\n* https://github.com/OAI/OpenAPI-Specification\n* https://ready-api.khulnasoft.com\n\n## Markdown Support\n\nAll descriptions *can* contain ~~tons of text~~ **Markdown**. [If GitHub supports the syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax), chances are we’re supporting it, too.\n\n<details>\n  <summary>Examples</summary>\n\n  ### Blockquotes\n\n  > I love OpenAPI. <3\n\n  ### Tables\n\n  | Feature          | Availability |\n  | ---------------- | ------------ |\n  | Markdown Support | ✓            |\n\n  ### Accordion\n\n  ```html\n  <details>\n    <summary>Using Details Tags</summary>\n    <p>HTML Example</p>\n  </details>\n  ```\n\n  ### Images\n\n  Yes, there’s support for images, too!\n\n  ![Empty placeholder image showing the width/height](https://images.placeholders.dev/?width=1280&height=720)\n\n</details>\n",
     "version": "1.0.0",
     "contact": {
-      "name": "Marc from Scalar",
-      "url": "https://scalar.com",
-      "email": "marc@scalar.com"
+      "name": "Marc from Readyapi",
+      "url": "https://ready-api.khulnasoft.com",
+      "email": "marc@ready-api.khulnasoft.com"
     }
   },
   "servers": [
     {
-      "url": "https://galaxy.scalar.com"
+      "url": "https://galaxy.ready-api.khulnasoft.com"
     }
   ],
   "security": [
@@ -485,7 +485,7 @@
         "type": "oauth2",
         "flows": {
           "implicit": {
-            "authorizationUrl": "https://galaxy.scalar.com/oauth/authorize",
+            "authorizationUrl": "https://galaxy.ready-api.khulnasoft.com/oauth/authorize",
             "scopes": {
               "write:planets": "modify planets in your account",
               "read:planets": "read your planets"
@@ -572,12 +572,12 @@
           "email": {
             "type": "string",
             "format": "email",
-            "examples": ["marc@scalar.com"]
+            "examples": ["marc@ready-api.khulnasoft.com"]
           },
           "password": {
             "type": "string",
             "minLength": 8,
-            "examples": ["i-love-scalar"]
+            "examples": ["i-love-readyapi"]
           }
         }
       },
@@ -597,7 +597,7 @@
           "email": {
             "type": "string",
             "format": "email",
-            "examples": ["marc@scalar.com"]
+            "examples": ["marc@ready-api.khulnasoft.com"]
           }
         }
       },
@@ -608,11 +608,11 @@
           "email": {
             "type": "string",
             "format": "email",
-            "examples": ["marc@scalar.com"]
+            "examples": ["marc@ready-api.khulnasoft.com"]
           },
           "password": {
             "type": "string",
-            "examples": ["i-love-scalar"]
+            "examples": ["i-love-readyapi"]
           }
         }
       },
@@ -647,7 +647,7 @@
           "image": {
             "type": "string",
             "nullable": true,
-            "examples": ["https://cdn.scalar.com/photos/mars.jpg"]
+            "examples": ["https://cdn.ready-api.khulnasoft.com/photos/mars.jpg"]
           },
           "creator": {
             "$ref": "#/components/schemas/User"

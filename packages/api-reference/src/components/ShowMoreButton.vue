@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ScalarIcon } from '@readyapi/components'
+import { ReadyapiIcon } from '@ready-api.khulnasoft.components'
 
 import { useSidebar } from '../hooks'
 
@@ -16,7 +16,7 @@ const { setCollapsedSidebarItem } = useSidebar()
     type="button"
     @click="setCollapsedSidebarItem(id, true)">
     Show More
-    <ScalarIcon
+    <ReadyapiIcon
       class="show-more-icon"
       icon="ChevronDown" />
   </button>
@@ -24,16 +24,16 @@ const { setCollapsedSidebarItem } = useSidebar()
 
 <style scoped>
 .show-more {
-  background: var(--scalar-background-1);
+  background: var(--readyapi-background-1);
   appearance: none;
   border: none;
-  border: 1px solid var(--scalar-border-color);
+  border: 1px solid var(--readyapi-border-color);
   margin: auto;
   padding: 8px 12px;
   border-radius: 30px;
-  color: var(--scalar-color-1);
-  font-weight: var(--scalar-semibold);
-  font-size: var(--scalar-small);
+  color: var(--readyapi-color-1);
+  font-weight: var(--readyapi-semibold);
+  font-size: var(--readyapi-small);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,7 +42,7 @@ const { setCollapsedSidebarItem } = useSidebar()
   position: relative;
 }
 .show-more:hover {
-  color: var(--scalar-color-2);
+  color: var(--readyapi-color-2);
   cursor: pointer;
 }
 .show-more-icon {
@@ -51,7 +51,7 @@ const { setCollapsedSidebarItem } = useSidebar()
   margin-left: 3px;
 }
 .show-more:active {
-  box-shadow: 0 0 0 1px var(--scalar-border-color);
+  box-shadow: 0 0 0 1px var(--readyapi-border-color);
 }
 @container narrow-references-container (max-width: 900px) {
   .show-more {

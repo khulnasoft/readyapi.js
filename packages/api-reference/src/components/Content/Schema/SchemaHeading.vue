@@ -35,9 +35,9 @@ defineProps<{
 <style scoped>
 /* Style the "icon" */
 .schema-type-icon {
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 }
 .schema-type {
-  font-family: var(--scalar-font-code);
+  font-family: var(--readyapi-font-code);
 }
 </style>

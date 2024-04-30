@@ -44,7 +44,7 @@
   "dependencies": {
     "@floating-ui/vue": "^1.0.6",
     "@headlessui/vue": "^1.7.21",
-    "@readyapi/components": "workspace:*",
+    "@ready-api.khulnasoft.components": "workspace:*",
     "@readyapi/openapi-parser": "^0.3.2",
     "@readyapi/themes": "workspace:*",
     "@readyapi/use-codemirror": "workspace:*",

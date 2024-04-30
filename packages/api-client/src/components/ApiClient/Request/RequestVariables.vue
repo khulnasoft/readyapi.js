@@ -26,9 +26,9 @@ function addAnotherHandler() {
     :defaultOpen="activeRequest.variables && activeRequest.variables.length > 0"
     title="Variables">
     <template v-if="!variables || variables.length === 0">
-      <div class="scalar-api-client__empty-state">
+      <div class="readyapi-api-client__empty-state">
         <button
-          class="scalar-api-client-add"
+          class="readyapi-api-client-add"
           type="button"
           @click="addAnotherHandler">
           <svg

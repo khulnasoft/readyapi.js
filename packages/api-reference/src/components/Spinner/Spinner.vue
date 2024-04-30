@@ -1,5 +1,5 @@
 <template>
-  <span class="scalar-logo-animation scalar-logo-animation-load">
+  <span class="readyapi-logo-animation readyapi-logo-animation-load">
     <i class="line line-1"></i>
     <i class="line line-2"></i>
     <i class="line line-3"></i>
@@ -7,14 +7,14 @@
   </span>
 </template>
 <style scoped>
-.scalar-logo-animation {
+.readyapi-logo-animation {
   width: 38px;
   height: 38px;
   position: relative;
   display: flex;
   align-items: center;
 }
-.scalar-logo-animation .line:before {
+.readyapi-logo-animation .line:before {
   content: '';
   width: 100%;
   height: 100%;
@@ -22,22 +22,22 @@
   display: block;
   position: absolute;
 }
-.scalar-logo-animation .line {
+.readyapi-logo-animation .line {
   position: absolute;
   width: 100%;
   height: 1px;
   overflow: hidden;
 }
-.scalar-logo-animation .line-2 {
+.readyapi-logo-animation .line-2 {
   transform: rotate(90deg);
 }
-.scalar-logo-animation .line-3 {
+.readyapi-logo-animation .line-3 {
   transform: rotate(45deg);
 }
-.scalar-logo-animation .line-4 {
+.readyapi-logo-animation .line-4 {
   transform: rotate(-45deg);
 }
-.scalar-logo-animation-load {
+.readyapi-logo-animation-load {
   animation: rotate 2s linear infinite;
 }
 @keyframes rotate {

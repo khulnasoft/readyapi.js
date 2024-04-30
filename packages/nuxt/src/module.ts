@@ -14,13 +14,13 @@ export type ModuleOptions = Configuration
 export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: '@readyapi/nuxt',
-    configKey: 'scalar',
+    configKey: 'readyapi',
   },
   // Default configuration options of the Nuxt module
   defaults: {
     darkMode: true,
     metaData: {
-      title: 'API Documentation by Scalar',
+      title: 'API Documentation by Readyapi',
     },
     pathRouting: {
       basePath: '/docs',
@@ -54,31 +54,31 @@ export default defineNuxtModule<ModuleOptions>({
 
     // Load the component so it can be used directly
     addComponent({
-      name: 'ScalarApiReference',
+      name: 'ReadyapiApiReference',
       export: 'default',
-      filePath: resolver.resolve('./runtime/components/ScalarApiReference.vue'),
+      filePath: resolver.resolve('./runtime/components/ReadyapiApiReference.vue'),
     })
 
     // Add the route for the docs
     extendPages((pages) => {
       pages.push({
-        name: 'scalar',
+        name: 'readyapi',
         path: _options.pathRouting?.basePath + ':pathMatch(.*)*',
         meta: {
           configuration: _options,
           isOpenApiEnabled,
         },
-        file: resolver.resolve('./runtime/pages/ScalarPage.vue'),
+        file: resolver.resolve('./runtime/pages/ReadyapiPage.vue'),
       })
     })
 
-    // add scalar tab to DevTools
+    // add readyapi tab to DevTools
     if (_nuxt.options.dev && _options.devtools) {
       _nuxt.hook('devtools:customTabs', (tabs) => {
         tabs.push({
-          name: 'scalar',
-          title: 'Scalar',
-          icon: 'https://gist.githubusercontent.com/cameronrohani/0fa020f6dcf957266bff49e7b6b7c05e/raw/17fce1ef37bbb036dca36b778c8b422056ad6fdf/scalar-logo-nuxt-color.svg',
+          name: 'readyapi',
+          title: 'Readyapi',
+          icon: 'https://gist.githubusercontent.com/cameronrohani/0fa020f6dcf957266bff49e7b6b7c05e/raw/17fce1ef37bbb036dca36b778c8b422056ad6fdf/readyapi-logo-nuxt-color.svg',
           category: 'server',
           view: {
             type: 'iframe',

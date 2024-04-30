@@ -5,7 +5,7 @@ import {
 } from '@readyapi/api-reference'
 import { reactive } from 'vue'
 
-import content from '../../../../specifications/scalar-galaxy-3.1.json'
+import content from '../../../../specifications/readyapi-galaxy-3.1.json'
 import SlotPlaceholder from '../components/SlotPlaceholder.vue'
 
 const configuration = reactive<ReferenceConfiguration>({

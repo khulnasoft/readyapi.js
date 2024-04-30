@@ -205,7 +205,7 @@ const handleRequestMethodChanged = (requestMethod?: string) => {
 
 <style>
 .api-client-url-variable {
-  color: var(--scalar-api-client-color);
+  color: var(--readyapi-api-client-color);
 }
 </style>
 
@@ -214,7 +214,7 @@ const handleRequestMethodChanged = (requestMethod?: string) => {
   position: absolute;
   z-index: 3;
   height: 2px;
-  background: var(--scalar-api-client-color);
+  background: var(--readyapi-api-client-color);
   animation: loading 5s cubic-bezier(0, 0.5, 0.25, 1);
 }
 @keyframes loading {
@@ -231,13 +231,13 @@ const handleRequestMethodChanged = (requestMethod?: string) => {
   display: flex;
   align-items: center;
   position: relative;
-  background: var(--scalar-background-1);
+  background: var(--readyapi-background-1);
 }
 .url-form {
   display: flex;
   width: 100%;
   align-items: stretch;
-  border-radius: var(--scalar-radius-lg);
+  border-radius: var(--readyapi-radius-lg);
 }
 .url-form:deep(.cm-content) {
   display: flex;
@@ -245,8 +245,8 @@ const handleRequestMethodChanged = (requestMethod?: string) => {
 }
 .url-form-field {
   border-right: 0;
-  background: var(--scalar-background-2);
-  border-radius: var(--scalar-radius) 0 0 var(--scalar-radius);
+  background: var(--readyapi-background-2);
+  border-radius: var(--readyapi-radius) 0 0 var(--readyapi-radius);
   display: flex;
   align-items: stretch;
   width: 100%;
@@ -254,10 +254,10 @@ const handleRequestMethodChanged = (requestMethod?: string) => {
   min-height: 31px;
 }
 .url-form-input {
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 }
 .url-form-input {
-  font-weight: var(--scalar-semibold);
+  font-weight: var(--readyapi-semibold);
   min-height: auto;
   padding-top: 0;
 }
@@ -268,27 +268,27 @@ const handleRequestMethodChanged = (requestMethod?: string) => {
   appearance: none;
   -webkit-appearance: none;
   background: transparent;
-  color: var(--scalar-color-2);
+  color: var(--readyapi-color-2);
   display: flex;
   align-items: center;
-  border-radius: var(--scalar-radius);
+  border-radius: var(--readyapi-radius);
   height: 100%;
 }
 
 .send-button[type='submit'] {
-  font-size: var(--scalar-micro);
+  font-size: var(--readyapi-micro);
   letter-spacing: 0.25px;
-  font-weight: var(--scalar-semibold);
-  color: var(--scalar-button-1-color);
+  font-weight: var(--readyapi-semibold);
+  color: var(--readyapi-button-1-color);
   border: none;
   white-space: nowrap;
   padding: 0 12px;
   text-transform: uppercase;
   cursor: pointer;
   outline: none;
-  font-family: var(--scalar-font);
-  border-radius: 0 var(--scalar-radius) var(--scalar-radius) 0;
-  background: var(--scalar-button-1);
+  font-family: var(--readyapi-font);
+  border-radius: 0 var(--readyapi-radius) var(--readyapi-radius) 0;
+  background: var(--readyapi-button-1);
   position: relative;
   /**  #087f5b */
   display: flex;
@@ -297,7 +297,7 @@ const handleRequestMethodChanged = (requestMethod?: string) => {
   flex-shrink: 0;
 }
 .send-button:hover {
-  background: var(--scalar-button-1-hover);
+  background: var(--readyapi-button-1-hover);
 }
 .send-button svg {
   width: 12px;
@@ -322,41 +322,41 @@ const handleRequestMethodChanged = (requestMethod?: string) => {
 }
 .send-button[disabled] {
   pointer-events: none;
-  color: var(--scalar-color-2);
-  background: var(--scalar-background-3);
-  border: 1px solid var(--scalar-border-color);
+  color: var(--readyapi-color-2);
+  background: var(--readyapi-background-3);
+  border: 1px solid var(--readyapi-border-color);
 }
 .history-toggle {
   padding: 0 12px;
   line-height: 30px;
-  color: var(--scalar-color-3);
-  font-size: var(--scalar-micro);
+  color: var(--readyapi-color-3);
+  font-size: var(--readyapi-micro);
   letter-spacing: 0.125px;
-  font-weight: var(--scalar-semibold);
+  font-weight: var(--readyapi-semibold);
   text-transform: uppercase;
   height: 100%;
   display: flex;
   align-items: center;
   cursor: pointer;
   white-space: nowrap;
-  box-shadow: 0 0 0 1px var(--scalar-border-color);
+  box-shadow: 0 0 0 1px var(--readyapi-border-color);
   margin-left: 12px;
-  border-radius: var(--scalar-radius);
+  border-radius: var(--readyapi-radius);
   user-select: none;
 }
 .history-toggle:hover {
-  background: var(--scalar-background-2);
+  background: var(--readyapi-background-2);
 }
 .history-toggle svg {
   height: 13px;
   width: 13px;
   margin-right: 6px;
-  color: var(--scalar-color-3);
+  color: var(--readyapi-color-3);
 }
 .address-bar-content {
   width: 640px;
   height: 100%;
-  background: var(--scalar-background-1);
+  background: var(--readyapi-background-1);
   position: fixed;
   top: 0;
   right: 0;

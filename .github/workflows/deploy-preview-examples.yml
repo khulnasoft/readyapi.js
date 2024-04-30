@@ -72,4 +72,4 @@ jobs:
           header: 'Deploy Preview'
           recreate: true
           message: |
-            Preview deployed to https://${{env.DEPLOY_ID}}--scalar-deploy-preview.netlify.app
+            Preview deployed to https://${{env.DEPLOY_ID}}--readyapi-deploy-preview.netlify.app

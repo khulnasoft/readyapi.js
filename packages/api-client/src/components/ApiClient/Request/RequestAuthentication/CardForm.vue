@@ -5,9 +5,9 @@
 </template>
 <style scoped>
 .card-form {
-  --input-radius: var(--scalar-radius-lg);
-  border-color: var(--scalar-border-color);
-  color: var(--scalar-color-1);
+  --input-radius: var(--readyapi-radius-lg);
+  border-color: var(--readyapi-border-color);
+  color: var(--readyapi-color-1);
   width: 100%;
 }
 .card-form > :first-child {

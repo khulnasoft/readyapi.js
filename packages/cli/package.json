@@ -1,12 +1,12 @@
 {
-  "name": "@scalar/cli",
+  "name": "@readyapi/cli",
   "description": "A command-line interface to work with OpenAPI files",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",
   "homepage": "https://github.com/khulnasoft/readyapi.js",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "keywords": [
-    "scalar",
+    "readyapi",
     "openapi",
     "swagger",
     "cli"
@@ -16,7 +16,7 @@
     "node": ">=18"
   },
   "scripts": {
-    "@scalar/cli": "pnpm vite-node src/index.ts",
+    "@readyapi/cli": "pnpm vite-node src/index.ts",
     "build": "rm -Rf dist/ && tsc && rollup -c",
     "cli:link": "pnpm run build && npm unlink -g && npm link",
     "types:check": "tsc --noEmit --skipLibCheck"
@@ -27,11 +27,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/scalar/cli.git",
+    "url": "https://github.com/readyapi/cli.git",
     "directory": "packages/cli"
   },
   "bin": {
-    "scalar": "./dist/index.js"
+    "readyapi": "./dist/index.js"
   },
   "dependencies": {
     "@hono/node-server": "^1.11.1",

@@ -34,9 +34,9 @@ const hasCookies = computed(() => {
     :defaultOpen="hasCookies"
     title="Cookies">
     <template v-if="!hasCookies">
-      <div class="scalar-api-client__empty-state">
+      <div class="readyapi-api-client__empty-state">
         <button
-          class="scalar-api-client-add"
+          class="readyapi-api-client-add"
           type="button"
           @click="addAnotherHandler">
           <svg
@@ -69,32 +69,32 @@ const hasCookies = computed(() => {
   </CollapsibleSection>
 </template>
 <style>
-.scalar-api-client-add {
-  color: var(--scalar-color-2);
+.readyapi-api-client-add {
+  color: var(--readyapi-color-2);
   padding: 3px 9px;
   width: fit-content;
   cursor: pointer;
-  font-size: var(--scalar-micro);
-  font-weight: var(--scalar-semibold);
+  font-size: var(--readyapi-micro);
+  font-weight: var(--readyapi-semibold);
   text-decoration: none;
   margin: 0 6px;
   border: none;
-  font-family: var(--scalar-font);
+  font-family: var(--readyapi-font);
   appearance: none;
   display: flex;
   align-items: center;
-  border: 1px solid var(--scalar-border-color);
+  border: 1px solid var(--readyapi-border-color);
   border-radius: 30px;
 }
-.scalar-api-client-add svg {
+.readyapi-api-client-add svg {
   width: 12px;
   height: 12px;
   margin-right: 6px;
 }
-.scalar-api-client-add:hover {
-  color: var(--scalar-color-1);
+.readyapi-api-client-add:hover {
+  color: var(--readyapi-color-1);
 }
-.scalar-api-client-add:focus-within {
-  background: var(--scalar-background-3);
+.readyapi-api-client-add:focus-within {
+  background: var(--readyapi-background-3);
 }
 </style>

@@ -42,7 +42,7 @@ const statusCodeInformation = computed((): HttpStatusCode | undefined => {
   <div class="meta-item">
     <!-- <span>200</span> -->
     <span
-      :class="`scalar-api-client__status scalar-api-client__status--${String(
+      :class="`readyapi-api-client__status readyapi-api-client__status--${String(
         response.statusCode,
       ).charAt(0)}xx`">
       <template v-if="statusCodeInformation?.url">
@@ -57,26 +57,26 @@ const statusCodeInformation = computed((): HttpStatusCode | undefined => {
   </div>
 </template>
 <style>
-.scalar-api-client__status--1xx:before,
-.scalar-api-client__status--2xx:before,
-.scalar-api-client__status--3xx:before,
-.scalar-api-client__status--4xx:before,
-.scalar-api-client__status--5xx:before,
-.scalar-api-client__status--6xx:before {
+.readyapi-api-client__status--1xx:before,
+.readyapi-api-client__status--2xx:before,
+.readyapi-api-client__status--3xx:before,
+.readyapi-api-client__status--4xx:before,
+.readyapi-api-client__status--5xx:before,
+.readyapi-api-client__status--6xx:before {
   content: '';
   width: 10px;
   height: 10px;
   border-radius: 50%;
   margin-right: 4px;
-  background: var(--scalar-background-2);
+  background: var(--readyapi-background-2);
 }
-.scalar-api-client__status--2xx:before {
-  background: var(--scalar-color-green);
+.readyapi-api-client__status--2xx:before {
+  background: var(--readyapi-color-green);
 }
-.scalar-api-client__status--3xx:before {
-  background: var(--scalar-color-orange);
+.readyapi-api-client__status--3xx:before {
+  background: var(--readyapi-color-orange);
 }
-.scalar-api-client__status--4xx:before {
-  background: var(--scalar-color-red);
+.readyapi-api-client__status--4xx:before {
+  background: var(--readyapi-color-red);
 }
 </style>

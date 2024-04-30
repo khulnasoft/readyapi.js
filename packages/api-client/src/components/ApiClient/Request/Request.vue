@@ -34,14 +34,14 @@ const authenticationRequest = computed(() =>
 const readOnly = true
 </script>
 <template>
-  <div class="scalar-api-client__main__left custom-scroll">
-    <div class="scalar-api-client__main__content">
+  <div class="readyapi-api-client__main__left custom-scroll">
+    <div class="readyapi-api-client__main__content">
       <label>Request</label>
       <div class="meta">
         <div class="meta-item meta-item__input">
           <input
             v-model="activeRequest.name"
-            class="scalar-api-client__request-name"
+            class="readyapi-api-client__request-name"
             :disabled="readOnly"
             placeholder="Request Name"
             type="text" />
@@ -64,93 +64,93 @@ const readOnly = true
         :body="activeRequest.body"
         :formData="activeRequest.formData"
         :requestBody="activeRequest.body" />
-      <div class="scalar-api-client__main__scroll-container" />
+      <div class="readyapi-api-client__main__scroll-container" />
     </div>
   </div>
 </template>
 <style>
-.scalar-api-client__main__left {
+.readyapi-api-client__main__left {
   width: 50%;
-  border-right: 1px solid var(--scalar-border-color);
+  border-right: 1px solid var(--readyapi-border-color);
   padding: 0 18px 12px 18px;
 }
 @media screen and (max-width: 820px) {
-  .scalar-api-client__main__left {
+  .readyapi-api-client__main__left {
     width: 100%;
     border-right: none;
     padding: 0 12px 12px 12px;
   }
 }
-.scalar-api-client__item__content {
+.readyapi-api-client__item__content {
   flex-flow: wrap;
   padding: 3px 9px 9px 9px;
   border-radius: 3px;
-  color: var(--scalar-color-3);
-  font-size: var(--scalar-micro);
+  color: var(--readyapi-color-3);
+  font-size: var(--readyapi-micro);
   margin-top: -3px;
   justify-content: space-between;
   overflow: auto;
 }
-.scalar-api-client__item__content:empty {
+.readyapi-api-client__item__content:empty {
   display: none;
 }
-.scalar-api-client__item__content .scalar-api-client__codemirror__wrapper {
+.readyapi-api-client__item__content .readyapi-api-client__codemirror__wrapper {
   width: 100%;
   min-height: 63px;
 }
-.scalar-api-client__item__content .scalar-codeblock-pre,
-.scalar-api-client__item__content .cm-s-default {
-  border: 1px solid var(--scalar-border-color);
-  border-radius: var(--scalar-radius-lg);
+.readyapi-api-client__item__content .readyapi-codeblock-pre,
+.readyapi-api-client__item__content .cm-s-default {
+  border: 1px solid var(--readyapi-border-color);
+  border-radius: var(--readyapi-radius-lg);
 }
-.scalar-api-client__item__content .scalar-codeblock-pre,
-.scalar-api-client__item__content .codemirror-container {
+.readyapi-api-client__item__content .readyapi-codeblock-pre,
+.readyapi-api-client__item__content .codemirror-container {
   width: 100%;
   max-height: calc(100vh - 300px);
   overflow: auto;
 }
-.scalar-api-client__item__content .cm-scroller {
-  border: 1px solid var(--scalar-border-color);
+.readyapi-api-client__item__content .cm-scroller {
+  border: 1px solid var(--readyapi-border-color);
   border-radius: 3px;
 }
-.scalar-api-client__item__content .cm-editor {
+.readyapi-api-client__item__content .cm-editor {
   outline: none !important;
 }
-.scalar-api-client__item__content .cm-editor .cm-gutters {
+.readyapi-api-client__item__content .cm-editor .cm-gutters {
   background: transparent;
 }
-.scalar-api-client__item__content .cm-scroll {
+.readyapi-api-client__item__content .cm-scroll {
   background: transparent;
 }
-.scalar-api-client__item__content .cm-editor * {
-  font-size: var(--scalar-micro);
+.readyapi-api-client__item__content .cm-editor * {
+  font-size: var(--readyapi-micro);
 }
-.scalar-api-client__item__content .cm-editor .cm-line {
-  color: var(--scalar-color-1);
+.readyapi-api-client__item__content .cm-editor .cm-line {
+  color: var(--readyapi-color-1);
 }
-.scalar-api-client__item__content-button {
+.readyapi-api-client__item__content-button {
   appearance: none;
   border: none;
   outline: none;
-  font-size: var(--scalar-micro);
-  background: var(--scalar-api-client-color) !important;
+  font-size: var(--readyapi-micro);
+  background: var(--readyapi-api-client-color) !important;
   text-align: center;
-  font-weight: var(--scalar-semibold);
-  font-family: var(--scalar-font);
+  font-weight: var(--readyapi-semibold);
+  font-family: var(--readyapi-font);
   padding: 6px;
   width: fit-content;
   margin: 3px 3px 3px auto;
   text-transform: uppercase;
-  border-radius: var(--scalar-radius);
+  border-radius: var(--readyapi-radius);
   color: white;
   cursor: pointer;
   text-align: center !important;
   position: relative;
 }
-.scalar-api-client__item__content-button span {
+.readyapi-api-client__item__content-button span {
   position: relative;
 }
-.scalar-api-client__item__content-button:before {
+.readyapi-api-client__item__content-button:before {
   content: '';
   position: absolute;
   top: 0;
@@ -159,16 +159,16 @@ const readOnly = true
   height: 100%;
   pointer-events: none;
   cursor: pointer;
-  border-radius: var(--scalar-radius);
+  border-radius: var(--readyapi-radius);
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
 }
-.scalar-api-client__item__content-button:hover:before {
+.readyapi-api-client__item__content-button:hover:before {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
 }
-.scalar-api-client__item__content__split {
+.readyapi-api-client__item__content__split {
   justify-content: space-between;
 }
-.scalar-collapsible-section-flex {
+.readyapi-collapsible-section-flex {
   width: 100%;
 }
 .input {
@@ -177,31 +177,31 @@ const readOnly = true
   width: 100%;
   text-align: left;
   display: flex;
-  box-shadow: 0 1px 0 var(--scalar-border-color);
+  box-shadow: 0 1px 0 var(--readyapi-border-color);
 }
 .input:focus-within {
-  box-shadow: 0 0 0 1px var(--scalar-color-1) !important;
+  box-shadow: 0 0 0 1px var(--readyapi-color-1) !important;
   z-index: 10;
 }
 .input:first-of-type {
-  border-radius: var(--scalar-radius) var(--scalar-radius) 0 0;
+  border-radius: var(--readyapi-radius) var(--readyapi-radius) 0 0;
 }
 .input:first-child:last-child {
-  border-radius: var(--scalar-radius);
+  border-radius: var(--readyapi-radius);
 }
 .input:last-child {
   box-shadow: none;
-  border-radius: 0 0 var(--scalar-radius) var(--scalar-radius);
+  border-radius: 0 0 var(--readyapi-radius) var(--readyapi-radius);
 }
 .input__half:first-of-type {
-  border-radius: var(--scalar-radius) 0 0 0;
+  border-radius: var(--readyapi-radius) 0 0 0;
 }
 .input__half:nth-of-type(2) {
-  border-radius: 0 var(--scalar-radius) 0 0;
+  border-radius: 0 var(--readyapi-radius) 0 0;
 }
 .authentication-form {
-  box-shadow: 0 0 0 1px var(--scalar-border-color);
-  border-radius: var(--scalar-radius);
+  box-shadow: 0 0 0 1px var(--readyapi-border-color);
+  border-radius: var(--readyapi-radius);
   width: 100%;
   display: flex;
   flex-flow: wrap;
@@ -210,7 +210,7 @@ const readOnly = true
   width: 50%;
 }
 .input__half + .input__half {
-  border-left: 1px solid var(--scalar-border-color);
+  border-left: 1px solid var(--readyapi-border-color);
 }
 .input__half:focus-within {
   border-color: transparent;
@@ -220,8 +220,8 @@ const readOnly = true
   padding: 9px;
   border: 0;
   outline: none;
-  font-size: var(--scalar-micro);
-  color: var(--scalar-color-2);
+  font-size: var(--readyapi-micro);
+  color: var(--readyapi-color-2);
   width: 100%;
   background: transparent;
   appearance: none;
@@ -229,7 +229,7 @@ const readOnly = true
   left: 0;
 }
 .input label {
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
   width: fit-content;
   padding-right: 0;
   white-space: nowrap;
@@ -240,35 +240,35 @@ const readOnly = true
   z-index: 99;
 }
 .input input:not(:placeholder-shown) + label {
-  color: var(--scalar-color-2);
+  color: var(--readyapi-color-2);
 }
 .select {
-  background: --scalar-background-1;
-  border-radius: var(--scalar-radius-lg);
-  font-size: var(--scalar-micro);
-  border: 1px solid var(--scalar-border-color);
+  background: --readyapi-background-1;
+  border-radius: var(--readyapi-radius-lg);
+  font-size: var(--readyapi-micro);
+  border: 1px solid var(--readyapi-border-color);
   width: 100%;
   position: relative;
   margin-bottom: 6px;
 }
 .select:focus-within {
-  background: var(--scalar-background-3);
+  background: var(--readyapi-background-3);
 }
 .select:hover {
-  background: var(--scalar-background-3);
+  background: var(--readyapi-background-3);
 }
 .select svg {
   position: absolute;
   right: 9px;
   pointer-events: none;
-  color: var(--scalar-color-2);
+  color: var(--readyapi-color-2);
   width: 6px;
   top: 10px;
 }
 .select label {
   display: block;
   font-size: 10px;
-  color: var(--scalar-color-2);
+  color: var(--readyapi-color-2);
   position: absolute;
   left: 9px;
   top: 6px;
@@ -280,8 +280,8 @@ const readOnly = true
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  font-size: var(--scalar-micro);
-  color: var(--scalar-color-1);
+  font-size: var(--readyapi-micro);
+  color: var(--readyapi-color-1);
   width: 100%;
   padding: 14px 9px 4px 9px;
   top: 0;
@@ -294,24 +294,24 @@ const readOnly = true
   position: relative;
   cursor: pointer;
   align-items: center;
-  font-size: var(--scalar-micro);
+  font-size: var(--readyapi-micro);
   padding: 6px 9px;
-  border-radius: 0 0 var(--scalar-radius) var(--scalar-radius);
+  border-radius: 0 0 var(--readyapi-radius) var(--readyapi-radius);
   user-select: none;
   width: 100%;
   outline: none;
 }
 .check:focus-within {
-  box-shadow: 0 0 0 1px var(--scalar-color-1);
+  box-shadow: 0 0 0 1px var(--readyapi-color-1);
 }
 .checkmark:hover {
-  background: var(--scalar-background-3);
+  background: var(--readyapi-background-3);
 }
 .check:focus-within {
-  border-color: var(--scalar-color-1);
+  border-color: var(--readyapi-color-1);
 }
 .check p {
-  color: var(--scalar-color-3);
+  color: var(--readyapi-color-3);
 }
 .check input {
   position: absolute;
@@ -324,7 +324,7 @@ const readOnly = true
 .checkmark {
   height: 17px;
   width: 17px;
-  background: var(--scalar-background-3);
+  background: var(--readyapi-background-3);
   margin-right: 10px;
   border-radius: 3px;
   display: flex;
@@ -334,44 +334,44 @@ const readOnly = true
 }
 
 .check input:checked ~ p {
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 }
 .check .checkmark:after {
   content: '';
   display: none;
   width: 5px;
   height: 8px;
-  border: solid var(--scalar-color-1);
+  border: solid var(--readyapi-color-1);
   border-width: 0 1.5px 1.5px 0;
   transform: rotate(45deg) translate3d(0, -1px, 0);
 }
 .check input:checked ~ .checkmark:after {
   display: block;
 }
-.scalar-api-client__main__scroll-container {
+.readyapi-api-client__main__scroll-container {
   height: calc(100vh - 320px);
 }
-.scalar-api-client__request-name {
+.readyapi-api-client__request-name {
   outline: none;
   border: none;
   appearance: none;
   -webkit-appearance: none;
-  color: var(--scalar-color-3);
-  font-size: var(--scalar-small);
-  font-weight: var(--scalar-semibold);
-  color: var(--scalar-color-3);
+  color: var(--readyapi-color-3);
+  font-size: var(--readyapi-small);
+  font-weight: var(--readyapi-semibold);
+  color: var(--readyapi-color-3);
   width: 100%;
   padding: 0;
   background: transparent;
-  font-family: var(--scalar-font);
+  font-family: var(--readyapi-font);
 }
-.scalar-api-client__request-name::-webkit-input-placeholder {
-  font-weight: var(--scalar-semibold);
+.readyapi-api-client__request-name::-webkit-input-placeholder {
+  font-weight: var(--readyapi-semibold);
 }
-.scalar-api-client__request-name:-ms-input-placeholder {
-  font-weight: var(--scalar-semibold);
+.readyapi-api-client__request-name:-ms-input-placeholder {
+  font-weight: var(--readyapi-semibold);
 }
-.scalar-api-client__request-name::placeholder {
-  font-weight: var(--scalar-semibold);
+.readyapi-api-client__request-name::placeholder {
+  font-weight: var(--readyapi-semibold);
 }
 </style>

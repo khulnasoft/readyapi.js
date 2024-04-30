@@ -68,9 +68,9 @@ const specVersion = computed(() => {
   word-wrap: break-word;
 }
 .loading {
-  background: var(--scalar-background-3);
+  background: var(--readyapi-background-3);
   animation: loading-skeleton 1.5s infinite alternate;
-  border-radius: var(--scalar-radius-lg);
+  border-radius: var(--readyapi-radius-lg);
 }
 .badges {
   display: flex;

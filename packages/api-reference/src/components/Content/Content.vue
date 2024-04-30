@@ -200,26 +200,26 @@ const isLazy = props.layout !== 'accordion' && !hash.value.startsWith('model')
   }
 }
 .references-classic .introduction-cards-row :deep(.card-footer),
-.references-classic .introduction-cards-row :deep(.scalar-card),
-.references-classic .introduction-cards-row :deep(.scalar-card--muted) {
-  background: var(--scalar-background-1);
+.references-classic .introduction-cards-row :deep(.readyapi-card),
+.references-classic .introduction-cards-row :deep(.readyapi-card--muted) {
+  background: var(--readyapi-background-1);
 }
 .references-classic
   .introduction-cards-row
-  :deep(.scalar-card:nth-of-type(2) .scalar-card-header) {
+  :deep(.readyapi-card:nth-of-type(2) .readyapi-card-header) {
   display: none;
 }
 .references-classic
   .introduction-cards-row
-  :deep(.scalar-card:nth-of-type(2) .scalar-card-header) {
+  :deep(.readyapi-card:nth-of-type(2) .readyapi-card-header) {
   display: none;
 }
 .references-classic
   .introduction-cards-row
   :deep(
-    .scalar-card:nth-of-type(2)
-      .scalar-card-header.scalar-card--borderless
-      + .scalar-card-content
+    .readyapi-card:nth-of-type(2)
+      .readyapi-card-header.readyapi-card--borderless
+      + .readyapi-card-content
   ) {
   margin-top: 0;
 }

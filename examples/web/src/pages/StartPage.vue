@@ -66,11 +66,11 @@ import PageLink from '../components/PageLink.vue'
     </div>
     <h1>Examples</h1>
     <div class="page-links">
-      <PageLink href="http://localhost:5062/scalar">
+      <PageLink href="http://localhost:5062/readyapi">
         <template #title>Nuxt</template>
         <template #description>@readyapi/nuxt</template>
       </PageLink>
-      <PageLink href="http://localhost:5063/scalar">
+      <PageLink href="http://localhost:5063/readyapi">
         <template #title>Docusaurus</template>
         <template #description>@readyapi/docusaurus</template>
       </PageLink>
@@ -103,7 +103,7 @@ import PageLink from '../components/PageLink.vue'
         <template #description>@readyapi/nestjs-api-reference</template>
       </PageLink>
     </div>
-    <h1>@readyapi/components</h1>
+    <h1>@ready-api.khulnasoft.components</h1>
     <div class="page-links">
       <PageLink href="http://localhost:5100">
         <template #title>Components</template>
@@ -118,8 +118,8 @@ import PageLink from '../components/PageLink.vue'
 <style scoped>
 .main {
   font-family: 'Inter', sans-serif;
-  background-color: var(--scalar-background-1);
-  color: var(--scalar-color-1);
+  background-color: var(--readyapi-background-1);
+  color: var(--readyapi-color-1);
   min-height: 100vh;
   padding: 2rem;
   box-sizing: border-box;

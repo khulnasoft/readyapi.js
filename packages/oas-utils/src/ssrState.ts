@@ -2,7 +2,7 @@ import { type ReadyapiState } from './types'
 
 declare global {
   interface Window {
-    __SCALAR__: ReadyapiState
+    __READYAPI__: ReadyapiState
   }
 }
 
@@ -13,5 +13,5 @@ export const defaultStateFactory = (): ReadyapiState => ({})
  */
 export const ssrState: ReadyapiState =
   typeof window !== 'undefined'
-    ? window.__SCALAR__ ?? defaultStateFactory()
+    ? window.__READYAPI__ ?? defaultStateFactory()
     : defaultStateFactory()

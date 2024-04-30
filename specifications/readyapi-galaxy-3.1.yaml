@@ -1,14 +1,14 @@
 openapi: 3.1.0
 info:
-  title: Scalar Galaxy
+  title: Readyapi Galaxy
   description: |
-    The Scalar Galaxy is an example OpenAPI specification to test OpenAPI tools and libraries. It’s a fictional universe with fictional planets and fictional data. Get all the data for all planets.
+    The Readyapi Galaxy is an example OpenAPI specification to test OpenAPI tools and libraries. It’s a fictional universe with fictional planets and fictional data. Get all the data for all planets.
 
     ## Resources
 
     * https://github.com/khulnasoft/readyapi.js
     * https://github.com/OAI/OpenAPI-Specification
-    * https://scalar.com
+    * https://ready-api.khulnasoft.com
 
     ## Markdown Support
 
@@ -45,11 +45,11 @@ info:
     </details>
   version: 1.0.0
   contact:
-    name: Marc from Scalar
-    url: https://scalar.com
-    email: marc@scalar.com
+    name: Marc from Readyapi
+    url: https://ready-api.khulnasoft.com
+    email: marc@ready-api.khulnasoft.com
 servers:
-  - url: https://galaxy.scalar.com
+  - url: https://galaxy.ready-api.khulnasoft.com
 security:
   - bearerAuth: []
   - basicAuth: []
@@ -358,7 +358,7 @@ components:
       type: oauth2
       flows:
         implicit:
-          authorizationUrl: https://galaxy.scalar.com/oauth/authorize
+          authorizationUrl: https://galaxy.ready-api.khulnasoft.com/oauth/authorize
           scopes:
             write:planets: modify planets in your account
             read:planets: read your planets
@@ -427,12 +427,12 @@ components:
           type: string
           format: email
           examples:
-            - marc@scalar.com
+            - marc@ready-api.khulnasoft.com
         password:
           type: string
           minLength: 8
           examples:
-            - i-love-scalar
+            - i-love-readyapi
     User:
       type: object
       required:
@@ -453,7 +453,7 @@ components:
           type: string
           format: email
           examples:
-            - marc@scalar.com
+            - marc@ready-api.khulnasoft.com
     Credentials:
       type: object
       required:
@@ -464,11 +464,11 @@ components:
           type: string
           format: email
           examples:
-            - marc@scalar.com
+            - marc@ready-api.khulnasoft.com
         password:
           type: string
           examples:
-            - i-love-scalar
+            - i-love-readyapi
     Token:
       type: object
       properties:
@@ -501,7 +501,7 @@ components:
           type: string
           nullable: true
           examples:
-            - https://cdn.scalar.com/photos/mars.jpg
+            - https://cdn.ready-api.khulnasoft.com/photos/mars.jpg
         creator:
           '$ref': '#/components/schemas/User'
     PaginatedResource:

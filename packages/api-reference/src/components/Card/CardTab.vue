@@ -18,11 +18,11 @@ import { Tab } from '@headlessui/vue'
 .tab {
   background: none;
   border: none;
-  font-size: var(--scalar-mini);
-  font-family: var(--scalar-font);
-  color: var(--scalar-color-2);
-  font-weight: var(--scalar-semibold);
-  line-height: calc(var(--scalar-mini) + 2px);
+  font-size: var(--readyapi-mini);
+  font-family: var(--readyapi-font);
+  color: var(--readyapi-color-2);
+  font-weight: var(--readyapi-semibold);
+  line-height: calc(var(--readyapi-mini) + 2px);
   white-space: nowrap;
   cursor: pointer;
   padding: 0;
@@ -39,8 +39,8 @@ import { Tab } from '@headlessui/vue'
   top: -6px;
   width: calc(100% + 12px);
   height: calc(100% + 12px);
-  border-radius: var(--scalar-radius);
-  background: var(--scalar-background-3);
+  border-radius: var(--readyapi-radius);
+  background: var(--readyapi-background-3);
   opacity: 0;
 }
 .tab:hover:before {
@@ -51,8 +51,8 @@ import { Tab } from '@headlessui/vue'
   position: relative;
 }
 .tab-selected {
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
   text-decoration: underline;
-  text-underline-offset: var(--scalar-micro);
+  text-underline-offset: var(--readyapi-micro);
 }
 </style>

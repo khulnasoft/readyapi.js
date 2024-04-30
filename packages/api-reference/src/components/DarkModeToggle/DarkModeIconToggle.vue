@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ScalarIcon } from '@readyapi/components'
+import { ReadyapiIcon } from '@ready-api.khulnasoft.components'
 
 import ScreenReader from '../ScreenReader.vue'
 
@@ -16,7 +16,7 @@ defineEmits<{
     class="darklight"
     type="button"
     @click="$emit('toggleDarkMode')">
-    <ScalarIcon :icon="isDarkMode ? 'DarkMode' : 'LightMode'" />
+    <ReadyapiIcon :icon="isDarkMode ? 'DarkMode' : 'LightMode'" />
     <ScreenReader>
       Switch to {{ isDarkMode ? 'Light' : 'Dark' }} Mode
     </ScreenReader>
@@ -24,7 +24,7 @@ defineEmits<{
 </template>
 <style scoped>
 .darklight {
-  color: var(--scalar-sidebar-color-2, var(--scalar-color-2));
+  color: var(--readyapi-sidebar-color-2, var(--readyapi-color-2));
   display: flex;
   align-items: center;
 
@@ -35,6 +35,6 @@ defineEmits<{
 }
 .darklight:hover {
   cursor: pointer;
-  color: var(--scalar-sidebar-color-1, var(--scalar-color-1));
+  color: var(--readyapi-sidebar-color-1, var(--readyapi-color-1));
 }
 </style>

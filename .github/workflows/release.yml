@@ -53,7 +53,7 @@ jobs:
           # https://www.npmjs.com/settings/YOUR_ACCOUNT_HANDLE/tokens/granular-access-tokens/new
           # Custom Expiration: 01-01-2100
           # Permissions: Read and Write
-          # Select packages: @scalar
+          # Select packages: @readyapi
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Send bundle stats and build information to RelativeCI
         uses: relative-ci/agent-action@v2

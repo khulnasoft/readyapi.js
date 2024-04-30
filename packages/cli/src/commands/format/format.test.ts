@@ -2,7 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 
-import { ScalarCli } from '../../../tests/invoke-cli'
+import { ReadyapiCli } from '../../../tests/invoke-cli'
 
 describe('format', () => {
   it('formats the given json file', () => {
@@ -16,7 +16,7 @@ describe('format', () => {
     fs.writeFileSync(jsonFile, notWellFormatted)
 
     // Format
-    const [exitCode, logs] = ScalarCli()
+    const [exitCode, logs] = ReadyapiCli()
       .setCwd(path.resolve('./'))
       .invoke(['format', './packages/cli/src/commands/format/temp.json'])
 
@@ -44,7 +44,7 @@ describe('format', () => {
     fs.writeFileSync(yamlFile, notWellFormatted)
 
     // Format
-    const [exitCode, logs] = ScalarCli()
+    const [exitCode, logs] = ReadyapiCli()
       .setCwd(path.resolve('./'))
       .invoke(['format', './packages/cli/src/commands/format/temp.yaml'])
 

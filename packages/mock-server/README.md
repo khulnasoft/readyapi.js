@@ -1,4 +1,4 @@
-# Scalar Mock Server
+# Readyapi Mock Server
 
 A server returning fake data based on an OpenAPI specification
 

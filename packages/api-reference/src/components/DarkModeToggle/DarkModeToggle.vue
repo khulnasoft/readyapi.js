@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ScalarIcon } from '@readyapi/components'
+import { ReadyapiIcon } from '@ready-api.khulnasoft.components'
 
 defineProps<{
   isDarkMode: boolean
@@ -15,7 +15,7 @@ defineEmits<{
       class="darklight"
       type="button"
       @click="$emit('toggleDarkMode')">
-      <ScalarIcon icon="LightDarkModeToggle" />
+      <ReadyapiIcon icon="LightDarkModeToggle" />
       <template v-if="isDarkMode">
         <span>Light Mode</span>
       </template>
@@ -25,22 +25,22 @@ defineEmits<{
     </button>
     <a
       class="darklight-reference-promo"
-      href="https://www.scalar.com"
+      href="https://www.ready-api.khulnasoft.com"
       target="_blank">
-      Powered by scalar.com
+      Powered by ready-api.khulnasoft.com
     </a>
   </div>
 </template>
 <style scoped>
 .darklight {
-  font-family: var(--scalar-font);
+  font-family: var(--readyapi-font);
   border: none;
   border-top: 1px solid
-    var(--scalar-sidebar-border-color, var(--scalar-border-color));
-  color: var(--scalar-sidebar-color-2, var(--scalar-color-2));
+    var(--readyapi-sidebar-border-color, var(--readyapi-border-color));
+  color: var(--readyapi-sidebar-color-2, var(--readyapi-color-2));
 
-  font-size: var(--scalar-mini);
-  font-weight: var(--scalar-semibold);
+  font-size: var(--readyapi-mini);
+  font-weight: var(--readyapi-semibold);
   appearance: none;
   background: transparent;
   outline: none;
@@ -57,7 +57,7 @@ defineEmits<{
 }
 .darklight:hover {
   cursor: pointer;
-  color: var(--scalar-sidebar-color-1, var(--scalar-color-1));
+  color: var(--readyapi-sidebar-color-1, var(--readyapi-color-1));
 }
 
 .darklight svg {
@@ -69,9 +69,9 @@ defineEmits<{
   padding: 6px 24px 12px;
   display: flex;
   align-items: center;
-  font-size: var(--scalar-mini);
+  font-size: var(--readyapi-mini);
   text-decoration: none;
-  color: var(--scalar-sidebar-color-2, var(--scalar-color-2));
+  color: var(--readyapi-sidebar-color-2, var(--readyapi-color-2));
 }
 .darklight-reference-promo:hover {
   text-decoration: underline;

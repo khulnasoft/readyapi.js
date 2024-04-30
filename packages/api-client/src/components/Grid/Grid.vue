@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ScalarIcon } from '@readyapi/components'
+import { ReadyapiIcon } from '@ready-api.khulnasoft.components'
 import type { BaseParameter } from '@readyapi/oas-utils'
 import { ref } from 'vue'
 
@@ -56,7 +56,7 @@ function addHandler() {
         type="button"
         @click="addHandler">
         <i class="meta-actions-item-icon">
-          <ScalarIcon icon="Add" />
+          <ReadyapiIcon icon="Add" />
         </i>
         {{ addLabel }}
       </button>
@@ -67,7 +67,7 @@ function addHandler() {
         @click="showMore = true">
         Show More
         <i class="meta-actions-item-icon">
-          <ScalarIcon icon="ChevronDown" />
+          <ReadyapiIcon icon="ChevronDown" />
         </i>
       </button>
     </div>
@@ -75,22 +75,22 @@ function addHandler() {
 </template>
 <style scoped>
 .table {
-  border: 1px solid var(--scalar-border-color);
+  border: 1px solid var(--readyapi-border-color);
   background: transparent;
-  border-radius: var(--scalar-radius);
+  border-radius: var(--readyapi-radius);
   width: 100%;
 }
 .meta-actions-item {
   border: none;
-  font-weight: var(--scalar-semibold);
+  font-weight: var(--readyapi-semibold);
   appearance: none;
   padding: 9px;
   width: 100%;
   appearance: none;
   outline: none;
-  font-size: var(--scalar-micro);
-  font-family: var(--scalar-font);
-  color: var(--scalar-color-3);
+  font-size: var(--readyapi-micro);
+  font-family: var(--readyapi-font);
+  color: var(--readyapi-color-3);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -115,6 +115,6 @@ function addHandler() {
 }
 .meta-actions-item:hover,
 .meta-actions-item:focus {
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 }
 </style>

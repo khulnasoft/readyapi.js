@@ -1,14 +1,14 @@
 # Ready API Reference
 
-[![Version](https://img.shields.io/npm/v/%40scalar/api-reference)](https://www.npmjs.com/package/@readyapi/api-reference)
-[![Downloads](https://img.shields.io/npm/dm/%40scalar/api-reference)](https://www.npmjs.com/package/@readyapi/api-reference)
-[![Hits on jsdelivr](https://img.shields.io/jsdelivr/npm/hm/%40scalar%2Fapi-reference)](https://www.jsdelivr.com/package/npm/@readyapi/api-reference)
-[![License](https://img.shields.io/npm/l/%40scalar%2Fapi-reference)](https://www.npmjs.com/package/@readyapi/api-reference)
+[![Version](https://img.shields.io/npm/v/%40readyapi/api-reference)](https://www.npmjs.com/package/@readyapi/api-reference)
+[![Downloads](https://img.shields.io/npm/dm/%40readyapi/api-reference)](https://www.npmjs.com/package/@readyapi/api-reference)
+[![Hits on jsdelivr](https://img.shields.io/jsdelivr/npm/hm/%40readyapi%2Fapi-reference)](https://www.jsdelivr.com/package/npm/@readyapi/api-reference)
+[![License](https://img.shields.io/npm/l/%40readyapi%2Fapi-reference)](https://www.npmjs.com/package/@readyapi/api-reference)
 [![Discord](https://img.shields.io/discord/1135330207960678410?style=flat&color=5865F2)](https://discord.gg/8HeZcRGPFS)
 
-Generate interactive API documentations from Swagger files. [Try our Demo](https://docs.scalar.com/swagger-editor)
+Generate interactive API documentations from Swagger files. [Try our Demo](https://docs.ready-api.khulnasoft.com/swagger-editor)
 
-[![Screenshot of an API Reference](https://github.com/khulnasoft/readyapi.js/assets/6201407/d8beb5e1-bf64-4589-8cb0-992ba79215a8)](https://docs.scalar.com/swagger-editor)
+[![Screenshot of an API Reference](https://github.com/khulnasoft/readyapi.js/assets/6201407/d8beb5e1-bf64-4589-8cb0-992ba79215a8)](https://docs.ready-api.khulnasoft.com/swagger-editor)
 
 ## Installation
 
@@ -70,7 +70,7 @@ Making requests to other domains is restricted in the browser and requires [CORS
 
 ```vue
 <ApiReference
-  :configuration="{ proxy: 'https://api.scalar.com/request-proxy' }" />
+  :configuration="{ proxy: 'https://api.ready-api.khulnasoft.com/request-proxy' }" />
 ```
 
 #### showSidebar?: boolean

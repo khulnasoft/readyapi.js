@@ -111,7 +111,7 @@
 
 ### Minor Changes
 
-- 0e64a36: refactor: rename all --theme-_ variables to --scalar-_
+- 0e64a36: refactor: rename all --theme-_ variables to --readyapi-_
 
 ### Patch Changes
 
@@ -1069,7 +1069,7 @@
 ### Patch Changes
 
 - 5efb80bb: feat: add undici example requests
-- a1319e8b: Switched internal component library to use ScalarComponents instead
+- a1319e8b: Switched internal component library to use ReadyapiComponents instead
 - Updated dependencies [5efb80bb]
 - Updated dependencies [8436e115]
 - Updated dependencies [5d6b539b]

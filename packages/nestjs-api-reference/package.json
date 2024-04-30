@@ -5,7 +5,7 @@
   "author": "KhulnaSoft (https://github.com/khulnasoft)",
   "homepage": "https://github.com/khulnasoft/readyapi.js",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
-  "version": "0.3.15",
+  "version": "0.0.1",
   "engines": {
     "node": ">=18"
   },

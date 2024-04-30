@@ -16,9 +16,9 @@ withDefaults(defineProps<{ lines?: number }>(), {
 
 <style scoped>
 .loading {
-  background: var(--scalar-background-3);
+  background: var(--readyapi-background-3);
   animation: loading-skeleton 1.5s infinite alternate;
-  border-radius: var(--scalar-radius-lg);
+  border-radius: var(--readyapi-radius-lg);
   min-height: 1.6em;
   margin: 0.6em 0;
   max-width: 100%;

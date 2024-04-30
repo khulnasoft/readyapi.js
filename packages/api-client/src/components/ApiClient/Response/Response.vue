@@ -55,8 +55,8 @@ const responseData = computed(() => {
 })
 </script>
 <template>
-  <div class="scalar-api-client__main__right custom-scroll">
-    <div class="scalar-api-client__main__content">
+  <div class="readyapi-api-client__main__right custom-scroll">
+    <div class="readyapi-api-client__main__content">
       <label>Response</label>
       <div class="meta">
         <template v-if="activeRequestId && activeResponse">
@@ -80,26 +80,26 @@ const responseData = computed(() => {
           v-show="responseCookies.length > 0"
           :items="responseCookies" />
         <template v-if="responseCookies.length === 0">
-          <div class="scalar-api-client__empty-state">No Cookies</div>
+          <div class="readyapi-api-client__empty-state">No Cookies</div>
         </template>
       </CollapsibleSection>
-      <div class="scalar-api-client__main__scroll-container" />
+      <div class="readyapi-api-client__main__scroll-container" />
     </div>
   </div>
 </template>
 <style>
-.scalar-api-client__main__right {
+.readyapi-api-client__main__right {
   width: 50%;
   padding: 0 18px 12px 18px;
 }
 @media screen and (max-width: 820px) {
-  .scalar-api-client__main__right {
+  .readyapi-api-client__main__right {
     width: 100%;
     border-right: none;
     padding: 0 12px 12px 12px;
   }
 }
-.scalar-api-client__main__right :deep(.scalar-copilot__header-button) {
+.readyapi-api-client__main__right :deep(.readyapi-copilot__header-button) {
   position: absolute;
   top: 6px;
   right: 12px;

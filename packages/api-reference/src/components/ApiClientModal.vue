@@ -27,15 +27,15 @@ const isMobile = useMediaQuery('(max-width: 1000px)')
     class="api-client-drawer">
     <div class="api-client-container">
       <slot name="header" />
-      <!-- <div class="scalar-api-client__navigation">
+      <!-- <div class="readyapi-api-client__navigation">
           <button
-            class="scalar-api-client__close"
+            class="readyapi-api-client__close"
             type="button"
             @click="hideApiClient">
             <span>Back to Reference</span>
           </button>
         </div> -->
-      <div class="scalar-api-client-height">
+      <div class="readyapi-api-client-height">
         <template v-if="tabMode">
           <template v-if="activeTab === 'sidebar'">
             <div class="t-doc__sidebar">
@@ -79,11 +79,11 @@ const isMobile = useMediaQuery('(max-width: 1000px)')
 </template>
 
 <style scoped>
-.api-client-container .scalar-api-client {
+.api-client-container .readyapi-api-client {
   width: calc(100% - var(--refs-sidebar-width));
 }
 @media screen and (max-width: 1000px) {
-  .api-client-container .scalar-api-client {
+  .api-client-container .readyapi-api-client {
     width: 100%;
   }
 }
@@ -99,44 +99,44 @@ const isMobile = useMediaQuery('(max-width: 1000px)')
   opacity: 1;
   overflow: hidden;
   pointer-events: all;
-  background: var(--scalar-background-1) !important;
-  border-radius: var(--scalar-radius-lg);
-  box-shadow: var(--scalar-shadow-1);
+  background: var(--readyapi-background-1) !important;
+  border-radius: var(--readyapi-radius-lg);
+  box-shadow: var(--readyapi-shadow-1);
   height: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
 
-.scalar-api-client__navigation {
+.readyapi-api-client__navigation {
   width: 100%;
   display: flex;
   align-items: center;
   padding: 11px 12px;
   height: var(--refs-header-height);
-  background-color: var(--scalar-background-1);
+  background-color: var(--readyapi-background-1);
   z-index: 10;
   position: sticky;
-  border-bottom: 1px solid var(--scalar-border-color);
+  border-bottom: 1px solid var(--readyapi-border-color);
   top: 0;
 }
 
-.scalar-api-client__close {
+.readyapi-api-client__close {
   appearance: none;
   border: none;
   outline: none;
   display: flex;
   align-items: center;
   background: transparent;
-  font-size: var(--scalar-small);
-  color: var(--scalar-color-1);
-  font-weight: var(--scalar-semibold);
+  font-size: var(--readyapi-small);
+  color: var(--readyapi-color-1);
+  font-weight: var(--readyapi-semibold);
 }
-.scalar-api-client__close:hover {
+.readyapi-api-client__close:hover {
   cursor: pointer;
 }
 .api-client-drawer {
-  background: var(--scalar-background-1);
+  background: var(--readyapi-background-1);
   height: calc(100% - 58px);
   width: calc(100% - 8px);
   border-radius: 12px;
@@ -210,11 +210,11 @@ const isMobile = useMediaQuery('(max-width: 1000px)')
     opacity: 1;
   }
 }
-.scalar-api-client-height {
+.readyapi-api-client-height {
   height: 100%;
   display: flex;
 }
-.scalar-api-client-height .sidebar {
+.readyapi-api-client-height .sidebar {
   flex: 1 1 0%;
   flex-grow: 1;
   flex-shrink: 1;
@@ -225,6 +225,6 @@ const isMobile = useMediaQuery('(max-width: 1000px)')
   width: var(--refs-sidebar-width);
   max-width: var(--refs-sidebar-width);
   border-right: 1px solid
-    var(--scalar-sidebar-border-color, var(--scalar-border-color));
+    var(--readyapi-sidebar-border-color, var(--readyapi-border-color));
 }
 </style>

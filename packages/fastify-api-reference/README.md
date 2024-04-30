@@ -7,7 +7,7 @@
 
 This plugin provides an easy way to render a beautiful API reference based on a OpenAPI/Swagger file with Fastify.
 
-[![Screenshot of an API Reference](https://github.com/khulnasoft/readyapi.js/assets/6201407/d8beb5e1-bf64-4589-8cb0-992ba79215a8)](https://docs.readyapi.com/swagger-editor)
+[![Screenshot of an API Reference](https://github.com/khulnasoft/readyapi.js/assets/6201407/d8beb5e1-bf64-4589-8cb0-992ba79215a8)](https://docs.ready-api.khulnasoft.com/swagger-editor)
 
 ## Installation
 

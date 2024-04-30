@@ -7,7 +7,7 @@ export default defineNuxtPlugin((_nuxtApp) => {
     useHead({
       script: [
         {
-          children: `window.__SCALAR__ = ${JSON.stringify(ssrContext?.payload?.data ?? {})}`,
+          children: `window.__READYAPI__ = ${JSON.stringify(ssrContext?.payload?.data ?? {})}`,
         },
       ],
     })

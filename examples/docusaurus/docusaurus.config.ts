@@ -1,6 +1,6 @@
 import type * as Preset from '@docusaurus/preset-classic'
 import type { Config } from '@docusaurus/types'
-import type { ScalarOptions } from '@readyapi/docusaurus'
+import type { ReadyapiOptions } from '@readyapi/docusaurus'
 import { themes as prismThemes } from 'prism-react-renderer'
 
 const config: Config = {
@@ -59,14 +59,14 @@ const config: Config = {
     [
       '@readyapi/docusaurus',
       {
-        label: 'Scalar',
-        route: '/scalar',
+        label: 'Readyapi',
+        route: '/readyapi',
         configuration: {
           spec: {
             url: 'https://petstore3.swagger.io/api/v3/openapi.json',
           },
         },
-      } as ScalarOptions,
+      } as ReadyapiOptions,
     ],
   ],
 

@@ -1,4 +1,4 @@
-name: Deploy Scalar examples
+name: Deploy Readyapi examples
 
 on:
   push:
@@ -12,7 +12,7 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   release:
-    name: Deploy Scalar examples
+    name: Deploy Readyapi examples
     runs-on: ubuntu-latest
     strategy:
       matrix:

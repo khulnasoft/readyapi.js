@@ -68,7 +68,7 @@ await fastify.register(fastifyApiReference, {
   // spec: {
   // content: { openapi: '3.1.0', info: { title: 'Example' }, paths: {} },
   // content: () => fastify.swagger(),
-  // url: '/scalar.json',
+  // url: '/readyapi.json',
   // },
   // customCss: `body { border: 10px solid red; }`,
   // },

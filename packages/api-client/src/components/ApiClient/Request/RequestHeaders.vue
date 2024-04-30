@@ -35,9 +35,9 @@ const hasHeaders = computed(() => {
     :defaultOpen="hasHeaders"
     title="Headers">
     <template v-if="!hasHeaders">
-      <div class="scalar-api-client__empty-state">
+      <div class="readyapi-api-client__empty-state">
         <button
-          class="scalar-api-client-add"
+          class="readyapi-api-client-add"
           type="button"
           @click="addAnotherHandler">
           <svg

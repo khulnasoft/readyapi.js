@@ -69,7 +69,7 @@
 
 ### Patch Changes
 
-- 7e37c84: add scalar tab to nuxt devtools
+- 7e37c84: add readyapi tab to nuxt devtools
 
 ## 0.0.15
 
@@ -103,7 +103,7 @@
 
 ### Patch Changes
 
-- ad77186: chore: update scalar nuxt changelog
+- ad77186: chore: update readyapi nuxt changelog
 
 ## 0.0.10
 
@@ -122,7 +122,7 @@
 ### Patch Changes
 
 - ac85c04: chore: update readme
-- c68e7d9: fix: missing scalar vars in nuxt theme
+- c68e7d9: fix: missing readyapi vars in nuxt theme
 
 ## 0.0.7
 

@@ -2,13 +2,13 @@
 
 [![CI](https://github.com/khulnasoft/readyapi.js/actions/workflows/ci.yml/badge.svg)](https://github.com/khulnasoft/readyapi.js/actions/workflows/ci.yml)
 [![Release](https://github.com/khulnasoft/readyapi.js/actions/workflows/release.yml/badge.svg)](https://github.com/khulnasoft/readyapi.js/actions/workflows/release.yml)
-[![Contributors](https://img.shields.io/github/contributors/scalar/scalar)](https://github.com/khulnasoft/readyapi.js/graphs/contributors)
-[![GitHub License](https://img.shields.io/github/license/scalar/scalar)](https://github.com/khulnasoft/readyapi.js/blob/main/LICENSE)
-[![Discord](https://img.shields.io/discord/1135330207960678410?style=flat&color=5865F2)](https://discord.gg/scalar)
+[![Contributors](https://img.shields.io/github/contributors/khulnasoft/readyapi.js)](https://github.com/khulnasoft/readyapi.js/graphs/contributors)
+[![GitHub License](https://img.shields.io/github/license/khulnasoft/readyapi.js)](https://github.com/khulnasoft/readyapi.js/blob/main/LICENSE)
+[![Discord](https://img.shields.io/discord/1135330207960678410?style=flat&color=5865F2)](https://discord.gg/readyapi)
 
-Generate interactive API documentation from Swagger files. [Try our Demo](https://docs.scalar.com/swagger-editor)
+Generate interactive API documentation from Swagger files. [Try our Demo](https://docs.ready-api.khulnasoft.com/swagger-editor)
 
-[![Screenshot of an API Reference](https://github.com/khulnasoft/readyapi.js/assets/6201407/d8beb5e1-bf64-4589-8cb0-992ba79215a8)](https://docs.scalar.com/swagger-editor)
+[![Screenshot of an API Reference](https://github.com/khulnasoft/readyapi.js/assets/6201407/d8beb5e1-bf64-4589-8cb0-992ba79215a8)](https://docs.ready-api.khulnasoft.com/swagger-editor)
 
 ## Features
 
@@ -19,7 +19,7 @@ Generate interactive API documentation from Swagger files. [Try our Demo](https:
 - Doesn’t look like it’s 2011
 
 > [!NOTE]\
-> [Scalar Townhall every 2nd Thursday in Discord](https://discord.gg/bcCycarP3D?event=1219363385485824000)
+> [Readyapi Townhall every 2nd Thursday in Discord](https://discord.gg/bcCycarP3D?event=1219363385485824000)
 >
 > Join us to see upcoming features, discuss the roadmap and chat about APIs. 💬
 
@@ -39,7 +39,7 @@ Generate interactive API documentation from Swagger files. [Try our Demo](https:
   - [With Platformatic](#with-platformatic)
   - [With Hono](#with-hono)
   - [With Docusaurus](#with-docusaurus)
-  - [With FastAPI](https://github.com/khulnasoft/readyapi.js/tree/main/packages/scalar_fastapi/README)
+  - [With FastAPI](https://github.com/khulnasoft/readyapi.js/tree/main/packages/readyapi_fastapi/README)
   - [With Litestar](https://docs.litestar.dev/latest/usage/openapi/ui_plugins.html)
   - [With Laravel](#with-laravel)
   - [With Rust](#with-rust)
@@ -71,11 +71,11 @@ Generate interactive API documentation from Swagger files. [Try our Demo](https:
   <body>
     <!-- Add your own OpenAPI/Swagger spec file URL here: -->
     <!-- Note: this includes our proxy, you can remove the following line if you do not need it -->
-    <!-- data-proxy-url="https://api.scalar.com/request-proxy" -->
+    <!-- data-proxy-url="https://api.ready-api.khulnasoft.com/request-proxy" -->
     <script
       id="api-reference"
       data-url="https://petstore3.swagger.io/api/v3/openapi.json"
-      data-proxy-url="https://api.scalar.com/request-proxy"></script>
+      data-proxy-url="https://api.ready-api.khulnasoft.com/request-proxy"></script>
     <!-- You can also set a full configuration object like this (easier for nested objects): -->
     <script>
       var configuration = {
@@ -106,7 +106,7 @@ If you’d like to add a request proxy for the API client (to avoid CORS issues)
 <script
   id="api-reference"
   type="application/json"
-  data-proxy-url="https://api.scalar.com/request-proxy">
+  data-proxy-url="https://api.ready-api.khulnasoft.com/request-proxy">
   { … }
 </script>
 ```
@@ -119,7 +119,7 @@ You can easily run Ready API References in Nuxt via the module:
 npx nuxi module add @readyapi/nuxt
 ```
 
-If you are using Nuxt server routes, you can enable scalar simply by enabling `openAPI` in the nitro
+If you are using Nuxt server routes, you can enable readyapi simply by enabling `openAPI` in the nitro
 config in your `nuxt.config.ts`:
 
 ```ts
@@ -138,9 +138,9 @@ If you would like to add your own OpenAPI spec file, you can do so with the foll
 ```ts
 export default defineNuxtConfig({
   modules: ['@readyapi/nuxt'],
-  scalar: {
+  readyapi: {
     spec: {
-      url: 'https://cdn.scalar.com/spec/openapi_petstore.json',
+      url: 'https://cdn.ready-api.khulnasoft.com/spec/openapi_petstore.json',
     },
   },
 })
@@ -253,7 +253,7 @@ package: [@readyapi/fastify-api-reference](https://github.com/khulnasoft/readyap
 ### With Platformatic
 
 Good news: If you’re
-using [a recent version of Platformatic](https://github.com/platformatic/platformatic/releases/tag/v1.16.0), the Scalar
+using [a recent version of Platformatic](https://github.com/platformatic/platformatic/releases/tag/v1.16.0), the Readyapi
 API reference is installed and configured automatically.
 
 ### With Hono
@@ -338,20 +338,20 @@ Our Docusaurus plugin makes it easy to render API references. Simple add the
 following to your Docusaurus config:
 
 ```ts
-import type { ScalarOptions } from '@readyapi/docusaurus'
+import type { ReadyapiOptions } from '@readyapi/docusaurus'
 
 plugins: [
   [
     '@readyapi/docusaurus',
     {
-      label: 'Scalar',
-      route: '/scalar',
+      label: 'Readyapi',
+      route: '/readyapi',
       configuration: {
         spec: {
           url: 'https://petstore3.swagger.io/api/v3/openapi.json',
         },
       },
-    } as ScalarOptions,
+    } as ReadyapiOptions,
   ],
 ],
 ```
@@ -371,7 +371,7 @@ a [detailed integration guide for AdonisJS](https://github.com/khulnasoft/readya
 ### With Laravel
 
 There’s [a wonderful package to generate OpenAPI files for Laravel](https://scribe.knuckles.wtf/laravel/) already.
-Set the `type` to `external_laravel` (for Blade) or `external_static` (for HTML) and `theme` to `scalar`:
+Set the `type` to `external_laravel` (for Blade) or `external_static` (for HTML) and `theme` to `readyapi`:
 
 ```php
 <?php
@@ -380,7 +380,7 @@ Set the `type` to `external_laravel` (for Blade) or `external_static` (for HTML)
 return [
   // …
   'type' => 'external_laravel',
-  'theme' => 'scalar',
+  'theme' => 'readyapi',
   // …
 ];
 ```
@@ -392,7 +392,7 @@ too.
 ### With Rust
 
 There’s [a wonderful package to generate OpenAPI files for Rust](https://github.com/tamasfe/aide) already.
-Set the `api_route` to use `Scalar` to get started:
+Set the `api_route` to use `Readyapi` to get started:
 
 ```rust
 use aide::{
@@ -401,14 +401,14 @@ use aide::{
         ApiRouter, IntoApiResponse,
     },
     openapi::OpenApi,
-    scalar::Scalar,
+    readyapi::Readyapi,
 };
 ...
     let router: ApiRouter = ApiRouter::new()
         .api_route_with(
             "/",
             get_with(
-                Scalar::new("/docs/private/api.json")
+                Readyapi::new("/docs/private/api.json")
                     .with_title("Aide Axum")
                     .axum_handler(),
                 |op| op.description("This documentation page."),
@@ -432,14 +432,14 @@ Here are a few use cases:
 You can use [npx](https://docs.npmjs.com/cli/v8/commands/npx) to use the CLI without manually installing it:
 
 ```bash
-npx @scalar/cli --version
+npx @readyapi/cli --version
 ```
 
 If you want to install it locally, you can do it like this:
 
 ```bash
-npm -g install @scalar/cli
-scalar --version
+npm -g install @readyapi/cli
+readyapi --version
 ```
 
 ### Format
@@ -447,7 +447,7 @@ scalar --version
 Quickly bring your OpenAPI file (JSON or YAML) into shape:
 
 ```bash
-scalar format openapi.json --output openapi.yaml
+readyapi format openapi.json --output openapi.yaml
 ```
 
 ### Validate
@@ -456,13 +456,13 @@ Validate your OpenAPI file to find errors
 quickly, [great for CI](https://github.com/khulnasoft/readyapi.js/blob/main/.github/workflows/validate-openapi-file.yml):
 
 ```bash
-scalar validate openapi.json
+readyapi validate openapi.json
 ```
 
 Oh, and all commands work with hosted OpenAPI files, too:
 
 ```bash
-scalar validate https://example.com/openapi.json
+readyapi validate https://example.com/openapi.json
 ```
 
 ### Preview
@@ -471,7 +471,7 @@ Preview the API reference for your OpenAPI file with just one command. It can ev
 content on file changes:
 
 ```bash
-scalar reference openapi.json --watch
+readyapi reference openapi.json --watch
 ```
 
 ### Mock server
@@ -479,7 +479,7 @@ scalar reference openapi.json --watch
 Designing an API, but don’t have a backend yet? Just quickly boot up a mock server like this:
 
 ```bash
-scalar mock openapi.json --watch --port 8080
+readyapi mock openapi.json --watch --port 8080
 ```
 
 ## Share
@@ -487,7 +487,7 @@ scalar mock openapi.json --watch --port 8080
 Want to share your OpenAPI file? It’s as easy as this:
 
 ```bash
-scalar share openapi.json
+readyapi share openapi.json
 ```
 
 Read [more about the CLI here](https://github.com/khulnasoft/readyapi.js/tree/main/packages/cli).
@@ -496,7 +496,7 @@ Read [more about the CLI here](https://github.com/khulnasoft/readyapi.js/tree/ma
 
 Wait, this is open source and you can do whatever you want. But if you want to add a nice, customizable guide,
 collaborate with your team and have everything served through a CDN, create an account
-on [scalar.com](https://scalar.com).
+on [ready-api.khulnasoft.com](https://ready-api.khulnasoft.com).
 
 ## Configuration
 
@@ -547,7 +547,7 @@ Overwrite our CSS variables. We won’t judge.
 
 ```
 :root {
-  --scalar-font: 'Comic Sans MS', 'Comic Sans', cursive;
+  --readyapi-font: 'Comic Sans MS', 'Comic Sans', cursive;
 }
 ```
 
@@ -562,76 +562,76 @@ base styles as well as overwrite the color theme.
 To build your own color themes, overwrite the night mode and day mode variables.
 Here are some basic variables to get you started:
 
-![basic-scalar-variables](https://github.com/khulnasoft/readyapi.js/assets/6374090/f49256c4-4623-4797-87a1-24bdbc9b17fd)
+![basic-readyapi-variables](https://github.com/khulnasoft/readyapi.js/assets/6374090/f49256c4-4623-4797-87a1-24bdbc9b17fd)
 
 ```
 .light-mode {
-  --scalar-color-1: #121212;
-  --scalar-color-2: rgba(0, 0, 0, 0.6);
-  --scalar-color-3: rgba(0, 0, 0, 0.4);
-  --scalar-color-accent: #0a85d1;
-  --scalar-background-1: #fff;
-  --scalar-background-2: #f6f5f4;
-  --scalar-background-3: #f1ede9;
-  --scalar-background-accent: #5369d20f;
-  --scalar-border-color: rgba(0, 0, 0, 0.08);
+  --readyapi-color-1: #121212;
+  --readyapi-color-2: rgba(0, 0, 0, 0.6);
+  --readyapi-color-3: rgba(0, 0, 0, 0.4);
+  --readyapi-color-accent: #0a85d1;
+  --readyapi-background-1: #fff;
+  --readyapi-background-2: #f6f5f4;
+  --readyapi-background-3: #f1ede9;
+  --readyapi-background-accent: #5369d20f;
+  --readyapi-border-color: rgba(0, 0, 0, 0.08);
 }
 .dark-mode {
-  --scalar-color-1: rgba(255, 255, 255, 0.81);
-  --scalar-color-2: rgba(255, 255, 255, 0.443);
-  --scalar-color-3: rgba(255, 255, 255, 0.282);
-  --scalar-color-accent: #8ab4f8;
-  --scalar-background-1: #202020;
-  --scalar-background-2: #272727;
-  --scalar-background-3: #333333;
-  --scalar-background-accent: #8ab4f81f;
+  --readyapi-color-1: rgba(255, 255, 255, 0.81);
+  --readyapi-color-2: rgba(255, 255, 255, 0.443);
+  --readyapi-color-3: rgba(255, 255, 255, 0.282);
+  --readyapi-color-accent: #8ab4f8;
+  --readyapi-background-1: #202020;
+  --readyapi-background-2: #272727;
+  --readyapi-background-3: #333333;
+  --readyapi-background-accent: #8ab4f81f;
 }
 ```
 
 Or get more advanced by styling our sidebar!
 
-![scalar-sidebar-variables](https://github.com/khulnasoft/readyapi.js/assets/6374090/5b1f0211-5c09-4092-a882-03d8241ad428)
+![readyapi-sidebar-variables](https://github.com/khulnasoft/readyapi.js/assets/6374090/5b1f0211-5c09-4092-a882-03d8241ad428)
 
 ```
 .light-mode .sidebar {
-  --scalar-sidebar-background-1: var(--scalar-background-1);
-  --scalar-sidebar-item-hover-color: currentColor;
-  --scalar-sidebar-item-hover-background: var(--scalar-background-2);
-  --scalar-sidebar-item-active-background: var(--scalar-background-2);
-  --scalar-sidebar-border-color: var(--scalar-border-color);
-  --scalar-sidebar-color-1: var(--scalar-color-1);
-  --scalar-sidebar-color-2: var(--scalar-color-2);
-  --scalar-sidebar-color-active: var(--scalar-color-2);
-  --scalar-sidebar-search-background: var(--scalar-background-2);
-  --scalar-sidebar-search-border-color: var(--scalar-border-color);
-  --scalar-sidebar-search-color: var(--scalar-color-3);
+  --readyapi-sidebar-background-1: var(--readyapi-background-1);
+  --readyapi-sidebar-item-hover-color: currentColor;
+  --readyapi-sidebar-item-hover-background: var(--readyapi-background-2);
+  --readyapi-sidebar-item-active-background: var(--readyapi-background-2);
+  --readyapi-sidebar-border-color: var(--readyapi-border-color);
+  --readyapi-sidebar-color-1: var(--readyapi-color-1);
+  --readyapi-sidebar-color-2: var(--readyapi-color-2);
+  --readyapi-sidebar-color-active: var(--readyapi-color-2);
+  --readyapi-sidebar-search-background: var(--readyapi-background-2);
+  --readyapi-sidebar-search-border-color: var(--readyapi-border-color);
+  --readyapi-sidebar-search-color: var(--readyapi-color-3);
 }
 .dark-mode .sidebar {
-  --scalar-sidebar-background-1: var(--scalar-background-1);
-  --scalar-sidebar-item-hover-color: currentColor;
-  --scalar-sidebar-item-hover-background: var(--scalar-background-2);
-  --scalar-sidebar-item-active-background: var(--scalar-background-2);
-  --scalar-sidebar-border-color: var(--scalar-border-color);
-  --scalar-sidebar-color-1: var(--scalar-color-1);
-  --scalar-sidebar-color-2: var(--scalar-color-2);
-  --scalar-sidebar-color-active: var(--scalar-color-2);
-  --scalar-sidebar-search-background: var(--scalar-background-2);
-  --scalar-sidebar-search-border-color: var(--scalar-border-color);
-  --scalar-sidebar-search-color: var(--scalar-color-3);
+  --readyapi-sidebar-background-1: var(--readyapi-background-1);
+  --readyapi-sidebar-item-hover-color: currentColor;
+  --readyapi-sidebar-item-hover-background: var(--readyapi-background-2);
+  --readyapi-sidebar-item-active-background: var(--readyapi-background-2);
+  --readyapi-sidebar-border-color: var(--readyapi-border-color);
+  --readyapi-sidebar-color-1: var(--readyapi-color-1);
+  --readyapi-sidebar-color-2: var(--readyapi-color-2);
+  --readyapi-sidebar-color-active: var(--readyapi-color-2);
+  --readyapi-sidebar-search-background: var(--readyapi-background-2);
+  --readyapi-sidebar-search-border-color: var(--readyapi-border-color);
+  --readyapi-sidebar-search-color: var(--readyapi-color-3);
 }
 ```
 
 ### Theme Prefix Changes
 
-We've migrated our `--theme-*` CSS variables to `--scalar-*` to avoid conflicts with other CSS variables in
-applications consuming the Scalar references or themes.
+We've migrated our `--theme-*` CSS variables to `--readyapi-*` to avoid conflicts with other CSS variables in
+applications consuming the Readyapi references or themes.
 If you're injecting your custom CSS through the [`customCss`](#configuration) configuration option we will automatically
 migrate your variable prefixes but display a warning in the console.
 
 We recommend updating your theme variables as soon as possible:
 
-- `--theme-*` → `--scalar-*`
-- `--sidebar-*` → `--scalar-sidebar-*`
+- `--theme-*` → `--readyapi-*`
+- `--sidebar-*` → `--readyapi-sidebar-*`
 
 For a before and after example of an updated theme
 see [`legacyTheme.css`](https://github.com/khulnasoft/readyapi.js/tree/main/packages/themes/src/fixtures/legacyTheme.css)
@@ -640,7 +640,7 @@ in the [`@readyapi/themes`](https://github.com/khulnasoft/readyapi.js/tree/main/
 
 ## Community
 
-We are API nerds. You too? Let’s chat on Discord: <https://discord.gg/scalar>
+We are API nerds. You too? Let’s chat on Discord: <https://discord.gg/readyapi>
 
 ## Packages
 
@@ -651,7 +651,7 @@ This repository contains all our open source projects, and there’s definitely 
 | [@readyapi/api-client-proxy](https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-client-proxy)           | API request proxy                                 |
 | [@readyapi/api-client](https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-client)                       | API testing client                                |
 | [@readyapi/api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-reference)                 | beautiful API references                          |
-| [@scalar/cli](https://github.com/khulnasoft/readyapi.js/tree/main/packages/cli)                                       | CLI to work with OpenAPi files                    |
+| [@readyapi/cli](https://github.com/khulnasoft/readyapi.js/tree/main/packages/cli)                                       | CLI to work with OpenAPi files                    |
 | [@readyapi/echo-server](https://github.com/khulnasoft/readyapi.js/tree/main/packages/echo-server)                     | a server that replies with the request data       |
 | [@readyapi/express-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/express-api-reference) | Express plugin                                    |
 | [@readyapi/fastify-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/fastify-api-reference) | Fastify plugin                                    |
@@ -659,8 +659,8 @@ This repository contains all our open source projects, and there’s definitely 
 | [@readyapi/mock-server](https://github.com/khulnasoft/readyapi.js/tree/main/packages/mock-server)                     | fake data based on an OpenAPI specification files |
 | [@readyapi/nestjs-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/nestjs-api-reference)   | NestJS middleware                                 |
 | [@readyapi/nextjs-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/nestjs-api-reference)   | Next.js adapter                                   |
-| [@scalar/swagger-editor](https://github.com/khulnasoft/readyapi.js/tree/main/packages/swagger-editor)                 | editor tailored to write OpenAPI files            |
-| [@scalar/swagger-parser](https://github.com/khulnasoft/readyapi.js/tree/main/packages/swagger-parser)                 | parse OpenAPI files                               |
+| [@readyapi/swagger-editor](https://github.com/khulnasoft/readyapi.js/tree/main/packages/swagger-editor)                 | editor tailored to write OpenAPI files            |
+| [@readyapi/swagger-parser](https://github.com/khulnasoft/readyapi.js/tree/main/packages/swagger-parser)                 | parse OpenAPI files                               |
 
 ## Contributors
 

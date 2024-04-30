@@ -34,7 +34,7 @@ watch(hash, (newHash, oldHash) => {
 <template>
   <ApiReferenceLayout
     :class="{
-      'scalar-api-references-standalone-mobile': configuration.showSidebar,
+      'readyapi-api-references-standalone-mobile': configuration.showSidebar,
     }"
     :configuration="configuration"
     :parsedSpec="parsedSpec"
@@ -45,7 +45,7 @@ watch(hash, (newHash, oldHash) => {
         v-model:open="isSidebarOpen" />
     </template>
     <template #sidebar-start="{ spec }">
-      <div class="scalar-api-references-standalone-search">
+      <div class="readyapi-api-references-standalone-search">
         <SearchButton
           :searchHotKey="props.configuration?.searchHotKey"
           :spec="spec" />
@@ -62,13 +62,13 @@ watch(hash, (newHash, oldHash) => {
 </template>
 <style>
 @media (max-width: 1000px) {
-  .scalar-api-references-standalone-mobile {
-    --scalar-header-height: 50px;
+  .readyapi-api-references-standalone-mobile {
+    --readyapi-header-height: 50px;
   }
 }
 </style>
 <style scoped>
-.scalar-api-references-standalone-search {
+.readyapi-api-references-standalone-search {
   display: flex;
   flex-direction: column;
   padding: 12px 12px 6px 12px;

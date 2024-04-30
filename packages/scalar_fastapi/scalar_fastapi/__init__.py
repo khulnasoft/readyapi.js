@@ -1,1 +1,1 @@
-from .scalar_fastapi import get_scalar_api_reference
+from .readyapi_fastapi import get_readyapi_api_reference

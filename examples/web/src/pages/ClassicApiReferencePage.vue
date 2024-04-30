@@ -5,7 +5,7 @@ import {
 } from '@readyapi/api-reference'
 import { reactive } from 'vue'
 
-import content from '../../../../specifications/scalar-galaxy-3.1.json'
+import content from '../../../../specifications/readyapi-galaxy-3.1.json'
 
 const configuration = reactive<ReferenceConfiguration>({
   theme: 'default',

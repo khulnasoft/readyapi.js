@@ -194,7 +194,7 @@ I cross my fingers for you, but this should give you a pretty decent OpenAPI fil
 
 Did it work? OMG, this is so cool! It didn’t? [Create a new issue](https://github.com/khulnasoft/readyapi.js/issues/new/choose) so we can improve this guide here — I mean, that’s the beauty of open source, isn’t it?
 
-## Render your OpenAPI reference with Scalar
+## Render your OpenAPI reference with Readyapi
 
 Congratulations, you’ve come really far. And I have good news for you, you’re just a few lines of code away from a stunning API reference for your Fastify project. Time to pull our package:
 
@@ -207,9 +207,9 @@ Put the following snippet into your `index.js` right before the `await fastify.r
 ```js
 // …
 // Render the API reference
-import ScalarApiReference from '@readyapi/fastify-api-reference'
+import ReadyapiApiReference from '@readyapi/fastify-api-reference'
 
-await fastify.register(ScalarApiReference, {
+await fastify.register(ReadyapiApiReference, {
   routePrefix: '/reference',
 })
 
@@ -229,9 +229,9 @@ That’s it, you made it! You can keep adding routes to Fastify now and the refe
 You can customize a ton! Just pass a `configuration` object to the plugin:
 
 ```js
-import ScalarApiReference from '@readyapi/fastify-api-reference'
+import ReadyapiApiReference from '@readyapi/fastify-api-reference'
 
-await fastify.register(ScalarApiReference, {
+await fastify.register(ReadyapiApiReference, {
   routePrefix: '/reference',
   configuration: {
     layout: 'classic',
@@ -248,9 +248,9 @@ TypeScript should give you a nice autocomplete for all options. If you’re more
 Auto-generated OpenAPI files are great, but some OpenAPI purists argue it’s worth to handcraft your OpenAPI files. If you’re one of them, feel free to just pass an URL to your existing OpenAPI file:
 
 ```js
-import ScalarApiReference from '@readyapi/fastify-api-reference'
+import ReadyapiApiReference from '@readyapi/fastify-api-reference'
 
-await fastify.register(ScalarApiReference, {
+await fastify.register(ReadyapiApiReference, {
   routePrefix: '/reference',
   configuration: {
     url: '/openapi.json',

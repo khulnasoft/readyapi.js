@@ -72,9 +72,9 @@ export default {
 
 [Head over to the repository](https://github.com/ad-on-is/adonis-autoswagger) to learn more about the configuration file or how to use it with AdonisJS 5.
 
-## Render your OpenAPI reference with Scalar
+## Render your OpenAPI reference with Readyapi
 
-To actually serve an OpenAPI file and render the reference with Scalar you can extend your routes file:
+To actually serve an OpenAPI file and render the reference with Readyapi you can extend your routes file:
 
 ```
 // start/routes.ts
@@ -94,9 +94,9 @@ router.get('/openapi', async () => {
   return AutoSwagger.default.docs(router.toJSON(), openapi)
 })
 
-// Renders the API reference with Scalar
+// Renders the API reference with Readyapi
 router.get('/docs', async () => {
-  return AutoSwagger.default.scalar('/openapi')
+  return AutoSwagger.default.readyapi('/openapi')
 })
 ```
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ScalarButton } from '@readyapi/components'
+import { ReadyapiButton } from '@ready-api.khulnasoft.components'
 import type { OpenAPIV3_1 } from '@readyapi/openapi-parser'
 import { ref } from 'vue'
 
@@ -65,26 +65,26 @@ const setIntialScheme = (
         v-if="!authentication.securitySchemes"
         class="security-scheme-empty-state">
         <div
-          class="scalar-api-client-add"
+          class="readyapi-api-client-add"
           variant="outlined"
           @click="setIntialScheme('apiKey')">
           ApiKey
         </div>
         <div
-          class="scalar-api-client-add"
+          class="readyapi-api-client-add"
           variant="outlined"
           @click="setIntialScheme('httpBasic')">
           Basic
         </div>
         <div
-          class="scalar-api-client-add"
+          class="readyapi-api-client-add"
           variant="outlined"
           @click="setIntialScheme('httpBearer')">
           Bearer
         </div>
         <!-- TODO implement -->
         <!-- <div
-          class="scalar-api-client-add"
+          class="readyapi-api-client-add"
           variant="outlined"
           @click="setIntialScheme('oauth2')">
           oAuth2
@@ -101,42 +101,42 @@ const setIntialScheme = (
 }
 
 .security-scheme-empty-state {
-  border: 1px dashed var(--scalar-border-color);
+  border: 1px dashed var(--readyapi-border-color);
   width: 100%;
   text-align: center;
-  border-radius: var(--scalar-radius);
-  font-size: var(--scalar-small);
+  border-radius: var(--readyapi-radius);
+  font-size: var(--readyapi-small);
   min-height: 58px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.scalar-api-client-add {
-  color: var(--scalar-color-2);
+.readyapi-api-client-add {
+  color: var(--readyapi-color-2);
   padding: 3px 9px;
   width: fit-content;
   cursor: pointer;
-  font-size: var(--scalar-micro);
-  font-weight: var(--scalar-semibold);
+  font-size: var(--readyapi-micro);
+  font-weight: var(--readyapi-semibold);
   text-decoration: none;
   margin: 0 6px;
   border: none;
-  font-family: var(--scalar-font);
+  font-family: var(--readyapi-font);
   appearance: none;
   display: flex;
   align-items: center;
-  border: 1px solid var(--scalar-border-color);
+  border: 1px solid var(--readyapi-border-color);
   border-radius: 30px;
 }
-.scalar-api-client-add svg {
+.readyapi-api-client-add svg {
   width: 12px;
   height: 12px;
   margin-right: 6px;
 }
-.scalar-api-client-add:hover {
-  color: var(--scalar-color-1);
+.readyapi-api-client-add:hover {
+  color: var(--readyapi-color-1);
 }
-.scalar-api-client-add:focus-within {
-  background: var(--scalar-background-3);
+.readyapi-api-client-add:focus-within {
+  background: var(--readyapi-background-3);
 }
 </style>

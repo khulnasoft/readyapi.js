@@ -22,21 +22,21 @@ export default defineConfig({
       external: [
         'vue',
         ...Object.keys(pkg.dependencies || {}).filter(
-          (item) => !item.startsWith('@scalar'),
+          (item) => !item.startsWith('@readyapi'),
         ),
       ],
     },
   },
   resolve: {
     alias: [
-      // Resolve the uncompiled source code for all @scalar packages
+      // Resolve the uncompiled source code for all @readyapi packages
       // It’s working with the alias, too. It’s just required to enable HMR.
       // It also does not match components since we want the built version
       {
-        // Resolve the uncompiled source code for all @scalar packages
-        // @scalar/* -> packages/*/
-        // (not @readyapi/components/*/style.css)
-        find: /^@scalar\/(?!(openapi-parser|snippetz|components\/style\.css|components\b))(.+)/,
+        // Resolve the uncompiled source code for all @readyapi packages
+        // @readyapi/* -> packages/*/
+        // (not @ready-api.khulnasoft.components/*/style.css)
+        find: /^@readyapi\/(?!(openapi-parser|snippetz|components\/style\.css|components\b))(.+)/,
         replacement: path.resolve(__dirname, '../$2/src/index.ts'),
       },
     ],

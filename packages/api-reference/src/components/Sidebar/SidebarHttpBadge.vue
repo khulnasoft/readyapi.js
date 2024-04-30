@@ -26,13 +26,13 @@ defineProps<{
   color: white;
   color: color-mix(
     in srgb,
-    var(--method-color, var(--scalar-color-1)),
+    var(--method-color, var(--readyapi-color-1)),
     transparent 0%
   );
-  background: var(--method-color, var(--scalar-background-3));
+  background: var(--method-color, var(--readyapi-background-3));
   background: color-mix(
     in srgb,
-    var(--method-color, var(--scalar-background-3)),
+    var(--method-color, var(--readyapi-background-3)),
     transparent 90%
   );
   text-transform: uppercase;
@@ -40,7 +40,7 @@ defineProps<{
   font-weight: bold;
   text-align: center;
   position: relative;
-  font-family: var(--scalar-font-code);
+  font-family: var(--readyapi-font-code);
   white-space: nowrap;
   margin-left: 3px;
 }

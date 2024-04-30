@@ -5,7 +5,7 @@
 ### Patch Changes
 
 - Updated dependencies [fc2c90f]
-  - @readyapi/components@0.6.0
+  - @ready-api.khulnasoft.components@0.6.0
 
 ## 1.2.9
 
@@ -13,14 +13,14 @@
 
 - Updated dependencies [0a77380]
   - @readyapi/themes@0.7.6
-  - @readyapi/components@0.5.5
+  - @ready-api.khulnasoft.components@0.5.5
 
 ## 1.2.8
 
 ### Patch Changes
 
 - Updated dependencies [2700c5c]
-  - @readyapi/components@0.5.5
+  - @ready-api.khulnasoft.components@0.5.5
   - @readyapi/themes@0.7.5
 
 ## 1.2.7
@@ -29,7 +29,7 @@
 
 - Updated dependencies [79485ff]
 - Updated dependencies [92b5b2a]
-  - @readyapi/components@0.5.4
+  - @ready-api.khulnasoft.components@0.5.4
 
 ## 1.2.6
 
@@ -38,7 +38,7 @@
 - Updated dependencies [86d1363]
 - Updated dependencies [bc3f3af]
   - @readyapi/themes@0.7.4
-  - @readyapi/components@0.5.3
+  - @ready-api.khulnasoft.components@0.5.3
 
 ## 1.2.5
 
@@ -46,7 +46,7 @@
 
 - Updated dependencies [e8ef57e]
 - Updated dependencies [1353154]
-  - @readyapi/components@0.5.2
+  - @ready-api.khulnasoft.components@0.5.2
 
 ## 1.2.4
 
@@ -54,7 +54,7 @@
 
 - Updated dependencies [4d31b19]
   - @readyapi/themes@0.7.3
-  - @readyapi/components@0.5.1
+  - @ready-api.khulnasoft.components@0.5.1
 
 ## 1.2.3
 
@@ -63,7 +63,7 @@
 - Updated dependencies [96ded16]
 - Updated dependencies [24662c3]
   - @readyapi/use-codemirror@0.10.1
-  - @readyapi/components@0.5.1
+  - @ready-api.khulnasoft.components@0.5.1
 
 ## 1.2.2
 
@@ -71,7 +71,7 @@
 
 - Updated dependencies [85a0074]
   - @readyapi/themes@0.7.2
-  - @readyapi/components@0.5.0
+  - @ready-api.khulnasoft.components@0.5.0
 
 ## 1.2.1
 
@@ -80,13 +80,13 @@
 - d77acdd: fix: missing css font
 - Updated dependencies [d77acdd]
   - @readyapi/themes@0.7.1
-  - @readyapi/components@0.5.0
+  - @ready-api.khulnasoft.components@0.5.0
 
 ## 1.2.0
 
 ### Minor Changes
 
-- 0e64a36: refactor: rename all --theme-_ variables to --scalar-_
+- 0e64a36: refactor: rename all --theme-_ variables to --readyapi-_
 
 ### Patch Changes
 
@@ -95,7 +95,7 @@
 - Updated dependencies [0e64a36]
   - @readyapi/use-codemirror@0.10.0
   - @readyapi/use-tooltip@0.6.0
-  - @readyapi/components@0.5.0
+  - @ready-api.khulnasoft.components@0.5.0
   - @readyapi/oas-utils@0.1.6
   - @readyapi/use-modal@0.3.0
   - @readyapi/themes@0.7.0
@@ -109,7 +109,7 @@
 - Updated dependencies [3ba9774]
   - @readyapi/use-modal@0.2.10
   - @readyapi/oas-utils@0.1.5
-  - @readyapi/components@0.4.11
+  - @ready-api.khulnasoft.components@0.4.11
 
 ## 1.1.15
 
@@ -123,7 +123,7 @@
 ### Patch Changes
 
 - Updated dependencies [95bac72]
-  - @readyapi/components@0.4.10
+  - @ready-api.khulnasoft.components@0.4.10
 
 ## 1.1.13
 
@@ -137,7 +137,7 @@
 
 - c14568f: feat: add custom security option
 - Updated dependencies [c14568f]
-  - @readyapi/components@0.4.9
+  - @ready-api.khulnasoft.components@0.4.9
   - @readyapi/oas-utils@0.1.3
 
 ## 1.1.11
@@ -160,7 +160,7 @@
 
 - Updated dependencies [d70bda7]
   - @readyapi/themes@0.6.7
-  - @readyapi/components@0.4.8
+  - @ready-api.khulnasoft.components@0.4.8
 
 ## 1.1.8
 
@@ -173,21 +173,21 @@
 - Updated dependencies [ae193a8]
   - @readyapi/themes@0.6.6
   - @readyapi/use-codemirror@0.9.1
-  - @readyapi/components@0.4.8
+  - @ready-api.khulnasoft.components@0.4.8
 
 ## 1.1.7
 
 ### Patch Changes
 
 - Updated dependencies [f861efa]
-  - @readyapi/components@0.4.7
+  - @ready-api.khulnasoft.components@0.4.7
 
 ## 1.1.6
 
 ### Patch Changes
 
 - Updated dependencies [7d0092e]
-  - @readyapi/components@0.4.6
+  - @ready-api.khulnasoft.components@0.4.6
 
 ## 1.1.5
 
@@ -200,7 +200,7 @@
 ### Patch Changes
 
 - Updated dependencies [42b385b]
-  - @readyapi/components@0.4.5
+  - @ready-api.khulnasoft.components@0.4.5
 
 ## 1.1.3
 
@@ -208,7 +208,7 @@
 
 - Updated dependencies [0c5e22c]
   - @readyapi/themes@0.6.5
-  - @readyapi/components@0.4.4
+  - @ready-api.khulnasoft.components@0.4.4
 
 ## 1.1.2
 
@@ -245,7 +245,7 @@
 
 - Updated dependencies [68cda2b]
   - @readyapi/themes@0.6.4
-  - @readyapi/components@0.4.4
+  - @ready-api.khulnasoft.components@0.4.4
 
 ## 1.0.1
 
@@ -253,7 +253,7 @@
 
 - Updated dependencies [bbbba1f]
 - Updated dependencies [897990b]
-  - @readyapi/components@0.4.4
+  - @ready-api.khulnasoft.components@0.4.4
   - @readyapi/themes@0.6.3
 
 ## 1.0.0
@@ -288,7 +288,7 @@
 - Updated dependencies [ddc9b17]
 - Updated dependencies [775646a]
 - Updated dependencies [ef3a015]
-  - @readyapi/components@0.4.3
+  - @ready-api.khulnasoft.components@0.4.3
   - @readyapi/themes@0.6.2
   - @readyapi/use-codemirror@0.8.9
   - @readyapi/use-modal@0.2.9
@@ -299,7 +299,7 @@
 
 - Updated dependencies [4ef178f]
   - @readyapi/themes@0.6.1
-  - @readyapi/components@0.4.2
+  - @ready-api.khulnasoft.components@0.4.2
 
 ## 0.12.15
 
@@ -308,7 +308,7 @@
 - Updated dependencies [ad2b95a]
 - Updated dependencies [ad2b95a]
   - @readyapi/themes@0.6.0
-  - @readyapi/components@0.4.2
+  - @ready-api.khulnasoft.components@0.4.2
 
 ## 0.12.14
 
@@ -316,7 +316,7 @@
 
 - 3b672cc: fix: revert css changes to components lib
 - Updated dependencies [3b672cc]
-  - @readyapi/components@0.4.2
+  - @ready-api.khulnasoft.components@0.4.2
 
 ## 0.12.13
 
@@ -324,7 +324,7 @@
 
 - c5e8b13: feat: hide secret credentials
 - Updated dependencies [c5e8b13]
-  - @readyapi/components@0.4.1
+  - @ready-api.khulnasoft.components@0.4.1
 
 ## 0.12.12
 
@@ -333,7 +333,7 @@
 - 5bc2ebf: Add syntax highlighting back to codemirror
 - Updated dependencies [407a3af]
 - Updated dependencies [5bc2ebf]
-  - @readyapi/components@0.4.0
+  - @ready-api.khulnasoft.components@0.4.0
   - @readyapi/use-codemirror@0.8.8
 
 ## 0.12.11
@@ -355,7 +355,7 @@
 
 - 6857b8d: fix: api client syntax highlighting
 - Updated dependencies [6857b8d]
-  - @readyapi/components@0.3.0
+  - @ready-api.khulnasoft.components@0.3.0
 
 ## 0.12.8
 
@@ -363,7 +363,7 @@
 
 - Updated dependencies [51acf2c]
   - @readyapi/themes@0.5.10
-  - @readyapi/components@0.2.6
+  - @ready-api.khulnasoft.components@0.2.6
 
 ## 0.12.7
 
@@ -371,7 +371,7 @@
 
 - Updated dependencies [c103201]
 - Updated dependencies [d2728c8]
-  - @readyapi/components@0.2.6
+  - @ready-api.khulnasoft.components@0.2.6
   - @readyapi/themes@0.5.9
 
 ## 0.12.6
@@ -389,7 +389,7 @@
 - Updated dependencies [1669b27]
 - Updated dependencies [7ea052b]
   - @readyapi/use-codemirror@0.8.6
-  - @readyapi/components@0.2.5
+  - @ready-api.khulnasoft.components@0.2.5
   - @readyapi/use-modal@0.2.8
   - @readyapi/themes@0.5.8
 
@@ -400,7 +400,7 @@
 - c6b95ca: chore: upgrade from Vite 4 to Vite 5
 - Updated dependencies [c6b95ca]
   - @readyapi/use-codemirror@0.8.5
-  - @readyapi/components@0.2.4
+  - @ready-api.khulnasoft.components@0.2.4
   - @readyapi/use-modal@0.2.7
   - @readyapi/themes@0.5.7
 
@@ -420,7 +420,7 @@
 - Updated dependencies [5b3f7d9]
   - @readyapi/use-modal@0.2.5
   - @readyapi/themes@0.5.6
-  - @readyapi/components@0.2.3
+  - @ready-api.khulnasoft.components@0.2.3
 
 ## 0.12.1
 
@@ -441,9 +441,9 @@
 - 76f4041: chore: remove unused code
 - Updated dependencies [92a8b9f]
 - Updated dependencies [abfb086]
-  - @scalar/use-keyboard-event@0.5.9
+  - @readyapi/use-keyboard-event@0.5.9
   - @readyapi/use-codemirror@0.8.4
-  - @readyapi/components@0.2.3
+  - @ready-api.khulnasoft.components@0.2.3
   - @readyapi/use-modal@0.2.4
   - @readyapi/themes@0.5.5
 
@@ -525,7 +525,7 @@
 ### Patch Changes
 
 - Updated dependencies [75e1cdf8]
-  - @scalar/use-keyboard-event@0.5.8
+  - @readyapi/use-keyboard-event@0.5.8
 
 ## 0.9.2
 
@@ -533,7 +533,7 @@
 
 - 81543f42: chore: add support for Node 18
 - Updated dependencies [81543f42]
-  - @scalar/use-keyboard-event@0.5.7
+  - @readyapi/use-keyboard-event@0.5.7
   - @readyapi/use-codemirror@0.7.19
   - @readyapi/use-modal@0.2.3
   - @readyapi/themes@0.5.4
@@ -613,7 +613,7 @@
 ### Patch Changes
 
 - 5d6b539b: feat: toggle parameters to include/exclude them in/from the request
-- a1319e8b: Switched internal component library to use ScalarComponents instead
+- a1319e8b: Switched internal component library to use ReadyapiComponents instead
 - Updated dependencies [a1319e8b]
   - @readyapi/use-codemirror@0.7.16
   - @readyapi/use-modal@0.2.1
@@ -667,9 +667,9 @@
 
 ### Patch Changes
 
-- 35dffe4: chore: include @scalar dependencies in the bundle
+- 35dffe4: chore: include @readyapi dependencies in the bundle
 - Updated dependencies [35dffe4]
-  - @scalar/use-keyboard-event@0.5.6
+  - @readyapi/use-keyboard-event@0.5.6
   - @readyapi/use-codemirror@0.7.15
   - @readyapi/use-modal@0.1.9
 
@@ -679,7 +679,7 @@
 
 - c3b215f: chore: no pinned peer dependency versions
 - Updated dependencies [c3b215f]
-  - @scalar/use-keyboard-event@0.5.5
+  - @readyapi/use-keyboard-event@0.5.5
   - @readyapi/use-codemirror@0.7.14
   - @readyapi/use-modal@0.1.8
   - @readyapi/themes@0.4.2
@@ -690,7 +690,7 @@
 
 - 55246e5: chore: rewrite all package.jsons (including their prod, dev and peer dependency requirements)
 - Updated dependencies [55246e5]
-  - @scalar/use-keyboard-event@0.5.4
+  - @readyapi/use-keyboard-event@0.5.4
   - @readyapi/use-codemirror@0.7.13
   - @readyapi/use-modal@0.1.7
   - @readyapi/themes@0.4.1
@@ -815,7 +815,7 @@
 
 - af4ec8d3: update discord links
 - Updated dependencies [af4ec8d3]
-  - @scalar/use-keyboard-event@0.5.3
+  - @readyapi/use-keyboard-event@0.5.3
   - @readyapi/use-codemirror@0.7.8
   - @readyapi/themes@0.3.11
 
@@ -826,7 +826,7 @@
 - 33604a1b: chore: fix types
 - 1cbcabd7: lots of amazing fixes from when we missed last patch
 - Updated dependencies [1cbcabd7]
-  - @scalar/use-keyboard-event@0.5.2
+  - @readyapi/use-keyboard-event@0.5.2
   - @readyapi/use-codemirror@0.7.7
   - @readyapi/use-modal@0.1.4
   - @readyapi/themes@0.3.10
@@ -936,7 +936,7 @@
 - Updated dependencies [3e912c75]
 - Updated dependencies [048555c6]
   - @readyapi/use-modal@0.1.1
-  - @scalar/use-keyboard-event@0.5.1
+  - @readyapi/use-keyboard-event@0.5.1
   - @readyapi/use-codemirror@0.7.1
   - @readyapi/themes@0.3.3
 
@@ -945,7 +945,7 @@
 ### Patch Changes
 
 - 75a69ba7: feat: add `theme` prop and improve theme support
-- 75a69ba7: refactor: rename @scalar/default-theme to @readyapi/themes, add more themes
+- 75a69ba7: refactor: rename @readyapi/default-theme to @readyapi/themes, add more themes
 - Updated dependencies [75a69ba7]
 - Updated dependencies [75a69ba7]
   - @readyapi/themes@0.3.2
@@ -970,7 +970,7 @@
 - Updated dependencies [3b1fec80]
 - Updated dependencies [addd9fa2]
   - @readyapi/use-codemirror@0.7.0
-  - @scalar/default-theme@0.3.1
+  - @readyapi/default-theme@0.3.1
 
 ## 0.6.0
 
@@ -983,7 +983,7 @@
 - ef080a26: chore: format package.json
 - Updated dependencies [ef080a26]
 - Updated dependencies [87fda5af]
-  - @scalar/use-keyboard-event@0.5.0
+  - @readyapi/use-keyboard-event@0.5.0
   - @readyapi/use-codemirror@0.6.0
   - @readyapi/themes@0.3.0
 
@@ -1014,7 +1014,7 @@
 
 - d51aebe5: chore: remove source files from packages
 - Updated dependencies [d51aebe5]
-  - @scalar/use-keyboard-event@0.4.2
+  - @readyapi/use-keyboard-event@0.4.2
   - @readyapi/use-codemirror@0.5.1
 
 ## 0.5.1
@@ -1038,7 +1038,7 @@
 - Updated dependencies [10498d9d]
 - Updated dependencies [494083a0]
   - @readyapi/use-codemirror@0.5.0
-  - @scalar/use-keyboard-event@0.4.1
+  - @readyapi/use-keyboard-event@0.4.1
   - @readyapi/themes@0.2.1
 
 ## 0.4.0
@@ -1052,7 +1052,7 @@
 - Updated dependencies [5057e213]
   - @readyapi/themes@0.2.0
   - @readyapi/use-codemirror@0.4.0
-  - @scalar/use-keyboard-event@0.4.0
+  - @readyapi/use-keyboard-event@0.4.0
 
 ## 0.3.4
 
@@ -1092,14 +1092,14 @@
 
 - Updated dependencies [b0f5221]
   - @readyapi/use-codemirror@0.3.0
-  - @scalar/use-keyboard-event@0.3.0
+  - @readyapi/use-keyboard-event@0.3.0
 
 ## 0.2.1
 
 ### Patch Changes
 
 - Updated dependencies [41b06cb]
-  - @scalar/use-keyboard-event@0.2.1
+  - @readyapi/use-keyboard-event@0.2.1
 
 ## 0.2.0
 
@@ -1111,7 +1111,7 @@
 
 - Updated dependencies
   - @readyapi/use-codemirror@0.2.0
-  - @scalar/use-keyboard-event@0.2.0
+  - @readyapi/use-keyboard-event@0.2.0
 
 ## 0.1.21
 
@@ -1166,7 +1166,7 @@
 
 ### Patch Changes
 
-- fix: use scalar fonts
+- fix: use readyapi fonts
 
 ## 0.1.12
 
@@ -1190,7 +1190,7 @@
 
 ### Patch Changes
 
-- update scalar variables
+- update readyapi variables
 
 ## 0.1.8
 
@@ -1223,7 +1223,7 @@
 - fix: externalize dependencies
 - Updated dependencies
   - @readyapi/use-codemirror@0.1.4
-  - @scalar/use-keyboard-event@0.1.4
+  - @readyapi/use-keyboard-event@0.1.4
 
 ## 0.1.3
 
@@ -1232,7 +1232,7 @@
 - fix: add CSS file to swagger editor
 - Updated dependencies
   - @readyapi/use-codemirror@0.1.3
-  - @scalar/use-keyboard-event@0.1.3
+  - @readyapi/use-keyboard-event@0.1.3
 
 ## 0.1.2
 
@@ -1241,7 +1241,7 @@
 - 7cd41bc: fix: point main entry to dist folder
 - Updated dependencies [7cd41bc]
   - @readyapi/use-codemirror@0.1.2
-  - @scalar/use-keyboard-event@0.1.2
+  - @readyapi/use-keyboard-event@0.1.2
 
 ## 0.1.1
 
@@ -1250,4 +1250,4 @@
 - f46e320: Initial release 👀
 - Updated dependencies [f46e320]
   - @readyapi/use-codemirror@0.1.1
-  - @scalar/use-keyboard-event@0.1.1
+  - @readyapi/use-keyboard-event@0.1.1

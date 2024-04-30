@@ -34,7 +34,7 @@ const getSpecUrl = () => {
     return getConfiguration().spec?.url
   }
 
-  // <script id="api-reference" data-url="/scalar.json" />
+  // <script id="api-reference" data-url="/readyapi.json" />
   if (specScriptTag) {
     const urlFromScriptTag = specScriptTag.getAttribute('data-url')?.trim()
 
@@ -43,10 +43,10 @@ const getSpecUrl = () => {
     }
   }
 
-  // <div data-spec-url="/scalar.json" />
+  // <div data-spec-url="/readyapi.json" />
   if (specUrlElement) {
     console.warn(
-      '[@readyapi/api-reference] The [data-spec-url] HTML API is deprecated. Use the new <script id="api-reference" data-url="/scalar.json" /> API instead.',
+      '[@readyapi/api-reference] The [data-spec-url] HTML API is deprecated. Use the new <script id="api-reference" data-url="/readyapi.json" /> API instead.',
     )
     const urlFromSpecUrlElement = specUrlElement.getAttribute('data-spec-url')
 
@@ -84,7 +84,7 @@ const getSpec = (): Record<string, any> | undefined => {
 }
 
 const getProxyUrl = () => {
-  // <script id="api-reference" data-proxy-url="https://api.scalar.com/request-proxy">…</script>
+  // <script id="api-reference" data-proxy-url="https://api.ready-api.khulnasoft.com/request-proxy">…</script>
   if (specScriptTag) {
     const proxyUrl = specScriptTag.getAttribute('data-proxy-url')
 

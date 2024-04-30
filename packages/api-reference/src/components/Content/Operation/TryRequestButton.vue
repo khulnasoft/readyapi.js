@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { HttpMethod } from '@readyapi/api-client'
-import { ScalarIcon } from '@readyapi/components'
+import { ReadyapiIcon } from '@ready-api.khulnasoft.components'
 import { type TransformedOperation } from '@readyapi/oas-utils'
 import { inject } from 'vue'
 
@@ -19,7 +19,7 @@ const getGlobalSecurity = inject(GLOBAL_SECURITY_SYMBOL)
     :method="operation.httpVerb"
     type="button"
     @click.stop="openClientFor(operation, getGlobalSecurity?.())">
-    <ScalarIcon icon="PaperAirplane" />
+    <ReadyapiIcon icon="PaperAirplane" />
     <span>Test Request</span>
   </HttpMethod>
 </template>
@@ -30,15 +30,15 @@ const getGlobalSecurity = inject(GLOBAL_SECURITY_SYMBOL)
   border: none;
   padding: 4px 6px;
   white-space: nowrap;
-  border-radius: var(--scalar-radius);
+  border-radius: var(--readyapi-radius);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: var(--scalar-semibold);
-  font-size: var(--scalar-mini);
-  color: var(--scalar-background-2);
-  font-family: var(--scalar-font);
-  background: var(--scalar-button-1);
+  font-weight: var(--readyapi-semibold);
+  font-size: var(--readyapi-mini);
+  color: var(--readyapi-background-2);
+  font-family: var(--readyapi-font);
+  background: var(--readyapi-button-1);
   position: relative;
   cursor: pointer;
   box-sizing: border-box;
@@ -46,11 +46,11 @@ const getGlobalSecurity = inject(GLOBAL_SECURITY_SYMBOL)
 }
 .show-api-client-button span,
 .show-api-client-button svg {
-  color: var(--scalar-button-1-color);
+  color: var(--readyapi-button-1-color);
   z-index: 1;
 }
 .show-api-client-button:hover {
-  background: var(--scalar-button-1-hover);
+  background: var(--readyapi-button-1-hover);
 }
 .show-api-client-button svg {
   height: 12px;

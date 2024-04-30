@@ -169,7 +169,7 @@ onMounted(async () => {
 <template>
   <pre
     :class="[
-      `readyapi-component readyapi-codeblock-pre language-${language}`,
+      `ready-api.khulnasoft.component readyapi-codeblock-pre language-${language}`,
       {
         'line-numbers': lineNumbers,
       },

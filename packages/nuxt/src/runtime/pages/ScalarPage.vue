@@ -12,10 +12,10 @@ if (
   !meta.configuration?.spec?.content
 )
   throw new Error(
-    'You must either provide a spec to scalar, or enable experimental openApi in the Nitro config.',
+    'You must either provide a spec to readyapi, or enable experimental openApi in the Nitro config.',
   )
 </script>
 
 <template>
-  <ScalarApiReference :configuration="meta.configuration" />
+  <ReadyapiApiReference :configuration="meta.configuration" />
 </template>

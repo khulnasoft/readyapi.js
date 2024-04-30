@@ -6,7 +6,7 @@
 <style scoped>
 .refs-slot-placeholder-wrapper {
   display: grid;
-  border-color: var(--scalar-border-color);
+  border-color: var(--readyapi-border-color);
   padding: 4px;
 }
 .refs-slot-placeholder {
@@ -16,11 +16,11 @@
 
   padding: 16px 24px;
 
-  outline: dashed 1px var(--scalar-color-3);
-  border-radius: var(--scalar-radius);
+  outline: dashed 1px var(--readyapi-color-3);
+  border-radius: var(--readyapi-radius);
 
   font-size: 0.6rem;
-  font-family: var(--scalar-font-code);
-  color: var(--scalar-color-2);
+  font-family: var(--readyapi-font-code);
+  color: var(--readyapi-color-2);
 }
 </style>

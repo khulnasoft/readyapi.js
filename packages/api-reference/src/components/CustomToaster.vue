@@ -21,10 +21,10 @@ onMounted(() => (isClientMounted.value = true))
 */
 .toaster[data-sonner-toast][data-styled='true'] {
   padding: 18px;
-  background: var(--scalar-background-1);
-  border-color: var(--scalar-background-3);
-  border-radius: var(--scalar-radius-lg);
-  font-size: var(--scalar-font-size-3);
-  color: var(--scalar-color-1);
+  background: var(--readyapi-background-1);
+  border-color: var(--readyapi-background-3);
+  border-radius: var(--readyapi-radius-lg);
+  font-size: var(--readyapi-font-size-3);
+  color: var(--readyapi-color-1);
 }
 </style>

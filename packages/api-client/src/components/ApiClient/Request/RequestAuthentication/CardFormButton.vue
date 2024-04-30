@@ -26,13 +26,13 @@ defineExpose({ el })
   padding: 9px;
   outline: none;
   white-space: nowrap;
-  font-family: var(--scalar-font);
-  font-size: var(--scalar-micro);
-  font-weight: var(--scalar-semibold);
-  color: var(--scalar-color-1);
+  font-family: var(--readyapi-font);
+  font-size: var(--readyapi-micro);
+  font-weight: var(--readyapi-semibold);
+  color: var(--readyapi-color-1);
 }
 .card-form-button:hover {
-  background: var(--scalar-background-2);
-  border-color: var(--scalar-border-color);
+  background: var(--readyapi-background-2);
+  border-color: var(--readyapi-border-color);
 }
 </style>

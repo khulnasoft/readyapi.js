@@ -9,7 +9,7 @@ type Props = {
   route: ReferenceProps
 }
 
-export const ScalarDocusaurus = ({ route }: Props) => (
+export const ReadyapiDocusaurus = ({ route }: Props) => (
   <Layout>
     <BrowserOnly>
       {() => {
@@ -22,4 +22,4 @@ export const ScalarDocusaurus = ({ route }: Props) => (
   </Layout>
 )
 
-export default ScalarDocusaurus
+export default ReadyapiDocusaurus

@@ -66,8 +66,8 @@ defineEmits<{
   border: none;
   outline: none;
   cursor: pointer;
-  background: var(--scalar-background-3);
-  box-shadow: -2px 0 0 0 var(--scalar-background-3);
+  background: var(--readyapi-background-3);
+  box-shadow: -2px 0 0 0 var(--readyapi-background-3);
   position: absolute;
   top: 0;
   left: 0;
@@ -79,16 +79,16 @@ defineEmits<{
   appearance: none;
 }
 .text-select span {
-  font-size: var(--scalar-mini);
-  color: var(--scalar-color-2);
-  font-weight: var(--scalar-semibold);
+  font-size: var(--readyapi-mini);
+  color: var(--readyapi-color-2);
+  font-weight: var(--readyapi-semibold);
   white-space: nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .text-select:hover span {
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 }
 .text-select:not(.text-select--single-option) span::after {
   content: '';
@@ -100,6 +100,6 @@ defineEmits<{
   box-shadow: 1px 1px 0 currentColor;
 }
 .text-select span:hover {
-  background: var(--scalar-background-2);
+  background: var(--readyapi-background-2);
 }
 </style>

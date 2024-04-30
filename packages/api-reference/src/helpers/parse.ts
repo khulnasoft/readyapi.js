@@ -23,7 +23,7 @@ export const parse = (specification: any): Promise<Spec> => {
       if (errors?.length) {
         console.warn(
           'Please open an issue on https://github.com/khulnasoft/readyapi.js\n',
-          'Scalar OpenAPI Parser Warning:\n',
+          'Readyapi OpenAPI Parser Warning:\n',
           errors,
         )
       }

@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import {
   type Icon,
-  ScalarSearchInput,
-  ScalarSearchResultItem,
-  ScalarSearchResultList,
-} from '@readyapi/components'
+  ReadyapiSearchInput,
+  ReadyapiSearchResultItem,
+  ReadyapiSearchResultList,
+} from '@ready-api.khulnasoft.components'
 import { type TransformedOperation } from '@readyapi/oas-utils'
 import type { OpenAPIV3_1 } from '@readyapi/openapi-parser'
 import { FlowModal, type ModalState } from '@readyapi/use-modal'
@@ -313,14 +313,14 @@ function getFullUrlFromHash(href: string) {
     <div
       ref="searchModalRef"
       class="ref-search-container">
-      <ScalarSearchInput
+      <ReadyapiSearchInput
         v-model="searchText"
         @input="fuseSearch" />
     </div>
-    <ScalarSearchResultList
+    <ReadyapiSearchResultList
       class="ref-search-results custom-scroll"
       :noResults="!searchResultsWithPlaceholderResults.length">
-      <ScalarSearchResultItem
+      <ReadyapiSearchResultItem
         v-for="(entry, index) in searchResultsWithPlaceholderResults"
         :id="entry.item.href"
         :key="entry.refIndex"
@@ -348,9 +348,9 @@ function getFullUrlFromHash(href: string) {
           #addon>
           <SidebarHttpBadge :method="entry.item.httpVerb ?? 'get'" />
         </template>
-      </ScalarSearchResultItem>
+      </ReadyapiSearchResultItem>
       <template #query>{{ searchText }}</template>
-    </ScalarSearchResultList>
+    </ReadyapiSearchResultList>
     <div class="ref-search-meta">
       <span>↑↓ Navigate</span>
       <span>⏎ Select</span>
@@ -371,11 +371,11 @@ a {
   padding: 12px;
 }
 .ref-search-meta {
-  background: var(--scalar-background-3);
+  background: var(--readyapi-background-3);
   padding: 6px 12px;
-  font-size: var(--scalar-font-size-4);
-  color: var(--scalar-color-3);
-  font-weight: var(--scalar-semibold);
+  font-size: var(--readyapi-font-size-4);
+  color: var(--readyapi-color-3);
+  font-weight: var(--readyapi-semibold);
   display: flex;
   gap: 12px;
 }

@@ -1,8 +1,8 @@
-# Scalar Docusaurus API Reference Plugin "Scalasaurus"
+# Readyapi Docusaurus API Reference Plugin "Scalasaurus"
 
-[![Version](https://img.shields.io/npm/v/%40scalar/docusaurus)](https://www.npmjs.com/package/@readyapi/docusaurus)
-[![Downloads](https://img.shields.io/npm/dm/%40scalar/docusaurus)](https://www.npmjs.com/package/@readyapi/docusaurus)
-[![License](https://img.shields.io/npm/l/%40scalar%2Fdocusaurus)](https://www.npmjs.com/package/@readyapi/docusaurus)
+[![Version](https://img.shields.io/npm/v/%40readyapi/docusaurus)](https://www.npmjs.com/package/@readyapi/docusaurus)
+[![Downloads](https://img.shields.io/npm/dm/%40readyapi/docusaurus)](https://www.npmjs.com/package/@readyapi/docusaurus)
+[![License](https://img.shields.io/npm/l/%40readyapi%2Fdocusaurus)](https://www.npmjs.com/package/@readyapi/docusaurus)
 [![Discord](https://img.shields.io/discord/1135330207960678410?style=flat&color=5865F2)](https://discord.gg/8HeZcRGPFS)
 
 ![scalasaurus](docusaurus.png)
@@ -19,19 +19,19 @@ Simple add to the plugins section of your Docusaurus config. If you are using
 typescript you can import the type options type as well
 
 ```ts
-import type { ScalarOptions } from '@readyapi/docusaurus'
+import type { ReadyapiOptions } from '@readyapi/docusaurus'
 
 plugins: [
   [
     ['@readyapi/docusaurus', {
-      label: 'Scalar',
-      route: '/scalar',
+      label: 'Readyapi',
+      route: '/readyapi',
       configuration: {
         spec: {
           url: 'https://petstore3.swagger.io/api/v3/openapi.json',
         },
       },
-    } as ScalarOptions],
+    } as ReadyapiOptions],
   ],
 ],
 ```

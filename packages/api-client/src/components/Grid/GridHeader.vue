@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ScalarButton } from '@readyapi/components'
+import { ReadyapiButton } from '@ready-api.khulnasoft.components'
 
 import GridRow from './GridRow.vue'
 
@@ -23,7 +23,7 @@ defineEmits<{
       <label class="table-column-header">Description</label>
     </template>
     <template #meta>
-      <ScalarButton
+      <ReadyapiButton
         class="table-description-toggle"
         variant="text"
         @click="$emit('update:showDescription', !showDescription)">
@@ -37,7 +37,7 @@ defineEmits<{
             d="M0 12h12v-2H0v2zM0 0v2h18V0H0zm0 7h18V5H0v2z"
             fill-rule="nonzero" />
         </svg>
-      </ScalarButton>
+      </ReadyapiButton>
     </template>
   </GridRow>
 </template>
@@ -47,9 +47,9 @@ defineEmits<{
   text-transform: uppercase;
   display: block;
   padding: 9px;
-  font-weight: var(--scalar-semibold);
-  color: var(--scalar-color-2);
-  font-size: var(--scalar-micro);
+  font-weight: var(--readyapi-semibold);
+  color: var(--readyapi-color-2);
+  font-size: var(--readyapi-micro);
 }
 .table-description-toggle {
   padding: 0;
@@ -60,10 +60,10 @@ defineEmits<{
   width: 13px;
   height: 13px;
   margin: 0 1px;
-  color: var(--scalar-color-3);
+  color: var(--readyapi-color-3);
   cursor: pointer;
 }
 .table-description-toggle svg:hover {
-  color: var(--scalar-color-2);
+  color: var(--readyapi-color-2);
 }
 </style>
