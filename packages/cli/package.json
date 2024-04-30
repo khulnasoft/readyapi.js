@@ -27,7 +27,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/readyapi/readyapi.js.git",
+    "url": "https://github.com/khulnasoft/readyapi.js.git",
     "directory": "packages/cli"
   },
   "bin": {
