@@ -2,7 +2,7 @@
   "name": "@readyapi/echo-server",
   "description": "an express server which replies with the request data",
   "license": "MIT",
-  "author": "Scalar (https://github.com/scalar)",
+  "author": "KhulnaSoft (https://github.com/khulnasoft)",
   "homepage": "https://github.com/khulnasoft/readyapi.js",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "keywords": [
@@ -10,7 +10,7 @@
     "server",
     "test"
   ],
-  "version": "0.6.1",
+  "version": "0.0.1",
   "engines": {
     "node": ">=18"
   },

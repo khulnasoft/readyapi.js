@@ -46,14 +46,14 @@ export type Information = {
   'description'?: string
   'operationId'?: string | number
   'parameters'?: Parameters[]
-  'responses'?: Record<string, ScalarResponse>
+  'responses'?: Record<string, ReadyapiResponse>
   'security'?: OpenAPIV3.SecurityRequirementObject[]
   'requestBody'?: RequestBody
   'summary'?: string
   'tags'?: string[]
   'deprecated'?: boolean
   /**
-   * Scalar
+   * Readyapi
    **/
   'x-custom-examples'?: CustomRequestExample[]
   /**
@@ -105,7 +105,7 @@ export type RequestBodyMimeTypes = {
   }
 }
 
-export type ScalarResponse = {
+export type ReadyapiResponse = {
   description: string
   content: any
 }
@@ -164,13 +164,13 @@ export type Heading = {
   slug?: string
 }
 
-export type CodeBlockSSRKey = `components-scalar-code-block${number}`
+export type CodeBlockSSRKey = `components-readyapi-code-block${number}`
 export type DescriptionSectionSSRKey =
   `components-Content-Introduction-Description-sections${number}`
 export type ExampleRequestSSRKey =
   `components-Content-Operation-Example-Request${number}`
 
-export type ScalarState = {
+export type ReadyapiState = {
   'hash'?: string
   'useGlobalStore-authentication'?: AuthenticationState
   'useSidebarContent-collapsedSidebarItems'?: CollapsedSidebarItems
@@ -184,7 +184,7 @@ export type ScalarState = {
 
 export type SSRState = {
   payload: {
-    data: ScalarState
+    data: ReadyapiState
   }
   url: string
 }
