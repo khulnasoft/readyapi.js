@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import { ScalarCodeBlock, ScalarIcon } from '@scalar/components'
+import { ScalarCodeBlock, ScalarIcon } from '@readyapi/components'
 import {
   type TransformedOperation,
   normalizeMimeTypeObject,
-} from '@scalar/oas-utils'
+} from '@readyapi/oas-utils'
 import { computed, ref } from 'vue'
 
 import { useClipboard } from '../../../../hooks'

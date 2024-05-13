@@ -1,4 +1,4 @@
-# @scalar/components
+# @readyapi/components
 
 ## 0.7.6
 
@@ -24,7 +24,7 @@
 
 - 45dc04b: fix: can’t release packages
 - Updated dependencies [45dc04b]
-  - @scalar/oas-utils@0.1.10
+  - @readyapi/oas-utils@0.1.10
 
 ## 0.7.2
 
@@ -32,7 +32,7 @@
 
 - 05e2e27: chore: add provenance statement
 - Updated dependencies [05e2e27]
-  - @scalar/oas-utils@0.1.9
+  - @readyapi/oas-utils@0.1.9
 
 ## 0.7.1
 
@@ -40,7 +40,7 @@
 
 - Updated dependencies [085a0c2]
 - Updated dependencies [fa10d45]
-  - @scalar/oas-utils@0.1.8
+  - @readyapi/oas-utils@0.1.8
 
 ## 0.7.0
 
@@ -54,7 +54,7 @@
 - 07211ad: chore: added new lint rule for type importing for better perf
 - 830b3c8: fix: remove ts extension from tailwind export
 - Updated dependencies [07211ad]
-  - @scalar/oas-utils@0.1.7
+  - @readyapi/oas-utils@0.1.7
 
 ## 0.6.1
 
@@ -110,7 +110,7 @@
 
 - 22f2858: chore: ran syncpack to update packages
 - Updated dependencies [22f2858]
-  - @scalar/oas-utils@0.1.6
+  - @readyapi/oas-utils@0.1.6
 
 ## 0.4.11
 
@@ -118,7 +118,7 @@
 
 - 3ba9774: feat: add better SSR support to ScalarCodeBlock
 - Updated dependencies [3ba9774]
-  - @scalar/oas-utils@0.1.5
+  - @readyapi/oas-utils@0.1.5
 
 ## 0.4.10
 
@@ -260,7 +260,7 @@
 
 ### Patch Changes
 
-- 35dffe4: chore: include @scalar dependencies in the bundle
+- 35dffe4: chore: include @readyapi dependencies in the bundle
 
 ## 0.0.3
 

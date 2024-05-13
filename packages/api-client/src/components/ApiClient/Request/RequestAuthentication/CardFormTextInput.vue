@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ScalarIconButton } from '@scalar/components'
+import { ScalarIconButton } from '@readyapi/components'
 import { computed, ref } from 'vue'
 
 const props = defineProps<{

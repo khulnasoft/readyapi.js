@@ -1,4 +1,4 @@
-import { type ClientRequestConfig, useRequestStore } from '@scalar/api-client'
+import { type ClientRequestConfig, useRequestStore } from '@readyapi/api-client'
 import React, { useEffect, useState } from 'react'
 
 import { ApiClientReactBase } from './ApiClientReactBase'

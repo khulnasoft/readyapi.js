@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { ScalarCodeBlock } from '@scalar/components'
-import { getExampleFromSchema, prettyPrintJson } from '@scalar/oas-utils'
+import { ScalarCodeBlock } from '@readyapi/components'
+import { getExampleFromSchema, prettyPrintJson } from '@readyapi/oas-utils'
 
 defineProps<{
   response:

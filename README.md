@@ -1,14 +1,14 @@
 # Scalar API Reference
 
-[![CI](https://github.com/scalar/scalar/actions/workflows/ci.yml/badge.svg)](https://github.com/scalar/scalar/actions/workflows/ci.yml)
-[![Release](https://github.com/scalar/scalar/actions/workflows/release.yml/badge.svg)](https://github.com/scalar/scalar/actions/workflows/release.yml)
-[![Contributors](https://img.shields.io/github/contributors/scalar/scalar)](https://github.com/scalar/scalar/graphs/contributors)
-[![GitHub License](https://img.shields.io/github/license/scalar/scalar)](https://github.com/scalar/scalar/blob/main/LICENSE)
+[![CI](https://github.com/khulnasoft/readyapi.js/actions/workflows/ci.yml/badge.svg)](https://github.com/khulnasoft/readyapi.js/actions/workflows/ci.yml)
+[![Release](https://github.com/khulnasoft/readyapi.js/actions/workflows/release.yml/badge.svg)](https://github.com/khulnasoft/readyapi.js/actions/workflows/release.yml)
+[![Contributors](https://img.shields.io/github/contributors/khulnasoft/readyapi.js)](https://github.com/khulnasoft/readyapi.js/graphs/contributors)
+[![GitHub License](https://img.shields.io/github/license/khulnasoft/readyapi.js)](https://github.com/khulnasoft/readyapi.js/blob/main/LICENSE)
 [![Discord](https://img.shields.io/discord/1135330207960678410?style=flat&color=5865F2)](https://discord.gg/scalar)
 
 Generate interactive API documentation from OpenAPI/Swagger files. [Try our Demo](https://docs.scalar.com/swagger-editor)
 
-<img width="830" height="455" src="https://github.com/scalar/scalar/assets/6201407/046aaeca-f0fe-453d-a661-c747399c56ef">
+<img width="830" height="455" src="https://github.com/khulnasoft/readyapi.js/assets/6201407/046aaeca-f0fe-453d-a661-c747399c56ef">
 
 ## Features
 
@@ -38,7 +38,7 @@ Generate interactive API documentation from OpenAPI/Swagger files. [Try our Demo
   - [NestJS](#nestjs)
   - [Docusaurus](#docusaurus)
   - [Litestar](https://docs.litestar.dev/latest/usage/openapi/ui_plugins.html)
-  - [FastAPI](https://github.com/scalar/scalar/blob/main/packages/scalar_fastapi/README.md)
+  - [FastAPI](https://github.com/khulnasoft/readyapi.js/blob/main/packages/scalar_fastapi/README.md)
   - [AdonisJS](#adonisjs)
   - [Laravel](#laravel)
   - [Rust](#rust)
@@ -87,7 +87,7 @@ Generate interactive API documentation from OpenAPI/Swagger files. [Try our Demo
       document.getElementById('api-reference').dataset.configuration =
         JSON.stringify(configuration)
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@readyapi/api-reference"></script>
   </body>
 </html>
 ```
@@ -181,7 +181,7 @@ export default defineNuxtConfig({
 })
 ```
 
-Read more: [@readyapi/nuxt](https://github.com/scalar/scalar/tree/main/packages/nuxt)
+Read more: [@readyapi/nuxt](https://github.com/khulnasoft/readyapi.js/tree/main/packages/nuxt)
 
 ### Vue.js
 
@@ -189,14 +189,14 @@ The API Reference is built in Vue.js. If you’re working in Vue.js, too, you ca
 Install them via `npm`:
 
 ```bash
-npm install @scalar/api-reference
+npm install @readyapi/api-reference
 ```
 
 And import the `ApiReference` component to your app:
 
 ```vue
 <script setup lang="ts">
-import { ApiReference } from '@scalar/api-reference'
+import { ApiReference } from '@readyapi/api-reference'
 </script>
 
 <template>
@@ -204,7 +204,7 @@ import { ApiReference } from '@scalar/api-reference'
 </template>
 ```
 
-You can [pass props to customize the API reference](https://github.com/scalar/scalar/tree/main/packages/api-reference).
+You can [pass props to customize the API reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-reference).
 
 ### React
 
@@ -216,7 +216,7 @@ We have created a client side wrapper in React:
 > This is untested on SSR/SSG!
 
 ```ts
-import { ApiReferenceReact } from '@scalar/api-reference-react'
+import { ApiReferenceReact } from '@readyapi/api-reference-react'
 import React from 'react'
 
 function App() {
@@ -252,7 +252,7 @@ const config = {
 export const GET = ApiReference(config)
 ```
 
-Read more: [@readyapi/nextjs-api-reference](https://github.com/scalar/scalar/tree/main/packages/nextjs-api-reference)
+Read more: [@readyapi/nextjs-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/nextjs-api-reference)
 
 ### Fastify
 
@@ -276,10 +276,10 @@ await fastify.register(require('@readyapi/fastify-api-reference'), {
 ```
 
 We wrote
-a [detailed integration guide for Fastify](https://github.com/scalar/scalar/tree/main/documentation/fastify.md), too.
+a [detailed integration guide for Fastify](https://github.com/khulnasoft/readyapi.js/tree/main/documentation/fastify.md), too.
 
 Read more about the
-package: [@readyapi/fastify-api-reference](https://github.com/scalar/scalar/tree/main/packages/fastify-api-reference)
+package: [@readyapi/fastify-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/fastify-api-reference)
 
 ### Platformatic
 
@@ -304,7 +304,7 @@ app.get(
 )
 ```
 
-Read more: [@readyapi/hono-api-reference](https://github.com/scalar/scalar/tree/main/packages/hono-api-reference)
+Read more: [@readyapi/hono-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/hono-api-reference)
 
 ### ElysiaJS
 
@@ -342,7 +342,7 @@ app.use(
 )
 ```
 
-Read more: [@readyapi/express-api-reference](https://github.com/scalar/scalar/tree/main/packages/express-api-reference)
+Read more: [@readyapi/express-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/express-api-reference)
 
 ### NestJS
 
@@ -361,7 +361,7 @@ app.use(
 )
 ```
 
-Read more: [@readyapi/nestjs-api-reference](https://github.com/scalar/scalar/tree/main/packages/nestjs-api-reference)
+Read more: [@readyapi/nestjs-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/nestjs-api-reference)
 
 ### Docusaurus
 
@@ -375,7 +375,7 @@ plugins: [
   [
     '@readyapi/docusaurus',
     {
-      label: 'Scalar',
+      label: 'Readyapi',,
       route: '/scalar',
       configuration: {
         spec: {
@@ -388,7 +388,7 @@ plugins: [
 ```
 
 For more information, check out
-the [Docusaurus package](https://github.com/scalar/scalar/tree/main/packages/docusaurus/README.md)
+the [Docusaurus package](https://github.com/khulnasoft/readyapi.js/tree/main/packages/docusaurus/README.md)
 
 ### AdonisJS
 
@@ -397,7 +397,7 @@ and it comes with support for the
 Scalar API reference already.
 
 We wrote
-a [detailed integration guide for AdonisJS](https://github.com/scalar/scalar/tree/main/documentation/adonisjs.md).
+a [detailed integration guide for AdonisJS](https://github.com/khulnasoft/readyapi.js/tree/main/documentation/adonisjs.md).
 
 ### Laravel
 
@@ -411,13 +411,13 @@ Set the `type` to `external_laravel` (for Blade) or `external_static` (for HTML)
 return [
   // …
   'type' => 'external_laravel',
-  'theme' => 'scalar',
+  'theme' => 'Readyapi',,
   // …
 ];
 ```
 
 We wrote
-a [detailed integration guide for Laravel Scribe](https://github.com/scalar/scalar/tree/main/documentation/laravel-scribe.md),
+a [detailed integration guide for Laravel Scribe](https://github.com/khulnasoft/readyapi.js/tree/main/documentation/laravel-scribe.md),
 too.
 
 ### Rust
@@ -470,7 +470,7 @@ Ready? [Create an account on scalar.com](https://scalar.com).
 We’ve also got a nice command-line interface that you can use to play with OpenAPI files locally,
 integrate validation into your CI or share them easily (with us or anyone else).
 
-[CLI documentation](https://github.com/scalar/scalar/tree/main/packages/cli)
+[CLI documentation](https://github.com/khulnasoft/readyapi.js/tree/main/packages/cli)
 
 Here are a few use cases:
 
@@ -479,14 +479,14 @@ Here are a few use cases:
 You can use [npx](https://docs.npmjs.com/cli/v8/commands/npx) to use the CLI without manually installing it:
 
 ```bash
-npx @scalar/cli --version
+npx @readyapi/cli --version
 ```
 
 If you want to install it locally, you can do it like this:
 
 ```bash
-npm -g install @scalar/cli
-scalar --version
+npm -g install @readyapi/cli
+readyapi --version
 ```
 
 ### Format
@@ -500,7 +500,7 @@ scalar format openapi.json --output openapi.yaml
 ### Validate
 
 Validate your OpenAPI file to find errors
-quickly, [great for CI](https://github.com/scalar/scalar/blob/main/.github/workflows/validate-openapi-file.yml):
+quickly, [great for CI](https://github.com/khulnasoft/readyapi.js/blob/main/.github/workflows/validate-openapi-file.yml):
 
 ```bash
 scalar validate openapi.json
@@ -537,7 +537,7 @@ Want to share your OpenAPI file? The following command will upload the given spe
 scalar share openapi.json
 ```
 
-Read [more about the CLI here](https://github.com/scalar/scalar/tree/main/packages/cli).
+Read [more about the CLI here](https://github.com/khulnasoft/readyapi.js/tree/main/packages/cli).
 
 ## Markdown
 
@@ -553,7 +553,7 @@ What’s working here, is probably also working in the API reference:
 - images
 - …
 
-[Have a look at our OpenAPI example specification](https://github.com/scalar/scalar/blob/main/packages/galaxy/src/specifications/3.1.yaml)
+[Have a look at our OpenAPI example specification](https://github.com/khulnasoft/readyapi.js/blob/main/packages/galaxy/src/specifications/3.1.yaml)
 to see more examples.
 
 > Note: Not everything is supported in all places. For example, you can use images in most places, but not in parameter
@@ -578,14 +578,14 @@ To customize the behavior of the API Reference, you can use the following config
 - `onSpecUpdate`: Listen to spec changes with a callback function.
 
 For detailed information on how to use these options, refer to
-the [Configuration Section](https://github.com/scalar/scalar/blob/main/packages/api-reference/README.md/#configuration).
+the [Configuration Section](https://github.com/khulnasoft/readyapi.js/blob/main/packages/api-reference/README.md/#configuration).
 
 ### Layouts
 
 We support two layouts at the moment, a `modern` layout (the default) and a Swagger UI inspired
 `classic` layout (we jazzed it up a bit though).
 
-![layouts](https://github.com/scalar/scalar/assets/6374090/a28b89e0-8d3b-477f-a02f-bcf39f7830f0)
+![layouts](https://github.com/khulnasoft/readyapi.js/assets/6374090/a28b89e0-8d3b-477f-a02f-bcf39f7830f0)
 
 ### Themes
 
@@ -621,13 +621,13 @@ To get started, overwrite our CSS variables. We won’t judge.
 > If you use a different font or just don’t want to use Google Fonts,
 > pass `withDefaultFonts: true` to the configuration.
 
-You can [use all variables](https://github.com/scalar/scalar/blob/main/packages/themes/src/base.css) available in the
+You can [use all variables](https://github.com/khulnasoft/readyapi.js/blob/main/packages/themes/src/base.css) available in the
 base styles as well as overwrite the color theme.
 
 To build your own color themes, overwrite the night mode and day mode variables.
 Here are some basic variables to get you started:
 
-![basic-scalar-variables](https://github.com/scalar/scalar/assets/6374090/f49256c4-4623-4797-87a1-24bdbc9b17fd)
+![basic-scalar-variables](https://github.com/khulnasoft/readyapi.js/assets/6374090/f49256c4-4623-4797-87a1-24bdbc9b17fd)
 
 ```
 .light-mode {
@@ -655,7 +655,7 @@ Here are some basic variables to get you started:
 
 Or get more advanced by styling our sidebar!
 
-![scalar-sidebar-variables](https://github.com/scalar/scalar/assets/6374090/5b1f0211-5c09-4092-a882-03d8241ad428)
+![scalar-sidebar-variables](https://github.com/khulnasoft/readyapi.js/assets/6374090/5b1f0211-5c09-4092-a882-03d8241ad428)
 
 ```
 .light-mode .sidebar {
@@ -699,9 +699,9 @@ We recommend updating your theme variables as soon as possible:
 - `--sidebar-*` → `--scalar-sidebar-*`
 
 For a before and after example of an updated theme
-see [`legacyTheme.css`](https://github.com/scalar/scalar/tree/main/packages/themes/src/fixtures/legacyTheme.css)
-and [`updatedTheme.css`](https://github.com/scalar/scalar/tree/main/packages/themes/src/fixtures/updatedTheme.css)
-in the [`@readyapi/themes`](https://github.com/scalar/scalar/tree/main/packages/themes/) package.
+see [`legacyTheme.css`](https://github.com/khulnasoft/readyapi.js/tree/main/packages/themes/src/fixtures/legacyTheme.css)
+and [`updatedTheme.css`](https://github.com/khulnasoft/readyapi.js/tree/main/packages/themes/src/fixtures/updatedTheme.css)
+in the [`@readyapi/themes`](https://github.com/khulnasoft/readyapi.js/tree/main/packages/themes/) package.
 
 ## Community
 
@@ -711,21 +711,21 @@ We are API nerds. You too? Let’s chat on Discord: <https://discord.gg/scalar>
 
 This repository contains all our open source projects, and there’s definitely more to discover.
 
-| Package                                                                                                      | Description                                       |
-| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- |
-| [@scalar/api-client](https://github.com/scalar/scalar/tree/main/packages/api-client)                         | API testing client                                |
-| [@scalar/api-reference](https://github.com/scalar/scalar/tree/main/packages/api-reference)                   | beautiful API references                          |
-| [@scalar/cli](https://github.com/scalar/scalar/tree/main/packages/cli)                                       | CLI to work with OpenAPi files                    |
-| [@readyapi/echo-server](https://github.com/scalar/scalar/tree/main/packages/echo-server)                     | a server that replies with the request data       |
-| [@readyapi/express-api-reference](https://github.com/scalar/scalar/tree/main/packages/express-api-reference) | Express plugin                                    |
-| [@readyapi/fastify-api-reference](https://github.com/scalar/scalar/tree/main/packages/fastify-api-reference) | Fastify plugin                                    |
-| [@readyapi/galaxy](https://github.com/scalar/scalar/tree/main/packages/galaxy)                               | OpenAPI example specification                     |
-| [@readyapi/hono-api-reference](https://github.com/scalar/scalar/tree/main/packages/hono-api-reference)       | Hono middleware                                   |
-| [@scalar/mock-server](https://github.com/scalar/scalar/tree/main/packages/mock-server)                       | fake data based on an OpenAPI specification files |
-| [@readyapi/nestjs-api-reference](https://github.com/scalar/scalar/tree/main/packages/nestjs-api-reference)   | NestJS middleware                                 |
-| [@readyapi/nextjs-api-reference](https://github.com/scalar/scalar/tree/main/packages/nextjs-api-reference)   | Next.js adapter                                   |
-| [@scalar/swagger-editor](https://github.com/scalar/scalar/tree/main/packages/swagger-editor)                 | editor tailored to write OpenAPI files            |
-| [@scalar/swagger-parser](https://github.com/scalar/scalar/tree/main/packages/swagger-parser)                 | parse OpenAPI files                               |
+| Package                                                                                                               | Description                                       |
+| --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| [@readyapi/api-client](https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-client)                       | API testing client                                |
+| [@readyapi/api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-reference)                 | beautiful API references                          |
+| [@readyapi/cli](https://github.com/khulnasoft/readyapi.js/tree/main/packages/cli)                                     | CLI to work with OpenAPi files                    |
+| [@readyapi/echo-server](https://github.com/khulnasoft/readyapi.js/tree/main/packages/echo-server)                     | a server that replies with the request data       |
+| [@readyapi/express-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/express-api-reference) | Express plugin                                    |
+| [@readyapi/fastify-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/fastify-api-reference) | Fastify plugin                                    |
+| [@readyapi/galaxy](https://github.com/khulnasoft/readyapi.js/tree/main/packages/galaxy)                               | OpenAPI example specification                     |
+| [@readyapi/hono-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/hono-api-reference)       | Hono middleware                                   |
+| [@readyapi/mock-server](https://github.com/khulnasoft/readyapi.js/tree/main/packages/mock-server)                     | fake data based on an OpenAPI specification files |
+| [@readyapi/nestjs-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/nestjs-api-reference)   | NestJS middleware                                 |
+| [@readyapi/nextjs-api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/nextjs-api-reference)   | Next.js adapter                                   |
+| [@scalar/swagger-editor](https://github.com/khulnasoft/readyapi.js/tree/main/packages/swagger-editor)                 | editor tailored to write OpenAPI files            |
+| [@scalar/swagger-parser](https://github.com/khulnasoft/readyapi.js/tree/main/packages/swagger-parser)                 | parse OpenAPI files                               |
 
 ## Contributors
 
@@ -928,8 +928,8 @@ This repository contains all our open source projects, and there’s definitely 
 </table>
 <!-- readme: collaborators,contributors -end -->
 
-Contributions are welcome! Read [`CONTRIBUTING`](https://github.com/scalar/scalar/blob/main/CONTRIBUTING).
+Contributions are welcome! Read [`CONTRIBUTING`](https://github.com/khulnasoft/readyapi.js/blob/main/CONTRIBUTING).
 
 ## License
 
-The source code in this repository is licensed under [MIT](https://github.com/scalar/scalar/blob/main/LICENSE).
+The source code in this repository is licensed under [MIT](https://github.com/khulnasoft/readyapi.js/blob/main/LICENSE).

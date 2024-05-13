@@ -7,7 +7,7 @@
 
 This middleware provides an easy way to render a beautiful API reference based on an OpenAPI/Swagger file with Hono.
 
-![hono-js](https://github.com/scalar/scalar/assets/6176314/6f5a2102-e377-4d4e-9cfb-a512f5e0a9ba)
+![hono-js](https://github.com/khulnasoft/readyapi.js/assets/6176314/6f5a2102-e377-4d4e-9cfb-a512f5e0a9ba)
 
 ## Installation
 
@@ -32,11 +32,11 @@ app.get(
 )
 ```
 
-The Hono middleware takes our universal configuration object, [read more about configuration](https://github.com/scalar/scalar/tree/main/packages/api-reference#props) in the core package README.
+The Hono middleware takes our universal configuration object, [read more about configuration](https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-reference#props) in the core package README.
 
 ### Themes
 
-The middleware comes with a custom theme for Hono. You can use one of [the other predefined themes](https://github.com/scalar/scalar/blob/main/packages/themes/src/index.ts#L15) (`alternate`, `default`, `moon`, `purple`, `solarized`) or overwrite it with `none`. All themes come with a light and dark color scheme.
+The middleware comes with a custom theme for Hono. You can use one of [the other predefined themes](https://github.com/khulnasoft/readyapi.js/blob/main/packages/themes/src/index.ts#L15) (`alternate`, `default`, `moon`, `purple`, `solarized`) or overwrite it with `none`. All themes come with a light and dark color scheme.
 
 ```ts
 import { apiReference } from '@readyapi/hono-api-reference'
@@ -72,7 +72,7 @@ app.get(
 
 ### Custom CDN
 
-You can use a custom CDN ，default is `https://cdn.jsdelivr.net/npm/@scalar/api-reference`.
+You can use a custom CDN ，default is `https://cdn.jsdelivr.net/npm/@readyapi/api-reference`.
 
 ```ts
 import { apiReference } from '@readyapi/nestjs-api-reference'
@@ -80,7 +80,7 @@ import { apiReference } from '@readyapi/nestjs-api-reference'
 app.use(
   '/reference',
   apiReference({
-    cdn: 'https://cdn.jsdelivr.net/npm/@scalar/api-reference',
+    cdn: 'https://cdn.jsdelivr.net/npm/@readyapi/api-reference',
     spec: {
       content: OpenApiSpecification,
     },

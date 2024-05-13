@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Card, CardContent, CardHeader } from '@scalar/api-reference'
+import { Card, CardContent, CardHeader } from '@readyapi/api-reference'
 import { RouterLink } from 'vue-router'
 
 defineProps<{

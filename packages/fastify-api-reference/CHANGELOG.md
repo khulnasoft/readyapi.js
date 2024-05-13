@@ -134,7 +134,7 @@
 
 ### Patch Changes
 
-- b32f46c: chore: update @scalar/api-reference
+- b32f46c: chore: update @readyapi/api-reference
 
 ## 1.19.5
 
@@ -172,7 +172,7 @@
 
 ### Minor Changes
 
-- 7fb8273: Migrate to @scalar/openapi-parser
+- 7fb8273: Migrate to @readyapi/openapi-parser
 
 ## 1.18.7
 
@@ -453,7 +453,7 @@
 
 ### Patch Changes
 
-- 11e2f6e: chore: move @scalar/api-reference and terser to devDepdencies
+- 11e2f6e: chore: move @readyapi/api-reference and terser to devDepdencies
 - daa6928: chore: use fastify-html to send HTML
 - daa6928: chore: disable CommonJS build, don’t support require() anymore
 - 68fedd5: chore: use fastify logging facilities
@@ -469,7 +469,7 @@
 - 349589a: feat: expose spec content updates
 - Updated dependencies [349589a]
 - Updated dependencies [f38bb61]
-  - @scalar/api-reference@1.5.0
+  - @readyapi/api-reference@1.5.0
 
 ## 0.7.4
 
@@ -479,7 +479,7 @@
 - Updated dependencies [95fbc01]
 - Updated dependencies [b65840b]
 - Updated dependencies [b974eeb]
-  - @scalar/api-reference@1.4.0
+  - @readyapi/api-reference@1.4.0
 
 ## 0.7.3
 
@@ -495,13 +495,13 @@
 - 185a85d: refactor: use CDN version, remove pageTitle option (the API reference supports more attributes already)
 - Updated dependencies [37b974c]
 - Updated dependencies [b77d087]
-  - @scalar/api-reference@1.3.0
+  - @readyapi/api-reference@1.3.0
 
 ## 0.7.1
 
 ### Patch Changes
 
-- @scalar/api-reference@1.2.7
+- @readyapi/api-reference@1.2.7
 
 ## 0.7.0
 
@@ -512,7 +512,7 @@
 ### Patch Changes
 
 - Updated dependencies [ed7cc0d]
-  - @scalar/api-reference@1.2.6
+  - @readyapi/api-reference@1.2.6
 
 ## 0.6.68
 
@@ -520,7 +520,7 @@
 
 - Updated dependencies [35dffe4]
 - Updated dependencies [5c66be8]
-  - @scalar/api-reference@1.2.5
+  - @readyapi/api-reference@1.2.5
 
 ## 0.6.67
 
@@ -528,7 +528,7 @@
 
 - c3b215f: chore: no pinned peer dependency versions
 - Updated dependencies [c3b215f]
-  - @scalar/api-reference@1.2.4
+  - @readyapi/api-reference@1.2.4
 
 ## 0.6.66
 
@@ -537,7 +537,7 @@
 - 55246e5: chore: rewrite all package.jsons (including their prod, dev and peer dependency requirements)
 - Updated dependencies [55246e5]
 - Updated dependencies [f2941f5]
-  - @scalar/api-reference@1.2.3
+  - @readyapi/api-reference@1.2.3
 
 ## 0.6.65
 
@@ -545,7 +545,7 @@
 
 - Updated dependencies [81490fb]
 - Updated dependencies [18bb6a4]
-  - @scalar/api-reference@1.2.2
+  - @readyapi/api-reference@1.2.2
 
 ## 0.6.64
 
@@ -553,7 +553,7 @@
 
 - Updated dependencies [fa34e17]
 - Updated dependencies [9e6cc67]
-  - @scalar/api-reference@1.2.1
+  - @readyapi/api-reference@1.2.1
 
 ## 0.6.63
 
@@ -562,34 +562,34 @@
 - Updated dependencies [678e383]
 - Updated dependencies [c51124f]
 - Updated dependencies [edb09a0]
-  - @scalar/api-reference@1.2.0
+  - @readyapi/api-reference@1.2.0
 
 ## 0.6.62
 
 ### Patch Changes
 
-- @scalar/api-reference@1.1.7
+- @readyapi/api-reference@1.1.7
 
 ## 0.6.61
 
 ### Patch Changes
 
 - Updated dependencies [36761e4]
-  - @scalar/api-reference@1.1.6
+  - @readyapi/api-reference@1.1.6
 
 ## 0.6.60
 
 ### Patch Changes
 
 - Updated dependencies [b8dc5a5]
-  - @scalar/api-reference@1.1.5
+  - @readyapi/api-reference@1.1.5
 
 ## 0.6.59
 
 ### Patch Changes
 
 - Updated dependencies [752dcf3]
-  - @scalar/api-reference@1.1.4
+  - @readyapi/api-reference@1.1.4
 
 ## 0.6.58
 
@@ -606,21 +606,21 @@
 - Updated dependencies [52c20e5]
 - Updated dependencies [b1fe23c]
 - Updated dependencies [1208a7f]
-  - @scalar/api-reference@1.1.3
+  - @readyapi/api-reference@1.1.3
 
 ## 0.6.56
 
 ### Patch Changes
 
 - Updated dependencies [d062fd9]
-  - @scalar/api-reference@1.1.2
+  - @readyapi/api-reference@1.1.2
 
 ## 0.6.55
 
 ### Patch Changes
 
 - Updated dependencies [5eb5dcf]
-  - @scalar/api-reference@1.1.1
+  - @readyapi/api-reference@1.1.1
 
 ## 0.6.54
 
@@ -629,7 +629,7 @@
 - Updated dependencies [d3205e5]
 - Updated dependencies [77dce14]
 - Updated dependencies [aa2a575]
-  - @scalar/api-reference@1.1.0
+  - @readyapi/api-reference@1.1.0
 
 ## 0.6.53
 
@@ -637,7 +637,7 @@
 
 - Updated dependencies [366b142]
 - Updated dependencies [e1dc955]
-  - @scalar/api-reference@1.0.6
+  - @readyapi/api-reference@1.0.6
 
 ## 0.6.52
 
@@ -646,7 +646,7 @@
 - Updated dependencies [ff81f70]
 - Updated dependencies [5da1fc6]
 - Updated dependencies [ff81f70]
-  - @scalar/api-reference@1.0.5
+  - @readyapi/api-reference@1.0.5
 
 ## 0.6.51
 
@@ -659,7 +659,7 @@
 - Updated dependencies [7fb2302]
 - Updated dependencies [3eff44f]
 - Updated dependencies [f0dca6c]
-  - @scalar/api-reference@1.0.4
+  - @readyapi/api-reference@1.0.4
 
 ## 0.6.50
 
@@ -672,7 +672,7 @@
 - Updated dependencies [009a720]
 - Updated dependencies [48118ba]
 - Updated dependencies [dab853a]
-  - @scalar/api-reference@1.0.3
+  - @readyapi/api-reference@1.0.3
 
 ## 0.6.49
 
@@ -680,7 +680,7 @@
 
 - Updated dependencies [a7e6c25]
 - Updated dependencies [4253b4a]
-  - @scalar/api-reference@1.0.2
+  - @readyapi/api-reference@1.0.2
 
 ## 0.6.48
 
@@ -690,7 +690,7 @@
 - Updated dependencies [e482ce0]
 - Updated dependencies [6af9829]
 - Updated dependencies [6bdc65b]
-  - @scalar/api-reference@1.0.1
+  - @readyapi/api-reference@1.0.1
 
 ## 0.6.47
 
@@ -702,14 +702,14 @@
 - Updated dependencies [c470db5]
 - Updated dependencies [5243ae4]
 - Updated dependencies [509db1e]
-  - @scalar/api-reference@1.0.0
+  - @readyapi/api-reference@1.0.0
 
 ## 0.6.46
 
 ### Patch Changes
 
 - Updated dependencies [8c15df74]
-  - @scalar/api-reference@0.8.10
+  - @readyapi/api-reference@0.8.10
 
 ## 0.6.45
 
@@ -717,28 +717,28 @@
 
 - Updated dependencies [9c7a5722]
 - Updated dependencies [a5df4a5b]
-  - @scalar/api-reference@0.8.9
+  - @readyapi/api-reference@0.8.9
 
 ## 0.6.44
 
 ### Patch Changes
 
 - Updated dependencies [8e2e4e5a]
-  - @scalar/api-reference@0.8.8
+  - @readyapi/api-reference@0.8.8
 
 ## 0.6.43
 
 ### Patch Changes
 
 - Updated dependencies [db24e103]
-  - @scalar/api-reference@0.8.7
+  - @readyapi/api-reference@0.8.7
 
 ## 0.6.42
 
 ### Patch Changes
 
 - Updated dependencies [c75b13b1]
-  - @scalar/api-reference@0.8.6
+  - @readyapi/api-reference@0.8.6
 
 ## 0.6.41
 
@@ -748,20 +748,20 @@
 - Updated dependencies [2f0b2f01]
 - Updated dependencies [2f0b2f01]
 - Updated dependencies [2f0b2f01]
-  - @scalar/api-reference@0.8.5
+  - @readyapi/api-reference@0.8.5
 
 ## 0.6.40
 
 ### Patch Changes
 
-- @scalar/api-reference@0.8.4
+- @readyapi/api-reference@0.8.4
 
 ## 0.6.39
 
 ### Patch Changes
 
 - Updated dependencies [d5fccba9]
-  - @scalar/api-reference@0.8.3
+  - @readyapi/api-reference@0.8.3
 
 ## 0.6.38
 
@@ -774,14 +774,14 @@
 - Updated dependencies [8ac1ad69]
 - Updated dependencies [28191084]
 - Updated dependencies [e01134d4]
-  - @scalar/api-reference@0.8.2
+  - @readyapi/api-reference@0.8.2
 
 ## 0.6.37
 
 ### Patch Changes
 
 - Updated dependencies [7ed5c61a]
-  - @scalar/api-reference@0.8.1
+  - @readyapi/api-reference@0.8.1
 
 ## 0.6.36
 
@@ -791,7 +791,7 @@
 - Updated dependencies [b71c4db7]
 - Updated dependencies [01109c6f]
 - Updated dependencies [2eba4010]
-  - @scalar/api-reference@0.8.0
+  - @readyapi/api-reference@0.8.0
 
 ## 0.6.35
 
@@ -799,7 +799,7 @@
 
 - Updated dependencies [1f064818]
 - Updated dependencies [1bd5fb80]
-  - @scalar/api-reference@0.7.11
+  - @readyapi/api-reference@0.7.11
 
 ## 0.6.34
 
@@ -807,14 +807,14 @@
 
 - Updated dependencies [c1cb507d]
 - Updated dependencies [d1fcd043]
-  - @scalar/api-reference@0.7.10
+  - @readyapi/api-reference@0.7.10
 
 ## 0.6.33
 
 ### Patch Changes
 
 - Updated dependencies [45ac0aaa]
-  - @scalar/api-reference@0.7.9
+  - @readyapi/api-reference@0.7.9
 
 ## 0.6.32
 
@@ -825,7 +825,7 @@
 - Updated dependencies [ca2689b6]
 - Updated dependencies [ae247253]
 - Updated dependencies [5896b08d]
-  - @scalar/api-reference@0.7.8
+  - @readyapi/api-reference@0.7.8
 
 ## 0.6.31
 
@@ -837,7 +837,7 @@
 - Updated dependencies [d755d34e]
 - Updated dependencies [a161c962]
 - Updated dependencies [7e7ea175]
-  - @scalar/api-reference@0.7.7
+  - @readyapi/api-reference@0.7.7
 
 ## 0.6.30
 
@@ -848,7 +848,7 @@
 - Updated dependencies [6131fa72]
 - Updated dependencies [dd8df965]
 - Updated dependencies [52534317]
-  - @scalar/api-reference@0.7.6
+  - @readyapi/api-reference@0.7.6
 
 ## 0.6.29
 
@@ -857,14 +857,14 @@
 - 28cce042: fix: externalize markdown plugins to not break SSG
 - Updated dependencies [fd875bc7]
 - Updated dependencies [28cce042]
-  - @scalar/api-reference@0.7.5
+  - @readyapi/api-reference@0.7.5
 
 ## 0.6.28
 
 ### Patch Changes
 
 - Updated dependencies [51029c1d]
-  - @scalar/api-reference@0.7.4
+  - @readyapi/api-reference@0.7.4
 
 ## 0.6.27
 
@@ -872,7 +872,7 @@
 
 - Updated dependencies [99936ab8]
 - Updated dependencies [08e8f637]
-  - @scalar/api-reference@0.7.3
+  - @readyapi/api-reference@0.7.3
 
 ## 0.6.26
 
@@ -880,7 +880,7 @@
 
 - Updated dependencies [fd6cf1bb]
 - Updated dependencies [357a174d]
-  - @scalar/api-reference@0.7.2
+  - @readyapi/api-reference@0.7.2
 
 ## 0.6.25
 
@@ -888,14 +888,14 @@
 
 - 3c2bc6a9: style: update the search modal style
 - Updated dependencies [3c2bc6a9]
-  - @scalar/api-reference@0.7.1
+  - @readyapi/api-reference@0.7.1
 
 ## 0.6.24
 
 ### Patch Changes
 
 - Updated dependencies [fd38deb0]
-  - @scalar/api-reference@0.7.0
+  - @readyapi/api-reference@0.7.0
 
 ## 0.6.23
 
@@ -908,14 +908,14 @@
 - Updated dependencies [c6ac9ff4]
 - Updated dependencies [749f2f3f]
 - Updated dependencies [91b09499]
-  - @scalar/api-reference@0.6.23
+  - @readyapi/api-reference@0.6.23
 
 ## 0.6.22
 
 ### Patch Changes
 
 - Updated dependencies [d4789991]
-  - @scalar/api-reference@0.6.22
+  - @readyapi/api-reference@0.6.22
 
 ## 0.6.21
 
@@ -926,7 +926,7 @@
 - Updated dependencies [1cbcabd7]
 - Updated dependencies [9d22b4ca]
 - Updated dependencies [437c4b01]
-  - @scalar/api-reference@0.6.21
+  - @readyapi/api-reference@0.6.21
 
 ## 0.6.20
 
@@ -934,26 +934,26 @@
 
 - 37353dd1: feat: add `data-proxy-url` to the HTML API
 - Updated dependencies [37353dd1]
-  - @scalar/api-reference@0.6.20
+  - @readyapi/api-reference@0.6.20
 
 ## 0.6.19
 
 ### Patch Changes
 
 - Updated dependencies [eb0c3201]
-  - @scalar/api-reference@0.6.19
+  - @readyapi/api-reference@0.6.19
 
 ## 0.6.18
 
 ### Patch Changes
 
-- @scalar/api-reference@0.6.18
+- @readyapi/api-reference@0.6.18
 
 ## 0.6.17
 
 ### Patch Changes
 
-- @scalar/api-reference@0.6.17
+- @readyapi/api-reference@0.6.17
 
 ## 0.6.16
 
@@ -961,14 +961,14 @@
 
 - Updated dependencies [0f87c35d]
 - Updated dependencies [3dd2574d]
-  - @scalar/api-reference@0.6.16
+  - @readyapi/api-reference@0.6.16
 
 ## 0.6.15
 
 ### Patch Changes
 
 - Updated dependencies [7b6c21e5]
-  - @scalar/api-reference@0.6.15
+  - @readyapi/api-reference@0.6.15
 
 ## 0.6.14
 
@@ -976,35 +976,35 @@
 
 - 3cbfbe0d: fix: hide fastify plugin routes from the Swagger spec
 - Updated dependencies [46142c0a]
-  - @scalar/api-reference@0.6.14
+  - @readyapi/api-reference@0.6.14
 
 ## 0.6.13
 
 ### Patch Changes
 
 - Updated dependencies [727d7f47]
-  - @scalar/api-reference@0.6.13
+  - @readyapi/api-reference@0.6.13
 
 ## 0.6.12
 
 ### Patch Changes
 
 - a5eed542: feat: detect @fastify/swagger and load fastify.swagger() automatically
-  - @scalar/api-reference@0.6.12
+  - @readyapi/api-reference@0.6.12
 
 ## 0.6.11
 
 ### Patch Changes
 
 - Updated dependencies [b76f4d1e]
-  - @scalar/api-reference@0.6.11
+  - @readyapi/api-reference@0.6.11
 
 ## 0.6.10
 
 ### Patch Changes
 
 - Updated dependencies [07b99141]
-  - @scalar/api-reference@0.6.10
+  - @readyapi/api-reference@0.6.10
 
 ## 0.6.9
 
@@ -1012,33 +1012,33 @@
 
 - 386b2941: fix: remove body margin from the fastify template
 - Updated dependencies [4985562c]
-  - @scalar/api-reference@0.6.9
+  - @readyapi/api-reference@0.6.9
 
 ## 0.6.8
 
 ### Patch Changes
 
-- @scalar/api-reference@0.6.8
+- @readyapi/api-reference@0.6.8
 
 ## 0.6.7
 
 ### Patch Changes
 
 - Updated dependencies [cd5f2685]
-  - @scalar/api-reference@0.6.7
+  - @readyapi/api-reference@0.6.7
 
 ## 0.6.6
 
 ### Patch Changes
 
 - Updated dependencies [8823d7a1]
-  - @scalar/api-reference@0.6.6
+  - @readyapi/api-reference@0.6.6
 
 ## 0.6.5
 
 ### Patch Changes
 
-- @scalar/api-reference@0.6.5
+- @readyapi/api-reference@0.6.5
 
 ## 0.6.4
 
@@ -1049,7 +1049,7 @@
 - Updated dependencies [3e912c75]
 - Updated dependencies [048555c6]
 - Updated dependencies [df62875a]
-  - @scalar/api-reference@0.6.4
+  - @readyapi/api-reference@0.6.4
 
 ## 0.6.3
 
@@ -1069,7 +1069,7 @@
 - Updated dependencies [75a69ba7]
 - Updated dependencies [b03a09c7]
 - Updated dependencies [11270915]
-  - @scalar/api-reference@0.6.3
+  - @readyapi/api-reference@0.6.3
 
 ## 0.6.1
 
@@ -1081,7 +1081,7 @@
 - Updated dependencies [e9861139]
 - Updated dependencies [8751c874]
 - Updated dependencies [addd9fa2]
-  - @scalar/api-reference@0.6.2
+  - @readyapi/api-reference@0.6.2
 
 ## 0.6.0
 

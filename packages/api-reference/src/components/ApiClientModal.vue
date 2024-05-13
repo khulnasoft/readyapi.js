@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import { useApiClientStore } from '@readyapi/api-client'
+import { ScalarIcon } from '@readyapi/components'
 import type { ThemeId } from '@readyapi/themes'
-import { useApiClientStore } from '@scalar/api-client'
-import { ScalarIcon } from '@scalar/components'
 import { useMediaQuery } from '@vueuse/core'
 import { defineAsyncComponent, ref } from 'vue'
 
@@ -20,7 +20,7 @@ defineEmits<{
 }>()
 
 const LazyLoadedApiClient = defineAsyncComponent(() =>
-  import('@scalar/api-client').then((m) => m.ApiClient),
+  import('@readyapi/api-client').then((m) => m.ApiClient),
 )
 
 const { hideApiClient, state } = useApiClientStore()
@@ -43,7 +43,7 @@ const showSideBar = ref(false)
           </button>
         </div> -->
       <div class="scalar-api-client-height">
-        <!-- Fonts are fetched by @scalar/api-reference already, we can safely set `withDefaultFonts: false` -->
+        <!-- Fonts are fetched by @readyapi/api-reference already, we can safely set `withDefaultFonts: false` -->
         <LazyLoadedApiClient
           :proxyUrl="proxyUrl"
           :showSideBar="showSideBar"

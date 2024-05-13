@@ -1,4 +1,4 @@
-import { ApiReferenceReact } from '@scalar/api-reference-react'
+import { ApiReferenceReact } from '@readyapi/api-reference-react'
 import React from 'react'
 
 function App() {

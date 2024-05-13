@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ScalarButton } from '@scalar/components'
-import type { OpenAPIV3_1 } from '@scalar/openapi-parser'
+import { ScalarButton } from '@readyapi/components'
+import type { OpenAPIV3_1 } from '@readyapi/openapi-parser'
 import { ref } from 'vue'
 
 import { clickGeneratedParameter } from '../../../../clientBus'

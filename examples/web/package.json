@@ -2,8 +2,13 @@
   "name": "@readyapi-examples/web",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/scalar/scalar",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khulnasoft/readyapi.js.git",
+    "directory": "packages/use-tooltip"
+  },
   "version": "0.4.2",
   "private": true,
   "engines": {
@@ -18,10 +23,10 @@
   },
   "type": "module",
   "dependencies": {
+    "@readyapi/api-client": "workspace:*",
+    "@readyapi/api-reference": "workspace:*",
     "@readyapi/galaxy": "workspace:*",
     "@readyapi/themes": "workspace:*",
-    "@scalar/api-client": "workspace:*",
-    "@scalar/api-reference": "workspace:*",
     "@vueuse/core": "^10.9.0",
     "monaco-editor": "^0.47.0",
     "vue": "^3.4.21",

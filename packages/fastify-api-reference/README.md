@@ -7,7 +7,7 @@
 
 This plugin provides an easy way to render a beautiful API reference based on a OpenAPI/Swagger file with Fastify.
 
-[![Screenshot of an API Reference](https://github.com/scalar/scalar/assets/6201407/d8beb5e1-bf64-4589-8cb0-992ba79215a8)](https://docs.scalar.com/swagger-editor)
+[![Screenshot of an API Reference](https://github.com/khulnasoft/readyapi.js/assets/6201407/d8beb5e1-bf64-4589-8cb0-992ba79215a8)](https://docs.scalar.com/swagger-editor)
 
 ## Installation
 
@@ -74,11 +74,11 @@ await fastify.register(require('@readyapi/fastify-api-reference'), {
 })
 ```
 
-The fastify plugin takes our universal configuration object, [read more about configuration](https://github.com/scalar/scalar/tree/main/packages/api-reference#configuration) in the core package README.
+The fastify plugin takes our universal configuration object, [read more about configuration](https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-reference#configuration) in the core package README.
 
 ## Themes
 
-By default, we’re using a custom Fastify theme and it’s beautiful. But you can choose [one of our other themes](https://github.com/scalar/scalar/tree/main/packages/themes), too:
+By default, we’re using a custom Fastify theme and it’s beautiful. But you can choose [one of our other themes](https://github.com/khulnasoft/readyapi.js/tree/main/packages/themes), too:
 
 ```ts
 await fastify.register(require('@readyapi/fastify-api-reference'), {

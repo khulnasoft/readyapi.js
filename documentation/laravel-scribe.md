@@ -88,7 +88,7 @@ Laravel Scribe comes with a ton of configuration options, but for the purpose of
 -    'type' => 'static',
 +    'type' => 'external_laravel',
 -    'theme' => 'default',
-+    'theme' => 'scalar',
++    'theme' => 'Readyapi',,
 ```
 
 Done! Are you ready to generate your (first?) OpenAPI file like this:

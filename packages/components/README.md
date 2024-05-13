@@ -5,7 +5,7 @@ Scalars internal component library now open sourced and [almost] ready to use! i
 ## Install
 
 ```bash
-pnpm i @scalar/theme @scalar/components
+pnpm i @readyapi/theme @readyapi/components
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ Then to use the components
 
 ```vue
 <script setup lang="ts">
-import { ScalarButton, ScalarTextField } from '@scalar/components'
+import { ScalarButton, ScalarTextField } from '@readyapi/components'
 </script>
 
 <template>

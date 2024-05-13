@@ -4,7 +4,7 @@ import {
   type SSRState,
   createHash,
   ssrState,
-} from '@scalar/oas-utils'
+} from '@readyapi/oas-utils'
 import prismjs from 'prismjs'
 import 'prismjs/components/prism-bash'
 import 'prismjs/components/prism-json'

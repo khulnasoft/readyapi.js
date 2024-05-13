@@ -4,7 +4,7 @@ Contributions are welcome. We’re using [pnpm](https://pnpm.io/).
 
 ## Development setup
 
-1. Clone the repository: `$ git clone git@github.com:scalar/scalar.git`
+1. Clone the repository: `$ git clone git@github.com:khulnasoft/readyapi.js.git`
 2. Install all dependencies: `$ pnpm install`
 3. Build all packages once: `$ pnpm turbo build`
 4. Run the development server: `$ pnpm run dev`
@@ -25,7 +25,7 @@ If you want to add a test and only run your test file, you can filter the test s
 If you want to run the tests for the CLI, you’ll need to package first. The tests don’t use the source files, but the dist files.
 
 To just run the CLI from the source files, you can use the following alias:
-`$ pnpm @scalar/cli --version`
+`$ pnpm @readyapi/cli --version`
 
 ## PRs
 

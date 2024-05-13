@@ -1,5 +1,5 @@
-import type { AuthenticationState } from '@scalar/oas-utils'
-import type { OpenAPIV3, OpenAPIV3_1 } from '@scalar/openapi-parser'
+import type { AuthenticationState } from '@readyapi/oas-utils'
+import type { OpenAPIV3, OpenAPIV3_1 } from '@readyapi/openapi-parser'
 import type { HarRequest } from 'httpsnippet-lite'
 
 import { encodeStringAsBase64 } from './encodeStringAsBase64'

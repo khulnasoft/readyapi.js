@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ScalarIconButton } from '@scalar/components'
+import { ScalarIconButton } from '@readyapi/components'
 
 import { useSidebar } from '../hooks'
 

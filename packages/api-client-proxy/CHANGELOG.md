@@ -1,4 +1,4 @@
-# @scalar/api-client-proxy
+# @readyapi/api-client-proxy
 
 ## 0.5.27
 
@@ -106,7 +106,7 @@
 
 ### Patch Changes
 
-- 35dffe4: chore: include @scalar dependencies in the bundle
+- 35dffe4: chore: include @readyapi dependencies in the bundle
 
 ## 0.5.9
 

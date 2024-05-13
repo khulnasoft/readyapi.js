@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { TransformedOperation } from '@scalar/oas-utils'
+import type { TransformedOperation } from '@readyapi/oas-utils'
 import { computed } from 'vue'
 
 import { Anchor } from '../../Anchor'

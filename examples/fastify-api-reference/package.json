@@ -2,8 +2,13 @@
   "name": "@readyapi-examples/fastify-api-reference",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/scalar/scalar",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khulnasoft/readyapi.js.git",
+    "directory": "packages/use-tooltip"
+  },
   "version": "0.5.2",
   "private": true,
   "engines": {

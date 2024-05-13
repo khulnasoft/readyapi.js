@@ -62,11 +62,11 @@ app.use(
 )
 ```
 
-The NestJS middleware takes our universal configuration object, [read more about configuration](https://github.com/scalar/scalar/tree/main/packages/api-reference#props) in the core package README.
+The NestJS middleware takes our universal configuration object, [read more about configuration](https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-reference#props) in the core package README.
 
 ### Themes
 
-The middleware comes with a custom theme for NestJS. You can use one of [the other predefined themes](https://github.com/scalar/scalar/blob/main/packages/themes/src/index.ts#L15) (`alternate`, `default`, `moon`, `purple`, `solarized`) or overwrite it with `none`. All themes come with a light and dark color scheme.
+The middleware comes with a custom theme for NestJS. You can use one of [the other predefined themes](https://github.com/khulnasoft/readyapi.js/blob/main/packages/themes/src/index.ts#L15) (`alternate`, `default`, `moon`, `purple`, `solarized`) or overwrite it with `none`. All themes come with a light and dark color scheme.
 
 ```ts
 import { apiReference } from '@readyapi/nestjs-api-reference'
@@ -84,7 +84,7 @@ app.use(
 
 ### Custom CDN
 
-You can use a custom CDN ，default is `https://cdn.jsdelivr.net/npm/@scalar/api-reference`.
+You can use a custom CDN ，default is `https://cdn.jsdelivr.net/npm/@readyapi/api-reference`.
 
 ```ts
 import { apiReference } from '@readyapi/nestjs-api-reference'
@@ -92,7 +92,7 @@ import { apiReference } from '@readyapi/nestjs-api-reference'
 app.use(
   '/reference',
   apiReference({
-    cdn: 'https://cdn.jsdelivr.net/npm/@scalar/api-reference',
+    cdn: 'https://cdn.jsdelivr.net/npm/@readyapi/api-reference',
     spec: {
       content: OpenApiSpecification,
     },

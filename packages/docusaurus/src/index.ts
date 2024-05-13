@@ -1,5 +1,5 @@
 import type { LoadContext, Plugin } from '@docusaurus/types'
-import type { ReferenceProps } from '@scalar/api-reference-react'
+import type { ReferenceProps } from '@readyapi/api-reference-react'
 import path from 'path'
 
 export type ScalarOptions = {
@@ -40,7 +40,7 @@ const ScalarDocusaurus = (
         }
       ).items.push({
         to: options.route ?? '/scalar',
-        label: options.label ?? 'Scalar',
+        label: options.label ?? 'Readyapi',,
         position: 'left',
       })
 

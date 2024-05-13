@@ -1,4 +1,4 @@
-import type { ReferenceConfiguration } from '@scalar/api-reference'
+import type { ReferenceConfiguration } from '@readyapi/api-reference'
 import type { Env, MiddlewareHandler } from 'hono'
 import { html, raw } from 'hono/html'
 
@@ -113,7 +113,7 @@ export const customThemeCSS = `
 `
 
 /**
- * The HTML to load the @scalar/api-reference JavaScript package.
+ * The HTML to load the @readyapi/api-reference JavaScript package.
  */
 export const javascript = (configuration: ApiReferenceOptions) => {
   return html`
@@ -132,7 +132,7 @@ export const javascript = (configuration: ApiReferenceOptions) => {
       )}
     </script>
     <script src="${configuration.cdn ||
-      'https://cdn.jsdelivr.net/npm/@scalar/api-reference'}"></script>
+      'https://cdn.jsdelivr.net/npm/@readyapi/api-reference'}"></script>
   `
 }
 

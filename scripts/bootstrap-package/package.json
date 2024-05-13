@@ -32,7 +32,7 @@
   "module": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.js",
+    "url": "https://github.com/khulnasoft/readyapi.git",
     "directory": "packages/bootstrap-package"
   },
   "devDependencies": {
