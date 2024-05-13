@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Card, CardContent, CardHeader } from '@readyapi/api-reference'
+import { Card, CardContent, CardHeader } from '@scalar/api-reference'
 import { RouterLink } from 'vue-router'
 
 defineProps<{
@@ -37,13 +37,13 @@ defineProps<{
 <style scoped>
 a {
   text-decoration: none;
-  color: var(--readyapi-color-2);
+  color: var(--scalar-color-2);
 }
 
 .description {
   padding: 10px;
   min-height: 75px;
-  font-size: var(--readyapi-small);
+  font-size: var(--scalar-small);
   line-height: 1.5;
 }
 </style>

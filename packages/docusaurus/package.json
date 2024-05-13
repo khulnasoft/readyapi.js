@@ -3,8 +3,13 @@
   "description": "Docusaurus integration for api references",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "homepage": "https://github.com/scalar/scalar",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khulnasoft/readyapi.js",
+    "directory": "packages/docusaurus"
+  },
   "keywords": [
     "api",
     "client",
@@ -14,7 +19,7 @@
     "testing",
     "react"
   ],
-  "version": "0.2.15",
+  "version": "0.2.33",
   "engines": {
     "node": ">=18"
   },
@@ -29,20 +34,15 @@
     "dist",
     "CHANGELOG.md"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.js.git",
-    "directory": "packages/docusaurus"
-  },
   "dependencies": {
-    "@readyapi/api-reference-react": "workspace:*"
+    "@scalar/api-reference-react": "workspace:*"
   },
   "devDependencies": {
-    "@docusaurus/types": "^3.2.1",
-    "@types/react": "^18.3.1",
-    "@types/react-dom": "^18.3.0",
+    "@docusaurus/types": "^3.1.1",
+    "@types/react": "^18.2.60",
+    "@types/react-dom": "^18.2.19",
     "path": "^0.12.7",
-    "react": "^18.3.1"
+    "react": "^18.2.0"
   },
   "peerDependencies": {
     "react": "^18.0.0"

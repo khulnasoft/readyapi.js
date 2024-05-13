@@ -2,7 +2,7 @@ import {
   type Heading,
   type TransformedOperation,
   ssrState,
-} from '@readyapi/oas-utils'
+} from '@scalar/oas-utils'
 import { slug } from 'github-slugger'
 import { ref } from 'vue'
 

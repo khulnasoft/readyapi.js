@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ReadyapiIcon } from '@readyapi/components'
+import { ScalarIcon } from '@scalar/components'
 
 defineProps<{
   isDarkMode: boolean
@@ -15,7 +15,7 @@ defineEmits<{
       class="darklight"
       type="button"
       @click="$emit('toggleDarkMode')">
-      <ReadyapiIcon icon="LightDarkModeToggle" />
+      <ScalarIcon icon="LightDarkModeToggle" />
       <template v-if="isDarkMode">
         <span>Light Mode</span>
       </template>
@@ -25,22 +25,22 @@ defineEmits<{
     </button>
     <a
       class="darklight-reference-promo"
-      href="https://www.ready-api.khulnasoft.com"
+      href="https://www.scalar.com"
       target="_blank">
-      Powered by ready-api.khulnasoft.com
+      Powered by scalar.com
     </a>
   </div>
 </template>
 <style scoped>
 .darklight {
-  font-family: var(--readyapi-font);
+  font-family: var(--scalar-font);
   border: none;
   border-top: 1px solid
-    var(--readyapi-sidebar-border-color, var(--readyapi-border-color));
-  color: var(--readyapi-sidebar-color-2, var(--readyapi-color-2));
+    var(--scalar-sidebar-border-color, var(--scalar-border-color));
+  color: var(--scalar-sidebar-color-2, var(--scalar-color-2));
 
-  font-size: var(--readyapi-mini);
-  font-weight: var(--readyapi-semibold);
+  font-size: var(--scalar-mini);
+  font-weight: var(--scalar-semibold);
   appearance: none;
   background: transparent;
   outline: none;
@@ -57,7 +57,7 @@ defineEmits<{
 }
 .darklight:hover {
   cursor: pointer;
-  color: var(--readyapi-sidebar-color-1, var(--readyapi-color-1));
+  color: var(--scalar-sidebar-color-1, var(--scalar-color-1));
 }
 
 .darklight svg {
@@ -69,9 +69,9 @@ defineEmits<{
   padding: 6px 24px 12px;
   display: flex;
   align-items: center;
-  font-size: var(--readyapi-mini);
+  font-size: var(--scalar-mini);
   text-decoration: none;
-  color: var(--readyapi-sidebar-color-2, var(--readyapi-color-2));
+  color: var(--scalar-sidebar-color-2, var(--scalar-color-2));
 }
 .darklight-reference-promo:hover {
   text-decoration: underline;

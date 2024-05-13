@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ReadyapiCodeBlock } from '@readyapi/components'
+import { ScalarCodeBlock } from '@scalar/components'
 import contentType from 'content-type'
 import { computed } from 'vue'
 
@@ -56,14 +56,14 @@ const codeMirrorLanguage = computed((): string | null => {
 <template>
   <CollapsibleSection title="Body">
     <template v-if="active">
-      <ReadyapiCodeBlock
+      <ScalarCodeBlock
         v-if="codeMirrorLanguage"
         class="custom-scroll"
         :content="data"
         :lang="codeMirrorLanguage" />
       <div
         v-else
-        class="readyapi-api-client__empty-state">
+        class="scalar-api-client__empty-state">
         <template v-if="mediaType">
           No Preview Available ({{ mediaType }})
         </template>
@@ -74,7 +74,7 @@ const codeMirrorLanguage = computed((): string | null => {
     </template>
     <div
       v-else
-      class="readyapi-api-client__empty-state">
+      class="scalar-api-client__empty-state">
       No Response
     </div>
   </CollapsibleSection>

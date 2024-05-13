@@ -1,25 +1,13 @@
 <template>
-  <div class="card-form">
+  <form class="card-form">
     <slot />
-  </div>
+  </form>
 </template>
 <style scoped>
 .card-form {
-  --input-radius: var(--readyapi-radius-lg);
-  border-color: var(--readyapi-border-color);
-  color: var(--readyapi-color-1);
+  color: var(--scalar-color-1);
   width: 100%;
-}
-.card-form > :first-child {
-  border-top-left-radius: var(--input-radius);
-  border-top-right-radius: var(--input-radius);
-}
-.card-form > :last-child {
-  border-bottom-left-radius: var(--input-radius);
-  border-bottom-right-radius: var(--input-radius);
-}
-.card-form > :deep(* + *) {
-  margin-top: -1px;
-  border-top-color: transparent;
+  border: 1px solid var(--scalar-border-color);
+  border-radius: var(--scalar-radius);
 }
 </style>

@@ -1,6 +1,6 @@
 'use client'
 
-import { ApiClientReact } from '@readyapi/api-client-react'
+import { ApiClientReact } from '@scalar/api-client-react'
 import React, { useState } from 'react'
 
 export const ClientWrapper = () => {

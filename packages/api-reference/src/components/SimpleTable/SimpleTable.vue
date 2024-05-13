@@ -9,6 +9,6 @@
   all: unset;
   display: table;
   width: 100%;
-  font-size: var(--readyapi-micro);
+  font-size: var(--scalar-micro);
 }
 </style>

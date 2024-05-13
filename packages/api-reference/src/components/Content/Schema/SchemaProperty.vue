@@ -45,6 +45,10 @@ const displayDescription = function (
     return null
   }
 
+  if (value?.additionalProperties) {
+    return null
+  }
+
   return description || value?.description || null
 }
 
@@ -177,9 +181,9 @@ const rules = ['oneOf', 'anyOf', 'allOf', 'not']
 
 <style scoped>
 .property {
-  color: var(--readyapi-color-1);
+  color: var(--scalar-color-1);
   padding: 10px;
-  font-size: var(--readyapi-mini);
+  font-size: var(--scalar-mini);
 }
 
 .property:last-of-type {
@@ -193,8 +197,8 @@ const rules = ['oneOf', 'anyOf', 'allOf', 'not']
 .property--deprecated {
   background: repeating-linear-gradient(
     -45deg,
-    var(--readyapi-background-2) 0,
-    var(--readyapi-background-2) 2px,
+    var(--scalar-background-2) 0,
+    var(--scalar-background-2) 2px,
     transparent 2px,
     transparent 5px
   );
@@ -208,14 +212,15 @@ const rules = ['oneOf', 'anyOf', 'allOf', 'not']
 .property-description {
   margin-top: 6px;
   line-height: 1.4;
+  font-size: var(--scalar-small);
 }
 
 :deep(.property-description) * {
-  color: var(--readyapi-color-2) !important;
+  color: var(--scalar-color-2) !important;
 }
 
 .property:not(:last-of-type) {
-  border-bottom: 1px solid var(--readyapi-border-color);
+  border-bottom: 1px solid var(--scalar-border-color);
 }
 .children {
   display: flex;
@@ -234,18 +239,18 @@ const rules = ['oneOf', 'anyOf', 'allOf', 'not']
 
   max-height: calc(((var(--full-height) - var(--refs-header-height))) / 2);
 
-  font-size: var(--readyapi-micro);
-  border: 1px solid var(--readyapi-border-color);
-  background: var(--readyapi-background-2);
-  border-radius: var(--readyapi-radius-lg);
+  font-size: var(--scalar-micro);
+  border: 1px solid var(--scalar-border-color);
+  background: var(--scalar-background-2);
+  border-radius: var(--scalar-radius-lg);
 }
 
 .property-example-label {
-  font-weight: var(--readyapi-semibold);
-  color: var(--readyapi-color-3);
+  font-weight: var(--scalar-semibold);
+  color: var(--scalar-color-3);
 }
 .property-example-value {
-  font-family: var(--readyapi-font-code);
+  font-family: var(--scalar-font-code);
   white-space: pre;
 }
 
@@ -255,17 +260,17 @@ const rules = ['oneOf', 'anyOf', 'allOf', 'not']
   gap: 6px;
 
   margin-top: 12px;
-  border-radius: var(--readyapi-radius-lg);
+  border-radius: var(--scalar-radius-lg);
 }
 
 .property-enum-value {
   padding: 3px 0;
-  color: var(--readyapi-color-2);
+  color: var(--scalar-color-2);
 }
 .property-enum-value::before {
   content: '◼';
   margin-right: 6px;
-  color: var(--readyapi-color-3);
+  color: var(--scalar-color-3);
 }
 .property-enum-values {
   margin-top: 8px;

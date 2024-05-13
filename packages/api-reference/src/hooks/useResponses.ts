@@ -1,4 +1,4 @@
-import type { TransformedOperation } from '@readyapi/oas-utils'
+import type { TransformedOperation } from '@scalar/oas-utils'
 import { computed } from 'vue'
 
 /**

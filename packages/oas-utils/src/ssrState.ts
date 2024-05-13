@@ -1,17 +1,17 @@
-import { type ReadyapiState } from './types'
+import type { ScalarState } from './types'
 
 declare global {
   interface Window {
-    __READYAPI__: ReadyapiState
+    __SCALAR__: ScalarState
   }
 }
 
-export const defaultStateFactory = (): ReadyapiState => ({})
+export const defaultStateFactory = (): ScalarState => ({})
 
 /**
  * This allows us to access the server state in the front-end
  */
-export const ssrState: ReadyapiState =
+export const ssrState: ScalarState =
   typeof window !== 'undefined'
-    ? window.__READYAPI__ ?? defaultStateFactory()
+    ? window.__SCALAR__ ?? defaultStateFactory()
     : defaultStateFactory()

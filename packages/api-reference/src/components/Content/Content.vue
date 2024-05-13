@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, watch } from 'vue'
 
-import { hasModels } from '../../helpers'
+import { getModels, hasModels } from '../../helpers'
 import { useNavState, useSidebar } from '../../hooks'
 import { useServerStore } from '../../stores'
 import type { Server, Spec } from '../../types'
@@ -27,7 +27,7 @@ const { hideModels, collapsedSidebarItems } = useSidebar()
 
 const prependRelativePath = (server: Server) => {
   // URLs that don't start with http[s]://
-  if (server.url.match(/^(?!https?:\/\/).+/)) {
+  if (server.url.match(/^(?!(https?|file):\/\/).+/)) {
     let baseURL = props.baseServerURL ?? window.location.origin
 
     // Handle slashes
@@ -150,10 +150,10 @@ const isLazy = props.layout !== 'accordion' && !hash.value.startsWith('model')
     <template v-if="hasModels(parsedSpec) && !hideModels">
       <ModelsAccordion
         v-if="layout === 'accordion'"
-        :components="parsedSpec.components" />
+        :schemas="getModels(parsedSpec)" />
       <Models
         v-else
-        :components="parsedSpec.components" />
+        :schemas="getModels(parsedSpec)" />
     </template>
     <slot name="end" />
   </div>
@@ -200,26 +200,26 @@ const isLazy = props.layout !== 'accordion' && !hash.value.startsWith('model')
   }
 }
 .references-classic .introduction-cards-row :deep(.card-footer),
-.references-classic .introduction-cards-row :deep(.readyapi-card),
-.references-classic .introduction-cards-row :deep(.readyapi-card--muted) {
-  background: var(--readyapi-background-1);
+.references-classic .introduction-cards-row :deep(.scalar-card),
+.references-classic .introduction-cards-row :deep(.scalar-card--muted) {
+  background: var(--scalar-background-1);
 }
 .references-classic
   .introduction-cards-row
-  :deep(.readyapi-card:nth-of-type(2) .readyapi-card-header) {
+  :deep(.scalar-card:nth-of-type(2) .scalar-card-header) {
   display: none;
 }
 .references-classic
   .introduction-cards-row
-  :deep(.readyapi-card:nth-of-type(2) .readyapi-card-header) {
+  :deep(.scalar-card:nth-of-type(2) .scalar-card-header) {
   display: none;
 }
 .references-classic
   .introduction-cards-row
   :deep(
-    .readyapi-card:nth-of-type(2)
-      .readyapi-card-header.readyapi-card--borderless
-      + .readyapi-card-content
+    .scalar-card:nth-of-type(2)
+      .scalar-card-header.scalar-card--borderless
+      + .scalar-card-content
   ) {
   margin-top: 0;
 }

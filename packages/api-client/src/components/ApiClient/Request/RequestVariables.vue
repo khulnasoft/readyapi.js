@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { BaseParameter } from '@readyapi/oas-utils'
+import type { BaseParameter } from '@scalar/oas-utils'
 
 import { useRequestStore } from '../../../stores'
 import { CollapsibleSection } from '../../CollapsibleSection'
@@ -26,9 +26,9 @@ function addAnotherHandler() {
     :defaultOpen="activeRequest.variables && activeRequest.variables.length > 0"
     title="Variables">
     <template v-if="!variables || variables.length === 0">
-      <div class="readyapi-api-client__empty-state">
+      <div class="scalar-api-client__empty-state">
         <button
-          class="readyapi-api-client-add"
+          class="scalar-api-client-add"
           type="button"
           @click="addAnotherHandler">
           <svg

@@ -1,4 +1,4 @@
-# Ready API Reference for Fastify
+# Scalar API Reference for Fastify
 
 Fastify is a pretty popular server for Node.js, a lot of people consider it to be the modern successor of Express. Anyway, if you’re working with Fastify, there’s great support for the OpenAPI standard. And with our package you can render an interactive API reference with just a few additional lines of code.
 
@@ -11,9 +11,10 @@ npm init
 npm install fastify
 ```
 
-To actually use it, we need to create a JavaScript file:
+To actually use it, we need to create a JavaScript file (`index.js`):
 
 ```js
+// index.js
 import Fastify from 'fastify'
 
 // Instantiate the framework
@@ -194,7 +195,7 @@ I cross my fingers for you, but this should give you a pretty decent OpenAPI fil
 
 Did it work? OMG, this is so cool! It didn’t? [Create a new issue](https://github.com/khulnasoft/readyapi.js/issues/new/choose) so we can improve this guide here — I mean, that’s the beauty of open source, isn’t it?
 
-## Render your OpenAPI reference with Readyapi
+## Render your OpenAPI reference with Scalar
 
 Congratulations, you’ve come really far. And I have good news for you, you’re just a few lines of code away from a stunning API reference for your Fastify project. Time to pull our package:
 
@@ -207,9 +208,9 @@ Put the following snippet into your `index.js` right before the `await fastify.r
 ```js
 // …
 // Render the API reference
-import ReadyapiApiReference from '@readyapi/fastify-api-reference'
+import ScalarApiReference from '@readyapi/fastify-api-reference'
 
-await fastify.register(ReadyapiApiReference, {
+await fastify.register(ScalarApiReference, {
   routePrefix: '/reference',
 })
 
@@ -229,28 +230,28 @@ That’s it, you made it! You can keep adding routes to Fastify now and the refe
 You can customize a ton! Just pass a `configuration` object to the plugin:
 
 ```js
-import ReadyapiApiReference from '@readyapi/fastify-api-reference'
+import ScalarApiReference from '@readyapi/fastify-api-reference'
 
-await fastify.register(ReadyapiApiReference, {
+await fastify.register(ScalarApiReference, {
   routePrefix: '/reference',
   configuration: {
     layout: 'classic',
     // Learn more about configuration:
-    // https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-reference#configuration
+    // https://github.com/scalar/scalar/tree/main/packages/api-reference#configuration
   },
 })
 ```
 
-TypeScript should give you a nice autocomplete for all options. If you’re more into reading an actual reference, you can read about all options here: <https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-reference#configuration>
+TypeScript should give you a nice autocomplete for all options. If you’re more into reading an actual reference, you can read about all options here: <https://github.com/scalar/scalar/tree/main/packages/api-reference#configuration>
 
 ## Advanced: Handcrafted OpenAPI files
 
 Auto-generated OpenAPI files are great, but some OpenAPI purists argue it’s worth to handcraft your OpenAPI files. If you’re one of them, feel free to just pass an URL to your existing OpenAPI file:
 
 ```js
-import ReadyapiApiReference from '@readyapi/fastify-api-reference'
+import ScalarApiReference from '@readyapi/fastify-api-reference'
 
-await fastify.register(ReadyapiApiReference, {
+await fastify.register(ScalarApiReference, {
   routePrefix: '/reference',
   configuration: {
     url: '/openapi.json',

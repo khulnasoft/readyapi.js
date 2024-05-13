@@ -1,18 +1,18 @@
-# Readyapi Mock Server
+# Scalar Mock Server
 
 A server returning fake data based on an OpenAPI specification
 
 ## Installation
 
 ```bash
-npm install @readyapi/mock-server
+npm install @scalar/mock-server
 ```
 
 ## Usage
 
 ```ts
 import { serve } from '@hono/node-server'
-import { createMockServer } from '@readyapi/mock-server'
+import { createMockServer } from '@scalar/mock-server'
 
 // Your OpenAPI specification
 const specification = {

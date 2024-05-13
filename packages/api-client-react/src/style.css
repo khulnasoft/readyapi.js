@@ -1,178 +1,178 @@
-.light-mode .readyapi-modal-layout,
-.light-mode .readyapi {
-  --readyapi-color-1: color-mix(
+.light-mode .scalar-modal-layout,
+.light-mode .scalar {
+  --scalar-color-1: color-mix(
     in srgb,
     rgb(var(--primary-base-300, 180 180 180)),
     rgb(var(--dark-base, 23 23 23)) 96%
   );
-  --readyapi-color-2: color-mix(
+  --scalar-color-2: color-mix(
     in srgb,
-    var(--readyapi-color-1),
+    var(--scalar-color-1),
     transparent calc(100% - 100% * 0.72)
   );
-  --readyapi-color-3: color-mix(
+  --scalar-color-3: color-mix(
     in srgb,
-    var(--readyapi-color-1),
+    var(--scalar-color-1),
     transparent calc(100% - 100% * 0.4)
   );
-  --readyapi-color-accent: #007d9c;
+  --scalar-color-accent: #007d9c;
 
-  --readyapi-background-1: rgb(var(--light-base, 255 255 255));
-  --readyapi-background-2: color-mix(
+  --scalar-background-1: rgb(var(--light-base, 255 255 255));
+  --scalar-background-2: color-mix(
     in srgb,
     rgb(var(--primary-base-800, 30 30 30)),
-    var(--readyapi-background-1) 96%
+    var(--scalar-background-1) 96%
   );
-  --readyapi-background-3: color-mix(
+  --scalar-background-3: color-mix(
     in srgb,
     rgb(var(--primary-base-800, 30 30 30)),
-    var(--readyapi-background-1) 90%
+    var(--scalar-background-1) 90%
   );
-  --readyapi-background-accent: #007d9c1f;
-  --readyapi-code-language-color-supersede: var(--readyapi-color-1);
-  --readyapi-code-languages-background-supersede: var(--readyapi-background-1);
-  --readyapi-border-color: color-mix(
+  --scalar-background-accent: #007d9c1f;
+  --scalar-code-language-color-supersede: var(--scalar-color-1);
+  --scalar-code-languages-background-supersede: var(--scalar-background-1);
+  --scalar-border-color: color-mix(
     in srgb,
-    var(--readyapi-color-1),
+    var(--scalar-color-1),
     transparent calc(100% - 100% * 0.08)
   );
 
-  --readyapi-color-green: #0a6355;
-  --readyapi-color-red: #dc1b19;
-  --readyapi-color-yellow: #ffc90d;
-  --readyapi-color-blue: rgb(var(--primary-color-500, 52 109 219));
-  --readyapi-color-orange: #ff8d4d;
-  --readyapi-color-purple: #8250df;
+  --scalar-color-green: #0a6355;
+  --scalar-color-red: #dc1b19;
+  --scalar-color-yellow: #ffc90d;
+  --scalar-color-blue: rgb(var(--primary-color-500, 52 109 219));
+  --scalar-color-orange: #ff8d4d;
+  --scalar-color-purple: #8250df;
 
-  --readyapi-scrollbar-color: rgba(255, 255, 255, 0.24);
-  --readyapi-scrollbar-color-active: rgba(255, 255, 255, 0.48);
+  --scalar-scrollbar-color: rgba(255, 255, 255, 0.24);
+  --scalar-scrollbar-color-active: rgba(255, 255, 255, 0.48);
 }
-.dark-mode .readyapi-modal-layout,
-.dark-mode .readyapi {
-  --readyapi-color-1: color-mix(
+.dark-mode .scalar-modal-layout,
+.dark-mode .scalar {
+  --scalar-color-1: color-mix(
     in srgb,
     rgb(var(--primary-base-700, 70 70 70)),
     rgb(var(--light-base, 255 255 255)) 100%
   );
-  --readyapi-color-2: color-mix(
+  --scalar-color-2: color-mix(
     in srgb,
-    var(--readyapi-color-1),
+    var(--scalar-color-1),
     transparent calc(100% - 100% * 0.64)
   );
-  --readyapi-color-3: color-mix(
+  --scalar-color-3: color-mix(
     in srgb,
-    var(--readyapi-color-1),
+    var(--scalar-color-1),
     transparent calc(100% - 100% * 0.4)
   );
-  --readyapi-color-accent: #50b7e0;
+  --scalar-color-accent: #50b7e0;
 
-  --readyapi-background-1: rgb(var(--dark-base, 22 22 22));
-  --readyapi-background-2: color-mix(
+  --scalar-background-1: rgb(var(--dark-base, 22 22 22));
+  --scalar-background-2: color-mix(
     in srgb,
     rgb(var(--primary-base-200, 200 200 200)),
-    var(--readyapi-background-1) 92%
+    var(--scalar-background-1) 92%
   );
-  --readyapi-background-3: color-mix(
+  --scalar-background-3: color-mix(
     in srgb,
     rgb(var(--primary-base-200, 200 200 200)),
-    var(--readyapi-background-1) 88%
+    var(--scalar-background-1) 88%
   );
-  --readyapi-background-accent: #8ab4f81f;
-  --readyapi-code-languages-background-supersede: var(--readyapi-background-1);
-  --readyapi-border-color: color-mix(
+  --scalar-background-accent: #8ab4f81f;
+  --scalar-code-languages-background-supersede: var(--scalar-background-1);
+  --scalar-border-color: color-mix(
     in srgb,
-    var(--readyapi-color-1),
+    var(--scalar-color-1),
     transparent calc(100% - 100% * 0.08)
   );
 
-  --readyapi-color-green: #56b6c2;
-  --readyapi-color-red: rgb(245 124 97);
-  --readyapi-color-yellow: #edbe20;
-  --readyapi-color-blue: rgb(var(--primary-color-400, 93 138 226));
-  --readyapi-color-orange: #d19a66;
-  --readyapi-color-purple: #5203d1;
+  --scalar-color-green: #56b6c2;
+  --scalar-color-red: rgb(245 124 97);
+  --scalar-color-yellow: #edbe20;
+  --scalar-color-blue: rgb(var(--primary-color-400, 93 138 226));
+  --scalar-color-orange: #d19a66;
+  --scalar-color-purple: #5203d1;
 
-  --readyapi-scrollbar-color: rgba(0, 0, 0, 0.18);
-  --readyapi-scrollbar-color-active: rgba(0, 0, 0, 0.36);
+  --scalar-scrollbar-color: rgba(0, 0, 0, 0.18);
+  --scalar-scrollbar-color-active: rgba(0, 0, 0, 0.36);
 }
-.readyapi-modal-layout,
-.readyapi {
-  --readyapi-font: initial;
-  --readyapi-font-code: var(--font-mono);
+.scalar-modal-layout,
+.scalar {
+  --scalar-font: initial;
+  --scalar-font-code: var(--font-mono);
 
-  --readyapi-paragraph: 16px;
-  --readyapi-small: 14px;
-  --readyapi-mini: 13px;
-  --readyapi-micro: 12px;
+  --scalar-paragraph: 16px;
+  --scalar-small: 14px;
+  --scalar-mini: 13px;
+  --scalar-micro: 12px;
 
-  --readyapi-bold: 600;
-  --readyapi-semibold: 500;
-  --readyapi-regular: 400;
+  --scalar-bold: 600;
+  --scalar-semibold: 500;
+  --scalar-regular: 400;
 
   /* Font sizes for interactive applications (not rendered text content) */
-  --readyapi-font-size-1: 24px;
-  --readyapi-font-size-2: 16px;
-  --readyapi-font-size-3: 14px;
-  --readyapi-font-size-4: 13px;
-  --readyapi-font-size-5: 12px;
+  --scalar-font-size-1: 24px;
+  --scalar-font-size-2: 16px;
+  --scalar-font-size-3: 14px;
+  --scalar-font-size-4: 13px;
+  --scalar-font-size-5: 12px;
 
-  --readyapi-line-height-1: 32px;
-  --readyapi-line-height-2: 24px;
-  --readyapi-line-height-3: 20px;
-  --readyapi-line-height-4: 18px;
-  --readyapi-line-height-5: 16px;
+  --scalar-line-height-1: 32px;
+  --scalar-line-height-2: 24px;
+  --scalar-line-height-3: 20px;
+  --scalar-line-height-4: 18px;
+  --scalar-line-height-5: 16px;
 }
-.readyapi input::placeholder {
-  color: var(--readyapi-color-3);
+.scalar input::placeholder {
+  color: var(--scalar-color-3);
 }
-.readyapi .readyapi-app-header {
+.scalar .scalar-app-header {
   width: 100%;
   z-index: 1000;
   padding: 6px 12px 6px 12px;
   border-radius: 0.25rem 0.25rem 0 0;
   font-size: 14px;
   font-family: sans-serif;
-  --readyapi-app-header-height: 35px;
-  height: var(--readyapi-app-header-height);
+  --scalar-app-header-height: 35px;
+  height: var(--scalar-app-header-height);
   display: flex;
   align-items: center;
   gap: 6px;
 }
-.readyapi .readyapi-app-header a {
+.scalar .scalar-app-header a {
   text-decoration: none;
 }
-.readyapi .readyapi-api-client {
-  max-height: calc(100% - calc(var(--readyapi-app-header-height)));
+.scalar .scalar-api-client {
+  max-height: calc(100% - calc(var(--scalar-app-header-height)));
   border-radius: 8px;
 }
-.readyapi-api-client__close {
+.scalar-api-client__close {
   appearance: none;
   border: none;
   outline: none;
   display: flex;
   align-items: center;
   background: transparent;
-  color: var(--readyapi-color-1);
-  font-size: var(--readyapi-small);
-  font-weight: var(--readyapi-semibold);
+  color: var(--scalar-color-1);
+  font-size: var(--scalar-small);
+  font-weight: var(--scalar-semibold);
 }
-.readyapi-api-client__close:hover {
+.scalar-api-client__close:hover {
   cursor: pointer;
 }
-.readyapi .readyapi-app {
-  background: var(--readyapi-background-3);
+.scalar .scalar-app {
+  background: var(--scalar-background-3);
   height: calc(100dvh - 100px);
   max-width: 1280px;
   width: 100%;
   margin: auto;
   opacity: 0;
-  animation: readyapiapiclientfadein 0.35s forwards;
+  animation: scalarapiclientfadein 0.35s forwards;
   z-index: 1002;
   position: relative;
   overflow: hidden;
   border-radius: 8px;
 }
-@keyframes readyapiapiclientfadein {
+@keyframes scalarapiclientfadein {
   from {
     transform: translate3d(0, 20px, 0) scale(0.985);
     opacity: 0;
@@ -182,7 +182,7 @@
     opacity: 1;
   }
 }
-.readyapi .readyapi-app-exit {
+.scalar .scalar-app-exit {
   position: fixed;
   top: 0;
   left: 0;
@@ -192,9 +192,9 @@
   transition: all 0.3s ease-in-out;
   z-index: 1000;
   cursor: pointer;
-  animation: readyapidrawerexitfadein 0.35s forwards;
+  animation: scalardrawerexitfadein 0.35s forwards;
 }
-.readyapi .readyapi-app-exit:before {
+.scalar .scalar-app-exit:before {
   content: '\00d7';
   font-family: sans-serif;
   position: absolute;
@@ -208,10 +208,10 @@
   color: white;
   opacity: 0.6;
 }
-.readyapi .readyapi-app-exit:hover:before {
+.scalar .scalar-app-exit:hover:before {
   opacity: 1;
 }
-@keyframes readyapidrawerexitfadein {
+@keyframes scalardrawerexitfadein {
   from {
     opacity: 0;
   }
@@ -219,7 +219,7 @@
     opacity: 1;
   }
 }
-.readyapi-container {
+.scalar-container {
   overflow: hidden;
   visibility: visible;
   position: fixed;
@@ -235,23 +235,23 @@
   justify-content: center;
 }
 
-.readyapi .url-form-input {
+.scalar .url-form-input {
   min-height: auto !important;
 }
 
-.readyapi .readyapi-container {
+.scalar .scalar-container {
   line-height: normal;
 }
-.readyapi .readyapi-app-header span {
-  color: var(--readyapi-color-3);
+.scalar .scalar-app-header span {
+  color: var(--scalar-color-3);
 }
-.readyapi .readyapi-app-header a {
-  color: var(--readyapi-color-1);
+.scalar .scalar-app-header a {
+  color: var(--scalar-color-1);
 }
-.readyapi .readyapi-app-header a:hover {
+.scalar .scalar-app-header a:hover {
   text-decoration: underline;
 }
-.readyapi-activate {
+.scalar-activate {
   width: fit-content;
   margin: 0px 0.75rem 0.75rem auto;
   line-height: 24px;
@@ -263,20 +263,20 @@
   align-items: center;
   gap: 6px;
 }
-.readyapi-activate-button {
+.scalar-activate-button {
   display: flex;
   gap: 6px;
   align-items: center;
-  color: var(--readyapi-color-blue);
+  color: var(--scalar-color-blue);
   appearance: none;
   outline: none;
   border: none;
   background: transparent;
 }
-.readyapi-activate-button {
+.scalar-activate-button {
   padding: 0 0.5rem;
 }
-.readyapi-activate:hover .readyapi-activate-button {
-  background: var(--readyapi-background-3);
+.scalar-activate:hover .scalar-activate-button {
+  background: var(--scalar-background-3);
   border-radius: 3px;
 }

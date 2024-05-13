@@ -1,8 +1,8 @@
-# Readyapi Docusaurus API Reference Plugin "Scalasaurus"
+# Scalar Docusaurus API Reference Plugin "Scalasaurus"
 
-[![Version](https://img.shields.io/npm/v/%40readyapi/docusaurus)](https://www.npmjs.com/package/@readyapi/docusaurus)
-[![Downloads](https://img.shields.io/npm/dm/%40readyapi/docusaurus)](https://www.npmjs.com/package/@readyapi/docusaurus)
-[![License](https://img.shields.io/npm/l/%40readyapi%2Fdocusaurus)](https://www.npmjs.com/package/@readyapi/docusaurus)
+[![Version](https://img.shields.io/npm/v/%40scalar/docusaurus)](https://www.npmjs.com/package/@readyapi/docusaurus)
+[![Downloads](https://img.shields.io/npm/dm/%40scalar/docusaurus)](https://www.npmjs.com/package/@readyapi/docusaurus)
+[![License](https://img.shields.io/npm/l/%40scalar%2Fdocusaurus)](https://www.npmjs.com/package/@readyapi/docusaurus)
 [![Discord](https://img.shields.io/discord/1135330207960678410?style=flat&color=5865F2)](https://discord.gg/8HeZcRGPFS)
 
 ![scalasaurus](docusaurus.png)
@@ -19,26 +19,27 @@ Simple add to the plugins section of your Docusaurus config. If you are using
 typescript you can import the type options type as well
 
 ```ts
-import type { ReadyapiOptions } from '@readyapi/docusaurus'
+import type { ScalarOptions } from '@readyapi/docusaurus'
 
 plugins: [
   [
-    ['@readyapi/docusaurus', {
-      label: 'Readyapi',
-      route: '/readyapi',
+    '@readyapi/docusaurus',
+    {
+      label: 'Scalar',
+      route: '/scalar',
       configuration: {
         spec: {
           url: 'https://petstore3.swagger.io/api/v3/openapi.json',
         },
       },
-    } as ReadyapiOptions],
+    } as ScalarOptions,
   ],
 ],
 ```
 
 ### Example
 
-You can find an example in this repo under [examples/docusaurus](https://github.com/khulnasoft/readyapi.js/tree/main/examples/docusaurus)
+You can find an example in this repo under [examples/docusaurus](https://github.com/scalar/scalar/tree/main/examples/docusaurus)
 
 ## Config
 
@@ -55,5 +56,5 @@ Path at which the API Reference will be shown
 ### configuration: ReferenceProps
 
 You can find the full configuration options under
-[packages/api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-reference)
+[packages/api-reference](https://github.com/scalar/scalar/tree/main/packages/api-reference)
 minus theme.

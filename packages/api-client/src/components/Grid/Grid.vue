@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ReadyapiIcon } from '@readyapi/components'
-import type { BaseParameter } from '@readyapi/oas-utils'
+import { ScalarIcon } from '@scalar/components'
+import type { BaseParameter } from '@scalar/oas-utils'
 import { ref } from 'vue'
 
 import { clickGeneratedParameter } from '../../clientBus'
@@ -56,7 +56,7 @@ function addHandler() {
         type="button"
         @click="addHandler">
         <i class="meta-actions-item-icon">
-          <ReadyapiIcon icon="Add" />
+          <ScalarIcon icon="Add" />
         </i>
         {{ addLabel }}
       </button>
@@ -67,7 +67,7 @@ function addHandler() {
         @click="showMore = true">
         Show More
         <i class="meta-actions-item-icon">
-          <ReadyapiIcon icon="ChevronDown" />
+          <ScalarIcon icon="ChevronDown" />
         </i>
       </button>
     </div>
@@ -75,22 +75,22 @@ function addHandler() {
 </template>
 <style scoped>
 .table {
-  border: 1px solid var(--readyapi-border-color);
+  border: 1px solid var(--scalar-border-color);
   background: transparent;
-  border-radius: var(--readyapi-radius);
+  border-radius: 0 0 var(--scalar-radius) var(--scalar-radius);
   width: 100%;
 }
 .meta-actions-item {
   border: none;
-  font-weight: var(--readyapi-semibold);
+  font-weight: var(--scalar-semibold);
   appearance: none;
   padding: 9px;
   width: 100%;
   appearance: none;
   outline: none;
-  font-size: var(--readyapi-micro);
-  font-family: var(--readyapi-font);
-  color: var(--readyapi-color-3);
+  font-size: var(--scalar-mini);
+  font-family: var(--scalar-font);
+  color: var(--scalar-color-3);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -115,6 +115,6 @@ function addHandler() {
 }
 .meta-actions-item:hover,
 .meta-actions-item:focus {
-  color: var(--readyapi-color-1);
+  color: var(--scalar-color-1);
 }
 </style>

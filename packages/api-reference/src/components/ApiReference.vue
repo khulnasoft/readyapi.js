@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { useAuthenticationStore } from '@readyapi/api-client'
 import { migrateThemeVariables } from '@readyapi/themes'
+import { useAuthenticationStore } from '@scalar/api-client'
 import { createHead, useSeoMeta } from 'unhead'
 import { computed, toRef, watch } from 'vue'
 
 import { useDarkModeState, useHttpClients, useReactiveSpec } from '../hooks'
-import { type ReferenceConfiguration, type ReferenceProps } from '../types'
+import type { ReferenceConfiguration, ReferenceProps } from '../types'
 import Layouts from './Layouts/'
 
 const props = defineProps<ReferenceProps>()

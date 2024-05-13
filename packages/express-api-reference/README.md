@@ -1,9 +1,9 @@
-# Readyapi Express API Reference Plugin
+# Scalar Express API Reference Plugin
 
-[![Version](https://img.shields.io/npm/v/%40readyapi/express-api-reference)](https://www.npmjs.com/package/@readyapi/express-api-reference)
-[![Downloads](https://img.shields.io/npm/dm/%40readyapi/express-api-reference)](https://www.npmjs.com/package/@readyapi/express-api-reference)
-[![License](https://img.shields.io/npm/l/%40readyapi%2Fexpress-api-reference)](https://www.npmjs.com/package/@readyapi/express-api-reference)
-[![Discord](https://img.shields.io/discord/1135330207960678410?style=flat&color=5865F2)](https://discord.gg/8HeZcRGPFS)
+[![Version](https://img.shields.io/npm/v/%40scalar/express-api-reference)](https://www.npmjs.com/package/@readyapi/express-api-reference)
+[![Downloads](https://img.shields.io/npm/dm/%40scalar/express-api-reference)](https://www.npmjs.com/package/@readyapi/express-api-reference)
+[![License](https://img.shields.io/npm/l/%40scalar%2Fexpress-api-reference)](https://www.npmjs.com/package/@readyapi/express-api-reference)
+[![Discord](https://img.shields.io/discord/1135330207960678410?style=flat&color=5865F2)](https://discord.gg/scalar)
 
 This middleware provides an easy way to render a beautiful API reference based on an OpenAPI/Swagger file with Express.
 
@@ -50,11 +50,11 @@ app.use(
 )
 ```
 
-The Express middleware takes our universal configuration object, [read more about configuration](https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-reference#props) in the core package README.
+The Express middleware takes our universal configuration object, [read more about configuration](https://github.com/scalar/scalar/tree/main/packages/api-reference#props) in the core package README.
 
 ### Themes
 
-The middleware comes with a custom theme for Express. You can use one of [the other predefined themes](https://github.com/khulnasoft/readyapi.js/blob/main/packages/themes/src/index.ts#L15) (`alternate`, `default`, `moon`, `purple`, `solarized`) or overwrite it with `none`. All themes come with a light and dark color scheme.
+The middleware comes with a custom theme for Express. You can use one of [the other predefined themes](https://github.com/scalar/scalar/blob/main/packages/themes/src/index.ts#L15) (`alternate`, `default`, `moon`, `purple`, `solarized`) or overwrite it with `none`. All themes come with a light and dark color scheme.
 
 ```ts
 import { apiReference } from '@readyapi/express-api-reference'
@@ -72,7 +72,7 @@ app.use(
 
 ### Custom CDN
 
-You can use a custom CDN ，default is `https://cdn.jsdelivr.net/npm/@readyapi/api-reference`.
+You can use a custom CDN ，default is `https://cdn.jsdelivr.net/npm/@scalar/api-reference`.
 
 ```ts
 import { apiReference } from '@readyapi/express-api-reference'
@@ -80,7 +80,7 @@ import { apiReference } from '@readyapi/express-api-reference'
 app.use(
   '/reference',
   apiReference({
-    cdn: 'https://cdn.jsdelivr.net/npm/@readyapi/api-reference',
+    cdn: 'https://cdn.jsdelivr.net/npm/@scalar/api-reference',
     spec: {
       content: OpenApiSpecification,
     },

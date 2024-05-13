@@ -1,15 +1,12 @@
 <script setup lang="ts">
-import { ReadyapiButton } from '@readyapi/components'
 import { type ThemeId, themeLabels } from '@readyapi/themes'
-
-import placeholderSpecification from '../../../../specifications/readyapi-galaxy-3.1.json?raw'
+import { ScalarButton } from '@scalar/components'
 
 defineProps<{
   theme: ThemeId
 }>()
-
 const emits = defineEmits<{
-  (e: 'changeTheme', value: ThemeId): void
+  (e: 'changeTheme', { id, label }: { id: ThemeId; label: string }): void
   (e: 'loadSwaggerFile'): void
   (e: 'linkSwaggerFile'): void
   (e: 'updateContent', value: string): void
@@ -28,8 +25,12 @@ const themeIds: ThemeId[] = [
   'deepSpace',
 ]
 
-function handleEmitPetstore() {
-  emits('updateContent', placeholderSpecification)
+async function fetchExampleSpecification() {
+  const response = await fetch(
+    'https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/latest.yaml',
+  )
+
+  emits('updateContent', await response.text())
 }
 </script>
 <template>
@@ -49,22 +50,22 @@ function handleEmitPetstore() {
       </div>
       <h1 class="start-h1">Swagger Editor</h1>
       <p class="start-p">
-        Welcome to the Ready API References + Swagger Editor, a Free &
+        Welcome to the Scalar API References + Swagger Editor, a Free &
         Open-Source tool that takes your Swagger/OAS file and generates
         Beautiful API references.
       </p>
       <div class="start-cta">
-        <ReadyapiButton
+        <ScalarButton
           fullWidth
-          @click="handleEmitPetstore">
+          @click="fetchExampleSpecification">
           Show Example
-        </ReadyapiButton>
-        <ReadyapiButton
+        </ScalarButton>
+        <ScalarButton
           fullWidth
           variant="outlined"
           @click="$emit('loadSwaggerFile')">
           Upload File
-        </ReadyapiButton>
+        </ScalarButton>
       </div>
     </div>
     <div class="start-row">
@@ -72,7 +73,7 @@ function handleEmitPetstore() {
         <div class="start-h2">INTEGRATIONS</div>
         <a
           class="start-item"
-          href="https://github.com/khulnasoft/readyapi.js/tree/main/packages/fastify-api-reference#readme"
+          href="https://github.com/scalar/scalar/tree/main/packages/fastify-api-reference#readme"
           target="_blank">
           <svg
             fill="currentColor"
@@ -89,7 +90,7 @@ function handleEmitPetstore() {
         </a>
         <a
           class="start-item"
-          href="https://github.com/khulnasoft/readyapi.js/tree/main#from-a-cdn"
+          href="https://github.com/scalar/scalar/tree/main#from-a-cdn"
           target="_blank">
           <svg
             fill="currentColor"
@@ -111,7 +112,7 @@ function handleEmitPetstore() {
         </a>
         <a
           class="start-item"
-          href="https://github.com/khulnasoft/readyapi.js/tree/main#with-vuejs"
+          href="https://github.com/scalar/scalar/tree/main#with-vuejs"
           target="_blank">
           <svg
             height="170"
@@ -131,7 +132,7 @@ function handleEmitPetstore() {
         </a>
         <a
           class="start-item"
-          href="https://github.com/khulnasoft/readyapi.js/tree/main#with-react"
+          href="https://github.com/scalar/scalar/tree/main#with-react"
           target="_blank">
           <svg
             height="23.3"
@@ -178,7 +179,9 @@ function handleEmitPetstore() {
           :key="themeId"
           class="start-item"
           :class="{ 'start-item-active': themeId === theme }"
-          @click="$emit('changeTheme', themeId)">
+          @click="
+            $emit('changeTheme', { id: themeId, label: themeLabels[themeId] })
+          ">
           {{ themeLabels[themeId] }}
         </div>
       </div>
@@ -225,38 +228,38 @@ function handleEmitPetstore() {
   padding-top: 24px;
 }
 .start-h1 {
-  font-size: var(--readyapi-heading-2);
+  font-size: var(--scalar-heading-2);
   margin-top: 0;
   line-height: 1.45;
   margin-bottom: 0;
-  font-weight: var(--readyapi-bold);
-  color: var(--readyapi-color-1);
+  font-weight: var(--scalar-bold);
+  color: var(--scalar-color-1);
   width: 100%;
   position: relative;
 }
 .start-h3 {
-  font-size: var(--readyapi-paragraph);
+  font-size: var(--scalar-paragraph);
   margin-top: 0;
   margin-bottom: 6px;
   display: block;
   line-height: 1.45;
-  font-weight: var(--readyapi-bold);
-  color: var(--readyapi-color-1);
+  font-weight: var(--scalar-bold);
+  color: var(--scalar-color-1);
   width: 100%;
 }
 .start-h1:not(:first-of-type) {
   margin-top: 24px;
 }
 .start-p {
-  font-size: var(--readyapi-paragraph);
-  color: var(--readyapi-color-2);
+  font-size: var(--scalar-paragraph);
+  color: var(--scalar-color-2);
   line-height: 1.5;
   width: 100%;
   margin-top: 12px;
 }
 .start-ul {
   margin-top: 12px;
-  font-size: var(--readyapi-paragraph);
+  font-size: var(--scalar-paragraph);
   line-height: 1.5;
   padding-left: 0;
   list-style: initial;
@@ -269,7 +272,7 @@ function handleEmitPetstore() {
   padding: 0;
   list-style: none;
   width: calc(50% - 24px);
-  color: var(--readyapi-color-2);
+  color: var(--scalar-color-2);
 }
 .start-ul li:first-of-type {
   margin-top: 0;
@@ -284,47 +287,47 @@ function handleEmitPetstore() {
   margin-bottom: 48px;
 }
 .start-h2 {
-  background: var(--readyapi-background-2);
-  border-top-left-radius: var(--readyapi-radius-lg);
-  border-top-right-radius: var(--readyapi-radius-lg);
-  border: 1px solid var(--readyapi-border-color);
-  color: var(--readyapi-color-3);
-  font-size: var(--readyapi-mini);
-  font-weight: var(--readyapi-semibold);
+  background: var(--scalar-background-2);
+  border-top-left-radius: var(--scalar-radius-lg);
+  border-top-right-radius: var(--scalar-radius-lg);
+  border: 1px solid var(--scalar-border-color);
+  color: var(--scalar-color-3);
+  font-size: var(--scalar-mini);
+  font-weight: var(--scalar-semibold);
   padding: 9px;
   width: 100%;
 }
 .start-item {
   align-items: center;
-  background: var(--readyapi-background-2);
-  border-right: 1px solid var(--readyapi-border-color);
-  border-bottom: 1px solid var(--readyapi-border-color);
-  color: var(--readyapi-color-1);
+  background: var(--scalar-background-2);
+  border-right: 1px solid var(--scalar-border-color);
+  border-bottom: 1px solid var(--scalar-border-color);
+  color: var(--scalar-color-1);
   cursor: pointer;
   display: flex;
   flex: 1;
-  font-size: var(--readyapi-mini);
-  font-weight: var(--readyapi-semibold);
+  font-size: var(--scalar-mini);
+  font-weight: var(--scalar-semibold);
   padding: 9px;
   text-transform: capitalize;
   user-select: none;
 }
 .start-section-integrations .start-item:first-of-type {
-  border-bottom-left-radius: var(--readyapi-radius-lg);
-  border-left: 1px solid var(--readyapi-border-color);
+  border-bottom-left-radius: var(--scalar-radius-lg);
+  border-left: 1px solid var(--scalar-border-color);
 }
 .start-section-integrations .start-item:last-of-type {
-  border-bottom-right-radius: var(--readyapi-radius-lg);
+  border-bottom-right-radius: var(--scalar-radius-lg);
 }
 .start-section-colors .start-item {
   min-width: 33.33%;
 }
 .start-section-colors .start-item:nth-child(3n + 2) {
-  border-left: 1px solid var(--readyapi-border-color);
+  border-left: 1px solid var(--scalar-border-color);
 }
 .start-section-colors .start-item:last-of-type,
 .start-section-colors .start-item-active:last-of-type::before {
-  border-radius: 0 0 var(--readyapi-radius-lg) var(--readyapi-radius-lg);
+  border-radius: 0 0 var(--scalar-radius-lg) var(--scalar-radius-lg);
 }
 .start-item:empty {
   pointer-events: none;
@@ -335,15 +338,15 @@ function handleEmitPetstore() {
   margin-right: 6px;
 }
 .start-item:hover {
-  background: var(--readyapi-background-3);
+  background: var(--scalar-background-3);
 }
 .start-item-active {
   z-index: 10;
   position: relative;
-  color: var(--readyapi-color-1);
+  color: var(--scalar-color-1);
 }
 .start-item-active::before {
-  border: 1px solid var(--readyapi-color-1);
+  border: 1px solid var(--scalar-color-1);
   content: '';
   inset: -1px -1px -1px -1px;
   pointer-events: none;
@@ -365,14 +368,14 @@ function handleEmitPetstore() {
   overflow: hidden;
 }
 .start-hero-copy {
-  background: var(--readyapi-background-2);
+  background: var(--scalar-background-2);
   padding: 12px;
-  border-radius: var(--readyapi-radius-lg);
+  border-radius: var(--scalar-radius-lg);
 }
 .start-p-small {
-  font-weight: var(--readyapi-semibold);
-  font-size: var(--readyapi-mini);
-  color: var(--readyapi-color-2);
+  font-weight: var(--scalar-semibold);
+  font-size: var(--scalar-mini);
+  color: var(--scalar-color-2);
   margin-bottom: 12px;
   line-height: 1.4;
 }
@@ -390,12 +393,12 @@ function handleEmitPetstore() {
   text-align: center;
 }
 .start-logo {
-  color: var(--readyapi-color-1);
+  color: var(--scalar-color-1);
   margin-bottom: 24px;
   width: 72px;
   aspect-ratio: 1;
   position: relative;
-  box-shadow: var(--readyapi-shadow-2);
+  box-shadow: var(--scalar-shadow-2);
   border-radius: 50%;
 }
 .start-logo:before {
@@ -409,23 +412,19 @@ function handleEmitPetstore() {
   border-radius: 50%;
   background-size: 24px 24px;
   box-shadow:
-    inset 0 0 50px var(--readyapi-background-1),
-    inset 0 0 50px var(--readyapi-background-1);
+    inset 0 0 50px var(--scalar-background-1),
+    inset 0 0 50px var(--scalar-background-1);
   background-image: linear-gradient(
       to right,
-      var(--readyapi-border-color) 1px,
+      var(--scalar-border-color) 1px,
       transparent 1px
     ),
-    linear-gradient(
-      to bottom,
-      var(--readyapi-border-color) 1px,
-      transparent 1px
-    );
+    linear-gradient(to bottom, var(--scalar-border-color) 1px, transparent 1px);
 }
 .start-logo svg {
   width: 100%;
   height: auto;
-  background: var(--readyapi-background-1);
+  background: var(--scalar-background-1);
   padding: 3px;
   border-radius: 50%;
   position: relative;
@@ -436,7 +435,7 @@ function handleEmitPetstore() {
     width: 100%;
     border-radius: 0;
     border-right: none;
-    border-top: 1px solid var(--readyapi-border-color);
+    border-top: 1px solid var(--scalar-border-color);
   }
   .start-item:empty {
     display: none;

@@ -1,4 +1,4 @@
-import { fetchSpecFromUrl } from '@readyapi/oas-utils'
+import { fetchSpecFromUrl } from '@scalar/oas-utils'
 import { type MaybeRefOrGetter, reactive, ref, toValue, watch } from 'vue'
 
 import { isValidUrl } from '../helpers'

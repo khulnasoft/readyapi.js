@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
-import { ReadyapiIcon } from '@readyapi/components'
+import { ScalarIcon } from '@scalar/components'
 </script>
 <template>
   <div class="section-accordion-wrapper">
@@ -10,7 +10,7 @@ import { ReadyapiIcon } from '@readyapi/components'
       class="section-accordion"
       defaultOpen>
       <DisclosureButton class="section-accordion-button">
-        <ReadyapiIcon
+        <ScalarIcon
           class="section-accordion-chevron"
           :icon="open ? 'ChevronDown' : 'ChevronRight'" />
         <div class="section-accordion-title">
@@ -48,7 +48,7 @@ import { ReadyapiIcon } from '@readyapi/components'
 
   padding: 6px 0 6px 0;
   margin: -6px 0 -6px 0;
-  border-radius: var(--readyapi-radius);
+  border-radius: var(--scalar-radius);
 }
 .section-accordion-chevron {
   width: 24px;
@@ -56,11 +56,11 @@ import { ReadyapiIcon } from '@readyapi/components'
   left: -24px;
   height: auto;
   top: 10px;
-  color: var(--readyapi-color-3);
+  color: var(--scalar-color-3);
 }
 
 .section-accordion-button:hover .section-accordion-chevron {
-  color: var(--readyapi-color-1);
+  color: var(--scalar-color-1);
 }
 .section-accordion-title {
   display: flex;

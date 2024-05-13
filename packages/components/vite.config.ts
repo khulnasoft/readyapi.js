@@ -13,7 +13,7 @@ export default defineConfig({
     lib: {
       // Could also be a dictionary or array of multiple entry points
       entry: './src/index.ts',
-      name: '@readyapi/components',
+      name: '@scalar/components',
       formats: ['es', 'cjs'],
       fileName: 'index',
       // the proper extensions will be added

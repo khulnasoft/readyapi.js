@@ -1,9 +1,6 @@
 <script setup lang="ts">
-import {
-  type OpenAPIV2,
-  type OpenAPIV3,
-  type OpenAPIV3_1,
-} from '@readyapi/openapi-parser'
+import type { OpenAPIV2, OpenAPIV3, OpenAPIV3_1 } from '@scalar/openapi-parser'
+import GithubSlugger from 'github-slugger'
 import { computed } from 'vue'
 
 import type { Spec } from '../../../types'
@@ -26,8 +23,14 @@ const props = defineProps<{
   parsedSpec: Spec
 }>()
 
+const slugger = new GithubSlugger()
+
 const specVersion = computed(() => {
   return props.parsedSpec.openapi ?? props.parsedSpec.swagger ?? ''
+})
+
+const formattedSpecTitle = computed(() => {
+  return slugger.slug(props.info.title ?? '')
 })
 </script>
 <template>
@@ -48,7 +51,7 @@ const specVersion = computed(() => {
               tight>
               {{ info.title }}
             </SectionHeader>
-            <DownloadSpec />
+            <DownloadSpec :specTitle="formattedSpecTitle" />
             <Description :value="info.description" />
           </SectionColumn>
           <SectionColumn v-if="$slots.aside">
@@ -68,9 +71,9 @@ const specVersion = computed(() => {
   word-wrap: break-word;
 }
 .loading {
-  background: var(--readyapi-background-3);
+  background: var(--scalar-background-3);
   animation: loading-skeleton 1.5s infinite alternate;
-  border-radius: var(--readyapi-radius-lg);
+  border-radius: var(--scalar-radius-lg);
 }
 .badges {
   display: flex;

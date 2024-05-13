@@ -1,4 +1,4 @@
-import type { BaseParameter, Parameters } from '@readyapi/oas-utils'
+import type { BaseParameter, Parameters } from '@scalar/oas-utils'
 
 /**
  * Generate parameters for the request from the parameters in the swagger file

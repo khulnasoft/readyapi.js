@@ -53,14 +53,14 @@ const getUrlWithId = (id: string) => {
 
   padding: 0 6px;
 
-  color: var(--readyapi-color-3);
-  font-weight: var(--readyapi-semibold);
+  color: var(--scalar-color-3);
+  font-weight: var(--scalar-semibold);
   font-size: 0.8em;
 }
 
 .anchor-copy:hover,
 .anchor-copy:focus-visible {
-  color: var(--readyapi-color-2);
+  color: var(--scalar-color-2);
 }
 
 .label:hover .anchor {

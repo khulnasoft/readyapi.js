@@ -1,8 +1,8 @@
-# Ready API Reference for AdonisJS
+# Scalar API Reference for AdonisJS
 
 AdonisJS is a TypeScript-first web framework for building web apps and API servers. It comes with support for testing, modern tooling, an ecosystem of official packages, and more.
 
-And you know what? There’s also a great [community package to add OpenAPI support](https://github.com/ad-on-is/adonis-autoswagger) and it comes with the Ready API reference by default.
+And you know what? There’s also a great [community package to add OpenAPI support](https://github.com/ad-on-is/adonis-autoswagger) and it comes with the Scalar API reference by default.
 
 ## Create a new AdonisJS project (optional)
 
@@ -72,9 +72,9 @@ export default {
 
 [Head over to the repository](https://github.com/ad-on-is/adonis-autoswagger) to learn more about the configuration file or how to use it with AdonisJS 5.
 
-## Render your OpenAPI reference with Readyapi
+## Render your OpenAPI reference with Scalar
 
-To actually serve an OpenAPI file and render the reference with Readyapi you can extend your routes file:
+To actually serve an OpenAPI file and render the reference with Scalar you can extend your routes file:
 
 ```
 // start/routes.ts
@@ -94,9 +94,9 @@ router.get('/openapi', async () => {
   return AutoSwagger.default.docs(router.toJSON(), openapi)
 })
 
-// Renders the API reference with Readyapi
+// Renders the API reference with Scalar
 router.get('/docs', async () => {
-  return AutoSwagger.default.readyapi('/openapi')
+  return AutoSwagger.default.scalar('/openapi')
 })
 ```
 

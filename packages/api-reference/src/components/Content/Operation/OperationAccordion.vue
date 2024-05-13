@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { HttpMethod } from '@readyapi/api-client'
-import { ReadyapiIcon, ReadyapiIconButton } from '@readyapi/components'
-import type { TransformedOperation } from '@readyapi/oas-utils'
+import { HttpMethod } from '@scalar/api-client'
+import { ScalarIcon, ScalarIconButton } from '@scalar/components'
+import type { TransformedOperation } from '@scalar/oas-utils'
 
 import { useClipboard } from '../../../hooks'
 import { Anchor } from '../../Anchor'
@@ -51,11 +51,11 @@ const { copyToClipboard } = useClipboard()
       <TryRequestButton
         v-if="active"
         :operation="operation" />
-      <ReadyapiIcon
+      <ScalarIcon
         v-else
         class="endpoint-try-hint"
         icon="PaperAirplane" />
-      <ReadyapiIconButton
+      <ScalarIconButton
         class="endpoint-copy"
         icon="Clipboard"
         label="Copy endpoint URL"
@@ -105,11 +105,11 @@ const { copyToClipboard } = useClipboard()
   padding: 6px;
   flex-shrink: 0;
 
-  font-size: var(--readyapi-small);
+  font-size: var(--scalar-small);
 
   text-transform: uppercase;
-  font-weight: var(--readyapi-bold);
-  font-family: var(--readyapi-font);
+  font-weight: var(--scalar-bold);
+  font-family: var(--scalar-font);
 }
 .endpoint-type::after {
   content: '';
@@ -120,7 +120,7 @@ const { copyToClipboard } = useClipboard()
   background: currentColor;
   opacity: 0.15;
 
-  border-radius: var(--readyapi-radius-lg);
+  border-radius: var(--scalar-radius-lg);
 }
 
 .endpoint-anchor {
@@ -140,23 +140,23 @@ const { copyToClipboard } = useClipboard()
   min-width: 0;
   flex-shrink: 1;
 
-  color: var(--readyapi-color-1);
+  color: var(--scalar-color-1);
 }
 
 .endpoint-label-path {
-  font-family: var(--readyapi-font-code);
-  font-size: var(--readyapi-mini);
+  font-family: var(--scalar-font-code);
+  font-size: var(--scalar-mini);
 
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 .endpoint-label-path :deep(em) {
-  color: var(--readyapi-color-2);
+  color: var(--scalar-color-2);
 }
 .endpoint-label-name {
-  color: var(--readyapi-color-2);
-  font-size: var(--readyapi-small);
+  color: var(--scalar-color-2);
+  font-size: var(--scalar-small);
 
   /* Concatenate the name before we shrink the path */
   flex-shrink: 1000000000;

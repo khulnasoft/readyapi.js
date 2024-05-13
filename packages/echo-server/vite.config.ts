@@ -15,20 +15,20 @@ export default defineConfig({
       external: [
         'vue',
         ...Object.keys(pkg.dependencies || {}).filter(
-          (item) => !item.startsWith('@readyapi'),
+          (item) => !item.startsWith('@scalar'),
         ),
       ],
     },
   },
   resolve: {
     alias: [
-      // Resolve the uncompiled source code for all @readyapi packages
+      // Resolve the uncompiled source code for all @scalar packages
       // It’s working with the alias, too. It’s just required to enable HMR.
       {
-        // Resolve the uncompiled source code for all @readyapi packages
-        // @readyapi/* -> packages/*/
-        // (not @readyapi/*/style.css)
-        find: /^@readyapi\/(?!(openapi-parser|snippetz|components\/style\.css|components\b))(.+)/,
+        // Resolve the uncompiled source code for all @scalar packages
+        // @scalar/* -> packages/*/
+        // (not @scalar/*/style.css)
+        find: /^@scalar\/(?!(openapi-parser|snippetz|galaxy|components\/style\.css|components\b))(.+)/,
         replacement: path.resolve(__dirname, '../$2/src/index.ts'),
       },
     ],

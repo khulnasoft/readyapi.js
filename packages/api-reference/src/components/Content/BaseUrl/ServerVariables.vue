@@ -78,19 +78,19 @@ const getValue = (name: string) => {
 }
 
 .input-value {
-  color: var(--readyapi-color-1);
-  font-size: var(--readyapi-micro);
+  color: var(--scalar-color-1);
+  font-size: var(--scalar-micro);
   padding: 9px;
 }
 
 .variable-description {
   padding: 6px 12px;
-  font-size: var(--readyapi-small);
+  font-size: var(--scalar-small);
 }
 .variable-description :deep(.markdown) {
-  font-size: var(--readyapi-micro);
-  font-weight: var(--readyapi-semibold);
-  color: var(--readyapi-color--1);
+  font-size: var(--scalar-micro);
+  font-weight: var(--scalar-semibold);
+  color: var(--scalar-color--1);
   padding: 4px 0;
   display: block;
 }
@@ -102,6 +102,6 @@ const getValue = (name: string) => {
 }
 .input:first-of-type {
   border-radius: 0;
-  border-top: 1px solid var(--readyapi-border-color);
+  border-top: 1px solid var(--scalar-border-color);
 }
 </style>

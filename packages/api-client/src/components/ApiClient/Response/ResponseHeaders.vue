@@ -46,7 +46,7 @@ const formatHeaderName = (headerName: string) => {
       </SimpleRow>
     </SimpleTable>
     <template v-else>
-      <div class="readyapi-api-client__empty-state">No Headers</div>
+      <div class="scalar-api-client__empty-state">No Headers</div>
     </template>
   </CollapsibleSection>
 </template>

@@ -1,16 +1,16 @@
 <template>
-  <div class="readyapi-card">
+  <div class="scalar-card">
     <slot />
   </div>
 </template>
 <style scoped>
-.readyapi-card {
+.scalar-card {
   all: unset;
-  font-family: var(--readyapi-font);
-  border-radius: var(--readyapi-radius-lg);
+  font-family: var(--scalar-font);
+  border-radius: var(--scalar-radius-lg);
   overflow: hidden;
-  border: 1px solid var(--readyapi-border-color);
-  background: var(--readyapi-background-2);
+  border: 1px solid var(--scalar-border-color);
+  background: var(--scalar-background-2);
   display: flex;
   flex-direction: column;
   max-height: calc(
@@ -19,7 +19,7 @@
   position: relative;
 }
 
-.readyapi-card-sticky {
+.scalar-card-sticky {
   position: sticky;
   top: calc(var(--refs-header-height) + 24px);
 }

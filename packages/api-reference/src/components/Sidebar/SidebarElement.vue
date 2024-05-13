@@ -1,9 +1,5 @@
 <script setup lang="ts">
-import {
-  type Icon,
-  ReadyapiIcon,
-  ReadyapiIconButton,
-} from '@readyapi/components'
+import { type Icon, ScalarIcon, ScalarIconButton } from '@scalar/components'
 
 import { scrollToId, sleep } from '../../helpers'
 import { useNavState } from '../../hooks'
@@ -42,8 +38,8 @@ const handleClick = async () => {
   if (props.open) {
     isIntersectionEnabled.value = false
     await sleep(100)
+    isIntersectionEnabled.value = true
   }
-  isIntersectionEnabled.value = true
 }
 
 // Build relative URL and add hash
@@ -99,11 +95,11 @@ const onAnchorClick = async (ev: Event) => {
       }"
       @click="handleClick">
       <!-- If children are detected then show the nesting icon -->
-      <!-- Use &hairsp; to vertically center readyapi icon button to the first line of text in the sidebar heading link -->
+      <!-- Use &hairsp; to vertically center scalar icon button to the first line of text in the sidebar heading link -->
       <p
         v-if="hasChildren"
         class="sidebar-heading-chevron">
-        <ReadyapiIconButton
+        <ScalarIconButton
           class="toggle-nested-icon"
           :icon="open ? 'ChevronDown' : 'ChevronRight'"
           label="Toggle group"
@@ -115,7 +111,7 @@ const onAnchorClick = async (ev: Event) => {
         class="sidebar-heading-link"
         :href="generateLink()"
         @click="onAnchorClick">
-        <ReadyapiIcon
+        <ScalarIcon
           v-if="item?.icon?.src"
           class="sidebar-icon"
           :icon="item.icon.src as Icon" />
@@ -145,60 +141,66 @@ const onAnchorClick = async (ev: Event) => {
   display: flex;
   gap: 6px;
 
-  color: var(--readyapi-sidebar-color-2, var(--readyapi-color-2));
-  font-size: var(--readyapi-mini);
-  font-weight: var(--readyapi-semibold);
+  color: var(--scalar-sidebar-color-2, var(--scalar-color-2));
+  font-size: var(--scalar-mini);
+  font-weight: var(--scalar-semibold);
   word-break: break-word;
   line-height: 1.385;
   max-width: 100%;
   position: relative;
   cursor: pointer;
-  border-radius: var(--readyapi-radius);
+  border-radius: var(--scalar-radius);
   flex: 1;
   padding-right: 9px;
   user-select: none;
 }
+.sidebar-heading-link-method {
+  margin: 0;
+}
 .sidebar-heading.deprecated .sidebar-heading-link-title {
   text-decoration: line-through;
 }
+.sidebar-heading-link-title {
+  margin: 0;
+}
 .sidebar-heading:hover {
   background: var(
-    --readyapi-sidebar-item-hover-background,
-    var(--readyapi-background-2)
+    --scalar-sidebar-item-hover-background,
+    var(--scalar-background-2)
   );
 }
 .sidebar-heading:hover .sidebar-heading-link-title {
-  color: var(--readyapi-sidebar-item-hover-color);
+  color: var(--scalar-sidebar-item-hover-color);
 }
 
 .active_page.sidebar-heading:hover,
 .active_page.sidebar-heading {
-  color: var(--readyapi-sidebar-color-active, var(--readyapi-color-accent));
+  color: var(--scalar-sidebar-color-active, var(--scalar-color-accent));
 
   background: var(
-    --readyapi-sidebar-item-active-background,
-    var(--readyapi-background-accent)
+    --scalar-sidebar-item-active-background,
+    var(--scalar-background-accent)
   );
 }
 .active_page.sidebar-heading:hover .sidebar-heading-link-title {
-  color: var(--readyapi-sidebar-color-active, var(--readyapi-color-accent));
+  color: var(--scalar-sidebar-color-active, var(--scalar-color-accent));
 }
 .sidebar-indent-nested .sidebar-indent-nested .sidebar-heading:before {
   content: '';
   position: absolute;
   top: 0;
-  left: calc((var(--readyapi-sidebar-level) * 12px));
+  left: calc((var(--scalar-sidebar-level) * 12px));
   width: 1px;
   height: 100%;
-  background: var(--readyapi-sidebar-indent-border);
+  background: var(--scalar-sidebar-indent-border);
 }
 .sidebar-indent-nested .sidebar-indent-nested .sidebar-heading:hover:before {
-  background: var(--readyapi-sidebar-indent-border-hover);
+  background: var(--scalar-sidebar-indent-border-hover);
 }
 .sidebar-indent-nested
   .sidebar-indent-nested
   .active_page.sidebar-heading:before {
-  background: var(--readyapi-sidebar-indent-border-active);
+  background: var(--scalar-sidebar-indent-border-active);
 }
 
 .sidebar-heading-link {
@@ -252,10 +254,10 @@ const onAnchorClick = async (ev: Event) => {
   border: none;
   color: currentColor;
   padding: 3px;
-  color: var(--readyapi-sidebar-color-2);
+  color: var(--scalar-sidebar-color-2);
 }
 .active_page .toggle-nested-icon {
-  color: var(--readyapi-sidebar-color-active, var(--readyapi-color-accent));
+  color: var(--scalar-sidebar-color-active, var(--scalar-color-accent));
 }
 
 .toggle-nested-icon:hover,
@@ -288,13 +290,13 @@ const onAnchorClick = async (ev: Event) => {
   opacity: 1;
 }
 .sidebar-heading:has(~ .action-menu:hover) {
-  color: var(--readyapi-sidebar-color-1, var(--readyapi-color-1));
+  color: var(--scalar-sidebar-color-1, var(--scalar-color-1));
   background: var(
-    --readyapi-sidebar-item-hover-background,
-    var(--readyapi-background-2)
+    --scalar-sidebar-item-hover-background,
+    var(--scalar-background-2)
   );
 }
 .sidebar-group-item__folder {
-  color: var(--readyapi-sidebar-color-1, var(--readyapi-color-1));
+  color: var(--scalar-sidebar-color-1, var(--scalar-color-1));
 }
 </style>

@@ -1,4 +1,4 @@
-import type { BaseParameter } from '@readyapi/oas-utils'
+import type { BaseParameter } from '@scalar/oas-utils'
 
 export type Header = BaseParameter
 

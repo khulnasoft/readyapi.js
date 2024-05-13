@@ -11,8 +11,8 @@ jobs:
 
     steps:
       - name: Update the list of contributors
-        uses: akhilmhdh/contributors-readme-action@v2.3.8
+        uses: akhilmhdh/contributors-readme-action@v2.3.10
         with:
           use_username: true
         env:
-          GITHUB_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}

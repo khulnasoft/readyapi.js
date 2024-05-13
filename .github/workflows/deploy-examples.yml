@@ -1,4 +1,4 @@
-name: Deploy Readyapi examples
+name: Deploy Scalar examples
 
 on:
   push:
@@ -12,7 +12,7 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   release:
-    name: Deploy Readyapi examples
+    name: Deploy Scalar examples
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v3
+      - uses: pnpm/action-setup@v4
         with:
           version: 8
       - name: Use Node.js ${{ matrix.node-version }}

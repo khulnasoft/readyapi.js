@@ -9,7 +9,7 @@ describe('ssr', async () => {
 
   it('renders the references', async () => {
     // Get response to a server-rendered page with `$fetch`.
-    const html = await $fetch('/readyapi')
+    const html = await $fetch('/scalar')
     console.log({ html })
     expect(html).toContain('<div>basic</div>')
   })

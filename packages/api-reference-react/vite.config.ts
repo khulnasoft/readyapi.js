@@ -14,7 +14,7 @@ export default defineConfig({
     lib: {
       // Could also be a dictionary or array of multiple entry points
       entry: './src/index.ts',
-      name: '@readyapi/api-reference-react',
+      name: '@scalar/api-reference-react',
       formats: ['es', 'cjs'],
       fileName: 'index',
     },

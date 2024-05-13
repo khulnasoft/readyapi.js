@@ -13,7 +13,7 @@
     box-sizing: border-box;
     border-width: 0;
     border-style: solid;
-    border-color: var(--readyapi-border-color);
+    border-color: var(--scalar-border-color);
 
     font-family: inherit;
     font-feature-settings: inherit;

@@ -4,8 +4,8 @@ import { readdirSync, writeFile } from 'fs'
  * Generate type from the icon file names
  * We are actually generating an array as well for easier consumption in storybook
  */
-const iconFolder = './src/components/ReadyapiIcon/icons/'
-const iconsFile = './src/components/ReadyapiIcon/icons/icons.ts'
+const iconFolder = './src/components/ScalarIcon/icons/'
+const iconsFile = './src/components/ScalarIcon/icons/icons.ts'
 const svgRegex = /\.svg$/
 const fileNames = readdirSync(iconFolder).filter((fileName) =>
   svgRegex.test(fileName),

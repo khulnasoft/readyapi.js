@@ -1,18 +1,18 @@
 <script setup lang="ts">
 import {
   type Icon,
-  ReadyapiSearchInput,
-  ReadyapiSearchResultItem,
-  ReadyapiSearchResultList,
-} from '@readyapi/components'
-import { type TransformedOperation } from '@readyapi/oas-utils'
-import type { OpenAPIV3_1 } from '@readyapi/openapi-parser'
-import { FlowModal, type ModalState } from '@readyapi/use-modal'
+  ScalarSearchInput,
+  ScalarSearchResultItem,
+  ScalarSearchResultList,
+} from '@scalar/components'
+import type { TransformedOperation } from '@scalar/oas-utils'
+import type { OpenAPIV3_1 } from '@scalar/openapi-parser'
+import { FlowModal, type ModalState } from '@scalar/use-modal'
 import { useMagicKeys, whenever } from '@vueuse/core'
 import Fuse from 'fuse.js'
 import { computed, ref, toRef, watch } from 'vue'
 
-import { getHeadingsFromMarkdown } from '../helpers'
+import { getHeadingsFromMarkdown, getModels } from '../helpers'
 import { extractRequestBody } from '../helpers/specHelpers'
 import { type ParamMap, useNavState, useOperation, useSidebar } from '../hooks'
 import type { Spec } from '../types'
@@ -185,7 +185,7 @@ watch(
     }
 
     // Adding models as well
-    const schemas = hideModels.value ? {} : props.parsedSpec.components?.schemas
+    const schemas = hideModels.value ? {} : getModels(props.parsedSpec)
     const modelData: FuseData[] = []
 
     if (schemas) {
@@ -313,14 +313,14 @@ function getFullUrlFromHash(href: string) {
     <div
       ref="searchModalRef"
       class="ref-search-container">
-      <ReadyapiSearchInput
+      <ScalarSearchInput
         v-model="searchText"
         @input="fuseSearch" />
     </div>
-    <ReadyapiSearchResultList
+    <ScalarSearchResultList
       class="ref-search-results custom-scroll"
       :noResults="!searchResultsWithPlaceholderResults.length">
-      <ReadyapiSearchResultItem
+      <ScalarSearchResultItem
         v-for="(entry, index) in searchResultsWithPlaceholderResults"
         :id="entry.item.href"
         :key="entry.refIndex"
@@ -348,9 +348,9 @@ function getFullUrlFromHash(href: string) {
           #addon>
           <SidebarHttpBadge :method="entry.item.httpVerb ?? 'get'" />
         </template>
-      </ReadyapiSearchResultItem>
+      </ScalarSearchResultItem>
       <template #query>{{ searchText }}</template>
-    </ReadyapiSearchResultList>
+    </ScalarSearchResultList>
     <div class="ref-search-meta">
       <span>↑↓ Navigate</span>
       <span>⏎ Select</span>
@@ -371,11 +371,11 @@ a {
   padding: 12px;
 }
 .ref-search-meta {
-  background: var(--readyapi-background-3);
+  background: var(--scalar-background-3);
   padding: 6px 12px;
-  font-size: var(--readyapi-font-size-4);
-  color: var(--readyapi-color-3);
-  font-weight: var(--readyapi-semibold);
+  font-size: var(--scalar-font-size-4);
+  color: var(--scalar-color-3);
+  font-weight: var(--scalar-semibold);
   display: flex;
   gap: 12px;
 }

@@ -11,13 +11,16 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
     strategy:
       matrix:
         node-version: [20]
 
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v3
+      - uses: pnpm/action-setup@v4
         with:
           version: 8
       - name: Use Node.js ${{ matrix.node-version }}
@@ -33,6 +36,8 @@ jobs:
         run: pnpm turbo build
       - name: Git Status
         run: git status
+      - name: Stash changes
+        run: git stash
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
@@ -49,15 +54,15 @@ jobs:
           # https://github.com/settings/tokens/new
           # Expiration: No expiration
           # Select: repo.*
-          GITHUB_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
           # https://www.npmjs.com/settings/YOUR_ACCOUNT_HANDLE/tokens/granular-access-tokens/new
           # Custom Expiration: 01-01-2100
           # Permissions: Read and Write
-          # Select packages: @readyapi
+          # Select packages: @scalar
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Send bundle stats and build information to RelativeCI
         uses: relative-ci/agent-action@v2
         with:
-          key: ${{ secrets.ORG_REPO_TOKEN }}
+          key: ${{ secrets.RELATIVE_CI_KEY }}
           token: ${{ secrets.GITHUB_TOKEN }}
           webpackStatsFile: ./packages/api-reference/dist/browser/webpack-stats.json

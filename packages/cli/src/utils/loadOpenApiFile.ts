@@ -1,4 +1,4 @@
-import { openapi } from '@readyapi/openapi-parser'
+import { openapi } from '@scalar/openapi-parser'
 import kleur from 'kleur'
 
 import { getFileOrUrl } from './getFileOrUrl'

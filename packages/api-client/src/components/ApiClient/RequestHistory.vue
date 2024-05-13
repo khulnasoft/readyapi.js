@@ -67,27 +67,27 @@ const { requestHistoryOrder } = useRequestStore()
   background-color: black;
 }
 .navtable-follow * {
-  font-family: var(--readyapi-font-code) !important;
+  font-family: var(--scalar-font-code) !important;
 }
 .navtable-table {
   position: relative;
   display: flex;
   flex-direction: column;
   min-height: 389px;
-  border-radius: var(--readyapi-radius);
-  border: 1px solid var(--readyapi-border-color);
+  border-radius: var(--scalar-radius);
+  border: 1px solid var(--scalar-border-color);
 }
 .navtable-radios {
   z-index: 1;
-  border-top: 1px solid var(--readyapi-border-color);
+  border-top: 1px solid var(--scalar-border-color);
 }
 .navtable-item {
   display: flex;
   position: relative;
-  color: var(--readyapi-color-1);
-  font-size: var(--readyapi-micro);
-  border-top: 1px solid var(--readyapi-border-color);
-  font-weight: var(--readyapi-semibold);
+  color: var(--scalar-color-1);
+  font-size: var(--scalar-micro);
+  border-top: 1px solid var(--scalar-border-color);
+  font-weight: var(--scalar-semibold);
 }
 .navtable-item:first-of-type {
   border-top: none;
@@ -96,13 +96,13 @@ const { requestHistoryOrder } = useRequestStore()
   word-wrap: break-word;
 }
 .navtable-item > div:not(:first-child) {
-  border-left: 1px solid var(--readyapi-border-color);
+  border-left: 1px solid var(--scalar-border-color);
 }
 .navtable-item-action {
-  color: var(--readyapi-color-2);
-  font-size: var(--readyapi-micro);
-  font-weight: var(--readyapi-bold);
-  background: var(--readyapi-api-client-bg3);
+  color: var(--scalar-color-2);
+  font-size: var(--scalar-micro);
+  font-weight: var(--scalar-bold);
+  background: var(--scalar-api-client-bg3);
   border: none;
   border-radius: 30px;
   appearance: none;
@@ -118,12 +118,12 @@ const { requestHistoryOrder } = useRequestStore()
   position: relative;
 }
 .navtable-item-action:hover {
-  color: var(--readyapi-color-1);
-  background: var(--readyapi-api-client-gradient);
-  box-shadow: 0 0 0 1px var(--readyapi-border-color);
+  color: var(--scalar-color-1);
+  background: var(--scalar-api-client-gradient);
+  box-shadow: 0 0 0 1px var(--scalar-border-color);
 }
 .navtable-item-action:focus {
-  background: var(--readyapi-background-2);
+  background: var(--scalar-background-2);
 }
 .navtable-item:hover,
 .navtable-item:focus-within .navtable-item-action {
@@ -133,33 +133,33 @@ const { requestHistoryOrder } = useRequestStore()
   display: flex;
   align-items: center;
   padding: 9px;
-  font-weight: var(--readyapi-bold);
+  font-weight: var(--scalar-bold);
   outline: none;
   border: none;
   appearance: none;
   background: transparent;
-  color: var(--readyapi-color-1);
+  color: var(--scalar-color-1);
 }
 .navtable-item-add:hover {
-  background: var(--readyapi-background-2);
+  background: var(--scalar-background-2);
   cursor: pointer;
 }
 .navtable-item-25 {
   width: 25%;
-  font-size: var(--readyapi-micro);
+  font-size: var(--scalar-micro);
   display: flex;
   align-items: center;
 }
 .navtable-item-33 {
   width: 33.33333%;
   display: flex;
-  font-size: var(--readyapi-micro);
+  font-size: var(--scalar-micro);
   align-items: center;
 }
 .navtable-item-66 {
   width: 66.6666%;
   display: flex;
-  font-size: var(--readyapi-micro);
+  font-size: var(--scalar-micro);
   align-items: center;
 }
 .navtable-item-75 {
@@ -168,7 +168,7 @@ const { requestHistoryOrder } = useRequestStore()
   align-items: center;
 }
 .navtable-item-75:focus-within {
-  background: var(--readyapi-background-2);
+  background: var(--scalar-background-2);
 }
 .navtable-item-40 {
   width: 40%;
@@ -188,7 +188,7 @@ const { requestHistoryOrder } = useRequestStore()
   align-items: center;
 }
 .navtable-item-50:focus-within {
-  background: var(--readyapi-background-2);
+  background: var(--scalar-background-2);
 }
 .navtable-item p {
   padding: 9px;
@@ -198,13 +198,13 @@ const { requestHistoryOrder } = useRequestStore()
   border: none;
   outline: none;
   appearance: none;
-  font-size: var(--readyapi-micro);
-  color: var(--readyapi-color-1);
+  font-size: var(--scalar-micro);
+  color: var(--scalar-color-1);
   background: transparent;
   width: 100%;
 }
 .navtable-item input:focus {
-  background: var(--readyapi-background-2);
+  background: var(--scalar-background-2);
 }
 .navtable-item-select {
   position: relative;
@@ -213,7 +213,7 @@ const { requestHistoryOrder } = useRequestStore()
   background: transparent;
   outline: none;
   border: none;
-  font-size: var(--readyapi-micro);
+  font-size: var(--scalar-micro);
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -222,26 +222,26 @@ const { requestHistoryOrder } = useRequestStore()
   top: 0;
   position: relative;
   cursor: pointer;
-  color: var(--readyapi-color-2);
+  color: var(--scalar-color-2);
 }
 .navtable-item-select svg {
   position: absolute;
   right: 6px;
-  color: var(--readyapi-color-ghost);
+  color: var(--scalar-color-ghost);
   width: 6px;
   top: 12px;
   pointer-events: none;
 }
 .navtable-item .option {
   padding: 12px 6px;
-  font-size: var(--readyapi-micro);
-  color: var(--readyapi-color-1);
+  font-size: var(--scalar-micro);
+  color: var(--scalar-color-1);
   width: 100%;
 }
 .navtable-item label {
-  color: var(--readyapi-color-3);
-  font-size: var(--readyapi-micro);
-  font-weight: var(--readyapi-semibold);
+  color: var(--scalar-color-3);
+  font-size: var(--scalar-micro);
+  font-weight: var(--scalar-semibold);
   text-transform: uppercase;
   display: block;
   width: 100%;
@@ -250,7 +250,7 @@ const { requestHistoryOrder } = useRequestStore()
   padding: 0 9px;
 }
 .navtable-item-response span {
-  font-size: var(--readyapi-micro);
+  font-size: var(--scalar-micro);
   display: flex;
   align-items: center;
   margin-right: 9px;
@@ -267,12 +267,12 @@ const { requestHistoryOrder } = useRequestStore()
   flex: 1;
   position: relative;
   z-index: 0;
-  border-top: 1px solid var(--readyapi-border-color);
+  border-top: 1px solid var(--scalar-border-color);
   background: repeating-linear-gradient(
-    var(--readyapi-background-1),
-    var(--readyapi-background-1) 34.8px,
-    var(--readyapi-border-color) 34.8px,
-    var(--readyapi-border-color) 35.8px
+    var(--scalar-background-1),
+    var(--scalar-background-1) 34.8px,
+    var(--scalar-border-color) 34.8px,
+    var(--scalar-border-color) 35.8px
   );
 }
 .navtable-mock .navtable-item {
@@ -314,7 +314,7 @@ const { requestHistoryOrder } = useRequestStore()
 .navtable-item__active:before {
   content: '';
   display: block;
-  box-shadow: 0 0 0 1px var(--readyapi-color-1) !important;
+  box-shadow: 0 0 0 1px var(--scalar-color-1) !important;
   width: 100%;
   position: absolute;
   top: 0;
@@ -322,25 +322,25 @@ const { requestHistoryOrder } = useRequestStore()
   height: 100%;
 }
 .radio.post {
-  background: var(--readyapi-color-green);
+  background: var(--scalar-color-green);
 }
 .radio.delete {
-  background: var(--readyapi-color-red);
+  background: var(--scalar-color-red);
 }
 .radio.patch {
-  background: var(--readyapi-color-yellow);
+  background: var(--scalar-color-yellow);
 }
 .radio.get {
-  background: var(--readyapi-color-blue);
+  background: var(--scalar-color-blue);
 }
 .radio.put {
-  background: var(--readyapi-color-orange);
+  background: var(--scalar-color-orange);
 }
 .navtable-item-request span {
   border: none;
   outline: none;
-  font-size: var(--readyapi-micro);
-  color: var(--readyapi-color-1);
+  font-size: var(--scalar-micro);
+  color: var(--scalar-color-1);
   width: 100%;
   display: block;
   overflow: hidden;
@@ -350,10 +350,10 @@ const { requestHistoryOrder } = useRequestStore()
 .navtable-item-request span em {
   text-transform: uppercase;
   font-style: normal;
-  font-family: var(--readyapi-font-code);
-  font-size: var(--readyapi-micro);
+  font-family: var(--scalar-font-code);
+  font-size: var(--scalar-micro);
   margin-right: 6px;
-  font-weight: var(--readyapi-semibold);
-  color: var(--readyapi-color-3);
+  font-weight: var(--scalar-semibold);
+  color: var(--scalar-color-3);
 }
 </style>

@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import type { ContentType, RequestBody } from '@readyapi/oas-utils'
+import type { ContentType, RequestBody } from '@scalar/oas-utils'
 import { computed, ref } from 'vue'
 
+import { MarkdownRenderer } from '../../MarkdownRenderer'
 import { Schema } from '../Schema'
 
 const prop = defineProps<{ requestBody?: RequestBody }>()
@@ -39,6 +40,11 @@ if (prop.requestBody?.content) {
           </option>
         </select>
       </div>
+      <div
+        v-if="prop?.requestBody.description"
+        class="request-body-description">
+        <MarkdownRenderer :value="prop.requestBody.description" />
+      </div>
     </div>
     <div
       v-if="prop?.requestBody.content?.[selectedContentType]"
@@ -55,20 +61,21 @@ if (prop.requestBody?.content) {
 .request-body-title {
   display: flex;
   align-items: center;
-  font-size: var(--readyapi-heading-4);
-  font-weight: var(--readyapi-semibold);
-  color: var(--readyapi-color-1);
+  font-size: var(--scalar-heading-4);
+  font-weight: var(--scalar-semibold);
+  color: var(--scalar-color-1);
   line-height: 1.45;
   margin-top: 24px;
   padding-bottom: 12px;
-  border-bottom: 1px solid var(--readyapi-border-color);
+  border-bottom: 1px solid var(--scalar-border-color);
+  flex-flow: wrap;
 }
 .request-body-title-select {
   position: relative;
   padding-left: 9px;
   height: fit-content;
-  color: var(--readyapi-color-2);
-  font-size: var(--readyapi-font-size-3);
+  color: var(--scalar-color-2);
+  font-size: var(--scalar-font-size-3);
   display: flex;
   align-items: center;
 }
@@ -95,8 +102,8 @@ if (prop.requestBody?.content) {
   border: none;
   outline: none;
   cursor: pointer;
-  background: var(--readyapi-background-3);
-  box-shadow: -2px 0 0 0 var(--readyapi-background-3);
+  background: var(--scalar-background-3);
+  box-shadow: -2px 0 0 0 var(--scalar-background-3);
   position: absolute;
   top: 0;
   left: 0;
@@ -106,7 +113,15 @@ if (prop.requestBody?.content) {
   appearance: none;
 }
 .request-body-title-select:hover {
-  color: var(--readyapi-color-1);
+  color: var(--scalar-color-1);
+}
+.request-body-description {
+  margin-top: 6px;
+  font-size: var(--scalar-small);
+  width: 100%;
+}
+.request-body-description :deep(.markdown) * {
+  color: var(--scalar-color-2) !important;
 }
 @media (max-width: 460px) {
   .request-body-title-select {

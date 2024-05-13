@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CodeMirror } from '@readyapi/use-codemirror'
+import { CodeMirror } from '@scalar/use-codemirror'
 
 import { useRequestStore } from '../../../stores'
 import { CollapsibleSection } from '../../CollapsibleSection'

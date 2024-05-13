@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { type OpenAPIV2 } from '@readyapi/openapi-parser'
+import type { OpenAPIV2 } from '@scalar/openapi-parser'
 
 defineProps<{
   value: OpenAPIV2.SchemaObject
@@ -35,9 +35,9 @@ defineProps<{
 <style scoped>
 /* Style the "icon" */
 .schema-type-icon {
-  color: var(--readyapi-color-1);
+  color: var(--scalar-color-1);
 }
 .schema-type {
-  font-family: var(--readyapi-font-code);
+  font-family: var(--scalar-font-code);
 }
 </style>

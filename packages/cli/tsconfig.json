@@ -11,7 +11,7 @@
     "outDir": "dist",
     "sourceMap": false,
     "paths": {
-      "@readyapi/mock-server": ["../packages/mock-server/*"]
+      "@scalar/mock-server": ["../packages/mock-server/*"]
     }
   },
   "include": ["src/**/*", "./package.json", "tests/**/*", "vite.config.ts"]

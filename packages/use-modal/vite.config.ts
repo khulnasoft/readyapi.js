@@ -10,7 +10,7 @@ export default defineConfig({
     minify: false,
     lib: {
       entry: ['src/index.ts'],
-      name: '@readyapi/use-modal',
+      name: '@scalar/use-modal',
       fileName: 'index',
       formats: ['es'],
     },

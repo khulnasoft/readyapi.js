@@ -13,7 +13,7 @@ const readline = createInterface({
   output: process.stdout,
 })
 const name = await readline.question(
-  `Package name (do not add @readyapi prefix): `,
+  `Package name (do not add @scalar prefix): `,
 )
 const description = await readline.question(`Package description: `)
 const keywords = await readline.question(`Package keywords (comma separated): `)
@@ -25,7 +25,7 @@ const useVue = (await readline.question(`Include Vue (y/n): `))
 // Create the new package file with appropriate commands
 const newPackageFile: Record<string, any> = {
   ...pkg,
-  name: `@readyapi/${name}`,
+  name: `@scalar/${name}`,
   description,
   keywords: keywords.split(',').map((k) => k.trim()),
   repository: {

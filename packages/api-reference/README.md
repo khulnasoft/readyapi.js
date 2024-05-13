@@ -1,26 +1,26 @@
-# Ready API Reference
+# Scalar API Reference
 
-[![Version](https://img.shields.io/npm/v/%40readyapi/api-reference)](https://www.npmjs.com/package/@readyapi/api-reference)
-[![Downloads](https://img.shields.io/npm/dm/%40readyapi/api-reference)](https://www.npmjs.com/package/@readyapi/api-reference)
-[![Hits on jsdelivr](https://img.shields.io/jsdelivr/npm/hm/%40readyapi%2Fapi-reference)](https://www.jsdelivr.com/package/npm/@readyapi/api-reference)
-[![License](https://img.shields.io/npm/l/%40readyapi%2Fapi-reference)](https://www.npmjs.com/package/@readyapi/api-reference)
-[![Discord](https://img.shields.io/discord/1135330207960678410?style=flat&color=5865F2)](https://discord.gg/8HeZcRGPFS)
+[![Version](https://img.shields.io/npm/v/%40scalar/api-reference)](https://www.npmjs.com/package/@scalar/api-reference)
+[![Downloads](https://img.shields.io/npm/dm/%40scalar/api-reference)](https://www.npmjs.com/package/@scalar/api-reference)
+[![Hits on jsdelivr](https://img.shields.io/jsdelivr/npm/hm/%40scalar%2Fapi-reference)](https://www.jsdelivr.com/package/npm/@scalar/api-reference)
+[![License](https://img.shields.io/npm/l/%40scalar%2Fapi-reference)](https://www.npmjs.com/package/@scalar/api-reference)
+[![Discord](https://img.shields.io/discord/1135330207960678410?style=flat&color=5865F2)](https://discord.gg/scalar)
 
-Generate interactive API documentations from Swagger files. [Try our Demo](https://docs.ready-api.khulnasoft.com/swagger-editor)
+Generate interactive API documentations from Swagger files. [Try our Demo](https://docs.scalar.com/swagger-editor)
 
-[![Screenshot of an API Reference](https://github.com/khulnasoft/readyapi.js/assets/6201407/d8beb5e1-bf64-4589-8cb0-992ba79215a8)](https://docs.ready-api.khulnasoft.com/swagger-editor)
+[![Screenshot of an API Reference](https://github.com/scalar/scalar/assets/6201407/d8beb5e1-bf64-4589-8cb0-992ba79215a8)](https://docs.scalar.com/swagger-editor)
 
 ## Installation
 
 ```bash
-npm install @readyapi/api-reference
+npm install @scalar/api-reference
 ```
 
 ## Usage
 
 ```vue
 <script setup>
-import { ApiReference } from '@readyapi/api-reference'
+import { ApiReference } from '@scalar/api-reference'
 </script>
 
 <template>
@@ -28,7 +28,7 @@ import { ApiReference } from '@readyapi/api-reference'
 </template>
 ```
 
-You can even [mount the component in React](https://github.com/khulnasoft/readyapi.js/blob/main/examples/react/src/App.tsx).
+You can even [mount the component in React](https://github.com/scalar/scalar/blob/main/examples/react/src/App.tsx).
 
 ## Configuration
 
@@ -66,13 +66,11 @@ Making requests to other domains is restricted in the browser and requires [CORS
 <ApiReference :configuration="{ proxy: 'https://proxy.example.com' }" />
 ```
 
-ℹ️ You can use [@readyapi/api-client-proxy](https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-client-proxy) to host your own proxy or you can just use ours:
+ℹ️ You can use [@scalar/api-client-proxy](https://github.com/scalar/scalar/tree/main/packages/api-client-proxy) to host your own proxy or you can just use ours:
 
 ```vue
 <ApiReference
-  :configuration="{
-    proxy: 'https://api.ready-api.khulnasoft.com/request-proxy',
-  }" />
+  :configuration="{ proxy: 'https://api.scalar.com/request-proxy' }" />
 ```
 
 #### showSidebar?: boolean
@@ -85,7 +83,7 @@ Whether the sidebar should be shown.
 
 #### hideModels?: boolean
 
-Whether models (components.schemas) should be shown in the sidebar, search and content.
+Whether models (`components.schemas` or `definitions`) should be shown in the sidebar, search and content.
 
 `@default false`
 
@@ -173,7 +171,7 @@ You can listen to spec changes with onSpecUpdate that runs on spec/swagger conte
 
 To make authentication easier you can prefill the credentials for your users:
 
-````vue
+```vue
 <ApiReference :configuration="{
   authentication: {
       // The OpenAPI file has keys for all security schemes:
@@ -185,7 +183,7 @@ To make authentication easier you can prefill the credentials for your users:
       },
     },
   } />
-``
+```
 
 For OpenAuth2 it’s more looking like this:
 
@@ -194,12 +192,12 @@ For OpenAuth2 it’s more looking like this:
   authentication: {
       // The OpenAPI file has keys for all security schemes
       // Which one should be used by default?
-      preferredSecurityScheme: 'petstore_auth',
+      preferredSecurityScheme: 'planets_auth',
       // The `petstore_auth` security scheme is of type `oAuth2`, so prefill the client id and the scopes:
       oAuth2: {
         clientId: 'foobar123',
         // optional:
-        scopes: ['read:pets', 'write:pets'],
+        scopes: ['read:planets', 'write:planets'],
       },
     },
   } />
@@ -214,4 +212,3 @@ By default we’re using Inter and JetBrains Mono, served by Google Fonts. If yo
   withDefaultFonts: false
 } />
 ```
-````

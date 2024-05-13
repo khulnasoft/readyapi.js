@@ -1,43 +1,43 @@
 <script setup lang="ts">
-import { type CardContentProps } from './types'
+import type { CardContentProps } from './types'
 
 defineProps<CardContentProps>()
 </script>
 <template>
   <div
-    class="readyapi-card-content"
+    class="scalar-card-content"
     :class="{
-      'readyapi-card--muted': muted,
-      'readyapi-card--contrast': contrast,
-      'readyapi-card--frameless': frameless,
-      'readyapi-card--transparent': transparent,
-      'readyapi-card--borderless': borderless,
+      'scalar-card--muted': muted,
+      'scalar-card--contrast': contrast,
+      'scalar-card--frameless': frameless,
+      'scalar-card--transparent': transparent,
+      'scalar-card--borderless': borderless,
     }">
     <slot />
   </div>
 </template>
 <style scoped>
-.readyapi-card-content {
+.scalar-card-content {
   overflow: auto;
-  border-bottom: 1px solid var(--readyapi-border-color);
+  border-bottom: 1px solid var(--scalar-border-color);
 }
-.readyapi-card-content :deep(.simple-table .simple-header) {
+.scalar-card-content :deep(.simple-table .simple-header) {
   display: none;
 }
-.readyapi-card-content:last-of-type,
-.readyapi-card-content.readyapi-card--borderless {
+.scalar-card-content:last-of-type,
+.scalar-card-content.scalar-card--borderless {
   border-bottom: none;
 }
-.readyapi-card--muted {
-  background: var(--readyapi-background-2);
+.scalar-card--muted {
+  background: var(--scalar-background-2);
 }
-.readyapi-card--contrast {
-  background: var(--readyapi-background-3);
+.scalar-card--contrast {
+  background: var(--scalar-background-3);
 }
-.readyapi-card--frameless {
+.scalar-card--frameless {
   padding: 0;
 }
-.readyapi-card--transparent {
-  background: var(--readyapi-background-1);
+.scalar-card--transparent {
+  background: var(--scalar-background-1);
 }
 </style>

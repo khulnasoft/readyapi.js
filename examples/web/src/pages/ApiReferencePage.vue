@@ -4,7 +4,7 @@ import {
   type ReferenceConfiguration,
   type Spec,
   parse,
-} from '@readyapi/api-reference'
+} from '@scalar/api-reference'
 import { asyncComputed } from '@vueuse/core'
 import { computed, onMounted, reactive, ref, watch } from 'vue'
 
@@ -81,7 +81,7 @@ const parsedSpec = asyncComputed(
     :configuration="configuration"
     :parsedSpec="parsedSpec"
     :rawSpec="content"
-    @changeTheme="configuration.theme = $event"
+    @changeTheme="configuration.theme = $event.id"
     @updateContent="(v) => (content = v)">
     <template #header>
       <DevToolbar>

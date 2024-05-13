@@ -7,7 +7,7 @@ export function getHtmlDocument(
   return `<!doctype html>
     <html>
       <head>
-        <title>API Reference</title>
+        <title>Scalar API Reference</title>
         <meta charset="utf-8" />
         <meta
           name="viewport"
@@ -35,10 +35,10 @@ export function getHtmlDocument(
         <script
           id="api-reference"
           type="application/json"
-          data-proxy-url="https://api.ready-api.khulnasoft.com/request-proxy">${JSON.stringify(
+          data-proxy-url="https://api.scalar.com/request-proxy">${JSON.stringify(
             specification,
           )}</script>
-        <script src="https://cdn.jsdelivr.net/npm/@readyapi/api-reference"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference"></script>
       </body>
     </html>`
 }

@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import { provideUseId } from '@headlessui/vue'
-import { type SSRState, defaultStateFactory } from '@readyapi/oas-utils'
 import {
   ResetStyles,
   ScrollbarStyles,
   type ThemeId,
   ThemeStyles,
 } from '@readyapi/themes'
+import { ScalarToasts } from '@readyapi/use-toasts'
+import { type SSRState, defaultStateFactory } from '@scalar/oas-utils'
 import { useDebounceFn, useMediaQuery, useResizeObserver } from '@vueuse/core'
 import {
   computed,
@@ -17,8 +18,8 @@ import {
   provide,
   ref,
   useSSRContext,
+  watch,
 } from 'vue'
-import { toast } from 'vue-sonner'
 
 import {
   GLOBAL_SECURITY_SYMBOL,
@@ -28,8 +29,7 @@ import {
   scrollToId,
   sleep,
 } from '../helpers'
-import { useNavState, useSidebar } from '../hooks'
-import { useToasts } from '../hooks/useToasts'
+import { useDeprecationWarnings, useNavState, useSidebar } from '../hooks'
 import type {
   ReferenceLayoutProps,
   ReferenceLayoutSlot,
@@ -37,14 +37,13 @@ import type {
 } from '../types'
 import { default as ApiClientModal } from './ApiClientModal.vue'
 import { Content } from './Content'
-import CustomToaster from './CustomToaster.vue'
 import GettingStarted from './GettingStarted.vue'
 import { Sidebar } from './Sidebar'
 
 const props = defineProps<Omit<ReferenceLayoutProps, 'isDark'>>()
 
 defineEmits<{
-  (e: 'changeTheme', value: ThemeId): void
+  (e: 'changeTheme', { id, label }: { id: ThemeId; label: string }): void
   (e: 'updateContent', value: string): void
   (e: 'loadSwaggerFile'): void
   (e: 'linkSwaggerFile'): void
@@ -53,12 +52,6 @@ defineEmits<{
 
 defineOptions({
   inheritAttrs: false,
-})
-
-// Configure Reference toasts to use vue-sonner
-const { initializeToasts } = useToasts()
-initializeToasts((message) => {
-  toast(message)
 })
 
 defineSlots<{
@@ -80,6 +73,7 @@ const {
   isSidebarOpen,
   setCollapsedSidebarItem,
   hideModels,
+  setParsedSpec,
 } = useSidebar()
 
 const {
@@ -111,7 +105,9 @@ const scrollToSection = async (id?: string) => {
 
 onMounted(() => {
   // Enable the spec download event bus
-  downloadSpecBus.on(() => downloadSpecFile(props.rawSpec))
+  downloadSpecBus.on(({ specTitle }) => {
+    downloadSpecFile(props.rawSpec, specTitle)
+  })
 
   // This is what updates the hash ref from hash changes
   window.onhashchange = () =>
@@ -145,6 +141,9 @@ const referenceSlotProps = computed<ReferenceSlotProps>(() => ({
   breadcrumb: breadcrumb.value,
   spec: props.parsedSpec,
 }))
+
+// Keep the parsed spec up to date
+watch(() => props.parsedSpec, setParsedSpec, { deep: true })
 
 // Initialize the server state
 onServerPrefetch(() => {
@@ -185,7 +184,7 @@ onServerPrefetch(() => {
  */
 provideUseId(() => {
   const instance = getCurrentInstance()
-  const ATTR_KEY = 'readyapi-instance-id'
+  const ATTR_KEY = 'scalar-instance-id'
 
   if (!instance) return ATTR_KEY
   let instanceId = instance.uid
@@ -210,6 +209,8 @@ provide(
 )
 
 hideModels.value = props.configuration.hideModels ?? false
+
+useDeprecationWarnings(props.configuration)
 </script>
 <template>
   <ThemeStyles
@@ -219,7 +220,7 @@ hideModels.value = props.configuration.hideModels ?? false
     <ScrollbarStyles v-slot="{ styles: scrollbars }">
       <div
         ref="documentEl"
-        class="readyapi-api-reference references-layout"
+        class="scalar-api-reference references-layout"
         :class="[
           {
             'references-editable': configuration.isEditable,
@@ -309,7 +310,7 @@ hideModels.value = props.configuration.hideModels ?? false
           </div>
         </template>
         <!-- REST API Client Overlay -->
-        <!-- Fonts are fetched by @readyapi/api-reference already, we can safely set `withDefaultFonts: false` -->
+        <!-- Fonts are fetched by @scalar/api-reference already, we can safely set `withDefaultFonts: false` -->
         <ApiClientModal
           :parsedSpec="parsedSpec"
           :proxyUrl="configuration?.proxy">
@@ -327,20 +328,19 @@ hideModels.value = props.configuration.hideModels ?? false
       </div>
     </ScrollbarStyles>
   </ResetStyles>
-  <!-- Initialize the vue-sonner instance -->
-  <CustomToaster />
+  <ScalarToasts />
 </template>
 <style scoped>
 /* Configurable Layout Variables */
-.readyapi-api-reference {
-  --refs-sidebar-width: var(--readyapi-sidebar-width, 0px);
-  --refs-header-height: var(--readyapi-header-height, 0px);
-  --refs-content-max-width: var(--readyapi-content-max-width, 1540px);
+.scalar-api-reference {
+  --refs-sidebar-width: var(--scalar-sidebar-width, 0px);
+  --refs-header-height: var(--scalar-header-height, 0px);
+  --refs-content-max-width: var(--scalar-content-max-width, 1540px);
 }
 
-.readyapi-api-reference.references-classic {
+.scalar-api-reference.references-classic {
   /* Classic layout is wider */
-  --refs-content-max-width: var(--readyapi-content-max-width, 1420px);
+  --refs-content-max-width: var(--scalar-content-max-width, 1420px);
   min-height: 100dvh;
 }
 
@@ -374,7 +374,7 @@ hideModels.value = props.configuration.hideModels ?? false
     'navigation rendered'
     'footer footer';
 
-  background: var(--readyapi-background-1);
+  background: var(--scalar-background-1);
 }
 
 .references-header {
@@ -390,7 +390,7 @@ hideModels.value = props.configuration.hideModels ?? false
   grid-area: editor;
   display: flex;
   min-width: 0;
-  background: var(--readyapi-background-1);
+  background: var(--scalar-background-1);
   z-index: 1;
 }
 
@@ -402,9 +402,9 @@ hideModels.value = props.configuration.hideModels ?? false
   position: relative;
   grid-area: rendered;
   min-width: 0;
-  background: var(--readyapi-background-1);
+  background: var(--scalar-background-1);
 }
-.readyapi-api-reference.references-classic,
+.scalar-api-reference.references-classic,
 .references-classic .references-rendered {
   --full-height: fit-content !important;
   height: initial !important;
@@ -414,7 +414,7 @@ hideModels.value = props.configuration.hideModels ?? false
   position: sticky;
   top: var(--refs-header-height);
   height: calc(var(--full-height) - var(--refs-header-height));
-  background: var(--readyapi-sidebar-background-1 var(--readyapi-background-1));
+  background: var(--scalar-sidebar-background-1 var(--scalar-background-1));
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -441,7 +441,7 @@ hideModels.value = props.configuration.hideModels ?? false
 
 .references-sidebar {
   /* Set a default width if references are enabled */
-  --refs-sidebar-width: var(--readyapi-sidebar-width, 280px);
+  --refs-sidebar-width: var(--scalar-sidebar-width, 280px);
 }
 
 /* Footer */
@@ -511,7 +511,7 @@ hideModels.value = props.configuration.hideModels ?? false
     height: calc(var(--full-height) - var(--refs-header-height) + 1px);
     width: 100%;
 
-    border-top: 1px solid var(--readyapi-border-color);
+    border-top: 1px solid var(--scalar-border-color);
     display: flex;
     flex-direction: column;
   }

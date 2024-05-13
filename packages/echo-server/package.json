@@ -3,14 +3,19 @@
   "description": "an express server which replies with the request data",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "homepage": "https://github.com/scalar/scalar",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khulnasoft/readyapi.js",
+    "directory": "packages/echo-server"
+  },
   "keywords": [
     "express",
     "server",
     "test"
   ],
-  "version": "0.0.1",
+  "version": "0.6.4",
   "engines": {
     "node": ">=18"
   },
@@ -34,26 +39,21 @@
     "CHANGELOG.md"
   ],
   "module": "./dist/index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.js.git",
-    "directory": "packages/echo-server"
-  },
   "dependencies": {
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "express": "^4.19.2"
   },
   "devDependencies": {
-    "@types/cookie-parser": "^1.4.7",
-    "@types/cors": "^2.8.17",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/cors": "^2.8.13",
     "@types/express": "^4.17.21",
-    "@vitest/coverage-v8": "^1.5.2",
-    "nodemon": "^3.1.0",
+    "@vitest/coverage-v8": "^1.5.0",
+    "nodemon": "^3.0.1",
     "tsc-alias": "^1.8.8",
-    "typescript": "^5.4.5",
+    "typescript": "^5.4.3",
     "vite": "^5.2.10",
-    "vite-node": "^1.5.2",
-    "vitest": "^1.5.2"
+    "vite-node": "^1.3.1",
+    "vitest": "^1.5.0"
   }
 }

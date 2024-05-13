@@ -3,7 +3,7 @@ import { useMediaQuery } from '@vueuse/core'
 import { watch } from 'vue'
 
 import { useNavState, useSidebar } from '../../hooks'
-import { type ReferenceLayoutProps, type ReferenceSlots } from '../../types'
+import type { ReferenceLayoutProps, ReferenceSlots } from '../../types'
 import ApiReferenceLayout from '../ApiReferenceLayout.vue'
 import { DarkModeToggle } from '../DarkModeToggle'
 import MobileHeader from '../MobileHeader.vue'
@@ -34,7 +34,7 @@ watch(hash, (newHash, oldHash) => {
 <template>
   <ApiReferenceLayout
     :class="{
-      'readyapi-api-references-standalone-mobile': configuration.showSidebar,
+      'scalar-api-references-standalone-mobile': configuration.showSidebar,
     }"
     :configuration="configuration"
     :parsedSpec="parsedSpec"
@@ -45,7 +45,7 @@ watch(hash, (newHash, oldHash) => {
         v-model:open="isSidebarOpen" />
     </template>
     <template #sidebar-start="{ spec }">
-      <div class="readyapi-api-references-standalone-search">
+      <div class="scalar-api-references-standalone-search">
         <SearchButton
           :searchHotKey="props.configuration?.searchHotKey"
           :spec="spec" />
@@ -62,13 +62,13 @@ watch(hash, (newHash, oldHash) => {
 </template>
 <style>
 @media (max-width: 1000px) {
-  .readyapi-api-references-standalone-mobile {
-    --readyapi-header-height: 50px;
+  .scalar-api-references-standalone-mobile {
+    --scalar-header-height: 50px;
   }
 }
 </style>
 <style scoped>
-.readyapi-api-references-standalone-search {
+.scalar-api-references-standalone-search {
   display: flex;
   flex-direction: column;
   padding: 12px 12px 6px 12px;

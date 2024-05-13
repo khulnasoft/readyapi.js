@@ -1,21 +1,21 @@
-# Ready API Client
+# Scalar API Client
 
-[![Version](https://img.shields.io/npm/v/%40readyapi/api-client)](https://www.npmjs.com/package/@readyapi/api-client)
-[![Downloads](https://img.shields.io/npm/dm/%40readyapi/api-client)](https://www.npmjs.com/package/@readyapi/api-client)
-[![License](https://img.shields.io/npm/l/%40readyapi%2Fapi-client)](https://www.npmjs.com/package/@readyapi/api-client)
-[![Discord](https://img.shields.io/discord/1135330207960678410?style=flat&color=5865F2)](https://discord.gg/8HeZcRGPFS)
+[![Version](https://img.shields.io/npm/v/%40scalar/api-client)](https://www.npmjs.com/package/@scalar/api-client)
+[![Downloads](https://img.shields.io/npm/dm/%40scalar/api-client)](https://www.npmjs.com/package/@scalar/api-client)
+[![License](https://img.shields.io/npm/l/%40scalar%2Fapi-client)](https://www.npmjs.com/package/@scalar/api-client)
+[![Discord](https://img.shields.io/discord/1135330207960678410?style=flat&color=5865F2)](https://discord.gg/scalar)
 
 ## Installation
 
 ```bash
-npm install @readyapi/api-client
+npm install @scalar/api-client
 ```
 
 ## Usage
 
 ```vue
 <script setup>
-import { ApiClient } from '@readyapi/api-client'
+import { ApiClient } from '@scalar/api-client'
 </script>
 
 <template>
@@ -27,7 +27,7 @@ import { ApiClient } from '@readyapi/api-client'
 
 ### proxyUrl?: string
 
-Pass an URL of [a request proxy](https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-client-proxy) to avoid CORS issues.
+Pass an URL of [a request proxy](https://github.com/scalar/scalar/tree/main/packages/api-client-proxy) to avoid CORS issues.
 
 ## Composable
 
@@ -55,7 +55,7 @@ console.log(activeRequest)
 const { setActiveRequest } = useRequestStore()
 
 setActiveRequest({
-  url: 'https://echo.ready-api.khulnasoft.com'
+  url: 'https://echo.scalar.com'
   type: 'GET,
   path: '/foobar'
 })

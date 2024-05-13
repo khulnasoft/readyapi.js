@@ -2,12 +2,12 @@
   "$schema": "https://unpkg.com/@changesets/config@2.3.1/schema.json",
   "changelog": "@changesets/cli/changelog",
   "commit": ["@changesets/cli/commit", { "skipCI": false }],
-  "fixed": [],
-  "linked": [
-    ["@readyapi/api-reference", "@readyapi/fastify-api-reference"]
+  "fixed": [
+    ["@scalar/api-reference", "@readyapi/fastify-api-reference"]
   ],
+  "linked": [],
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["@readyapi-examples/*"]
+  "ignore": ["@readyapi-examples/*", "playwright"]
 }

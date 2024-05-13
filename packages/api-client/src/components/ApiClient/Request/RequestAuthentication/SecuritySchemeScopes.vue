@@ -6,8 +6,8 @@ import {
   ListboxOption,
   ListboxOptions,
 } from '@headlessui/vue'
-import { ReadyapiIcon } from '@readyapi/components'
 import { ResetStyles } from '@readyapi/themes'
+import { ScalarIcon } from '@scalar/components'
 import { computed, ref } from 'vue'
 
 import { Badge } from '../../../Badge'
@@ -47,13 +47,11 @@ const model = computed({
       :class="{ 'wrapper-open': open }">
       <ListboxButton :as="CardFormButton">
         <div class="scopes-label">
-          <ReadyapiIcon
+          Scopes
+          {{ model.length }}<em>/</em>{{ Object.entries(scopes).length }}
+          <ScalarIcon
             :icon="open ? 'ChevronUp' : 'ChevronDown'"
             size="sm" />
-          Scopes
-          <Badge class="scopes-label-badge">
-            {{ model.length }}<em>|</em>{{ Object.entries(scopes).length }}
-          </Badge>
         </div>
       </ListboxButton>
     </div>
@@ -107,17 +105,16 @@ const model = computed({
 }
 .scopes-label-badge em {
   transform: rotate(10deg) translate(0, -0.9px);
-  color: var(--readyapi-color-3);
 }
 .floating {
   position: relative;
   z-index: 1010;
 }
 .dropdown {
-  background: var(--readyapi-background-1);
-  filter: brightness(var(--readyapi-lifted-brightness));
-  border-radius: var(--readyapi-radius);
-  box-shadow: var(--readyapi-shadow-2);
+  background: var(--scalar-background-1);
+  filter: brightness(var(--scalar-lifted-brightness));
+  border-radius: var(--scalar-radius);
+  box-shadow: var(--scalar-shadow-2);
   padding: 4px;
   font-style: normal;
 
@@ -137,26 +134,26 @@ const model = computed({
   row-gap: 2px;
   column-gap: 8px;
 
-  border-radius: var(--readyapi-radius);
+  border-radius: var(--scalar-radius);
 
-  font-size: var(--readyapi-mini);
+  font-size: var(--scalar-mini);
 
   cursor: pointer;
 }
 .dropdown-item[data-headlessui-state='active'],
 .dropdown-item[data-headlessui-state='active selected'] {
-  background: var(--readyapi-background-2);
+  background: var(--scalar-background-2);
 }
 .dropdown-item-title {
   grid-area: title;
 
-  color: var(--readyapi-color-1);
-  font-weight: var(--readyapi-semibold);
+  color: var(--scalar-color-1);
+  font-weight: var(--scalar-semibold);
 }
 .dropdown-item-description {
   grid-area: description;
 
-  color: var(--readyapi-color-2);
+  color: var(--scalar-color-2);
   line-height: initial;
 }
 .dropdown-item-check {
@@ -168,10 +165,10 @@ const model = computed({
   width: 20px;
   height: 20px;
 
-  color: var(--readyapi-color-2);
-  background: var(--readyapi-background-1);
-  border: 1px solid var(--readyapi-border-color);
-  border-radius: var(--readyapi-radius);
+  color: var(--scalar-color-2);
+  background: var(--scalar-background-1);
+  border: 1px solid var(--scalar-border-color);
+  border-radius: var(--scalar-radius);
 }
 .dropdown-item-check:checked:after {
   content: '';
@@ -185,8 +182,8 @@ const model = computed({
   transform: translate(-50%, -50%) rotate(45deg);
 }
 .dropdown-item-check:checked {
-  background: var(--readyapi-color-accent);
-  color: var(--readyapi-background-1);
+  background: var(--scalar-color-accent);
+  color: var(--scalar-background-1);
   border: 1px solid currentColor;
 }
 </style>

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import CardContent from './CardContent.vue'
-import { type CardContentProps } from './types'
+import type { CardContentProps } from './types'
 
 // eslint-disable-next-line vue/no-unused-properties
 const props = defineProps<CardContentProps>()
@@ -11,7 +11,7 @@ const props = defineProps<CardContentProps>()
   </CardContent>
 </template>
 <style scoped>
-.readyapi-card-footer {
+.scalar-card-footer {
   flex-shrink: 0;
 }
 </style>

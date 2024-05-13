@@ -14,7 +14,7 @@ export type InvokeResult = [
   logsMatcher: CreateLogsMatcherReturn,
 ]
 
-export function ReadyapiCli() {
+export function ScalarCli() {
   let cwd = ''
 
   const self = {
@@ -34,6 +34,7 @@ export function ReadyapiCli() {
             env: { NODE_ENV },
           },
         )
+
         return [
           results.exitCode,
           createLogsMatcher(
@@ -42,6 +43,10 @@ export function ReadyapiCli() {
         ]
       } catch (e) {
         const execaError = e as ExecaSyncError
+
+        // Console output for CI
+        console.error('ERROR', e)
+
         return [
           execaError.exitCode,
           createLogsMatcher(strip(execaError.stdout?.toString() || '')),

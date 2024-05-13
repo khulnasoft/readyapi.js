@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { ReadyapiIcon } from '@readyapi/components'
-import { useModal } from '@readyapi/use-modal'
-import { isMacOS } from '@readyapi/use-tooltip'
+import { ScalarIcon } from '@scalar/components'
+import { useModal } from '@scalar/use-modal'
+import { isMacOS } from '@scalar/use-tooltip'
 import { useMagicKeys, whenever } from '@vueuse/core'
 
-import { type Spec } from '../types'
+import type { Spec } from '../types'
 import SearchModal from './SearchModal.vue'
 
 const props = withDefaults(
@@ -40,7 +40,7 @@ whenever(keys[`${isMacOS() ? 'meta' : 'control'}_${props.searchHotKey}`], () =>
     :class="$attrs.class"
     type="button"
     @click="modalState.show">
-    <ReadyapiIcon
+    <ScalarIcon
       class="search-icon"
       icon="Search"
       size="sm" />
@@ -65,16 +65,16 @@ whenever(keys[`${isMacOS() ? 'meta' : 'control'}_${props.searchHotKey}`], () =>
   padding: 0 3px 0 9px;
   min-width: 254px;
   max-width: 100%;
-  font-family: var(--readyapi-font);
+  font-family: var(--scalar-font);
   background: var(
-    --readyapi-sidebar-search-background,
-    var(--readyapi-background-1)
+    --scalar-sidebar-search-background,
+    var(--scalar-background-1)
   );
-  color: var(--readyapi-sidebar-color-2, var(--readyapi-color-2));
+  color: var(--scalar-sidebar-color-2, var(--scalar-color-2));
   outline: none;
-  border-radius: var(--readyapi-radius);
+  border-radius: var(--scalar-radius);
   box-shadow: 0 0 0 1px
-    var(--readyapi-sidebar-search-border-color, var(--readyapi-border-color));
+    var(--scalar-sidebar-search-border-color, var(--scalar-border-color));
   /* prettier-ignore */
   cursor: pointer;
   appearance: none;
@@ -82,8 +82,8 @@ whenever(keys[`${isMacOS() ? 'meta' : 'control'}_${props.searchHotKey}`], () =>
 }
 
 .sidebar-search-input {
-  font-size: var(--readyapi-mini);
-  font-weight: var(--readyapi-semibold);
+  font-size: var(--scalar-mini);
+  font-weight: var(--scalar-semibold);
   height: 31px;
 
   user-select: none;
@@ -98,11 +98,11 @@ whenever(keys[`${isMacOS() ? 'meta' : 'control'}_${props.searchHotKey}`], () =>
   text-transform: uppercase;
 }
 .sidebar-search-key {
-  background-color: var(--readyapi-background-2);
+  background-color: var(--scalar-background-2);
   padding: 3px 5px;
   margin: 2px;
-  border-radius: var(--readyapi-radius);
-  color: var(--readyapi-sidebar-color-2, var(--readyapi-color-2));
+  border-radius: var(--scalar-radius);
+  color: var(--scalar-sidebar-color-2, var(--scalar-color-2));
 }
 
 .search-icon {

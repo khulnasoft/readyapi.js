@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { HttpMethod } from '@readyapi/api-client'
+import { HttpMethod } from '@scalar/api-client'
 
 defineProps<{
   active?: boolean
@@ -8,7 +8,6 @@ defineProps<{
 </script>
 <template>
   <HttpMethod
-    as="div"
     class="sidebar-heading-type"
     :class="{ 'sidebar-heading-type-active': active }"
     :method="method"
@@ -17,6 +16,7 @@ defineProps<{
 </template>
 <style scoped>
 .sidebar-heading-type {
+  display: block;
   min-width: 3.9em;
   overflow: hidden;
   border-radius: 30px;
@@ -26,13 +26,13 @@ defineProps<{
   color: white;
   color: color-mix(
     in srgb,
-    var(--method-color, var(--readyapi-color-1)),
+    var(--method-color, var(--scalar-color-1)),
     transparent 0%
   );
-  background: var(--method-color, var(--readyapi-background-3));
+  background: var(--method-color, var(--scalar-background-3));
   background: color-mix(
     in srgb,
-    var(--method-color, var(--readyapi-background-3)),
+    var(--method-color, var(--scalar-background-3)),
     transparent 90%
   );
   text-transform: uppercase;
@@ -40,7 +40,7 @@ defineProps<{
   font-weight: bold;
   text-align: center;
   position: relative;
-  font-family: var(--readyapi-font-code);
+  font-family: var(--scalar-font-code);
   white-space: nowrap;
   margin-left: 3px;
 }

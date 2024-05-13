@@ -1,11 +1,10 @@
 <script setup lang="ts">
+import content from '@readyapi/galaxy/latest.yaml?raw'
 import {
   ApiReference,
   type ReferenceConfiguration,
-} from '@readyapi/api-reference'
+} from '@scalar/api-reference'
 import { reactive } from 'vue'
-
-import content from '../../../../specifications/readyapi-galaxy-3.1.json'
 
 const configuration = reactive<ReferenceConfiguration>({
   theme: 'default',

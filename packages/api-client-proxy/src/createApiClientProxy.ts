@@ -1,6 +1,6 @@
 import cors from 'cors'
 import Express from 'express'
-import { type Server } from 'http'
+import type { Server } from 'http'
 
 import { version } from '../package.json'
 
@@ -100,7 +100,7 @@ export const createApiClientProxy = () => {
         })
       } catch (error) {
         console.error('ERROR', error)
-        const data = 'Ready API Client Proxy Error'
+        const data = 'Scalar API Client Proxy Error'
         res.status(500)
         res.json({
           data,

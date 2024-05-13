@@ -1,4 +1,4 @@
-import { ApiReferenceReact } from '@readyapi/api-reference-react'
+import { ApiReferenceReact } from '@scalar/api-reference-react'
 import React from 'react'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
     <ApiReferenceReact
       configuration={{
         spec: {
-          url: 'https://petstore3.swagger.io/api/v3/openapi.json',
+          url: 'https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/latest.yaml',
         },
       }}
     />

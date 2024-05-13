@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import { HttpMethod } from '@readyapi/api-client'
-import { ReadyapiCodeBlock, ReadyapiIcon } from '@readyapi/components'
+import { HttpMethod } from '@scalar/api-client'
+import { ScalarCodeBlock, ScalarIcon } from '@scalar/components'
 import type {
   CustomRequestExample,
   TransformedOperation,
-} from '@readyapi/oas-utils'
+} from '@scalar/oas-utils'
 import { computed, ref, watch } from 'vue'
 
 import { useClipboard } from '../../../hooks'
@@ -99,7 +99,7 @@ const { copyToClipboard } = useClipboard()
           class="copy-button"
           type="button"
           @click="copyToClipboard(currentExample.source.trim())">
-          <ReadyapiIcon
+          <ScalarIcon
             icon="Clipboard"
             width="10px" />
         </button>
@@ -109,14 +109,14 @@ const { copyToClipboard } = useClipboard()
       borderless
       class="request-editor-section custom-scroll"
       frameless>
-      <ReadyapiCodeBlock
+      <ScalarCodeBlock
         :content="currentExample.source.trim()"
         :lang="language"
         lineNumbers />
     </CardContent>
     <CardFooter
       v-if="$slots.footer"
-      class="readyapi-card-footer"
+      class="scalar-card-footer"
       contrast>
       <slot name="footer" />
     </CardFooter>
@@ -134,14 +134,14 @@ const { copyToClipboard } = useClipboard()
   text-transform: initial;
 }
 .request-method {
-  font-family: var(--readyapi-font-code);
+  font-family: var(--scalar-font-code);
   text-transform: uppercase;
   white-space: nowrap;
 }
 .request-client-picker {
   padding-left: 12px;
   padding-right: 9px;
-  border-right: 1px solid var(--readyapi-border-color);
+  border-right: 1px solid var(--scalar-border-color);
 }
 .copy-button {
   appearance: none;
@@ -150,7 +150,7 @@ const { copyToClipboard } = useClipboard()
   background: transparent;
   display: flex;
   cursor: pointer;
-  color: var(--readyapi-color-3);
+  color: var(--scalar-color-3);
   margin-left: 6px;
   margin-right: 10.5px;
   border: none;
@@ -160,16 +160,16 @@ const { copyToClipboard } = useClipboard()
   align-items: center;
   height: fit-content;
 }
-/* Can't use flex align center on parent (readyapi-card-header-actions) so have to match sibling font size vertically align*/
+/* Can't use flex align center on parent (scalar-card-header-actions) so have to match sibling font size vertically align*/
 .copy-button:after {
   content: '.';
   color: transparent;
-  font-size: var(--readyapi-mini);
+  font-size: var(--scalar-mini);
   line-height: 1.35;
   width: 0px;
 }
 .copy-button:hover {
-  color: var(--readyapi-color-1);
+  color: var(--scalar-color-1);
 }
 
 .copy-button svg {
@@ -177,10 +177,10 @@ const { copyToClipboard } = useClipboard()
   height: 13px;
 }
 
-.readyapi-card-header-actions {
+.scalar-card-header-actions {
   display: flex;
 }
-.readyapi-card-footer {
+.scalar-card-footer {
   display: flex;
   justify-content: flex-end;
   padding: 6px;

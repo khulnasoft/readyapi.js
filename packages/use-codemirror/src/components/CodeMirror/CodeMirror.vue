@@ -50,10 +50,8 @@ useCodeMirror({
 .codemirror-container {
   width: 100%;
   height: 100%;
-  padding-top: 4px;
   min-height: 76px;
-  background: var(--readyapi-background-2);
-  color: var(--readyapi-color-1);
+  color: var(--scalar-color-1);
   display: flex;
   align-items: stretch;
 }
@@ -68,9 +66,10 @@ useCodeMirror({
   flex-grow: 1;
   max-width: 100%;
   cursor: text;
-  font-size: var(--readyapi-small);
+  font-size: var(--scalar-small);
   /* Don't scale wide text on mobile because we let it scroll */
   -webkit-text-size-adjust: 100%;
+  background: transparent;
 }
 
 .cm-focused {

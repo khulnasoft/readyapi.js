@@ -2,12 +2,12 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 
-import { ReadyapiCli } from '../../../tests/invoke-cli'
+import { ScalarCli } from '../../../tests/invoke-cli'
 
 describe('init', () => {
   it('creates a config file', () => {
     // Delete config file if it exists
-    const configFile = './readyapi.config.json'
+    const configFile = './scalar.config.json'
 
     if (fs.existsSync(configFile)) {
       fs.unlinkSync(configFile)
@@ -17,7 +17,7 @@ describe('init', () => {
     expect(fs.existsSync(configFile)).toBe(false)
 
     // Create config file
-    const [exitCode, logs] = ReadyapiCli()
+    const [exitCode, logs] = ScalarCli()
       .setCwd(path.resolve('./'))
       .invoke([
         'init',

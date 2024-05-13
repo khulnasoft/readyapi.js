@@ -1,4 +1,4 @@
-import type { ResolvedOpenAPI } from '@readyapi/openapi-parser'
+import type { ResolvedOpenAPI } from '@scalar/openapi-parser'
 import kleur from 'kleur'
 
 export function printSpecificationBanner(result: {

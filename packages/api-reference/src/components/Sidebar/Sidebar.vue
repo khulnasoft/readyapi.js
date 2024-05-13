@@ -175,7 +175,7 @@ onMounted(() => {
 
 <style scoped>
 .sidebar {
-  --readyapi-sidebar-indent-base: 12px;
+  --scalar-sidebar-indent-base: 12px;
 }
 .sidebar {
   flex: 1;
@@ -183,12 +183,9 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   border-right: 1px solid
-    var(--readyapi-sidebar-border-color, var(--readyapi-border-color));
-  background: var(
-    --readyapi-sidebar-background-1,
-    var(--readyapi-background-1)
-  );
-  --readyapi-sidebar-level: 0;
+    var(--scalar-sidebar-border-color, var(--scalar-border-color));
+  background: var(--scalar-sidebar-background-1, var(--scalar-background-1));
+  --scalar-sidebar-level: 0;
 }
 .sidebar-pages {
   flex: 1;
@@ -204,16 +201,16 @@ onMounted(() => {
   }
 }
 .sidebar-group-title {
-  color: var(--readyapi-sidebar-color-1);
-  font-size: var(--readyapi-mini);
+  color: var(--scalar-sidebar-color-1);
+  font-size: var(--scalar-mini);
   padding: 12px 6px 6px;
-  font-weight: var(--readyapi-semibold);
+  font-weight: var(--scalar-semibold);
   text-transform: uppercase;
   word-break: break-word;
   line-height: 1.385;
 }
 .sidebar-group-item + .sidebar-group-title {
-  border-top: 1px solid var(--readyapi-sidebar-border-color);
+  border-top: 1px solid var(--scalar-sidebar-border-color);
   margin-top: 9px;
 }
 </style>

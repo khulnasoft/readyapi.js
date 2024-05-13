@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import CardContent from './CardContent.vue'
-import { type CardContentProps } from './types'
+import type { CardContentProps } from './types'
 
 // eslint-disable-next-line vue/no-unused-properties
 const props = defineProps<CardContentProps>()
@@ -8,36 +8,35 @@ const props = defineProps<CardContentProps>()
 <template>
   <CardContent
     v-bind="props"
-    class="readyapi-card-header">
-    <div class="readyapi-card-header-slots">
-      <div class="readyapi-card-header-slot readyapi-card-header-title">
+    class="scalar-card-header">
+    <div class="scalar-card-header-slots">
+      <div class="scalar-card-header-slot scalar-card-header-title">
         <slot />
       </div>
-      <div class="readyapi-card-header-slot readyapi-card-header-actions">
+      <div class="scalar-card-header-slot scalar-card-header-actions">
         <slot name="actions" />
       </div>
     </div>
   </CardContent>
 </template>
 <style scoped>
-.readyapi-card-header {
-  font-weight: var(--readyapi-semibold);
-  font-size: var(--readyapi-mini);
-  color: var(--readyapi-color-3);
+.scalar-card-header {
+  font-weight: var(--scalar-semibold);
+  font-size: var(--scalar-mini);
+  color: var(--scalar-color-3);
   padding: 9px 0 9px 12px;
   flex-shrink: 0;
 }
-.readyapi-card-header.readyapi-card--borderless
-  + :deep(.readyapi-card-content) {
+.scalar-card-header.scalar-card--borderless + :deep(.scalar-card-content) {
   margin-top: -9px;
 }
-.readyapi-card-header-slots {
+.scalar-card-header-slots {
   display: flex;
   justify-content: space-between;
   line-height: 1.35;
 }
 
-.readyapi-card-header-title {
+.scalar-card-header-title {
   text-transform: uppercase;
   flex: 1;
   min-width: 0;
@@ -45,7 +44,7 @@ const props = defineProps<CardContentProps>()
   overflow: hidden;
 }
 
-.readyapi-card-header-actions {
+.scalar-card-header-actions {
   display: flex;
 }
 </style>

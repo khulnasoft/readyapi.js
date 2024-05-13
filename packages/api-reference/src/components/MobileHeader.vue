@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ReadyapiIconButton } from '@readyapi/components'
+import { ScalarIconButton } from '@scalar/components'
 
 import { useSidebar } from '../hooks'
 
@@ -15,7 +15,7 @@ const { breadcrumb } = useSidebar()
 </script>
 <template>
   <div class="references-mobile-header t-doc__header">
-    <ReadyapiIconButton
+    <ScalarIconButton
       :icon="open ? 'Close' : 'Menu'"
       :label="open ? 'Close Menu' : 'Open Menu'"
       size="md"
@@ -34,16 +34,16 @@ const { breadcrumb } = useSidebar()
   height: 100%;
   width: 100%;
   padding: 0 8px;
-  background: var(--readyapi-background-1);
-  border-bottom: 1px solid var(--readyapi-border-color);
+  background: var(--scalar-background-1);
+  border-bottom: 1px solid var(--scalar-border-color);
 }
 
 .references-mobile-breadcrumbs {
   flex: 1;
   min-width: 0;
-  font-size: var(--readyapi-small);
-  font-weight: var(--readyapi-semibold);
-  color: var(--readyapi-color-1);
+  font-size: var(--scalar-small);
+  font-weight: var(--scalar-semibold);
+  color: var(--scalar-color-1);
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

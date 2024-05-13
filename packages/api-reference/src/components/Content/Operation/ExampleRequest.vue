@@ -4,8 +4,8 @@ import {
   getRequestFromAuthentication,
   getSecretCredentialsFromAuthentication,
   useAuthenticationStore,
-} from '@readyapi/api-client'
-import { ReadyapiCodeBlock, ReadyapiIcon } from '@readyapi/components'
+} from '@scalar/api-client'
+import { ScalarCodeBlock, ScalarIcon } from '@scalar/components'
 import {
   type ExampleRequestSSRKey,
   type SSRState,
@@ -14,7 +14,7 @@ import {
   getHarRequest,
   getRequestFromOperation,
   ssrState,
-} from '@readyapi/oas-utils'
+} from '@scalar/oas-utils'
 import { snippetz } from '@scalar/snippetz'
 import { HTTPSnippet } from 'httpsnippet-lite'
 import {
@@ -198,7 +198,7 @@ computed(() => {
           class="copy-button"
           type="button"
           @click="copyToClipboard(generatedCode)">
-          <ReadyapiIcon
+          <ScalarIcon
             icon="Clipboard"
             width="10px" />
         </button>
@@ -210,7 +210,7 @@ computed(() => {
       frameless>
       <!-- Multiple examples -->
       <div class="code-snippet">
-        <ReadyapiCodeBlock
+        <ScalarCodeBlock
           :content="generatedCode"
           :hideCredentials="
             getSecretCredentialsFromAuthentication(authenticationState)
@@ -249,13 +249,13 @@ computed(() => {
   text-transform: initial;
 }
 .request-method {
-  font-family: var(--readyapi-font-code);
+  font-family: var(--scalar-font-code);
   text-transform: uppercase;
 }
 .request-client-picker {
   padding-left: 12px;
   padding-right: 9px;
-  border-right: 1px solid var(--readyapi-border-color);
+  border-right: 1px solid var(--scalar-border-color);
 }
 
 .copy-button {
@@ -265,7 +265,7 @@ computed(() => {
   background: transparent;
   display: flex;
   cursor: pointer;
-  color: var(--readyapi-color-3);
+  color: var(--scalar-color-3);
   margin-left: 6px;
   margin-right: 10.5px;
   border: none;
@@ -275,16 +275,16 @@ computed(() => {
   align-items: center;
   height: fit-content;
 }
-/* Can't use flex align center on parent (readyapi-card-header-actions) so have to match sibling font size vertically align*/
+/* Can't use flex align center on parent (scalar-card-header-actions) so have to match sibling font size vertically align*/
 .copy-button:after {
   content: '.';
   color: transparent;
-  font-size: var(--readyapi-mini);
+  font-size: var(--scalar-mini);
   line-height: 1.35;
   width: 0px;
 }
 .copy-button:hover {
-  color: var(--readyapi-color-1);
+  color: var(--scalar-color-1);
 }
 
 .copy-button svg {

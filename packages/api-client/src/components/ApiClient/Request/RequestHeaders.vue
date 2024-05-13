@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { BaseParameter } from '@readyapi/oas-utils'
+import type { BaseParameter } from '@scalar/oas-utils'
 import { computed } from 'vue'
 
 import { useRequestStore } from '../../../stores'
@@ -35,9 +35,9 @@ const hasHeaders = computed(() => {
     :defaultOpen="hasHeaders"
     title="Headers">
     <template v-if="!hasHeaders">
-      <div class="readyapi-api-client__empty-state">
+      <div class="scalar-api-client__empty-state">
         <button
-          class="readyapi-api-client-add"
+          class="scalar-api-client-add"
           type="button"
           @click="addAnotherHandler">
           <svg

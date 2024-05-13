@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { TransformedOperation } from '@readyapi/oas-utils'
+import type { TransformedOperation } from '@scalar/oas-utils'
 
 import { useOperation, useResponses } from '../../../hooks'
 import Parameters from './Parameters.vue'
@@ -47,8 +47,8 @@ const { responses } = useResponses(props.operation)
   gap: 12px;
 }
 .endpoint-details-card-item {
-  border: 1px solid var(--readyapi-border-color);
-  border-radius: var(--readyapi-radius-lg);
+  border: 1px solid var(--scalar-border-color);
+  border-radius: var(--scalar-radius-lg);
   margin-top: 0;
 }
 .endpoint-details-card :deep(.parameter-list:first-of-type:last-of-type) {
@@ -72,9 +72,9 @@ const { responses } = useResponses(props.operation)
 .endpoint-details-card :deep(.parameters-title),
 .endpoint-details-card :deep(.request-body-title) {
   text-transform: uppercase;
-  font-weight: var(--readyapi-bold);
-  font-size: var(--readyapi-mini);
-  color: var(--readyapi-color-2);
+  font-weight: var(--scalar-bold);
+  font-size: var(--scalar-mini);
+  color: var(--scalar-color-2);
   line-height: 1.33;
   padding: 9px;
   margin: 0;

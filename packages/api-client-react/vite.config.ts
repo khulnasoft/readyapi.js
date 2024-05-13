@@ -9,7 +9,7 @@ export default defineConfig({
     lib: {
       // Could also be a dictionary or array of multiple entry points
       entry: './src/index.ts',
-      name: '@readyapi/api-client-react',
+      name: '@scalar/api-client-react',
       formats: ['es', 'cjs'],
       fileName: 'index',
     },

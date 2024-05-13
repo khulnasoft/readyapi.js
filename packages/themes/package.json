@@ -1,16 +1,21 @@
 {
   "name": "@readyapi/themes",
-  "description": "the default CSS variables for all Readyapi packages",
+  "description": "the default CSS variables for all Scalar packages",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "homepage": "https://github.com/scalar/scalar",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khulnasoft/readyapi.js",
+    "directory": "packages/themes"
+  },
   "keywords": [
     "css",
     "css-variables",
-    "readyapi"
+    "scalar"
   ],
-  "version": "0.0.1",
+  "version": "0.7.9",
   "engines": {
     "node": ">=18"
   },
@@ -38,20 +43,15 @@
     "CHANGELOG.md"
   ],
   "module": "./dist/index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.js.git",
-    "directory": "packages/default-theme"
-  },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
-    "@vitest/coverage-v8": "^1.5.2",
+    "@vitest/coverage-v8": "^1.5.0",
     "tsc-alias": "^1.8.8",
     "vite": "^5.2.10",
     "vite-plugin-lib-inject-css": "^2.0.1",
-    "vite-plugin-static-copy": "^1.0.3",
-    "vitest": "^1.5.2",
-    "vue-tsc": "^1.8.27"
+    "vite-plugin-static-copy": "^1.0.2",
+    "vitest": "^1.5.0",
+    "vue-tsc": "^1.8.19"
   },
   "peerDependencies": {
     "vue": "^3.3.0"

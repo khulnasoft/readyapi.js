@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v3
+      - uses: pnpm/action-setup@v4
         with:
           version: 8
       - name: Use Node.js ${{ matrix.node-version }}
@@ -39,6 +39,6 @@ jobs:
         name: Send bundle stats and build information to RelativeCI
         uses: relative-ci/agent-action@v2
         with:
-          key: ${{ secrets.ORG_REPO_TOKEN }}
+          key: ${{ secrets.RELATIVE_CI_KEY }}
           token: ${{ secrets.GITHUB_TOKEN }}
           webpackStatsFile: ./packages/api-reference/dist/browser/webpack-stats.json

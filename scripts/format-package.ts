@@ -26,6 +26,7 @@ const restrictedKeys = [
   'author',
   'homepage',
   'bugs',
+  'repository',
   'keywords',
   'version',
   'private',
@@ -51,7 +52,7 @@ const overrides: Record<string, unknown> = {
   license: 'MIT',
   author: 'KhulnaSoft (https://github.com/khulnasoft)',
   bugs: 'https://github.com/khulnasoft/readyapi.js/issues/new/choose',
-  homepage: 'https://github.com/khulnasoft/readyapi.js',
+  homepage: 'https://github.com/scalar/scalar',
 }
 
 /** Provide default values for some fields */
@@ -61,7 +62,7 @@ const fallbacks: Record<string, unknown> = {
   },
 }
 
-/** Format a package json file and validate readyapi-org linting rules */
+/** Format a package json file and validate scalar-org linting rules */
 async function formatPackage(filepath: string) {
   const file = await fs.readFile(filepath, 'utf-8').catch(() => null)
 
@@ -78,12 +79,12 @@ async function formatPackage(filepath: string) {
     )
   }
   if (
-    !data.name.startsWith('@readyapi/') &&
+    !data.name.startsWith('@scalar/') &&
     !data.name.startsWith('@readyapi-examples/')
   ) {
     printColor(
       'yellow',
-      `Package ${data.name} is not in the @readyapi/* or @readyapi-examples/* scope.`,
+      `Package ${data.name} is not in the @scalar/* or @readyapi-examples/* scope.`,
     )
   }
 

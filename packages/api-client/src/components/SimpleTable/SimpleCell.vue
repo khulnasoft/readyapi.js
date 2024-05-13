@@ -28,14 +28,21 @@ withDefaults(
 .simple-cell {
   all: unset;
   display: table-cell;
-  border-right: 1px solid var(--readyapi-border-color);
+  border-right: 1px solid var(--scalar-border-color);
   position: relative;
   padding: 9px !important;
-  color: var(--readyapi-color-1);
+  color: var(--scalar-color-1);
   white-space: nowrap;
 }
+.simple-cell:first-of-type {
+  position: sticky;
+  left: 0;
+  background-color: var(--scalar-background-1);
+  z-index: 1;
+  box-shadow: 0 -1px var(--scalar-border-color);
+}
 .simple-cell a {
-  color: var(--readyapi-color-1) !important;
+  color: var(--scalar-color-1) !important;
 }
 .simple-cell:last-of-type {
   border-right: none;
@@ -46,6 +53,6 @@ withDefaults(
 }
 
 .simple-cell.strong {
-  font-weight: var(--readyapi-semibold);
+  font-weight: var(--scalar-semibold);
 }
 </style>

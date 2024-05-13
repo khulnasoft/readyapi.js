@@ -1,10 +1,10 @@
-# Ready API Reference for Laravel Scribe
+# Scalar API Reference for Laravel Scribe
 
 Laravel Scribe is an amazing package to generate OpenAPI files from your existing code base. Clumsy annotations aren’t required, the package will just analyze your code.
 
 ## Table of Contents
 
-- [Ready API Reference for Laravel Scribe](#readyapi-api-reference-for-laravel-scribe)
+- [Scalar API Reference for Laravel Scribe](#scalar-api-reference-for-laravel-scribe)
   - [Table of Contents](#table-of-contents)
   - [Set up Laravel (optional)](#set-up-laravel-optional)
   - [Set up Laravel Scribe](#set-up-laravel-scribe)
@@ -82,13 +82,13 @@ And add the default configuration to your project folder:
 php artisan vendor:publish --tag=scribe-config
 ```
 
-Laravel Scribe comes with a ton of configuration options, but for the purpose of this guide you only need to switch to the Ready API reference. Update the following values:
+Laravel Scribe comes with a ton of configuration options, but for the purpose of this guide you only need to switch to the Scalar API reference. Update the following values:
 
 ```diff
 -    'type' => 'static',
 +    'type' => 'external_laravel',
 -    'theme' => 'default',
-+    'theme' => 'readyapi',
++    'theme' => 'scalar',
 ```
 
 Done! Are you ready to generate your (first?) OpenAPI file like this:

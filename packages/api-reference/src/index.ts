@@ -17,4 +17,4 @@ export * from './stores'
 export * from './helpers'
 export * from './types'
 
-export { useApiClientStore } from '@readyapi/api-client'
+export { useApiClientStore } from '@scalar/api-client'

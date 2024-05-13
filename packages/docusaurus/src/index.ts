@@ -1,18 +1,18 @@
 import type { LoadContext, Plugin } from '@docusaurus/types'
-import { type ReferenceProps } from '@readyapi/api-reference-react'
+import type { ReferenceProps } from '@scalar/api-reference-react'
 import path from 'path'
 
-export type ReadyapiOptions = {
+export type ScalarOptions = {
   label: string
   route: string
 } & ReferenceProps
 
 /**
- * Readyapi's Docusaurus plugin for Api References
+ * Scalar's Docusaurus plugin for Api References
  */
-const ReadyapiDocusaurus = (
+const ScalarDocusaurus = (
   context: LoadContext,
-  options: ReadyapiOptions,
+  options: ScalarOptions,
 ): Plugin<ReferenceProps> => {
   return {
     name: '@readyapi/docusaurus',
@@ -39,14 +39,14 @@ const ReadyapiDocusaurus = (
           items: Record<string, string>[]
         }
       ).items.push({
-        to: options.route ?? '/readyapi',
-        label: options.label ?? 'Readyapi',
+        to: options.route ?? '/scalar',
+        label: options.label ?? 'Scalar',
         position: 'left',
       })
 
       addRoute({
         path: options.route,
-        component: path.resolve(__dirname, './ReadyapiDocusaurus'),
+        component: path.resolve(__dirname, './ScalarDocusaurus'),
         // Provide the path to the loaded spec as a prop to your component
         exact: true,
         ...content,
@@ -55,4 +55,4 @@ const ReadyapiDocusaurus = (
   }
 }
 
-export default ReadyapiDocusaurus
+export default ScalarDocusaurus

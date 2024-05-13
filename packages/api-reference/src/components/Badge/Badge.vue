@@ -6,12 +6,12 @@
 
 <style scoped>
 .badge {
-  color: var(--readyapi-color-2);
-  font-size: var(--readyapi-micro);
-  background: var(--readyapi-background-2);
+  color: var(--scalar-color-2);
+  font-size: var(--scalar-micro);
+  background: var(--scalar-background-2);
   padding: 2px 6px;
   border-radius: 12px;
-  font-weight: var(--readyapi-semibold);
+  font-weight: var(--scalar-semibold);
   display: inline-block;
   text-transform: uppercase;
 }

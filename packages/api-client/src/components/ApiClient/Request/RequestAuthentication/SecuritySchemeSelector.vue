@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { ReadyapiIcon } from '@readyapi/components'
-import type { OpenAPIV3, OpenAPIV3_1 } from '@readyapi/openapi-parser'
+import { ScalarIcon } from '@scalar/components'
+import type { OpenAPIV3, OpenAPIV3_1 } from '@scalar/openapi-parser'
 import { computed, onMounted, onServerPrefetch } from 'vue'
 
 import { useAuthenticationStore } from '../../../../stores'
@@ -112,7 +112,7 @@ const keys = computed(() => Object.keys(props.value ?? {}))
             : 'None'
         }}
       </span>
-      <ReadyapiIcon icon="ChevronDown" />
+      <ScalarIcon icon="ChevronDown" />
       <select
         :value="authentication.preferredSecurityScheme"
         @click.prevent
@@ -134,18 +134,19 @@ const keys = computed(() => Object.keys(props.value ?? {}))
 .security-scheme-selector {
   position: relative;
   display: flex;
-  border-radius: var(--readyapi-radius);
-  color: var(--readyapi-color-2);
+  border-radius: var(--scalar-radius);
+  color: var(--scalar-color-2);
   display: flex;
   align-items: center;
   gap: 4px;
   cursor: pointer;
 }
 .security-scheme-selector:hover {
-  color: var(--readyapi-color-1);
+  color: var(--scalar-color-1);
 }
 .security-scheme-selector span {
-  font-size: var(--readyapi-mini);
+  font-size: var(--scalar-mini);
+  font-weight: var(--scalar-semibold);
 }
 .security-scheme-selector select {
   position: absolute;

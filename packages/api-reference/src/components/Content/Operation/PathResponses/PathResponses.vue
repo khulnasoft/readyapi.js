@@ -1,6 +1,9 @@
 <script lang="ts" setup>
-import { ReadyapiCodeBlock, ReadyapiIcon } from '@readyapi/components'
-import type { TransformedOperation } from '@readyapi/oas-utils'
+import { ScalarCodeBlock, ScalarIcon } from '@scalar/components'
+import {
+  type TransformedOperation,
+  normalizeMimeTypeObject,
+} from '@scalar/oas-utils'
 import { computed, ref } from 'vue'
 
 import { useClipboard } from '../../../../hooks'
@@ -55,16 +58,18 @@ const currentResponse = computed(() => {
   return props.operation.information?.responses?.[currentStatusCode]
 })
 
-const currentJsonResponse = computed(
-  () =>
+const currentJsonResponse = computed(() => {
+  const normalizedContent = normalizeMimeTypeObject(
+    currentResponse.value?.content,
+  )
+
+  return (
     // OpenAPI 3.x
-    currentResponse.value?.content?.['application/json'] ??
-    currentResponse.value?.content?.['application/json; charset=utf-8'] ??
-    currentResponse.value?.content?.['application/problem+json'] ??
-    currentResponse.value?.content?.['application/vnd.api+json'] ??
+    normalizedContent?.['application/json'] ??
     // Swagger 2.0
-    currentResponse.value,
-)
+    currentResponse.value
+  )
+})
 const currentResponseWithExample = computed(() => ({
   ...currentJsonResponse.value,
   example:
@@ -98,24 +103,24 @@ const showSchema = ref(false)
           class="code-copy"
           type="button"
           @click="() => copyToClipboard(currentJsonResponse?.example)">
-          <ReadyapiIcon
+          <ScalarIcon
             icon="Clipboard"
             width="10px"
             x="asd" />
         </button>
         <label
           v-if="currentJsonResponse?.schema"
-          class="readyapi-card-checkbox">
+          class="scalar-card-checkbox">
           Show Schema
           <input
             v-model="showSchema"
-            class="readyapi-card-checkbox-input"
+            class="scalar-card-checkbox-input"
             type="checkbox" />
-          <span class="readyapi-card-checkbox-checkmark"></span>
+          <span class="scalar-card-checkbox-checkmark"></span>
         </label>
       </template>
     </CardTabHeader>
-    <div class="readyapi-card-container custom-scroll">
+    <div class="scalar-card-container custom-scroll">
       <!-- Commenting out until we re-organize cause of height issues -->
       <!-- <CardContent
         v-if="currentResponse.headers"
@@ -124,7 +129,7 @@ const showSchema = ref(false)
       </CardContent> -->
       <CardContent muted>
         <template v-if="currentJsonResponse?.schema">
-          <ReadyapiCodeBlock
+          <ScalarCodeBlock
             v-if="showSchema && currentResponseWithExample"
             :content="currentResponseWithExample"
             lang="json" />
@@ -171,13 +176,13 @@ const showSchema = ref(false)
   outline: none;
   background: transparent;
   cursor: pointer;
-  color: var(--readyapi-color-3);
+  color: var(--scalar-color-3);
   border: none;
   padding: 0;
   margin-right: 12px;
 }
 .code-copy:hover {
-  color: var(--readyapi-color-1);
+  color: var(--scalar-color-1);
 }
 .code-copy svg {
   width: 13px;
@@ -189,49 +194,49 @@ const showSchema = ref(false)
   flex-shrink: 0;
   padding: 10px 12px;
   gap: 8px;
-  border-top: 1px solid var(--readyapi-border-color);
+  border-top: 1px solid var(--scalar-border-color);
 }
 .response-example-selector {
   align-self: start;
   margin: -4px;
 }
 .response-description {
-  font-weight: var(--readyapi-semibold);
-  font-size: var(--readyapi-micro);
-  color: var(--readyapi-color--1);
+  font-weight: var(--scalar-semibold);
+  font-size: var(--scalar-micro);
+  color: var(--scalar-color--1);
 
   display: flex;
   align-items: center;
   box-sizing: border-box;
 }
 .schema-type {
-  font-size: var(--readyapi-micro);
-  color: var(--readyapi-color-2);
-  font-weight: var(--readyapi-semibold);
-  background: var(--readyapi-background-3);
+  font-size: var(--scalar-micro);
+  color: var(--scalar-color-2);
+  font-weight: var(--scalar-semibold);
+  background: var(--scalar-background-3);
   padding: 2px 4px;
   border-radius: 4px;
   margin-right: 4px;
 }
 .schema-example {
-  font-size: var(--readyapi-micro);
-  color: var(--readyapi-color-2);
-  font-weight: var(--readyapi-semibold);
+  font-size: var(--scalar-micro);
+  color: var(--scalar-color-2);
+  font-weight: var(--scalar-semibold);
 }
 
 .example-response-tab {
   display: block;
   margin: 6px;
 }
-.readyapi-card-container {
+.scalar-card-container {
   flex: 1;
-  background: var(--readyapi-background-2);
+  background: var(--scalar-background-2);
 }
-.readyapi-card-container :deep(.cm-scroller) {
+.scalar-card-container :deep(.cm-scroller) {
   overflow-y: hidden;
 }
 
-.readyapi-card-checkbox {
+.scalar-card-checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -239,18 +244,18 @@ const showSchema = ref(false)
   min-height: 17px;
   cursor: pointer;
   user-select: none;
-  font-weight: var(--readyapi-semibold);
-  font-size: var(--readyapi-mini);
-  color: var(--readyapi-color-2);
+  font-weight: var(--scalar-semibold);
+  font-size: var(--scalar-mini);
+  color: var(--scalar-color-2);
   width: fit-content;
   white-space: nowrap;
   margin-right: 9px;
   gap: 6px;
 }
-.readyapi-card-checkbox:hover {
-  color: var(--readyapi-color--1);
+.scalar-card-checkbox:hover {
+  color: var(--scalar-color--1);
 }
-.readyapi-card-checkbox .readyapi-card-checkbox-input {
+.scalar-card-checkbox .scalar-card-checkbox-input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -258,43 +263,43 @@ const showSchema = ref(false)
   width: 0;
 }
 
-.readyapi-card-checkbox-checkmark {
+.scalar-card-checkbox-checkmark {
   height: 17px;
   width: 17px;
-  border-radius: var(--readyapi-radius);
+  border-radius: var(--scalar-radius);
   background-color: transparent;
-  background-color: var(--readyapi-background-3);
-  box-shadow: inset 0 0 0 1px var(--readyapi-border-color);
+  background-color: var(--scalar-background-3);
+  box-shadow: inset 0 0 0 1px var(--scalar-border-color);
 }
-.readyapi-card-checkbox:has(.readyapi-card-checkbox-input:checked) {
-  color: var(--readyapi-color-1);
+.scalar-card-checkbox:has(.scalar-card-checkbox-input:checked) {
+  color: var(--scalar-color-1);
 }
 
-.readyapi-card-checkbox
-  .readyapi-card-checkbox-input:checked
-  ~ .readyapi-card-checkbox-checkmark {
-  background-color: var(--readyapi-button-1);
+.scalar-card-checkbox
+  .scalar-card-checkbox-input:checked
+  ~ .scalar-card-checkbox-checkmark {
+  background-color: var(--scalar-button-1);
   box-shadow: none;
 }
 
-.readyapi-card-checkbox-checkmark:after {
+.scalar-card-checkbox-checkmark:after {
   content: '';
   position: absolute;
   display: none;
 }
 
-.readyapi-card-checkbox
-  .readyapi-card-checkbox-input:checked
-  ~ .readyapi-card-checkbox-checkmark:after {
+.scalar-card-checkbox
+  .scalar-card-checkbox-input:checked
+  ~ .scalar-card-checkbox-checkmark:after {
   display: block;
 }
 
-.readyapi-card-checkbox .readyapi-card-checkbox-checkmark:after {
+.scalar-card-checkbox .scalar-card-checkbox-checkmark:after {
   right: 6px;
   top: 36.5%;
   width: 5px;
   height: 9px;
-  border: solid 1px var(--readyapi-button-1-color);
+  border: solid 1px var(--scalar-button-1-color);
   border-width: 0 1.5px 1.5px 0;
   transform: rotate(45deg);
 }

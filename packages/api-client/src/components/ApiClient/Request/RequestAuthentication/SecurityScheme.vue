@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { OpenAPIV3, OpenAPIV3_1 } from '@readyapi/openapi-parser'
+import type { OpenAPIV3, OpenAPIV3_1 } from '@scalar/openapi-parser'
 import { computed } from 'vue'
 
 import { useAuthenticationStore } from '../../../../stores'
@@ -217,7 +217,8 @@ const startAuthentication = (url: string) => {
           :scopes="
             (value as OpenAPIV3.OAuth2SecurityScheme).flows.implicit!.scopes
           " />
-        <CardFormButton
+        <button
+          class="cardform-auth-button"
           @click="
             () =>
               startAuthentication(
@@ -228,7 +229,7 @@ const startAuthentication = (url: string) => {
               )
           ">
           Authorize
-        </CardFormButton>
+        </button>
       </template>
     </CardFormGroup>
   </CardForm>
@@ -242,6 +243,20 @@ const startAuthentication = (url: string) => {
 <style scoped>
 .description {
   padding: 12px 4px 4px;
-  font-size: var(--readyapi-mini);
+  font-size: var(--scalar-mini);
+}
+.cardform-auth-button {
+  background: var(--scalar-button-1);
+  color: var(--scalar-button-1-color);
+  font-size: var(--scalar-mini);
+  font-weight: var(--scalar-semibold);
+  border-radius: var(--scalar-radius);
+  margin: 3px;
+  padding: 0 9px;
+  cursor: pointer;
+  appearance: none;
+}
+.cardform-auth-button:hover {
+  background: var(--scalar-button-1-hover);
 }
 </style>

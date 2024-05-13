@@ -1,11 +1,11 @@
-import type { ReferenceConfiguration } from '@readyapi/api-reference'
+import type { ReferenceConfiguration } from '@scalar/api-reference'
 
 import { nextjsThemeCss } from './theme'
 
 /**
  * Next.js adapter for an Api Reference
  *
- * {@link https://github.com/khulnasoft/readyapi.js?tab=readme-ov-file#configuration Configuration}
+ * {@link https://github.com/scalar/scalar?tab=readme-ov-file#configuration Configuration}
  *
  * @params config - the Api Reference config object
  * @params options - reserved for future use to add customization to the response
@@ -43,8 +43,7 @@ export const ApiReference = (refConfig: ReferenceConfiguration) => {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ready API Reference for Next.js</title>
-    <meta name="description" content="Example to show how to use Ready API Reference for Next.js">
+    <title>Scalar API Reference</title>
   </head>
   <body>
     <script
@@ -53,7 +52,7 @@ export const ApiReference = (refConfig: ReferenceConfiguration) => {
       data-configuration="${configString}">
       ${contentString}
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/@readyapi/api-reference"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference"></script>
   </body>
 </html>
       `,

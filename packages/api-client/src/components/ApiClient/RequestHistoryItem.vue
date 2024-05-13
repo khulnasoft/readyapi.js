@@ -4,7 +4,7 @@ import prettyMilliseconds from 'pretty-ms'
 
 import { humanDiff } from '../../helpers'
 import { useRequestStore } from '../../stores'
-import { type ClientResponse } from '../../types'
+import type { ClientResponse } from '../../types'
 
 defineProps<{ history: string }>()
 
@@ -39,7 +39,7 @@ const getContentLength = (response: ClientResponse) => {
         prettyMilliseconds(requestHistory[history].response.duration)
       }}</span>
       <span
-        :class="`readyapi-api-client__status--${String(
+        :class="`scalar-api-client__status--${String(
           requestHistory[history].response.statusCode,
         ).charAt(0)}xx`">
         {{ requestHistory[history].response.statusCode }}
@@ -58,7 +58,7 @@ const getContentLength = (response: ClientResponse) => {
   text-transform: capitalize;
 }
 .navtable-item__active {
-  background: var(--readyapi-background-2);
+  background: var(--scalar-background-2);
   cursor: default;
 }
 </style>

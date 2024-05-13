@@ -1,8 +1,21 @@
 <script setup lang="ts">
-defineProps<{
+import { ScalarIconButton } from '@scalar/components'
+import { computed, ref } from 'vue'
+
+const props = defineProps<{
   id: string
   type?: string
 }>()
+
+const mask = ref(true)
+
+const inputType = computed(() =>
+  props.type === 'password'
+    ? mask.value
+      ? 'password'
+      : 'text'
+    : props.type ?? 'text',
+)
 
 defineOptions({
   inheritAttrs: false,
@@ -17,8 +30,15 @@ defineOptions({
       v-bind="$attrs"
       :id="id"
       autocomplete="off"
+      data-1p-ignore
       spellcheck="false"
-      :type="type ?? 'text'" />
+      :type="inputType" />
+    <ScalarIconButton
+      v-if="type === 'password'"
+      class="password-mask"
+      :icon="mask ? 'Show' : 'Hide'"
+      :label="mask ? 'Show Password' : 'Hide Password'"
+      @click="mask = !mask" />
   </div>
 </template>
 <style scoped>
@@ -28,12 +48,8 @@ defineOptions({
   width: 100%;
   text-align: left;
   display: flex;
-  border-style: solid;
-  border-width: 1px;
+  align-items: baseline;
   border-color: inherit;
-}
-.card-form-input:focus-within {
-  border-color: var(--readyapi-color-3);
 }
 
 .card-form-input label,
@@ -41,8 +57,8 @@ defineOptions({
   padding: 9px;
   border: 0;
   outline: none;
-  font-size: var(--readyapi-micro);
-  color: var(--readyapi-color-2);
+  font-size: var(--scalar-mini);
+  color: var(--scalar-color-2);
   width: 100%;
   background: transparent;
   appearance: none;
@@ -50,17 +66,30 @@ defineOptions({
   left: 0;
 }
 .card-form-input label {
-  color: var(--readyapi-color-1);
+  color: var(--scalar-color-1);
   width: fit-content;
-  padding-right: 0;
   white-space: nowrap;
   cursor: text;
+  padding: 9px 0 9px 9px;
+  border-radius: var(--scalar-radius);
+  font-weight: var(--scalar-semibold);
 }
 .card-form-input input {
   position: relative;
   z-index: 99;
+  color: var(--scalar-color-1);
+}
+.card-form-input + .card-form-input {
+  border-left: 1px solid var(--scalar-border-color);
 }
 .card-form-input input:not(:placeholder-shown) + label {
-  color: var(--readyapi-color-2);
+  color: var(--scalar-color-2);
+}
+
+.password-mask {
+  padding: 6px 8px 6px 0;
+  height: 24px;
+  width: auto;
+  align-self: center;
 }
 </style>

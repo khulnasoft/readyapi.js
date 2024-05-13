@@ -1,5 +1,5 @@
 /** Global prefix class used to scoped tailwind */
-const classPrefix = 'ready-api.khulnasoft.component'
+const classPrefix = 'scalar-component'
 
 const globalRegx = /^\*|:root/
 const codeRegx = /^\.line-numbers/
@@ -12,7 +12,7 @@ export default ({ env }) => ({
       prefix: `.${classPrefix}`,
       /**
        * Add the scoping prefix to all selectors and their children
-       * e.g. .flex -> .ready-api.khulnasoft.component.flex, .ready-api.khulnasoft.component .flex
+       * e.g. .flex -> .scalar-component.flex, .scalar-component .flex
        */
       transform: (prefix, selector) => {
         if (env === 'development') return selector

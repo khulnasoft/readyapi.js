@@ -1,4 +1,4 @@
-import type { OpenAPIV3, OpenAPIV3_1 } from '@readyapi/openapi-parser'
+import type { OpenAPIV3, OpenAPIV3_1 } from '@scalar/openapi-parser'
 import type { HarRequest } from 'httpsnippet-lite'
 
 export type AnyObject = Record<string, any>
@@ -13,14 +13,16 @@ export type BaseParameter = {
   enabled: boolean
 }
 
+type OptionalCharset = string | null
+
 export type ContentType =
-  | 'application/json'
-  | 'application/xml'
-  | 'text/plain'
-  | 'text/html'
-  | 'application/octet-stream'
-  | 'application/x-www-form-urlencoded'
-  | 'multipart/form-data'
+  | `application/json${OptionalCharset}`
+  | `application/xml${OptionalCharset}`
+  | `text/plain${OptionalCharset}`
+  | `text/html${OptionalCharset}`
+  | `application/octet-stream${OptionalCharset}`
+  | `application/x-www-form-urlencoded${OptionalCharset}`
+  | `multipart/form-data${OptionalCharset}`
 
 export type Cookie = {
   name: string
@@ -46,14 +48,14 @@ export type Information = {
   'description'?: string
   'operationId'?: string | number
   'parameters'?: Parameters[]
-  'responses'?: Record<string, ReadyapiResponse>
+  'responses'?: Record<string, ScalarResponse>
   'security'?: OpenAPIV3.SecurityRequirementObject[]
   'requestBody'?: RequestBody
   'summary'?: string
   'tags'?: string[]
   'deprecated'?: boolean
   /**
-   * Readyapi
+   * Scalar
    **/
   'x-custom-examples'?: CustomRequestExample[]
   /**
@@ -105,7 +107,7 @@ export type RequestBodyMimeTypes = {
   }
 }
 
-export type ReadyapiResponse = {
+export type ScalarResponse = {
   description: string
   content: any
 }
@@ -164,13 +166,13 @@ export type Heading = {
   slug?: string
 }
 
-export type CodeBlockSSRKey = `components-readyapi-code-block${number}`
+export type CodeBlockSSRKey = `components-scalar-code-block${number}`
 export type DescriptionSectionSSRKey =
   `components-Content-Introduction-Description-sections${number}`
 export type ExampleRequestSSRKey =
   `components-Content-Operation-Example-Request${number}`
 
-export type ReadyapiState = {
+export type ScalarState = {
   'hash'?: string
   'useGlobalStore-authentication'?: AuthenticationState
   'useSidebarContent-collapsedSidebarItems'?: CollapsedSidebarItems
@@ -184,7 +186,7 @@ export type ReadyapiState = {
 
 export type SSRState = {
   payload: {
-    data: ReadyapiState
+    data: ScalarState
   }
   url: string
 }

@@ -1,7 +1,7 @@
 /** The legacy -> updated CSS variable prefix pairs */
 export const PREFIX_MIGRATIONS = [
-  ['--theme-', '--readyapi-'],
-  ['--sidebar-', '--readyapi-sidebar-'],
+  ['--theme-', '--scalar-'],
+  ['--sidebar-', '--scalar-sidebar-'],
 ]
 
 export const LEGACY_PREFIXES = PREFIX_MIGRATIONS.map(([legacy]) => legacy)
@@ -16,7 +16,7 @@ export function migrateThemeVariables(styles: string): string {
   if (!hasLegacyPrefixes) return styles
 
   console.warn(
-    `DEPRECATION WARNING: It looks like you're using legacy CSS variables in your custom CSS string. Please migrate them to use the updated prefixes. See https://github.com/khulnasoft/readyapi.js#theme-prefix-changes`,
+    `DEPRECATION WARNING: It looks like you're using legacy CSS variables in your custom CSS string. Please migrate them to use the updated prefixes. See https://github.com/scalar/scalar#theme-prefix-changes`,
   )
 
   // Replaces each old variable in the prefix migrations

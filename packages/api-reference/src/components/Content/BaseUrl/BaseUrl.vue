@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import { findVariables } from '@readyapi/api-client'
-import { ReadyapiIcon } from '@readyapi/components'
+import { findVariables } from '@scalar/api-client'
+import { ScalarIcon } from '@scalar/components'
 import { ref, watch } from 'vue'
 
 import { useServerStore } from '../../../stores'
-import { type Variable } from '../../../types'
+import type { Variable } from '../../../types'
 import { Card, CardContent, CardHeader } from '../../Card'
 import { MarkdownRenderer } from '../../MarkdownRenderer'
 import ServerItem from './ServerItem.vue'
@@ -64,8 +64,8 @@ watch(
       muted>
       Base URL
     </CardHeader>
-    <CardContent class="readyapi-card-serverlist">
-      <div class="readyapi-card-serverlist-container">
+    <CardContent class="scalar-card-serverlist">
+      <div class="scalar-card-serverlist-container">
         <!-- Multiple URLs -->
         <div class="server-item">
           <div class="server-selector">
@@ -91,7 +91,7 @@ watch(
               :value="server.servers[selectedServerIndex]"
               :variables="server.variables" />
 
-            <ReadyapiIcon
+            <ScalarIcon
               v-if="server.servers.length > 1"
               icon="ChevronDown" />
           </div>
@@ -115,7 +115,7 @@ watch(
 .server-item {
   padding: 0 9px;
 }
-.readyapi-card-serverlist {
+.scalar-card-serverlist {
   padding: 9px;
 }
 .server-selector {
@@ -125,17 +125,17 @@ watch(
   min-width: 0;
   overflow: hidden;
   gap: 2px;
-  color: var(--readyapi-color-2);
+  color: var(--scalar-color-2);
 }
 
 .description {
   padding: 6px 12px;
-  font-size: var(--readyapi-small);
+  font-size: var(--scalar-small);
 }
 .description :deep(.markdown) {
-  font-size: var(--readyapi-micro);
-  font-weight: var(--readyapi-semibold);
-  color: var(--readyapi-color--1);
+  font-size: var(--scalar-micro);
+  font-weight: var(--scalar-semibold);
+  color: var(--scalar-color--1);
   padding: 4px 0;
   display: block;
 }
@@ -159,9 +159,9 @@ watch(
   width: 12px;
 }
 
-.readyapi-card-serverlist-container {
+.scalar-card-serverlist-container {
   /* margin: 9px; */
-  box-shadow: 0 0 0 1px var(--readyapi-border-color);
-  border-radius: var(--readyapi-radius);
+  box-shadow: 0 0 0 1px var(--scalar-border-color);
+  border-radius: var(--scalar-radius);
 }
 </style>

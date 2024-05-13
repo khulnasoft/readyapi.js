@@ -17,15 +17,15 @@ return validRequestMethods.includes(s as RequestMethod)
 }
 
 export const requestMethodColors: { [x in RequestMethod]: string } = {
-    POST: 'var(--readyapi-color-green)',
-    DELETE: 'var(--readyapi-color-red)',
-    PATCH: 'var(--readyapi-color-yellow)',
-    GET: 'var(--readyapi-color-blue)',
-    PUT: 'var(--readyapi-color-orange)',
-    OPTIONS: 'var(--readyapi-color-purple)',
-    HEAD: 'var(--readyapi-color-2)',
-    CONNECT: 'var(--readyapi-color-2)',
-    TRACE: 'var(--readyapi-color-2)',
+    POST: 'var(--scalar-color-green)',
+    DELETE: 'var(--scalar-color-red)',
+    PATCH: 'var(--scalar-color-yellow)',
+    GET: 'var(--scalar-color-blue)',
+    PUT: 'var(--scalar-color-orange)',
+    OPTIONS: 'var(--scalar-color-purple)',
+    HEAD: 'var(--scalar-color-2)',
+    CONNECT: 'var(--scalar-color-2)',
+    TRACE: 'var(--scalar-color-2)',
 }
 
 export const requestMethodAbbreviations: { [x in RequestMethod]: string } = {

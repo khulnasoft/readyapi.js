@@ -1,4 +1,4 @@
-import { type ClientRequestConfig, useRequestStore } from '@readyapi/api-client'
+import { type ClientRequestConfig, useRequestStore } from '@scalar/api-client'
 import React, { useEffect, useState } from 'react'
 
 import { ApiClientReactBase } from './ApiClientReactBase'
@@ -36,23 +36,23 @@ export const ApiClientReact = ({
 
   return (
     <div
-      className="readyapi"
+      className="scalar"
       style={{ display: isOpen ? 'block' : 'none' }}>
-      <div className="readyapi-container">
-        <div className="readyapi-app">
-          <div className="readyapi-app-header">
+      <div className="scalar-container">
+        <div className="scalar-app">
+          <div className="scalar-app-header">
             <span>API Client</span>
             <a
-              href={`https://www.ready-api.khulnasoft.com?utm_campaign=${host}`}
+              href={`https://www.scalar.com?utm_campaign=${host}`}
               target="_blank">
-              Powered by ready-api.khulnasoft.com
+              Powered by scalar.com
             </a>
           </div>
           <ApiClientReactBase proxy={proxy} />
         </div>
         <div
           onClick={close}
-          className="readyapi-app-exit"></div>
+          className="scalar-app-exit"></div>
       </div>
     </div>
   )

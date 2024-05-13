@@ -19,7 +19,7 @@ import PageLink from '../components/PageLink.vue'
           fill-rule="evenodd"></path>
       </svg>
     </div>
-    <h1>@readyapi/api-reference</h1>
+    <h1>@scalar/api-reference</h1>
     <div class="page-links">
       <PageLink to="standalone-api-reference">
         <template #title>Standalone API Reference</template>
@@ -54,7 +54,7 @@ import PageLink from '../components/PageLink.vue'
         </template>
       </PageLink>
     </div>
-    <h1>@readyapi/api-client</h1>
+    <h1>@scalar/api-client</h1>
     <div class="page-links">
       <PageLink to="api-client">
         <template #title>API Client</template>
@@ -66,49 +66,60 @@ import PageLink from '../components/PageLink.vue'
     </div>
     <h1>Examples</h1>
     <div class="page-links">
-      <PageLink href="http://localhost:5062/readyapi">
+      <PageLink href="http://localhost:5062/galaxy">
         <template #title>Nuxt</template>
         <template #description>@readyapi/nuxt</template>
       </PageLink>
-      <PageLink href="http://localhost:5063/readyapi">
+      <PageLink href="http://localhost:5063/scalar">
         <template #title>Docusaurus</template>
         <template #description>@readyapi/docusaurus</template>
       </PageLink>
-      <PageLink href="http://localhost:5058">
+      <PageLink href="https://scalar-example-next-js-p6gnzjpyuq-uc.a.run.app">
         <template #title>Next.js</template>
         <template #description>@readyapi/nextjs-api-reference</template>
       </PageLink>
-      <PageLink href="http://localhost:5059">
+      <PageLink href="https://scalar-example-react-p6gnzjpyuq-uc.a.run.app">
         <template #title>React</template>
-        <template #description>@readyapi/api-reference</template>
+        <template #description>@scalar/api-reference</template>
       </PageLink>
-      <PageLink href="http://localhost:5053">
+      <PageLink
+        href="https://scalar-example-fastify-p6gnzjpyuq-uc.a.run.app/reference">
         <template #title>Fastify</template>
         <template #description>@readyapi/fastify-api-reference</template>
       </PageLink>
-      <PageLink href="http://localhost:5054">
+      <PageLink href="https://scalar-example-hono-p6gnzjpyuq-uc.a.run.app">
         <template #title>Hono</template>
         <template #description>@readyapi/hono-api-reference</template>
       </PageLink>
-      <PageLink href="http://localhost:5055">
+      <PageLink href="https://scalar-example-express-p6gnzjpyuq-uc.a.run.app">
         <template #title>Express</template>
         <template #description>@readyapi/express-api-reference</template>
       </PageLink>
-      <PageLink href="http://localhost:5056">
+      <PageLink href="https://scalar-example-nest-js-p6gnzjpyuq-uc.a.run.app">
         <template #title>NestJS (Express)</template>
         <template #description>@readyapi/nestjs-api-reference</template>
       </PageLink>
-      <PageLink href="http://localhost:5057">
+      <PageLink
+        href="https://scalar-example-nest-js-fastify-p6gnzjpyuq-uc.a.run.app">
         <template #title>NestJS (Fastify)</template>
         <template #description>@readyapi/nestjs-api-reference</template>
       </PageLink>
     </div>
-    <h1>@readyapi/components</h1>
+    <h1>@scalar/components</h1>
     <div class="page-links">
       <PageLink href="http://localhost:5100">
         <template #title>Components</template>
         <template #description>
           The design system we’re using throughout our packages.
+        </template>
+      </PageLink>
+    </div>
+    <h1>@scalar/draggable</h1>
+    <div class="page-links">
+      <PageLink href="http://localhost:5064">
+        <template #title>Draggable</template>
+        <template #description>
+          Light vue wrapper around html5 drag and drop
         </template>
       </PageLink>
     </div>
@@ -118,8 +129,8 @@ import PageLink from '../components/PageLink.vue'
 <style scoped>
 .main {
   font-family: 'Inter', sans-serif;
-  background-color: var(--readyapi-background-1);
-  color: var(--readyapi-color-1);
+  background-color: var(--scalar-background-1);
+  color: var(--scalar-color-1);
   min-height: 100vh;
   padding: 2rem;
   box-sizing: border-box;

@@ -1,14 +1,13 @@
 <script setup lang="ts">
+import content from '@readyapi/galaxy/latest.yaml?raw'
+import type { ThemeId } from '@readyapi/themes'
 import {
   ApiReference,
   type ReferenceConfiguration,
   type ReferenceLayoutType,
-} from '@readyapi/api-reference'
-import { type ThemeId } from '@readyapi/themes'
+} from '@scalar/api-reference'
 import { reactive } from 'vue'
 import { useRoute } from 'vue-router'
-
-import content from '../../../../specifications/readyapi-galaxy-3.1.json'
 
 const route = useRoute()
 

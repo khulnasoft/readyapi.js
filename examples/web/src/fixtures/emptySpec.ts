@@ -1,4 +1,4 @@
-import { type Spec } from "@readyapi/api-reference";
+import type { Spec } from "@scalar/api-reference";
 
 // Generate a new empty spec instance
 export const emptySpecGenerator = (): Spec => ({
