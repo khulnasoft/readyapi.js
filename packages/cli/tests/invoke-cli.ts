@@ -14,7 +14,7 @@ export type InvokeResult = [
   logsMatcher: CreateLogsMatcherReturn,
 ]
 
-export function ScalarCli() {
+export function ReadyapiCli() {
   let cwd = ''
 
   const self = {

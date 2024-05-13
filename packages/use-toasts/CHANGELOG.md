@@ -1,4 +1,4 @@
-# @readyapi/use-toasts
+# @scalar/use-toasts
 
 ## 0.6.6
 
@@ -34,7 +34,7 @@
 
 ### Patch Changes
 
-- a8c3045: build: re-introduce @readyapi/use-toasts package
+- a8c3045: build: re-introduce @scalar/use-toasts package
 
 ## 0.5.15
 

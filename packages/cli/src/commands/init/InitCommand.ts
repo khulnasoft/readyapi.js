@@ -11,11 +11,11 @@ export function InitCommand() {
   const cmd = new Command('init')
 
   cmd.description(
-    'Create a new `scalar.config.json` file to configure where your OpenAPI file is placed.',
+    'Create a new `readyapi.config.json` file to configure where your OpenAPI file is placed.',
   )
   cmd.option('-f, --file [file]', 'your OpenAPI file')
   cmd.action(async ({ file }) => {
-    // Path to `scalar.config.json` file
+    // Path to `readyapi.config.json` file
     const configFile = path.resolve(CONFIG_FILE)
     let validInput = false
     let input = file
@@ -37,10 +37,10 @@ export function InitCommand() {
       validInput = true
     }
 
-    // Check if `scalar.config.json` already exists
+    // Check if `readyapi.config.json` already exists
     if (fs.existsSync(configFile)) {
       console.log(
-        `${kleur.green('✔')} Found Scalar configuration file: ${kleur.reset().green(`${CONFIG_FILE}`)}`,
+        `${kleur.green('✔')} Found Readyapi configuration file: ${kleur.reset().green(`${CONFIG_FILE}`)}`,
       )
 
       const { overwrite } = await prompts(
@@ -193,12 +193,12 @@ export function InitCommand() {
 
     const content = JSON.stringify(configuration, null, 2)
 
-    // Create `scalar.config.json` file
+    // Create `readyapi.config.json` file
     fs.writeFileSync(configFile, content)
 
     console.log(
       kleur.green('✔'),
-      'Scalar configuration file created:',
+      'Readyapi configuration file created:',
       kleur.reset().green(`${CONFIG_FILE}`),
     )
     console.log()
@@ -212,7 +212,7 @@ export function InitCommand() {
     console.log()
     console.log(
       kleur.white(
-        `Run ${kleur.magenta('scalar --help')} to see all available commands.`,
+        `Run ${kleur.magenta('readyapi --help')} to see all available commands.`,
       ),
     )
     console.log()

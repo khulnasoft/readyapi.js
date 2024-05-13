@@ -1,6 +1,6 @@
 import type * as Preset from '@docusaurus/preset-classic'
 import type { Config } from '@docusaurus/types'
-import type { ScalarOptions } from '@readyapi/docusaurus'
+import type { ScalarOptions } from '@scalar/docusaurus'
 import { themes as prismThemes } from 'prism-react-renderer'
 
 const config: Config = {
@@ -57,7 +57,7 @@ const config: Config = {
 
   plugins: [
     [
-      '@readyapi/docusaurus',
+      '@scalar/docusaurus',
       {
         label: 'Scalar',
         route: '/scalar',

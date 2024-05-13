@@ -1,14 +1,14 @@
 {
-  "name": "@scalar/api-reference-react",
+  "name": "@readyapi/api-reference-react",
   "description": "The react client only integration for api references",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/scalar/scalar",
-  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
+  "homepage": "https://github.com/khulnasoft/readyapi",
+  "bugs": "https://github.com/khulnasoft/readyapi/issues/new/choose",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.js",
-    "directory": "packages/api-reference-react"
+    "url": "https://github.com/khulnasoft/readyapi.git",
+    "directory": "packages/use-tooltip"
   },
   "keywords": [
     "api",
@@ -18,7 +18,7 @@
     "testing",
     "react"
   ],
-  "version": "0.1.75",
+  "version": "0.1.77",
   "engines": {
     "node": ">=18"
   },
@@ -39,7 +39,7 @@
   ],
   "module": "./dist/index.js",
   "dependencies": {
-    "@scalar/api-reference": "workspace:*"
+    "@readyapi/api-reference": "workspace:*"
   },
   "devDependencies": {
     "@types/react": "^18.2.60",

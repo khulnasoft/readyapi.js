@@ -1,14 +1,14 @@
 {
-  "name": "@scalar/api-reference",
+  "name": "@readyapi/api-reference",
   "description": "generate beautiful API references from OpenAPI specs",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/scalar/scalar",
-  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
+  "homepage": "https://github.com/khulnasoft/readyapi",
+  "bugs": "https://github.com/khulnasoft/readyapi/issues/new/choose",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.js",
-    "directory": "packages/api-reference"
+    "url": "https://github.com/khulnasoft/readyapi.git",
+    "directory": "packages/use-tooltip"
   },
   "keywords": [
     "component",
@@ -20,7 +20,7 @@
     "vue",
     "vue3"
   ],
-  "version": "1.22.33",
+  "version": "1.22.35",
   "engines": {
     "node": ">=18"
   },
@@ -62,15 +62,15 @@
   "module": "./dist/index.js",
   "dependencies": {
     "@headlessui/vue": "^1.7.20",
-    "@readyapi/themes": "workspace:*",
-    "@readyapi/use-toasts": "workspace:*",
-    "@scalar/api-client": "workspace:*",
-    "@scalar/components": "workspace:*",
-    "@scalar/oas-utils": "workspace:*",
+    "@readyapi/api-client": "workspace:*",
+    "@readyapi/components": "workspace:*",
+    "@readyapi/oas-utils": "workspace:*",
     "@scalar/openapi-parser": "^0.3.2",
     "@scalar/snippetz": "^0.1.6",
-    "@scalar/use-modal": "workspace:*",
-    "@scalar/use-tooltip": "workspace:*",
+    "@readyapi/themes": "workspace:*",
+    "@readyapi/use-modal": "workspace:*",
+    "@readyapi/use-toasts": "workspace:*",
+    "@readyapi/use-tooltip": "workspace:*",
     "@unhead/schema": "^1.9.5",
     "@vcarl/remark-headings": "^0.1.0",
     "@vueuse/core": "^10.9.0",

@@ -1,4 +1,4 @@
-import { findEntryPoints } from '@readyapi/build-tooling'
+import { findEntryPoints } from '@scalar/build-tooling'
 import { URL, fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 

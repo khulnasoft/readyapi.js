@@ -17,8 +17,8 @@ COPY examples/react ./examples/react
 
 # Install and build the main package and its dependencies
 RUN --mount=type=cache,id=pnpm,target=~/.pnpm-store \
-    pnpm --filter "@readyapi-examples/react" install && \
-    pnpm --filter "@readyapi-examples/react" build
+    pnpm --filter "@scalar-examples/react" install && \
+    pnpm --filter "@scalar-examples/react" build
 
 FROM node:18-bullseye-slim AS runner
 RUN npm install -g serve

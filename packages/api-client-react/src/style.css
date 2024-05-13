@@ -122,7 +122,7 @@
   --scalar-line-height-4: 18px;
   --scalar-line-height-5: 16px;
 }
-.scalar input::placeholder {
+.readyapi input::placeholder {
   color: var(--scalar-color-3);
 }
 .scalar .scalar-app-header {

@@ -11,7 +11,7 @@ export default defineConfig({
     lib: {
       // Could also be a dictionary or array of multiple entry points
       entry: './src/index.ts',
-      name: '@readyapi/nextjs-api-reference',
+      name: '@scalar/nextjs-api-reference',
       formats: ['es', 'cjs', 'umd'],
       fileName: 'index',
     },

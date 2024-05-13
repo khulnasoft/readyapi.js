@@ -5,7 +5,7 @@ export type Configuration = Omit<
   'layout' | 'isEditable' | 'onSpecUpdate'
 > & {
   /**
-   * Whether to show scalar in Nuxt DevTools
+   * Whether to show readyapi in Nuxt DevTools
    *
    * @default true
    */

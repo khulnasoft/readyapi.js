@@ -49,7 +49,7 @@ export default defineConfig({
     minify: 'terser',
     lib: {
       entry: ['src/index.ts'],
-      name: '@readyapi/play-button',
+      name: '@scalar/play-button',
       formats: ['umd'],
     },
     rollupOptions: {

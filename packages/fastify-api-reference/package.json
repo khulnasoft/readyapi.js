@@ -3,12 +3,12 @@
   "description": "a fastify plugin to render an API reference from an OpenAPI file",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/scalar/scalar",
-  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
+  "homepage": "https://github.com/khulnasoft/readyapi",
+  "bugs": "https://github.com/khulnasoft/readyapi/issues/new/choose",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.js",
-    "directory": "packages/fastify-api-reference"
+    "url": "https://github.com/khulnasoft/readyapi.git",
+    "directory": "packages/use-tooltip"
   },
   "keywords": [
     "api",
@@ -17,7 +17,7 @@
     "openapi",
     "swagger"
   ],
-  "version": "1.22.33",
+  "version": "1.22.35",
   "engines": {
     "node": ">=18"
   },
@@ -45,7 +45,7 @@
     "fastify-plugin": "^4.5.1"
   },
   "devDependencies": {
-    "@scalar/api-reference": "workspace:*",
+    "@readyapi/api-reference": "workspace:*",
     "@vitest/coverage-v8": "^1.5.0",
     "fastify": "^4.26.2",
     "magic-string": "^0.30.8",

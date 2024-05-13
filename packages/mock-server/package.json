@@ -1,14 +1,14 @@
 {
-  "name": "@scalar/mock-server",
+  "name": "@readyapi/mock-server",
   "description": "OpenAPI mock server server",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/scalar/scalar",
-  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
+  "homepage": "https://github.com/khulnasoft/readyapi",
+  "bugs": "https://github.com/khulnasoft/readyapi/issues/new/choose",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.js",
-    "directory": "packages/mock-server"
+    "url": "https://github.com/khulnasoft/readyapi.git",
+    "directory": "packages/use-tooltip"
   },
   "keywords": [
     "scalar",
@@ -16,7 +16,7 @@
     "swagger",
     "cli"
   ],
-  "version": "0.1.63",
+  "version": "0.1.64",
   "engines": {
     "node": ">=18"
   },
@@ -38,8 +38,8 @@
   "module": "dist/index.js",
   "dependencies": {
     "@hono/node-server": "^1.11.0",
-    "@scalar/oas-utils": "workspace:*",
-    "@scalar/openapi-parser": "^0.3.2",
+    "@readyapi/oas-utils": "workspace:*",
+    "@readyapi/openapi-parser": "^0.3.2",
     "hono": "^4.2.7"
   },
   "devDependencies": {

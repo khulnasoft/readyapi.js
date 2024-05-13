@@ -1,5 +1,15 @@
 # @scalar/api-client
 
+## 1.2.24
+
+### Patch Changes
+
+- 624604e: chore: move http status codes to oas-utils
+- Updated dependencies [624604e]
+- Updated dependencies [624604e]
+  - @scalar/oas-utils@0.1.11
+  - @scalar/components@0.7.7
+
 ## 1.2.23
 
 ### Patch Changes
@@ -64,7 +74,7 @@
   - @scalar/components@0.7.3
   - @scalar/oas-utils@0.1.10
   - @scalar/use-modal@0.3.3
-  - @readyapi/themes@0.7.9
+  - @scalar/themes@0.7.9
 
 ## 1.2.15
 
@@ -74,7 +84,7 @@
 - Updated dependencies [05e2e27]
   - @scalar/components@0.7.2
   - @scalar/oas-utils@0.1.9
-  - @readyapi/themes@0.7.8
+  - @scalar/themes@0.7.8
   - @scalar/use-codemirror@0.10.2
   - @scalar/use-modal@0.3.2
   - @scalar/use-tooltip@0.6.1
@@ -102,7 +112,7 @@
   - @scalar/components@0.7.0
   - @scalar/oas-utils@0.1.7
   - @scalar/use-modal@0.3.1
-  - @readyapi/themes@0.7.7
+  - @scalar/themes@0.7.7
 
 ## 1.2.12
 
@@ -129,7 +139,7 @@
 ### Patch Changes
 
 - Updated dependencies [0a77380]
-  - @readyapi/themes@0.7.6
+  - @scalar/themes@0.7.6
   - @scalar/components@0.5.5
 
 ## 1.2.8
@@ -138,7 +148,7 @@
 
 - Updated dependencies [2700c5c]
   - @scalar/components@0.5.5
-  - @readyapi/themes@0.7.5
+  - @scalar/themes@0.7.5
 
 ## 1.2.7
 
@@ -154,7 +164,7 @@
 
 - Updated dependencies [86d1363]
 - Updated dependencies [bc3f3af]
-  - @readyapi/themes@0.7.4
+  - @scalar/themes@0.7.4
   - @scalar/components@0.5.3
 
 ## 1.2.5
@@ -170,7 +180,7 @@
 ### Patch Changes
 
 - Updated dependencies [4d31b19]
-  - @readyapi/themes@0.7.3
+  - @scalar/themes@0.7.3
   - @scalar/components@0.5.1
 
 ## 1.2.3
@@ -187,7 +197,7 @@
 ### Patch Changes
 
 - Updated dependencies [85a0074]
-  - @readyapi/themes@0.7.2
+  - @scalar/themes@0.7.2
   - @scalar/components@0.5.0
 
 ## 1.2.1
@@ -196,7 +206,7 @@
 
 - d77acdd: fix: missing css font
 - Updated dependencies [d77acdd]
-  - @readyapi/themes@0.7.1
+  - @scalar/themes@0.7.1
   - @scalar/components@0.5.0
 
 ## 1.2.0
@@ -215,7 +225,7 @@
   - @scalar/components@0.5.0
   - @scalar/oas-utils@0.1.6
   - @scalar/use-modal@0.3.0
-  - @readyapi/themes@0.7.0
+  - @scalar/themes@0.7.0
 
 ## 1.1.16
 
@@ -276,7 +286,7 @@
 ### Patch Changes
 
 - Updated dependencies [d70bda7]
-  - @readyapi/themes@0.6.7
+  - @scalar/themes@0.6.7
   - @scalar/components@0.4.8
 
 ## 1.1.8
@@ -288,7 +298,7 @@
 - Updated dependencies [5b83e30]
 - Updated dependencies [6889ad9]
 - Updated dependencies [ae193a8]
-  - @readyapi/themes@0.6.6
+  - @scalar/themes@0.6.6
   - @scalar/use-codemirror@0.9.1
   - @scalar/components@0.4.8
 
@@ -324,7 +334,7 @@
 ### Patch Changes
 
 - Updated dependencies [0c5e22c]
-  - @readyapi/themes@0.6.5
+  - @scalar/themes@0.6.5
   - @scalar/components@0.4.4
 
 ## 1.1.2
@@ -361,7 +371,7 @@
 ### Patch Changes
 
 - Updated dependencies [68cda2b]
-  - @readyapi/themes@0.6.4
+  - @scalar/themes@0.6.4
   - @scalar/components@0.4.4
 
 ## 1.0.1
@@ -371,7 +381,7 @@
 - Updated dependencies [bbbba1f]
 - Updated dependencies [897990b]
   - @scalar/components@0.4.4
-  - @readyapi/themes@0.6.3
+  - @scalar/themes@0.6.3
 
 ## 1.0.0
 
@@ -406,7 +416,7 @@
 - Updated dependencies [775646a]
 - Updated dependencies [ef3a015]
   - @scalar/components@0.4.3
-  - @readyapi/themes@0.6.2
+  - @scalar/themes@0.6.2
   - @scalar/use-codemirror@0.8.9
   - @scalar/use-modal@0.2.9
 
@@ -415,7 +425,7 @@
 ### Patch Changes
 
 - Updated dependencies [4ef178f]
-  - @readyapi/themes@0.6.1
+  - @scalar/themes@0.6.1
   - @scalar/components@0.4.2
 
 ## 0.12.15
@@ -424,7 +434,7 @@
 
 - Updated dependencies [ad2b95a]
 - Updated dependencies [ad2b95a]
-  - @readyapi/themes@0.6.0
+  - @scalar/themes@0.6.0
   - @scalar/components@0.4.2
 
 ## 0.12.14
@@ -479,7 +489,7 @@
 ### Patch Changes
 
 - Updated dependencies [51acf2c]
-  - @readyapi/themes@0.5.10
+  - @scalar/themes@0.5.10
   - @scalar/components@0.2.6
 
 ## 0.12.7
@@ -489,7 +499,7 @@
 - Updated dependencies [c103201]
 - Updated dependencies [d2728c8]
   - @scalar/components@0.2.6
-  - @readyapi/themes@0.5.9
+  - @scalar/themes@0.5.9
 
 ## 0.12.6
 
@@ -508,7 +518,7 @@
   - @scalar/use-codemirror@0.8.6
   - @scalar/components@0.2.5
   - @scalar/use-modal@0.2.8
-  - @readyapi/themes@0.5.8
+  - @scalar/themes@0.5.8
 
 ## 0.12.4
 
@@ -519,7 +529,7 @@
   - @scalar/use-codemirror@0.8.5
   - @scalar/components@0.2.4
   - @scalar/use-modal@0.2.7
-  - @readyapi/themes@0.5.7
+  - @scalar/themes@0.5.7
 
 ## 0.12.3
 
@@ -536,7 +546,7 @@
 - 5b3f7d9: fix: updated scroll region padding to for chrome update
 - Updated dependencies [5b3f7d9]
   - @scalar/use-modal@0.2.5
-  - @readyapi/themes@0.5.6
+  - @scalar/themes@0.5.6
   - @scalar/components@0.2.3
 
 ## 0.12.1
@@ -562,7 +572,7 @@
   - @scalar/use-codemirror@0.8.4
   - @scalar/components@0.2.3
   - @scalar/use-modal@0.2.4
-  - @readyapi/themes@0.5.5
+  - @scalar/themes@0.5.5
 
 ## 0.11.5
 
@@ -653,7 +663,7 @@
   - @scalar/use-keyboard-event@0.5.7
   - @scalar/use-codemirror@0.7.19
   - @scalar/use-modal@0.2.3
-  - @readyapi/themes@0.5.4
+  - @scalar/themes@0.5.4
 
 ## 0.9.1
 
@@ -677,7 +687,7 @@
 - b8ce7fd5: feat: show body and formData parameters (Swagger 2.0)
 - Updated dependencies [5ca138ee]
   - @scalar/use-modal@0.2.2
-  - @readyapi/themes@0.5.3
+  - @scalar/themes@0.5.3
 
 ## 0.8.10
 
@@ -691,7 +701,7 @@
 
 - 6d777194: feat: release themes
 - Updated dependencies [6d777194]
-  - @readyapi/themes@0.5.2
+  - @scalar/themes@0.5.2
 
 ## 0.8.8
 
@@ -734,7 +744,7 @@
 - Updated dependencies [a1319e8b]
   - @scalar/use-codemirror@0.7.16
   - @scalar/use-modal@0.2.1
-  - @readyapi/themes@0.5.1
+  - @scalar/themes@0.5.1
 
 ## 0.8.2
 
@@ -759,7 +769,7 @@
 - 349589a: feat: expose spec content updates
 - Updated dependencies [f38bb61]
   - @scalar/use-modal@0.2.0
-  - @readyapi/themes@0.5.0
+  - @scalar/themes@0.5.0
 
 ## 0.7.37
 
@@ -799,7 +809,7 @@
   - @scalar/use-keyboard-event@0.5.5
   - @scalar/use-codemirror@0.7.14
   - @scalar/use-modal@0.1.8
-  - @readyapi/themes@0.4.2
+  - @scalar/themes@0.4.2
 
 ## 0.7.32
 
@@ -810,7 +820,7 @@
   - @scalar/use-keyboard-event@0.5.4
   - @scalar/use-codemirror@0.7.13
   - @scalar/use-modal@0.1.7
-  - @readyapi/themes@0.4.1
+  - @scalar/themes@0.4.1
 
 ## 0.7.31
 
@@ -924,7 +934,7 @@
 ### Patch Changes
 
 - Updated dependencies [fd38deb0]
-  - @readyapi/themes@0.4.0
+  - @scalar/themes@0.4.0
 
 ## 0.7.16
 
@@ -934,7 +944,7 @@
 - Updated dependencies [af4ec8d3]
   - @scalar/use-keyboard-event@0.5.3
   - @scalar/use-codemirror@0.7.8
-  - @readyapi/themes@0.3.11
+  - @scalar/themes@0.3.11
 
 ## 0.7.15
 
@@ -946,7 +956,7 @@
   - @scalar/use-keyboard-event@0.5.2
   - @scalar/use-codemirror@0.7.7
   - @scalar/use-modal@0.1.4
-  - @readyapi/themes@0.3.10
+  - @scalar/themes@0.3.10
 
 ## 0.7.14
 
@@ -954,7 +964,7 @@
 
 - eb0c3201: Lot's of small things + bigger temp fix for the multi content cards
 - Updated dependencies [eb0c3201]
-  - @readyapi/themes@0.3.9
+  - @scalar/themes@0.3.9
 
 ## 0.7.13
 
@@ -984,7 +994,7 @@
 
 - 46142c0a: reference theme fixes
 - Updated dependencies [46142c0a]
-  - @readyapi/themes@0.3.8
+  - @scalar/themes@0.3.8
 
 ## 0.7.9
 
@@ -994,7 +1004,7 @@
 - 30d54d16: feat: make request method selectable
 - 48df28ef: feat: disable send button if URL is empty
 - Updated dependencies [1d02c811]
-  - @readyapi/themes@0.3.7
+  - @scalar/themes@0.3.7
 
 ## 0.7.8
 
@@ -1004,7 +1014,7 @@
 - Updated dependencies [b76f4d1e]
   - @scalar/use-codemirror@0.7.5
   - @scalar/use-modal@0.1.2
-  - @readyapi/themes@0.3.6
+  - @scalar/themes@0.3.6
 
 ## 0.7.7
 
@@ -1018,7 +1028,7 @@
 
 - Updated dependencies [4985562c]
   - @scalar/use-codemirror@0.7.4
-  - @readyapi/themes@0.3.5
+  - @scalar/themes@0.3.5
 
 ## 0.7.5
 
@@ -1033,7 +1043,7 @@
 
 - cd5f2685: codemirror colors + font fixes throughout app
 - Updated dependencies [cd5f2685]
-  - @readyapi/themes@0.3.4
+  - @scalar/themes@0.3.4
 
 ## 0.7.3
 
@@ -1055,17 +1065,17 @@
   - @scalar/use-modal@0.1.1
   - @scalar/use-keyboard-event@0.5.1
   - @scalar/use-codemirror@0.7.1
-  - @readyapi/themes@0.3.3
+  - @scalar/themes@0.3.3
 
 ## 0.7.1
 
 ### Patch Changes
 
 - 75a69ba7: feat: add `theme` prop and improve theme support
-- 75a69ba7: refactor: rename @scalar/default-theme to @readyapi/themes, add more themes
+- 75a69ba7: refactor: rename @scalar/default-theme to @scalar/themes, add more themes
 - Updated dependencies [75a69ba7]
 - Updated dependencies [75a69ba7]
-  - @readyapi/themes@0.3.2
+  - @scalar/themes@0.3.2
 
 ## 0.7.0
 
@@ -1102,7 +1112,7 @@
 - Updated dependencies [87fda5af]
   - @scalar/use-keyboard-event@0.5.0
   - @scalar/use-codemirror@0.6.0
-  - @readyapi/themes@0.3.0
+  - @scalar/themes@0.3.0
 
 ## 0.5.5
 
@@ -1156,7 +1166,7 @@
 - Updated dependencies [494083a0]
   - @scalar/use-codemirror@0.5.0
   - @scalar/use-keyboard-event@0.4.1
-  - @readyapi/themes@0.2.1
+  - @scalar/themes@0.2.1
 
 ## 0.4.0
 
@@ -1167,7 +1177,7 @@
 ### Patch Changes
 
 - Updated dependencies [5057e213]
-  - @readyapi/themes@0.2.0
+  - @scalar/themes@0.2.0
   - @scalar/use-codemirror@0.4.0
   - @scalar/use-keyboard-event@0.4.0
 
@@ -1189,9 +1199,9 @@
 
 ### Patch Changes
 
-- de4ff38: feat: add a new @readyapi/themes package to import the variables and custom scrollbar CSS
+- de4ff38: feat: add a new @scalar/themes package to import the variables and custom scrollbar CSS
 - Updated dependencies [de4ff38]
-  - @readyapi/themes@0.1.1
+  - @scalar/themes@0.1.1
 
 ## 0.3.1
 

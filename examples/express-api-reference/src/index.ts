@@ -1,4 +1,4 @@
-import { apiReference } from '@readyapi/express-api-reference'
+import { apiReference } from '@scalar/express-api-reference'
 import Express from 'express'
 import swaggerJsdoc from 'swagger-jsdoc'
 
@@ -25,7 +25,7 @@ const OpenApiSpecification = swaggerJsdoc({
     info: {
       title: 'Express Example',
       description:
-        'The `@readyapi/express-api-reference` middleware renders a beautiful API reference based on your OpenAPI specification.',
+        'The `@scalar/express-api-reference` middleware renders a beautiful API reference based on your OpenAPI specification.',
       version: '1.0.0',
     },
   },

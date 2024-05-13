@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import { ThemeStyles } from '@readyapi/themes'
+import { ThemeStyles } from '@scalar/themes'
 
 import PageLink from '../components/PageLink.vue'
+
+const inDevelopment = import.meta.env.DEV
 </script>
 <template>
   <ThemeStyles id="default" />
@@ -68,41 +70,74 @@ import PageLink from '../components/PageLink.vue'
     <div class="page-links">
       <PageLink href="http://localhost:5062/galaxy">
         <template #title>Nuxt</template>
-        <template #description>@readyapi/nuxt</template>
+        <template #description>@scalar/nuxt</template>
       </PageLink>
       <PageLink href="http://localhost:5063/scalar">
         <template #title>Docusaurus</template>
-        <template #description>@readyapi/docusaurus</template>
+        <template #description>@scalar/docusaurus</template>
       </PageLink>
-      <PageLink href="https://scalar-example-next-js-p6gnzjpyuq-uc.a.run.app">
+      <PageLink
+        :href="
+          inDevelopment
+            ? 'http://localhost:5058'
+            : 'https://scalar-example-next-js-p6gnzjpyuq-uc.a.run.app'
+        ">
         <template #title>Next.js</template>
-        <template #description>@readyapi/nextjs-api-reference</template>
+        <template #description>@scalar/nextjs-api-reference</template>
       </PageLink>
-      <PageLink href="https://scalar-example-react-p6gnzjpyuq-uc.a.run.app">
+      <PageLink
+        :href="
+          inDevelopment
+            ? 'http://localhost:5059'
+            : 'https://scalar-example-react-p6gnzjpyuq-uc.a.run.app'
+        ">
         <template #title>React</template>
         <template #description>@scalar/api-reference</template>
       </PageLink>
       <PageLink
-        href="https://scalar-example-fastify-p6gnzjpyuq-uc.a.run.app/reference">
+        :href="
+          inDevelopment
+            ? 'http://localhost:5053/reference'
+            : 'https://scalar-example-fastify-p6gnzjpyuq-uc.a.run.app/reference'
+        ">
         <template #title>Fastify</template>
-        <template #description>@readyapi/fastify-api-reference</template>
-      </PageLink>
-      <PageLink href="https://scalar-example-hono-p6gnzjpyuq-uc.a.run.app">
-        <template #title>Hono</template>
-        <template #description>@readyapi/hono-api-reference</template>
-      </PageLink>
-      <PageLink href="https://scalar-example-express-p6gnzjpyuq-uc.a.run.app">
-        <template #title>Express</template>
-        <template #description>@readyapi/express-api-reference</template>
-      </PageLink>
-      <PageLink href="https://scalar-example-nest-js-p6gnzjpyuq-uc.a.run.app">
-        <template #title>NestJS (Express)</template>
-        <template #description>@readyapi/nestjs-api-reference</template>
+        <template #description>@scalar/fastify-api-reference</template>
       </PageLink>
       <PageLink
-        href="https://scalar-example-nest-js-fastify-p6gnzjpyuq-uc.a.run.app">
+        :href="
+          inDevelopment
+            ? 'http://localhost:5054'
+            : 'https://scalar-example-hono-p6gnzjpyuq-uc.a.run.app'
+        ">
+        <template #title>Hono</template>
+        <template #description>@scalar/hono-api-reference</template>
+      </PageLink>
+      <PageLink
+        :href="
+          inDevelopment
+            ? 'http://localhost:5055'
+            : 'https://scalar-example-express-p6gnzjpyuq-uc.a.run.app'
+        ">
+        <template #title>Express</template>
+        <template #description>@scalar/express-api-reference</template>
+      </PageLink>
+      <PageLink
+        :href="
+          inDevelopment
+            ? 'http://localhost:5056'
+            : 'https://scalar-example-nest-js-p6gnzjpyuq-uc.a.run.app'
+        ">
+        <template #title>NestJS (Express)</template>
+        <template #description>@scalar/nestjs-api-reference</template>
+      </PageLink>
+      <PageLink
+        :href="
+          inDevelopment
+            ? 'http://localhost:5057'
+            : 'https://scalar-example-nest-js-fastify-p6gnzjpyuq-uc.a.run.app'
+        ">
         <template #title>NestJS (Fastify)</template>
-        <template #description>@readyapi/nestjs-api-reference</template>
+        <template #description>@scalar/nestjs-api-reference</template>
       </PageLink>
     </div>
     <h1>@scalar/components</h1>

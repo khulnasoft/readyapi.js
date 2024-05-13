@@ -15,7 +15,7 @@ const ScalarDocusaurus = (
   options: ScalarOptions,
 ): Plugin<ReferenceProps> => {
   return {
-    name: '@readyapi/docusaurus',
+    name: '@scalar/docusaurus',
 
     async loadContent() {
       // Check if we need to download a spec

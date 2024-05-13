@@ -1,4 +1,8 @@
-# @readyapi/fastify-api-reference
+# @scalar/fastify-api-reference
+
+## 1.22.35
+
+## 1.22.34
 
 ## 1.22.33
 

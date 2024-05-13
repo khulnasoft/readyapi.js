@@ -1,4 +1,17 @@
-# @readyapi/nuxt
+# @scalar/nuxt
+
+## 0.0.45
+
+### Patch Changes
+
+- @scalar/api-reference@1.22.35
+
+## 0.0.44
+
+### Patch Changes
+
+- Updated dependencies [15625a2]
+  - @scalar/api-reference@1.22.34
 
 ## 0.0.43
 

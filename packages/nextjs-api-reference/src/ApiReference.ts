@@ -16,7 +16,7 @@ export const ApiReference = (refConfig: ReferenceConfiguration) => {
   // If no spec is passed, show a warning.
   if (!spec?.content && !spec?.url) {
     throw new Error(
-      '[@readyapi/nextjs-api-reference] You didn’t provide a spec.content or spec.url. Please provide one of these options.',
+      '[@scalar/nextjs-api-reference] You didn’t provide a spec.content or spec.url. Please provide one of these options.',
     )
   }
 

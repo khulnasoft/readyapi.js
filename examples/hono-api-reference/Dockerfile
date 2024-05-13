@@ -21,8 +21,8 @@ COPY examples/hono-api-reference ./examples/hono-api-reference
 
 # Mount the cache where pnpm expects it and build the main package
 RUN --mount=type=cache,id=pnpm,target=~/.pnpm-store \
-    pnpm --filter @readyapi-examples/hono-api-reference install --frozen-lockfile && \
-    pnpm --filter @readyapi-examples/hono-api-reference build
+    pnpm --filter @scalar-examples/hono-api-reference install --frozen-lockfile && \
+    pnpm --filter @scalar-examples/hono-api-reference build
 
 FROM node:18-bullseye-slim AS runner
 # Copy from the previous stage to keep this image minimal

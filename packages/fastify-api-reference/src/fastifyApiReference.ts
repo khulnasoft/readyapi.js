@@ -13,7 +13,7 @@ export type FastifyApiReferenceOptions = {
    * If you’re prefixing Fastify with a path, you can set it here.
    * It’ll be added to the JavaScript URL and the route.
    *
-   * Example: ${publicPath}${routePrefix}/@readyapi/fastify-api-reference/js/browser.js
+   * Example: ${publicPath}${routePrefix}/@scalar/fastify-api-reference/js/browser.js
    */
   publicPath?: string
   /**
@@ -37,7 +37,7 @@ const schemaToHideRoute = {
 }
 
 const getJavaScriptUrl = (routePrefix?: string, publicPath?: string) =>
-  `${publicPath ?? ''}${routePrefix ?? ''}/@readyapi/fastify-api-reference/js/browser.js`.replace(
+  `${publicPath ?? ''}${routePrefix ?? ''}/@scalar/fastify-api-reference/js/browser.js`.replace(
     /\/\//g,
     '/',
   )
@@ -180,7 +180,7 @@ const fastifyApiReference = fp<
       !hasSwaggerPlugin
     ) {
       fastify.log.warn(
-        '[@readyapi/fastify-api-reference] You didn’t provide a spec.content or spec.url, and @fastify/swagger could not be found. Please provide one of these options.',
+        '[@scalar/fastify-api-reference] You didn’t provide a spec.content or spec.url, and @fastify/swagger could not be found. Please provide one of these options.',
       )
 
       return
@@ -242,7 +242,7 @@ const fastifyApiReference = fp<
     })
   },
   {
-    name: '@readyapi/fastify-api-reference',
+    name: '@scalar/fastify-api-reference',
   },
 )
 

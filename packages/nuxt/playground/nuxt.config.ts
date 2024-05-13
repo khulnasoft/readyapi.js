@@ -20,7 +20,7 @@ export default defineNuxtConfig({
       },
       {
         spec: {
-          url: 'https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/latest.json',
+          url: 'https://cdn.jsdelivr.net/npm/@scalar/galaxy/dist/latest.json',
         },
         pathRouting: {
           basePath: '/galaxy',

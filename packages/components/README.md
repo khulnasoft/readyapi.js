@@ -13,8 +13,8 @@ pnpm i @scalar/theme @scalar/components
 In your main setup file (main.ts etc)
 
 ```ts
-import '@readyapi/themes/fonts.css'
-import '@readyapi/themes/base.css'
+import '@scalar/themes/fonts.css'
+import '@scalar/themes/base.css'
 ```
 
 Then to use the components

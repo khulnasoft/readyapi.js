@@ -13,6 +13,9 @@ const __dirname = path.dirname(__filename)
 
 type PackageType = 'examples' | 'packages'
 
+// Set the new package name here
+const newPackageName = '@readyapi'
+
 /**
  * # Formatting script for package.json files
  * Sorts, defaults and overrides keys as specified in the definitions below
@@ -51,8 +54,13 @@ const sortKeys = ['dependencies', 'devDependencies', 'scripts']
 const overrides: Record<string, unknown> = {
   license: 'MIT',
   author: 'KhulnaSoft (https://github.com/khulnasoft)',
-  bugs: 'https://github.com/khulnasoft/readyapi.js/issues/new/choose',
-  homepage: 'https://github.com/scalar/scalar',
+  bugs: `https://github.com/khulnasoft/${newPackageName.replace('@', '')}/issues/new/choose`,
+  homepage: `https://github.com/khulnasoft/${newPackageName.replace('@', '')}`,
+  repository: {
+    type: 'git',
+    url: `https://github.com/khulnasoft/${newPackageName.replace('@', '')}.git`,
+    directory: 'packages/use-tooltip',
+  },
 }
 
 /** Provide default values for some fields */
@@ -62,7 +70,7 @@ const fallbacks: Record<string, unknown> = {
   },
 }
 
-/** Format a package json file and validate scalar-org linting rules */
+/** Format a package json file and validate readyapi-org linting rules */
 async function formatPackage(filepath: string) {
   const file = await fs.readFile(filepath, 'utf-8').catch(() => null)
 
@@ -72,6 +80,9 @@ async function formatPackage(filepath: string) {
 
   const data = JSON.parse(file)
 
+  // Replace @scalar with @readyapi
+  const newData = replaceScalarWithReadyApi(data)
+
   if (data.type !== 'module') {
     printColor(
       'brightRed',
@@ -79,16 +90,16 @@ async function formatPackage(filepath: string) {
     )
   }
   if (
-    !data.name.startsWith('@scalar/') &&
-    !data.name.startsWith('@readyapi-examples/')
+    !newData.name.startsWith(`${newPackageName}/`) &&
+    !newData.name.startsWith(`${newPackageName}-examples/`)
   ) {
     printColor(
       'yellow',
-      `Package ${data.name} is not in the @scalar/* or @readyapi-examples/* scope.`,
+      `Package ${newData.name} is not in the ${newPackageName}/* or ${newPackageName}-examples/* scope.`,
     )
   }
 
-  const unsortedKeys = Object.keys(data).filter(
+  const unsortedKeys = Object.keys(newData).filter(
     (key) => !restrictedKeys.includes(key),
   )
 
@@ -98,11 +109,11 @@ async function formatPackage(filepath: string) {
     if (key === 'UNSORTED') {
       // Add in all unsorted keys at a designated sort point
       unsortedKeys.forEach((uKey) => {
-        formattedData[uKey] = data[uKey]
+        formattedData[uKey] = newData[uKey]
       })
     } else {
       // Either assign the override or the data in sorted order
-      const value = overrides[key] ?? data[key] ?? fallbacks[key]
+      const value = overrides[key] ?? newData[key] ?? fallbacks[key]
       if (value) {
         formattedData[key] = value
       }
@@ -186,4 +197,16 @@ function validatePackageScripts(
       return
     }
   })
+}
+
+/** Replace @scalar with @readyapi */
+function replaceScalarWithReadyApi(data: any) {
+  // Convert the data to string to perform the replacement
+  const newDataString = JSON.stringify(data)
+
+  // Perform the replacement using regular expression
+  const newString = newDataString.replace(/@scalar/g, '@readyapi')
+
+  // Parse the modified string back to JSON
+  return JSON.parse(newString)
 }

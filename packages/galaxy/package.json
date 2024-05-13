@@ -3,12 +3,12 @@
   "description": "OpenAPI example specification in YAML and JSON",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/scalar/scalar",
-  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
+  "homepage": "https://github.com/khulnasoft/readyapi",
+  "bugs": "https://github.com/khulnasoft/readyapi/issues/new/choose",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.js",
-    "directory": "packages/galaxy"
+    "url": "https://github.com/khulnasoft/readyapi.git",
+    "directory": "packages/use-tooltip"
   },
   "keywords": [
     "openapi",
@@ -43,7 +43,7 @@
   ],
   "module": "./dist/index.js",
   "devDependencies": {
-    "@scalar/openapi-parser": "^0.3.2",
+    "@readyapi/openapi-parser": "^0.3.2",
     "@vitest/coverage-v8": "^1.5.0",
     "tsc-alias": "^1.8.8",
     "vite": "^5.2.10",

@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { provideUseId } from '@headlessui/vue'
+import { type SSRState, defaultStateFactory } from '@scalar/oas-utils'
 import {
   ResetStyles,
   ScrollbarStyles,
   type ThemeId,
   ThemeStyles,
-} from '@readyapi/themes'
-import { ScalarToasts } from '@readyapi/use-toasts'
-import { type SSRState, defaultStateFactory } from '@scalar/oas-utils'
+} from '@scalar/themes'
+import { ScalarToasts } from '@scalar/use-toasts'
 import { useDebounceFn, useMediaQuery, useResizeObserver } from '@vueuse/core'
 import {
   computed,

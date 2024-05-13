@@ -3,14 +3,14 @@
   "description": "A middleware for using the Scalar API reference in Hono",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/scalar/scalar",
-  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
+  "homepage": "https://github.com/khulnasoft/readyapi",
+  "bugs": "https://github.com/khulnasoft/readyapi/issues/new/choose",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.js",
-    "directory": "packages/hono-api-reference"
+    "url": "https://github.com/khulnasoft/readyapi.git",
+    "directory": "packages/use-tooltip"
   },
-  "version": "0.5.33",
+  "version": "0.5.35",
   "engines": {
     "node": ">=18"
   },
@@ -38,7 +38,7 @@
   ],
   "module": "dist/index.js",
   "dependencies": {
-    "@scalar/api-reference": "workspace:*"
+    "@readyapi/api-reference": "workspace:*"
   },
   "devDependencies": {
     "hono": "^4.2.7",

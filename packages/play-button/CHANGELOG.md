@@ -1,4 +1,19 @@
-# @readyapi/play-button
+# @scalar/play-button
+
+## 0.0.10
+
+### Patch Changes
+
+- Updated dependencies [624604e]
+  - @scalar/api-client@1.2.24
+  - @scalar/api-reference@1.22.35
+
+## 0.0.9
+
+### Patch Changes
+
+- Updated dependencies [15625a2]
+  - @scalar/api-reference@1.22.34
 
 ## 0.0.8
 

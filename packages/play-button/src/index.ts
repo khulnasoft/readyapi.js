@@ -11,7 +11,7 @@ const specElement = document.querySelector('[data-spec]')
 const specUrlElement = document.querySelector('[data-spec-url]')
 
 const getSpecUrl = () => {
-  // <script id="api-reference" data-url="/scalar.json" />
+  // <script id="api-reference" data-url="/readyapi.json" />
   if (specScriptTag) {
     const urlFromScriptTag = specScriptTag.getAttribute('data-url')?.trim()
 
@@ -20,10 +20,10 @@ const getSpecUrl = () => {
     }
   }
 
-  // <div data-spec-url="/scalar.json" />
+  // <div data-spec-url="/readyapi.json" />
   if (specUrlElement) {
     console.warn(
-      '[@readyapi/play-button] The [data-spec-url] HTML API is deprecated. Use the new <script id="api-reference" data-url="/scalar.json" /> API instead.',
+      '[@scalar/play-button] The [data-spec-url] HTML API is deprecated. Use the new <script id="api-reference" data-url="/readyapi.json" /> API instead.',
     )
     const urlFromSpecUrlElement = specUrlElement.getAttribute('data-spec-url')
 
@@ -53,7 +53,7 @@ const props = reactive({})
 
 if (!specUrlElement && !specElement && !specScriptTag) {
   console.error(
-    'Couldn’t find a [data-spec], [data-spec-url] or <script id="api-reference" /> element. Try adding it like this: %c<div data-spec-url="https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/latest.yaml" />',
+    'Couldn’t find a [data-spec], [data-spec-url] or <script id="api-reference" /> element. Try adding it like this: %c<div data-spec-url="https://cdn.jsdelivr.net/npm/@scalar/galaxy/dist/latest.yaml" />',
     'font-family: monospace;',
   )
 } else {

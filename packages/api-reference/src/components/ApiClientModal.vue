@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { ThemeId } from '@readyapi/themes'
 import { useApiClientStore } from '@scalar/api-client'
 import { ScalarIcon } from '@scalar/components'
+import type { ThemeId } from '@scalar/themes'
 import { useMediaQuery } from '@vueuse/core'
 import { defineAsyncComponent, ref } from 'vue'
 

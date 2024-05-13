@@ -58,7 +58,7 @@ jobs:
           --message "Deployed from Github - ${{ env.DEPLOY_ID }}" \
           --site ${{ vars.NETLIFY_SITE_ID_PREVIEW }} \
           --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} \
-          --filter @readyapi-examples/web \
+          --filter @scalar-examples/web \
           --alias=${{env.DEPLOY_ID}}
       - uses: jwalton/gh-find-current-pr@master
         id: findPr

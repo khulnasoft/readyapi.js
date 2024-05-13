@@ -46,4 +46,4 @@ jobs:
           --message "Deployed from Github - ${{ env.DEPLOY_ID }}" \
           --site ${{ vars.NETLIFY_SITE_ID_PREVIEW }} \
           --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} \
-          --filter @readyapi-examples/web --prod
+          --filter @scalar-examples/web --prod

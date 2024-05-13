@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import content from '@readyapi/galaxy/latest.yaml?raw'
-import type { ThemeId } from '@readyapi/themes'
 import {
   ApiReference,
   type ReferenceConfiguration,
   type ReferenceLayoutType,
 } from '@scalar/api-reference'
+import content from '@scalar/galaxy/latest.yaml?raw'
+import type { ThemeId } from '@scalar/themes'
 import { reactive } from 'vue'
 import { useRoute } from 'vue-router'
 

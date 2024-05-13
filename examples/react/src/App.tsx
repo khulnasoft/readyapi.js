@@ -6,7 +6,7 @@ function App() {
     <ApiReferenceReact
       configuration={{
         spec: {
-          url: 'https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/latest.yaml',
+          url: 'https://cdn.jsdelivr.net/npm/@scalar/galaxy/dist/latest.yaml',
         },
       }}
     />

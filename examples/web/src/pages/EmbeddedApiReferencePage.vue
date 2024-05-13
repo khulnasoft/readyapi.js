@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import content from '@readyapi/galaxy/latest.yaml?raw'
 import {
   ApiReference,
   type ReferenceConfiguration,
 } from '@scalar/api-reference'
+import content from '@scalar/galaxy/latest.yaml?raw'
 import { reactive } from 'vue'
 
 import SlotPlaceholder from '../components/SlotPlaceholder.vue'

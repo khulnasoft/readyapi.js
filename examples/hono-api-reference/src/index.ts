@@ -1,6 +1,6 @@
 import { serve } from '@hono/node-server'
 import { OpenAPIHono, createRoute, z } from '@hono/zod-openapi'
-import { apiReference } from '@readyapi/hono-api-reference'
+import { apiReference } from '@scalar/hono-api-reference'
 
 const PORT = Number(process.env.PORT) || 5054
 const HOST = process.env.HOST || '0.0.0.0'
@@ -166,7 +166,7 @@ app.doc('/openapi.json', {
   info: {
     title: 'Example',
     description:
-      'The `@readyapi/hono-api-reference` middleware renders a beautiful API reference based on your OpenAPI specification.',
+      'The `@scalar/hono-api-reference` middleware renders a beautiful API reference based on your OpenAPI specification.',
     version: 'v1',
   },
   openapi: '3.1.0',

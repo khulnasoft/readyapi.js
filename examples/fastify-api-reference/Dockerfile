@@ -10,8 +10,8 @@ COPY examples/fastify-api-reference ./examples/fastify-api-reference
 
 # Install and build the main package and its dependencies
 RUN --mount=type=cache,id=pnpm,target=~/.pnpm-store \
-    pnpm --filter "@readyapi-examples/fastify-api-reference" install && \
-    pnpm --filter "@readyapi-examples/fastify-api-reference" build
+    pnpm --filter "@scalar-examples/fastify-api-reference" install && \
+    pnpm --filter "@scalar-examples/fastify-api-reference" build
 
 
 FROM node:18-bullseye-slim AS runner

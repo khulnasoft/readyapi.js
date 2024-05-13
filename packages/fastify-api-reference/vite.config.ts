@@ -21,7 +21,7 @@ export default defineConfig({
     minify: 'terser',
     lib: {
       entry: 'src/index.ts',
-      name: '@readyapi/fastify-api-reference',
+      name: '@scalar/fastify-api-reference',
       fileName: 'index',
       formats: ['es', 'cjs'],
     },

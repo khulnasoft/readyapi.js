@@ -3,17 +3,17 @@
   "description": "A minimal package to test any OpenAPI/Swagger Spec with the Scalar API Client",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/scalar/scalar",
-  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
+  "homepage": "https://github.com/khulnasoft/readyapi",
+  "bugs": "https://github.com/khulnasoft/readyapi/issues/new/choose",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.js",
-    "directory": "packages/play-button"
+    "url": "https://github.com/khulnasoft/readyapi.git",
+    "directory": "packages/use-tooltip"
   },
   "keywords": [
     ""
   ],
-  "version": "0.0.8",
+  "version": "0.0.10",
   "engines": {
     "node": ">=18"
   },
@@ -50,10 +50,10 @@
   ],
   "module": "dist/index.js",
   "dependencies": {
+    "@readyapi/api-client": "workspace:*",
+    "@readyapi/api-reference": "workspace:*",
+    "@readyapi/openapi-parser": "^0.3.2",
     "@readyapi/themes": "workspace:*",
-    "@scalar/api-client": "workspace:*",
-    "@scalar/api-reference": "workspace:*",
-    "@scalar/openapi-parser": "^0.3.2",
     "@vueuse/core": "^10.9.0"
   },
   "devDependencies": {

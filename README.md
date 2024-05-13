@@ -75,7 +75,7 @@ Generate interactive API documentation from OpenAPI/Swagger files. [Try our Demo
     <!-- Note: The example is our public proxy (to avoid CORS issues). You can remove the `data-proxy-url` attribute if you don’t need it. -->
     <script
       id="api-reference"
-      data-url="https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/latest.yaml"
+      data-url="https://cdn.jsdelivr.net/npm/@scalar/galaxy/dist/latest.yaml"
       data-proxy-url="https://api.scalar.com/request-proxy"></script>
 
     <!-- Optional: You can set a full configuration object like this: -->
@@ -151,7 +151,7 @@ document.dispatchEvent(ev)
 You can easily run Scalar API References in Nuxt via the module:
 
 ```bash
-npx nuxi module add @readyapi/nuxt
+npx nuxi module add @scalar/nuxt
 ```
 
 If you are using Nuxt server routes, you can enable scalar simply by enabling `openAPI` in the nitro
@@ -159,7 +159,7 @@ config in your `nuxt.config.ts`:
 
 ```ts
 export default defineNuxtConfig({
-  modules: ['@readyapi/nuxt'],
+  modules: ['@scalar/nuxt'],
   nitro: {
     experimental: {
       openAPI: true,
@@ -172,7 +172,7 @@ If you would like to add your own OpenAPI spec file, you can do so with the foll
 
 ```ts
 export default defineNuxtConfig({
-  modules: ['@readyapi/nuxt'],
+  modules: ['@scalar/nuxt'],
   scalar: {
     spec: {
       url: 'https://cdn.scalar.com/spec/openapi_petstore.json',
@@ -181,7 +181,7 @@ export default defineNuxtConfig({
 })
 ```
 
-Read more: [@readyapi/nuxt](https://github.com/scalar/scalar/tree/main/packages/nuxt)
+Read more: [@scalar/nuxt](https://github.com/scalar/scalar/tree/main/packages/nuxt)
 
 ### Vue.js
 
@@ -224,7 +224,7 @@ function App() {
     <ApiReferenceReact
       configuration={{
         spec: {
-          url: 'https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/latest.yaml',
+          url: 'https://cdn.jsdelivr.net/npm/@scalar/galaxy/dist/latest.yaml',
         },
       }}
     />
@@ -241,7 +241,7 @@ route handler:
 
 ```ts
 // app/reference/route.ts
-import { ApiReference } from '@readyapi/nextjs-api-reference'
+import { ApiReference } from '@scalar/nextjs-api-reference'
 
 const config = {
   spec: {
@@ -252,14 +252,14 @@ const config = {
 export const GET = ApiReference(config)
 ```
 
-Read more: [@readyapi/nextjs-api-reference](https://github.com/scalar/scalar/tree/main/packages/nextjs-api-reference)
+Read more: [@scalar/nextjs-api-reference](https://github.com/scalar/scalar/tree/main/packages/nextjs-api-reference)
 
 ### Fastify
 
 Our fastify plugin makes it so easy to render a reference, there’s no excuse to not have documentation for your API:
 
 ```ts
-await fastify.register(require('@readyapi/fastify-api-reference'), {
+await fastify.register(require('@scalar/fastify-api-reference'), {
   routePrefix: '/reference',
   configuration: {
     spec: () => fastify.swagger(),
@@ -270,7 +270,7 @@ await fastify.register(require('@readyapi/fastify-api-reference'), {
 Actually, it’s executing the `fastify.swagger()` call by default (if available). So that’s all you need to add:
 
 ```ts
-await fastify.register(require('@readyapi/fastify-api-reference'), {
+await fastify.register(require('@scalar/fastify-api-reference'), {
   routePrefix: '/reference',
 })
 ```
@@ -279,7 +279,7 @@ We wrote
 a [detailed integration guide for Fastify](https://github.com/scalar/scalar/tree/main/documentation/fastify.md), too.
 
 Read more about the
-package: [@readyapi/fastify-api-reference](https://github.com/scalar/scalar/tree/main/packages/fastify-api-reference)
+package: [@scalar/fastify-api-reference](https://github.com/scalar/scalar/tree/main/packages/fastify-api-reference)
 
 ### Platformatic
 
@@ -292,7 +292,7 @@ API reference is installed and configured automatically.
 Our Hono middleware makes it so easy to render a reference:
 
 ```ts
-import { apiReference } from '@readyapi/hono-api-reference'
+import { apiReference } from '@scalar/hono-api-reference'
 
 app.get(
   '/reference',
@@ -304,7 +304,7 @@ app.get(
 )
 ```
 
-Read more: [@readyapi/hono-api-reference](https://github.com/scalar/scalar/tree/main/packages/hono-api-reference)
+Read more: [@scalar/hono-api-reference](https://github.com/scalar/scalar/tree/main/packages/hono-api-reference)
 
 ### ElysiaJS
 
@@ -330,7 +330,7 @@ new Elysia()
 Our Express middleware makes it so easy to render a reference:
 
 ```ts
-import { apiReference } from '@readyapi/express-api-reference'
+import { apiReference } from '@scalar/express-api-reference'
 
 app.use(
   '/reference',
@@ -342,14 +342,14 @@ app.use(
 )
 ```
 
-Read more: [@readyapi/express-api-reference](https://github.com/scalar/scalar/tree/main/packages/express-api-reference)
+Read more: [@scalar/express-api-reference](https://github.com/scalar/scalar/tree/main/packages/express-api-reference)
 
 ### NestJS
 
 Our NestJS middleware makes it so easy to render a reference:
 
 ```ts
-import { apiReference } from '@readyapi/nestjs-api-reference'
+import { apiReference } from '@scalar/nestjs-api-reference'
 
 app.use(
   '/reference',
@@ -361,7 +361,7 @@ app.use(
 )
 ```
 
-Read more: [@readyapi/nestjs-api-reference](https://github.com/scalar/scalar/tree/main/packages/nestjs-api-reference)
+Read more: [@scalar/nestjs-api-reference](https://github.com/scalar/scalar/tree/main/packages/nestjs-api-reference)
 
 ### Docusaurus
 
@@ -369,17 +369,17 @@ Our Docusaurus plugin makes it easy to render API references. Simple add the
 following to your Docusaurus config:
 
 ```ts
-import type { ScalarOptions } from '@readyapi/docusaurus'
+import type { ScalarOptions } from '@scalar/docusaurus'
 
 plugins: [
   [
-    '@readyapi/docusaurus',
+    '@scalar/docusaurus',
     {
       label: 'Scalar',
       route: '/scalar',
       configuration: {
         spec: {
-          url: 'https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/latest.yaml',
+          url: 'https://cdn.jsdelivr.net/npm/@scalar/galaxy/dist/latest.yaml',
         },
       },
     } as ScalarOptions,
@@ -486,7 +486,7 @@ If you want to install it locally, you can do it like this:
 
 ```bash
 npm -g install @scalar/cli
-scalar --version
+readyapi --version
 ```
 
 ### Format
@@ -701,7 +701,7 @@ We recommend updating your theme variables as soon as possible:
 For a before and after example of an updated theme
 see [`legacyTheme.css`](https://github.com/scalar/scalar/tree/main/packages/themes/src/fixtures/legacyTheme.css)
 and [`updatedTheme.css`](https://github.com/scalar/scalar/tree/main/packages/themes/src/fixtures/updatedTheme.css)
-in the [`@readyapi/themes`](https://github.com/scalar/scalar/tree/main/packages/themes/) package.
+in the [`@scalar/themes`](https://github.com/scalar/scalar/tree/main/packages/themes/) package.
 
 ## Community
 
@@ -711,21 +711,21 @@ We are API nerds. You too? Let’s chat on Discord: <https://discord.gg/scalar>
 
 This repository contains all our open source projects, and there’s definitely more to discover.
 
-| Package                                                                                                      | Description                                       |
-| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- |
-| [@scalar/api-client](https://github.com/scalar/scalar/tree/main/packages/api-client)                         | API testing client                                |
-| [@scalar/api-reference](https://github.com/scalar/scalar/tree/main/packages/api-reference)                   | beautiful API references                          |
-| [@scalar/cli](https://github.com/scalar/scalar/tree/main/packages/cli)                                       | CLI to work with OpenAPi files                    |
-| [@readyapi/echo-server](https://github.com/scalar/scalar/tree/main/packages/echo-server)                     | a server that replies with the request data       |
-| [@readyapi/express-api-reference](https://github.com/scalar/scalar/tree/main/packages/express-api-reference) | Express plugin                                    |
-| [@readyapi/fastify-api-reference](https://github.com/scalar/scalar/tree/main/packages/fastify-api-reference) | Fastify plugin                                    |
-| [@readyapi/galaxy](https://github.com/scalar/scalar/tree/main/packages/galaxy)                               | OpenAPI example specification                     |
-| [@readyapi/hono-api-reference](https://github.com/scalar/scalar/tree/main/packages/hono-api-reference)       | Hono middleware                                   |
-| [@scalar/mock-server](https://github.com/scalar/scalar/tree/main/packages/mock-server)                       | fake data based on an OpenAPI specification files |
-| [@readyapi/nestjs-api-reference](https://github.com/scalar/scalar/tree/main/packages/nestjs-api-reference)   | NestJS middleware                                 |
-| [@readyapi/nextjs-api-reference](https://github.com/scalar/scalar/tree/main/packages/nextjs-api-reference)   | Next.js adapter                                   |
-| [@scalar/swagger-editor](https://github.com/scalar/scalar/tree/main/packages/swagger-editor)                 | editor tailored to write OpenAPI files            |
-| [@scalar/swagger-parser](https://github.com/scalar/scalar/tree/main/packages/swagger-parser)                 | parse OpenAPI files                               |
+| Package                                                                                                    | Description                                       |
+| ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| [@scalar/api-client](https://github.com/scalar/scalar/tree/main/packages/api-client)                       | API testing client                                |
+| [@scalar/api-reference](https://github.com/scalar/scalar/tree/main/packages/api-reference)                 | beautiful API references                          |
+| [@scalar/cli](https://github.com/scalar/scalar/tree/main/packages/cli)                                     | CLI to work with OpenAPi files                    |
+| [@scalar/echo-server](https://github.com/scalar/scalar/tree/main/packages/echo-server)                     | a server that replies with the request data       |
+| [@scalar/express-api-reference](https://github.com/scalar/scalar/tree/main/packages/express-api-reference) | Express plugin                                    |
+| [@scalar/fastify-api-reference](https://github.com/scalar/scalar/tree/main/packages/fastify-api-reference) | Fastify plugin                                    |
+| [@scalar/galaxy](https://github.com/scalar/scalar/tree/main/packages/galaxy)                               | OpenAPI example specification                     |
+| [@scalar/hono-api-reference](https://github.com/scalar/scalar/tree/main/packages/hono-api-reference)       | Hono middleware                                   |
+| [@scalar/mock-server](https://github.com/scalar/scalar/tree/main/packages/mock-server)                     | fake data based on an OpenAPI specification files |
+| [@scalar/nestjs-api-reference](https://github.com/scalar/scalar/tree/main/packages/nestjs-api-reference)   | NestJS middleware                                 |
+| [@scalar/nextjs-api-reference](https://github.com/scalar/scalar/tree/main/packages/nextjs-api-reference)   | Next.js adapter                                   |
+| [@scalar/swagger-editor](https://github.com/scalar/scalar/tree/main/packages/swagger-editor)               | editor tailored to write OpenAPI files            |
+| [@scalar/swagger-parser](https://github.com/scalar/scalar/tree/main/packages/swagger-parser)               | parse OpenAPI files                               |
 
 ## Contributors
 

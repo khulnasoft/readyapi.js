@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { type ThemeId, themeLabels } from '@readyapi/themes'
 import { ScalarButton } from '@scalar/components'
+import { type ThemeId, themeLabels } from '@scalar/themes'
 
 defineProps<{
   theme: ThemeId
@@ -27,7 +27,7 @@ const themeIds: ThemeId[] = [
 
 async function fetchExampleSpecification() {
   const response = await fetch(
-    'https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/latest.yaml',
+    'https://cdn.jsdelivr.net/npm/@scalar/galaxy/dist/latest.yaml',
   )
 
   emits('updateContent', await response.text())

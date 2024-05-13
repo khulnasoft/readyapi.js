@@ -31,7 +31,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: ['src/index.ts'],
-      name: '@readyapi/themes',
+      name: '@scalar/themes',
       formats: ['es', 'cjs'],
     },
     rollupOptions: {

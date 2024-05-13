@@ -1,14 +1,14 @@
 {
-  "name": "@scalar/api-client",
+  "name": "@readyapi/api-client",
   "description": "the open source API testing client",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/scalar/scalar",
-  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
+  "homepage": "https://github.com/khulnasoft/readyapi",
+  "bugs": "https://github.com/khulnasoft/readyapi/issues/new/choose",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.js",
-    "directory": "packages/api-client"
+    "url": "https://github.com/khulnasoft/readyapi.git",
+    "directory": "packages/use-tooltip"
   },
   "keywords": [
     "api",
@@ -18,7 +18,7 @@
     "rest",
     "testing"
   ],
-  "version": "1.2.23",
+  "version": "1.2.24",
   "engines": {
     "node": ">=18"
   },
@@ -44,12 +44,12 @@
   "dependencies": {
     "@floating-ui/vue": "^1.0.2",
     "@headlessui/vue": "^1.7.20",
+    "@readyapi/components": "workspace:*",
+    "@readyapi/openapi-parser": "^0.3.2",
     "@readyapi/themes": "workspace:*",
-    "@scalar/components": "workspace:*",
-    "@scalar/openapi-parser": "^0.3.2",
-    "@scalar/use-codemirror": "workspace:*",
-    "@scalar/use-modal": "workspace:*",
-    "@scalar/use-tooltip": "workspace:*",
+    "@readyapi/use-codemirror": "workspace:*",
+    "@readyapi/use-modal": "workspace:*",
+    "@readyapi/use-tooltip": "workspace:*",
     "@vueuse/core": "^10.9.0",
     "axios": "^1.6.8",
     "content-type": "^1.0.5",
@@ -59,9 +59,9 @@
     "pretty-ms": "^8.0.0"
   },
   "devDependencies": {
+    "@readyapi/api-client-proxy": "workspace:*",
     "@readyapi/echo-server": "workspace:*",
-    "@scalar/api-client-proxy": "workspace:*",
-    "@scalar/oas-utils": "workspace:*",
+    "@readyapi/oas-utils": "workspace:*",
     "@types/content-type": "^1.1.6",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vitest/coverage-v8": "^1.5.0",
@@ -73,7 +73,7 @@
     "vue-tsc": "^1.8.19"
   },
   "peerDependencies": {
-    "@scalar/oas-utils": "workspace:*",
+    "@readyapi/oas-utils": "workspace:*",
     "vue": "^3.3.0"
   }
 }

@@ -10,7 +10,7 @@ Add the Scalar Play Button to your page
     <script
       id="scalar-play-button-script"
       data-url="https://petstore3.swagger.io/api/v3/openapi.json"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@readyapi/play-button"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@scalar/play-button"></script>
 ```
 
 then add a button with the class and optional scalar-operation-id

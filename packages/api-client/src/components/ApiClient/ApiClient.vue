@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/vue'
-import { type ThemeId, ThemeStyles } from '@readyapi/themes'
+import { type ThemeId, ThemeStyles } from '@scalar/themes'
 import { useMagicKeys, useMediaQuery, whenever } from '@vueuse/core'
 import { ref, watch } from 'vue'
 

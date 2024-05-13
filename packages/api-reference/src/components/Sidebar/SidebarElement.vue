@@ -95,7 +95,7 @@ const onAnchorClick = async (ev: Event) => {
       }"
       @click="handleClick">
       <!-- If children are detected then show the nesting icon -->
-      <!-- Use &hairsp; to vertically center scalar icon button to the first line of text in the sidebar heading link -->
+      <!-- Use &hairsp; to vertically center readyapi icon button to the first line of text in the sidebar heading link -->
       <p
         v-if="hasChildren"
         class="sidebar-heading-chevron">

@@ -193,14 +193,14 @@ npm run dev
 
 I cross my fingers for you, but this should give you a pretty decent OpenAPI file on <http://127.0.0.1:3000/openapi.json>
 
-Did it work? OMG, this is so cool! It didn’t? [Create a new issue](https://github.com/khulnasoft/readyapi.js/issues/new/choose) so we can improve this guide here — I mean, that’s the beauty of open source, isn’t it?
+Did it work? OMG, this is so cool! It didn’t? [Create a new issue](https://github.com/scalar/scalar/issues/new/choose) so we can improve this guide here — I mean, that’s the beauty of open source, isn’t it?
 
 ## Render your OpenAPI reference with Scalar
 
 Congratulations, you’ve come really far. And I have good news for you, you’re just a few lines of code away from a stunning API reference for your Fastify project. Time to pull our package:
 
 ```
-npm install @readyapi/fastify-api-reference
+npm install @scalar/fastify-api-reference
 ```
 
 Put the following snippet into your `index.js` right before the `await fastify.ready`
@@ -208,7 +208,7 @@ Put the following snippet into your `index.js` right before the `await fastify.r
 ```js
 // …
 // Render the API reference
-import ScalarApiReference from '@readyapi/fastify-api-reference'
+import ScalarApiReference from '@scalar/fastify-api-reference'
 
 await fastify.register(ScalarApiReference, {
   routePrefix: '/reference',
@@ -230,7 +230,7 @@ That’s it, you made it! You can keep adding routes to Fastify now and the refe
 You can customize a ton! Just pass a `configuration` object to the plugin:
 
 ```js
-import ScalarApiReference from '@readyapi/fastify-api-reference'
+import ScalarApiReference from '@scalar/fastify-api-reference'
 
 await fastify.register(ScalarApiReference, {
   routePrefix: '/reference',
@@ -248,13 +248,19 @@ TypeScript should give you a nice autocomplete for all options. If you’re more
 
 Auto-generated OpenAPI files are great, but some OpenAPI purists argue it’s worth to handcraft your OpenAPI files. If you’re one of them, feel free to just pass an URL to your existing OpenAPI file:
 
+> Note: If you don’t use `@fastify/swagger` to generate and serve an OpenAPI specification, you need to serve it
+> manually. [To serve static files, try @fastify/static](https://github.com/fastify/fastify-static).
+
 ```js
-import ScalarApiReference from '@readyapi/fastify-api-reference'
+import ScalarApiReference from '@scalar/fastify-api-reference'
 
 await fastify.register(ScalarApiReference, {
   routePrefix: '/reference',
   configuration: {
+    // On your domain:
     url: '/openapi.json',
+    // Or somewhere else:
+    // url: 'https://cdn.jsdelivr.net/npm/@scalar/galaxy/dist/latest.yaml',
   },
 })
 ```

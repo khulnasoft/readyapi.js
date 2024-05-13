@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { migrateThemeVariables } from '@readyapi/themes'
 import { useAuthenticationStore } from '@scalar/api-client'
+import { migrateThemeVariables } from '@scalar/themes'
 import { createHead, useSeoMeta } from 'unhead'
 import { computed, toRef, watch } from 'vue'
 

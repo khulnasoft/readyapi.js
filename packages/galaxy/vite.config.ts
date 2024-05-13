@@ -21,7 +21,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: ['src/index.ts'],
-      name: '@readyapi/galaxy',
+      name: '@scalar/galaxy',
       formats: ['es'],
     },
   },

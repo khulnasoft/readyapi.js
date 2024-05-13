@@ -1,5 +1,21 @@
 # @scalar/api-reference
 
+## 1.22.35
+
+### Patch Changes
+
+- Updated dependencies [624604e]
+- Updated dependencies [624604e]
+  - @scalar/api-client@1.2.24
+  - @scalar/oas-utils@0.1.11
+  - @scalar/components@0.7.7
+
+## 1.22.34
+
+### Patch Changes
+
+- 15625a2: feat: support <sub> tag in markdown
+
 ## 1.22.33
 
 ### Patch Changes
@@ -66,7 +82,7 @@
 - Updated dependencies [670156e]
   - @scalar/api-client@1.2.18
   - @scalar/components@0.7.4
-  - @readyapi/use-toasts@0.6.6
+  - @scalar/use-toasts@0.6.6
 
 ## 1.22.25
 
@@ -80,7 +96,7 @@
 - Updated dependencies [d649691]
 - Updated dependencies [2e7b074]
   - @scalar/api-client@1.2.17
-  - @readyapi/use-toasts@0.6.5
+  - @scalar/use-toasts@0.6.5
 
 ## 1.22.24
 
@@ -92,10 +108,10 @@
   - @scalar/use-tooltip@0.6.2
   - @scalar/api-client@1.2.16
   - @scalar/components@0.7.3
-  - @readyapi/use-toasts@0.6.4
+  - @scalar/use-toasts@0.6.4
   - @scalar/oas-utils@0.1.10
   - @scalar/use-modal@0.3.3
-  - @readyapi/themes@0.7.9
+  - @scalar/themes@0.7.9
 
 ## 1.22.23
 
@@ -105,11 +121,11 @@
 - Updated dependencies [05e2e27]
   - @scalar/api-client@1.2.15
   - @scalar/components@0.7.2
-  - @readyapi/galaxy@0.1.1
+  - @scalar/galaxy@0.1.1
   - @scalar/oas-utils@0.1.9
-  - @readyapi/themes@0.7.8
+  - @scalar/themes@0.7.8
   - @scalar/use-modal@0.3.2
-  - @readyapi/use-toasts@0.6.3
+  - @scalar/use-toasts@0.6.3
   - @scalar/use-tooltip@0.6.1
 
 ## 1.22.22
@@ -142,20 +158,20 @@
   - @scalar/components@0.7.0
   - @scalar/oas-utils@0.1.7
   - @scalar/use-modal@0.3.1
-  - @readyapi/themes@0.7.7
-  - @readyapi/use-toasts@0.6.2
+  - @scalar/themes@0.7.7
+  - @scalar/use-toasts@0.6.2
 
 ## 1.22.20
 
 ### Patch Changes
 
-- a8c3045: build: re-introduce @readyapi/use-toasts package
+- a8c3045: build: re-introduce @scalar/use-toasts package
 - 1324378: feat: show two levels of headings in the sidebar
 - 9201802: chore: update example page title
 - Updated dependencies [c6e4385]
 - Updated dependencies [a8c3045]
   - @scalar/api-client@1.2.12
-  - @readyapi/use-toasts@0.6.1
+  - @scalar/use-toasts@0.6.1
 
 ## 1.22.19
 
@@ -179,7 +195,7 @@
 - b42479c: fix: unused empty tags break the sidebar
 - 4c38ac1: fix: add label value in changeTheme event
 - Updated dependencies [53ba90d]
-  - @readyapi/galaxy@0.1.0
+  - @scalar/galaxy@0.1.0
 
 ## 1.22.16
 
@@ -202,7 +218,7 @@
 
 - b8e3f09: feat: add chevron for markdown summary
 - Updated dependencies [0a77380]
-  - @readyapi/themes@0.7.6
+  - @scalar/themes@0.7.6
   - @scalar/api-client@1.2.9
   - @scalar/components@0.5.5
 
@@ -214,7 +230,7 @@
 - 2700c5c: feat: separate google fonts from theme, add withDefaultFonts setting
 - Updated dependencies [2700c5c]
   - @scalar/components@0.5.5
-  - @readyapi/themes@0.7.5
+  - @scalar/themes@0.7.5
   - @scalar/api-client@1.2.8
 
 ## 1.22.12
@@ -235,7 +251,7 @@
 - 43e1217: feat: new scalar galaxy example specification
 - Updated dependencies [86d1363]
 - Updated dependencies [bc3f3af]
-  - @readyapi/themes@0.7.4
+  - @scalar/themes@0.7.4
   - @scalar/components@0.5.3
   - @scalar/api-client@1.2.6
 
@@ -253,9 +269,9 @@
 ### Patch Changes
 
 - 6f68b40: fix: allow nullable additional properties
-- 4d31b19: refactor: move theme labels to @readyapi/themes
+- 4d31b19: refactor: move theme labels to @scalar/themes
 - Updated dependencies [4d31b19]
-  - @readyapi/themes@0.7.3
+  - @scalar/themes@0.7.3
   - @scalar/api-client@1.2.4
   - @scalar/components@0.5.1
 
@@ -298,7 +314,7 @@
 ### Patch Changes
 
 - Updated dependencies [85a0074]
-  - @readyapi/themes@0.7.2
+  - @scalar/themes@0.7.2
   - @scalar/api-client@1.2.2
   - @scalar/components@0.5.0
 
@@ -308,7 +324,7 @@
 
 - Updated dependencies [d77acdd]
   - @scalar/api-client@1.2.1
-  - @readyapi/themes@0.7.1
+  - @scalar/themes@0.7.1
   - @scalar/components@0.5.0
 
 ## 1.22.1
@@ -335,7 +351,7 @@
   - @scalar/components@0.5.0
   - @scalar/oas-utils@0.1.6
   - @scalar/use-modal@0.3.0
-  - @readyapi/themes@0.7.0
+  - @scalar/themes@0.7.0
 
 ## 1.21.2
 
@@ -502,7 +518,7 @@
 
 - d70bda7: fix: text decoration targetting in themes + unused css in themes
 - Updated dependencies [d70bda7]
-  - @readyapi/themes@0.6.7
+  - @scalar/themes@0.6.7
   - @scalar/api-client@1.1.9
   - @scalar/components@0.4.8
 
@@ -515,7 +531,7 @@
 - Updated dependencies [5b83e30]
 - Updated dependencies [43421a6]
 - Updated dependencies [ae193a8]
-  - @readyapi/themes@0.6.6
+  - @scalar/themes@0.6.6
   - @scalar/api-client@1.1.8
   - @scalar/components@0.4.8
 
@@ -560,7 +576,7 @@
 
 - 0c5e22c: fix: section flare if position fixed
 - Updated dependencies [0c5e22c]
-  - @readyapi/themes@0.6.5
+  - @scalar/themes@0.6.5
   - @scalar/api-client@1.1.3
   - @scalar/components@0.4.4
 
@@ -644,7 +660,7 @@
 - 21195b7: fix: add back sidebar item hover color
 - 68cda2b: feat: add x-tagGroups in sidebar
 - Updated dependencies [68cda2b]
-  - @readyapi/themes@0.6.4
+  - @scalar/themes@0.6.4
   - @scalar/api-client@1.0.2
   - @scalar/components@0.4.4
   - @scalar/swagger-editor@1.0.2
@@ -656,7 +672,7 @@
 - Updated dependencies [bbbba1f]
 - Updated dependencies [897990b]
   - @scalar/components@0.4.4
-  - @readyapi/themes@0.6.3
+  - @scalar/themes@0.6.3
   - @scalar/api-client@1.0.1
   - @scalar/swagger-editor@1.0.1
 
@@ -732,7 +748,7 @@
 - Updated dependencies [ef3a015]
   - @scalar/api-client@0.12.17
   - @scalar/components@0.4.3
-  - @readyapi/themes@0.6.2
+  - @scalar/themes@0.6.2
   - @scalar/swagger-parser@0.5.21
   - @scalar/use-modal@0.2.9
   - @scalar/use-tooltip@0.5.12
@@ -742,7 +758,7 @@
 ### Patch Changes
 
 - Updated dependencies [4ef178f]
-  - @readyapi/themes@0.6.1
+  - @scalar/themes@0.6.1
   - @scalar/api-client@0.12.16
   - @scalar/components@0.4.2
   - @scalar/swagger-editor@0.11.1
@@ -759,7 +775,7 @@
 - Updated dependencies [ad2b95a]
 - Updated dependencies [ad2b95a]
   - @scalar/swagger-editor@0.11.0
-  - @readyapi/themes@0.6.0
+  - @scalar/themes@0.6.0
   - @scalar/api-client@0.12.15
   - @scalar/components@0.4.2
 
@@ -845,7 +861,7 @@
 ### Patch Changes
 
 - Updated dependencies [51acf2c]
-  - @readyapi/themes@0.5.10
+  - @scalar/themes@0.5.10
   - @scalar/api-client@0.12.8
   - @scalar/components@0.2.6
   - @scalar/swagger-editor@0.10.10
@@ -861,7 +877,7 @@
 - Updated dependencies [c103201]
 - Updated dependencies [d2728c8]
   - @scalar/components@0.2.6
-  - @readyapi/themes@0.5.9
+  - @scalar/themes@0.5.9
   - @scalar/api-client@0.12.7
   - @scalar/swagger-editor@0.10.9
 
@@ -891,7 +907,7 @@
   - @scalar/api-client@0.12.5
   - @scalar/components@0.2.5
   - @scalar/use-modal@0.2.8
-  - @readyapi/themes@0.5.8
+  - @scalar/themes@0.5.8
 
 ## 1.17.2
 
@@ -905,9 +921,9 @@
   - @scalar/use-tooltip@0.5.10
   - @scalar/api-client@0.12.4
   - @scalar/components@0.2.4
-  - @readyapi/use-toasts@0.5.15
+  - @scalar/use-toasts@0.5.15
   - @scalar/use-modal@0.2.7
-  - @readyapi/themes@0.5.7
+  - @scalar/themes@0.5.7
 
 ## 1.17.1
 
@@ -933,7 +949,7 @@
 - Updated dependencies [5b3f7d9]
   - @scalar/api-client@0.12.2
   - @scalar/use-modal@0.2.5
-  - @readyapi/themes@0.5.6
+  - @scalar/themes@0.5.6
   - @scalar/components@0.2.3
   - @scalar/swagger-editor@0.10.6
 
@@ -962,7 +978,7 @@
 
 - 92a8b9f: chore: update dependencies
 - 230f9fb: feat: prefill the authentication data
-- 77c62d3: fix: path isn’t prefixed (<https://github.com/khulnasoft/readyapi.js/issues/937>)
+- 77c62d3: fix: path isn’t prefixed (<https://github.com/scalar/scalar/issues/937>)
 - Updated dependencies [e0faebb]
 - Updated dependencies [92a8b9f]
 - Updated dependencies [abfb086]
@@ -974,9 +990,9 @@
   - @scalar/use-codemirror@0.8.4
   - @scalar/use-tooltip@0.5.9
   - @scalar/components@0.2.3
-  - @readyapi/use-toasts@0.5.14
+  - @scalar/use-toasts@0.5.14
   - @scalar/use-modal@0.2.4
-  - @readyapi/themes@0.5.5
+  - @scalar/themes@0.5.5
 
 ## 1.15.6
 
@@ -1212,9 +1228,9 @@
   - @scalar/use-tooltip@0.5.8
   - @scalar/api-client@0.9.2
   - @scalar/components@0.2.2
-  - @readyapi/use-toasts@0.5.13
+  - @scalar/use-toasts@0.5.13
   - @scalar/use-modal@0.2.3
-  - @readyapi/themes@0.5.4
+  - @scalar/themes@0.5.4
 
 ## 1.13.9
 
@@ -1255,9 +1271,9 @@
 - Updated dependencies [b8ce7fd5]
   - @scalar/api-client@0.9.0
   - @scalar/swagger-editor@0.9.6
-  - @readyapi/use-toasts@0.5.12
+  - @scalar/use-toasts@0.5.12
   - @scalar/use-modal@0.2.2
-  - @readyapi/themes@0.5.3
+  - @scalar/themes@0.5.3
   - @scalar/use-clipboard@0.5.12
   - @scalar/components@0.2.1
 
@@ -1286,7 +1302,7 @@
   - @scalar/swagger-editor@0.9.4
   - @scalar/api-client@0.8.9
   - @scalar/components@0.2.1
-  - @readyapi/themes@0.5.2
+  - @scalar/themes@0.5.2
 
 ## 1.13.1
 
@@ -1448,8 +1464,8 @@
   - @scalar/swagger-parser@0.5.13
   - @scalar/use-codemirror@0.7.16
   - @scalar/use-modal@0.2.1
-  - @readyapi/themes@0.5.1
-  - @readyapi/use-toasts@0.5.11
+  - @scalar/themes@0.5.1
+  - @scalar/use-toasts@0.5.11
   - @scalar/use-clipboard@0.5.11
 
 ## 1.9.2
@@ -1487,7 +1503,7 @@
 - d45f5a5: fix: handle root path in request generation
 - Updated dependencies [f9bfa97]
   - @scalar/swagger-editor@0.8.3
-  - @readyapi/use-toasts@0.5.10
+  - @scalar/use-toasts@0.5.10
   - @scalar/use-clipboard@0.5.10
 
 ## 1.7.1
@@ -1547,7 +1563,7 @@
   - @scalar/api-client@0.8.0
   - @scalar/swagger-editor@0.8.0
   - @scalar/use-modal@0.2.0
-  - @readyapi/themes@0.5.0
+  - @scalar/themes@0.5.0
 
 ## 1.4.0
 
@@ -1606,7 +1622,7 @@
   - @scalar/use-clipboard@0.5.9
   - @scalar/use-tooltip@0.5.7
   - @scalar/api-client@0.7.34
-  - @readyapi/use-toasts@0.5.9
+  - @scalar/use-toasts@0.5.9
   - @scalar/use-modal@0.1.9
 
 ## 1.2.4
@@ -1620,9 +1636,9 @@
   - @scalar/use-codemirror@0.7.14
   - @scalar/use-tooltip@0.5.6
   - @scalar/api-client@0.7.33
-  - @readyapi/use-toasts@0.5.8
+  - @scalar/use-toasts@0.5.8
   - @scalar/use-modal@0.1.8
-  - @readyapi/themes@0.4.2
+  - @scalar/themes@0.4.2
   - @scalar/use-clipboard@0.5.8
 
 ## 1.2.3
@@ -1639,9 +1655,9 @@
   - @scalar/use-clipboard@0.5.7
   - @scalar/use-tooltip@0.5.5
   - @scalar/api-client@0.7.32
-  - @readyapi/use-toasts@0.5.7
+  - @scalar/use-toasts@0.5.7
   - @scalar/use-modal@0.1.7
-  - @readyapi/themes@0.4.1
+  - @scalar/themes@0.4.1
 
 ## 1.2.2
 
@@ -1951,7 +1967,7 @@
 - Updated dependencies [75d12f56]
 - Updated dependencies [2eba4010]
   - @scalar/api-client@0.7.22
-  - @readyapi/use-toasts@0.5.6
+  - @scalar/use-toasts@0.5.6
   - @scalar/use-clipboard@0.5.6
 
 ## 0.7.11
@@ -2072,7 +2088,7 @@
 ### Patch Changes
 
 - Updated dependencies [fd38deb0]
-  - @readyapi/themes@0.4.0
+  - @scalar/themes@0.4.0
   - @scalar/api-client@0.7.17
   - @scalar/swagger-editor@0.6.21
 
@@ -2094,8 +2110,8 @@
   - @scalar/use-clipboard@0.5.5
   - @scalar/use-tooltip@0.5.4
   - @scalar/api-client@0.7.16
-  - @readyapi/use-toasts@0.5.5
-  - @readyapi/themes@0.3.11
+  - @scalar/use-toasts@0.5.5
+  - @scalar/themes@0.3.11
 
 ## 0.6.22
 
@@ -2121,9 +2137,9 @@
   - @scalar/use-codemirror@0.7.7
   - @scalar/use-clipboard@0.5.4
   - @scalar/use-tooltip@0.5.3
-  - @readyapi/use-toasts@0.5.4
+  - @scalar/use-toasts@0.5.4
   - @scalar/use-modal@0.1.4
-  - @readyapi/themes@0.3.10
+  - @scalar/themes@0.3.10
 
 ## 0.6.20
 
@@ -2141,7 +2157,7 @@
 - Updated dependencies [eb0c3201]
   - @scalar/swagger-editor@0.6.17
   - @scalar/api-client@0.7.14
-  - @readyapi/themes@0.3.9
+  - @scalar/themes@0.3.9
 
 ## 0.6.18
 
@@ -2190,7 +2206,7 @@
 - Updated dependencies [46142c0a]
   - @scalar/swagger-editor@0.6.12
   - @scalar/api-client@0.7.10
-  - @readyapi/themes@0.3.8
+  - @scalar/themes@0.3.8
 
 ## 0.6.13
 
@@ -2210,7 +2226,7 @@
 - Updated dependencies [48df28ef]
 - Updated dependencies [1d02c811]
   - @scalar/api-client@0.7.9
-  - @readyapi/themes@0.3.7
+  - @scalar/themes@0.3.7
   - @scalar/swagger-editor@0.6.10
 
 ## 0.6.11
@@ -2223,7 +2239,7 @@
   - @scalar/use-codemirror@0.7.5
   - @scalar/api-client@0.7.8
   - @scalar/use-modal@0.1.2
-  - @readyapi/themes@0.3.6
+  - @scalar/themes@0.3.6
 
 ## 0.6.10
 
@@ -2240,7 +2256,7 @@
 - 4985562c: polish codemirror theme colors
 - Updated dependencies [4985562c]
   - @scalar/use-codemirror@0.7.4
-  - @readyapi/themes@0.3.5
+  - @scalar/themes@0.3.5
   - @scalar/api-client@0.7.6
   - @scalar/swagger-editor@0.6.8
 
@@ -2261,8 +2277,8 @@
 - Updated dependencies [cd5f2685]
   - @scalar/swagger-editor@0.6.6
   - @scalar/api-client@0.7.4
-  - @readyapi/use-toasts@0.5.3
-  - @readyapi/themes@0.3.4
+  - @scalar/use-toasts@0.5.3
+  - @scalar/themes@0.3.4
   - @scalar/use-clipboard@0.5.3
 
 ## 0.6.6
@@ -2301,8 +2317,8 @@
   - @scalar/use-codemirror@0.7.1
   - @scalar/use-clipboard@0.5.2
   - @scalar/use-tooltip@0.5.2
-  - @readyapi/use-toasts@0.5.2
-  - @readyapi/themes@0.3.3
+  - @scalar/use-toasts@0.5.2
+  - @scalar/themes@0.3.3
 
 ## 0.6.3
 
@@ -2311,7 +2327,7 @@
 - 75a69ba7: feat: add `theme` prop and improve theme support
 - effc1f31: feat: add new HTML API based on script tags
   chore: deprecate old div based HTML API
-- 75a69ba7: refactor: rename @scalar/default-theme to @readyapi/themes, add more themes
+- 75a69ba7: refactor: rename @scalar/default-theme to @scalar/themes, add more themes
 - b03a09c7: chore: remove Vite env proxy variable
 - 11270915: fix: use higher z-index values
 - Updated dependencies [75a69ba7]
@@ -2319,7 +2335,7 @@
 - Updated dependencies [75a69ba7]
   - @scalar/swagger-editor@0.6.2
   - @scalar/api-client@0.7.1
-  - @readyapi/themes@0.3.2
+  - @scalar/themes@0.3.2
 
 ## 0.6.2
 
@@ -2340,7 +2356,7 @@
   - @scalar/default-theme@0.3.1
   - @scalar/api-client@0.7.0
   - @scalar/use-tooltip@0.5.1
-  - @readyapi/use-toasts@0.5.1
+  - @scalar/use-toasts@0.5.1
   - @scalar/use-clipboard@0.5.1
 
 ## 0.6.1
@@ -2367,11 +2383,11 @@
   - @scalar/swagger-editor@0.6.0
   - @scalar/swagger-parser@0.5.0
   - @scalar/use-codemirror@0.6.0
-  - @readyapi/themes@0.3.0
+  - @scalar/themes@0.3.0
   - @scalar/use-clipboard@0.5.0
   - @scalar/use-tooltip@0.5.0
   - @scalar/api-client@0.6.0
-  - @readyapi/use-toasts@0.5.0
+  - @scalar/use-toasts@0.5.0
 
 ## 0.5.6
 
@@ -2453,10 +2469,10 @@
   - @scalar/api-client@0.5.0
   - @scalar/use-keyboard-event@0.4.1
   - @scalar/swagger-parser@0.4.1
-  - @readyapi/themes@0.2.1
+  - @scalar/themes@0.2.1
   - @scalar/use-clipboard@0.4.1
   - @scalar/use-tooltip@0.4.1
-  - @readyapi/use-toasts@0.4.1
+  - @scalar/use-toasts@0.4.1
 
 ## 0.4.0
 
@@ -2468,12 +2484,12 @@
 
 - Updated dependencies [5057e213]
   - @scalar/api-client@0.4.0
-  - @readyapi/themes@0.2.0
+  - @scalar/themes@0.2.0
   - @scalar/swagger-editor@0.4.0
   - @scalar/swagger-parser@0.4.0
   - @scalar/use-clipboard@0.4.0
   - @scalar/use-keyboard-event@0.4.0
-  - @readyapi/use-toasts@0.4.0
+  - @scalar/use-toasts@0.4.0
   - @scalar/use-tooltip@0.4.0
 
 ## 0.3.4
@@ -2495,9 +2511,9 @@
 
 ### Patch Changes
 
-- de4ff38: feat: add a new @readyapi/themes package to import the variables and custom scrollbar CSS
+- de4ff38: feat: add a new @scalar/themes package to import the variables and custom scrollbar CSS
 - Updated dependencies [de4ff38]
-  - @readyapi/themes@0.1.1
+  - @scalar/themes@0.1.1
   - @scalar/api-client@0.3.2
 
 ## 0.3.1
@@ -2522,7 +2538,7 @@
   - @scalar/swagger-parser@0.3.0
   - @scalar/use-clipboard@0.3.0
   - @scalar/use-keyboard-event@0.3.0
-  - @readyapi/use-toasts@0.3.0
+  - @scalar/use-toasts@0.3.0
   - @scalar/use-tooltip@0.3.0
 
 ## 0.2.1
