@@ -1,4 +1,4 @@
-import type { ReferenceConfiguration } from '@scalar/api-reference'
+import type { ReferenceConfiguration } from '@readyapi/api-reference'
 import type {
   FastifyBaseLogger,
   FastifyTypeProviderDefault,
@@ -23,9 +23,9 @@ export type FastifyApiReferenceOptions = {
    */
   routePrefix?: string
   /**
-   * The universal configuration object for @scalar/api-reference.
+   * The universal configuration object for @readyapi/api-reference.
    *
-   * Read more: https://github.com/scalar/scalar
+   * Read more: https://github.com/khulnasoft/readyapi.js
    */
   configuration?: ReferenceConfiguration
 }
@@ -120,7 +120,7 @@ export const defaultCss = `
 `
 
 /**
- * The HTML to load the @scalar/api-reference JavaScript package.
+ * The HTML to load the @readyapi/api-reference JavaScript package.
  */
 export const javascript = (options: FastifyApiReferenceOptions) => {
   const { configuration } = options

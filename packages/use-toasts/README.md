@@ -1,7 +1,7 @@
 # Scalar useToasts()
 
-[![Version](https://img.shields.io/npm/v/%40scalar/use-toasts)](https://www.npmjs.com/package/@readyapi/use-toasts)
-[![Downloads](https://img.shields.io/npm/dm/%40scalar/use-toasts)](https://www.npmjs.com/package/@readyapi/use-toasts)
+[![Version](https://img.shields.io/npm/v/%40readyapi/use-toasts)](https://www.npmjs.com/package/@readyapi/use-toasts)
+[![Downloads](https://img.shields.io/npm/dm/%40readyapi/use-toasts)](https://www.npmjs.com/package/@readyapi/use-toasts)
 [![License](https://img.shields.io/npm/l/%40scalar%2Fuse-toasts)](https://www.npmjs.com/package/@readyapi/use-toasts)
 [![Discord](https://img.shields.io/discord/1135330207960678410?style=flat&color=5865F2)](https://discord.gg/8HeZcRGPFS)
 

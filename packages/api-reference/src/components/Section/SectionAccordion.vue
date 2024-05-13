@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
-import { ScalarIcon } from '@scalar/components'
+import { ScalarIcon } from '@readyapi/components'
 import { useElementHover } from '@vueuse/core'
 import { ref } from 'vue'
 

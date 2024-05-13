@@ -127,7 +127,7 @@ def get_scalar_api_reference(
             It is normally set to a CDN URL.
             """
         ),
-    ] = "https://cdn.jsdelivr.net/npm/@scalar/api-reference",
+    ] = "https://cdn.jsdelivr.net/npm/@readyapi/api-reference",
     scalar_proxy_url: Annotated[
         str,
         Doc(

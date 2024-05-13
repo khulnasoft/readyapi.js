@@ -1,13 +1,13 @@
 {
-  "name": "@scalar/use-tooltip",
+  "name": "@readyapi/use-tooltip",
   "description": "use tooltips with Vue",
   "license": "MIT",
   "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/scalar/scalar",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
   "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.js",
+    "url": "https://github.com/khulnasoft/readyapi.js.git",
     "directory": "packages/use-tooltip"
   },
   "keywords": [

@@ -20,7 +20,7 @@ export type ModuleOptions = {
 export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: '@readyapi/nuxt',
-    configKey: 'scalar',
+    configKey: 'Readyapi',,
   },
   // Default configuration options of the Nuxt module
   defaults: {
@@ -40,7 +40,7 @@ export default defineNuxtModule<ModuleOptions>({
     let isOpenApiEnabled = false
 
     // Ensure we transpile api-reference css
-    _nuxt.options.build.transpile.push('@scalar/api-reference')
+    _nuxt.options.build.transpile.push('@readyapi/api-reference')
 
     // Check if it exists and push else assign it
     _nuxt.options.vite.optimizeDeps ||= {}
@@ -88,7 +88,7 @@ export default defineNuxtModule<ModuleOptions>({
       // Single config
       else {
         pages.push({
-          name: 'scalar',
+          name: 'Readyapi',,
           path: _options.pathRouting?.basePath + ':pathMatch(.*)*',
           meta: {
             configuration: _options,
@@ -103,8 +103,8 @@ export default defineNuxtModule<ModuleOptions>({
     if (_nuxt.options.dev && _options.devtools) {
       _nuxt.hook('devtools:customTabs', (tabs) => {
         tabs.push({
-          name: 'scalar',
-          title: 'Scalar',
+          name: 'Readyapi',,
+          title: 'Readyapi',,
           icon: 'https://gist.githubusercontent.com/cameronrohani/0fa020f6dcf957266bff49e7b6b7c05e/raw/17fce1ef37bbb036dca36b778c8b422056ad6fdf/scalar-logo-nuxt-color.svg',
           category: 'server',
           view: {

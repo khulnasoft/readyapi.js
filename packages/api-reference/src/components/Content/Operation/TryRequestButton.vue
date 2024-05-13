@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { HttpMethod } from '@scalar/api-client'
-import { ScalarIcon } from '@scalar/components'
-import type { TransformedOperation } from '@scalar/oas-utils'
+import { HttpMethod } from '@readyapi/api-client'
+import { ScalarIcon } from '@readyapi/components'
+import type { TransformedOperation } from '@readyapi/oas-utils'
 import { inject } from 'vue'
 
 import { GLOBAL_SECURITY_SYMBOL, openClientFor } from '../../../helpers'

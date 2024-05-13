@@ -4,7 +4,7 @@ import {
   type ReferenceConfiguration,
   type Spec,
   parse,
-} from '@scalar/api-reference'
+} from '@readyapi/api-reference'
 import { asyncComputed } from '@vueuse/core'
 import { computed, onMounted, reactive, ref, watch } from 'vue'
 

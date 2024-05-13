@@ -38,7 +38,7 @@ curl --request GET \
       "creator": {
         "id": 1,
         "name": "Marc",
-        "email": "marc@scalar.com"
+        "email": "marc@readyapi.com"
       }
     }
   ],
@@ -57,4 +57,4 @@ You’re so right! We’re using the standard libraries. Isn’t that why we all
 
 ## License
 
-The source code in this repository is licensed under [MIT](https://github.com/scalar/scalar/blob/main/LICENSE).
+The source code in this repository is licensed under [MIT](https://github.com/khulnasoft/readyapi.js/blob/main/LICENSE).

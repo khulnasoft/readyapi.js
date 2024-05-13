@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { findVariables } from '@scalar/api-client'
-import { ScalarIcon } from '@scalar/components'
+import { findVariables } from '@readyapi/api-client'
+import { ScalarIcon } from '@readyapi/components'
 import { ref, watch } from 'vue'
 
 import { useServerStore } from '../../../stores'

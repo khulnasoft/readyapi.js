@@ -1,19 +1,19 @@
 # Scalar Draggable component
 
-[![Version](https://img.shields.io/npm/v/%40scalar/draggable)](https://www.npmjs.com/package/@scalar/draggable)
-[![Downloads](https://img.shields.io/npm/dm/%40scalar/draggable)](https://www.npmjs.com/package/@scalar/draggable)
-[![License](https://img.shields.io/npm/l/%40scalar%2Fdraggable)](https://www.npmjs.com/package/@scalar/draggable)
+[![Version](https://img.shields.io/npm/v/%40scalar/draggable)](https://www.npmjs.com/package/@readyapi/draggable)
+[![Downloads](https://img.shields.io/npm/dm/%40scalar/draggable)](https://www.npmjs.com/package/@readyapi/draggable)
+[![License](https://img.shields.io/npm/l/%40scalar%2Fdraggable)](https://www.npmjs.com/package/@readyapi/draggable)
 [![Discord](https://img.shields.io/discord/1135330207960678410?style=flat&color=5865F2)](https://discord.gg/scalar)
 
 ## Installation
 
 ```bash
-npm install @scalar/draggable
+npm install @readyapi/draggable
 ```
 
 ## Usage
 
-A complete example can be found the [playground](https://github.com/scalar/scalar/tree/main/packages/draggable/playground), but basically you need a data structure like:
+A complete example can be found the [playground](https://github.com/khulnasoft/readyapi.js/tree/main/packages/draggable/playground), but basically you need a data structure like:
 
 ```ts
 const sidebar = ref({
@@ -74,4 +74,4 @@ Then manage the data manipluation on drop using the emitted events!
 
 ### Example
 
-You can find an example in this repo under the [playground](https://github.com/scalar/scalar/tree/main/packages/draggable/playground)
+You can find an example in this repo under the [playground](https://github.com/khulnasoft/readyapi.js/tree/main/packages/draggable/playground)

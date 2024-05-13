@@ -1,6 +1,6 @@
 'use client'
 
-import { ApiClient } from '@scalar/api-client'
+import { ApiClient } from '@readyapi/api-client'
 import React, { useEffect, useRef } from 'react'
 import { createApp } from 'vue/dist/vue.esm-bundler.js'
 

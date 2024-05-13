@@ -263,7 +263,7 @@
 ### Patch Changes
 
 - 75a69ba7: feat: add `theme` prop and improve theme support
-- 75a69ba7: refactor: rename @scalar/default-theme to @readyapi/themes, add more themes
+- 75a69ba7: refactor: rename @readyapi/default-theme to @readyapi/themes, add more themes
 
 ## 0.3.1
 

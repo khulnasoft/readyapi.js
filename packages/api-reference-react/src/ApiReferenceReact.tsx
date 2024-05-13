@@ -1,6 +1,6 @@
 'use client'
 
-import { ApiReference, type ReferenceProps } from '@scalar/api-reference'
+import { ApiReference, type ReferenceProps } from '@readyapi/api-reference'
 import React, { useEffect, useRef } from 'react'
 import { createApp } from 'vue/dist/vue.esm-bundler.js'
 

@@ -19,7 +19,7 @@ npm install @readyapi/galaxy
 
 | Version     | Format | URL                                                            |
 | ----------- | ------ | -------------------------------------------------------------- |
-| Latest      | JSON   | https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/latest.yaml |
+| Latest      | JSON   | https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/latest.json |
 | Latest      | YAML   | https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/latest.yaml |
 | OpenAPI 3.1 | JSON   | https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/3.1.json    |
 | OpenAPI 3.1 | YAML   | https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/3.1.yaml    |

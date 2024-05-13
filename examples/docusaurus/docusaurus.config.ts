@@ -59,7 +59,7 @@ const config: Config = {
     [
       '@readyapi/docusaurus',
       {
-        label: 'Scalar',
+        label: 'Readyapi',,
         route: '/scalar',
         configuration: {
           spec: {

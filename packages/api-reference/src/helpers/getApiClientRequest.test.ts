@@ -1,4 +1,4 @@
-import { useAuthenticationStore } from '@scalar/api-client'
+import { useAuthenticationStore } from '@readyapi/api-client'
 import { describe, expect, it } from 'vitest'
 
 import { useServerStore } from '../stores'

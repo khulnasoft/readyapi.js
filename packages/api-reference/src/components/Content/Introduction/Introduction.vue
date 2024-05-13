@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import type { OpenAPIV2, OpenAPIV3, OpenAPIV3_1 } from '@scalar/openapi-parser'
+import type {
+  OpenAPIV2,
+  OpenAPIV3,
+  OpenAPIV3_1,
+} from '@readyapi/openapi-parser'
 import GithubSlugger from 'github-slugger'
 import { computed } from 'vue'
 

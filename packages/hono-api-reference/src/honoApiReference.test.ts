@@ -16,7 +16,7 @@ describe('javascript', () => {
       javascript({
         spec: {
           url,
-          cdn: 'https://fastly.jsdelivr.net/npm/@scalar/api-reference',
+          cdn: 'https://fastly.jsdelivr.net/npm/@readyapi/api-reference',
         },
       }).toString(),
     ).toContain(

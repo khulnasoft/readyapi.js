@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { BaseParameter } from '@scalar/oas-utils'
+import type { BaseParameter } from '@readyapi/oas-utils'
 
 import { useRequestStore } from '../../../stores'
 import { CollapsibleSection } from '../../CollapsibleSection'

@@ -46,7 +46,7 @@ const getSpecUrl = () => {
   // <div data-spec-url="/scalar.json" />
   if (specUrlElement) {
     console.warn(
-      '[@scalar/api-reference] The [data-spec-url] HTML API is deprecated. Use the new <script id="api-reference" data-url="/scalar.json" /> API instead.',
+      '[@readyapi/api-reference] The [data-spec-url] HTML API is deprecated. Use the new <script id="api-reference" data-url="/scalar.json" /> API instead.',
     )
     const urlFromSpecUrlElement = specUrlElement.getAttribute('data-spec-url')
 
@@ -71,7 +71,7 @@ const getSpec = (): Record<string, any> | undefined => {
   // <div data-spec='{"openapi":"3.1.0","info":{"title":"Example"},"paths":{}}' />
   if (specElement) {
     console.warn(
-      '[@scalar/api-reference] The [data-spec] HTML API is deprecated. Use the new <script id="api-reference" type="application/json">{"openapi":"3.1.0","info":{"title":"Example"},"paths":{}}</script> API instead.',
+      '[@readyapi/api-reference] The [data-spec] HTML API is deprecated. Use the new <script id="api-reference" type="application/json">{"openapi":"3.1.0","info":{"title":"Example"},"paths":{}}</script> API instead.',
     )
     const specFromSpecElement = specElement.getAttribute('data-spec')?.trim()
 

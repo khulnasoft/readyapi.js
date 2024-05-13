@@ -1,20 +1,20 @@
 # Scalar API Client React
 
-[![Version](https://img.shields.io/npm/v/%40scalar/api-client-react)](https://www.npmjs.com/package/@scalar/api-client-react)
-[![Downloads](https://img.shields.io/npm/dm/%40scalar/api-client-react)](https://www.npmjs.com/package/@scalar/api-client-react)
-[![License](https://img.shields.io/npm/l/%40scalar%2Fapi-client-react)](https://www.npmjs.com/package/@scalar/api-client-react)
+[![Version](https://img.shields.io/npm/v/%40scalar/api-client-react)](https://www.npmjs.com/package/@readyapi/api-client-react)
+[![Downloads](https://img.shields.io/npm/dm/%40scalar/api-client-react)](https://www.npmjs.com/package/@readyapi/api-client-react)
+[![License](https://img.shields.io/npm/l/%40scalar%2Fapi-client-react)](https://www.npmjs.com/package/@readyapi/api-client-react)
 [![Discord](https://img.shields.io/discord/1135330207960678410?style=flat&color=5865F2)](https://discord.gg/scalar)
 
 ## Installation
 
 ```bash
-npm install @scalar/api-client-react
+npm install @readyapi/api-client-react
 ```
 
 ## Usage
 
 ```ts
-import { ApiClientReact } from '@scalar/api-client-react'
+import { ApiClientReact } from '@readyapi/api-client-react'
 import React, { useState } from 'react'
 
 export const Wrapper = () => {

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type Icon, ScalarIcon, ScalarIconButton } from '@scalar/components'
+import { type Icon, ScalarIcon, ScalarIconButton } from '@readyapi/components'
 
 import { scrollToId, sleep } from '../../helpers'
 import { useNavState } from '../../hooks'

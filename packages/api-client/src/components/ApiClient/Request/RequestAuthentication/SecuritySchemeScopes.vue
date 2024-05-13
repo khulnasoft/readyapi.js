@@ -6,8 +6,8 @@ import {
   ListboxOption,
   ListboxOptions,
 } from '@headlessui/vue'
+import { ScalarIcon } from '@readyapi/components'
 import { ResetStyles } from '@readyapi/themes'
-import { ScalarIcon } from '@scalar/components'
 import { computed, ref } from 'vue'
 
 import { Badge } from '../../../Badge'

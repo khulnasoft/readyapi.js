@@ -8,9 +8,9 @@
 This plugin provides an easy way to render a beautiful API reference based on an OpenAPI/Swagger file with Next.js.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/scalar/scalar/assets/2039539/5837adad-a605-4edb-90ec-b929ff2b803b">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/scalar/scalar/assets/2039539/4f58202d-f40f-47b3-aeaa-44681b424a45">
-  <img alt="Screenshot of an API Reference" src="https://github.com/scalar/scalar/assets/2039539/4f58202d-f40f-47b3-aeaa-44681b424a45">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/khulnasoft/readyapi.js/assets/2039539/5837adad-a605-4edb-90ec-b929ff2b803b">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/khulnasoft/readyapi.js/assets/2039539/4f58202d-f40f-47b3-aeaa-44681b424a45">
+  <img alt="Screenshot of an API Reference" src="https://github.com/khulnasoft/readyapi.js/assets/2039539/4f58202d-f40f-47b3-aeaa-44681b424a45">
 </picture>
 
 ## Installation
@@ -46,11 +46,11 @@ const config = {
 }
 ```
 
-The Next.js handler takes our universal configuration object, [read more about configuration](https://github.com/scalar/scalar/tree/main/packages/api-reference#configuration) in the core package README.
+The Next.js handler takes our universal configuration object, [read more about configuration](https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-reference#configuration) in the core package README.
 
 ## Themes
 
-By default, we’re using a custom Next.js theme and it’s beautiful. But you can choose [one of our other themes](https://github.com/scalar/scalar/tree/main/packages/themes), too:
+By default, we’re using a custom Next.js theme and it’s beautiful. But you can choose [one of our other themes](https://github.com/khulnasoft/readyapi.js/tree/main/packages/themes), too:
 
 ```ts
 const config = {

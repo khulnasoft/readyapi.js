@@ -20,8 +20,8 @@ for d in packages/*; do
     cd ../../
 done
 
-# All files include a version number, for example: scalar-use-modal-0.1.9.tgz
-# Let’s rename the file and remove the version number, so the result is something like: scalar-use-modal.tgz
+# All files include a version number, for example: readyapi-use-modal-0.1.9.tgz
+# Let’s rename the file and remove the version number, so the result is something like: readyapi-use-modal.tgz
 for f in *.tgz; do
     mv -- "$f" "${f%-*}.tgz"
 done

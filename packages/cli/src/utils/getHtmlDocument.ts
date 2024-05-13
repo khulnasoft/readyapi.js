@@ -38,7 +38,7 @@ export function getHtmlDocument(
           data-proxy-url="https://api.scalar.com/request-proxy">${JSON.stringify(
             specification,
           )}</script>
-        <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@readyapi/api-reference"></script>
       </body>
     </html>`
 }

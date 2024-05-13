@@ -1,4 +1,4 @@
-# @scalar/use-codemirror
+# @readyapi/use-codemirror
 
 ## 0.10.4
 
@@ -44,7 +44,7 @@
 
 ### Minor Changes
 
-- 7fb8273: Migrate to @scalar/openapi-parser
+- 7fb8273: Migrate to @readyapi/openapi-parser
 
 ## 0.8.10
 
@@ -160,7 +160,7 @@
 
 ### Patch Changes
 
-- 35dffe4: chore: include @scalar dependencies in the bundle
+- 35dffe4: chore: include @readyapi dependencies in the bundle
 
 ## 0.7.14
 
@@ -297,7 +297,7 @@
 
 ### Minor Changes
 
-- 0902d82c: \* refactor: add the CodeMirror component to @scalar/use-codemirror, use it everywhere
+- 0902d82c: \* refactor: add the CodeMirror component to @readyapi/use-codemirror, use it everywhere
   - feat: allow to pass forceDarkMode to the CodeMirror component
 
 ### Patch Changes

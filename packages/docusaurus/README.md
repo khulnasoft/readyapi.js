@@ -25,7 +25,7 @@ plugins: [
   [
     '@readyapi/docusaurus',
     {
-      label: 'Scalar',
+      label: 'Readyapi',,
       route: '/scalar',
       configuration: {
         spec: {
@@ -39,7 +39,7 @@ plugins: [
 
 ### Example
 
-You can find an example in this repo under [examples/docusaurus](https://github.com/scalar/scalar/tree/main/examples/docusaurus)
+You can find an example in this repo under [examples/docusaurus](https://github.com/khulnasoft/readyapi.js/tree/main/examples/docusaurus)
 
 ## Config
 
@@ -56,5 +56,5 @@ Path at which the API Reference will be shown
 ### configuration: ReferenceProps
 
 You can find the full configuration options under
-[packages/api-reference](https://github.com/scalar/scalar/tree/main/packages/api-reference)
+[packages/api-reference](https://github.com/khulnasoft/readyapi.js/tree/main/packages/api-reference)
 minus theme.

@@ -1,18 +1,18 @@
-# @scalar/api-reference
+# @readyapi/api-reference
 
 ## 1.22.33
 
 ### Patch Changes
 
 - Updated dependencies [3a4ff3c]
-  - @scalar/api-client@1.2.23
+  - @readyapi/api-client@1.2.23
 
 ## 1.22.32
 
 ### Patch Changes
 
 - Updated dependencies [a13f853]
-  - @scalar/api-client@1.2.22
+  - @readyapi/api-client@1.2.22
 
 ## 1.22.31
 
@@ -21,7 +21,7 @@
 - 3748dc5: feat: api client toggle sidebar hotkey
 - Updated dependencies [f871c28]
 - Updated dependencies [3748dc5]
-  - @scalar/api-client@1.2.21
+  - @readyapi/api-client@1.2.21
 
 ## 1.22.30
 
@@ -32,8 +32,8 @@
 - Updated dependencies [6e67167]
 - Updated dependencies [84399ab]
 - Updated dependencies [a80345a]
-  - @scalar/api-client@1.2.20
-  - @scalar/components@0.7.6
+  - @readyapi/api-client@1.2.20
+  - @readyapi/components@0.7.6
 
 ## 1.22.29
 
@@ -41,8 +41,8 @@
 
 - Updated dependencies [fa2cc5b]
 - Updated dependencies [836869b]
-  - @scalar/api-client@1.2.19
-  - @scalar/components@0.7.5
+  - @readyapi/api-client@1.2.19
+  - @readyapi/components@0.7.5
 
 ## 1.22.28
 
@@ -64,8 +64,8 @@
 - 26d9146: feat: improved api client modal
 - Updated dependencies [26d9146]
 - Updated dependencies [670156e]
-  - @scalar/api-client@1.2.18
-  - @scalar/components@0.7.4
+  - @readyapi/api-client@1.2.18
+  - @readyapi/components@0.7.4
   - @readyapi/use-toasts@0.6.6
 
 ## 1.22.25
@@ -79,7 +79,7 @@
 - 298735f: fix: hide default caret on <summary> on Safari
 - Updated dependencies [d649691]
 - Updated dependencies [2e7b074]
-  - @scalar/api-client@1.2.17
+  - @readyapi/api-client@1.2.17
   - @readyapi/use-toasts@0.6.5
 
 ## 1.22.24
@@ -89,12 +89,12 @@
 - 9ba838b: chore: fetch scalar galaxy example from jsdelivr
 - 45dc04b: fix: can’t release packages
 - Updated dependencies [45dc04b]
-  - @scalar/use-tooltip@0.6.2
-  - @scalar/api-client@1.2.16
-  - @scalar/components@0.7.3
+  - @readyapi/use-tooltip@0.6.2
+  - @readyapi/api-client@1.2.16
+  - @readyapi/components@0.7.3
   - @readyapi/use-toasts@0.6.4
-  - @scalar/oas-utils@0.1.10
-  - @scalar/use-modal@0.3.3
+  - @readyapi/oas-utils@0.1.10
+  - @readyapi/use-modal@0.3.3
   - @readyapi/themes@0.7.9
 
 ## 1.22.23
@@ -103,14 +103,14 @@
 
 - 05e2e27: chore: add provenance statement
 - Updated dependencies [05e2e27]
-  - @scalar/api-client@1.2.15
-  - @scalar/components@0.7.2
+  - @readyapi/api-client@1.2.15
+  - @readyapi/components@0.7.2
   - @readyapi/galaxy@0.1.1
-  - @scalar/oas-utils@0.1.9
+  - @readyapi/oas-utils@0.1.9
   - @readyapi/themes@0.7.8
-  - @scalar/use-modal@0.3.2
+  - @readyapi/use-modal@0.3.2
   - @readyapi/use-toasts@0.6.3
-  - @scalar/use-tooltip@0.6.1
+  - @readyapi/use-tooltip@0.6.1
 
 ## 1.22.22
 
@@ -120,9 +120,9 @@
 - 085a0c2: fix: mimetypes with charsets and variants are ignored
 - Updated dependencies [085a0c2]
 - Updated dependencies [fa10d45]
-  - @scalar/oas-utils@0.1.8
-  - @scalar/api-client@1.2.14
-  - @scalar/components@0.7.1
+  - @readyapi/oas-utils@0.1.8
+  - @readyapi/api-client@1.2.14
+  - @readyapi/components@0.7.1
 
 ## 1.22.21
 
@@ -138,10 +138,10 @@
 - Updated dependencies [1c18f77]
 - Updated dependencies [830b3c8]
 - Updated dependencies [b234d1d]
-  - @scalar/api-client@1.2.13
-  - @scalar/components@0.7.0
-  - @scalar/oas-utils@0.1.7
-  - @scalar/use-modal@0.3.1
+  - @readyapi/api-client@1.2.13
+  - @readyapi/components@0.7.0
+  - @readyapi/oas-utils@0.1.7
+  - @readyapi/use-modal@0.3.1
   - @readyapi/themes@0.7.7
   - @readyapi/use-toasts@0.6.2
 
@@ -154,7 +154,7 @@
 - 9201802: chore: update example page title
 - Updated dependencies [c6e4385]
 - Updated dependencies [a8c3045]
-  - @scalar/api-client@1.2.12
+  - @readyapi/api-client@1.2.12
   - @readyapi/use-toasts@0.6.1
 
 ## 1.22.19
@@ -162,8 +162,8 @@
 ### Patch Changes
 
 - Updated dependencies [2706d57]
-  - @scalar/components@0.6.1
-  - @scalar/api-client@1.2.11
+  - @readyapi/components@0.6.1
+  - @readyapi/api-client@1.2.11
 
 ## 1.22.18
 
@@ -193,8 +193,8 @@
 
 - fc2c90f: feat: cleanup component library icons
 - Updated dependencies [fc2c90f]
-  - @scalar/components@0.6.0
-  - @scalar/api-client@1.2.10
+  - @readyapi/components@0.6.0
+  - @readyapi/api-client@1.2.10
 
 ## 1.22.14
 
@@ -203,8 +203,8 @@
 - b8e3f09: feat: add chevron for markdown summary
 - Updated dependencies [0a77380]
   - @readyapi/themes@0.7.6
-  - @scalar/api-client@1.2.9
-  - @scalar/components@0.5.5
+  - @readyapi/api-client@1.2.9
+  - @readyapi/components@0.5.5
 
 ## 1.22.13
 
@@ -213,9 +213,9 @@
 - c05c90e: feat: add image support to tag, operation and webhook descriptions
 - 2700c5c: feat: separate google fonts from theme, add withDefaultFonts setting
 - Updated dependencies [2700c5c]
-  - @scalar/components@0.5.5
+  - @readyapi/components@0.5.5
   - @readyapi/themes@0.7.5
-  - @scalar/api-client@1.2.8
+  - @readyapi/api-client@1.2.8
 
 ## 1.22.12
 
@@ -224,8 +224,8 @@
 - 55398db: fix: summary markdown, add default browser styling
 - Updated dependencies [79485ff]
 - Updated dependencies [92b5b2a]
-  - @scalar/components@0.5.4
-  - @scalar/api-client@1.2.7
+  - @readyapi/components@0.5.4
+  - @readyapi/api-client@1.2.7
 
 ## 1.22.11
 
@@ -236,8 +236,8 @@
 - Updated dependencies [86d1363]
 - Updated dependencies [bc3f3af]
   - @readyapi/themes@0.7.4
-  - @scalar/components@0.5.3
-  - @scalar/api-client@1.2.6
+  - @readyapi/components@0.5.3
+  - @readyapi/api-client@1.2.6
 
 ## 1.22.10
 
@@ -245,8 +245,8 @@
 
 - Updated dependencies [e8ef57e]
 - Updated dependencies [1353154]
-  - @scalar/components@0.5.2
-  - @scalar/api-client@1.2.5
+  - @readyapi/components@0.5.2
+  - @readyapi/api-client@1.2.5
 
 ## 1.22.9
 
@@ -256,8 +256,8 @@
 - 4d31b19: refactor: move theme labels to @readyapi/themes
 - Updated dependencies [4d31b19]
   - @readyapi/themes@0.7.3
-  - @scalar/api-client@1.2.4
-  - @scalar/components@0.5.1
+  - @readyapi/api-client@1.2.4
+  - @readyapi/components@0.5.1
 
 ## 1.22.8
 
@@ -265,8 +265,8 @@
 
 - 24662c3: feat: rebuild search modal
 - Updated dependencies [24662c3]
-  - @scalar/components@0.5.1
-  - @scalar/api-client@1.2.3
+  - @readyapi/components@0.5.1
+  - @readyapi/api-client@1.2.3
 
 ## 1.22.7
 
@@ -299,17 +299,17 @@
 
 - Updated dependencies [85a0074]
   - @readyapi/themes@0.7.2
-  - @scalar/api-client@1.2.2
-  - @scalar/components@0.5.0
+  - @readyapi/api-client@1.2.2
+  - @readyapi/components@0.5.0
 
 ## 1.22.2
 
 ### Patch Changes
 
 - Updated dependencies [d77acdd]
-  - @scalar/api-client@1.2.1
+  - @readyapi/api-client@1.2.1
   - @readyapi/themes@0.7.1
-  - @scalar/components@0.5.0
+  - @readyapi/components@0.5.0
 
 ## 1.22.1
 
@@ -330,11 +330,11 @@
 - 3afec45: feat: render images in tag descriptions
 - Updated dependencies [22f2858]
 - Updated dependencies [0e64a36]
-  - @scalar/use-tooltip@0.6.0
-  - @scalar/api-client@1.2.0
-  - @scalar/components@0.5.0
-  - @scalar/oas-utils@0.1.6
-  - @scalar/use-modal@0.3.0
+  - @readyapi/use-tooltip@0.6.0
+  - @readyapi/api-client@1.2.0
+  - @readyapi/components@0.5.0
+  - @readyapi/oas-utils@0.1.6
+  - @readyapi/use-modal@0.3.0
   - @readyapi/themes@0.7.0
 
 ## 1.21.2
@@ -372,18 +372,18 @@
 - Updated dependencies [e6d1b81]
 - Updated dependencies [3ba9774]
 - Updated dependencies [3ba9774]
-  - @scalar/use-modal@0.2.10
-  - @scalar/oas-utils@0.1.5
-  - @scalar/components@0.4.11
-  - @scalar/api-client@1.1.16
+  - @readyapi/use-modal@0.2.10
+  - @readyapi/oas-utils@0.1.5
+  - @readyapi/components@0.4.11
+  - @readyapi/api-client@1.1.16
 
 ## 1.20.29
 
 ### Patch Changes
 
 - Updated dependencies [24b3c2a]
-  - @scalar/oas-utils@0.1.4
-  - @scalar/api-client@1.1.15
+  - @readyapi/oas-utils@0.1.4
+  - @readyapi/api-client@1.1.15
 
 ## 1.20.28
 
@@ -421,8 +421,8 @@
 ### Patch Changes
 
 - Updated dependencies [95bac72]
-  - @scalar/components@0.4.10
-  - @scalar/api-client@1.1.14
+  - @readyapi/components@0.4.10
+  - @readyapi/api-client@1.1.14
 
 ## 1.20.22
 
@@ -435,16 +435,16 @@
 ### Patch Changes
 
 - Updated dependencies [b0b757d]
-  - @scalar/api-client@1.1.13
+  - @readyapi/api-client@1.1.13
 
 ## 1.20.20
 
 ### Patch Changes
 
 - Updated dependencies [c14568f]
-  - @scalar/api-client@1.1.12
-  - @scalar/components@0.4.9
-  - @scalar/oas-utils@0.1.3
+  - @readyapi/api-client@1.1.12
+  - @readyapi/components@0.4.9
+  - @readyapi/oas-utils@0.1.3
 
 ## 1.20.18
 
@@ -482,8 +482,8 @@
 
 - 8b0691b: feat: added future support for SSR server state hydration
 - Updated dependencies [8b0691b]
-  - @scalar/api-client@1.1.11
-  - @scalar/oas-utils@0.1.2
+  - @readyapi/api-client@1.1.11
+  - @readyapi/oas-utils@0.1.2
 
 ## 1.20.12
 
@@ -494,7 +494,7 @@
 - 5c1b385: fix: improper variables name + remove importants
 - 5f5395f: fix: toast notification doesn't show up
 - Updated dependencies [999dfc9]
-  - @scalar/api-client@1.1.10
+  - @readyapi/api-client@1.1.10
 
 ## 1.20.11
 
@@ -503,8 +503,8 @@
 - d70bda7: fix: text decoration targetting in themes + unused css in themes
 - Updated dependencies [d70bda7]
   - @readyapi/themes@0.6.7
-  - @scalar/api-client@1.1.9
-  - @scalar/components@0.4.8
+  - @readyapi/api-client@1.1.9
+  - @readyapi/components@0.4.8
 
 ## 1.20.10
 
@@ -516,8 +516,8 @@
 - Updated dependencies [43421a6]
 - Updated dependencies [ae193a8]
   - @readyapi/themes@0.6.6
-  - @scalar/api-client@1.1.8
-  - @scalar/components@0.4.8
+  - @readyapi/api-client@1.1.8
+  - @readyapi/components@0.4.8
 
 ## 1.20.9
 
@@ -526,16 +526,16 @@
 - 5260d07: feat: description for any
 - f861efa: chore: changed svg rendering strategy
 - Updated dependencies [f861efa]
-  - @scalar/components@0.4.7
-  - @scalar/api-client@1.1.7
+  - @readyapi/components@0.4.7
+  - @readyapi/api-client@1.1.7
 
 ## 1.20.8
 
 ### Patch Changes
 
 - Updated dependencies [7d0092e]
-  - @scalar/components@0.4.6
-  - @scalar/api-client@1.1.6
+  - @readyapi/components@0.4.6
+  - @readyapi/api-client@1.1.6
 
 ## 1.20.7
 
@@ -544,15 +544,15 @@
 - 1e658b0: fix: rebuild schema property details to truncate long strings
 - 06c57ca: fix: buffer not available in browser environments
 - Updated dependencies [06c57ca]
-  - @scalar/api-client@1.1.5
+  - @readyapi/api-client@1.1.5
 
 ## 1.20.6
 
 ### Patch Changes
 
 - Updated dependencies [42b385b]
-  - @scalar/components@0.4.5
-  - @scalar/api-client@1.1.4
+  - @readyapi/components@0.4.5
+  - @readyapi/api-client@1.1.4
 
 ## 1.20.5
 
@@ -561,15 +561,15 @@
 - 0c5e22c: fix: section flare if position fixed
 - Updated dependencies [0c5e22c]
   - @readyapi/themes@0.6.5
-  - @scalar/api-client@1.1.3
-  - @scalar/components@0.4.4
+  - @readyapi/api-client@1.1.3
+  - @readyapi/components@0.4.4
 
 ## 1.20.4
 
 ### Patch Changes
 
 - Updated dependencies [c7241e8]
-  - @scalar/api-client@1.1.2
+  - @readyapi/api-client@1.1.2
 
 ## 1.20.3
 
@@ -577,7 +577,7 @@
 
 - 61a97e2: feat: make api client url editable
 - Updated dependencies [61a97e2]
-  - @scalar/api-client@1.1.1
+  - @readyapi/api-client@1.1.1
 
 ## 1.20.2
 
@@ -606,8 +606,8 @@
 - c4500f6: chore: remove @scalar/swagger-editor as a dependency
 - 41f0d86: fix: example for object with anyOf, allOf, oneOf schemas doesn’t have a value
 - Updated dependencies [31aae5e]
-  - @scalar/api-client@1.1.0
-  - @scalar/oas-utils@0.1.1
+  - @readyapi/api-client@1.1.0
+  - @readyapi/oas-utils@0.1.1
 
 ## 1.19.7
 
@@ -621,7 +621,7 @@
 
 - e2491c1: chore: update axios
 - Updated dependencies [e2491c1]
-  - @scalar/api-client@1.0.3
+  - @readyapi/api-client@1.0.3
 
 ## 1.19.5
 
@@ -645,8 +645,8 @@
 - 68cda2b: feat: add x-tagGroups in sidebar
 - Updated dependencies [68cda2b]
   - @readyapi/themes@0.6.4
-  - @scalar/api-client@1.0.2
-  - @scalar/components@0.4.4
+  - @readyapi/api-client@1.0.2
+  - @readyapi/components@0.4.4
   - @scalar/swagger-editor@1.0.2
 
 ## 1.19.2
@@ -655,9 +655,9 @@
 
 - Updated dependencies [bbbba1f]
 - Updated dependencies [897990b]
-  - @scalar/components@0.4.4
+  - @readyapi/components@0.4.4
   - @readyapi/themes@0.6.3
-  - @scalar/api-client@1.0.1
+  - @readyapi/api-client@1.0.1
   - @scalar/swagger-editor@1.0.1
 
 ## 1.19.1
@@ -670,7 +670,7 @@
 
 ### Minor Changes
 
-- 7fb8273: Migrate to @scalar/openapi-parser
+- 7fb8273: Migrate to @readyapi/openapi-parser
 
 ### Patch Changes
 
@@ -679,9 +679,9 @@
 - 53eaa1e: Export getting started
 - Updated dependencies [6036d25]
 - Updated dependencies [7fb8273]
-  - @scalar/api-client@1.0.0
+  - @readyapi/api-client@1.0.0
   - @scalar/swagger-editor@1.0.0
-  - @scalar/oas-utils@0.1.0
+  - @readyapi/oas-utils@0.1.0
 
 ## 1.18.7
 
@@ -690,8 +690,8 @@
 - cecf074: Migrate to oas utils for basic spec operations
 - Updated dependencies [cecf074]
   - @scalar/swagger-parser@0.5.23
-  - @scalar/api-client@0.12.18
-  - @scalar/oas-utils@0.0.4
+  - @readyapi/api-client@0.12.18
+  - @readyapi/oas-utils@0.0.4
 
 ## 1.18.6
 
@@ -730,12 +730,12 @@
 - Updated dependencies [ddc9b17]
 - Updated dependencies [775646a]
 - Updated dependencies [ef3a015]
-  - @scalar/api-client@0.12.17
-  - @scalar/components@0.4.3
+  - @readyapi/api-client@0.12.17
+  - @readyapi/components@0.4.3
   - @readyapi/themes@0.6.2
   - @scalar/swagger-parser@0.5.21
-  - @scalar/use-modal@0.2.9
-  - @scalar/use-tooltip@0.5.12
+  - @readyapi/use-modal@0.2.9
+  - @readyapi/use-tooltip@0.5.12
 
 ## 1.18.1
 
@@ -743,8 +743,8 @@
 
 - Updated dependencies [4ef178f]
   - @readyapi/themes@0.6.1
-  - @scalar/api-client@0.12.16
-  - @scalar/components@0.4.2
+  - @readyapi/api-client@0.12.16
+  - @readyapi/components@0.4.2
   - @scalar/swagger-editor@0.11.1
 
 ## 1.18.0
@@ -760,8 +760,8 @@
 - Updated dependencies [ad2b95a]
   - @scalar/swagger-editor@0.11.0
   - @readyapi/themes@0.6.0
-  - @scalar/api-client@0.12.15
-  - @scalar/components@0.4.2
+  - @readyapi/api-client@0.12.15
+  - @readyapi/components@0.4.2
 
 ## 1.17.16
 
@@ -781,8 +781,8 @@
 - Updated dependencies [3b672cc]
   - @scalar/swagger-editor@0.10.15
   - @scalar/swagger-parser@0.5.20
-  - @scalar/api-client@0.12.14
-  - @scalar/components@0.4.2
+  - @readyapi/api-client@0.12.14
+  - @readyapi/components@0.4.2
 
 ## 1.17.14
 
@@ -797,8 +797,8 @@
 - 5bf377e: fix: visual regressions
 - c5e8b13: feat: hide secret credentials
 - Updated dependencies [c5e8b13]
-  - @scalar/api-client@0.12.13
-  - @scalar/components@0.4.1
+  - @readyapi/api-client@0.12.13
+  - @readyapi/components@0.4.1
   - @scalar/swagger-editor@0.10.14
 
 ## 1.17.12
@@ -810,24 +810,24 @@
 - 5bc2ebf: Add syntax highlighting back to codemirror
 - Updated dependencies [407a3af]
 - Updated dependencies [5bc2ebf]
-  - @scalar/components@0.4.0
+  - @readyapi/components@0.4.0
   - @scalar/swagger-editor@0.10.13
   - @scalar/swagger-parser@0.5.19
-  - @scalar/api-client@0.12.12
+  - @readyapi/api-client@0.12.12
 
 ## 1.17.11
 
 ### Patch Changes
 
 - Updated dependencies [d16d07f]
-  - @scalar/api-client@0.12.11
+  - @readyapi/api-client@0.12.11
 
 ## 1.17.10
 
 ### Patch Changes
 
 - d8d8341: fix: example response with encoding in content type is not shown
-  - @scalar/api-client@0.12.10
+  - @readyapi/api-client@0.12.10
   - @scalar/swagger-editor@0.10.12
 
 ## 1.17.9
@@ -836,8 +836,8 @@
 
 - 6857b8d: fix: api client syntax highlighting
 - Updated dependencies [6857b8d]
-  - @scalar/components@0.3.0
-  - @scalar/api-client@0.12.9
+  - @readyapi/components@0.3.0
+  - @readyapi/api-client@0.12.9
   - @scalar/swagger-editor@0.10.11
 
 ## 1.17.8
@@ -846,8 +846,8 @@
 
 - Updated dependencies [51acf2c]
   - @readyapi/themes@0.5.10
-  - @scalar/api-client@0.12.8
-  - @scalar/components@0.2.6
+  - @readyapi/api-client@0.12.8
+  - @readyapi/components@0.2.6
   - @scalar/swagger-editor@0.10.10
 
 ## 1.17.7
@@ -860,9 +860,9 @@
 - 36630da: chore: remove coinmarketcap example
 - Updated dependencies [c103201]
 - Updated dependencies [d2728c8]
-  - @scalar/components@0.2.6
+  - @readyapi/components@0.2.6
   - @readyapi/themes@0.5.9
-  - @scalar/api-client@0.12.7
+  - @readyapi/api-client@0.12.7
   - @scalar/swagger-editor@0.10.9
 
 ## 1.17.4
@@ -871,7 +871,7 @@
 
 - b9523b7: fix: allow application/problem+json return type
 - Updated dependencies [b9523b7]
-  - @scalar/api-client@0.12.6
+  - @readyapi/api-client@0.12.6
 
 ## 1.17.3
 
@@ -887,10 +887,10 @@
 - Updated dependencies [7ea052b]
   - @scalar/swagger-editor@0.10.8
   - @scalar/swagger-parser@0.5.18
-  - @scalar/use-tooltip@0.5.11
-  - @scalar/api-client@0.12.5
-  - @scalar/components@0.2.5
-  - @scalar/use-modal@0.2.8
+  - @readyapi/use-tooltip@0.5.11
+  - @readyapi/api-client@0.12.5
+  - @readyapi/components@0.2.5
+  - @readyapi/use-modal@0.2.8
   - @readyapi/themes@0.5.8
 
 ## 1.17.2
@@ -902,11 +902,11 @@
 - Updated dependencies [c6b95ca]
   - @scalar/swagger-editor@0.10.7
   - @scalar/swagger-parser@0.5.17
-  - @scalar/use-tooltip@0.5.10
-  - @scalar/api-client@0.12.4
-  - @scalar/components@0.2.4
+  - @readyapi/use-tooltip@0.5.10
+  - @readyapi/api-client@0.12.4
+  - @readyapi/components@0.2.4
   - @readyapi/use-toasts@0.5.15
-  - @scalar/use-modal@0.2.7
+  - @readyapi/use-modal@0.2.7
   - @readyapi/themes@0.5.7
 
 ## 1.17.1
@@ -914,8 +914,8 @@
 ### Patch Changes
 
 - Updated dependencies [3ade0d1]
-  - @scalar/use-modal@0.2.6
-  - @scalar/api-client@0.12.3
+  - @readyapi/use-modal@0.2.6
+  - @readyapi/api-client@0.12.3
 
 ## 1.17.0
 
@@ -931,10 +931,10 @@
 - 5b3f7d9: fix: updated scroll region padding to for chrome update
 - Updated dependencies [c23b2cb]
 - Updated dependencies [5b3f7d9]
-  - @scalar/api-client@0.12.2
-  - @scalar/use-modal@0.2.5
+  - @readyapi/api-client@0.12.2
+  - @readyapi/use-modal@0.2.5
   - @readyapi/themes@0.5.6
-  - @scalar/components@0.2.3
+  - @readyapi/components@0.2.3
   - @scalar/swagger-editor@0.10.6
 
 ## 1.16.2
@@ -944,7 +944,7 @@
 - 4fb6af9: chore: remove use-keyboard-event package
 - dc7b97c: fix: resize classic intro cards for difference screen sizes
 - Updated dependencies [4fb6af9]
-  - @scalar/api-client@0.12.1
+  - @readyapi/api-client@0.12.1
 
 ## 1.16.1
 
@@ -967,15 +967,15 @@
 - Updated dependencies [92a8b9f]
 - Updated dependencies [abfb086]
 - Updated dependencies [76f4041]
-  - @scalar/api-client@0.12.0
-  - @scalar/use-keyboard-event@0.5.9
+  - @readyapi/api-client@0.12.0
+  - @readyapi/use-keyboard-event@0.5.9
   - @scalar/swagger-editor@0.10.5
   - @scalar/swagger-parser@0.5.16
-  - @scalar/use-codemirror@0.8.4
-  - @scalar/use-tooltip@0.5.9
-  - @scalar/components@0.2.3
+  - @readyapi/use-codemirror@0.8.4
+  - @readyapi/use-tooltip@0.5.9
+  - @readyapi/components@0.2.3
   - @readyapi/use-toasts@0.5.14
-  - @scalar/use-modal@0.2.4
+  - @readyapi/use-modal@0.2.4
   - @readyapi/themes@0.5.5
 
 ## 1.15.6
@@ -990,7 +990,7 @@
 
 - Updated dependencies [cb8139e7]
   - @scalar/swagger-editor@0.10.4
-  - @scalar/api-client@0.11.5
+  - @readyapi/api-client@0.11.5
 
 ## 1.15.4
 
@@ -998,15 +998,15 @@
 
 - 15738a16: fix: set custom scroll on container for endpoints overview
 - Updated dependencies [037029cc]
-  - @scalar/api-client@0.11.4
+  - @readyapi/api-client@0.11.4
 
 ## 1.15.3
 
 ### Patch Changes
 
 - Updated dependencies [d4fff0de]
-  - @scalar/use-codemirror@0.8.3
-  - @scalar/api-client@0.11.3
+  - @readyapi/use-codemirror@0.8.3
+  - @readyapi/api-client@0.11.3
   - @scalar/swagger-editor@0.10.3
 
 ## 1.15.2
@@ -1014,8 +1014,8 @@
 ### Patch Changes
 
 - Updated dependencies [f8650e4f]
-  - @scalar/use-codemirror@0.8.2
-  - @scalar/api-client@0.11.2
+  - @readyapi/use-codemirror@0.8.2
+  - @readyapi/api-client@0.11.2
   - @scalar/swagger-editor@0.10.2
 
 ## 1.15.1
@@ -1025,8 +1025,8 @@
 - Updated dependencies [dd6dd283]
 - Updated dependencies [b1f3cb49]
   - @scalar/swagger-editor@0.10.1
-  - @scalar/use-codemirror@0.8.1
-  - @scalar/api-client@0.11.1
+  - @readyapi/use-codemirror@0.8.1
+  - @readyapi/api-client@0.11.1
 
 ## 1.15.0
 
@@ -1040,8 +1040,8 @@
 - Updated dependencies [612431b4]
 - Updated dependencies [26340b12]
   - @scalar/swagger-editor@0.10.0
-  - @scalar/use-codemirror@0.8.0
-  - @scalar/api-client@0.11.0
+  - @readyapi/use-codemirror@0.8.0
+  - @readyapi/api-client@0.11.0
 
 ## 1.14.10
 
@@ -1085,16 +1085,16 @@
 - 6da73708: feat: handle application/zip responses in the API client
 - Updated dependencies [6da73708]
   - @scalar/swagger-editor@0.9.11
-  - @scalar/use-codemirror@0.7.22
-  - @scalar/api-client@0.10.2
+  - @readyapi/use-codemirror@0.7.22
+  - @readyapi/api-client@0.10.2
 
 ## 1.14.4
 
 ### Patch Changes
 
 - Updated dependencies [cd7afa70]
-  - @scalar/use-codemirror@0.7.21
-  - @scalar/api-client@0.10.1
+  - @readyapi/use-codemirror@0.7.21
+  - @readyapi/api-client@0.10.1
   - @scalar/swagger-editor@0.9.10
 
 ## 1.14.3
@@ -1103,7 +1103,7 @@
 
 - e9eefff4: feat: improve custom example block with try request button, path and improved select
 - Updated dependencies [dccb83ab]
-  - @scalar/api-client@0.10.0
+  - @readyapi/api-client@0.10.0
 
 ## 1.14.2
 
@@ -1129,8 +1129,8 @@
 
 - 3d712d74: chore: remove light/dark mode features from useCodeMirror
 - Updated dependencies [3d712d74]
-  - @scalar/use-codemirror@0.7.20
-  - @scalar/api-client@0.9.4
+  - @readyapi/use-codemirror@0.7.20
+  - @readyapi/api-client@0.9.4
   - @scalar/swagger-editor@0.9.9
 
 ## 1.13.18
@@ -1169,8 +1169,8 @@
 - 455deefe: feat: export SidebarElement and SidebarGroup
 - 75e1cdf8: fix: only activate hotkey if component is active
 - Updated dependencies [75e1cdf8]
-  - @scalar/use-keyboard-event@0.5.8
-  - @scalar/api-client@0.9.3
+  - @readyapi/use-keyboard-event@0.5.8
+  - @readyapi/api-client@0.9.3
 
 ## 1.13.13
 
@@ -1204,16 +1204,16 @@
 - 81543f42: chore: add support for Node 18
 - cca668a2: fix: styles on classic layout client libraries
 - Updated dependencies [81543f42]
-  - @scalar/use-keyboard-event@0.5.7
+  - @readyapi/use-keyboard-event@0.5.7
   - @scalar/swagger-editor@0.9.8
   - @scalar/swagger-parser@0.5.14
-  - @scalar/use-codemirror@0.7.19
-  - @scalar/use-clipboard@0.5.13
-  - @scalar/use-tooltip@0.5.8
-  - @scalar/api-client@0.9.2
-  - @scalar/components@0.2.2
+  - @readyapi/use-codemirror@0.7.19
+  - @readyapi/use-clipboard@0.5.13
+  - @readyapi/use-tooltip@0.5.8
+  - @readyapi/api-client@0.9.2
+  - @readyapi/components@0.2.2
   - @readyapi/use-toasts@0.5.13
-  - @scalar/use-modal@0.2.3
+  - @readyapi/use-modal@0.2.3
   - @readyapi/themes@0.5.4
 
 ## 1.13.9
@@ -1229,8 +1229,8 @@
 
 - Updated dependencies [479a7e3e]
   - @scalar/swagger-editor@0.9.7
-  - @scalar/use-codemirror@0.7.18
-  - @scalar/api-client@0.9.1
+  - @readyapi/use-codemirror@0.7.18
+  - @readyapi/api-client@0.9.1
 
 ## 1.13.6
 
@@ -1253,13 +1253,13 @@
 - b8ce7fd5: feat: show body and formData parameters (Swagger 2.0)
 - Updated dependencies [5ca138ee]
 - Updated dependencies [b8ce7fd5]
-  - @scalar/api-client@0.9.0
+  - @readyapi/api-client@0.9.0
   - @scalar/swagger-editor@0.9.6
   - @readyapi/use-toasts@0.5.12
-  - @scalar/use-modal@0.2.2
+  - @readyapi/use-modal@0.2.2
   - @readyapi/themes@0.5.3
-  - @scalar/use-clipboard@0.5.12
-  - @scalar/components@0.2.1
+  - @readyapi/use-clipboard@0.5.12
+  - @readyapi/components@0.2.1
 
 ## 1.13.4
 
@@ -1267,7 +1267,7 @@
 
 - dae1010a: chore: update axios to 1.6.5
 - Updated dependencies [dae1010a]
-  - @scalar/api-client@0.8.10
+  - @readyapi/api-client@0.8.10
 
 ## 1.13.3
 
@@ -1284,8 +1284,8 @@
 - 6d777194: feat: release themes
 - Updated dependencies [6d777194]
   - @scalar/swagger-editor@0.9.4
-  - @scalar/api-client@0.8.9
-  - @scalar/components@0.2.1
+  - @readyapi/api-client@0.8.9
+  - @readyapi/components@0.2.1
   - @readyapi/themes@0.5.2
 
 ## 1.13.1
@@ -1306,7 +1306,7 @@
 - 0e0f34b3: fix: cleanup safari bugs
 - 7582e82a: fix: classic layout stylings
 - Updated dependencies [0e0f34b3]
-  - @scalar/api-client@0.8.8
+  - @readyapi/api-client@0.8.8
 
 ## 1.12.9
 
@@ -1316,8 +1316,8 @@
 - 7d502131: fix: add markdown rendering for body schema
 - 3e7c4cf7: feat: add fetch examples
 - Updated dependencies [c171c9d9]
-  - @scalar/use-codemirror@0.7.17
-  - @scalar/api-client@0.8.7
+  - @readyapi/use-codemirror@0.7.17
+  - @readyapi/api-client@0.8.7
   - @scalar/swagger-editor@0.9.3
 
 ## 1.12.8
@@ -1352,7 +1352,7 @@
 
 - 06f800cc: fix: regression ui bugs
 - Updated dependencies [06f800cc]
-  - @scalar/api-client@0.8.6
+  - @readyapi/api-client@0.8.6
 
 ## 1.12.3
 
@@ -1360,7 +1360,7 @@
 
 - bf29f8df: fix: add text/plain support
 - Updated dependencies [bf29f8df]
-  - @scalar/api-client@0.8.5
+  - @readyapi/api-client@0.8.5
 
 ## 1.12.2
 
@@ -1368,7 +1368,7 @@
 
 - 0f9791b7: fix: add null check to cookies and proper withCredentials set on cookie addition
 - Updated dependencies [0f9791b7]
-  - @scalar/api-client@0.8.4
+  - @readyapi/api-client@0.8.4
 
 ## 1.12.1
 
@@ -1388,7 +1388,7 @@
 - 432d16fe: feat: add an OpenAuth2 interface
 - Updated dependencies [1c4f4c88]
 - Updated dependencies [2d7e3e6e]
-  - @scalar/components@0.2.0
+  - @readyapi/components@0.2.0
   - @scalar/swagger-editor@0.9.1
 
 ## 1.11.1
@@ -1442,15 +1442,15 @@
 - Updated dependencies [5d6b539b]
 - Updated dependencies [a1319e8b]
 - Updated dependencies [d1caa4ee]
-  - @scalar/api-client@0.8.3
-  - @scalar/components@0.1.0
+  - @readyapi/api-client@0.8.3
+  - @readyapi/components@0.1.0
   - @scalar/swagger-editor@0.8.4
   - @scalar/swagger-parser@0.5.13
-  - @scalar/use-codemirror@0.7.16
-  - @scalar/use-modal@0.2.1
+  - @readyapi/use-codemirror@0.7.16
+  - @readyapi/use-modal@0.2.1
   - @readyapi/themes@0.5.1
   - @readyapi/use-toasts@0.5.11
-  - @scalar/use-clipboard@0.5.11
+  - @readyapi/use-clipboard@0.5.11
 
 ## 1.9.2
 
@@ -1464,7 +1464,7 @@
 
 - edb02e76: fix: windows select menu not updating on prefers color scheme
 - Updated dependencies [edb02e76]
-  - @scalar/api-client@0.8.2
+  - @readyapi/api-client@0.8.2
 
 ## 1.9.0
 
@@ -1488,7 +1488,7 @@
 - Updated dependencies [f9bfa97]
   - @scalar/swagger-editor@0.8.3
   - @readyapi/use-toasts@0.5.10
-  - @scalar/use-clipboard@0.5.10
+  - @readyapi/use-clipboard@0.5.10
 
 ## 1.7.1
 
@@ -1514,7 +1514,7 @@
 
 - f87910d: feat: prefill path, header, cookie, query parameters from the spec
 - Updated dependencies [f87910d]
-  - @scalar/api-client@0.8.1
+  - @readyapi/api-client@0.8.1
 
 ## 1.6.0
 
@@ -1544,9 +1544,9 @@
 - 349589a: feat: expose spec content updates
 - Updated dependencies [349589a]
 - Updated dependencies [f38bb61]
-  - @scalar/api-client@0.8.0
+  - @readyapi/api-client@0.8.0
   - @scalar/swagger-editor@0.8.0
-  - @scalar/use-modal@0.2.0
+  - @readyapi/use-modal@0.2.0
   - @readyapi/themes@0.5.0
 
 ## 1.4.0
@@ -1557,11 +1557,11 @@
 
 ### Patch Changes
 
-- b65840b: refactor: keep track of the collapsed sidebar items in @scalar/api-reference
+- b65840b: refactor: keep track of the collapsed sidebar items in @readyapi/api-reference
 - 95fbc01: fix: hono middleware fails to read configuration.spec.content
 - b65840b: fix: URL doesn’t match the active sidebar item
 - Updated dependencies [b65840b]
-  - @scalar/api-client@0.7.37
+  - @readyapi/api-client@0.7.37
 
 ## 1.3.0
 
@@ -1578,7 +1578,7 @@
 ### Patch Changes
 
 - Updated dependencies [bc23e62]
-  - @scalar/api-client@0.7.36
+  - @readyapi/api-client@0.7.36
 
 ## 1.2.6
 
@@ -1589,25 +1589,25 @@
 - Updated dependencies [fdaabfe]
 - Updated dependencies [fdaabfe]
   - @scalar/swagger-editor@0.7.11
-  - @scalar/api-client@0.7.35
+  - @readyapi/api-client@0.7.35
 
 ## 1.2.5
 
 ### Patch Changes
 
-- 35dffe4: chore: include @scalar dependencies in the bundle
+- 35dffe4: chore: include @readyapi dependencies in the bundle
 - 5c66be8: chore: replace imports pointing to src with relative paths
 - Updated dependencies [35dffe4]
 - Updated dependencies [5c66be8]
-  - @scalar/use-keyboard-event@0.5.6
+  - @readyapi/use-keyboard-event@0.5.6
   - @scalar/swagger-editor@0.7.10
   - @scalar/swagger-parser@0.5.12
-  - @scalar/use-codemirror@0.7.15
-  - @scalar/use-clipboard@0.5.9
-  - @scalar/use-tooltip@0.5.7
-  - @scalar/api-client@0.7.34
+  - @readyapi/use-codemirror@0.7.15
+  - @readyapi/use-clipboard@0.5.9
+  - @readyapi/use-tooltip@0.5.7
+  - @readyapi/api-client@0.7.34
   - @readyapi/use-toasts@0.5.9
-  - @scalar/use-modal@0.1.9
+  - @readyapi/use-modal@0.1.9
 
 ## 1.2.4
 
@@ -1615,15 +1615,15 @@
 
 - c3b215f: chore: no pinned peer dependency versions
 - Updated dependencies [c3b215f]
-  - @scalar/use-keyboard-event@0.5.5
+  - @readyapi/use-keyboard-event@0.5.5
   - @scalar/swagger-editor@0.7.9
-  - @scalar/use-codemirror@0.7.14
-  - @scalar/use-tooltip@0.5.6
-  - @scalar/api-client@0.7.33
+  - @readyapi/use-codemirror@0.7.14
+  - @readyapi/use-tooltip@0.5.6
+  - @readyapi/api-client@0.7.33
   - @readyapi/use-toasts@0.5.8
-  - @scalar/use-modal@0.1.8
+  - @readyapi/use-modal@0.1.8
   - @readyapi/themes@0.4.2
-  - @scalar/use-clipboard@0.5.8
+  - @readyapi/use-clipboard@0.5.8
 
 ## 1.2.3
 
@@ -1632,15 +1632,15 @@
 - 55246e5: chore: rewrite all package.jsons (including their prod, dev and peer dependency requirements)
 - f2941f5: feat: add `metaData` to the configuration to pass meta tags (title, opengraph data …)
 - Updated dependencies [55246e5]
-  - @scalar/use-keyboard-event@0.5.4
+  - @readyapi/use-keyboard-event@0.5.4
   - @scalar/swagger-editor@0.7.8
   - @scalar/swagger-parser@0.5.11
-  - @scalar/use-codemirror@0.7.13
-  - @scalar/use-clipboard@0.5.7
-  - @scalar/use-tooltip@0.5.5
-  - @scalar/api-client@0.7.32
+  - @readyapi/use-codemirror@0.7.13
+  - @readyapi/use-clipboard@0.5.7
+  - @readyapi/use-tooltip@0.5.5
+  - @readyapi/api-client@0.7.32
   - @readyapi/use-toasts@0.5.7
-  - @scalar/use-modal@0.1.7
+  - @readyapi/use-modal@0.1.7
   - @readyapi/themes@0.4.1
 
 ## 1.2.2
@@ -1750,7 +1750,7 @@
 - 366b142: fix: ignore proxy when swagger spec is a path
 - e1dc955: fix: add fallback to name for models if no xml attribute passed
 - Updated dependencies [ceb7952]
-  - @scalar/api-client@0.7.31
+  - @readyapi/api-client@0.7.31
 
 ## 1.0.5
 
@@ -1763,7 +1763,7 @@
 - Updated dependencies [5da1fc6]
 - Updated dependencies [ff81f70]
   - @scalar/swagger-editor@0.7.3
-  - @scalar/api-client@0.7.30
+  - @readyapi/api-client@0.7.30
 
 ## 1.0.4
 
@@ -1779,7 +1779,7 @@
 - Updated dependencies [54098d7]
 - Updated dependencies [7fb2302]
   - @scalar/swagger-parser@0.5.7
-  - @scalar/api-client@0.7.29
+  - @readyapi/api-client@0.7.29
 
 ## 1.0.3
 
@@ -1796,10 +1796,10 @@
 - Updated dependencies [48118ba]
 - Updated dependencies [dab853a]
   - @scalar/swagger-editor@0.7.2
-  - @scalar/use-codemirror@0.7.12
+  - @readyapi/use-codemirror@0.7.12
   - @scalar/swagger-parser@0.5.6
-  - @scalar/api-client@0.7.28
-  - @scalar/use-modal@0.1.6
+  - @readyapi/api-client@0.7.28
+  - @readyapi/use-modal@0.1.6
 
 ## 1.0.2
 
@@ -1839,10 +1839,10 @@
 - Updated dependencies [3c6f54f]
 - Updated dependencies [509db1e]
 - Updated dependencies [a4f1b08]
-  - @scalar/use-modal@0.1.5
+  - @readyapi/use-modal@0.1.5
   - @scalar/swagger-editor@0.7.0
-  - @scalar/api-client@0.7.27
-  - @scalar/use-codemirror@0.7.11
+  - @readyapi/api-client@0.7.27
+  - @readyapi/use-codemirror@0.7.11
 
 ## 0.8.10
 
@@ -1861,7 +1861,7 @@
   refactor: new helpers to generate the request data for the example request and the client
 - a5df4a5b: fix: don’t show generated example responses if there’s an example
 - Updated dependencies [9c7a5722]
-  - @scalar/api-client@0.7.26
+  - @readyapi/api-client@0.7.26
 
 ## 0.8.8
 
@@ -1870,7 +1870,7 @@
 - 8e2e4e5a: fix markdown collisions + prefix the card name
 - Updated dependencies [8e2e4e5a]
   - @scalar/swagger-editor@0.6.30
-  - @scalar/api-client@0.7.25
+  - @readyapi/api-client@0.7.25
 
 ## 0.8.7
 
@@ -1897,7 +1897,7 @@
 - Updated dependencies [2f0b2f01]
 - Updated dependencies [2f0b2f01]
   - @scalar/swagger-editor@0.6.28
-  - @scalar/api-client@0.7.24
+  - @readyapi/api-client@0.7.24
 
 ## 0.8.4
 
@@ -1926,8 +1926,8 @@
 - Updated dependencies [64f8a018]
 - Updated dependencies [ce04794a]
 - Updated dependencies [7c3091c6]
-  - @scalar/use-codemirror@0.7.10
-  - @scalar/api-client@0.7.23
+  - @readyapi/use-codemirror@0.7.10
+  - @readyapi/api-client@0.7.23
   - @scalar/swagger-editor@0.6.25
 
 ## 0.8.1
@@ -1950,9 +1950,9 @@
 - Updated dependencies [df74d017]
 - Updated dependencies [75d12f56]
 - Updated dependencies [2eba4010]
-  - @scalar/api-client@0.7.22
+  - @readyapi/api-client@0.7.22
   - @readyapi/use-toasts@0.5.6
-  - @scalar/use-clipboard@0.5.6
+  - @readyapi/use-clipboard@0.5.6
 
 ## 0.7.11
 
@@ -1981,13 +1981,13 @@
 - ab348cb5: Mobile improvements and layout fixes + consitency improvements
 - 211ed1c7: polish up the models
 - ca2689b6: feat: add example request body to example request generator
-- ae247253: refactor: move generateRequest helpers to @scalar/api-reference
+- ae247253: refactor: move generateRequest helpers to @readyapi/api-reference
 - 5896b08d: fix: add missing null check to jsonRequest requestBody
 - Updated dependencies [ab348cb5]
 - Updated dependencies [aa24dbe6]
 - Updated dependencies [ae247253]
-  - @scalar/api-client@0.7.21
-  - @scalar/use-codemirror@0.7.9
+  - @readyapi/api-client@0.7.21
+  - @readyapi/use-codemirror@0.7.9
   - @scalar/swagger-editor@0.6.24
 
 ## 0.7.7
@@ -2019,7 +2019,7 @@
 - Updated dependencies [dd8df965]
   - @scalar/swagger-parser@0.5.5
   - @scalar/swagger-editor@0.6.23
-  - @scalar/api-client@0.7.20
+  - @readyapi/api-client@0.7.20
 
 ## 0.7.5
 
@@ -2028,7 +2028,7 @@
 - fd875bc7: feat: show headings with a higher depth in the sidebar
 - 28cce042: fix: externalize markdown plugins to not break SSG
 - Updated dependencies [28cce042]
-  - @scalar/api-client@0.7.19
+  - @readyapi/api-client@0.7.19
 
 ## 0.7.4
 
@@ -2036,7 +2036,7 @@
 
 - 51029c1d: add interactive params, headers and variables
 - Updated dependencies [51029c1d]
-  - @scalar/api-client@0.7.18
+  - @readyapi/api-client@0.7.18
 
 ## 0.7.3
 
@@ -2073,7 +2073,7 @@
 
 - Updated dependencies [fd38deb0]
   - @readyapi/themes@0.4.0
-  - @scalar/api-client@0.7.17
+  - @readyapi/api-client@0.7.17
   - @scalar/swagger-editor@0.6.21
 
 ## 0.6.23
@@ -2087,13 +2087,13 @@
 - 91b09499: Fix breadcrums throwing error for specs without operations in tags
 - Updated dependencies [af4ec8d3]
 - Updated dependencies [749f2f3f]
-  - @scalar/use-keyboard-event@0.5.3
+  - @readyapi/use-keyboard-event@0.5.3
   - @scalar/swagger-editor@0.6.20
   - @scalar/swagger-parser@0.5.3
-  - @scalar/use-codemirror@0.7.8
-  - @scalar/use-clipboard@0.5.5
-  - @scalar/use-tooltip@0.5.4
-  - @scalar/api-client@0.7.16
+  - @readyapi/use-codemirror@0.7.8
+  - @readyapi/use-clipboard@0.5.5
+  - @readyapi/use-tooltip@0.5.4
+  - @readyapi/api-client@0.7.16
   - @readyapi/use-toasts@0.5.5
   - @readyapi/themes@0.3.11
 
@@ -2115,14 +2115,14 @@
 - Updated dependencies [1cbcabd7]
 - Updated dependencies [d7b12610]
   - @scalar/swagger-parser@0.5.2
-  - @scalar/api-client@0.7.15
-  - @scalar/use-keyboard-event@0.5.2
+  - @readyapi/api-client@0.7.15
+  - @readyapi/use-keyboard-event@0.5.2
   - @scalar/swagger-editor@0.6.19
-  - @scalar/use-codemirror@0.7.7
-  - @scalar/use-clipboard@0.5.4
-  - @scalar/use-tooltip@0.5.3
+  - @readyapi/use-codemirror@0.7.7
+  - @readyapi/use-clipboard@0.5.4
+  - @readyapi/use-tooltip@0.5.3
   - @readyapi/use-toasts@0.5.4
-  - @scalar/use-modal@0.1.4
+  - @readyapi/use-modal@0.1.4
   - @readyapi/themes@0.3.10
 
 ## 0.6.20
@@ -2140,7 +2140,7 @@
 - eb0c3201: Lot's of small things + bigger temp fix for the multi content cards
 - Updated dependencies [eb0c3201]
   - @scalar/swagger-editor@0.6.17
-  - @scalar/api-client@0.7.14
+  - @readyapi/api-client@0.7.14
   - @readyapi/themes@0.3.9
 
 ## 0.6.18
@@ -2155,8 +2155,8 @@
 ### Patch Changes
 
 - Updated dependencies [be239745]
-  - @scalar/use-codemirror@0.7.6
-  - @scalar/api-client@0.7.13
+  - @readyapi/use-codemirror@0.7.6
+  - @readyapi/api-client@0.7.13
   - @scalar/swagger-editor@0.6.15
 
 ## 0.6.16
@@ -2169,7 +2169,7 @@
 - Updated dependencies [99744358]
 - Updated dependencies [24deb723]
 - Updated dependencies [3dd2574d]
-  - @scalar/api-client@0.7.12
+  - @readyapi/api-client@0.7.12
   - @scalar/swagger-editor@0.6.14
 
 ## 0.6.15
@@ -2178,8 +2178,8 @@
 
 - 7b6c21e5: request history ui and some other small type changes
 - Updated dependencies [7b6c21e5]
-  - @scalar/api-client@0.7.11
-  - @scalar/use-modal@0.1.3
+  - @readyapi/api-client@0.7.11
+  - @readyapi/use-modal@0.1.3
   - @scalar/swagger-editor@0.6.13
 
 ## 0.6.14
@@ -2189,7 +2189,7 @@
 - 46142c0a: reference theme fixes
 - Updated dependencies [46142c0a]
   - @scalar/swagger-editor@0.6.12
-  - @scalar/api-client@0.7.10
+  - @readyapi/api-client@0.7.10
   - @readyapi/themes@0.3.8
 
 ## 0.6.13
@@ -2209,7 +2209,7 @@
 - Updated dependencies [30d54d16]
 - Updated dependencies [48df28ef]
 - Updated dependencies [1d02c811]
-  - @scalar/api-client@0.7.9
+  - @readyapi/api-client@0.7.9
   - @readyapi/themes@0.3.7
   - @scalar/swagger-editor@0.6.10
 
@@ -2220,9 +2220,9 @@
 - b76f4d1e: Reference search + some app hover states
 - Updated dependencies [b76f4d1e]
   - @scalar/swagger-editor@0.6.9
-  - @scalar/use-codemirror@0.7.5
-  - @scalar/api-client@0.7.8
-  - @scalar/use-modal@0.1.2
+  - @readyapi/use-codemirror@0.7.5
+  - @readyapi/api-client@0.7.8
+  - @readyapi/use-modal@0.1.2
   - @readyapi/themes@0.3.6
 
 ## 0.6.10
@@ -2231,7 +2231,7 @@
 
 - 07b99141: api client in refs touch ups
 - Updated dependencies [07b99141]
-  - @scalar/api-client@0.7.7
+  - @readyapi/api-client@0.7.7
 
 ## 0.6.9
 
@@ -2239,9 +2239,9 @@
 
 - 4985562c: polish codemirror theme colors
 - Updated dependencies [4985562c]
-  - @scalar/use-codemirror@0.7.4
+  - @readyapi/use-codemirror@0.7.4
   - @readyapi/themes@0.3.5
-  - @scalar/api-client@0.7.6
+  - @readyapi/api-client@0.7.6
   - @scalar/swagger-editor@0.6.8
 
 ## 0.6.8
@@ -2249,8 +2249,8 @@
 ### Patch Changes
 
 - Updated dependencies [58af0623]
-  - @scalar/use-codemirror@0.7.3
-  - @scalar/api-client@0.7.5
+  - @readyapi/use-codemirror@0.7.3
+  - @readyapi/api-client@0.7.5
   - @scalar/swagger-editor@0.6.7
 
 ## 0.6.7
@@ -2260,10 +2260,10 @@
 - cd5f2685: codemirror colors + font fixes throughout app
 - Updated dependencies [cd5f2685]
   - @scalar/swagger-editor@0.6.6
-  - @scalar/api-client@0.7.4
+  - @readyapi/api-client@0.7.4
   - @readyapi/use-toasts@0.5.3
   - @readyapi/themes@0.3.4
-  - @scalar/use-clipboard@0.5.3
+  - @readyapi/use-clipboard@0.5.3
 
 ## 0.6.6
 
@@ -2271,8 +2271,8 @@
 
 - 8823d7a1: cleanup ui
 - Updated dependencies [8823d7a1]
-  - @scalar/use-codemirror@0.7.2
-  - @scalar/api-client@0.7.3
+  - @readyapi/use-codemirror@0.7.2
+  - @readyapi/api-client@0.7.3
   - @scalar/swagger-editor@0.6.5
 
 ## 0.6.5
@@ -2294,13 +2294,13 @@
 - Updated dependencies [3e912c75]
 - Updated dependencies [048555c6]
   - @scalar/swagger-editor@0.6.3
-  - @scalar/api-client@0.7.2
-  - @scalar/use-modal@0.1.1
-  - @scalar/use-keyboard-event@0.5.1
+  - @readyapi/api-client@0.7.2
+  - @readyapi/use-modal@0.1.1
+  - @readyapi/use-keyboard-event@0.5.1
   - @scalar/swagger-parser@0.5.1
-  - @scalar/use-codemirror@0.7.1
-  - @scalar/use-clipboard@0.5.2
-  - @scalar/use-tooltip@0.5.2
+  - @readyapi/use-codemirror@0.7.1
+  - @readyapi/use-clipboard@0.5.2
+  - @readyapi/use-tooltip@0.5.2
   - @readyapi/use-toasts@0.5.2
   - @readyapi/themes@0.3.3
 
@@ -2311,14 +2311,14 @@
 - 75a69ba7: feat: add `theme` prop and improve theme support
 - effc1f31: feat: add new HTML API based on script tags
   chore: deprecate old div based HTML API
-- 75a69ba7: refactor: rename @scalar/default-theme to @readyapi/themes, add more themes
+- 75a69ba7: refactor: rename @readyapi/default-theme to @readyapi/themes, add more themes
 - b03a09c7: chore: remove Vite env proxy variable
 - 11270915: fix: use higher z-index values
 - Updated dependencies [75a69ba7]
 - Updated dependencies [d6a10e1f]
 - Updated dependencies [75a69ba7]
   - @scalar/swagger-editor@0.6.2
-  - @scalar/api-client@0.7.1
+  - @readyapi/api-client@0.7.1
   - @readyapi/themes@0.3.2
 
 ## 0.6.2
@@ -2336,12 +2336,12 @@
 - Updated dependencies [addd9fa2]
 - Updated dependencies [2006aa43]
   - @scalar/swagger-editor@0.6.1
-  - @scalar/use-codemirror@0.7.0
-  - @scalar/default-theme@0.3.1
-  - @scalar/api-client@0.7.0
-  - @scalar/use-tooltip@0.5.1
+  - @readyapi/use-codemirror@0.7.0
+  - @readyapi/default-theme@0.3.1
+  - @readyapi/api-client@0.7.0
+  - @readyapi/use-tooltip@0.5.1
   - @readyapi/use-toasts@0.5.1
-  - @scalar/use-clipboard@0.5.1
+  - @readyapi/use-clipboard@0.5.1
 
 ## 0.6.1
 
@@ -2363,14 +2363,14 @@
 - Updated dependencies [ef080a26]
 - Updated dependencies [87fda5af]
 - Updated dependencies [45645710]
-  - @scalar/use-keyboard-event@0.5.0
+  - @readyapi/use-keyboard-event@0.5.0
   - @scalar/swagger-editor@0.6.0
   - @scalar/swagger-parser@0.5.0
-  - @scalar/use-codemirror@0.6.0
+  - @readyapi/use-codemirror@0.6.0
   - @readyapi/themes@0.3.0
-  - @scalar/use-clipboard@0.5.0
-  - @scalar/use-tooltip@0.5.0
-  - @scalar/api-client@0.6.0
+  - @readyapi/use-clipboard@0.5.0
+  - @readyapi/use-tooltip@0.5.0
+  - @readyapi/api-client@0.6.0
   - @readyapi/use-toasts@0.5.0
 
 ## 0.5.6
@@ -2380,16 +2380,16 @@
 - 81336114: add yjs support
 - Updated dependencies [81336114]
   - @scalar/swagger-editor@0.5.6
-  - @scalar/use-codemirror@0.5.4
-  - @scalar/api-client@0.5.5
+  - @readyapi/use-codemirror@0.5.4
+  - @readyapi/api-client@0.5.5
 
 ## 0.5.5
 
 ### Patch Changes
 
 - Updated dependencies [068669b6]
-  - @scalar/use-codemirror@0.5.3
-  - @scalar/api-client@0.5.4
+  - @readyapi/use-codemirror@0.5.3
+  - @readyapi/api-client@0.5.4
   - @scalar/swagger-editor@0.5.5
 
 ## 0.5.4
@@ -2397,8 +2397,8 @@
 ### Patch Changes
 
 - Updated dependencies [ac492d94]
-  - @scalar/use-codemirror@0.5.2
-  - @scalar/api-client@0.5.3
+  - @readyapi/use-codemirror@0.5.2
+  - @readyapi/api-client@0.5.3
   - @scalar/swagger-editor@0.5.4
 
 ## 0.5.3
@@ -2414,13 +2414,13 @@
 
 - d51aebe5: chore: remove source files from packages
 - Updated dependencies [d51aebe5]
-  - @scalar/use-keyboard-event@0.4.2
+  - @readyapi/use-keyboard-event@0.4.2
   - @scalar/swagger-editor@0.5.2
   - @scalar/swagger-parser@0.4.3
-  - @scalar/use-codemirror@0.5.1
-  - @scalar/use-clipboard@0.4.2
-  - @scalar/use-tooltip@0.4.2
-  - @scalar/api-client@0.5.2
+  - @readyapi/use-codemirror@0.5.1
+  - @readyapi/use-clipboard@0.4.2
+  - @readyapi/use-tooltip@0.4.2
+  - @readyapi/api-client@0.5.2
 
 ## 0.5.1
 
@@ -2429,7 +2429,7 @@
 - 4165b251: feat: improve rendering of complex swagger files
 - Updated dependencies [e49cdc3a]
 - Updated dependencies [4165b251]
-  - @scalar/api-client@0.5.1
+  - @readyapi/api-client@0.5.1
   - @scalar/swagger-parser@0.4.2
   - @scalar/swagger-editor@0.5.1
 
@@ -2437,7 +2437,7 @@
 
 ### Minor Changes
 
-- 0902d82c: \* refactor: add the CodeMirror component to @scalar/use-codemirror, use it everywhere
+- 0902d82c: \* refactor: add the CodeMirror component to @readyapi/use-codemirror, use it everywhere
   - feat: allow to pass forceDarkMode to the CodeMirror component
 
 ### Patch Changes
@@ -2449,13 +2449,13 @@
 - Updated dependencies [10498d9d]
 - Updated dependencies [494083a0]
   - @scalar/swagger-editor@0.5.0
-  - @scalar/use-codemirror@0.5.0
-  - @scalar/api-client@0.5.0
-  - @scalar/use-keyboard-event@0.4.1
+  - @readyapi/use-codemirror@0.5.0
+  - @readyapi/api-client@0.5.0
+  - @readyapi/use-keyboard-event@0.4.1
   - @scalar/swagger-parser@0.4.1
   - @readyapi/themes@0.2.1
-  - @scalar/use-clipboard@0.4.1
-  - @scalar/use-tooltip@0.4.1
+  - @readyapi/use-clipboard@0.4.1
+  - @readyapi/use-tooltip@0.4.1
   - @readyapi/use-toasts@0.4.1
 
 ## 0.4.0
@@ -2467,21 +2467,21 @@
 ### Patch Changes
 
 - Updated dependencies [5057e213]
-  - @scalar/api-client@0.4.0
+  - @readyapi/api-client@0.4.0
   - @readyapi/themes@0.2.0
   - @scalar/swagger-editor@0.4.0
   - @scalar/swagger-parser@0.4.0
-  - @scalar/use-clipboard@0.4.0
-  - @scalar/use-keyboard-event@0.4.0
+  - @readyapi/use-clipboard@0.4.0
+  - @readyapi/use-keyboard-event@0.4.0
   - @readyapi/use-toasts@0.4.0
-  - @scalar/use-tooltip@0.4.0
+  - @readyapi/use-tooltip@0.4.0
 
 ## 0.3.4
 
 ### Patch Changes
 
 - Updated dependencies [027012c8]
-  - @scalar/api-client@0.3.4
+  - @readyapi/api-client@0.3.4
 
 ## 0.3.3
 
@@ -2489,7 +2489,7 @@
 
 - 6420305b: fix: only require nunjucks where it’s needed
 - Updated dependencies [6420305b]
-  - @scalar/api-client@0.3.3
+  - @readyapi/api-client@0.3.3
 
 ## 0.3.2
 
@@ -2498,7 +2498,7 @@
 - de4ff38: feat: add a new @readyapi/themes package to import the variables and custom scrollbar CSS
 - Updated dependencies [de4ff38]
   - @readyapi/themes@0.1.1
-  - @scalar/api-client@0.3.2
+  - @readyapi/api-client@0.3.2
 
 ## 0.3.1
 
@@ -2506,7 +2506,7 @@
 
 - 0f345e4: fix: import CSS file from component, makes sure the CSS is included in the build
 - Updated dependencies [0f345e4]
-  - @scalar/api-client@0.3.1
+  - @readyapi/api-client@0.3.1
 
 ## 0.3.0
 
@@ -2517,13 +2517,13 @@
 ### Patch Changes
 
 - Updated dependencies [b0f5221]
-  - @scalar/api-client@0.3.0
+  - @readyapi/api-client@0.3.0
   - @scalar/swagger-editor@0.3.0
   - @scalar/swagger-parser@0.3.0
-  - @scalar/use-clipboard@0.3.0
-  - @scalar/use-keyboard-event@0.3.0
+  - @readyapi/use-clipboard@0.3.0
+  - @readyapi/use-keyboard-event@0.3.0
   - @readyapi/use-toasts@0.3.0
-  - @scalar/use-tooltip@0.3.0
+  - @readyapi/use-tooltip@0.3.0
 
 ## 0.2.1
 
@@ -2531,8 +2531,8 @@
 
 - 41b06cb: fix: scope search modal keyboard events
 - Updated dependencies [41b06cb]
-  - @scalar/use-keyboard-event@0.2.1
-  - @scalar/api-client@0.2.1
+  - @readyapi/use-keyboard-event@0.2.1
+  - @readyapi/api-client@0.2.1
 
 ## 0.2.0
 
@@ -2543,12 +2543,12 @@
 ### Patch Changes
 
 - Updated dependencies
-  - @scalar/api-client@0.2.0
+  - @readyapi/api-client@0.2.0
   - @scalar/swagger-editor@0.2.0
   - @scalar/swagger-parser@0.2.0
-  - @scalar/use-clipboard@0.2.0
-  - @scalar/use-keyboard-event@0.2.0
-  - @scalar/use-tooltip@0.2.0
+  - @readyapi/use-clipboard@0.2.0
+  - @readyapi/use-keyboard-event@0.2.0
+  - @readyapi/use-tooltip@0.2.0
 
 ## 0.1.31
 
@@ -2556,7 +2556,7 @@
 
 - fix: Node polyfill issues (process undefined)
 - Updated dependencies
-  - @scalar/api-client@0.1.21
+  - @readyapi/api-client@0.1.21
   - @scalar/swagger-editor@0.1.16
   - @scalar/swagger-parser@0.1.14
 
@@ -2568,7 +2568,7 @@
 - add offline search, improve ui
 - Updated dependencies
 - Updated dependencies
-  - @scalar/api-client@0.1.20
+  - @readyapi/api-client@0.1.20
   - @scalar/swagger-editor@0.1.15
   - @scalar/swagger-parser@0.1.13
 
@@ -2578,7 +2578,7 @@
 
 - feat: add a standalone version
 - Updated dependencies
-  - @scalar/api-client@0.1.19
+  - @readyapi/api-client@0.1.19
   - @scalar/swagger-editor@0.1.14
   - @scalar/swagger-parser@0.1.12
 
@@ -2594,7 +2594,7 @@
 
 - fix sidebar height issue
 - Updated dependencies
-  - @scalar/api-client@0.1.18
+  - @readyapi/api-client@0.1.18
   - @scalar/swagger-editor@0.1.13
 
 ## 0.1.26
@@ -2639,7 +2639,7 @@
 
 - fix incorrect font sizes
 - Updated dependencies
-  - @scalar/api-client@0.1.17
+  - @readyapi/api-client@0.1.17
   - @scalar/swagger-editor@0.1.9
 
 ## 0.1.19
@@ -2654,7 +2654,7 @@
 
 - css variable fixes and hocuspocusurl prop
 - Updated dependencies
-  - @scalar/api-client@0.1.16
+  - @readyapi/api-client@0.1.16
   - @scalar/swagger-editor@0.1.8
 
 ## 0.1.17
@@ -2663,7 +2663,7 @@
 
 - fix: mismatched variables
 - Updated dependencies
-  - @scalar/api-client@0.1.15
+  - @readyapi/api-client@0.1.15
   - @scalar/swagger-editor@0.1.7
 
 ## 0.1.16
@@ -2672,7 +2672,7 @@
 
 - update font weights
 - Updated dependencies
-  - @scalar/api-client@0.1.14
+  - @readyapi/api-client@0.1.14
 
 ## 0.1.15
 
@@ -2680,7 +2680,7 @@
 
 - fix: use scalar fonts
 - Updated dependencies
-  - @scalar/api-client@0.1.13
+  - @readyapi/api-client@0.1.13
 
 ## 0.1.14
 
@@ -2688,7 +2688,7 @@
 
 - add useClientStore export
 - Updated dependencies
-  - @scalar/api-client@0.1.12
+  - @readyapi/api-client@0.1.12
 
 ## 0.1.13
 
@@ -2696,7 +2696,7 @@
 
 - add store export
 - Updated dependencies
-  - @scalar/api-client@0.1.11
+  - @readyapi/api-client@0.1.11
 
 ## 0.1.12
 
@@ -2704,21 +2704,21 @@
 
 - add force show to client
 - Updated dependencies
-  - @scalar/api-client@0.1.10
+  - @readyapi/api-client@0.1.10
 
 ## 0.1.11
 
 ### Patch Changes
 
 - Updated dependencies
-  - @scalar/api-client@0.1.9
+  - @readyapi/api-client@0.1.9
 
 ## 0.1.10
 
 ### Patch Changes
 
 - Updated dependencies
-  - @scalar/api-client@0.1.8
+  - @readyapi/api-client@0.1.8
 
 ## 0.1.9
 
@@ -2726,7 +2726,7 @@
 
 - fix variables and missing styles
 - Updated dependencies
-  - @scalar/api-client@0.1.7
+  - @readyapi/api-client@0.1.7
 
 ## 0.1.8
 
@@ -2740,7 +2740,7 @@
 
 - fix: issues with empty responses, minor styling issues
 - Updated dependencies
-  - @scalar/api-client@0.1.6
+  - @readyapi/api-client@0.1.6
   - @scalar/swagger-editor@0.1.6
 
 ## 0.1.6
@@ -2749,7 +2749,7 @@
 
 - style: improve default style
 - Updated dependencies
-  - @scalar/api-client@0.1.5
+  - @readyapi/api-client@0.1.5
   - @scalar/swagger-editor@0.1.5
 
 ## 0.1.5
@@ -2758,10 +2758,10 @@
 
 - fix: externalize dependencies
 - Updated dependencies
-  - @scalar/api-client@0.1.4
+  - @readyapi/api-client@0.1.4
   - @scalar/swagger-editor@0.1.4
-  - @scalar/use-clipboard@0.1.4
-  - @scalar/use-tooltip@0.1.4
+  - @readyapi/use-clipboard@0.1.4
+  - @readyapi/use-tooltip@0.1.4
 
 ## 0.1.4
 
@@ -2769,11 +2769,11 @@
 
 - fix: add CSS file to swagger editor
 - Updated dependencies
-  - @scalar/api-client@0.1.3
+  - @readyapi/api-client@0.1.3
   - @scalar/swagger-editor@0.1.3
-  - @scalar/use-clipboard@0.1.3
-  - @scalar/use-codemirror@0.1.3
-  - @scalar/use-tooltip@0.1.3
+  - @readyapi/use-clipboard@0.1.3
+  - @readyapi/use-codemirror@0.1.3
+  - @readyapi/use-tooltip@0.1.3
 
 ## 0.1.3
 
@@ -2787,11 +2787,11 @@
 
 - 7cd41bc: fix: point main entry to dist folder
 - Updated dependencies [7cd41bc]
-  - @scalar/api-client@0.1.2
+  - @readyapi/api-client@0.1.2
   - @scalar/swagger-editor@0.1.2
-  - @scalar/use-clipboard@0.1.2
-  - @scalar/use-codemirror@0.1.2
-  - @scalar/use-tooltip@0.1.2
+  - @readyapi/use-clipboard@0.1.2
+  - @readyapi/use-codemirror@0.1.2
+  - @readyapi/use-tooltip@0.1.2
 
 ## 0.1.1
 
@@ -2799,8 +2799,8 @@
 
 - f46e320: Initial release 👀
 - Updated dependencies [f46e320]
-  - @scalar/api-client@0.1.1
+  - @readyapi/api-client@0.1.1
   - @scalar/swagger-editor@0.1.1
-  - @scalar/use-clipboard@0.1.1
-  - @scalar/use-codemirror@0.1.1
-  - @scalar/use-tooltip@0.1.1
+  - @readyapi/use-clipboard@0.1.1
+  - @readyapi/use-codemirror@0.1.1
+  - @readyapi/use-tooltip@0.1.1

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3'
 
 import ScalarCodeBlock from './ScalarCodeBlock.vue'
 
-const contentJs = `import { ApiClientReact } from '@scalar/api-client-react'
+const contentJs = `import { ApiClientReact } from '@readyapi/api-client-react'
 import React, { useState } from 'react'
 
 export const Wrapper = () => {
