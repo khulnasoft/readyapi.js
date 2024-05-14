@@ -134,14 +134,14 @@ const { copyToClipboard } = useClipboard()
   text-transform: initial;
 }
 .request-method {
-  font-family: var(--scalar-font-code);
+  font-family: var(--readyapi-font-code);
   text-transform: uppercase;
   white-space: nowrap;
 }
 .request-client-picker {
   padding-left: 12px;
   padding-right: 9px;
-  border-right: 1px solid var(--scalar-border-color);
+  border-right: 1px solid var(--readyapi-border-color);
 }
 .copy-button {
   appearance: none;
@@ -150,7 +150,7 @@ const { copyToClipboard } = useClipboard()
   background: transparent;
   display: flex;
   cursor: pointer;
-  color: var(--scalar-color-3);
+  color: var(--readyapi-color-3);
   margin-left: 6px;
   margin-right: 10.5px;
   border: none;
@@ -160,16 +160,16 @@ const { copyToClipboard } = useClipboard()
   align-items: center;
   height: fit-content;
 }
-/* Can't use flex align center on parent (scalar-card-header-actions) so have to match sibling font size vertically align*/
+/* Can't use flex align center on parent (readyapi-card-header-actions) so have to match sibling font size vertically align*/
 .copy-button:after {
   content: '.';
   color: transparent;
-  font-size: var(--scalar-mini);
+  font-size: var(--readyapi-mini);
   line-height: 1.35;
   width: 0px;
 }
 .copy-button:hover {
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 }
 
 .copy-button svg {
@@ -177,10 +177,10 @@ const { copyToClipboard } = useClipboard()
   height: 13px;
 }
 
-.scalar-card-header-actions {
+.readyapi-card-header-actions {
   display: flex;
 }
-.scalar-card-footer {
+.readyapi-card-footer {
   display: flex;
   justify-content: flex-end;
   padding: 6px;

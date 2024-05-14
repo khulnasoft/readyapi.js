@@ -39,7 +39,7 @@ const ScalarDocusaurus = (
           items: Record<string, string>[]
         }
       ).items.push({
-        to: options.route ?? '/scalar',
+        to: options.route ?? '/readyapi',
         label: options.label ?? 'Scalar',
         position: 'left',
       })

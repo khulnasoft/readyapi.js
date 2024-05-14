@@ -65,7 +65,7 @@ watch(
   <HttpMethod
     class="readyapi-api-client"
     :method="activeRequest.type ?? 'get'"
-    property="--scalar-api-client-color"
+    property="--readyapi-api-client-color"
     @keydown.esc="emit('escapeKeyPress')">
     <div>
       <slot name="address-bar-controls" />
@@ -93,7 +93,7 @@ watch(
               class="readyapi-api-client__mobile-navigation__toggle">
               <span
                 :class="{
-                  'scalar-api-client__mobile-navigation--active': selected,
+                  'readyapi-api-client__mobile-navigation--active': selected,
                 }">
                 Request
               </span>
@@ -103,7 +103,7 @@ watch(
               class="readyapi-api-client__mobile-navigation__toggle">
               <span
                 :class="{
-                  'scalar-api-client__mobile-navigation--active': selected,
+                  'readyapi-api-client__mobile-navigation--active': selected,
                 }">
                 Response
               </span>
@@ -124,15 +124,15 @@ watch(
 </template>
 
 <style>
-.scalar-api-client,
+.readyapi-api-client,
 #headlessui-portal-root {
-  background: var(--scalar-background-1);
+  background: var(--readyapi-background-1);
   position: relative;
   height: 100%;
   overflow: hidden !important;
   display: flex;
   flex-direction: column;
-  font-family: var(--scalar-font);
+  font-family: var(--readyapi-font);
 
   /** Make sure box-sizing is set properly. */
   box-sizing: border-box;
@@ -143,68 +143,68 @@ watch(
     box-sizing: inherit;
   }
 }
-.scalar-api-client {
+.readyapi-api-client {
   flex: 1;
   max-height: 100vh;
 }
 @media screen and (max-width: 1000px) {
-  .scalar-api-client {
+  .readyapi-api-client {
     width: 100%;
   }
 }
-.scalar-api-client pre {
-  font-family: var(--scalar-font-code);
+.readyapi-api-client pre {
+  font-family: var(--readyapi-font-code);
 }
 
-.scalar-api-client__mobile-navigation {
+.readyapi-api-client__mobile-navigation {
   padding: 12px 12px 0 12px;
   display: flex;
-  font-size: var(--scalar-small);
-  color: var(--scalar-color-2);
-  font-weight: var(--scalar-bold);
+  font-size: var(--readyapi-small);
+  color: var(--readyapi-color-2);
+  font-weight: var(--readyapi-bold);
 }
 
-.scalar-api-client__mobile-navigation__toggle {
+.readyapi-api-client__mobile-navigation__toggle {
   appearance: none;
   border: none;
   outline: none;
   background: transparent;
-  font-size: var(--scalar-font-size-2);
-  color: var(--scalar-color-2);
-  font-weight: var(--scalar-semibold);
-  font-family: var(--scalar-font);
+  font-size: var(--readyapi-font-size-2);
+  color: var(--readyapi-color-2);
+  font-weight: var(--readyapi-semibold);
+  font-family: var(--readyapi-font);
   padding: 0;
   margin-right: 9px;
   cursor: pointer;
 }
 
-.scalar-api-client__mobile-navigation--active {
-  color: var(--scalar-color-1);
+.readyapi-api-client__mobile-navigation--active {
+  color: var(--readyapi-color-1);
 }
 
-.scalar-api-client__mobile-navigation--active:hover {
+.readyapi-api-client__mobile-navigation--active:hover {
   cursor: pointer;
 }
 
-.scalar-api-client__main {
+.readyapi-api-client__main {
   display: flex;
   height: 100%;
   min-height: 0;
-  background: var(--scalar-background-1);
-  border-top: 1px solid var(--scalar-border-color);
+  background: var(--readyapi-background-1);
+  border-top: 1px solid var(--readyapi-border-color);
 }
 
 @media screen and (max-width: 820px) {
-  .scalar-api-client__main {
+  .readyapi-api-client__main {
     flex-direction: column;
   }
 }
 
 /** TODO: Consider to make a Column component */
-.scalar-api-client__main__content__header {
+.readyapi-api-client__main__content__header {
   align-items: center;
-  background: var(--scalar-background-1);
-  border-bottom: 1px solid var(--scalar-border-color);
+  background: var(--readyapi-background-1);
+  border-bottom: 1px solid var(--readyapi-border-color);
   display: flex;
   gap: 6px;
   height: 50px;
@@ -213,41 +213,41 @@ watch(
   top: 0;
   z-index: 100;
 }
-.scalar-api-client__main__content__header label {
-  font-size: var(--scalar-mini);
-  color: var(--scalar-color-1);
-  font-weight: var(--scalar-semibold);
+.readyapi-api-client__main__content__header label {
+  font-size: var(--readyapi-mini);
+  color: var(--readyapi-color-1);
+  font-weight: var(--readyapi-semibold);
   display: flex;
   align-items: center;
 }
-.scalar-api-client__main__content:has(
-    .scalar-api-client__main__content.empty-state
+.readyapi-api-client__main__content:has(
+    .readyapi-api-client__main__content.empty-state
   ) {
   height: 100%;
 }
-.scalar-api-client__main__content__body {
+.readyapi-api-client__main__content__body {
   padding: 9px 9px 9px 18px;
 }
 @media screen and (max-width: 820px) {
-  .scalar-api-client__main__content__header {
+  .readyapi-api-client__main__content__header {
     padding: 14px;
   }
-  .scalar-api-client__main__content label {
+  .readyapi-api-client__main__content label {
     display: none;
   }
 }
 
 .meta {
-  color: var(--scalar-api-client-color);
+  color: var(--readyapi-api-client-color);
   display: flex;
   flex: 1;
-  font-size: var(--scalar-font-size-2);
-  font-weight: var(--scalar-font-size-2);
+  font-size: var(--readyapi-font-size-2);
+  font-weight: var(--readyapi-font-size-2);
   gap: 6px;
 }
 
 .meta-item svg {
-  fill: var(--scalar-color-ghost);
+  fill: var(--readyapi-color-ghost);
   height: 14px;
   width: 14px;
   margin-right: 6px;
@@ -257,9 +257,9 @@ watch(
   display: flex;
   align-items: center;
   white-space: nowrap;
-  font-weight: var(--scalar-semibold);
-  font-size: var(--scalar-mini);
-  color: var(--scalar-color-3);
+  font-weight: var(--readyapi-semibold);
+  font-size: var(--readyapi-mini);
+  color: var(--readyapi-color-3);
   min-height: 17px;
 }
 
@@ -292,16 +292,16 @@ watch(
   margin-top: 12px;
   font-size: 24px;
 }
-.scalar-api-client__empty-state {
-  border: 1px solid var(--scalar-border-color);
+.readyapi-api-client__empty-state {
+  border: 1px solid var(--readyapi-border-color);
   width: 100%;
   text-align: center;
-  border-radius: 0 0 var(--scalar-radius) var(--scalar-radius);
-  font-size: var(--scalar-small);
+  border-radius: 0 0 var(--readyapi-radius) var(--readyapi-radius);
+  font-size: var(--readyapi-small);
   min-height: 58px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--scalar-background-1);
+  background-color: var(--readyapi-background-1);
 }
 </style>

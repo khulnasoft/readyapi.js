@@ -175,9 +175,9 @@ const onDragEnd = () => {
   height: 3px;
   width: 100%;
   display: block;
-  background: color-mix(in srgb, var(--scalar-color-blue), transparent 85%);
+  background: color-mix(in srgb, var(--readyapi-color-blue), transparent 85%);
   pointer-events: none;
-  border-radius: var(--scalar-radius);
+  border-radius: var(--readyapi-radius);
 }
 .dragover-below:after {
   top: initial;
@@ -191,8 +191,8 @@ const onDragEnd = () => {
   width: 100%;
   height: 100%;
   display: block;
-  background: color-mix(in srgb, var(--scalar-color-blue), transparent 85%);
+  background: color-mix(in srgb, var(--readyapi-color-blue), transparent 85%);
   pointer-events: none;
-  border-radius: var(--scalar-radius);
+  border-radius: var(--readyapi-radius);
 }
 </style>

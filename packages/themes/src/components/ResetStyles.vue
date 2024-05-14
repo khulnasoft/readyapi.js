@@ -15,7 +15,7 @@ useApplyClasses('#headlessui-portal-root', reset)
 /* Use :where to lower specificity to 0 */
 :where(.reset) :global {
   /** Add some more things which are normally applied to `html`. */
-  font-family: var(--scalar-font);
+  font-family: var(--readyapi-font);
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -moz-tab-size: 4;
@@ -48,13 +48,13 @@ useApplyClasses('#headlessui-portal-root', reset)
     border: unset;
     background: unset;
     appearance: unset;
-    font-family: var(--scalar-font);
+    font-family: var(--readyapi-font);
   }
 
   input::placeholder {
-    color: var(--scalar-color-3);
+    color: var(--readyapi-color-3);
     font-family:
-      var(--scalar-font),
+      var(--readyapi-font),
       'Inter',
       -apple-system,
       BlinkMacSystemFont,
@@ -68,12 +68,12 @@ useApplyClasses('#headlessui-portal-root', reset)
       sans-serif;
   }
   input:-ms-input-placeholder {
-    color: var(--scalar-color-3);
-    font-family: var(--scalar-font);
+    color: var(--readyapi-color-3);
+    font-family: var(--readyapi-font);
   }
   input::-webkit-input-placeholder {
-    color: var(--scalar-color-3);
-    font-family: var(--scalar-font);
+    color: var(--readyapi-color-3);
+    font-family: var(--readyapi-font);
   }
 }
 </style>

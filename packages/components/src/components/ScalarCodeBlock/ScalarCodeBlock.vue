@@ -45,7 +45,7 @@ const props = withDefaults(
 const ssrHash = createHash(prettyPrintString(props.content))
 
 const ssrStateKey =
-  `components-scalar-code-block${ssrHash}` satisfies CodeBlockSSRKey
+  `components-readyapi-code-block${ssrHash}` satisfies CodeBlockSSRKey
 
 /**
  * The requested module 'prismjs' is a CommonJS module, which may not support all module.exports as named exports.
@@ -168,7 +168,7 @@ onMounted(async () => {
 <template>
   <pre
     :class="[
-      `readyapi-component scalar-codeblock-pre language-${language}`,
+      `readyapi-component readyapi-codeblock-pre language-${language}`,
       {
         'line-numbers': lineNumbers,
       },
@@ -181,12 +181,12 @@ onMounted(async () => {
       --><code v-else ref="el" :class="`readyapi-codeblock-code language-${language}`">{{prettyPrintString(content)}}</code></pre>
 </template>
 <style>
-.scalar-codeblock-code[class*='language-'],
-.scalar-codeblock-pre[class*='language-'] {
-  color: var(--scalar-color-2);
+.readyapi-codeblock-code[class*='language-'],
+.readyapi-codeblock-pre[class*='language-'] {
+  color: var(--readyapi-color-2);
   background: none;
-  font-family: var(--scalar-font-code);
-  font-size: var(--scalar-small);
+  font-family: var(--readyapi-font-code);
+  font-size: var(--readyapi-small);
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -207,19 +207,19 @@ onMounted(async () => {
 }
 
 /* Code blocks */
-.scalar-codeblock-pre[class*='language-'] {
+.readyapi-codeblock-pre[class*='language-'] {
   margin: 0;
   padding: 0.5rem;
   overflow: auto;
 }
 
 :not(pre) > code[class*='language-'],
-.scalar-codeblock-pre[class*='language-'] {
-  background: var(--scalar-background-2);
+.readyapi-codeblock-pre[class*='language-'] {
+  background: var(--readyapi-background-2);
 }
 
 /* Line Numbers */
-.line-numbers.scalar-codeblock-pre[class*='language-'] {
+.line-numbers.readyapi-codeblock-pre[class*='language-'] {
   position: relative;
   padding-left: 2em;
   counter-reset: linenumber;
@@ -267,35 +267,35 @@ onMounted(async () => {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: var(--scalar-color-2);
+  color: var(--readyapi-color-2);
 }
 
 .token.punctuation {
-  color: var(--scalar-color-3);
+  color: var(--readyapi-color-3);
 }
 
 .token.tag,
 .token.attr-name,
 .token.namespace,
 .token.deleted {
-  color: var(--scalar-color-red);
+  color: var(--readyapi-color-red);
 }
 
 .token.function-name {
-  color: var(--scalar-color-green);
+  color: var(--readyapi-color-green);
 }
 
 .token.boolean,
 .token.number,
 .token.function {
-  color: var(--scalar-color-orange);
+  color: var(--readyapi-color-orange);
 }
 
 .token.property,
 .token.class-name,
 .token.constant,
 .token.symbol {
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 }
 
 .token.selector,
@@ -303,7 +303,7 @@ onMounted(async () => {
 .token.atrule,
 .token.keyword,
 .token.builtin {
-  color: var(--scalar-color-purple);
+  color: var(--readyapi-color-purple);
 }
 
 .token.string,
@@ -311,22 +311,22 @@ onMounted(async () => {
 .token.attr-value,
 .token.regex,
 .token.variable {
-  color: var(--scalar-color-blue);
+  color: var(--readyapi-color-blue);
 }
 
 .light-mode .dark-mode .language-shell .token.variable {
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 }
 .light-mode .dark-mode .language-shell .token.string {
-  color: var(--scalar-color-blue);
+  color: var(--readyapi-color-blue);
 }
 .language-shell .token.string {
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 }
 .token.operator,
 .token.entity,
 .token.url {
-  color: var(--scalar-color-3);
+  color: var(--readyapi-color-3);
 }
 
 .token.important,
@@ -342,7 +342,7 @@ onMounted(async () => {
 }
 
 .token.inserted {
-  color: var(--scalar-color-green);
+  color: var(--readyapi-color-green);
 }
 
 /** Hide credentials */
@@ -354,7 +354,7 @@ onMounted(async () => {
 /** Show a few dots instead */
 .credentials::after {
   content: '·····';
-  font-size: var(--scalar-small);
-  color: var(--scalar-color-3);
+  font-size: var(--readyapi-small);
+  color: var(--readyapi-color-3);
 }
 </style>

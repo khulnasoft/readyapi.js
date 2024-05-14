@@ -41,18 +41,18 @@ const formattedServerUrl = computed(() => {
 
 <style>
 .base-url-variable {
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 }
 </style>
 
 <style scoped>
 .base-url {
-  color: var(--scalar-color-2);
+  color: var(--readyapi-color-2);
   cursor: pointer;
-  font-family: var(--scalar-font-code);
+  font-family: var(--readyapi-font-code);
   display: inline-block;
   padding: 10px 0;
-  font-size: var(--scalar-micro);
+  font-size: var(--readyapi-micro);
   min-width: 0;
   overflow: hidden;
   white-space: nowrap;

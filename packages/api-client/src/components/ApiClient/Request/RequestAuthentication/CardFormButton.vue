@@ -23,12 +23,12 @@ defineExpose({ el })
   padding: 9px;
   outline: none;
   white-space: nowrap;
-  font-family: var(--scalar-font);
-  font-size: var(--scalar-micro);
-  font-weight: var(--scalar-semibold);
-  color: var(--scalar-color-2);
+  font-family: var(--readyapi-font);
+  font-size: var(--readyapi-micro);
+  font-weight: var(--readyapi-semibold);
+  color: var(--readyapi-color-2);
 }
 .card-form-button:hover {
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 }
 </style>

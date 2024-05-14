@@ -1,4 +1,4 @@
-# @scalar/ssg
+# @readyapi/ssg
 
 ## 0.0.14
 

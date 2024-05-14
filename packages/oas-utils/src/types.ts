@@ -1,4 +1,4 @@
-import type { OpenAPIV3, OpenAPIV3_1 } from '@scalar/openapi-parser'
+import type { OpenAPIV3, OpenAPIV3_1 } from '@readyapi/openapi-parser'
 import type { HarRequest } from 'httpsnippet-lite'
 
 export type AnyObject = Record<string, any>
@@ -166,7 +166,7 @@ export type Heading = {
   slug?: string
 }
 
-export type CodeBlockSSRKey = `components-scalar-code-block${number}`
+export type CodeBlockSSRKey = `components-readyapi-code-block${number}`
 export type DescriptionSectionSSRKey =
   `components-Content-Introduction-Description-sections${number}`
 export type ExampleRequestSSRKey =

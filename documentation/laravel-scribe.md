@@ -4,7 +4,7 @@ Laravel Scribe is an amazing package to generate OpenAPI files from your existin
 
 ## Table of Contents
 
-- [Readyapi API Reference for Laravel Scribe](#scalar-api-reference-for-laravel-scribe)
+- [Readyapi API Reference for Laravel Scribe](#readyapi-api-reference-for-laravel-scribe)
   - [Table of Contents](#table-of-contents)
   - [Set up Laravel (optional)](#set-up-laravel-optional)
   - [Set up Laravel Scribe](#set-up-laravel-scribe)
@@ -88,7 +88,7 @@ Laravel Scribe comes with a ton of configuration options, but for the purpose of
 -    'type' => 'static',
 +    'type' => 'external_laravel',
 -    'theme' => 'default',
-+    'theme' => 'scalar',
++    'theme' => 'readyapi',
 ```
 
 Done! Are you ready to generate your (first?) OpenAPI file like this:

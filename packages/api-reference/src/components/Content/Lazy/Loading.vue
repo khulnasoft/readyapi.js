@@ -194,7 +194,7 @@ onMounted(() => {
   right: 0;
   z-index: 1;
   grid-area: rendered;
-  background: var(--scalar-background-1);
+  background: var(--readyapi-background-1);
 }
 .references-loading-top-spacer {
   top: -1px;

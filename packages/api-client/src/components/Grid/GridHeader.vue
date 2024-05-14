@@ -47,9 +47,9 @@ defineEmits<{
   text-transform: capitalize;
   display: block;
   padding: 9px;
-  font-weight: var(--scalar-semibold);
-  color: var(--scalar-color-1);
-  font-size: var(--scalar-mini);
+  font-weight: var(--readyapi-semibold);
+  color: var(--readyapi-color-1);
+  font-size: var(--readyapi-mini);
 }
 .table-description-toggle {
   padding: 0;
@@ -60,10 +60,10 @@ defineEmits<{
   width: 13px;
   height: 13px;
   margin: 0 1px;
-  color: var(--scalar-color-3);
+  color: var(--readyapi-color-3);
   cursor: pointer;
 }
 .table-description-toggle svg:hover {
-  color: var(--scalar-color-2);
+  color: var(--readyapi-color-2);
 }
 </style>

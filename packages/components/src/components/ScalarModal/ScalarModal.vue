@@ -28,7 +28,7 @@ withDefaults(
 
 const modal = cva({
   base: [
-    'scalar-modal',
+    'readyapi-modal',
     'col leading-snug relative mx-auto mb-0 mt-20 w-full rounded-lg bg-back-2 text-left text-fore-1 opacity-0',
   ].join(' '),
   variants: {
@@ -39,8 +39,8 @@ const modal = cva({
       lg: 'max-w-screen-lg',
     },
     variant: {
-      history: 'scalar-modal-history bg-back-1',
-      search: 'scalar-modal-search',
+      history: 'readyapi-modal-history bg-back-1',
+      search: 'readyapi-modal-search',
     },
   },
 })
@@ -66,7 +66,7 @@ export const useModal = () =>
     <div
       :class="
         cx(
-          'scalar-modal-layout fixed left-0 top-0',
+          'readyapi-modal-layout fixed left-0 top-0',
           'z-[1001] h-[100dvh] w-[100dvw]',
           'bg-backdrop p-5 opacity-0',
         )
@@ -96,10 +96,10 @@ export const useModal = () =>
   </Dialog>
 </template>
 <style scoped>
-.scalar-modal-layout {
+.readyapi-modal-layout {
   animation: modal-fade 0.2s forwards;
 }
-.scalar-modal {
+.readyapi-modal {
   transform: scale(0.98);
   animation: modal-pop 0.15s 0.15s forwards;
 }

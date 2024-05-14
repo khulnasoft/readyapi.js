@@ -5,7 +5,7 @@
 ## Installation
 
 ```bash
-pip install scalar-fastapi
+pip install readyapi-fastapi
 ```
 
 ## Usage

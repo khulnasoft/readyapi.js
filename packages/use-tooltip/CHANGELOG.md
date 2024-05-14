@@ -16,7 +16,7 @@
 
 ### Minor Changes
 
-- 0e64a36: refactor: rename all --theme-_ variables to --scalar-_
+- 0e64a36: refactor: rename all --theme-_ variables to --readyapi-_
 
 ### Patch Changes
 

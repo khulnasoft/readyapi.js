@@ -1,72 +1,72 @@
 /* basic theme */
 .light-mode {
-  --scalar-background-1: #fff;
-  --scalar-background-2: #f6f6f6;
-  --scalar-background-3: #e7e7e7;
-  --scalar-background-accent: #8ab4f81f;
+  --readyapi-background-1: #fff;
+  --readyapi-background-2: #f6f6f6;
+  --readyapi-background-3: #e7e7e7;
+  --readyapi-background-accent: #8ab4f81f;
 
-  --scalar-color-1: #2a2f45;
-  --scalar-color-2: #757575;
-  --scalar-color-3: #8e8e8e;
+  --readyapi-color-1: #2a2f45;
+  --readyapi-color-2: #757575;
+  --readyapi-color-3: #8e8e8e;
 
-  --scalar-color-accent: #0099ff;
-  --scalar-border-color: rgba(0, 0, 0, 0.1);
+  --readyapi-color-accent: #0099ff;
+  --readyapi-border-color: rgba(0, 0, 0, 0.1);
 }
 .dark-mode {
-  --scalar-background-1: #0f0f0f;
-  --scalar-background-2: #1a1a1a;
-  --scalar-background-3: #272727;
+  --readyapi-background-1: #0f0f0f;
+  --readyapi-background-2: #1a1a1a;
+  --readyapi-background-3: #272727;
 
-  --scalar-color-1: rgba(255, 255, 255, 0.9);
-  --scalar-color-2: rgba(255, 255, 255, 0.62);
-  --scalar-color-3: rgba(255, 255, 255, 0.44);
+  --readyapi-color-1: rgba(255, 255, 255, 0.9);
+  --readyapi-color-2: rgba(255, 255, 255, 0.62);
+  --readyapi-color-3: rgba(255, 255, 255, 0.44);
 
-  --scalar-color-accent: #3ea6ff;
-  --scalar-background-accent: #3ea6ff1f;
+  --readyapi-color-accent: #3ea6ff;
+  --readyapi-background-accent: #3ea6ff1f;
 
-  --scalar-border-color: rgba(255, 255, 255, 0.1);
+  --readyapi-border-color: rgba(255, 255, 255, 0.1);
 }
 /* Document Sidebar */
 .light-mode .t-doc__sidebar,
 .dark-mode .t-doc__sidebar {
-  --scalar-sidebar-background-1: var(--scalar-background-1);
-  --scalar-sidebar-color-1: var(--scalar-color-1);
-  --scalar-sidebar-color-2: var(--scalar-color-2);
-  --scalar-sidebar-border-color: var(--scalar-border-color);
+  --readyapi-sidebar-background-1: var(--readyapi-background-1);
+  --readyapi-sidebar-color-1: var(--readyapi-color-1);
+  --readyapi-sidebar-color-2: var(--readyapi-color-2);
+  --readyapi-sidebar-border-color: var(--readyapi-border-color);
 
-  --scalar-sidebar-item-hover-background: var(--scalar-background-2);
-  --scalar-sidebar-item-hover-color: currentColor;
+  --readyapi-sidebar-item-hover-background: var(--readyapi-background-2);
+  --readyapi-sidebar-item-hover-color: currentColor;
 
-  --scalar-sidebar-item-active-background: var(--scalar-background-2);
-  --scalar-sidebar-color-active: var(--scalar-color-1);
+  --readyapi-sidebar-item-active-background: var(--readyapi-background-2);
+  --readyapi-sidebar-color-active: var(--readyapi-color-1);
 
-  --scalar-sidebar-search-background: transparent;
-  --scalar-sidebar-search-color: var(--scalar-color-3);
-  --scalar-sidebar-search-border-color: var(--scalar-border-color);
+  --readyapi-sidebar-search-background: transparent;
+  --readyapi-sidebar-search-color: var(--readyapi-color-3);
+  --readyapi-sidebar-search-border-color: var(--readyapi-border-color);
 }
 
 /* advanced */
 .light-mode {
-  --scalar-color-green: #069061;
-  --scalar-color-red: #ef0006;
-  --scalar-color-yellow: #edbe20;
-  --scalar-color-blue: #0082d0;
-  --scalar-color-orange: #fb892c;
-  --scalar-color-purple: #5203d1;
+  --readyapi-color-green: #069061;
+  --readyapi-color-red: #ef0006;
+  --readyapi-color-yellow: #edbe20;
+  --readyapi-color-blue: #0082d0;
+  --readyapi-color-orange: #fb892c;
+  --readyapi-color-purple: #5203d1;
 
-  --scalar-button-1: rgba(0, 0, 0, 1);
-  --scalar-button-1-hover: rgba(0, 0, 0, 0.8);
-  --scalar-button-1-color: rgba(255, 255, 255, 0.9);
+  --readyapi-button-1: rgba(0, 0, 0, 1);
+  --readyapi-button-1-hover: rgba(0, 0, 0, 0.8);
+  --readyapi-button-1-color: rgba(255, 255, 255, 0.9);
 }
 .dark-mode {
-  --scalar-color-green: #00b648;
-  --scalar-color-red: #dc1b19;
-  --scalar-color-yellow: #ffc90d;
-  --scalar-color-blue: #4eb3ec;
-  --scalar-color-orange: #ff8d4d;
-  --scalar-color-purple: #b191f9;
+  --readyapi-color-green: #00b648;
+  --readyapi-color-red: #dc1b19;
+  --readyapi-color-yellow: #ffc90d;
+  --readyapi-color-blue: #4eb3ec;
+  --readyapi-color-orange: #ff8d4d;
+  --readyapi-color-purple: #b191f9;
 
-  --scalar-button-1: rgba(255, 255, 255, 1);
-  --scalar-button-1-hover: rgba(255, 255, 255, 0.9);
-  --scalar-button-1-color: black;
+  --readyapi-button-1: rgba(255, 255, 255, 1);
+  --readyapi-button-1-hover: rgba(255, 255, 255, 0.9);
+  --readyapi-button-1-color: black;
 }

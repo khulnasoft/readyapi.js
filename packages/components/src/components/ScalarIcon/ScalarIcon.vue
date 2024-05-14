@@ -39,7 +39,7 @@ const iconComp = getIcon(props.icon)
   <component
     :is="getIcon(icon)"
     v-if="iconComp"
-    :class="cx('scalar-icon', iconProps({ size }))" />
+    :class="cx('readyapi-icon', iconProps({ size }))" />
   <!-- Temp fallback to match with other component but we should remove this -->
   <img
     v-else

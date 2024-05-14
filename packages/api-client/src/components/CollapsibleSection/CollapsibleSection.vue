@@ -34,7 +34,7 @@ watch(
     :defaultOpen="defaultOpen">
     <div
       class="readyapi-api-client__item"
-      :class="{ 'scalar-api-client__item--open': open }">
+      :class="{ 'readyapi-api-client__item--open': open }">
       <DisclosureButton
         ref="collapseButton"
         class="readyapi-api-client__toggle"
@@ -71,20 +71,20 @@ watch(
 </template>
 
 <style>
-.scalar-api-client__item {
-  border-radius: var(--scalar-radius);
+.readyapi-api-client__item {
+  border-radius: var(--readyapi-radius);
   margin-bottom: 6px;
   position: relative;
 }
 
-.scalar-api-client__item button {
+.readyapi-api-client__item button {
   background-color: transparent;
   text-align: left;
 }
-.scalar-api-client__item:hover {
+.readyapi-api-client__item:hover {
   cursor: pointer;
 }
-.scalar-api-client__toggle:after {
+.readyapi-api-client__toggle:after {
   content: '';
   position: absolute;
   bottom: -6.5px;
@@ -92,26 +92,26 @@ watch(
   height: 6px;
   left: 0;
 }
-.scalar-api-client__toggle-container {
+.readyapi-api-client__toggle-container {
   display: flex;
   gap: 6px;
   align-items: center;
 }
-.scalar-api-client__item--open .scalar-api-client__toggle:after {
+.readyapi-api-client__item--open .readyapi-api-client__toggle:after {
   display: none;
 }
-.scalar-api-client__toggle:hover {
-  background: var(--scalar-background-2);
+.readyapi-api-client__toggle:hover {
+  background: var(--readyapi-background-2);
 }
 
-.scalar-api-client__item--open .scalar-api-client__item__content {
+.readyapi-api-client__item--open .readyapi-api-client__item__content {
   display: flex;
 }
 
-.scalar-api-client__item--open:hover {
+.readyapi-api-client__item--open:hover {
   cursor: default;
 }
-.scalar-api-client__toggle {
+.readyapi-api-client__toggle {
   padding: 0 6px 0 9px;
   display: flex;
   align-items: center;
@@ -121,19 +121,19 @@ watch(
   appearance: none;
   outline: 0;
   border: none;
-  font-family: var(--scalar-font);
-  border-radius: var(--scalar-radius);
+  font-family: var(--readyapi-font);
+  border-radius: var(--readyapi-radius);
   cursor: pointer;
   border: 1px solid transparent;
   border-bottom: none;
 }
-.scalar-api-client__item--open .scalar-api-client__toggle {
-  border-radius: var(--scalar-radius) var(--scalar-radius) 0 0;
-  border-color: var(--scalar-background-1);
-  background: var(--scalar-background-2);
+.readyapi-api-client__item--open .readyapi-api-client__toggle {
+  border-radius: var(--readyapi-radius) var(--readyapi-radius) 0 0;
+  border-color: var(--readyapi-background-1);
+  background: var(--readyapi-background-2);
 }
 /* use this to match border colors between the toggle and it's sibling   */
-.scalar-api-client__item--open .scalar-api-client__toggle:before {
+.readyapi-api-client__item--open .readyapi-api-client__toggle:before {
   content: '';
   position: absolute;
   top: -1px;
@@ -141,63 +141,63 @@ watch(
   width: calc(100% + 2px);
   height: calc(100% + 1px);
   pointer-events: none;
-  border: 1px solid var(--scalar-border-color);
+  border: 1px solid var(--readyapi-border-color);
   border-bottom: none;
-  border-radius: var(--scalar-radius) var(--scalar-radius) 0 0;
+  border-radius: var(--readyapi-radius) var(--readyapi-radius) 0 0;
 }
-.scalar-api-client__item .scalar-api-client__item__title {
-  color: var(--scalar-color-1);
-  font-size: var(--scalar-mini);
-  font-weight: var(--scalar-semibold);
-  font-family: var(--scalar-font);
+.readyapi-api-client__item .readyapi-api-client__item__title {
+  color: var(--readyapi-color-1);
+  font-size: var(--readyapi-mini);
+  font-weight: var(--readyapi-semibold);
+  font-family: var(--readyapi-font);
   user-select: none;
   position: relative;
   z-index: 1;
   padding: 6px 0;
 }
-.scalar-api-client__item .scalar-api-client__toggle__icon {
+.readyapi-api-client__item .readyapi-api-client__toggle__icon {
   width: 20px;
   padding: 3px;
-  color: var(--scalar-color-3);
+  color: var(--readyapi-color-3);
   z-index: 1;
   position: relative;
   transform: rotate(-90deg);
   margin: 5px 0 5px -9px;
 }
-.scalar-api-client__item--open .scalar-api-client__toggle__icon {
+.readyapi-api-client__item--open .readyapi-api-client__toggle__icon {
   transform: rotate(0deg);
 }
-.scalar-api-client__toggle:hover .scalar-api-client__toggle__icon {
-  color: var(--scalar-color-1);
+.readyapi-api-client__toggle:hover .readyapi-api-client__toggle__icon {
+  color: var(--readyapi-color-1);
 }
 
-.scalar-api-client__item__options {
+.readyapi-api-client__item__options {
   position: relative;
   z-index: 1;
 }
 
-.scalar-api-client__item__options span {
+.readyapi-api-client__item__options span {
   background: transparent;
   padding: 2px 0;
   border-radius: 3px;
-  font-size: var(--scalar-small);
+  font-size: var(--readyapi-small);
   pointer-events: none;
-  color: var(--scalar-color-3);
+  color: var(--readyapi-color-3);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.scalar-api-client__item__options:hover span {
-  color: var(--scalar-color-1);
+.readyapi-api-client__item__options:hover span {
+  color: var(--readyapi-color-1);
   border-color: currentColor;
 }
-.scalar-api-client__item__options span svg {
+.readyapi-api-client__item__options span svg {
   width: 15px;
   height: 15px;
   margin-left: 3px;
 }
 
-.scalar-api-client__item__options select {
+.readyapi-api-client__item__options select {
   position: absolute;
   top: 0;
   left: 0;
@@ -209,7 +209,7 @@ watch(
   -webkit-appearance: none;
   appearance: none;
 }
-.scalar-api-client__item__content .scalar-api-client__codemirror__wrapper {
+.readyapi-api-client__item__content .readyapi-api-client__codemirror__wrapper {
   padding-top: 0;
 }
 </style>

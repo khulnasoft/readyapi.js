@@ -43,9 +43,9 @@ export const ApiClientReact = ({
           <div className="readyapi-app-header">
             <span>API Client</span>
             <a
-              href={`https://www.readyapi.khulnasoft.com?utm_campaign=${host}`}
+              href={`https://www.scalar.com?utm_campaign=${host}`}
               target="_blank">
-              Powered by readyapi.khulnasoft.com
+              Powered by scalar.com
             </a>
           </div>
           <ApiClientReactBase proxy={proxy} />

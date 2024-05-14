@@ -34,15 +34,15 @@
     "readyapi": "./dist/index.js"
   },
   "dependencies": {
-    "@hono/node-server": "^1.11.0",
+    "@hono/node-server": "^1.11.1",
     "@parcel/watcher": "^2.4.1",
     "@readyapi/api-reference": "workspace:*",
     "@readyapi/mock-server": "workspace:*",
     "@readyapi/oas-utils": "workspace:*",
-    "@scalar/openapi-parser": "^0.3.2",
+    "@readyapi/openapi-parser": "^0.3.3",
     "commander": "^12.0.0",
-    "glob": "^10.3.10",
-    "hono": "^4.2.7",
+    "glob": "^10.3.15",
+    "hono": "^4.3.6",
     "kleur": "^4.1.5",
     "openapi-types": "^12.1.3",
     "prettyjson": "^1.2.5",
@@ -51,13 +51,13 @@
   "devDependencies": {
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-typescript": "^11.1.6",
-    "@types/node": "^20.8.4",
+    "@types/node": "^20.12.12",
     "execa": "^8.0.1",
-    "rollup": "^4.16.4",
+    "rollup": "^4.17.2",
     "rollup-plugin-delete": "^2.0.0",
     "strip-ansi": "^7.1.0",
     "tslib": "^2.6.2",
-    "typescript": "^5.4.3",
-    "vite-node": "^1.3.1"
+    "typescript": "^5.4.5",
+    "vite-node": "^1.6.0"
   }
 }

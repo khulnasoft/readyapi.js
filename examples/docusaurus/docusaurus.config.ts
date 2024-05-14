@@ -60,7 +60,7 @@ const config: Config = {
       '@readyapi/docusaurus',
       {
         label: 'Scalar',
-        route: '/scalar',
+        route: '/readyapi',
         configuration: {
           spec: {
             url: 'https://petstore3.swagger.io/api/v3/openapi.json',

@@ -22,7 +22,7 @@
 
 ### Minor Changes
 
-- 0e64a36: refactor: rename all --theme-_ variables to --scalar-_
+- 0e64a36: refactor: rename all --theme-_ variables to --readyapi-_
 
 ### Patch Changes
 
@@ -56,7 +56,7 @@
 
 ### Patch Changes
 
-- 3ade0d1: feat: add scalar-modal-class
+- 3ade0d1: feat: add readyapi-modal-class
 
 ## 0.2.5
 

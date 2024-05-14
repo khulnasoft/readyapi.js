@@ -20,7 +20,7 @@ export type ModuleOptions = {
 export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: '@readyapi/nuxt',
-    configKey: 'scalar',
+    configKey: 'readyapi',
   },
   // Default configuration options of the Nuxt module
   defaults: {
@@ -75,7 +75,7 @@ export default defineNuxtModule<ModuleOptions>({
           const configuration = { ...baseConfig, ..._config }
 
           pages.push({
-            name: 'scalar-' + index,
+            name: 'readyapi-' + index,
             path: configuration.pathRouting?.basePath + ':pathMatch(.*)*',
             meta: {
               configuration,
@@ -88,7 +88,7 @@ export default defineNuxtModule<ModuleOptions>({
       // Single config
       else {
         pages.push({
-          name: 'scalar',
+          name: 'readyapi',
           path: _options.pathRouting?.basePath + ':pathMatch(.*)*',
           meta: {
             configuration: _options,
@@ -103,9 +103,9 @@ export default defineNuxtModule<ModuleOptions>({
     if (_nuxt.options.dev && _options.devtools) {
       _nuxt.hook('devtools:customTabs', (tabs) => {
         tabs.push({
-          name: 'scalar',
+          name: 'readyapi',
           title: 'Scalar',
-          icon: 'https://gist.githubusercontent.com/cameronrohani/0fa020f6dcf957266bff49e7b6b7c05e/raw/17fce1ef37bbb036dca36b778c8b422056ad6fdf/scalar-logo-nuxt-color.svg',
+          icon: 'https://gist.githubusercontent.com/cameronrohani/0fa020f6dcf957266bff49e7b6b7c05e/raw/17fce1ef37bbb036dca36b778c8b422056ad6fdf/readyapi-logo-nuxt-color.svg',
           category: 'server',
           view: {
             type: 'iframe',

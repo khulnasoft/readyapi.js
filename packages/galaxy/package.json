@@ -43,11 +43,11 @@
   ],
   "module": "./dist/index.js",
   "devDependencies": {
-    "@scalar/openapi-parser": "^0.3.2",
-    "@vitest/coverage-v8": "^1.5.0",
-    "tsc-alias": "^1.8.8",
-    "vite": "^5.2.10",
-    "vite-plugin-static-copy": "^1.0.2",
-    "vitest": "^1.5.0"
+    "@readyapi/openapi-parser": "^0.3.3",
+    "@vitest/coverage-v8": "^1.6.0",
+    "tsc-alias": "^1.8.10",
+    "vite": "^5.2.11",
+    "vite-plugin-static-copy": "^1.0.4",
+    "vitest": "^1.6.0"
   }
 }

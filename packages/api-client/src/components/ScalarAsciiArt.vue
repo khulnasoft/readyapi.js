@@ -21,10 +21,10 @@ const lines = computed<string[]>(() => props.art.split('\n'))
 </template>
 <style scoped>
 .ascii-art {
-  font-family: var(--scalar-font-code);
-  font-weight: var(--scalar-bold);
+  font-family: var(--readyapi-font-code);
+  font-weight: var(--readyapi-bold);
   font-size: 6px;
-  color: var(--scalar-color-3);
+  color: var(--readyapi-color-3);
   line-height: 7px;
   display: flex;
   flex-direction: column;

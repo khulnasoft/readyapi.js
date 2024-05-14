@@ -635,7 +635,7 @@
 
 ### Minor Changes
 
-- a866e91: refactor: switch to @scalar/openapi-parser
+- a866e91: refactor: switch to @readyapi/openapi-parser
 
 ### Patch Changes
 
@@ -648,7 +648,7 @@
 
 ### Minor Changes
 
-- f5aa239: refactor: use scalar.config.json instead of scalar.toml
+- f5aa239: refactor: use readyapi.config.json instead of readyapi.toml
 - 8569e68: refactor: faster file watcher
 
 ### Patch Changes

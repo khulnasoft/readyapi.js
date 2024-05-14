@@ -6,7 +6,7 @@
 [![GitHub License](https://img.shields.io/github/license/khulnasoft/readyapi.js)](https://github.com/khulnasoft/readyapi.js/blob/main/LICENSE)
 [![Discord](https://img.shields.io/discord/1135330207960678410?style=flat&color=5865F2)](https://discord.gg/scalar)
 
-Generate interactive API documentation from OpenAPI/Swagger files. [Try our Demo](https://docs.readyapi.khulnasoft.com/swagger-editor)
+Generate interactive API documentation from OpenAPI/Swagger files. [Try our Demo](https://docs.scalar.com/swagger-editor)
 
 <img width="830" height="455" src="https://github.com/khulnasoft/readyapi.js/assets/6201407/046aaeca-f0fe-453d-a661-c747399c56ef">
 
@@ -76,7 +76,7 @@ Generate interactive API documentation from OpenAPI/Swagger files. [Try our Demo
     <script
       id="api-reference"
       data-url="https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/latest.yaml"
-      data-proxy-url="https://api.readyapi.khulnasoft.com/request-proxy"></script>
+      data-proxy-url="https://api.scalar.com/request-proxy"></script>
 
     <!-- Optional: You can set a full configuration object like this: -->
     <script>
@@ -108,7 +108,7 @@ If you’d like to add a request proxy for the API client (to avoid CORS issues)
 <script
   id="api-reference"
   type="application/json"
-  data-proxy-url="https://api.readyapi.khulnasoft.com/request-proxy">
+  data-proxy-url="https://api.scalar.com/request-proxy">
   { … }
 </script>
 ```
@@ -376,7 +376,7 @@ plugins: [
     '@readyapi/docusaurus',
     {
       label: 'Scalar',
-      route: '/scalar',
+      route: '/readyapi',
       configuration: {
         spec: {
           url: 'https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/latest.yaml',
@@ -411,7 +411,7 @@ Set the `type` to `external_laravel` (for Blade) or `external_static` (for HTML)
 return [
   // …
   'type' => 'external_laravel',
-  'theme' => 'scalar',
+  'theme' => 'readyapi',
   // …
 ];
 ```
@@ -439,7 +439,7 @@ use aide::{
         .api_route_with(
             "/",
             get_with(
-                Scalar::new("/docs/private/api.json")
+                Readyapi::new("/docs/private/api.json")
                     .with_title("Aide Axum")
                     .axum_handler(),
                 |op| op.description("This documentation page."),
@@ -451,10 +451,10 @@ use aide::{
 
 ### Go
 
-`go-scalar-api-reference` by [@MarceloPetrucio](https://github.com/MarceloPetrucio/) offers a convenient way to generate
+`go-readyapi-api-reference` by [@MarceloPetrucio](https://github.com/MarceloPetrucio/) offers a convenient way to generate
 API references in Go:
 
-https://github.com/MarceloPetrucio/go-scalar-api-reference/
+https://github.com/MarceloPetrucio/go-readyapi-api-reference/
 
 ### Free Hosting
 
@@ -463,7 +463,7 @@ https://github.com/MarceloPetrucio/go-scalar-api-reference/
 - Collaborate with your whole team (paid)
 - Use any domain (paid)
 
-Ready? [Create an account on readyapi.khulnasoft.com](https://readyapi.khulnasoft.com).
+Ready? [Create an account on scalar.com](https://scalar.com).
 
 ## CLI
 
@@ -531,7 +531,7 @@ readyapi mock openapi.json --watch --port 8080
 
 ### Share
 
-Want to share your OpenAPI file? The following command will upload the given specification [to our sandbox](https://sandbox.readyapi.khulnasoft.com/):
+Want to share your OpenAPI file? The following command will upload the given specification [to our sandbox](https://sandbox.scalar.com/):
 
 ```bash
 readyapi share openapi.json
@@ -612,7 +612,7 @@ To get started, overwrite our CSS variables. We won’t judge.
 
 ```
 :root {
-  --scalar-font: 'Comic Sans MS', 'Comic Sans', cursive;
+  --readyapi-font: 'Comic Sans MS', 'Comic Sans', cursive;
 }
 ```
 
@@ -627,76 +627,76 @@ base styles as well as overwrite the color theme.
 To build your own color themes, overwrite the night mode and day mode variables.
 Here are some basic variables to get you started:
 
-![basic-scalar-variables](https://github.com/khulnasoft/readyapi.js/assets/6374090/f49256c4-4623-4797-87a1-24bdbc9b17fd)
+![basic-readyapi-variables](https://github.com/khulnasoft/readyapi.js/assets/6374090/f49256c4-4623-4797-87a1-24bdbc9b17fd)
 
 ```
 .light-mode {
-  --scalar-color-1: #121212;
-  --scalar-color-2: rgba(0, 0, 0, 0.6);
-  --scalar-color-3: rgba(0, 0, 0, 0.4);
-  --scalar-color-accent: #0a85d1;
-  --scalar-background-1: #fff;
-  --scalar-background-2: #f6f5f4;
-  --scalar-background-3: #f1ede9;
-  --scalar-background-accent: #5369d20f;
-  --scalar-border-color: rgba(0, 0, 0, 0.08);
+  --readyapi-color-1: #121212;
+  --readyapi-color-2: rgba(0, 0, 0, 0.6);
+  --readyapi-color-3: rgba(0, 0, 0, 0.4);
+  --readyapi-color-accent: #0a85d1;
+  --readyapi-background-1: #fff;
+  --readyapi-background-2: #f6f5f4;
+  --readyapi-background-3: #f1ede9;
+  --readyapi-background-accent: #5369d20f;
+  --readyapi-border-color: rgba(0, 0, 0, 0.08);
 }
 .dark-mode {
-  --scalar-color-1: rgba(255, 255, 255, 0.81);
-  --scalar-color-2: rgba(255, 255, 255, 0.443);
-  --scalar-color-3: rgba(255, 255, 255, 0.282);
-  --scalar-color-accent: #8ab4f8;
-  --scalar-background-1: #202020;
-  --scalar-background-2: #272727;
-  --scalar-background-3: #333333;
-  --scalar-background-accent: #8ab4f81f;
+  --readyapi-color-1: rgba(255, 255, 255, 0.81);
+  --readyapi-color-2: rgba(255, 255, 255, 0.443);
+  --readyapi-color-3: rgba(255, 255, 255, 0.282);
+  --readyapi-color-accent: #8ab4f8;
+  --readyapi-background-1: #202020;
+  --readyapi-background-2: #272727;
+  --readyapi-background-3: #333333;
+  --readyapi-background-accent: #8ab4f81f;
 }
 ```
 
 Or get more advanced by styling our sidebar!
 
-![scalar-sidebar-variables](https://github.com/khulnasoft/readyapi.js/assets/6374090/5b1f0211-5c09-4092-a882-03d8241ad428)
+![readyapi-sidebar-variables](https://github.com/khulnasoft/readyapi.js/assets/6374090/5b1f0211-5c09-4092-a882-03d8241ad428)
 
 ```
 .light-mode .sidebar {
-  --scalar-sidebar-background-1: var(--scalar-background-1);
-  --scalar-sidebar-item-hover-color: currentColor;
-  --scalar-sidebar-item-hover-background: var(--scalar-background-2);
-  --scalar-sidebar-item-active-background: var(--scalar-background-2);
-  --scalar-sidebar-border-color: var(--scalar-border-color);
-  --scalar-sidebar-color-1: var(--scalar-color-1);
-  --scalar-sidebar-color-2: var(--scalar-color-2);
-  --scalar-sidebar-color-active: var(--scalar-color-2);
-  --scalar-sidebar-search-background: var(--scalar-background-2);
-  --scalar-sidebar-search-border-color: var(--scalar-border-color);
-  --scalar-sidebar-search-color: var(--scalar-color-3);
+  --readyapi-sidebar-background-1: var(--readyapi-background-1);
+  --readyapi-sidebar-item-hover-color: currentColor;
+  --readyapi-sidebar-item-hover-background: var(--readyapi-background-2);
+  --readyapi-sidebar-item-active-background: var(--readyapi-background-2);
+  --readyapi-sidebar-border-color: var(--readyapi-border-color);
+  --readyapi-sidebar-color-1: var(--readyapi-color-1);
+  --readyapi-sidebar-color-2: var(--readyapi-color-2);
+  --readyapi-sidebar-color-active: var(--readyapi-color-2);
+  --readyapi-sidebar-search-background: var(--readyapi-background-2);
+  --readyapi-sidebar-search-border-color: var(--readyapi-border-color);
+  --readyapi-sidebar-search-color: var(--readyapi-color-3);
 }
 .dark-mode .sidebar {
-  --scalar-sidebar-background-1: var(--scalar-background-1);
-  --scalar-sidebar-item-hover-color: currentColor;
-  --scalar-sidebar-item-hover-background: var(--scalar-background-2);
-  --scalar-sidebar-item-active-background: var(--scalar-background-2);
-  --scalar-sidebar-border-color: var(--scalar-border-color);
-  --scalar-sidebar-color-1: var(--scalar-color-1);
-  --scalar-sidebar-color-2: var(--scalar-color-2);
-  --scalar-sidebar-color-active: var(--scalar-color-2);
-  --scalar-sidebar-search-background: var(--scalar-background-2);
-  --scalar-sidebar-search-border-color: var(--scalar-border-color);
-  --scalar-sidebar-search-color: var(--scalar-color-3);
+  --readyapi-sidebar-background-1: var(--readyapi-background-1);
+  --readyapi-sidebar-item-hover-color: currentColor;
+  --readyapi-sidebar-item-hover-background: var(--readyapi-background-2);
+  --readyapi-sidebar-item-active-background: var(--readyapi-background-2);
+  --readyapi-sidebar-border-color: var(--readyapi-border-color);
+  --readyapi-sidebar-color-1: var(--readyapi-color-1);
+  --readyapi-sidebar-color-2: var(--readyapi-color-2);
+  --readyapi-sidebar-color-active: var(--readyapi-color-2);
+  --readyapi-sidebar-search-background: var(--readyapi-background-2);
+  --readyapi-sidebar-search-border-color: var(--readyapi-border-color);
+  --readyapi-sidebar-search-color: var(--readyapi-color-3);
 }
 ```
 
 #### Theme Prefix Changes
 
-We've migrated our `--theme-*` CSS variables to `--scalar-*` to avoid conflicts with other CSS variables in
+We've migrated our `--theme-*` CSS variables to `--readyapi-*` to avoid conflicts with other CSS variables in
 applications consuming the Readyapi references or themes.
 If you're injecting your custom CSS through the [`customCss`](#configuration) configuration option we will automatically
 migrate your variable prefixes but display a warning in the console.
 
 We recommend updating your theme variables as soon as possible:
 
-- `--theme-*` → `--scalar-*`
-- `--sidebar-*` → `--scalar-sidebar-*`
+- `--theme-*` → `--readyapi-*`
+- `--sidebar-*` → `--readyapi-sidebar-*`
 
 For a before and after example of an updated theme
 see [`legacyTheme.css`](https://github.com/khulnasoft/readyapi.js/tree/main/packages/themes/src/fixtures/legacyTheme.css)

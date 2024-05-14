@@ -1,4 +1,4 @@
-import type { OpenAPIV3 } from '@scalar/openapi-parser'
+import type { OpenAPIV3 } from '@readyapi/openapi-parser'
 import type { InjectionKey } from 'vue'
 
 /**

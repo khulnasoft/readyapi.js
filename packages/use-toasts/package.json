@@ -39,14 +39,14 @@
   ],
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
-    "@vitest/coverage-v8": "^1.5.0",
-    "nanoid": "^5.0.1",
-    "tsc-alias": "^1.8.8",
-    "vite": "^5.2.10",
-    "vite-plugin-css-injected-by-js": "^3.4.0",
-    "vitest": "^1.5.0",
-    "vue": "^3.4.21",
-    "vue-tsc": "^1.8.19"
+    "@vitest/coverage-v8": "^1.6.0",
+    "nanoid": "^5.0.7",
+    "tsc-alias": "^1.8.10",
+    "vite": "^5.2.11",
+    "vite-plugin-css-injected-by-js": "^3.5.1",
+    "vitest": "^1.6.0",
+    "vue": "^3.4.27",
+    "vue-tsc": "^1.8.27"
   },
   "peerDependencies": {
     "nanoid": "4 - 5",

@@ -11,7 +11,7 @@ export function ShareCommand() {
   cmd.action(async (fileArgument: string) => {
     const file = useGivenFileOrConfiguration(fileArgument)
 
-    fetch('https://sandbox.readyapi.khulnasoft.com/api/share', {
+    fetch('https://sandbox.scalar.com/api/share', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -30,14 +30,14 @@ export function ShareCommand() {
           `${kleur.green('➜')} ${kleur
             .bold()
             .white('API Reference:'.padEnd(14))} ${kleur.cyan(
-            `https://sandbox.readyapi.khulnasoft.com/p/${id}`,
+            `https://sandbox.scalar.com/p/${id}`,
           )}`,
         )
         console.log(
           `${kleur.grey('➜')} ${kleur
             .bold()
             .grey('Editor:'.padEnd(14))} ${kleur.cyan(
-            `https://sandbox.readyapi.khulnasoft.com/e/${id}`,
+            `https://sandbox.scalar.com/e/${id}`,
           )}`,
         )
         console.log()
@@ -45,14 +45,14 @@ export function ShareCommand() {
           `${kleur.grey('➜')} ${kleur
             .bold()
             .grey('OpenAPI JSON:'.padEnd(14))} ${kleur.cyan(
-            `https://sandbox.readyapi.khulnasoft.com/files/${id}/openapi.json`,
+            `https://sandbox.scalar.com/files/${id}/openapi.json`,
           )}`,
         )
         console.log(
           `${kleur.grey('➜')} ${kleur
             .bold()
             .grey('OpenAPI YAML:'.padEnd(14))} ${kleur.cyan(
-            `https://sandbox.readyapi.khulnasoft.com/files/${id}/openapi.yaml`,
+            `https://sandbox.scalar.com/files/${id}/openapi.yaml`,
           )}`,
         )
         console.log()

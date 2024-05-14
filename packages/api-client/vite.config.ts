@@ -19,7 +19,7 @@ export default defineConfig({
       external: [
         'vue',
         ...Object.keys(pkg.dependencies || {}).filter(
-          (item) => !item.startsWith('@scalar'),
+          (item) => !item.startsWith('@readyapi'),
         ),
       ],
     },

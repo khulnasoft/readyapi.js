@@ -1,5 +1,5 @@
 /** Global prefix class used to scoped tailwind */
-const classPrefix = 'scalar-component'
+const classPrefix = 'readyapi-component'
 
 const globalRegx = /^\*|:root/
 const codeRegx = /^\.line-numbers/
@@ -12,7 +12,7 @@ export default ({ env }) => ({
       prefix: `.${classPrefix}`,
       /**
        * Add the scoping prefix to all selectors and their children
-       * e.g. .flex -> .scalar-component.flex, .scalar-component .flex
+       * e.g. .flex -> .readyapi-component.flex, .readyapi-component .flex
        */
       transform: (prefix, selector) => {
         if (env === 'development') return selector

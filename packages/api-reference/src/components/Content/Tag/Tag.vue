@@ -70,6 +70,6 @@ const observeAndNavigate = (operationId: string) => {
 </template>
 <style scoped>
 .section-container {
-  border-top: 1px solid var(--scalar-border-color);
+  border-top: 1px solid var(--readyapi-border-color);
 }
 </style>

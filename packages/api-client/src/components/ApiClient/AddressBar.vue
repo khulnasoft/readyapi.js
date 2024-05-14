@@ -200,7 +200,7 @@ const handleRequestMethodChanged = (requestMethod?: string) => {
 
 <style>
 .api-client-url-variable {
-  color: var(--scalar-api-client-color);
+  color: var(--readyapi-api-client-color);
 }
 </style>
 
@@ -209,7 +209,7 @@ const handleRequestMethodChanged = (requestMethod?: string) => {
   position: absolute;
   z-index: 3;
   height: 2px;
-  background: var(--scalar-api-client-color);
+  background: var(--readyapi-api-client-color);
   animation: loading 5s cubic-bezier(0, 0.5, 0.25, 1);
 }
 @keyframes loading {
@@ -231,7 +231,7 @@ const handleRequestMethodChanged = (requestMethod?: string) => {
   display: flex;
   width: 720px;
   align-items: stretch;
-  border-radius: var(--scalar-radius-lg);
+  border-radius: var(--readyapi-radius-lg);
   max-width: 720px;
   margin: auto;
   z-index: 2;
@@ -243,8 +243,8 @@ const handleRequestMethodChanged = (requestMethod?: string) => {
 }
 .url-form-field {
   align-items: stretch;
-  border: 1px solid var(--scalar-border-color);
-  border-radius: var(--scalar-radius);
+  border: 1px solid var(--readyapi-border-color);
+  border-radius: var(--readyapi-radius);
   display: flex;
   min-height: 31px;
   overflow: hidden;
@@ -262,9 +262,9 @@ const handleRequestMethodChanged = (requestMethod?: string) => {
   scroll-timeline: --scroll-timeline horizontal;
 }
 .url-form-input {
-  background: var(--scalar-background-1);
-  color: var(--scalar-color-1);
-  font-weight: var(--scalar-semibold);
+  background: var(--readyapi-background-1);
+  color: var(--readyapi-color-1);
+  font-weight: var(--readyapi-semibold);
   min-height: auto;
   min-width: fit-content;
   padding-top: 0;
@@ -286,9 +286,9 @@ const handleRequestMethodChanged = (requestMethod?: string) => {
 .url-form-input-fade__left {
   background: linear-gradient(
     -90deg,
-    color-mix(in srgb, var(--scalar-background-1), transparent 100%) 0%,
-    color-mix(in srgb, var(--scalar-background-1), transparent 20%) 30%,
-    var(--scalar-background-1) 100%
+    color-mix(in srgb, var(--readyapi-background-1), transparent 100%) 0%,
+    color-mix(in srgb, var(--readyapi-background-1), transparent 20%) 30%,
+    var(--readyapi-background-1) 100%
   );
   left: 0;
   min-width: 6px;
@@ -296,9 +296,9 @@ const handleRequestMethodChanged = (requestMethod?: string) => {
 .url-form-input-fade__right {
   background: linear-gradient(
     90deg,
-    color-mix(in srgb, var(--scalar-background-1), transparent 100%) 0%,
-    color-mix(in srgb, var(--scalar-background-1), transparent 20%) 30%,
-    var(--scalar-background-1) 100%
+    color-mix(in srgb, var(--readyapi-background-1), transparent 100%) 0%,
+    color-mix(in srgb, var(--readyapi-background-1), transparent 20%) 30%,
+    var(--readyapi-background-1) 100%
   );
   right: 0;
   min-width: 24px;
@@ -321,32 +321,32 @@ const handleRequestMethodChanged = (requestMethod?: string) => {
   overflow-y: hidden;
 }
 .url-form-input :deep(.cm-line) {
-  font-size: var(--scalar-micro);
+  font-size: var(--readyapi-micro);
   padding: 0;
 }
 .history {
   appearance: none;
   -webkit-appearance: none;
   background: transparent;
-  color: var(--scalar-color-2);
+  color: var(--readyapi-color-2);
   display: flex;
   align-items: center;
-  border-radius: var(--scalar-radius);
+  border-radius: var(--readyapi-radius);
 }
 
 .send-button[type='submit'] {
-  font-size: var(--scalar-micro);
+  font-size: var(--readyapi-micro);
   letter-spacing: 0.25px;
-  color: var(--scalar-button-1-color);
+  color: var(--readyapi-button-1-color);
   border: none;
   white-space: nowrap;
   padding: 0 9px;
   cursor: pointer;
   outline: none;
-  font-family: var(--scalar-font);
-  font-weight: var(--scalar-semibold);
-  border-radius: var(--scalar-radius);
-  background: var(--scalar-button-1);
+  font-family: var(--readyapi-font);
+  font-weight: var(--readyapi-semibold);
+  border-radius: var(--readyapi-radius);
+  background: var(--readyapi-button-1);
   position: relative;
   display: flex;
   align-items: center;
@@ -354,7 +354,7 @@ const handleRequestMethodChanged = (requestMethod?: string) => {
   flex-shrink: 0;
 }
 .send-button:hover {
-  background: var(--scalar-button-1-hover);
+  background: var(--readyapi-button-1-hover);
 }
 .send-button svg {
   width: 12px;
@@ -379,31 +379,31 @@ const handleRequestMethodChanged = (requestMethod?: string) => {
 }
 .send-button[disabled] {
   pointer-events: none;
-  color: var(--scalar-color-2);
-  background: var(--scalar-background-3);
-  border: 1px solid var(--scalar-border-color);
+  color: var(--readyapi-color-2);
+  background: var(--readyapi-background-3);
+  border: 1px solid var(--readyapi-border-color);
 }
 .history-toggle {
   padding: 7px;
   line-height: 30px;
-  color: var(--scalar-color-3);
-  font-size: var(--scalar-micro);
+  color: var(--readyapi-color-3);
+  font-size: var(--readyapi-micro);
   height: 100%;
   display: flex;
   align-items: center;
   cursor: pointer;
   white-space: nowrap;
-  border-radius: var(--scalar-radius);
+  border-radius: var(--readyapi-radius);
   user-select: none;
-  border-radius: var(--scalar-radius);
+  border-radius: var(--readyapi-radius);
   margin-right: 4px;
   transition:
     background-color 0.15s ease-in-out,
     color 0.15s ease-in-out;
 }
 .history-toggle:hover {
-  background-color: var(--scalar-background-2);
-  color: var(--scalar-color-1);
+  background-color: var(--readyapi-background-2);
+  color: var(--readyapi-color-1);
 }
 .history-toggle svg {
   height: 13px;
@@ -413,7 +413,7 @@ const handleRequestMethodChanged = (requestMethod?: string) => {
 .address-bar-content {
   width: 640px;
   height: 100%;
-  background: var(--scalar-background-1);
+  background: var(--readyapi-background-1);
   position: fixed;
   top: 0;
   right: 0;

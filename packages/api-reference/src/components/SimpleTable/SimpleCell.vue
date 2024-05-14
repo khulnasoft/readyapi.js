@@ -30,7 +30,7 @@ withDefaults(
   display: table-cell;
   position: relative;
   padding: 9px !important;
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
   white-space: nowrap;
   vertical-align: top;
 }
@@ -44,6 +44,6 @@ withDefaults(
 }
 
 .simple-cell.strong {
-  font-weight: var(--scalar-semibold);
+  font-weight: var(--readyapi-semibold);
 }
 </style>

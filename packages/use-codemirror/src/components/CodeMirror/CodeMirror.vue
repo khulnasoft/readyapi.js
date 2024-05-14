@@ -51,7 +51,7 @@ useCodeMirror({
   width: 100%;
   height: 100%;
   min-height: 76px;
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
   display: flex;
   align-items: stretch;
 }
@@ -66,7 +66,7 @@ useCodeMirror({
   flex-grow: 1;
   max-width: 100%;
   cursor: text;
-  font-size: var(--scalar-small);
+  font-size: var(--readyapi-small);
   /* Don't scale wide text on mobile because we let it scroll */
   -webkit-text-size-adjust: 100%;
   background: transparent;

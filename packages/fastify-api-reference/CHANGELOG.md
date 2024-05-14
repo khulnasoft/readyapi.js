@@ -68,7 +68,7 @@
 
 ### Minor Changes
 
-- 0e64a36: refactor: rename all --theme-_ variables to --scalar-_
+- 0e64a36: refactor: rename all --theme-_ variables to --readyapi-_
 
 ### Patch Changes
 
@@ -176,7 +176,7 @@
 
 ### Minor Changes
 
-- 7fb8273: Migrate to @scalar/openapi-parser
+- 7fb8273: Migrate to @readyapi/openapi-parser
 
 ## 1.18.7
 

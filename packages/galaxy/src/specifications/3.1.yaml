@@ -8,7 +8,7 @@ info:
 
     * https://github.com/khulnasoft/readyapi.js
     * https://github.com/OAI/OpenAPI-Specification
-    * https://readyapi.khulnasoft.com
+    * https://scalar.com
 
     ## Markdown Support
 
@@ -46,10 +46,10 @@ info:
   version: 1.0.0
   contact:
     name: Marc from Scalar
-    url: https://readyapi.khulnasoft.com
+    url: https://scalar.com
     email: marc@khulnasoft.com
 servers:
-  - url: https://galaxy.readyapi.khulnasoft.com
+  - url: https://galaxy.scalar.com
 security:
   - bearerAuth: []
   - basicAuth: []
@@ -358,7 +358,7 @@ components:
       type: oauth2
       flows:
         implicit:
-          authorizationUrl: https://galaxy.readyapi.khulnasoft.com/oauth/authorize
+          authorizationUrl: https://galaxy.scalar.com/oauth/authorize
           scopes:
             write:planets: modify planets in your account
             read:planets: read your planets

@@ -33,12 +33,12 @@ const handleDownloadClick = () => {
   margin-bottom: 24px;
 }
 .download-cta .download-button {
-  color: var(--scalar-color-accent);
-  text-decoration: var(--scalar-text-decoration) !important;
-  font-size: var(--scalar-paragraph);
+  color: var(--readyapi-color-accent);
+  text-decoration: var(--readyapi-text-decoration) !important;
+  font-size: var(--readyapi-paragraph);
   cursor: pointer;
 }
 .download-cta .download-button:hover {
-  text-decoration: var(--scalar-text-decoration-hover) !important;
+  text-decoration: var(--readyapi-text-decoration-hover) !important;
 }
 </style>

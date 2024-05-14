@@ -1,4 +1,4 @@
-# @scalar/play-button
+# @readyapi/play-button
 
 ## 0.0.10
 

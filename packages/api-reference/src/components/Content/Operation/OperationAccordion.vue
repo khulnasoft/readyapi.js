@@ -105,11 +105,11 @@ const { copyToClipboard } = useClipboard()
   padding: 6px;
   flex-shrink: 0;
 
-  font-size: var(--scalar-small);
+  font-size: var(--readyapi-small);
 
   text-transform: uppercase;
-  font-weight: var(--scalar-bold);
-  font-family: var(--scalar-font);
+  font-weight: var(--readyapi-bold);
+  font-family: var(--readyapi-font);
 }
 .endpoint-type::after {
   content: '';
@@ -120,7 +120,7 @@ const { copyToClipboard } = useClipboard()
   background: currentColor;
   opacity: 0.15;
 
-  border-radius: var(--scalar-radius-lg);
+  border-radius: var(--readyapi-radius-lg);
 }
 
 .endpoint-anchor {
@@ -140,23 +140,23 @@ const { copyToClipboard } = useClipboard()
   min-width: 0;
   flex-shrink: 1;
 
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 }
 
 .endpoint-label-path {
-  font-family: var(--scalar-font-code);
-  font-size: var(--scalar-mini);
+  font-family: var(--readyapi-font-code);
+  font-size: var(--readyapi-mini);
 
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 .endpoint-label-path :deep(em) {
-  color: var(--scalar-color-2);
+  color: var(--readyapi-color-2);
 }
 .endpoint-label-name {
-  color: var(--scalar-color-2);
-  font-size: var(--scalar-small);
+  color: var(--readyapi-color-2);
+  font-size: var(--readyapi-small);
 
   /* Concatenate the name before we shrink the path */
   flex-shrink: 1000000000;

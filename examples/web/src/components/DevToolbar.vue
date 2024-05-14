@@ -10,9 +10,9 @@ watch(
   showToolbar,
   (show) => {
     if (show) {
-      docStyle.setProperty('--scalar-header-height', '40px')
+      docStyle.setProperty('--readyapi-header-height', '40px')
     } else {
-      docStyle.removeProperty('--scalar-header-height')
+      docStyle.removeProperty('--readyapi-header-height')
     }
   },
   { immediate: true },
@@ -56,13 +56,13 @@ watch(
 .dev-header {
   display: flex;
   justify-content: space-between;
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 
   width: 100%;
-  height: var(--scalar-header-height);
+  height: var(--readyapi-header-height);
 
-  background: var(--scalar-background-1);
-  border-bottom: 1px solid var(--scalar-border-color);
+  background: var(--readyapi-background-1);
+  border-bottom: 1px solid var(--readyapi-border-color);
 }
 .dev-title {
   font-weight: bold;
@@ -83,23 +83,23 @@ watch(
   text-decoration: none;
 
   padding: 4px 6px;
-  border: 1px solid var(--scalar-border-color);
-  color: var(--scalar-color-1);
-  background: var(--scalar-background-2);
-  border-radius: var(--scalar-radius);
+  border: 1px solid var(--readyapi-border-color);
+  color: var(--readyapi-color-1);
+  background: var(--readyapi-background-2);
+  border-radius: var(--readyapi-radius);
 }
 .dev-home-link:hover {
-  background: var(--scalar-background-3);
+  background: var(--readyapi-background-3);
 }
 
 .dev-options {
   display: flex;
-  font-size: var(--scalar-small);
+  font-size: var(--readyapi-small);
 }
 
 .dev-options > :deep(*) {
   padding: 0px 12px;
-  border-left: 1px solid var(--scalar-border-color);
+  border-left: 1px solid var(--readyapi-border-color);
   display: flex;
   align-items: center;
   gap: 4px;
@@ -113,18 +113,18 @@ watch(
 
   padding: 4px 8px;
 
-  font-size: var(--scalar-small);
+  font-size: var(--readyapi-small);
   font-weight: 500;
 
-  color: var(--scalar-color-1);
-  background: var(--scalar-background-1);
-  border: 1px solid var(--scalar-border-color);
-  border-radius: var(--scalar-radius);
-  box-shadow: var(--scalar-shadow-1);
+  color: var(--readyapi-color-1);
+  background: var(--readyapi-background-1);
+  border: 1px solid var(--readyapi-border-color);
+  border-radius: var(--readyapi-radius);
+  box-shadow: var(--readyapi-shadow-1);
 }
 
 .dev-show-toolbar:hover,
 .dev-hide-toolbar:hover {
-  background: var(--scalar-background-2);
+  background: var(--readyapi-background-2);
 }
 </style>

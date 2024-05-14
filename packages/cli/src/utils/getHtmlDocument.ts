@@ -35,7 +35,7 @@ export function getHtmlDocument(
         <script
           id="api-reference"
           type="application/json"
-          data-proxy-url="https://api.readyapi.khulnasoft.com/request-proxy">${JSON.stringify(
+          data-proxy-url="https://api.scalar.com/request-proxy">${JSON.stringify(
             specification,
           )}</script>
         <script src="https://cdn.jsdelivr.net/npm/@readyapi/api-reference"></script>

@@ -111,10 +111,10 @@ const model = computed({
   z-index: 1010;
 }
 .dropdown {
-  background: var(--scalar-background-1);
-  filter: brightness(var(--scalar-lifted-brightness));
-  border-radius: var(--scalar-radius);
-  box-shadow: var(--scalar-shadow-2);
+  background: var(--readyapi-background-1);
+  filter: brightness(var(--readyapi-lifted-brightness));
+  border-radius: var(--readyapi-radius);
+  box-shadow: var(--readyapi-shadow-2);
   padding: 4px;
   font-style: normal;
 
@@ -134,26 +134,26 @@ const model = computed({
   row-gap: 2px;
   column-gap: 8px;
 
-  border-radius: var(--scalar-radius);
+  border-radius: var(--readyapi-radius);
 
-  font-size: var(--scalar-mini);
+  font-size: var(--readyapi-mini);
 
   cursor: pointer;
 }
 .dropdown-item[data-headlessui-state='active'],
 .dropdown-item[data-headlessui-state='active selected'] {
-  background: var(--scalar-background-2);
+  background: var(--readyapi-background-2);
 }
 .dropdown-item-title {
   grid-area: title;
 
-  color: var(--scalar-color-1);
-  font-weight: var(--scalar-semibold);
+  color: var(--readyapi-color-1);
+  font-weight: var(--readyapi-semibold);
 }
 .dropdown-item-description {
   grid-area: description;
 
-  color: var(--scalar-color-2);
+  color: var(--readyapi-color-2);
   line-height: initial;
 }
 .dropdown-item-check {
@@ -165,10 +165,10 @@ const model = computed({
   width: 20px;
   height: 20px;
 
-  color: var(--scalar-color-2);
-  background: var(--scalar-background-1);
-  border: 1px solid var(--scalar-border-color);
-  border-radius: var(--scalar-radius);
+  color: var(--readyapi-color-2);
+  background: var(--readyapi-background-1);
+  border: 1px solid var(--readyapi-border-color);
+  border-radius: var(--readyapi-radius);
 }
 .dropdown-item-check:checked:after {
   content: '';
@@ -182,8 +182,8 @@ const model = computed({
   transform: translate(-50%, -50%) rotate(45deg);
 }
 .dropdown-item-check:checked {
-  background: var(--scalar-color-accent);
-  color: var(--scalar-background-1);
+  background: var(--readyapi-color-accent);
+  color: var(--readyapi-background-1);
   border: 1px solid currentColor;
 }
 </style>

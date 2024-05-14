@@ -7,7 +7,7 @@ import { ScalarCli } from '../../../tests/invoke-cli'
 describe('init', () => {
   it('creates a config file', () => {
     // Delete config file if it exists
-    const configFile = './scalar.config.json'
+    const configFile = './readyapi.config.json'
 
     if (fs.existsSync(configFile)) {
       fs.unlinkSync(configFile)

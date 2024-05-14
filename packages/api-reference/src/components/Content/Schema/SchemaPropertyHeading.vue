@@ -123,31 +123,31 @@ const rules = ['oneOf', 'anyOf', 'allOf', 'not']
 }
 
 .property-name {
-  font-family: var(--scalar-font-code);
+  font-family: var(--readyapi-font-code);
 }
 .property-additional {
-  font-size: var(--scalar-font-size-3);
+  font-size: var(--readyapi-font-size-3);
 }
 
 .property-required,
 .property-optional {
-  color: var(--scalar-color-2);
+  color: var(--readyapi-color-2);
 }
 
 .property-required {
   text-transform: capitalize;
-  color: var(--scalar-color-orange);
+  color: var(--readyapi-color-orange);
 }
 
 .property-read-only,
 .property-write-only {
-  font-size: var(--scalar-font-size-3);
-  color: var(--scalar-color-blue);
+  font-size: var(--readyapi-font-size-3);
+  color: var(--readyapi-color-blue);
 }
 
 .property-details {
-  font-size: var(--scalar-font-size-3);
-  color: var(--scalar-color-2);
+  font-size: var(--readyapi-font-size-3);
+  color: var(--readyapi-color-2);
 
   display: flex;
   align-items: center;

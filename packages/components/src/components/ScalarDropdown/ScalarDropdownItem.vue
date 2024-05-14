@@ -33,7 +33,7 @@ const variants = cva({
     :disabled="disabled">
     <button
       class="item"
-      :class="cx('scalar-dropdown-item', variants({ active, disabled }))"
+      :class="cx('readyapi-dropdown-item', variants({ active, disabled }))"
       type="button"
       @click="($event) => $emit('click', $event)">
       <slot />

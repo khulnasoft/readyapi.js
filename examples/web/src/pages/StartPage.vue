@@ -80,7 +80,7 @@ const inDevelopment = import.meta.env.DEV
         :href="
           inDevelopment
             ? 'http://localhost:5058'
-            : 'https://scalar-example-next-js-p6gnzjpyuq-uc.a.run.app'
+            : 'https://readyapi-example-next-js-p6gnzjpyuq-uc.a.run.app'
         ">
         <template #title>Next.js</template>
         <template #description>@scalar/nextjs-api-reference</template>
@@ -89,7 +89,7 @@ const inDevelopment = import.meta.env.DEV
         :href="
           inDevelopment
             ? 'http://localhost:5059'
-            : 'https://scalar-example-react-p6gnzjpyuq-uc.a.run.app'
+            : 'https://readyapi-example-react-p6gnzjpyuq-uc.a.run.app'
         ">
         <template #title>React</template>
         <template #description>@readyapi/api-reference</template>
@@ -98,7 +98,7 @@ const inDevelopment = import.meta.env.DEV
         :href="
           inDevelopment
             ? 'http://localhost:5053/reference'
-            : 'https://scalar-example-fastify-p6gnzjpyuq-uc.a.run.app/reference'
+            : 'https://readyapi-example-fastify-p6gnzjpyuq-uc.a.run.app/reference'
         ">
         <template #title>Fastify</template>
         <template #description>@readyapi/fastify-api-reference</template>
@@ -107,7 +107,7 @@ const inDevelopment = import.meta.env.DEV
         :href="
           inDevelopment
             ? 'http://localhost:5054'
-            : 'https://scalar-example-hono-p6gnzjpyuq-uc.a.run.app'
+            : 'https://readyapi-example-hono-p6gnzjpyuq-uc.a.run.app'
         ">
         <template #title>Hono</template>
         <template #description>@readyapi/hono-api-reference</template>
@@ -116,7 +116,7 @@ const inDevelopment = import.meta.env.DEV
         :href="
           inDevelopment
             ? 'http://localhost:5055'
-            : 'https://scalar-example-express-p6gnzjpyuq-uc.a.run.app'
+            : 'https://readyapi-example-express-p6gnzjpyuq-uc.a.run.app'
         ">
         <template #title>Express</template>
         <template #description>@readyapi/express-api-reference</template>
@@ -125,7 +125,7 @@ const inDevelopment = import.meta.env.DEV
         :href="
           inDevelopment
             ? 'http://localhost:5056'
-            : 'https://scalar-example-nest-js-p6gnzjpyuq-uc.a.run.app'
+            : 'https://readyapi-example-nest-js-p6gnzjpyuq-uc.a.run.app'
         ">
         <template #title>NestJS (Express)</template>
         <template #description>@readyapi/nestjs-api-reference</template>
@@ -134,7 +134,7 @@ const inDevelopment = import.meta.env.DEV
         :href="
           inDevelopment
             ? 'http://localhost:5057'
-            : 'https://scalar-example-nest-js-fastify-p6gnzjpyuq-uc.a.run.app'
+            : 'https://readyapi-example-nest-js-fastify-p6gnzjpyuq-uc.a.run.app'
         ">
         <template #title>NestJS (Fastify)</template>
         <template #description>@readyapi/nestjs-api-reference</template>
@@ -164,8 +164,8 @@ const inDevelopment = import.meta.env.DEV
 <style scoped>
 .main {
   font-family: 'Inter', sans-serif;
-  background-color: var(--scalar-background-1);
-  color: var(--scalar-color-1);
+  background-color: var(--readyapi-background-1);
+  color: var(--readyapi-color-1);
   min-height: 100vh;
   padding: 2rem;
   box-sizing: border-box;

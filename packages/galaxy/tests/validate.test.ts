@@ -1,4 +1,4 @@
-import { validate } from '@scalar/openapi-parser'
+import { validate } from '@readyapi/openapi-parser'
 import { describe, expect, it } from 'vitest'
 
 // @ts-ignore

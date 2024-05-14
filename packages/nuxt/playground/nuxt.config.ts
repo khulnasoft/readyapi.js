@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       url: 'https://cdn.scalar.com/spec/openapi_petstore.json',
     },
     pathRouting: {
-      basePath: '/scalar',
+      basePath: '/readyapi',
     },
     configurations: [
       {
