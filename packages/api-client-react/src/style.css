@@ -1,166 +1,166 @@
-.light-mode .scalar-modal-layout,
+.light-mode .readyapi-modal-layout,
 .light-mode .readyapi {
-  --scalar-color-1: color-mix(
+  --readyapi-color-1: color-mix(
     in srgb,
     rgb(var(--primary-base-300, 180 180 180)),
     rgb(var(--dark-base, 23 23 23)) 96%
   );
-  --scalar-color-2: color-mix(
+  --readyapi-color-2: color-mix(
     in srgb,
-    var(--scalar-color-1),
+    var(--readyapi-color-1),
     transparent calc(100% - 100% * 0.72)
   );
-  --scalar-color-3: color-mix(
+  --readyapi-color-3: color-mix(
     in srgb,
-    var(--scalar-color-1),
+    var(--readyapi-color-1),
     transparent calc(100% - 100% * 0.4)
   );
-  --scalar-color-accent: #007d9c;
+  --readyapi-color-accent: #007d9c;
 
-  --scalar-background-1: rgb(var(--light-base, 255 255 255));
-  --scalar-background-2: color-mix(
+  --readyapi-background-1: rgb(var(--light-base, 255 255 255));
+  --readyapi-background-2: color-mix(
     in srgb,
     rgb(var(--primary-base-800, 30 30 30)),
-    var(--scalar-background-1) 96%
+    var(--readyapi-background-1) 96%
   );
-  --scalar-background-3: color-mix(
+  --readyapi-background-3: color-mix(
     in srgb,
     rgb(var(--primary-base-800, 30 30 30)),
-    var(--scalar-background-1) 90%
+    var(--readyapi-background-1) 90%
   );
-  --scalar-background-accent: #007d9c1f;
-  --scalar-code-language-color-supersede: var(--scalar-color-1);
-  --scalar-code-languages-background-supersede: var(--scalar-background-1);
-  --scalar-border-color: color-mix(
+  --readyapi-background-accent: #007d9c1f;
+  --readyapi-code-language-color-supersede: var(--readyapi-color-1);
+  --readyapi-code-languages-background-supersede: var(--readyapi-background-1);
+  --readyapi-border-color: color-mix(
     in srgb,
-    var(--scalar-color-1),
+    var(--readyapi-color-1),
     transparent calc(100% - 100% * 0.08)
   );
 
-  --scalar-color-green: #0a6355;
-  --scalar-color-red: #dc1b19;
-  --scalar-color-yellow: #ffc90d;
-  --scalar-color-blue: rgb(var(--primary-color-500, 52 109 219));
-  --scalar-color-orange: #ff8d4d;
-  --scalar-color-purple: #8250df;
+  --readyapi-color-green: #0a6355;
+  --readyapi-color-red: #dc1b19;
+  --readyapi-color-yellow: #ffc90d;
+  --readyapi-color-blue: rgb(var(--primary-color-500, 52 109 219));
+  --readyapi-color-orange: #ff8d4d;
+  --readyapi-color-purple: #8250df;
 
-  --scalar-scrollbar-color: rgba(255, 255, 255, 0.24);
-  --scalar-scrollbar-color-active: rgba(255, 255, 255, 0.48);
+  --readyapi-scrollbar-color: rgba(255, 255, 255, 0.24);
+  --readyapi-scrollbar-color-active: rgba(255, 255, 255, 0.48);
 }
-.dark-mode .scalar-modal-layout,
+.dark-mode .readyapi-modal-layout,
 .dark-mode .readyapi {
-  --scalar-color-1: color-mix(
+  --readyapi-color-1: color-mix(
     in srgb,
     rgb(var(--primary-base-700, 70 70 70)),
     rgb(var(--light-base, 255 255 255)) 100%
   );
-  --scalar-color-2: color-mix(
+  --readyapi-color-2: color-mix(
     in srgb,
-    var(--scalar-color-1),
+    var(--readyapi-color-1),
     transparent calc(100% - 100% * 0.64)
   );
-  --scalar-color-3: color-mix(
+  --readyapi-color-3: color-mix(
     in srgb,
-    var(--scalar-color-1),
+    var(--readyapi-color-1),
     transparent calc(100% - 100% * 0.4)
   );
-  --scalar-color-accent: #50b7e0;
+  --readyapi-color-accent: #50b7e0;
 
-  --scalar-background-1: rgb(var(--dark-base, 22 22 22));
-  --scalar-background-2: color-mix(
+  --readyapi-background-1: rgb(var(--dark-base, 22 22 22));
+  --readyapi-background-2: color-mix(
     in srgb,
     rgb(var(--primary-base-200, 200 200 200)),
-    var(--scalar-background-1) 92%
+    var(--readyapi-background-1) 92%
   );
-  --scalar-background-3: color-mix(
+  --readyapi-background-3: color-mix(
     in srgb,
     rgb(var(--primary-base-200, 200 200 200)),
-    var(--scalar-background-1) 88%
+    var(--readyapi-background-1) 88%
   );
-  --scalar-background-accent: #8ab4f81f;
-  --scalar-code-languages-background-supersede: var(--scalar-background-1);
-  --scalar-border-color: color-mix(
+  --readyapi-background-accent: #8ab4f81f;
+  --readyapi-code-languages-background-supersede: var(--readyapi-background-1);
+  --readyapi-border-color: color-mix(
     in srgb,
-    var(--scalar-color-1),
+    var(--readyapi-color-1),
     transparent calc(100% - 100% * 0.08)
   );
 
-  --scalar-color-green: #56b6c2;
-  --scalar-color-red: rgb(245 124 97);
-  --scalar-color-yellow: #edbe20;
-  --scalar-color-blue: rgb(var(--primary-color-400, 93 138 226));
-  --scalar-color-orange: #d19a66;
-  --scalar-color-purple: #5203d1;
+  --readyapi-color-green: #56b6c2;
+  --readyapi-color-red: rgb(245 124 97);
+  --readyapi-color-yellow: #edbe20;
+  --readyapi-color-blue: rgb(var(--primary-color-400, 93 138 226));
+  --readyapi-color-orange: #d19a66;
+  --readyapi-color-purple: #5203d1;
 
-  --scalar-scrollbar-color: rgba(0, 0, 0, 0.18);
-  --scalar-scrollbar-color-active: rgba(0, 0, 0, 0.36);
+  --readyapi-scrollbar-color: rgba(0, 0, 0, 0.18);
+  --readyapi-scrollbar-color-active: rgba(0, 0, 0, 0.36);
 }
-.scalar-modal-layout,
+.readyapi-modal-layout,
 .readyapi {
-  --scalar-font: initial;
-  --scalar-font-code: var(--font-mono);
+  --readyapi-font: initial;
+  --readyapi-font-code: var(--font-mono);
 
-  --scalar-paragraph: 16px;
-  --scalar-small: 14px;
-  --scalar-mini: 13px;
-  --scalar-micro: 12px;
+  --readyapi-paragraph: 16px;
+  --readyapi-small: 14px;
+  --readyapi-mini: 13px;
+  --readyapi-micro: 12px;
 
-  --scalar-bold: 600;
-  --scalar-semibold: 500;
-  --scalar-regular: 400;
+  --readyapi-bold: 600;
+  --readyapi-semibold: 500;
+  --readyapi-regular: 400;
 
   /* Font sizes for interactive applications (not rendered text content) */
-  --scalar-font-size-1: 24px;
-  --scalar-font-size-2: 16px;
-  --scalar-font-size-3: 14px;
-  --scalar-font-size-4: 13px;
-  --scalar-font-size-5: 12px;
+  --readyapi-font-size-1: 24px;
+  --readyapi-font-size-2: 16px;
+  --readyapi-font-size-3: 14px;
+  --readyapi-font-size-4: 13px;
+  --readyapi-font-size-5: 12px;
 
-  --scalar-line-height-1: 32px;
-  --scalar-line-height-2: 24px;
-  --scalar-line-height-3: 20px;
-  --scalar-line-height-4: 18px;
-  --scalar-line-height-5: 16px;
+  --readyapi-line-height-1: 32px;
+  --readyapi-line-height-2: 24px;
+  --readyapi-line-height-3: 20px;
+  --readyapi-line-height-4: 18px;
+  --readyapi-line-height-5: 16px;
 }
 .readyapi input::placeholder {
-  color: var(--scalar-color-3);
+  color: var(--readyapi-color-3);
 }
-.readyapi .scalar-app-header {
+.readyapi .readyapi-app-header {
   width: 100%;
   z-index: 1000;
   padding: 6px 12px 6px 12px;
   border-radius: 0.25rem 0.25rem 0 0;
   font-size: 14px;
   font-family: sans-serif;
-  --scalar-app-header-height: 35px;
-  height: var(--scalar-app-header-height);
+  --readyapi-app-header-height: 35px;
+  height: var(--readyapi-app-header-height);
   display: flex;
   align-items: center;
   gap: 6px;
 }
-.readyapi .scalar-app-header a {
+.readyapi .readyapi-app-header a {
   text-decoration: none;
 }
-.readyapi .scalar-api-client {
-  max-height: calc(100% - calc(var(--scalar-app-header-height)));
+.readyapi .readyapi-api-client {
+  max-height: calc(100% - calc(var(--readyapi-app-header-height)));
   border-radius: 8px;
 }
-.scalar-api-client__close {
+.readyapi-api-client__close {
   appearance: none;
   border: none;
   outline: none;
   display: flex;
   align-items: center;
   background: transparent;
-  color: var(--scalar-color-1);
-  font-size: var(--scalar-small);
-  font-weight: var(--scalar-semibold);
+  color: var(--readyapi-color-1);
+  font-size: var(--readyapi-small);
+  font-weight: var(--readyapi-semibold);
 }
-.scalar-api-client__close:hover {
+.readyapi-api-client__close:hover {
   cursor: pointer;
 }
-.readyapi .scalar-app {
-  background: var(--scalar-background-3);
+.readyapi .readyapi-app {
+  background: var(--readyapi-background-3);
   height: calc(100dvh - 100px);
   max-width: 1280px;
   width: 100%;
@@ -182,7 +182,7 @@
     opacity: 1;
   }
 }
-.readyapi .scalar-app-exit {
+.readyapi .readyapi-app-exit {
   position: fixed;
   top: 0;
   left: 0;
@@ -194,7 +194,7 @@
   cursor: pointer;
   animation: scalardrawerexitfadein 0.35s forwards;
 }
-.readyapi .scalar-app-exit:before {
+.readyapi .readyapi-app-exit:before {
   content: '\00d7';
   font-family: sans-serif;
   position: absolute;
@@ -208,7 +208,7 @@
   color: white;
   opacity: 0.6;
 }
-.readyapi .scalar-app-exit:hover:before {
+.readyapi .readyapi-app-exit:hover:before {
   opacity: 1;
 }
 @keyframes scalardrawerexitfadein {
@@ -219,7 +219,7 @@
     opacity: 1;
   }
 }
-.scalar-container {
+.readyapi-container {
   overflow: hidden;
   visibility: visible;
   position: fixed;
@@ -239,19 +239,19 @@
   min-height: auto !important;
 }
 
-.readyapi .scalar-container {
+.readyapi .readyapi-container {
   line-height: normal;
 }
-.readyapi .scalar-app-header span {
-  color: var(--scalar-color-3);
+.readyapi .readyapi-app-header span {
+  color: var(--readyapi-color-3);
 }
-.readyapi .scalar-app-header a {
-  color: var(--scalar-color-1);
+.readyapi .readyapi-app-header a {
+  color: var(--readyapi-color-1);
 }
-.readyapi .scalar-app-header a:hover {
+.readyapi .readyapi-app-header a:hover {
   text-decoration: underline;
 }
-.scalar-activate {
+.readyapi-activate {
   width: fit-content;
   margin: 0px 0.75rem 0.75rem auto;
   line-height: 24px;
@@ -263,20 +263,20 @@
   align-items: center;
   gap: 6px;
 }
-.scalar-activate-button {
+.readyapi-activate-button {
   display: flex;
   gap: 6px;
   align-items: center;
-  color: var(--scalar-color-blue);
+  color: var(--readyapi-color-blue);
   appearance: none;
   outline: none;
   border: none;
   background: transparent;
 }
-.scalar-activate-button {
+.readyapi-activate-button {
   padding: 0 0.5rem;
 }
-.scalar-activate:hover .scalar-activate-button {
-  background: var(--scalar-background-3);
+.readyapi-activate:hover .readyapi-activate-button {
+  background: var(--readyapi-background-3);
   border-radius: 3px;
 }

@@ -48,7 +48,7 @@ import { ScalarIcon } from '@readyapi/components'
 
   padding: 6px 0 6px 0;
   margin: -6px 0 -6px 0;
-  border-radius: var(--scalar-radius);
+  border-radius: var(--readyapi-radius);
 }
 .section-accordion-chevron {
   width: 24px;
@@ -56,11 +56,11 @@ import { ScalarIcon } from '@readyapi/components'
   left: -24px;
   height: auto;
   top: 10px;
-  color: var(--scalar-color-3);
+  color: var(--readyapi-color-3);
 }
 
 .section-accordion-button:hover .section-accordion-chevron {
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 }
 .section-accordion-title {
   display: flex;

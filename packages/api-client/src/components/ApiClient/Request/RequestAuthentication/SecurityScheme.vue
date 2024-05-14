@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { OpenAPIV3, OpenAPIV3_1 } from '@scalar/openapi-parser'
+import type { OpenAPIV3, OpenAPIV3_1 } from '@readyapi/openapi-parser'
 import { computed } from 'vue'
 
 import { useAuthenticationStore } from '../../../../stores'
@@ -243,20 +243,20 @@ const startAuthentication = (url: string) => {
 <style scoped>
 .description {
   padding: 12px 4px 4px;
-  font-size: var(--scalar-mini);
+  font-size: var(--readyapi-mini);
 }
 .cardform-auth-button {
-  background: var(--scalar-button-1);
-  color: var(--scalar-button-1-color);
-  font-size: var(--scalar-mini);
-  font-weight: var(--scalar-semibold);
-  border-radius: var(--scalar-radius);
+  background: var(--readyapi-button-1);
+  color: var(--readyapi-button-1-color);
+  font-size: var(--readyapi-mini);
+  font-weight: var(--readyapi-semibold);
+  border-radius: var(--readyapi-radius);
   margin: 3px;
   padding: 0 9px;
   cursor: pointer;
   appearance: none;
 }
 .cardform-auth-button:hover {
-  background: var(--scalar-button-1-hover);
+  background: var(--readyapi-button-1-hover);
 }
 </style>

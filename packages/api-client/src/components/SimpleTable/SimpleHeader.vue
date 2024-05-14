@@ -10,8 +10,8 @@ import SimpleCell from './SimpleCell.vue'
 </template>
 <style scoped>
 .simple-header {
-  color: var(--scalar-color-1);
-  font-weight: var(--scalar-semibold);
+  color: var(--readyapi-color-1);
+  font-weight: var(--readyapi-semibold);
   text-transform: capitalize;
 }
 </style>

@@ -32,7 +32,7 @@ describe('Standalone API References', () => {
     await sleep(50)
 
     const rootElement = document.querySelector('[data-v-app]')
-    const reference = rootElement?.querySelector('.scalar-api-reference')
+    const reference = rootElement?.querySelector('.readyapi-api-reference')
     const h1 = reference?.querySelector('h1')
 
     expect(rootElement?.contains(reference!)).toBeTruthy()
@@ -52,7 +52,7 @@ describe('Standalone API References', () => {
     await sleep(50)
 
     rootElement = document.querySelector('[data-v-app]')
-    const reference = rootElement?.querySelector('.scalar-api-reference')
+    const reference = rootElement?.querySelector('.readyapi-api-reference')
     const h1 = reference?.querySelector('h1')
 
     expect(rootElement?.contains(reference!)).toBeTruthy()

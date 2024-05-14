@@ -95,22 +95,22 @@ const responseData = computed(() => {
   </div>
 </template>
 <style>
-.scalar-api-client__main__right {
+.readyapi-api-client__main__right {
   width: 50%;
 }
 @media screen and (max-width: 820px) {
-  .scalar-api-client__main__right {
+  .readyapi-api-client__main__right {
     border-right: none;
     height: 100%;
     width: 100%;
   }
 }
-.scalar-api-client__main__right :deep(.scalar-copilot__header-button) {
+.readyapi-api-client__main__right :deep(.readyapi-copilot__header-button) {
   position: absolute;
   top: 6px;
   right: 12px;
 }
-.scalar-api-client__main__content .empty-state {
+.readyapi-api-client__main__content .empty-state {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -118,9 +118,9 @@ const responseData = computed(() => {
   height: calc(100% - 50px);
   justify-content: center;
 }
-.scalar-api-client__main__content .empty-state p {
-  color: var(--scalar-color-2);
-  font-size: var(--scalar-small);
+.readyapi-api-client__main__content .empty-state p {
+  color: var(--readyapi-color-2);
+  font-size: var(--readyapi-small);
   text-transform: capitalize;
 }
 </style>

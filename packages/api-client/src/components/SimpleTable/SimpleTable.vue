@@ -13,8 +13,8 @@
   width: 100%;
 }
 .simple-table-container {
-  border: 1px solid var(--scalar-border-color);
-  border-radius: 0 0 var(--scalar-radius) var(--scalar-radius);
+  border: 1px solid var(--readyapi-border-color);
+  border-radius: 0 0 var(--readyapi-radius) var(--readyapi-radius);
   width: 100%;
   overflow: auto;
 }

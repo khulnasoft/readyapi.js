@@ -11,7 +11,7 @@ const props = defineProps<CardContentProps>()
   </CardContent>
 </template>
 <style scoped>
-.scalar-card-footer {
+.readyapi-card-footer {
   flex-shrink: 0;
 }
 </style>

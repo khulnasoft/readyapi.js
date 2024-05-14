@@ -54,7 +54,7 @@ const showSideBar = ref(false)
           <template #address-bar-controls>
             <div class="readyapi-api-client-states">
               <button
-                class="readyapi-api-client-states-button scalar-api-client-states-button__endpoints"
+                class="readyapi-api-client-states-button readyapi-api-client-states-button__endpoints"
                 type="button"
                 @click="showSideBar = !showSideBar">
                 <ScalarIcon
@@ -94,12 +94,12 @@ const showSideBar = ref(false)
 </template>
 
 <style scoped>
-.api-client-container .scalar-api-client {
+.api-client-container .readyapi-api-client {
   --refs-sidebar-width: 280px;
   width: calc(100% - var(--refs-sidebar-width));
 }
 @media screen and (max-width: 1000px) {
-  .api-client-container .scalar-api-client {
+  .api-client-container .readyapi-api-client {
     width: 100%;
   }
 }
@@ -115,50 +115,50 @@ const showSideBar = ref(false)
   opacity: 1;
   overflow: hidden;
   pointer-events: all;
-  background: var(--scalar-background-1) !important;
-  border-radius: var(--scalar-radius-lg);
+  background: var(--readyapi-background-1) !important;
+  border-radius: var(--readyapi-radius-lg);
   height: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   --refs-sidebar-width: 280px;
 }
-.scalar-api-client__navigation {
+.readyapi-api-client__navigation {
   width: 100%;
   display: flex;
   align-items: center;
   padding: 11px 12px;
   height: var(--refs-header-height);
-  background-color: var(--scalar-background-1);
+  background-color: var(--readyapi-background-1);
   z-index: 10;
   position: sticky;
-  border-bottom: 1px solid var(--scalar-border-color);
+  border-bottom: 1px solid var(--readyapi-border-color);
   top: 0;
 }
 
-.scalar-api-client__close {
+.readyapi-api-client__close {
   appearance: none;
   border: none;
   outline: none;
   display: flex;
   align-items: center;
   background: transparent;
-  font-size: var(--scalar-small);
-  color: var(--scalar-color-1);
-  font-weight: var(--scalar-semibold);
+  font-size: var(--readyapi-small);
+  color: var(--readyapi-color-1);
+  font-weight: var(--readyapi-semibold);
 }
-.scalar-api-client__close:hover {
+.readyapi-api-client__close:hover {
   cursor: pointer;
 }
 .api-client-drawer {
-  background: var(--scalar-background-1);
+  background: var(--readyapi-background-1);
   height: calc(100% - 120px);
   width: calc(100% - 8px);
   max-width: 1390px;
   left: 50%;
   top: 50%;
   transform: translate3d(-50%, -50%, 0);
-  border-radius: var(--scalar-radius-lg);
+  border-radius: var(--readyapi-radius-lg);
   overflow: hidden;
   visibility: visible;
   position: fixed;
@@ -172,7 +172,7 @@ const showSideBar = ref(false)
     rgba(0, 0, 0, 0.04) 0px 1px 1px;
 }
 .dark-mode .api-client-drawer {
-  border: 1px solid var(--scalar-border-color);
+  border: 1px solid var(--readyapi-border-color);
   box-shadow:
     rgba(0, 0, 0, 0.15) 0px 4px 40px,
     rgba(0, 0, 0, 0.184) 0px 3px 20px,
@@ -225,7 +225,7 @@ const showSideBar = ref(false)
   background-color: color-mix(
     in srgb,
     rgba(0, 0, 0, 0.7),
-    var(--scalar-background-1)
+    var(--readyapi-background-1)
   );
 }
 @keyframes drawerexitfadein {
@@ -236,11 +236,11 @@ const showSideBar = ref(false)
     opacity: 1;
   }
 }
-.scalar-api-client-height {
+.readyapi-api-client-height {
   height: 100%;
   display: flex;
 }
-.scalar-api-client-height .sidebar {
+.readyapi-api-client-height .sidebar {
   flex: 1 1 0%;
   flex-grow: 1;
   flex-shrink: 1;
@@ -251,9 +251,9 @@ const showSideBar = ref(false)
   width: var(--refs-sidebar-width);
   max-width: var(--refs-sidebar-width);
   border-right: 1px solid
-    var(--scalar-sidebar-border-color, var(--scalar-border-color));
+    var(--readyapi-sidebar-border-color, var(--readyapi-border-color));
 }
-.scalar-api-client-states {
+.readyapi-api-client-states {
   display: flex;
   justify-content: space-between;
   padding: 12px;
@@ -262,27 +262,27 @@ const showSideBar = ref(false)
   top: 0;
   width: 100%;
 }
-.scalar-api-client-states-button {
+.readyapi-api-client-states-button {
   appearance: none;
   outline: none;
   border: none;
   min-height: 31px;
   display: flex;
   align-items: center;
-  font-weight: var(--scalar-semibold);
+  font-weight: var(--readyapi-semibold);
   gap: 6px;
   padding: 6px;
-  color: var(--scalar-color-3);
+  color: var(--readyapi-color-3);
   cursor: pointer;
-  border-radius: var(--scalar-radius);
+  border-radius: var(--readyapi-radius);
   background: transparent;
 }
-.scalar-api-client-states-button:hover {
-  color: var(--scalar-color-1);
+.readyapi-api-client-states-button:hover {
+  color: var(--readyapi-color-1);
 }
-.scalar-api-client-states-button:focus {
-  background: var(--scalar-background-2);
-  box-shadow: 0 0 0 1px var(--scalar-border-color);
+.readyapi-api-client-states-button:focus {
+  background: var(--readyapi-background-2);
+  box-shadow: 0 0 0 1px var(--readyapi-border-color);
 }
 @media (max-width: 1280px) {
   .api-client-drawer {
@@ -291,7 +291,7 @@ const showSideBar = ref(false)
   }
 }
 @media (max-width: 820px) {
-  .scalar-api-client-states-button__endpoints {
+  .readyapi-api-client-states-button__endpoints {
     opacity: 0;
     pointer-events: none;
   }

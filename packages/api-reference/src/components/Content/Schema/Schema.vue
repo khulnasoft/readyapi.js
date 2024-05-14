@@ -148,13 +148,13 @@ const handleClick = (e: MouseEvent) =>
 </template>
 <style scoped>
 .error {
-  background-color: var(--scalar-color-red);
+  background-color: var(--readyapi-color-red);
 }
 .schema-card {
   z-index: 0;
   position: relative;
-  font-size: var(--scalar-font-size-4);
-  color: var(--scalar-color-1);
+  font-size: var(--readyapi-font-size-4);
+  color: var(--readyapi-color-1);
 }
 
 .schema-card-title {
@@ -167,18 +167,18 @@ const handleClick = (e: MouseEvent) =>
   align-items: center;
   gap: 4px;
 
-  color: var(--scalar-color-2);
-  font-weight: var(--scalar-semibold);
-  font-size: var(--scalar-micro);
-  background: var(--scalar-background-1);
-  border-radius: var(--scalar-radius-lg);
+  color: var(--readyapi-color-2);
+  font-weight: var(--readyapi-semibold);
+  font-size: var(--readyapi-micro);
+  background: var(--readyapi-background-1);
+  border-radius: var(--readyapi-radius-lg);
   border-bottom: 1px solid transparent;
 }
 button.schema-card-title {
   cursor: pointer;
 }
 button.schema-card-title:hover {
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 }
 .schema-card-title-icon {
   margin-left: -4px;
@@ -193,7 +193,7 @@ button.schema-card-title:hover {
 
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  border-bottom: 1px solid var(--scalar-border-color);
+  border-bottom: 1px solid var(--readyapi-border-color);
 }
 .schema-properties-open > .schema-properties {
   width: fit-content;
@@ -213,8 +213,8 @@ button.schema-card-title:hover {
   display: flex;
   flex-direction: column;
 
-  border: 1px solid var(--scalar-border-color);
-  border-radius: var(--scalar-radius-lg);
+  border: 1px solid var(--readyapi-border-color);
+  border-radius: var(--readyapi-radius-lg);
 }
 
 .schema-card--compact {
@@ -226,7 +226,7 @@ button.schema-card-title:hover {
 }
 
 .schema-card-title--compact {
-  color: var(--scalar-color-3);
+  color: var(--readyapi-color-3);
   padding: 6px 10px;
   height: auto;
   border-bottom: none;
@@ -251,8 +251,8 @@ button.schema-card-title:hover {
   border: none;
 }
 :deep(.schema-card-description) p {
-  font-size: var(--scalar-mini, var(--scalar-paragraph));
-  color: var(--scalar-color-2);
+  font-size: var(--readyapi-mini, var(--readyapi-paragraph));
+  color: var(--readyapi-color-2);
   line-height: 1.5;
   margin-bottom: 0;
   display: block;

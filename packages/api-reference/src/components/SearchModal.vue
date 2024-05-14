@@ -6,8 +6,8 @@ import {
   ScalarSearchResultList,
 } from '@readyapi/components'
 import type { TransformedOperation } from '@readyapi/oas-utils'
+import type { OpenAPIV3_1 } from '@readyapi/openapi-parser'
 import { FlowModal, type ModalState } from '@readyapi/use-modal'
-import type { OpenAPIV3_1 } from '@scalar/openapi-parser'
 import { useMagicKeys, whenever } from '@vueuse/core'
 import Fuse from 'fuse.js'
 import { computed, ref, toRef, watch } from 'vue'
@@ -371,11 +371,11 @@ a {
   padding: 12px;
 }
 .ref-search-meta {
-  background: var(--scalar-background-3);
+  background: var(--readyapi-background-3);
   padding: 6px 12px;
-  font-size: var(--scalar-font-size-4);
-  color: var(--scalar-color-3);
-  font-weight: var(--scalar-semibold);
+  font-size: var(--readyapi-font-size-4);
+  color: var(--readyapi-color-3);
+  font-weight: var(--readyapi-semibold);
   display: flex;
   gap: 12px;
 }

@@ -184,7 +184,7 @@ onServerPrefetch(() => {
  */
 provideUseId(() => {
   const instance = getCurrentInstance()
-  const ATTR_KEY = 'scalar-instance-id'
+  const ATTR_KEY = 'readyapi-instance-id'
 
   if (!instance) return ATTR_KEY
   let instanceId = instance.uid
@@ -332,15 +332,15 @@ useDeprecationWarnings(props.configuration)
 </template>
 <style scoped>
 /* Configurable Layout Variables */
-.scalar-api-reference {
-  --refs-sidebar-width: var(--scalar-sidebar-width, 0px);
-  --refs-header-height: var(--scalar-header-height, 0px);
-  --refs-content-max-width: var(--scalar-content-max-width, 1540px);
+.readyapi-api-reference {
+  --refs-sidebar-width: var(--readyapi-sidebar-width, 0px);
+  --refs-header-height: var(--readyapi-header-height, 0px);
+  --refs-content-max-width: var(--readyapi-content-max-width, 1540px);
 }
 
-.scalar-api-reference.references-classic {
+.readyapi-api-reference.references-classic {
   /* Classic layout is wider */
-  --refs-content-max-width: var(--scalar-content-max-width, 1420px);
+  --refs-content-max-width: var(--readyapi-content-max-width, 1420px);
   min-height: 100dvh;
 }
 
@@ -374,7 +374,7 @@ useDeprecationWarnings(props.configuration)
     'navigation rendered'
     'footer footer';
 
-  background: var(--scalar-background-1);
+  background: var(--readyapi-background-1);
 }
 
 .references-header {
@@ -390,7 +390,7 @@ useDeprecationWarnings(props.configuration)
   grid-area: editor;
   display: flex;
   min-width: 0;
-  background: var(--scalar-background-1);
+  background: var(--readyapi-background-1);
   z-index: 1;
 }
 
@@ -402,9 +402,9 @@ useDeprecationWarnings(props.configuration)
   position: relative;
   grid-area: rendered;
   min-width: 0;
-  background: var(--scalar-background-1);
+  background: var(--readyapi-background-1);
 }
-.scalar-api-reference.references-classic,
+.readyapi-api-reference.references-classic,
 .references-classic .references-rendered {
   --full-height: fit-content !important;
   height: initial !important;
@@ -414,7 +414,7 @@ useDeprecationWarnings(props.configuration)
   position: sticky;
   top: var(--refs-header-height);
   height: calc(var(--full-height) - var(--refs-header-height));
-  background: var(--scalar-sidebar-background-1 var(--scalar-background-1));
+  background: var(--readyapi-sidebar-background-1 var(--readyapi-background-1));
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -441,7 +441,7 @@ useDeprecationWarnings(props.configuration)
 
 .references-sidebar {
   /* Set a default width if references are enabled */
-  --refs-sidebar-width: var(--scalar-sidebar-width, 280px);
+  --refs-sidebar-width: var(--readyapi-sidebar-width, 280px);
 }
 
 /* Footer */
@@ -511,7 +511,7 @@ useDeprecationWarnings(props.configuration)
     height: calc(var(--full-height) - var(--refs-header-height) + 1px);
     width: 100%;
 
-    border-top: 1px solid var(--scalar-border-color);
+    border-top: 1px solid var(--readyapi-border-color);
     display: flex;
     flex-direction: column;
   }

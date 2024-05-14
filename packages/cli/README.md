@@ -64,7 +64,7 @@ readyapi share
 readyapi share openapi.json
 ```
 
-This will upload your OpenAPI file to the [Readyapi Sandbox](https://sandbox.readyapi.khulnasoft.com/) to give you a public reference URL and a public URL to your OpenAPI JSON file.
+This will upload your OpenAPI file to the [Readyapi Sandbox](https://sandbox.scalar.com/) to give you a public reference URL and a public URL to your OpenAPI JSON file.
 
 ### reference
 

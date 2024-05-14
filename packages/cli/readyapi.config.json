@@ -1,0 +1,8 @@
+{
+  "references": [
+    {
+      "name": "API Reference",
+      "path": "./package.json"
+    }
+  ]
+}

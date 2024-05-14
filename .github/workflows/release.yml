@@ -54,7 +54,7 @@ jobs:
           # https://github.com/settings/tokens/new
           # Expiration: No expiration
           # Select: repo.*
-          GITHUB_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
           # https://www.npmjs.com/settings/YOUR_ACCOUNT_HANDLE/tokens/granular-access-tokens/new
           # Custom Expiration: 01-01-2100
           # Permissions: Read and Write
@@ -63,6 +63,6 @@ jobs:
       - name: Send bundle stats and build information to RelativeCI
         uses: relative-ci/agent-action@v2
         with:
-          key: ${{ secrets.RELATIVE_CI_KEY }}
+          key: ${{ secrets.ORG_REPO_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
           webpackStatsFile: ./packages/api-reference/dist/browser/webpack-stats.json

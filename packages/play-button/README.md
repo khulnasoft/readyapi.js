@@ -10,14 +10,14 @@ Add the Readyapi Play Button to your page
     <script
       id="readyapi-play-button-script"
       data-url="https://petstore3.swagger.io/api/v3/openapi.json"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@scalar/play-button"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@readyapi/play-button"></script>
 ```
 
-then add a button with the class and optional scalar-operation-id
+then add a button with the class and optional readyapi-operation-id
 
 ```
     <button
-      scalar-operation-id="getPetById"
+      readyapi-operation-id="getPetById"
       class="readyapi-play-button">Try it Out</button>
 
 ```

@@ -90,6 +90,6 @@ const onDragEnd = (draggingItem: DraggingItem, hoveredItem: HoveredItem) => {
 
 <style>
 :root {
-  --scalar-color-blue: #0000ff;
+  --readyapi-color-blue: #0000ff;
 }
 </style>

@@ -1,8 +1,8 @@
 // import { type ComputedRef, watch } from 'vue'
 import type { ReferenceConfiguration } from '../types'
 
-// const OLD_PROXY_URL = 'https://api.readyapi.khulnasoft.com/request-proxy'
-// const NEW_PROXY_URL = 'https://proxy.readyapi.khulnasoft.com'
+// const OLD_PROXY_URL = 'https://api.scalar.com/request-proxy'
+// const NEW_PROXY_URL = 'https://proxy.scalar.com'
 
 export function useDeprecationWarnings(configuration: ReferenceConfiguration) {
   // TODO: Enable once the new proxy is ready

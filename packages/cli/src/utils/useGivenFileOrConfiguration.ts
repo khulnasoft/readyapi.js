@@ -2,7 +2,7 @@ import kleur from 'kleur'
 
 import { readFile } from './readFile'
 
-export const CONFIG_FILE = 'scalar.config.json'
+export const CONFIG_FILE = 'readyapi.config.json'
 
 export function useGivenFileOrConfiguration(file?: string) {
   // If a specific file is given, use it.

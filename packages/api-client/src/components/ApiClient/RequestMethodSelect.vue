@@ -53,7 +53,7 @@ const supportedRequestMethods = [
   border: none;
   outline: none;
   cursor: pointer;
-  box-shadow: -2px 0 0 0 var(--scalar-background-3);
+  box-shadow: -2px 0 0 0 var(--readyapi-background-3);
   position: absolute;
   top: 0;
   left: 0;
@@ -72,23 +72,23 @@ const supportedRequestMethods = [
 .request-method {
   align-items: center;
   appearance: none;
-  background: var(--scalar-api-client-color, var(--scalar-background-3));
+  background: var(--readyapi-api-client-color, var(--readyapi-background-3));
   background: color-mix(
     in srgb,
-    var(--scalar-api-client-color, var(--scalar-background-3)),
+    var(--readyapi-api-client-color, var(--readyapi-background-3)),
     transparent 90%
   );
-  border-radius: var(--scalar-radius);
-  color: var(--scalar-api-client-color);
+  border-radius: var(--readyapi-radius);
+  color: var(--readyapi-api-client-color);
   display: flex;
   -webkit-appearance: none;
   padding: 0 12px;
   position: relative;
 }
 .request-method span {
-  font-family: var(--scalar-font-code);
+  font-family: var(--readyapi-font-code);
   font-size: 500;
-  font-size: var(--scalar-micro);
+  font-size: var(--readyapi-micro);
   text-transform: uppercase;
   display: flex;
   align-items: center;

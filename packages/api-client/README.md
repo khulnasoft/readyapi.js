@@ -55,7 +55,7 @@ console.log(activeRequest)
 const { setActiveRequest } = useRequestStore()
 
 setActiveRequest({
-  url: 'https://echo.readyapi.khulnasoft.com'
+  url: 'https://echo.scalar.com'
   type: 'GET,
   path: '/foobar'
 })

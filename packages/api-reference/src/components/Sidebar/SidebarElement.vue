@@ -141,15 +141,15 @@ const onAnchorClick = async (ev: Event) => {
   display: flex;
   gap: 6px;
 
-  color: var(--scalar-sidebar-color-2, var(--scalar-color-2));
-  font-size: var(--scalar-mini);
-  font-weight: var(--scalar-semibold);
+  color: var(--readyapi-sidebar-color-2, var(--readyapi-color-2));
+  font-size: var(--readyapi-mini);
+  font-weight: var(--readyapi-semibold);
   word-break: break-word;
   line-height: 1.385;
   max-width: 100%;
   position: relative;
   cursor: pointer;
-  border-radius: var(--scalar-radius);
+  border-radius: var(--readyapi-radius);
   flex: 1;
   padding-right: 9px;
   user-select: none;
@@ -165,42 +165,42 @@ const onAnchorClick = async (ev: Event) => {
 }
 .sidebar-heading:hover {
   background: var(
-    --scalar-sidebar-item-hover-background,
-    var(--scalar-background-2)
+    --readyapi-sidebar-item-hover-background,
+    var(--readyapi-background-2)
   );
 }
 .sidebar-heading:hover .sidebar-heading-link-title {
-  color: var(--scalar-sidebar-item-hover-color);
+  color: var(--readyapi-sidebar-item-hover-color);
 }
 
 .active_page.sidebar-heading:hover,
 .active_page.sidebar-heading {
-  color: var(--scalar-sidebar-color-active, var(--scalar-color-accent));
+  color: var(--readyapi-sidebar-color-active, var(--readyapi-color-accent));
 
   background: var(
-    --scalar-sidebar-item-active-background,
-    var(--scalar-background-accent)
+    --readyapi-sidebar-item-active-background,
+    var(--readyapi-background-accent)
   );
 }
 .active_page.sidebar-heading:hover .sidebar-heading-link-title {
-  color: var(--scalar-sidebar-color-active, var(--scalar-color-accent));
+  color: var(--readyapi-sidebar-color-active, var(--readyapi-color-accent));
 }
 .sidebar-indent-nested .sidebar-indent-nested .sidebar-heading:before {
   content: '';
   position: absolute;
   top: 0;
-  left: calc((var(--scalar-sidebar-level) * 12px));
+  left: calc((var(--readyapi-sidebar-level) * 12px));
   width: 1px;
   height: 100%;
-  background: var(--scalar-sidebar-indent-border);
+  background: var(--readyapi-sidebar-indent-border);
 }
 .sidebar-indent-nested .sidebar-indent-nested .sidebar-heading:hover:before {
-  background: var(--scalar-sidebar-indent-border-hover);
+  background: var(--readyapi-sidebar-indent-border-hover);
 }
 .sidebar-indent-nested
   .sidebar-indent-nested
   .active_page.sidebar-heading:before {
-  background: var(--scalar-sidebar-indent-border-active);
+  background: var(--readyapi-sidebar-indent-border-active);
 }
 
 .sidebar-heading-link {
@@ -254,10 +254,10 @@ const onAnchorClick = async (ev: Event) => {
   border: none;
   color: currentColor;
   padding: 3px;
-  color: var(--scalar-sidebar-color-2);
+  color: var(--readyapi-sidebar-color-2);
 }
 .active_page .toggle-nested-icon {
-  color: var(--scalar-sidebar-color-active, var(--scalar-color-accent));
+  color: var(--readyapi-sidebar-color-active, var(--readyapi-color-accent));
 }
 
 .toggle-nested-icon:hover,
@@ -290,13 +290,13 @@ const onAnchorClick = async (ev: Event) => {
   opacity: 1;
 }
 .sidebar-heading:has(~ .action-menu:hover) {
-  color: var(--scalar-sidebar-color-1, var(--scalar-color-1));
+  color: var(--readyapi-sidebar-color-1, var(--readyapi-color-1));
   background: var(
-    --scalar-sidebar-item-hover-background,
-    var(--scalar-background-2)
+    --readyapi-sidebar-item-hover-background,
+    var(--readyapi-background-2)
   );
 }
 .sidebar-group-item__folder {
-  color: var(--scalar-sidebar-color-1, var(--scalar-color-1));
+  color: var(--readyapi-sidebar-color-1, var(--readyapi-color-1));
 }
 </style>

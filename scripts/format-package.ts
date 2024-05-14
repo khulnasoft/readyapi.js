@@ -62,7 +62,7 @@ const fallbacks: Record<string, unknown> = {
   },
 }
 
-/** Format a package json file and validate scalar-org linting rules */
+/** Format a package json file and validate readyapi-org linting rules */
 async function formatPackage(filepath: string) {
   const file = await fs.readFile(filepath, 'utf-8').catch(() => null)
 
@@ -79,7 +79,7 @@ async function formatPackage(filepath: string) {
     )
   }
   if (
-    !data.name.startsWith('@scalar/') &&
+    !data.name.startsWith('@readyapi/') &&
     !data.name.startsWith('@readyapi-examples/')
   ) {
     printColor(

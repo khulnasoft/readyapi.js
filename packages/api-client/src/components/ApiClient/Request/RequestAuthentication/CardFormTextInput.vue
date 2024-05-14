@@ -57,8 +57,8 @@ defineOptions({
   padding: 9px;
   border: 0;
   outline: none;
-  font-size: var(--scalar-mini);
-  color: var(--scalar-color-2);
+  font-size: var(--readyapi-mini);
+  color: var(--readyapi-color-2);
   width: 100%;
   background: transparent;
   appearance: none;
@@ -66,24 +66,24 @@ defineOptions({
   left: 0;
 }
 .card-form-input label {
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
   width: fit-content;
   white-space: nowrap;
   cursor: text;
   padding: 9px 0 9px 9px;
-  border-radius: var(--scalar-radius);
-  font-weight: var(--scalar-semibold);
+  border-radius: var(--readyapi-radius);
+  font-weight: var(--readyapi-semibold);
 }
 .card-form-input input {
   position: relative;
   z-index: 99;
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 }
 .card-form-input + .card-form-input {
-  border-left: 1px solid var(--scalar-border-color);
+  border-left: 1px solid var(--readyapi-border-color);
 }
 .card-form-input input:not(:placeholder-shown) + label {
-  color: var(--scalar-color-2);
+  color: var(--readyapi-color-2);
 }
 
 .password-mask {

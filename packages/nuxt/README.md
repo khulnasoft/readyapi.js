@@ -7,7 +7,7 @@
 
 This plugin provides an easy way to render a beautiful API reference based on a OpenAPI/Swagger file with Nuxt.
 
-[![Screenshot of an API Reference](https://github.com/khulnasoft/readyapi.js/assets/6176314/178f4e4c-afdf-4c6a-bc72-128ea1786350)](https://docs.readyapi.khulnasoft.com/swagger-editor)
+[![Screenshot of an API Reference](https://github.com/khulnasoft/readyapi.js/assets/6176314/178f4e4c-afdf-4c6a-bc72-128ea1786350)](https://docs.scalar.com/swagger-editor)
 
 ## Quick Setup
 
@@ -61,11 +61,11 @@ export default defineNuxtConfig({
     metaData: {
       title: 'API Documentation by Scalar',
     },
-    proxy: 'https://api.readyapi.khulnasoft.com/request-proxy',
+    proxy: 'https://api.scalar.com/request-proxy',
     searchHotKey: 'k',
     showSidebar: true,
     pathRouting: {
-      basePath: '/scalar',
+      basePath: '/readyapi',
     },
     spec: {
       url: 'https://cdn.scalar.com/spec/openapi_petstore.json',
@@ -85,7 +85,7 @@ export default defineNuxtConfig({
     metaData: {
       title: 'API Documentation by Scalar',
     },
-    proxy: 'https://api.readyapi.khulnasoft.com/request-proxy',
+    proxy: 'https://api.scalar.com/request-proxy',
     configurations: [
       {
         spec: {

@@ -23,7 +23,7 @@ withDefaults(
 )
 
 const variants = cva({
-  base: 'scalar-icon-button grid aspect-square cursor-pointer rounded',
+  base: 'readyapi-icon-button grid aspect-square cursor-pointer rounded',
   variants: {
     size: {
       xs: 'size-3.5 p-0.5',

@@ -12,19 +12,19 @@
   "scripts": {
     "build": "tsc --p tsconfig.json && tsc-alias -p tsconfig.json",
     "dev": "nodemon --exec \"vite-node src/index.ts\" --ext ts --quiet --watch ../../packages/hono-api-reference --watch ./",
-    "docker:build": "build --platform=linux/amd64 -t ${image_name} --build-arg=\"BASE_IMAGE=scalar-base\" -f ./examples/hono-api-reference/Dockerfile ."
+    "docker:build": "build --platform=linux/amd64 -t ${image_name} --build-arg=\"BASE_IMAGE=readyapi-base\" -f ./examples/hono-api-reference/Dockerfile ."
   },
   "type": "module",
   "dependencies": {
-    "@hono/node-server": "^1.11.0",
+    "@hono/node-server": "^1.11.1",
     "@hono/zod-openapi": "^0.8.6",
     "@readyapi/hono-api-reference": "workspace:*",
-    "hono": "^4.2.7"
+    "hono": "^4.3.6"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1",
-    "tsc-alias": "^1.8.8",
-    "vite": "^5.2.10",
-    "vite-node": "^1.3.1"
+    "nodemon": "^3.1.0",
+    "tsc-alias": "^1.8.10",
+    "vite": "^5.2.11",
+    "vite-node": "^1.6.0"
   }
 }

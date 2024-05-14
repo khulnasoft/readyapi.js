@@ -31,6 +31,6 @@
 }
 .references-classic-header-icon {
   height: 24px;
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 }
 </style>

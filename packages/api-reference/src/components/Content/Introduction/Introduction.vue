@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import type { OpenAPIV2, OpenAPIV3, OpenAPIV3_1 } from '@scalar/openapi-parser'
+import type {
+  OpenAPIV2,
+  OpenAPIV3,
+  OpenAPIV3_1,
+} from '@readyapi/openapi-parser'
 import GithubSlugger from 'github-slugger'
 import { computed } from 'vue'
 
@@ -71,9 +75,9 @@ const formattedSpecTitle = computed(() => {
   word-wrap: break-word;
 }
 .loading {
-  background: var(--scalar-background-3);
+  background: var(--readyapi-background-3);
   animation: loading-skeleton 1.5s infinite alternate;
-  border-radius: var(--scalar-radius-lg);
+  border-radius: var(--readyapi-radius-lg);
 }
 .badges {
   display: flex;

@@ -41,68 +41,68 @@ import { ScalarButton, ScalarTextField } from '@readyapi/components'
 
 ## Theme variables
 
-To override the theme, feel free to set the `--scalar-x` versions of these variables.
+To override the theme, feel free to set the `--readyapi-x` versions of these variables.
 
 ```ts
 export const theme = {
   boxShadow: {
     label:
-      '0 0 2px 2px var(--scalar-background-1)',
-    DEFAULT: 'var(--scalar-shadow-1)',
-    md: 'var(--scalar-shadow-2)',
+      '0 0 2px 2px var(--readyapi-background-1)',
+    DEFAULT: 'var(--readyapi-shadow-1)',
+    md: 'var(--readyapi-shadow-2)',
     sm: 'rgba(0, 0, 0, 0.09) 0px 1px 4px',
     none: '0 0 #0000',
   },
   colors: {
-    'fore-1': 'var(--scalar-color-1)',
-    'fore-2': 'var(--scalar-color-2)',
-    'fore-3': 'var(--scalar-color-3)',
-    'accent': 'var(--scalar-color-accent)',
-    'back-1': 'var(--scalar-background-1)',
-    'back-2': 'var(--scalar-background-2)',
-    'back-3': 'var(--scalar-background-3)',
+    'fore-1': 'var(--readyapi-color-1)',
+    'fore-2': 'var(--readyapi-color-2)',
+    'fore-3': 'var(--readyapi-color-3)',
+    'accent': 'var(--readyapi-color-accent)',
+    'back-1': 'var(--readyapi-background-1)',
+    'back-2': 'var(--readyapi-background-2)',
+    'back-3': 'var(--readyapi-background-3)',
     'back-accent':
-      'var(--scalar-background-accent)',
+      'var(--readyapi-background-accent)',
 
     'backdrop': 'rgba(0, 0, 0, 0.44)',
-    'border': 'var(--scalar-border-color)',
+    'border': 'var(--readyapi-border-color)',
 
-    'back-btn-1': 'var(--scalar-button-1)',
+    'back-btn-1': 'var(--readyapi-button-1)',
     'fore-btn-1':
-      'var(--scalar-button-1-color)',
+      'var(--readyapi-button-1-color)',
     'hover-btn-1':
-      'var(--scalar-button-1-hover)',
+      'var(--readyapi-button-1-hover)',
 
     'white': '#FFF',
-    'green': 'var(--scalar-color-green)',
-    'red': 'var(--scalar-color-red)',
-    'yellow': 'var(--scalar-color-yellow)',
-    'blue': 'var(--scalar-color-blue)',
-    'orange': 'var(--scalar-color-orange)',
-    'purple': 'var(--scalar-color-purple)',
-    'error': 'var(--scalar-error-color)',
-    'ghost': 'var(--scalar-color-ghost)',
+    'green': 'var(--readyapi-color-green)',
+    'red': 'var(--readyapi-color-red)',
+    'yellow': 'var(--readyapi-color-yellow)',
+    'blue': 'var(--readyapi-color-blue)',
+    'orange': 'var(--readyapi-color-orange)',
+    'purple': 'var(--readyapi-color-purple)',
+    'error': 'var(--readyapi-error-color)',
+    'ghost': 'var(--readyapi-color-ghost)',
     'transparent': 'transparent',
   },
   fontSize: {
-    xxs: 'var(--scalar-micro, var(--scalar-font-size-5))',
-    xs: 'var(--scalar-mini, var(--scalar-font-size-4))',
-    sm: 'var(--scalar-small, var(--scalar-font-size-3))',
-    base: 'var(--scalar-paragraph, var(--scalar-font-size-2))',
-    lg: 'var(--scalar-font-size-1)',
+    xxs: 'var(--readyapi-micro, var(--readyapi-font-size-5))',
+    xs: 'var(--readyapi-mini, var(--readyapi-font-size-4))',
+    sm: 'var(--readyapi-small, var(--readyapi-font-size-3))',
+    base: 'var(--readyapi-paragraph, var(--readyapi-font-size-2))',
+    lg: 'var(--readyapi-font-size-1)',
   },
 } as const
 
 export const extend = {
   borderRadius: {
-    DEFAULT: 'var(--scalar-radius)',
-    md: 'var(--scalar-radius)',
-    lg: 'var(--scalar-radius-lg)',
-    xl: 'var(--scalar-radius-xl)',
+    DEFAULT: 'var(--readyapi-radius)',
+    md: 'var(--readyapi-radius)',
+    lg: 'var(--readyapi-radius-lg)',
+    xl: 'var(--readyapi-radius-xl)',
   },
   fontWeight: {
-    medium: 'var(--scalar-font-medium)',
-    bold: 'var(-scalar-font-bold)',
+    medium: 'var(--readyapi-font-medium)',
+    bold: 'var(-readyapi-font-bold)',
   },
   maxWidth: {
     'screen-xs': '480px',

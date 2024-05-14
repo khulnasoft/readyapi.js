@@ -55,7 +55,7 @@ const isHovered = useElementHover(button)
 </template>
 <style scoped>
 .section-wrapper {
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 
   padding-top: 12px;
   margin-top: -12px;
@@ -64,13 +64,13 @@ const isHovered = useElementHover(button)
   display: flex;
   flex-direction: column;
 
-  border-radius: var(--scalar-radius-lg);
-  background: var(--scalar-background-2);
+  border-radius: var(--readyapi-radius-lg);
+  background: var(--readyapi-background-2);
 }
 
 .section-accordion-transparent {
   background: transparent;
-  border: 1px solid var(--scalar-border-color);
+  border: 1px solid var(--readyapi-border-color);
 }
 
 .section-accordion-button {
@@ -91,7 +91,7 @@ const isHovered = useElementHover(button)
   display: flex;
   align-items: center;
   gap: 6px;
-  color: var(--scalar-color-3);
+  color: var(--readyapi-color-3);
 }
 
 .section-accordion-chevron {
@@ -99,21 +99,21 @@ const isHovered = useElementHover(button)
   width: 20px;
   cursor: pointer;
   opacity: 1;
-  color: var(--scalar-color-3);
+  color: var(--readyapi-color-3);
 }
 .section-accordion-button:hover .section-accordion-chevron {
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 }
 .section-accordion-content {
-  border-top: 1px solid var(--scalar-border-color);
+  border-top: 1px solid var(--readyapi-border-color);
   display: flex;
   flex-direction: column;
 }
 
 .section-accordion-description {
-  font-weight: var(--scalar-semibold);
-  font-size: var(--scalar-mini);
-  color: var(--scalar-color--1);
+  font-weight: var(--readyapi-semibold);
+  font-size: var(--readyapi-mini);
+  color: var(--readyapi-color--1);
   padding: 10px 12px 0px 12px;
 }
 .section-accordion-content-card :deep(.property:last-of-type) {

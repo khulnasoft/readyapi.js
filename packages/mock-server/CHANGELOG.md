@@ -488,7 +488,7 @@
 
 ### Minor Changes
 
-- a866e91: refactor: switch to @scalar/openapi-parser
+- a866e91: refactor: switch to @readyapi/openapi-parser
 
 ### Patch Changes
 

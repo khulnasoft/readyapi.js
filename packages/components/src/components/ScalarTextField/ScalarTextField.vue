@@ -23,7 +23,7 @@ const props = withDefaults(
   }>(),
   {
     emitOnBlur: true,
-    labelShadowColor: 'var(--scalar-background-2)',
+    labelShadowColor: 'var(--readyapi-background-2)',
     disableTrim: false,
   },
 )
@@ -33,12 +33,12 @@ const emit = defineEmits<{
 }>()
 
 const textField = cva({
-  base: 'scalar-input-wrapper relative flex items-center rounded border border-solid border-border',
+  base: 'readyapi-input-wrapper relative flex items-center rounded border border-solid border-border',
   variants: {
     focus: {
-      true: 'scalar-input-wrapper-focus border-fore-3 has-actv-btn:border has-actv-btn:border-border',
+      true: 'readyapi-input-wrapper-focus border-fore-3 has-actv-btn:border has-actv-btn:border-border',
     },
-    error: { true: 'scalar-input-wrapper-error border-error' },
+    error: { true: 'readyapi-input-wrapper-error border-error' },
   },
 })
 
@@ -126,7 +126,7 @@ onMounted(() => {
         v-if="label"
         :class="
           cx(
-            'scalar-input-label pointer-events-none absolute left-0 top-0 mx-2 my-3 px-1 text-xs',
+            'readyapi-input-label pointer-events-none absolute left-0 top-0 mx-2 my-3 px-1 text-xs',
             'shadow-current z-10 origin-top-left rounded text-fore-3 transition-transform',
           )
         "
@@ -155,53 +155,53 @@ onMounted(() => {
   </div>
 </template>
 <style scoped>
-.scalar-input:not(:placeholder-shown),
-.scalar-input-wrapper-focus .scalar-input {
+.readyapi-input:not(:placeholder-shown),
+.readyapi-input-wrapper-focus .readyapi-input {
   opacity: 1;
   transition: opacity 0.2s ease-in-out 0.15s;
 }
-.scalar-input-wrapper-focus .scalar-input-label {
-  color: var(--scalar-color-1);
+.readyapi-input-wrapper-focus .readyapi-input-label {
+  color: var(--readyapi-color-1);
 }
-.scalar-input-wrapper-error .scalar-input-label {
-  color: var(--scalar-color-error-color);
+.readyapi-input-wrapper-error .readyapi-input-label {
+  color: var(--readyapi-color-error-color);
 }
-.scalar-input::selection {
-  color: var(--scalar-color-1);
+.readyapi-input::selection {
+  color: var(--readyapi-color-1);
   background: rgba(255, 165, 88, 0.35);
 }
-.scalar-input:has(+ .scalar-input-label) {
+.readyapi-input:has(+ .readyapi-input-label) {
   opacity: 0;
 }
-.scalar-input:not(:placeholder-shown),
-.scalar-input-wrapper-focus .scalar-input {
+.readyapi-input:not(:placeholder-shown),
+.readyapi-input-wrapper-focus .readyapi-input {
   opacity: 1;
   transition: opacity 0.2s ease-in-out 0.15s;
 }
-.scalar-input:-webkit-autofill,
-.scalar-input:-webkit-autofill:hover,
-.scalar-input:-webkit-autofill:focus,
-.scalar-input:-webkit-autofill:active,
-.scalar-input:focus-within:-webkit-autofill,
-.scalar-input:focus-within:-webkit-autofill:hover,
-.scalar-input:focus-within:-webkit-autofill:focus,
-.scalar-input:focus-within:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0px 1000px var(--scalar-background-1) inset !important;
-  -webkit-text-fill-color: var(--scalar-color-1);
-  color: var(--scalar-color-1);
-  border-radius: var(--scalar-radius);
+.readyapi-input:-webkit-autofill,
+.readyapi-input:-webkit-autofill:hover,
+.readyapi-input:-webkit-autofill:focus,
+.readyapi-input:-webkit-autofill:active,
+.readyapi-input:focus-within:-webkit-autofill,
+.readyapi-input:focus-within:-webkit-autofill:hover,
+.readyapi-input:focus-within:-webkit-autofill:focus,
+.readyapi-input:focus-within:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px var(--readyapi-background-1) inset !important;
+  -webkit-text-fill-color: var(--readyapi-color-1);
+  color: var(--readyapi-color-1);
+  border-radius: var(--readyapi-radius);
 }
-.scalar-input-wrapper-focus .scalar-input-label,
-.scalar-input:not(:placeholder-shown) + .scalar-input-label {
+.readyapi-input-wrapper-focus .readyapi-input-label,
+.readyapi-input:not(:placeholder-shown) + .readyapi-input-label {
   transform: translate3d(0, -20px, 0) scale(0.8);
   transform-origin: top left;
 }
-.scalar-input-wrapper-focus .scalar-input-label,
-.scalar-input:not(:placeholder-shown) + .scalar-input-label {
+.readyapi-input-wrapper-focus .readyapi-input-label,
+.readyapi-input:not(:placeholder-shown) + .readyapi-input-label {
   transform: translate3d(0, -20px, 0) scale(0.8);
   transform-origin: top left;
 }
-.scalar-input-wrapper-focus:has(button:active) .scalar-input-label {
-  color: var(--scalar-color-3) !important;
+.readyapi-input-wrapper-focus:has(button:active) .readyapi-input-label {
+  color: var(--readyapi-color-3) !important;
 }
 </style>

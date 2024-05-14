@@ -7,7 +7,7 @@
  *
  * {{ packageName }} {{ version }}
  *
- * Website: https://readyapi.khulnasoft.com
+ * Website: https://scalar.com
  * GitHub:  https://github.com/khulnasoft/readyapi.js
  * License: https://github.com/khulnasoft/readyapi.js/blob/main/LICENSE
 **/

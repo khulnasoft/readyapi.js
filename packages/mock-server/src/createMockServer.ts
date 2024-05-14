@@ -1,5 +1,5 @@
 import { type Operation, getExampleFromSchema } from '@readyapi/oas-utils'
-import { openapi } from '@scalar/openapi-parser'
+import { openapi } from '@readyapi/openapi-parser'
 import { type Context, Hono } from 'hono'
 
 import { routeFromPath } from './utils'

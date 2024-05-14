@@ -53,16 +53,16 @@
   ],
   "module": "dist/index.js",
   "dependencies": {
-    "yaml": "^2.4.1"
+    "yaml": "^2.4.2"
   },
   "devDependencies": {
     "@readyapi/build-tooling": "workspace:*",
-    "@scalar/openapi-parser": "^0.3.2",
+    "@readyapi/openapi-parser": "^0.3.3",
     "axios": "^1.6.8",
     "httpsnippet-lite": "^3.0.5",
-    "tsc-alias": "^1.8.8",
-    "vite": "^5.2.10",
-    "vitest": "^1.5.0"
+    "tsc-alias": "^1.8.10",
+    "vite": "^5.2.11",
+    "vitest": "^1.6.0"
   },
   "peerDependencies": {
     "axios": "^1.5"

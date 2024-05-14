@@ -9,7 +9,7 @@ import {
   getParametersFromOperation,
   getRequestFromOperation,
 } from '@readyapi/oas-utils'
-import type { OpenAPIV3 } from '@scalar/openapi-parser'
+import type { OpenAPIV3 } from '@readyapi/openapi-parser'
 
 import type { ServerState } from '../types'
 import { getUrlFromServerState } from './'

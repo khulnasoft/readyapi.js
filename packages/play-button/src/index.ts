@@ -5,13 +5,13 @@
 import { ApiClientModal, openClientFor, parse } from '@readyapi/api-reference'
 import { createApp, h, reactive } from 'vue'
 
-const specScriptTag = document.getElementById('scalar-play-button-script')
-const testButtons = document.getElementsByClassName('scalar-play-button')
+const specScriptTag = document.getElementById('readyapi-play-button-script')
+const testButtons = document.getElementsByClassName('readyapi-play-button')
 const specElement = document.querySelector('[data-spec]')
 const specUrlElement = document.querySelector('[data-spec-url]')
 
 const getSpecUrl = () => {
-  // <script id="api-reference" data-url="/scalar.json" />
+  // <script id="api-reference" data-url="/readyapi.json" />
   if (specScriptTag) {
     const urlFromScriptTag = specScriptTag.getAttribute('data-url')?.trim()
 
@@ -20,10 +20,10 @@ const getSpecUrl = () => {
     }
   }
 
-  // <div data-spec-url="/scalar.json" />
+  // <div data-spec-url="/readyapi.json" />
   if (specUrlElement) {
     console.warn(
-      '[@scalar/play-button] The [data-spec-url] HTML API is deprecated. Use the new <script id="api-reference" data-url="/scalar.json" /> API instead.',
+      '[@readyapi/play-button] The [data-spec-url] HTML API is deprecated. Use the new <script id="api-reference" data-url="/readyapi.json" /> API instead.',
     )
     const urlFromSpecUrlElement = specUrlElement.getAttribute('data-spec-url')
 
@@ -36,7 +36,7 @@ const getSpecUrl = () => {
 }
 
 const getProxyUrl = () => {
-  // <script id="api-reference" data-proxy-url="https://api.readyapi.khulnasoft.com/request-proxy">…</script>
+  // <script id="api-reference" data-proxy-url="https://api.scalar.com/request-proxy">…</script>
   if (specScriptTag) {
     const proxyUrl = specScriptTag.getAttribute('data-proxy-url')
 
@@ -106,7 +106,7 @@ if (!specUrlElement && !specElement && !specScriptTag) {
       _app.mount(container)
 
       for (const testButton of testButtons) {
-        const operationId = testButton.getAttribute('scalar-operation-id')
+        const operationId = testButton.getAttribute('readyapi-operation-id')
         const specifiedOperation = parsedSpec.tags?.[0]?.operations?.find(
           (op) => op.operationId === operationId,
         )

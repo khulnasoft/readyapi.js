@@ -31,7 +31,7 @@
   "type": "module",
   "devDependencies": {
     "@readyapi/build-tooling": "workspace:*",
-    "tsc-alias": "^1.8.8",
-    "vite": "^5.2.10"
+    "tsc-alias": "^1.8.10",
+    "vite": "^5.2.11"
   }
 }

@@ -32,7 +32,7 @@ defineProps<{
 <style scoped>
 /* Specificity bump */
 .table-row-generated.table-row-generated :deep(*) {
-  color: var(--scalar-color-3);
+  color: var(--readyapi-color-3);
 }
 .table-row-generated.table-row-generated :deep(input) {
   pointer-events: none;

@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import type { OpenAPIV2, OpenAPIV3, OpenAPIV3_1 } from '@scalar/openapi-parser'
+import type {
+  OpenAPIV2,
+  OpenAPIV3,
+  OpenAPIV3_1,
+} from '@readyapi/openapi-parser'
 import { computed } from 'vue'
 
 import { useNavState } from '../../../hooks'
@@ -84,14 +88,14 @@ const { getModelId } = useNavState()
   align-items: center;
   font-size: 20px;
   padding-left: 6px;
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 }
 .reference-models-label {
-  font-size: var(--scalar-mini);
+  font-size: var(--readyapi-mini);
 }
 
 /* Style the "icon" */
 .reference-models-label :deep(em) {
-  font-weight: var(--scalar-bold);
+  font-weight: var(--readyapi-bold);
 }
 </style>

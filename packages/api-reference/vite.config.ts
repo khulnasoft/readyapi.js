@@ -23,7 +23,7 @@ export default defineConfig({
         'vue',
         'prismjs',
         ...Object.keys(pkg.dependencies || {}).filter(
-          (item) => !item.startsWith('@scalar'),
+          (item) => !item.startsWith('@readyapi'),
         ),
       ],
     },

@@ -7,37 +7,37 @@ defineProps<CardContentProps>()
   <div
     class="readyapi-card-content"
     :class="{
-      'scalar-card--muted': muted,
-      'scalar-card--contrast': contrast,
-      'scalar-card--frameless': frameless,
-      'scalar-card--transparent': transparent,
-      'scalar-card--borderless': borderless,
+      'readyapi-card--muted': muted,
+      'readyapi-card--contrast': contrast,
+      'readyapi-card--frameless': frameless,
+      'readyapi-card--transparent': transparent,
+      'readyapi-card--borderless': borderless,
     }">
     <slot />
   </div>
 </template>
 <style scoped>
-.scalar-card-content {
+.readyapi-card-content {
   overflow: auto;
-  border-bottom: 1px solid var(--scalar-border-color);
+  border-bottom: 1px solid var(--readyapi-border-color);
 }
-.scalar-card-content :deep(.simple-table .simple-header) {
+.readyapi-card-content :deep(.simple-table .simple-header) {
   display: none;
 }
-.scalar-card-content:last-of-type,
-.scalar-card-content.scalar-card--borderless {
+.readyapi-card-content:last-of-type,
+.readyapi-card-content.readyapi-card--borderless {
   border-bottom: none;
 }
-.scalar-card--muted {
-  background: var(--scalar-background-2);
+.readyapi-card--muted {
+  background: var(--readyapi-background-2);
 }
-.scalar-card--contrast {
-  background: var(--scalar-background-3);
+.readyapi-card--contrast {
+  background: var(--readyapi-background-3);
 }
-.scalar-card--frameless {
+.readyapi-card--frameless {
   padding: 0;
 }
-.scalar-card--transparent {
-  background: var(--scalar-background-1);
+.readyapi-card--transparent {
+  background: var(--readyapi-background-1);
 }
 </style>

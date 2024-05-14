@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     },
 
     pathRouting: {
-      basePath: '/scalar',
+      basePath: '/readyapi',
     },
   },
   nitro: {

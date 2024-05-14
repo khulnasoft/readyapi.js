@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { ScalarIcon } from '@readyapi/components'
-import type { OpenAPIV3, OpenAPIV3_1 } from '@scalar/openapi-parser'
+import type { OpenAPIV3, OpenAPIV3_1 } from '@readyapi/openapi-parser'
 import { computed, onMounted, onServerPrefetch } from 'vue'
 
 import { useAuthenticationStore } from '../../../../stores'
@@ -137,20 +137,20 @@ const keys = computed(() => Object.keys(props.value ?? {}))
 .security-scheme-selector {
   position: relative;
   display: flex;
-  border-radius: var(--scalar-radius);
-  color: var(--scalar-color-2);
+  border-radius: var(--readyapi-radius);
+  color: var(--readyapi-color-2);
   display: flex;
   align-items: center;
   gap: 4px;
   cursor: pointer;
 }
 .security-scheme-selector:hover {
-  color: var(--scalar-color-1);
+  color: var(--readyapi-color-1);
 }
 .security-scheme-label {
-  color: var(--scalar-color-2);
-  font-size: var(--scalar-mini);
-  font-weight: var(--scalar-semibold);
+  color: var(--readyapi-color-2);
+  font-size: var(--readyapi-mini);
+  font-weight: var(--readyapi-semibold);
 }
 .security-scheme-selector select {
   position: absolute;

@@ -32,7 +32,7 @@ const changeTab = (index: number) => {
   padding: 9px 12px;
   overflow: auto;
 }
-.scalar-card-header-tabs {
+.readyapi-card-header-tabs {
   padding: 0;
 }
 </style>

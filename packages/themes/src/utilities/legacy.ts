@@ -1,7 +1,7 @@
 /** The legacy -> updated CSS variable prefix pairs */
 export const PREFIX_MIGRATIONS = [
-  ['--theme-', '--scalar-'],
-  ['--sidebar-', '--scalar-sidebar-'],
+  ['--theme-', '--readyapi-'],
+  ['--sidebar-', '--readyapi-sidebar-'],
 ]
 
 export const LEGACY_PREFIXES = PREFIX_MIGRATIONS.map(([legacy]) => legacy)
