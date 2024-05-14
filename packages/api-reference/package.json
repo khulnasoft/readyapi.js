@@ -10,41 +10,120 @@
     "url": "https://github.com/khulnasoft/readyapi.js.git"
   },
   "keywords": [
-    "api-reference"
+    "component",
+    "documentation",
+    "openapi",
+    "reference",
+    "spec",
+    "swagger",
+    "vue",
+    "vue3"
   ],
-  "version": "0.0.1",
+  "version": "1.22.16",
   "engines": {
     "node": ">=18"
   },
   "scripts": {
-    "build": "vite build && pnpm types:build && tsc-alias -p tsconfig.build.json",
+    "build": "pnpm build:default && pnpm build:standalone && pnpm types:build && tsc-alias -p tsconfig.build.json",
+    "build:default": "vite build",
+    "build:standalone": "vite build -c vite.standalone.config.ts",
+    "build:storybook": "storybook build",
     "dev": "vite",
+    "dev:standalone": "vite -c vite.standalone.config.ts",
     "lint:check": "eslint .",
     "lint:fix": "eslint .  --fix",
     "preview": "vite preview",
+    "preview:standalone": "http-server",
+    "storybook": "storybook dev -p 6005",
     "test": "vitest",
     "types:build": "vue-tsc -p tsconfig.build.json",
     "types:check": "vue-tsc --noEmit --skipLibCheck --composite false"
   },
   "type": "module",
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
+  "types": "dist/index.d.ts",
   "exports": {
-    "import": "./dist/index.js"
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./index.css": {
+      "import": "./dist/index.css",
+      "require": "./dist/index.css"
+    }
   },
   "files": [
     "dist",
+    "!dist/webpack-stats.json",
     "CHANGELOG.md"
   ],
-  "module": "dist/index.js",
+  "browser": "./dist/browser/standalone.js",
+  "module": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khulnasoft/readyapi.js.git",
+    "directory": "packages/api-reference"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.20",
+    "@readyapi/api-client": "workspace:*",
+    "@readyapi/components": "workspace:*",
+    "@readyapi/galaxy": "workspace:*",
+    "@readyapi/oas-utils": "workspace:*",
+    "@readyapi/openapi-parser": "^0.3.2",
+    "@readyapi/themes": "workspace:*",
+    "@readyapi/use-modal": "workspace:*",
+    "@readyapi/use-tooltip": "workspace:*",
+    "@unhead/schema": "^1.9.5",
+    "@vcarl/remark-headings": "^0.1.0",
+    "@vueuse/core": "^10.9.0",
+    "axios": "^1.6.8",
+    "fuse.js": "^6.6.2",
+    "github-slugger": "^2.0.0",
+    "httpsnippet-lite": "^3.0.5",
+    "postcss-nested": "^6.0.1",
+    "rehype-external-links": "^3.0.0",
+    "rehype-format": "^5.0.0",
+    "rehype-highlight": "^7.0.0",
+    "rehype-raw": "^7.0.0",
+    "rehype-sanitize": "^6.0.0",
+    "rehype-stringify": "^10.0.0",
+    "remark-gfm": "^4.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.0",
+    "remark-stringify": "^11.0.0",
+    "unhead": "^1.8.3",
+    "unified": "^11.0.4",
+    "vue-sonner": "^1.0.3"
+  },
   "devDependencies": {
-    "@readyapi/build-tooling": "workspace:*",
+    "@etchteam/storybook-addon-css-variables-theme": "^1.5.1",
+    "@storybook/addon-essentials": "^8.0.8",
+    "@storybook/addon-interactions": "^8.0.8",
+    "@storybook/addon-links": "^8.0.8",
+    "@storybook/blocks": "^8.0.8",
+    "@storybook/testing-library": "^0.2.2",
+    "@storybook/vue3": "^8.0.8",
+    "@storybook/vue3-vite": "^8.0.8",
     "@vitejs/plugin-vue": "^5.0.4",
+    "@vitest/coverage-v8": "^1.5.0",
+    "@vue/test-utils": "^2.4.1",
+    "eslint": "^8.56.0",
+    "http-server": "^14.1.1",
+    "postcss": "^8.4.38",
+    "rollup-plugin-webpack-stats": "^0.2.5",
+    "storybook": "^8.0.8",
+    "storybook-dark-mode": "^4.0.1",
     "tsc-alias": "^1.8.8",
     "vite": "^5.2.10",
-    "vite-svg-loader": "^5.1.0",
-    "vue": "^3.4.21"
+    "vite-plugin-banner": "^0.7.1",
+    "vite-plugin-css-injected-by-js": "^3.4.0",
+    "vite-plugin-lib-inject-css": "^2.0.1",
+    "vitest": "^1.5.0",
+    "vue-tsc": "^1.8.19"
   },
   "peerDependencies": {
+    "unified": "^11.0.0",
     "vue": "^3.3.0"
   }
 }
