@@ -1,37 +1,51 @@
-import { findEntryPoints } from '@readyapi/build-tooling'
 import vue from '@vitejs/plugin-vue'
-import { URL, fileURLToPath } from 'node:url'
-import { defineConfig } from 'vite'
-import svgLoader from 'vite-svg-loader'
+import path from 'path'
+import { libInjectCss } from 'vite-plugin-lib-inject-css'
+import { defineConfig } from 'vitest/config'
 
 import pkg from './package.json'
 
 export default defineConfig({
-  plugins: [vue(), svgLoader()],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-    },
-    dedupe: ['vue'],
+  define: {
+    'process.env.NODE_ENV': '"production"',
   },
-  server: {
-    port: 9000,
-  },
+  plugins: [vue(), libInjectCss()],
   build: {
-    ssr: true,
-    minify: false,
-    target: 'esnext',
+    emptyOutDir: true,
+    cssCodeSplit: false,
     lib: {
-      entry: await findEntryPoints({ allowCss: true }),
-      formats: ['es'],
+      entry: ['src/index.ts'],
+      name: '@readyapi/api-reference',
+      formats: ['es', 'cjs'],
     },
     rollupOptions: {
-      external: [...Object.keys((pkg as any).peerDependencies || {})],
-      output: {
-        // Create a separate file for the dependency bundle
-        manualChunks: (id) =>
-          id.includes('node_modules') ? 'vendor' : undefined,
+      external: [
+        'vue',
+        'prismjs',
+        ...Object.keys(pkg.dependencies || {}).filter(
+          (item) => !item.startsWith('@readyapi'),
+        ),
+      ],
+    },
+  },
+  resolve: {
+    alias: [
+      // Resolve the uncompiled source code for all @readyapi packages
+      // It’s working with the alias, too. It’s just required to enable HMR.
+      // It also does not match components since we want the built version
+      {
+        // Resolve the uncompiled source code for all @readyapi packages
+        // @readyapi/* -> packages/*/
+        // (not @readyapi/components/*/style.css)
+        find: /^@readyapi\/(?!(openapi-parser|snippetz|galaxy|components\/style\.css|components\b))(.+)/,
+        replacement: path.resolve(__dirname, '../$2/src/index.ts'),
       },
+    ],
+  },
+  test: {
+    coverage: {
+      enabled: true,
+      reporter: 'text',
     },
   },
 })
