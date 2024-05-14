@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { httpStatusCodes } from '@scalar/oas-utils'
-import type { HttpStatusCode } from '@scalar/oas-utils'
+import { httpStatusCodes } from '@readyapi/oas-utils'
+import type { HttpStatusCode } from '@readyapi/oas-utils'
 import prettyBytes from 'pretty-bytes'
 import prettyMilliseconds from 'pretty-ms'
 import { computed } from 'vue'
@@ -43,7 +43,7 @@ const statusCodeInformation = computed((): HttpStatusCode | undefined => {
   <div class="meta-item">
     <!-- <span>200</span> -->
     <span
-      :class="`scalar-api-client__status scalar-api-client__status--${String(
+      :class="`readyapi-api-client__status scalar-api-client__status--${String(
         response.statusCode,
       ).charAt(0)}xx`">
       <template v-if="statusCodeInformation?.url">

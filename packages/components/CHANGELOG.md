@@ -1,4 +1,4 @@
-# @scalar/components
+# @readyapi/components
 
 ## 0.7.7
 
@@ -6,7 +6,7 @@
 
 - 624604e: style: adjust some icon sizes and allow overwriting classes
 - Updated dependencies [624604e]
-  - @scalar/oas-utils@0.1.11
+  - @readyapi/oas-utils@0.1.11
 
 ## 0.7.6
 
@@ -18,7 +18,7 @@
 
 ### Patch Changes
 
-- 836869b: feat: add icons from Scalar Docs
+- 836869b: feat: add icons from Readyapi Docs
 
 ## 0.7.4
 
@@ -32,7 +32,7 @@
 
 - 45dc04b: fix: can’t release packages
 - Updated dependencies [45dc04b]
-  - @scalar/oas-utils@0.1.10
+  - @readyapi/oas-utils@0.1.10
 
 ## 0.7.2
 
@@ -40,7 +40,7 @@
 
 - 05e2e27: chore: add provenance statement
 - Updated dependencies [05e2e27]
-  - @scalar/oas-utils@0.1.9
+  - @readyapi/oas-utils@0.1.9
 
 ## 0.7.1
 
@@ -48,13 +48,13 @@
 
 - Updated dependencies [085a0c2]
 - Updated dependencies [fa10d45]
-  - @scalar/oas-utils@0.1.8
+  - @readyapi/oas-utils@0.1.8
 
 ## 0.7.0
 
 ### Minor Changes
 
-- 1c18f77: feat: add scalar popover
+- 1c18f77: feat: add readyapi popover
 
 ### Patch Changes
 
@@ -62,7 +62,7 @@
 - 07211ad: chore: added new lint rule for type importing for better perf
 - 830b3c8: fix: remove ts extension from tailwind export
 - Updated dependencies [07211ad]
-  - @scalar/oas-utils@0.1.7
+  - @readyapi/oas-utils@0.1.7
 
 ## 0.6.1
 
@@ -86,14 +86,14 @@
 
 ### Patch Changes
 
-- 79485ff: fix: scalar package icon types
+- 79485ff: fix: readyapi package icon types
 - 92b5b2a: fix: truncate search results properly
 
 ## 0.5.3
 
 ### Patch Changes
 
-- bc3f3af: build: add icons to scalar components package
+- bc3f3af: build: add icons to readyapi components package
 
 ## 0.5.2
 
@@ -118,7 +118,7 @@
 
 - 22f2858: chore: ran syncpack to update packages
 - Updated dependencies [22f2858]
-  - @scalar/oas-utils@0.1.6
+  - @readyapi/oas-utils@0.1.6
 
 ## 0.4.11
 
@@ -126,7 +126,7 @@
 
 - 3ba9774: feat: add better SSR support to ScalarCodeBlock
 - Updated dependencies [3ba9774]
-  - @scalar/oas-utils@0.1.5
+  - @readyapi/oas-utils@0.1.5
 
 ## 0.4.10
 
@@ -268,7 +268,7 @@
 
 ### Patch Changes
 
-- 35dffe4: chore: include @scalar dependencies in the bundle
+- 35dffe4: chore: include @readyapi dependencies in the bundle
 
 ## 0.0.3
 

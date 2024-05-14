@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { useHead, useRequestURL, useSeoMeta } from '#imports'
-import { ModernLayout, parse } from '@scalar/api-reference'
-import '@scalar/api-reference/index.css'
+import { ModernLayout, parse } from '@readyapi/api-reference'
+import '@readyapi/api-reference/index.css'
 import { reactive, ref, toRaw } from 'vue'
 import type { Configuration } from '~/src/types'
 
@@ -22,7 +22,7 @@ const content: unknown = props.configuration.spec?.content
 
 // Check for empty spec
 if (!content)
-  throw new Error('You must provide a spec for Scalar API References')
+  throw new Error('You must provide a spec for Readyapi API References')
 
 const parsedSpec = reactive(await parse(content))
 const rawSpec = JSON.stringify(content)

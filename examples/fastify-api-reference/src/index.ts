@@ -1,5 +1,5 @@
 import fastifySwagger from '@fastify/swagger'
-import fastifyApiReference from '@scalar/fastify-api-reference'
+import fastifyApiReference from '@readyapi/fastify-api-reference'
 import Fastify from 'fastify'
 
 // Init Fastify
@@ -77,7 +77,7 @@ await fastify.register(fastifyApiReference, {
   // spec: {
   // content: { openapi: '3.1.0', info: { title: 'Example' }, paths: {} },
   // content: () => fastify.swagger(),
-  // url: '/readyapi.json',
+  // url: '/scalar.json',
   // },
   // customCss: `body { border: 10px solid red; }`,
   // },

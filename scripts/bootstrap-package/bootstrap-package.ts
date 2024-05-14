@@ -13,7 +13,7 @@ const readline = createInterface({
   output: process.stdout,
 })
 const name = await readline.question(
-  `Package name (do not add @scalar prefix): `,
+  `Package name (do not add @readyapi prefix): `,
 )
 const description = await readline.question(`Package description: `)
 const keywords = await readline.question(`Package keywords (comma separated): `)

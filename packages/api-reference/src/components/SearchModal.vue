@@ -4,10 +4,10 @@ import {
   ScalarSearchInput,
   ScalarSearchResultItem,
   ScalarSearchResultList,
-} from '@scalar/components'
-import type { TransformedOperation } from '@scalar/oas-utils'
+} from '@readyapi/components'
+import type { TransformedOperation } from '@readyapi/oas-utils'
+import { FlowModal, type ModalState } from '@readyapi/use-modal'
 import type { OpenAPIV3_1 } from '@scalar/openapi-parser'
-import { FlowModal, type ModalState } from '@scalar/use-modal'
 import { useMagicKeys, whenever } from '@vueuse/core'
 import Fuse from 'fuse.js'
 import { computed, ref, toRef, watch } from 'vue'

@@ -1,14 +1,14 @@
 {
   "name": "@readyapi/express-api-reference",
-  "description": "A middleware for using the Scalar API reference with Express",
+  "description": "A middleware for using the Readyapi API reference with Express",
   "license": "MIT",
-  "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/khulnasoft/readyapi",
-  "bugs": "https://github.com/khulnasoft/readyapi/issues/new/choose",
+  "author": "Khulnasoft (https://github.com/khulnasoft)",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.git",
-    "directory": "packages/use-tooltip"
+    "url": "https://github.com/khulnasoft/readyapi.js.git",
+    "directory": "packages/express-api-reference"
   },
   "version": "0.4.35",
   "engines": {

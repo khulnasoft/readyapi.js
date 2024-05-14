@@ -6,7 +6,7 @@ import { type LoadingState, ScalarLoading } from '../ScalarLoading'
 import { type Variants, variants } from './variants'
 
 /**
- * Scalar Button
+ * Readyapi Button
  */
 withDefaults(
   defineProps<{

@@ -1,14 +1,14 @@
 import {
   type ClientRequestConfig,
   getRequestFromAuthentication,
-} from '@scalar/api-client'
+} from '@readyapi/api-client'
 import {
   type AuthenticationState,
   type TransformedOperation,
   getHarRequest,
   getParametersFromOperation,
   getRequestFromOperation,
-} from '@scalar/oas-utils'
+} from '@readyapi/oas-utils'
 import type { OpenAPIV3 } from '@scalar/openapi-parser'
 
 import type { ServerState } from '../types'

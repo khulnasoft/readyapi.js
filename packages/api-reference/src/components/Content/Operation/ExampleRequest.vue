@@ -4,8 +4,8 @@ import {
   getRequestFromAuthentication,
   getSecretCredentialsFromAuthentication,
   useAuthenticationStore,
-} from '@scalar/api-client'
-import { ScalarCodeBlock, ScalarIcon } from '@scalar/components'
+} from '@readyapi/api-client'
+import { ScalarCodeBlock, ScalarIcon } from '@readyapi/components'
 import {
   type ExampleRequestSSRKey,
   type SSRState,
@@ -14,7 +14,7 @@ import {
   getHarRequest,
   getRequestFromOperation,
   ssrState,
-} from '@scalar/oas-utils'
+} from '@readyapi/oas-utils'
 import { snippetz } from '@scalar/snippetz'
 import { HTTPSnippet } from 'httpsnippet-lite'
 import {

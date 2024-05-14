@@ -4,7 +4,7 @@ import {
   type SSRState,
   createHash,
   ssrState,
-} from '@scalar/oas-utils'
+} from '@readyapi/oas-utils'
 import { computedAsync } from '@vueuse/core'
 import { onServerPrefetch, useSSRContext } from 'vue'
 

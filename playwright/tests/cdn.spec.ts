@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test'
 
 const HOST = process.env.HOST || 'localhost'
 
-test('Renders scalar/galaxy api reference from the live CDN', async ({
+test('Renders readyapi/galaxy api reference from the live CDN', async ({
   page,
   isMobile,
 }) => {
@@ -11,10 +11,10 @@ test('Renders scalar/galaxy api reference from the live CDN', async ({
   // Check for basic elements on the page
   // The heading
   await expect(
-    page.getByRole('heading', { name: 'Scalar Galaxy' }),
+    page.getByRole('heading', { name: 'Readyapi Galaxy' }),
   ).toBeVisible()
   // Body Text
-  await expect(page.getByText('The Scalar Galaxy')).toBeVisible()
+  await expect(page.getByText('The Readyapi Galaxy')).toBeVisible()
   // http client
   await expect(page.getByText('Client Libraries')).toBeVisible()
 

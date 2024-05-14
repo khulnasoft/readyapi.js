@@ -1,4 +1,4 @@
-import { createApiClientProxy } from '@scalar/api-client-proxy'
+import { createApiClientProxy } from '@readyapi/api-client-proxy'
 import 'dotenv/config'
 
 const port = process.env.PORT || 5051

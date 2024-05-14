@@ -76,12 +76,12 @@ export const useModal = () =>
         :style="{ maxWidth }">
         <DialogTitle
           v-if="title"
-          class="scalar-modal-header font-semiBold m-0 rounded-lg px-6 py-3 text-left text-xs text-fore-1"
+          class="readyapi-modal-header font-semiBold m-0 rounded-lg px-6 py-3 text-left text-xs text-fore-1"
           :class="{ 'pb-0 pt-6': variant === 'history' }">
           {{ title }}
         </DialogTitle>
         <DialogDescription
-          class="scalar-modal-body relative max-h-[calc(100dvh-240px)] overflow-y-auto rounded-lg bg-back-1 px-6 pb-4 pt-6"
+          class="readyapi-modal-body relative max-h-[calc(100dvh-240px)] overflow-y-auto rounded-lg bg-back-1 px-6 pb-4 pt-6"
           :class="
             cx(
               bodyClass,

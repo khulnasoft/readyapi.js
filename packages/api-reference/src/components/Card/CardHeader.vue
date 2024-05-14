@@ -8,12 +8,12 @@ const props = defineProps<CardContentProps>()
 <template>
   <CardContent
     v-bind="props"
-    class="scalar-card-header">
-    <div class="scalar-card-header-slots">
-      <div class="scalar-card-header-slot scalar-card-header-title">
+    class="readyapi-card-header">
+    <div class="readyapi-card-header-slots">
+      <div class="readyapi-card-header-slot scalar-card-header-title">
         <slot />
       </div>
-      <div class="scalar-card-header-slot scalar-card-header-actions">
+      <div class="readyapi-card-header-slot scalar-card-header-actions">
         <slot name="actions" />
       </div>
     </div>

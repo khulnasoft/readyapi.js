@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ScalarButton } from '@scalar/components'
+import { ScalarButton } from '@readyapi/components'
 import type { OpenAPIV3_1 } from '@scalar/openapi-parser'
 import { ref } from 'vue'
 
@@ -65,26 +65,26 @@ const setIntialScheme = (
         v-if="!authentication.securitySchemes"
         class="security-scheme-empty-state">
         <div
-          class="scalar-api-client-add"
+          class="readyapi-api-client-add"
           variant="outlined"
           @click="setIntialScheme('apiKey')">
           ApiKey
         </div>
         <div
-          class="scalar-api-client-add"
+          class="readyapi-api-client-add"
           variant="outlined"
           @click="setIntialScheme('httpBasic')">
           Basic
         </div>
         <div
-          class="scalar-api-client-add"
+          class="readyapi-api-client-add"
           variant="outlined"
           @click="setIntialScheme('httpBearer')">
           Bearer
         </div>
         <!-- TODO implement -->
         <!-- <div
-          class="scalar-api-client-add"
+          class="readyapi-api-client-add"
           variant="outlined"
           @click="setIntialScheme('oauth2')">
           oAuth2

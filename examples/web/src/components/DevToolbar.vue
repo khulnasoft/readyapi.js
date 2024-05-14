@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ResetStyles } from '@scalar/themes'
+import { ResetStyles } from '@readyapi/themes'
 import { ref, watch } from 'vue'
 
 const docStyle = document.documentElement.style

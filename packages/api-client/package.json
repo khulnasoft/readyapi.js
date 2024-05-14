@@ -2,13 +2,13 @@
   "name": "@readyapi/api-client",
   "description": "the open source API testing client",
   "license": "MIT",
-  "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/khulnasoft/readyapi",
-  "bugs": "https://github.com/khulnasoft/readyapi/issues/new/choose",
+  "author": "Khulnasoft (https://github.com/khulnasoft)",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.git",
-    "directory": "packages/use-tooltip"
+    "url": "https://github.com/khulnasoft/readyapi.js.git",
+    "directory": "packages/api-client"
   },
   "keywords": [
     "api",
@@ -45,11 +45,11 @@
     "@floating-ui/vue": "^1.0.2",
     "@headlessui/vue": "^1.7.20",
     "@readyapi/components": "workspace:*",
-    "@readyapi/openapi-parser": "^0.3.2",
     "@readyapi/themes": "workspace:*",
     "@readyapi/use-codemirror": "workspace:*",
     "@readyapi/use-modal": "workspace:*",
     "@readyapi/use-tooltip": "workspace:*",
+    "@scalar/openapi-parser": "^0.3.2",
     "@vueuse/core": "^10.9.0",
     "axios": "^1.6.8",
     "content-type": "^1.0.5",

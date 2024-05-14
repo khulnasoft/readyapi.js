@@ -1,4 +1,4 @@
-# @scalar/oas-utils
+# @readyapi/oas-utils
 
 ## 0.1.11
 

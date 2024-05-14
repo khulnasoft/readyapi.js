@@ -2,8 +2,8 @@
 import {
   ApiReference,
   type ReferenceConfiguration,
-} from '@scalar/api-reference'
-import content from '@scalar/galaxy/latest.yaml?raw'
+} from '@readyapi/api-reference'
+import content from '@readyapi/galaxy/latest.yaml?raw'
 import { reactive } from 'vue'
 
 const configuration = reactive<ReferenceConfiguration>({

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { isJsonString } from '@scalar/oas-utils'
+import { isJsonString } from '@readyapi/oas-utils'
 import { computed, toRaw } from 'vue'
 
 import Computer from '../../../assets/computer.ascii?raw'
@@ -57,9 +57,9 @@ const responseData = computed(() => {
 })
 </script>
 <template>
-  <div class="scalar-api-client__main__right custom-scroll">
-    <div class="scalar-api-client__main__content">
-      <div class="scalar-api-client__main__content__header">
+  <div class="readyapi-api-client__main__right custom-scroll">
+    <div class="readyapi-api-client__main__content">
+      <div class="readyapi-api-client__main__content__header">
         <label>Response</label>
         <div
           v-if="activeRequestId && activeResponse"
@@ -68,7 +68,7 @@ const responseData = computed(() => {
         </div>
       </div>
       <template v-if="activeRequestId && activeResponse">
-        <div class="scalar-api-client__main__content__body">
+        <div class="readyapi-api-client__main__content__body">
           <ResponseBody
             :active="!!activeResponse"
             :data="responseData"
@@ -79,14 +79,14 @@ const responseData = computed(() => {
               v-show="responseCookies.length > 0"
               :items="responseCookies" />
             <template v-if="responseCookies.length === 0">
-              <div class="scalar-api-client__empty-state">No Cookies</div>
+              <div class="readyapi-api-client__empty-state">No Cookies</div>
             </template>
           </CollapsibleSection>
-          <div class="scalar-api-client__main__scroll-container" />
+          <div class="readyapi-api-client__main__scroll-container" />
         </div>
       </template>
       <template v-else>
-        <div class="scalar-api-client__main__content empty-state">
+        <div class="readyapi-api-client__main__content empty-state">
           <ScalarAsciiArt :art="Computer" />
           <p>Fill the void and send your request</p>
         </div>

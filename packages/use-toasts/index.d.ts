@@ -1,4 +1,4 @@
-declare module '@scalar/use-toasts' {
+declare module '@readyapi/use-toasts' {
   export const useToasts: () => {
     toast: (
       message: string,

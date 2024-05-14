@@ -1,4 +1,4 @@
-# @scalar/use-toasts
+# @readyapi/use-toasts
 
 ## 0.6.6
 
@@ -34,7 +34,7 @@
 
 ### Patch Changes
 
-- a8c3045: build: re-introduce @scalar/use-toasts package
+- a8c3045: build: re-introduce @readyapi/use-toasts package
 
 ## 0.5.15
 
@@ -79,7 +79,7 @@
 
 ### Patch Changes
 
-- 35dffe4: chore: include @scalar dependencies in the bundle
+- 35dffe4: chore: include @readyapi dependencies in the bundle
 
 ## 0.5.8
 

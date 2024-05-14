@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { HttpMethod } from '@scalar/api-client'
-import type { TransformedOperation } from '@scalar/oas-utils'
+import { HttpMethod } from '@readyapi/api-client'
+import type { TransformedOperation } from '@readyapi/oas-utils'
 
 import { useNavState, useSidebar } from '../../../hooks'
 import type { Tag } from '../../../types'
@@ -52,7 +52,7 @@ async function scrollHandler(operation: TransformedOperation) {
         </SectionColumn>
         <SectionColumn>
           <template v-if="tag.operations?.length > 0">
-            <Card class="scalar-card-sticky">
+            <Card class="readyapi-card-sticky">
               <CardHeader muted>Endpoints</CardHeader>
               <CardContent
                 class="custom-scroll"

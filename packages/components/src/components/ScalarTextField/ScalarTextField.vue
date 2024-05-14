@@ -101,14 +101,14 @@ onMounted(() => {
 })
 </script>
 <template>
-  <div class="scalar-input-container relative">
+  <div class="readyapi-input-container relative">
     <div :class="textField({ error, focus: isFocused })">
       <component
         :is="isMultiline ? 'textarea' : 'input'"
         :id="uid"
         v-bind="$attrs"
         ref="input"
-        class="scalar-input"
+        class="readyapi-input"
         :class="
           cx(
             { 'min-h-[77px]': isMultiline },

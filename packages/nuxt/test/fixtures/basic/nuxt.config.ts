@@ -2,7 +2,7 @@ import type { NuxtConfig } from 'nuxt/schema'
 
 export default defineNuxtConfig({
   modules: ['../../../src/module'],
-  scalar: {
+  readyapi: {
     spec: {
       url: 'https://cdn.scalar.com/spec/openapi_petstore.json',
     },

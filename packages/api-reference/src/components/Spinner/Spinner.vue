@@ -1,5 +1,5 @@
 <template>
-  <span class="scalar-logo-animation scalar-logo-animation-load">
+  <span class="readyapi-logo-animation scalar-logo-animation-load">
     <i class="line line-1"></i>
     <i class="line line-2"></i>
     <i class="line line-3"></i>

@@ -1,4 +1,4 @@
-# Scalar FastAPI API Reference Plugin
+# Readyapi FastAPI API Reference Plugin
 
 ![fastapi](fastapi.png)
 
@@ -10,7 +10,7 @@ pip install scalar-fastapi
 
 ## Usage
 
-FastAPI makes it super easy to enable scalar with their out of the box OpenAPI support
+FastAPI makes it super easy to enable readyapi with their out of the box OpenAPI support
 
 ```python
 from fastapi import FastAPI

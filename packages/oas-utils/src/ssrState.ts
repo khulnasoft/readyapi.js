@@ -2,7 +2,7 @@ import type { ScalarState } from './types'
 
 declare global {
   interface Window {
-    __SCALAR__: ScalarState
+    __READYAPI__: ScalarState
   }
 }
 
@@ -13,5 +13,5 @@ export const defaultStateFactory = (): ScalarState => ({})
  */
 export const ssrState: ScalarState =
   typeof window !== 'undefined'
-    ? window.__SCALAR__ ?? defaultStateFactory()
+    ? window.__READYAPI__ ?? defaultStateFactory()
     : defaultStateFactory()

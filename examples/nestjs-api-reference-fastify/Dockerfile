@@ -21,8 +21,8 @@ COPY examples/nestjs-api-reference-fastify ./examples/nestjs-api-reference-fasti
 
 # Mount the cache where pnpm expects it and build the main package
 RUN --mount=type=cache,id=pnpm,target=~/.pnpm-store \
-    pnpm --filter @scalar-examples/nestjs-api-reference-fastify install --frozen-lockfile && \
-    pnpm --filter @scalar-examples/nestjs-api-reference-fastify build
+    pnpm --filter @readyapi-examples/nestjs-api-reference-fastify install --frozen-lockfile && \
+    pnpm --filter @readyapi-examples/nestjs-api-reference-fastify build
 
 FROM node:18-bullseye-slim AS runner
 

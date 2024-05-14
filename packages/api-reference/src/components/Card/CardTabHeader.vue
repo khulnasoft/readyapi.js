@@ -12,7 +12,7 @@ const changeTab = (index: number) => {
 }
 </script>
 <template>
-  <CardHeader class="scalar-card-header-tabs">
+  <CardHeader class="readyapi-card-header-tabs">
     <TabGroup @change="changeTab">
       <TabList class="tab-list custom-scroll">
         <slot />

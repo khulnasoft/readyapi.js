@@ -41,22 +41,22 @@ const showRequestBody = computed(() => {
 const readOnly = true
 </script>
 <template>
-  <div class="scalar-api-client__main__left custom-scroll">
-    <div class="scalar-api-client__main__content">
-      <div class="scalar-api-client__main__content__header">
+  <div class="readyapi-api-client__main__left custom-scroll">
+    <div class="readyapi-api-client__main__content">
+      <div class="readyapi-api-client__main__content__header">
         <label>Request</label>
         <div class="meta">
           <div class="meta-item meta-item__input">
             <input
               v-model="activeRequest.name"
-              class="scalar-api-client__request-name"
+              class="readyapi-api-client__request-name"
               :disabled="readOnly"
               placeholder="Request Name"
               type="text" />
           </div>
         </div>
       </div>
-      <div class="scalar-api-client__main__content__body">
+      <div class="readyapi-api-client__main__content__body">
         <RequestVariables :variables="activeRequest.variables" />
         <RequestAuthentication />
         <RequestCookies
@@ -73,7 +73,7 @@ const readOnly = true
           :body="activeRequest.body"
           :formData="activeRequest.formData"
           :requestBody="activeRequest.body" />
-        <div class="scalar-api-client__main__scroll-container" />
+        <div class="readyapi-api-client__main__scroll-container" />
       </div>
     </div>
   </div>

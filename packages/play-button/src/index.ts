@@ -1,8 +1,8 @@
 /**
- * This file is the entry point for the CDN version of the Scalar Test Button.
+ * This file is the entry point for the CDN version of the Readyapi Test Button.
  * It’s responsible for finding the spec and configuration in the HTML, and mounting the Vue.js app.
  */
-import { ApiClientModal, openClientFor, parse } from '@scalar/api-reference'
+import { ApiClientModal, openClientFor, parse } from '@readyapi/api-reference'
 import { createApp, h, reactive } from 'vue'
 
 const specScriptTag = document.getElementById('scalar-play-button-script')
@@ -11,7 +11,7 @@ const specElement = document.querySelector('[data-spec]')
 const specUrlElement = document.querySelector('[data-spec-url]')
 
 const getSpecUrl = () => {
-  // <script id="api-reference" data-url="/readyapi.json" />
+  // <script id="api-reference" data-url="/scalar.json" />
   if (specScriptTag) {
     const urlFromScriptTag = specScriptTag.getAttribute('data-url')?.trim()
 
@@ -20,10 +20,10 @@ const getSpecUrl = () => {
     }
   }
 
-  // <div data-spec-url="/readyapi.json" />
+  // <div data-spec-url="/scalar.json" />
   if (specUrlElement) {
     console.warn(
-      '[@scalar/play-button] The [data-spec-url] HTML API is deprecated. Use the new <script id="api-reference" data-url="/readyapi.json" /> API instead.',
+      '[@scalar/play-button] The [data-spec-url] HTML API is deprecated. Use the new <script id="api-reference" data-url="/scalar.json" /> API instead.',
     )
     const urlFromSpecUrlElement = specUrlElement.getAttribute('data-spec-url')
 
@@ -36,7 +36,7 @@ const getSpecUrl = () => {
 }
 
 const getProxyUrl = () => {
-  // <script id="api-reference" data-proxy-url="https://api.scalar.com/request-proxy">…</script>
+  // <script id="api-reference" data-proxy-url="https://api.readyapi.khulnasoft.com/request-proxy">…</script>
   if (specScriptTag) {
     const proxyUrl = specScriptTag.getAttribute('data-proxy-url')
 
@@ -53,7 +53,7 @@ const props = reactive({})
 
 if (!specUrlElement && !specElement && !specScriptTag) {
   console.error(
-    'Couldn’t find a [data-spec], [data-spec-url] or <script id="api-reference" /> element. Try adding it like this: %c<div data-spec-url="https://cdn.jsdelivr.net/npm/@scalar/galaxy/dist/latest.yaml" />',
+    'Couldn’t find a [data-spec], [data-spec-url] or <script id="api-reference" /> element. Try adding it like this: %c<div data-spec-url="https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/latest.yaml" />',
     'font-family: monospace;',
   )
 } else {

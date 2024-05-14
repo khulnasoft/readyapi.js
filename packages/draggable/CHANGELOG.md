@@ -1,4 +1,4 @@
-# @scalar/draggable
+# @readyapi/draggable
 
 ## 0.0.7
 

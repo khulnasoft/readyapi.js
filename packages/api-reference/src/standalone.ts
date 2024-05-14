@@ -34,7 +34,7 @@ const getSpecUrl = () => {
     return getConfiguration().spec?.url
   }
 
-  // <script id="api-reference" data-url="/readyapi.json" />
+  // <script id="api-reference" data-url="/scalar.json" />
   if (specScriptTag) {
     const urlFromScriptTag = specScriptTag.getAttribute('data-url')?.trim()
 
@@ -43,10 +43,10 @@ const getSpecUrl = () => {
     }
   }
 
-  // <div data-spec-url="/readyapi.json" />
+  // <div data-spec-url="/scalar.json" />
   if (specUrlElement) {
     console.warn(
-      '[@scalar/api-reference] The [data-spec-url] HTML API is deprecated. Use the new <script id="api-reference" data-url="/readyapi.json" /> API instead.',
+      '[@readyapi/api-reference] The [data-spec-url] HTML API is deprecated. Use the new <script id="api-reference" data-url="/scalar.json" /> API instead.',
     )
     const urlFromSpecUrlElement = specUrlElement.getAttribute('data-spec-url')
 
@@ -71,7 +71,7 @@ const getSpec = (): Record<string, any> | undefined => {
   // <div data-spec='{"openapi":"3.1.0","info":{"title":"Example"},"paths":{}}' />
   if (specElement) {
     console.warn(
-      '[@scalar/api-reference] The [data-spec] HTML API is deprecated. Use the new <script id="api-reference" type="application/json">{"openapi":"3.1.0","info":{"title":"Example"},"paths":{}}</script> API instead.',
+      '[@readyapi/api-reference] The [data-spec] HTML API is deprecated. Use the new <script id="api-reference" type="application/json">{"openapi":"3.1.0","info":{"title":"Example"},"paths":{}}</script> API instead.',
     )
     const specFromSpecElement = specElement.getAttribute('data-spec')?.trim()
 
@@ -84,7 +84,7 @@ const getSpec = (): Record<string, any> | undefined => {
 }
 
 const getProxyUrl = () => {
-  // <script id="api-reference" data-proxy-url="https://api.scalar.com/request-proxy">…</script>
+  // <script id="api-reference" data-proxy-url="https://api.readyapi.khulnasoft.com/request-proxy">…</script>
   if (specScriptTag) {
     const proxyUrl = specScriptTag.getAttribute('data-proxy-url')
 
@@ -101,7 +101,7 @@ const props = reactive({})
 
 if (!specUrlElement && !specElement && !specScriptTag) {
   console.error(
-    'Couldn’t find a [data-spec], [data-spec-url] or <script id="api-reference" /> element. Try adding it like this: %c<div data-spec-url="https://cdn.jsdelivr.net/npm/@scalar/galaxy/dist/latest.yaml" />',
+    'Couldn’t find a [data-spec], [data-spec-url] or <script id="api-reference" /> element. Try adding it like this: %c<div data-spec-url="https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/latest.yaml" />',
     'font-family: monospace;',
   )
 } else {
@@ -154,7 +154,7 @@ if (!specUrlElement && !specElement && !specScriptTag) {
 
   // Allow user to reload whole vue app
   document.addEventListener(
-    'scalar:reload-references',
+    'readyapi:reload-references',
     () => {
       // Check if elemenet has been removed from dom, and re-add
       if (container && !document.body.contains(container)) {
@@ -168,7 +168,7 @@ if (!specUrlElement && !specElement && !specScriptTag) {
 
   // Allow user to update config
   document.addEventListener(
-    'scalar:update-references-config',
+    'readyapi:update-references-config',
     (ev) => {
       if ('detail' in ev) Object.assign(props, ev.detail)
     },

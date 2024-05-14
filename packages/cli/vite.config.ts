@@ -5,7 +5,7 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: '@scalar/mock-server',
+        find: '@readyapi/mock-server',
         replacement: path.resolve(__dirname, '../mock-server/src/index.ts'),
       },
     ],

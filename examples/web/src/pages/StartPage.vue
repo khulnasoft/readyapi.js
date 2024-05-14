@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ThemeStyles } from '@scalar/themes'
+import { ThemeStyles } from '@readyapi/themes'
 
 import PageLink from '../components/PageLink.vue'
 
@@ -21,7 +21,7 @@ const inDevelopment = import.meta.env.DEV
           fill-rule="evenodd"></path>
       </svg>
     </div>
-    <h1>@scalar/api-reference</h1>
+    <h1>@readyapi/api-reference</h1>
     <div class="page-links">
       <PageLink to="standalone-api-reference">
         <template #title>Standalone API Reference</template>
@@ -56,7 +56,7 @@ const inDevelopment = import.meta.env.DEV
         </template>
       </PageLink>
     </div>
-    <h1>@scalar/api-client</h1>
+    <h1>@readyapi/api-client</h1>
     <div class="page-links">
       <PageLink to="api-client">
         <template #title>API Client</template>
@@ -70,11 +70,11 @@ const inDevelopment = import.meta.env.DEV
     <div class="page-links">
       <PageLink href="http://localhost:5062/galaxy">
         <template #title>Nuxt</template>
-        <template #description>@scalar/nuxt</template>
+        <template #description>@readyapi/nuxt</template>
       </PageLink>
       <PageLink href="http://localhost:5063/scalar">
         <template #title>Docusaurus</template>
-        <template #description>@scalar/docusaurus</template>
+        <template #description>@readyapi/docusaurus</template>
       </PageLink>
       <PageLink
         :href="
@@ -92,7 +92,7 @@ const inDevelopment = import.meta.env.DEV
             : 'https://scalar-example-react-p6gnzjpyuq-uc.a.run.app'
         ">
         <template #title>React</template>
-        <template #description>@scalar/api-reference</template>
+        <template #description>@readyapi/api-reference</template>
       </PageLink>
       <PageLink
         :href="
@@ -101,7 +101,7 @@ const inDevelopment = import.meta.env.DEV
             : 'https://scalar-example-fastify-p6gnzjpyuq-uc.a.run.app/reference'
         ">
         <template #title>Fastify</template>
-        <template #description>@scalar/fastify-api-reference</template>
+        <template #description>@readyapi/fastify-api-reference</template>
       </PageLink>
       <PageLink
         :href="
@@ -110,7 +110,7 @@ const inDevelopment = import.meta.env.DEV
             : 'https://scalar-example-hono-p6gnzjpyuq-uc.a.run.app'
         ">
         <template #title>Hono</template>
-        <template #description>@scalar/hono-api-reference</template>
+        <template #description>@readyapi/hono-api-reference</template>
       </PageLink>
       <PageLink
         :href="
@@ -119,7 +119,7 @@ const inDevelopment = import.meta.env.DEV
             : 'https://scalar-example-express-p6gnzjpyuq-uc.a.run.app'
         ">
         <template #title>Express</template>
-        <template #description>@scalar/express-api-reference</template>
+        <template #description>@readyapi/express-api-reference</template>
       </PageLink>
       <PageLink
         :href="
@@ -128,7 +128,7 @@ const inDevelopment = import.meta.env.DEV
             : 'https://scalar-example-nest-js-p6gnzjpyuq-uc.a.run.app'
         ">
         <template #title>NestJS (Express)</template>
-        <template #description>@scalar/nestjs-api-reference</template>
+        <template #description>@readyapi/nestjs-api-reference</template>
       </PageLink>
       <PageLink
         :href="
@@ -137,10 +137,10 @@ const inDevelopment = import.meta.env.DEV
             : 'https://scalar-example-nest-js-fastify-p6gnzjpyuq-uc.a.run.app'
         ">
         <template #title>NestJS (Fastify)</template>
-        <template #description>@scalar/nestjs-api-reference</template>
+        <template #description>@readyapi/nestjs-api-reference</template>
       </PageLink>
     </div>
-    <h1>@scalar/components</h1>
+    <h1>@readyapi/components</h1>
     <div class="page-links">
       <PageLink href="http://localhost:5100">
         <template #title>Components</template>
@@ -149,7 +149,7 @@ const inDevelopment = import.meta.env.DEV
         </template>
       </PageLink>
     </div>
-    <h1>@scalar/draggable</h1>
+    <h1>@readyapi/draggable</h1>
     <div class="page-links">
       <PageLink href="http://localhost:5064">
         <template #title>Draggable</template>

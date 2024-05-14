@@ -1,4 +1,4 @@
-import galaxyContent from '@scalar/galaxy/latest.yaml?raw'
+import galaxyContent from '@readyapi/galaxy/latest.yaml?raw'
 import { afterAll, describe, expect, it } from 'vitest'
 import MatchMediaMock from 'vitest-matchmedia-mock'
 
@@ -48,7 +48,7 @@ describe('Standalone API References', () => {
     expect(document.querySelector('[data-v-app]')).toBeNull()
 
     // Now we use the event to re-load the app
-    document.dispatchEvent(new Event('scalar:reload-references'))
+    document.dispatchEvent(new Event('readyapi:reload-references'))
     await sleep(50)
 
     rootElement = document.querySelector('[data-v-app]')
@@ -61,7 +61,7 @@ describe('Standalone API References', () => {
 
   it('updates the spec url, detect for changes', async () => {
     // Update the config with the galaxy spec
-    const ev = new CustomEvent('scalar:update-references-config', {
+    const ev = new CustomEvent('readyapi:update-references-config', {
       detail: {
         configuration: {
           spec: {
@@ -76,6 +76,6 @@ describe('Standalone API References', () => {
     const rootElement = document.querySelector('[data-v-app]')
     const h1 = rootElement?.querySelector('h1')
 
-    expect(h1?.innerHTML).toEqual('Scalar Galaxy')
+    expect(h1?.innerHTML).toEqual('Readyapi Galaxy')
   })
 })

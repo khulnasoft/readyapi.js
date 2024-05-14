@@ -7,7 +7,7 @@ const meta = {
   component: ScalarTextField,
   tags: ['autodocs'],
   argTypes: {
-    label: { control: 'string', defaultValue: 'Scalar Text Field' },
+    label: { control: 'string', defaultValue: 'Readyapi Text Field' },
   },
   render: (args) => ({
     components: { ScalarTextField },
@@ -25,7 +25,7 @@ type Story = StoryObj<typeof meta>
 export const Base: Story = {
   args: {
     modelValue: '',
-    label: 'Scalar Text Field',
+    label: 'Readyapi Text Field',
     placeholder: 'This is a place where you can type out anything',
   },
 }
@@ -33,7 +33,7 @@ export const Base: Story = {
 export const Error: Story = {
   args: {
     modelValue: '',
-    label: 'Scalar Text Field',
+    label: 'Readyapi Text Field',
     placeholder: 'This is a place where you can type out anything',
     helperText: 'There was some sort of error with the field',
     error: true,
@@ -45,7 +45,7 @@ export const MultiLine: Story = {
     modelValue: '',
     placeholder: 'This is a place where you can type out anything',
     isMultiline: true,
-    label: 'Scalar Text Field',
+    label: 'Readyapi Text Field',
   },
 }
 

@@ -3,8 +3,8 @@ import {
   SecurityScheme,
   SecuritySchemeSelector,
   useAuthenticationStore,
-} from '@scalar/api-client'
-import type { SSRState } from '@scalar/oas-utils'
+} from '@readyapi/api-client'
+import type { SSRState } from '@readyapi/oas-utils'
 import type { OpenAPIV3_1 } from '@scalar/openapi-parser'
 import { computed, onServerPrefetch, useSSRContext, watch } from 'vue'
 
