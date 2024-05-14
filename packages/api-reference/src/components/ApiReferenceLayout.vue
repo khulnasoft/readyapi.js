@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { provideUseId } from '@headlessui/vue'
-import { type SSRState, defaultStateFactory } from '@scalar/oas-utils'
+import { type SSRState, defaultStateFactory } from '@readyapi/oas-utils'
 import {
   ResetStyles,
   ScrollbarStyles,
   type ThemeId,
   ThemeStyles,
-} from '@scalar/themes'
-import { ScalarToasts } from '@scalar/use-toasts'
+} from '@readyapi/themes'
+import { ScalarToasts } from '@readyapi/use-toasts'
 import { useDebounceFn, useMediaQuery, useResizeObserver } from '@vueuse/core'
 import {
   computed,
@@ -220,7 +220,7 @@ useDeprecationWarnings(props.configuration)
     <ScrollbarStyles v-slot="{ styles: scrollbars }">
       <div
         ref="documentEl"
-        class="scalar-api-reference references-layout"
+        class="readyapi-api-reference references-layout"
         :class="[
           {
             'references-editable': configuration.isEditable,
@@ -310,7 +310,7 @@ useDeprecationWarnings(props.configuration)
           </div>
         </template>
         <!-- REST API Client Overlay -->
-        <!-- Fonts are fetched by @scalar/api-reference already, we can safely set `withDefaultFonts: false` -->
+        <!-- Fonts are fetched by @readyapi/api-reference already, we can safely set `withDefaultFonts: false` -->
         <ApiClientModal
           :parsedSpec="parsedSpec"
           :proxyUrl="configuration?.proxy">

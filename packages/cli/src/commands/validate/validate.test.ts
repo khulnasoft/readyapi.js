@@ -1,11 +1,11 @@
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 
-import { ReadyapiCli } from '../../../tests/invoke-cli'
+import { ScalarCli } from '../../../tests/invoke-cli'
 
 describe('validate', () => {
   it('validates the given json file', () => {
-    const [exitCode, logs] = ReadyapiCli()
+    const [exitCode, logs] = ScalarCli()
       .setCwd(path.resolve('./'))
       .invoke(['validate', './packages/cli/src/commands/validate/valid.json'])
 
@@ -14,7 +14,7 @@ describe('validate', () => {
   })
 
   it('validates the given yaml file', () => {
-    const [exitCode, logs] = ReadyapiCli()
+    const [exitCode, logs] = ScalarCli()
       .setCwd(path.resolve('./'))
       .invoke(['validate', './packages/cli/src/commands/validate/valid.yaml'])
 
@@ -23,7 +23,7 @@ describe('validate', () => {
   })
 
   it('shows errors for invalid file', () => {
-    const [exitCode, logs] = ReadyapiCli()
+    const [exitCode, logs] = ScalarCli()
       .setCwd(path.resolve('./'))
       .invoke(['validate', './packages/cli/src/commands/validate/invalid.json'])
 

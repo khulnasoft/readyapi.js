@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { findVariables } from '@scalar/api-client'
-import { ScalarIcon } from '@scalar/components'
+import { findVariables } from '@readyapi/api-client'
+import { ScalarIcon } from '@readyapi/components'
 import { ref, watch } from 'vue'
 
 import { useServerStore } from '../../../stores'
@@ -64,8 +64,8 @@ watch(
       muted>
       Base URL
     </CardHeader>
-    <CardContent class="scalar-card-serverlist">
-      <div class="scalar-card-serverlist-container">
+    <CardContent class="readyapi-card-serverlist">
+      <div class="readyapi-card-serverlist-container">
         <!-- Multiple URLs -->
         <div class="server-item">
           <div class="server-selector">

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ScalarButton } from '@scalar/components'
-import { type ThemeId, themeLabels } from '@scalar/themes'
+import { ScalarButton } from '@readyapi/components'
+import { type ThemeId, themeLabels } from '@readyapi/themes'
 
 defineProps<{
   theme: ThemeId
@@ -27,7 +27,7 @@ const themeIds: ThemeId[] = [
 
 async function fetchExampleSpecification() {
   const response = await fetch(
-    'https://cdn.jsdelivr.net/npm/@scalar/galaxy/dist/latest.yaml',
+    'https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/latest.yaml',
   )
 
   emits('updateContent', await response.text())
@@ -50,7 +50,7 @@ async function fetchExampleSpecification() {
       </div>
       <h1 class="start-h1">Swagger Editor</h1>
       <p class="start-p">
-        Welcome to the Scalar API References + Swagger Editor, a Free &
+        Welcome to the Readyapi API References + Swagger Editor, a Free &
         Open-Source tool that takes your Swagger/OAS file and generates
         Beautiful API references.
       </p>
@@ -73,7 +73,7 @@ async function fetchExampleSpecification() {
         <div class="start-h2">INTEGRATIONS</div>
         <a
           class="start-item"
-          href="https://github.com/scalar/scalar/tree/main/packages/fastify-api-reference#readme"
+          href="https://github.com/khulnasoft/readyapi.js/tree/main/packages/fastify-api-reference#readme"
           target="_blank">
           <svg
             fill="currentColor"
@@ -90,7 +90,7 @@ async function fetchExampleSpecification() {
         </a>
         <a
           class="start-item"
-          href="https://github.com/scalar/scalar/tree/main#from-a-cdn"
+          href="https://github.com/khulnasoft/readyapi.js/tree/main#from-a-cdn"
           target="_blank">
           <svg
             fill="currentColor"
@@ -112,7 +112,7 @@ async function fetchExampleSpecification() {
         </a>
         <a
           class="start-item"
-          href="https://github.com/scalar/scalar/tree/main#with-vuejs"
+          href="https://github.com/khulnasoft/readyapi.js/tree/main#with-vuejs"
           target="_blank">
           <svg
             height="170"
@@ -132,7 +132,7 @@ async function fetchExampleSpecification() {
         </a>
         <a
           class="start-item"
-          href="https://github.com/scalar/scalar/tree/main#with-react"
+          href="https://github.com/khulnasoft/readyapi.js/tree/main#with-react"
           target="_blank">
           <svg
             height="23.3"

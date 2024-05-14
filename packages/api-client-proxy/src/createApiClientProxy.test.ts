@@ -1,4 +1,4 @@
-import { createEchoServer } from '@scalar/echo-server'
+import { createEchoServer } from '@readyapi/echo-server'
 import type { AddressInfo } from 'node:net'
 import { describe, expect, it } from 'vitest'
 

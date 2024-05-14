@@ -1,4 +1,4 @@
-name: Deploy Scalar examples
+name: Deploy Readyapi examples
 
 on:
   push:
@@ -12,7 +12,7 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   release:
-    name: Deploy Scalar examples
+    name: Deploy Readyapi examples
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -46,4 +46,4 @@ jobs:
           --message "Deployed from Github - ${{ env.DEPLOY_ID }}" \
           --site ${{ vars.NETLIFY_SITE_ID_PREVIEW }} \
           --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} \
-          --filter @scalar-examples/web --prod
+          --filter @readyapi-examples/web --prod

@@ -1,4 +1,4 @@
-import type { ReferenceConfiguration } from '@scalar/api-reference'
+import type { ReferenceConfiguration } from '@readyapi/api-reference'
 import type { Request, Response } from 'express'
 
 export type ApiReferenceOptions = ReferenceConfiguration & {
@@ -105,7 +105,7 @@ export const customThemeCSS = `
 `
 
 /**
- * The HTML to load the @scalar/api-reference package.
+ * The HTML to load the @readyapi/api-reference package.
  */
 export const ApiReference = (options: ApiReferenceOptions) => {
   return `
@@ -121,7 +121,7 @@ export const ApiReference = (options: ApiReferenceOptions) => {
             : JSON.stringify(options.spec?.content)
           : ''
       }</script>
-      <script src="${options.cdn || 'https://cdn.jsdelivr.net/npm/@scalar/api-reference'}"></script>
+      <script src="${options.cdn || 'https://cdn.jsdelivr.net/npm/@readyapi/api-reference'}"></script>
   `
 }
 
@@ -134,7 +134,7 @@ export function apiReference(options: ApiReferenceOptions) {
   <!DOCTYPE html>
   <html>
     <head>
-      <title>Scalar API Reference</title>
+      <title>Readyapi API Reference</title>
       <meta charset="utf-8" />
       <meta
         name="viewport"

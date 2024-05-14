@@ -2,13 +2,13 @@
   "name": "@readyapi/oas-utils",
   "description": "Open API spec and Yaml handling utilities",
   "license": "MIT",
-  "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/khulnasoft/readyapi",
-  "bugs": "https://github.com/khulnasoft/readyapi/issues/new/choose",
+  "author": "Khulnasoft (https://github.com/khulnasoft)",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.git",
-    "directory": "packages/use-tooltip"
+    "url": "https://github.com/khulnasoft/readyapi.js.git",
+    "directory": "packages/oas-utils"
   },
   "keywords": [
     "oas",
@@ -57,7 +57,7 @@
   },
   "devDependencies": {
     "@readyapi/build-tooling": "workspace:*",
-    "@readyapi/openapi-parser": "^0.3.2",
+    "@scalar/openapi-parser": "^0.3.2",
     "axios": "^1.6.8",
     "httpsnippet-lite": "^3.0.5",
     "tsc-alias": "^1.8.8",

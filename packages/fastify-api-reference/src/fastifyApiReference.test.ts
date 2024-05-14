@@ -33,7 +33,7 @@ describe('fastifyApiReference', () => {
       },
     })
 
-    expect(fastify.hasPlugin('@scalar/fastify-api-reference')).toBeTruthy()
+    expect(fastify.hasPlugin('@readyapi/fastify-api-reference')).toBeTruthy()
   })
 
   it('no fastify-html exposed', async () => {
@@ -83,7 +83,7 @@ describe('fastifyApiReference', () => {
     const address = await fastify.listen({ port: 0 })
     const response = await fetch(`${address}/reference`)
     expect(await response.text()).toContain(
-      '/reference/@scalar/fastify-api-reference/js/browser.js',
+      '/reference/@readyapi/fastify-api-reference/js/browser.js',
     )
   })
 
@@ -103,7 +103,7 @@ describe('fastifyApiReference', () => {
     const address = await fastify.listen({ port: 0 })
     const response = await fetch(`${address}/reference`)
     expect(await response.text()).toContain(
-      '/foobar/reference/@scalar/fastify-api-reference/js/browser.js',
+      '/foobar/reference/@readyapi/fastify-api-reference/js/browser.js',
     )
   })
 
@@ -194,7 +194,7 @@ describe('fastifyApiReference', () => {
     const address = await fastify.listen({ port: 0 })
     const response = await fetch(`${address}/reference`)
     expect(await response.text()).toContain(
-      '<title>Scalar API Reference</title>',
+      '<title>Readyapi API Reference</title>',
     )
   })
 

@@ -21,7 +21,7 @@ export default defineConfig({
     ssr: false,
     target: 'esnext',
     lib: {
-      name: '@scalar/draggable',
+      name: '@readyapi/draggable',
       entry: './src/index.ts',
       formats: ['es', 'cjs'],
       fileName: 'index',

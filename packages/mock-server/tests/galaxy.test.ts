@@ -1,5 +1,5 @@
 // @ts-ignore
-import galaxy from '@scalar/galaxy/3.1.yaml?raw'
+import galaxy from '@readyapi/galaxy/3.1.yaml?raw'
 import { describe, expect, it } from 'vitest'
 
 import { createMockServer } from '../src/createMockServer'
@@ -18,7 +18,7 @@ describe('createMockServer', () => {
       data: [
         {
           creator: {
-            email: 'marc@scalar.com',
+            email: 'marc@khulnasoft.com',
             id: 1,
             name: 'Marc',
           },

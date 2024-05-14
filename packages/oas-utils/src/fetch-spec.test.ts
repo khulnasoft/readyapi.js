@@ -5,7 +5,7 @@ import { fetchSpecFromUrl } from './fetch-spec'
 describe('Fetches specs correctly', () => {
   test('Fetches without a proxy', async () => {
     const spec = await fetchSpecFromUrl(
-      'https://cdn.jsdelivr.net/npm/@scalar/galaxy/dist/latest.yaml',
+      'https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/latest.yaml',
     )
 
     expect(typeof spec).toEqual('string')
@@ -14,8 +14,8 @@ describe('Fetches specs correctly', () => {
 
   test('Fetches with a proxy', async () => {
     const spec = await fetchSpecFromUrl(
-      'https://cdn.jsdelivr.net/npm/@scalar/galaxy/dist/latest.yaml',
-      'https://api.scalar.com/request-proxy',
+      'https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/latest.yaml',
+      'https://api.readyapi.khulnasoft.com/request-proxy',
     )
 
     expect(typeof spec).toEqual('string')

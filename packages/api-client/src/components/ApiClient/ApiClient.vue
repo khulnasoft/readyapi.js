@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/vue'
-import { type ThemeId, ThemeStyles } from '@scalar/themes'
+import { type ThemeId, ThemeStyles } from '@readyapi/themes'
 import { useMagicKeys, useMediaQuery, whenever } from '@vueuse/core'
 import { ref, watch } from 'vue'
 
@@ -63,7 +63,7 @@ watch(
     :id="theme"
     :withDefaultFonts="withDefaultFonts" />
   <HttpMethod
-    class="scalar-api-client"
+    class="readyapi-api-client"
     :method="activeRequest.type ?? 'get'"
     property="--scalar-api-client-color"
     @keydown.esc="emit('escapeKeyPress')">
@@ -73,7 +73,7 @@ watch(
         :proxyUrl="proxyUrl"
         @onSend="changeTab(Tabs.Response)" />
     </div>
-    <div class="scalar-api-client__main">
+    <div class="readyapi-api-client__main">
       <slot
         v-if="showSideBar"
         name="sidebar" />
@@ -87,10 +87,10 @@ watch(
         <TabGroup
           :selectedIndex="selectedTab"
           @change="changeTab">
-          <TabList class="scalar-api-client__mobile-navigation">
+          <TabList class="readyapi-api-client__mobile-navigation">
             <Tab
               v-slot="{ selected }"
-              class="scalar-api-client__mobile-navigation__toggle">
+              class="readyapi-api-client__mobile-navigation__toggle">
               <span
                 :class="{
                   'scalar-api-client__mobile-navigation--active': selected,
@@ -100,7 +100,7 @@ watch(
             </Tab>
             <Tab
               v-slot="{ selected }"
-              class="scalar-api-client__mobile-navigation__toggle">
+              class="readyapi-api-client__mobile-navigation__toggle">
               <span
                 :class="{
                   'scalar-api-client__mobile-navigation--active': selected,

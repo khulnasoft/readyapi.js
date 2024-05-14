@@ -1,7 +1,7 @@
 // Theming
-import '@scalar/themes/base.css'
-import '@scalar/themes/fonts.css'
-import '@scalar/themes/presets/default.css'
+import '@readyapi/themes/base.css'
+import '@readyapi/themes/fonts.css'
+import '@readyapi/themes/presets/default.css'
 import type { Preview } from '@storybook/vue3'
 
 import '../src/tailwind/tailwind.css'

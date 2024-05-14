@@ -19,7 +19,7 @@ export type ModuleOptions = {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: '@scalar/nuxt',
+    name: '@readyapi/nuxt',
     configKey: 'scalar',
   },
   // Default configuration options of the Nuxt module
@@ -40,7 +40,7 @@ export default defineNuxtModule<ModuleOptions>({
     let isOpenApiEnabled = false
 
     // Ensure we transpile api-reference css
-    _nuxt.options.build.transpile.push('@scalar/api-reference')
+    _nuxt.options.build.transpile.push('@readyapi/api-reference')
 
     // Check if it exists and push else assign it
     _nuxt.options.vite.optimizeDeps ||= {}
@@ -61,9 +61,9 @@ export default defineNuxtModule<ModuleOptions>({
 
     // Load the component so it can be used directly
     addComponent({
-      name: 'ScalarApiReference',
+      name: 'ReadyApiReference',
       export: 'default',
-      filePath: resolver.resolve('./runtime/components/ScalarApiReference.vue'),
+      filePath: resolver.resolve('./runtime/components/ReadyApiReference.vue'),
     })
 
     // Add the route for the docs
@@ -99,7 +99,7 @@ export default defineNuxtModule<ModuleOptions>({
       }
     })
 
-    // add scalar tab to DevTools
+    // add readyapi tab to DevTools
     if (_nuxt.options.dev && _options.devtools) {
       _nuxt.hook('devtools:customTabs', (tabs) => {
         tabs.push({

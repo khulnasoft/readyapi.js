@@ -34,9 +34,9 @@ const hasQueries = computed(() => {
     :defaultOpen="hasQueries"
     title="Query Parameters">
     <template v-if="!hasQueries">
-      <div class="scalar-api-client__empty-state">
+      <div class="readyapi-api-client__empty-state">
         <button
-          class="scalar-api-client-add"
+          class="readyapi-api-client-add"
           type="button"
           @click="addAnotherHandler">
           <svg

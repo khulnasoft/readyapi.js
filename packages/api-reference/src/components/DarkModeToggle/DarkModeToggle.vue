@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ScalarIcon } from '@scalar/components'
+import { ScalarIcon } from '@readyapi/components'
 
 defineProps<{
   isDarkMode: boolean
@@ -25,9 +25,9 @@ defineEmits<{
     </button>
     <a
       class="darklight-reference-promo"
-      href="https://www.scalar.com"
+      href="https://www.readyapi.khulnasoft.com"
       target="_blank">
-      Powered by scalar.com
+      Powered by readyapi.khulnasoft.com
     </a>
   </div>
 </template>

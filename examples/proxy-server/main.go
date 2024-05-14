@@ -31,7 +31,7 @@ func corsMiddleware(next http.Handler) http.Handler {
 func handleRequest(w http.ResponseWriter, r *http.Request) {
 	// Parse query parameters
 	queryValues := r.URL.Query()
-	target := queryValues.Get("scalar_url")
+	target := queryValues.Get("readyapi_url")
 
 	remote, _ := url.Parse(target)
 
@@ -47,7 +47,7 @@ func handleRequest(w http.ResponseWriter, r *http.Request) {
 	if target == "" {
 		http.Error(
 			w,
-			"The `scalar_url` query parameter is required. Try to add `?scalar_url=https%3A%2F%2Fgalaxy.scalar.com%2Fplanets` to the URL.", http.StatusBadRequest,
+			"The `readyapi_url` query parameter is required. Try to add `?scalar_url=https%3A%2F%2Fgalaxy.readyapi.khulnasoft.com%2Fplanets` to the URL.", http.StatusBadRequest,
 		)
 
 		return

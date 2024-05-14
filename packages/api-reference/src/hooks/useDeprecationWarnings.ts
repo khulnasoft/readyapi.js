@@ -1,8 +1,8 @@
 // import { type ComputedRef, watch } from 'vue'
 import type { ReferenceConfiguration } from '../types'
 
-// const OLD_PROXY_URL = 'https://api.scalar.com/request-proxy'
-// const NEW_PROXY_URL = 'https://proxy.scalar.com'
+// const OLD_PROXY_URL = 'https://api.readyapi.khulnasoft.com/request-proxy'
+// const NEW_PROXY_URL = 'https://proxy.readyapi.khulnasoft.com'
 
 export function useDeprecationWarnings(configuration: ReferenceConfiguration) {
   // TODO: Enable once the new proxy is ready
@@ -15,7 +15,7 @@ export function useDeprecationWarnings(configuration: ReferenceConfiguration) {
   //       )
   //       configuration.proxy = NEW_PROXY_URL
   //       console.warn(
-  //         `[DEPRECATED] Action Required: You should manually update your configuration to use the new URL (${NEW_PROXY_URL}). Read more: https://github.com/scalar/scalar`,
+  //         `[DEPRECATED] Action Required: You should manually update your configuration to use the new URL (${NEW_PROXY_URL}). Read more: https://github.com/khulnasoft/readyapi.js`,
   //       )
   //     } else if (
   //       configuration.proxy?.length &&
@@ -25,7 +25,7 @@ export function useDeprecationWarnings(configuration: ReferenceConfiguration) {
   //         `[DEPRECATED] Warning: configuration.proxy points to a custom proxy (${configuration?.proxy}).`,
   //       )
   //       console.warn(
-  //         `[DEPRECATED] Action Required: You need to use our new proxy (written in Go). Read more: https://github.com/scalar/scalar/tree/main/examples/proxy-server`,
+  //         `[DEPRECATED] Action Required: You need to use our new proxy (written in Go). Read more: https://github.com/khulnasoft/readyapi.js/tree/main/examples/proxy-server`,
   //       )
   //     }
   //   },

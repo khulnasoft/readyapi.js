@@ -2,8 +2,8 @@ import {
   useApiClientStore,
   useOpenApiStore,
   useRequestStore,
-} from '@scalar/api-client'
-import type { TransformedOperation } from '@scalar/oas-utils'
+} from '@readyapi/api-client'
+import type { TransformedOperation } from '@readyapi/oas-utils'
 import type { OpenAPIV3 } from '@scalar/openapi-parser'
 
 import { getApiClientRequest } from '../helpers'

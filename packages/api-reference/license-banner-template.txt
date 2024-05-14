@@ -7,7 +7,7 @@
  *
  * {{ packageName }} {{ version }}
  *
- * Website: https://scalar.com
- * GitHub:  https://github.com/scalar/scalar
- * License: https://github.com/scalar/scalar/blob/main/LICENSE
+ * Website: https://readyapi.khulnasoft.com
+ * GitHub:  https://github.com/khulnasoft/readyapi.js
+ * License: https://github.com/khulnasoft/readyapi.js/blob/main/LICENSE
 **/

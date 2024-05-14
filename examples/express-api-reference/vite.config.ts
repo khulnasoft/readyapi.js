@@ -6,9 +6,9 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        // Resolve the uncompiled source code for all @scalar packages
-        // @scalar/* -> packages/*/
-        // (not @scalar/*/style.css)
+        // Resolve the uncompiled source code for all @readyapi packages
+        // @readyapi/* -> packages/*/
+        // (not @readyapi/*/style.css)
         find: /^@scalar\/(?!(openapi-parser|snippetz|galaxy|components\/style\.css|components\b))(.+)/,
         replacement: path.resolve(__dirname, '../../packages/$2/src/index.ts'),
       },

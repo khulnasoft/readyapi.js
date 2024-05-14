@@ -1,5 +1,5 @@
 .light-mode .scalar-modal-layout,
-.light-mode .scalar {
+.light-mode .readyapi {
   --scalar-color-1: color-mix(
     in srgb,
     rgb(var(--primary-base-300, 180 180 180)),
@@ -48,7 +48,7 @@
   --scalar-scrollbar-color-active: rgba(255, 255, 255, 0.48);
 }
 .dark-mode .scalar-modal-layout,
-.dark-mode .scalar {
+.dark-mode .readyapi {
   --scalar-color-1: color-mix(
     in srgb,
     rgb(var(--primary-base-700, 70 70 70)),
@@ -96,7 +96,7 @@
   --scalar-scrollbar-color-active: rgba(0, 0, 0, 0.36);
 }
 .scalar-modal-layout,
-.scalar {
+.readyapi {
   --scalar-font: initial;
   --scalar-font-code: var(--font-mono);
 
@@ -125,7 +125,7 @@
 .readyapi input::placeholder {
   color: var(--scalar-color-3);
 }
-.scalar .scalar-app-header {
+.readyapi .scalar-app-header {
   width: 100%;
   z-index: 1000;
   padding: 6px 12px 6px 12px;
@@ -138,10 +138,10 @@
   align-items: center;
   gap: 6px;
 }
-.scalar .scalar-app-header a {
+.readyapi .scalar-app-header a {
   text-decoration: none;
 }
-.scalar .scalar-api-client {
+.readyapi .scalar-api-client {
   max-height: calc(100% - calc(var(--scalar-app-header-height)));
   border-radius: 8px;
 }
@@ -159,7 +159,7 @@
 .scalar-api-client__close:hover {
   cursor: pointer;
 }
-.scalar .scalar-app {
+.readyapi .scalar-app {
   background: var(--scalar-background-3);
   height: calc(100dvh - 100px);
   max-width: 1280px;
@@ -182,7 +182,7 @@
     opacity: 1;
   }
 }
-.scalar .scalar-app-exit {
+.readyapi .scalar-app-exit {
   position: fixed;
   top: 0;
   left: 0;
@@ -194,7 +194,7 @@
   cursor: pointer;
   animation: scalardrawerexitfadein 0.35s forwards;
 }
-.scalar .scalar-app-exit:before {
+.readyapi .scalar-app-exit:before {
   content: '\00d7';
   font-family: sans-serif;
   position: absolute;
@@ -208,7 +208,7 @@
   color: white;
   opacity: 0.6;
 }
-.scalar .scalar-app-exit:hover:before {
+.readyapi .scalar-app-exit:hover:before {
   opacity: 1;
 }
 @keyframes scalardrawerexitfadein {
@@ -235,20 +235,20 @@
   justify-content: center;
 }
 
-.scalar .url-form-input {
+.readyapi .url-form-input {
   min-height: auto !important;
 }
 
-.scalar .scalar-container {
+.readyapi .scalar-container {
   line-height: normal;
 }
-.scalar .scalar-app-header span {
+.readyapi .scalar-app-header span {
   color: var(--scalar-color-3);
 }
-.scalar .scalar-app-header a {
+.readyapi .scalar-app-header a {
   color: var(--scalar-color-1);
 }
-.scalar .scalar-app-header a:hover {
+.readyapi .scalar-app-header a:hover {
   text-decoration: underline;
 }
 .scalar-activate {

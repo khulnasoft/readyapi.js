@@ -15,7 +15,7 @@ import {
 const program = new Command()
 
 program
-  .name('@scalar/cli')
+  .name('@readyapi/cli')
   .description('CLI to work with your OpenAPI files')
   .version(version)
 

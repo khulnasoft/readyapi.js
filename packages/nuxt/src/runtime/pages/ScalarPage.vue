@@ -17,5 +17,5 @@ if (
 </script>
 
 <template>
-  <ScalarApiReference :configuration="meta.configuration" />
+  <ReadyApiReference :configuration="meta.configuration" />
 </template>

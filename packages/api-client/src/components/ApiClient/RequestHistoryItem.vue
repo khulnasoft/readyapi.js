@@ -39,7 +39,7 @@ const getContentLength = (response: ClientResponse) => {
         prettyMilliseconds(requestHistory[history].response.duration)
       }}</span>
       <span
-        :class="`scalar-api-client__status--${String(
+        :class="`readyapi-api-client__status--${String(
           requestHistory[history].response.statusCode,
         ).charAt(0)}xx`">
         {{ requestHistory[history].response.statusCode }}

@@ -14,7 +14,7 @@ describe('Legacy Utils', () => {
     expect(res).toBe('--scalar-sidebar-color-1')
   })
 
-  it("Doesn't change a new scalar variable", () => {
+  it("Doesn't change a new readyapi variable", () => {
     const res = migrateThemeVariables('--scalar-color-1')
     expect(res).toBe('--scalar-color-1')
   })

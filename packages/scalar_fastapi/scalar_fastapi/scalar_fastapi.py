@@ -105,7 +105,7 @@ def get_scalar_api_reference(
         str,
         Doc(
             """
-            The OpenAPI URL that Scalar should load and use.
+            The OpenAPI URL that Readyapi should load and use.
             This is normally done automatically by FastAPI using the default URL
             `/openapi.json`.
             """
@@ -123,17 +123,17 @@ def get_scalar_api_reference(
         str,
         Doc(
             """
-            The URL to use to load the Scalar JavaScript.
+            The URL to use to load the Readyapi JavaScript.
             It is normally set to a CDN URL.
             """
         ),
-    ] = "https://cdn.jsdelivr.net/npm/@scalar/api-reference",
+    ] = "https://cdn.jsdelivr.net/npm/@readyapi/api-reference",
     scalar_proxy_url: Annotated[
         str,
         Doc(
             """
-            The URL to use to set the Scalar Proxy.
-            It is normally set to a Scalar API URL (https://api.scalar.com/request-proxy), but default is empty
+            The URL to use to set the Readyapi Proxy.
+            It is normally set to a Readyapi API URL (https://api.readyapi.khulnasoft.com/request-proxy), but default is empty
             """
         ),
     ] = "",
@@ -175,7 +175,7 @@ def get_scalar_api_reference(
     </head>
     <body>
     <noscript>
-        Scalar requires Javascript to function. Please enable it to browse the documentation.
+        Readyapi requires Javascript to function. Please enable it to browse the documentation.
     </noscript>
     <script
       id="api-reference"

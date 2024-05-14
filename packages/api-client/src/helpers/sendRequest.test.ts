@@ -1,5 +1,5 @@
-import { createApiClientProxy } from '@scalar/api-client-proxy'
-import { createEchoServer } from '@scalar/echo-server'
+import { createApiClientProxy } from '@readyapi/api-client-proxy'
+import { createEchoServer } from '@readyapi/echo-server'
 import type { AddressInfo } from 'node:net'
 import { describe, expect, it } from 'vitest'
 

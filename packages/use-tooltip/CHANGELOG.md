@@ -1,4 +1,4 @@
-# @scalar/use-tooltip
+# @readyapi/use-tooltip
 
 ## 0.6.2
 
@@ -56,7 +56,7 @@
 
 ### Patch Changes
 
-- 35dffe4: chore: include @scalar dependencies in the bundle
+- 35dffe4: chore: include @readyapi dependencies in the bundle
 
 ## 0.5.6
 

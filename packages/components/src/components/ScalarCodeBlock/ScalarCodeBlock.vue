@@ -4,7 +4,7 @@ import {
   type SSRState,
   createHash,
   ssrState,
-} from '@scalar/oas-utils'
+} from '@readyapi/oas-utils'
 import prismjs from 'prismjs'
 import 'prismjs/components/prism-bash'
 import 'prismjs/components/prism-json'
@@ -168,7 +168,7 @@ onMounted(async () => {
 <template>
   <pre
     :class="[
-      `scalar-component scalar-codeblock-pre language-${language}`,
+      `readyapi-component scalar-codeblock-pre language-${language}`,
       {
         'line-numbers': lineNumbers,
       },
@@ -176,9 +176,9 @@ onMounted(async () => {
         SSR generated highlighting
         * Do not remove these strange comments and line breaks as any line breaks
           inside of pre will show in the dom
-      --><code v-if="ssrContent" :class="`scalar-codeblock-code language-${language}`" v-html="prettyPrintString(ssrContent)" /><!--
+      --><code v-if="ssrContent" :class="`readyapi-codeblock-code language-${language}`" v-html="prettyPrintString(ssrContent)" /><!--
         Client side generated highlighting
-      --><code v-else ref="el" :class="`scalar-codeblock-code language-${language}`">{{prettyPrintString(content)}}</code></pre>
+      --><code v-else ref="el" :class="`readyapi-codeblock-code language-${language}`">{{prettyPrintString(content)}}</code></pre>
 </template>
 <style>
 .scalar-codeblock-code[class*='language-'],

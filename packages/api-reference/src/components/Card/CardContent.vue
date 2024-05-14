@@ -5,7 +5,7 @@ defineProps<CardContentProps>()
 </script>
 <template>
   <div
-    class="scalar-card-content"
+    class="readyapi-card-content"
     :class="{
       'scalar-card--muted': muted,
       'scalar-card--contrast': contrast,

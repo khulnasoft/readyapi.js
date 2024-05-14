@@ -1,4 +1,4 @@
-import { type Operation, getExampleFromSchema } from '@scalar/oas-utils'
+import { type Operation, getExampleFromSchema } from '@readyapi/oas-utils'
 import { openapi } from '@scalar/openapi-parser'
 import { type Context, Hono } from 'hono'
 

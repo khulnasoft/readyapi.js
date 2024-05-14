@@ -1,14 +1,9 @@
 {
   "name": "@readyapi-examples/nextjs-api-reference",
   "license": "MIT",
-  "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/khulnasoft/readyapi",
-  "bugs": "https://github.com/khulnasoft/readyapi/issues/new/choose",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.git",
-    "directory": "packages/use-tooltip"
-  },
+  "author": "Khulnasoft (https://github.com/khulnasoft)",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -24,7 +19,7 @@
   "type": "module",
   "dependencies": {
     "@readyapi/api-client-react": "workspace:*",
-    "@readyapi/nextjs-api-reference": "workspace:*",
+    "@scalar/nextjs-api-reference": "workspace:*",
     "next": "^14.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

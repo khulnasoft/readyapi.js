@@ -20,8 +20,8 @@ COPY examples/nestjs-api-reference-express ./examples/nestjs-api-reference-expre
 
 # Mount the cache where pnpm expects it and build the main package
 RUN --mount=type=cache,id=pnpm,target=~/.pnpm-store \
-    pnpm --filter @scalar-examples/nestjs-api-reference-express install --frozen-lockfile && \
-    pnpm --filter @scalar-examples/nestjs-api-reference-express build
+    pnpm --filter @readyapi-examples/nestjs-api-reference-express install --frozen-lockfile && \
+    pnpm --filter @readyapi-examples/nestjs-api-reference-express build
 
 FROM node:18-bullseye-slim AS runner
 # Copy from the previous stage to keep this image minimal

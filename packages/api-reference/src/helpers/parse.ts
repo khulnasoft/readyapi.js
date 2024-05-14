@@ -2,7 +2,7 @@
  * Unfortunately, this file is very messy. I think we should get rid of it entirely. :)
  * TODO: Slowly remove all the transformed properties and use the raw output of @scalar/openapi-parser instead.
  */
-import { type RequestMethod, validRequestMethods } from '@scalar/api-client'
+import { type RequestMethod, validRequestMethods } from '@readyapi/api-client'
 import {
   type OpenAPIV2,
   type OpenAPIV3,
@@ -22,8 +22,8 @@ export const parse = (specification: any): Promise<Spec> => {
 
       if (errors?.length) {
         console.warn(
-          'Please open an issue on https://github.com/scalar/scalar\n',
-          'Scalar OpenAPI Parser Warning:\n',
+          'Please open an issue on https://github.com/khulnasoft/readyapi.js\n',
+          'Readyapi OpenAPI Parser Warning:\n',
           errors,
         )
       }

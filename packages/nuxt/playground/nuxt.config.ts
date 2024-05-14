@@ -2,7 +2,7 @@ import type { NuxtConfig } from 'nuxt/schema'
 
 export default defineNuxtConfig({
   modules: ['../src/module'],
-  scalar: {
+  readyapi: {
     spec: {
       url: 'https://cdn.scalar.com/spec/openapi_petstore.json',
     },
@@ -20,7 +20,7 @@ export default defineNuxtConfig({
       },
       {
         spec: {
-          url: 'https://cdn.jsdelivr.net/npm/@scalar/galaxy/dist/latest.json',
+          url: 'https://cdn.jsdelivr.net/npm/@readyapi/galaxy/dist/latest.json',
         },
         pathRouting: {
           basePath: '/galaxy',

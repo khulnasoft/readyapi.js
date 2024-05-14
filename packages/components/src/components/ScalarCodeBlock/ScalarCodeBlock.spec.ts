@@ -22,7 +22,7 @@ describe('ScalarCodeBlock', () => {
 
     // Confirm the syntax highlighting has been applied
     expect(code.html()).toBe(
-      `<code class="scalar-codeblock-code language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code>`,
+      `<code class="readyapi-codeblock-code language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code>`,
     )
   })
 
@@ -61,7 +61,7 @@ describe('ScalarCodeBlock', () => {
 
     // Confirm the syntax highlighting has been applied
     expect(code.html())
-      .toBe(`<code class="scalar-codeblock-code language-js"><span class="token punctuation">{</span>
+      .toBe(`<code class="readyapi-codeblock-code language-js"><span class="token punctuation">{</span>
   <span class="token string-property property">"description"</span><span class="token operator">:</span> <span class="token string">"successful operation"</span><span class="token punctuation">,</span>
   <span class="token string-property property">"schema"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token string-property property">"type"</span><span class="token operator">:</span> <span class="token string">"object"</span><span class="token punctuation">,</span>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Parameters } from '@scalar/oas-utils'
+import type { Parameters } from '@readyapi/oas-utils'
 
 import { SchemaProperty } from '../Schema'
 

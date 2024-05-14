@@ -1,5 +1,5 @@
 <template>
-  <div class="scalar-card">
+  <div class="readyapi-card">
     <slot />
   </div>
 </template>

@@ -1,4 +1,4 @@
-# @scalar/themes
+# @readyapi/themes
 
 ## 0.7.9
 
@@ -40,7 +40,7 @@
 
 ### Patch Changes
 
-- 4d31b19: refactor: move theme labels to @scalar/themes
+- 4d31b19: refactor: move theme labels to @readyapi/themes
 
 ## 0.7.2
 
@@ -263,7 +263,7 @@
 ### Patch Changes
 
 - 75a69ba7: feat: add `theme` prop and improve theme support
-- 75a69ba7: refactor: rename @scalar/default-theme to @scalar/themes, add more themes
+- 75a69ba7: refactor: rename @scalar/default-theme to @readyapi/themes, add more themes
 
 ## 0.3.1
 
@@ -299,4 +299,4 @@
 
 ### Patch Changes
 
-- de4ff38: feat: add a new @scalar/themes package to import the variables and custom scrollbar CSS
+- de4ff38: feat: add a new @readyapi/themes package to import the variables and custom scrollbar CSS

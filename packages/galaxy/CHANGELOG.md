@@ -1,4 +1,4 @@
-# @scalar/galaxy
+# @readyapi/galaxy
 
 ## 0.1.2
 

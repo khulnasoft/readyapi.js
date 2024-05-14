@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import { ScalarCodeBlock, ScalarIcon } from '@scalar/components'
+import { ScalarCodeBlock, ScalarIcon } from '@readyapi/components'
 import {
   type TransformedOperation,
   normalizeMimeTypeObject,
-} from '@scalar/oas-utils'
+} from '@readyapi/oas-utils'
 import { computed, ref } from 'vue'
 
 import { useClipboard } from '../../../../hooks'
@@ -110,17 +110,17 @@ const showSchema = ref(false)
         </button>
         <label
           v-if="currentJsonResponse?.schema"
-          class="scalar-card-checkbox">
+          class="readyapi-card-checkbox">
           Show Schema
           <input
             v-model="showSchema"
-            class="scalar-card-checkbox-input"
+            class="readyapi-card-checkbox-input"
             type="checkbox" />
-          <span class="scalar-card-checkbox-checkmark"></span>
+          <span class="readyapi-card-checkbox-checkmark"></span>
         </label>
       </template>
     </CardTabHeader>
-    <div class="scalar-card-container custom-scroll">
+    <div class="readyapi-card-container custom-scroll">
       <!-- Commenting out until we re-organize cause of height issues -->
       <!-- <CardContent
         v-if="currentResponse.headers"

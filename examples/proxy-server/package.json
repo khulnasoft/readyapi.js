@@ -2,13 +2,13 @@
   "name": "@readyapi-examples/proxy-server",
   "description": "Golang proxy for CORS requests",
   "license": "MIT",
-  "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/khulnasoft/readyapi",
-  "bugs": "https://github.com/khulnasoft/readyapi/issues/new/choose",
+  "author": "Khulnasoft (https://github.com/khulnasoft)",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.git",
-    "directory": "packages/use-tooltip"
+    "url": "https://github.com/khulnasoft/readyapi.js.git",
+    "directory": "examples/proxy-server"
   },
   "keywords": [
     "golang proxy api-client"

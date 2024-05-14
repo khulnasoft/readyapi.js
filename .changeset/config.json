@@ -3,11 +3,11 @@
   "changelog": "@changesets/cli/changelog",
   "commit": ["@changesets/cli/commit", { "skipCI": false }],
   "fixed": [
-    ["@scalar/api-reference", "@scalar/fastify-api-reference"]
+    ["@readyapi/api-reference", "@readyapi/fastify-api-reference"]
   ],
   "linked": [],
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["@scalar-examples/*", "playwright"]
+  "ignore": ["@readyapi-examples/*", "playwright"]
 }

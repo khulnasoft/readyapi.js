@@ -83,7 +83,7 @@ importers:
 
   examples/api-client-proxy:
     dependencies:
-      '@scalar/api-client-proxy':
+      '@readyapi/api-client-proxy':
         specifier: workspace:*
         version: link:../../packages/api-client-proxy
       dotenv:
@@ -136,7 +136,7 @@ importers:
       '@mdx-js/react':
         specifier: ^3.0.0
         version: 3.0.1(@types/react@18.2.60)(react@18.2.0)
-      '@scalar/docusaurus':
+      '@readyapi/docusaurus':
         specifier: workspace:*
         version: link:../../packages/docusaurus
       clsx:
@@ -167,7 +167,7 @@ importers:
 
   examples/echo-server:
     dependencies:
-      '@scalar/echo-server':
+      '@readyapi/echo-server':
         specifier: workspace:*
         version: link:../../packages/echo-server
       dotenv:
@@ -186,7 +186,7 @@ importers:
 
   examples/express-api-reference:
     dependencies:
-      '@scalar/express-api-reference':
+      '@readyapi/express-api-reference':
         specifier: workspace:*
         version: link:../../packages/express-api-reference
       express:
@@ -220,7 +220,7 @@ importers:
       '@fastify/swagger':
         specifier: ^8.10.1
         version: 8.14.0
-      '@scalar/fastify-api-reference':
+      '@readyapi/fastify-api-reference':
         specifier: workspace:*
         version: link:../../packages/fastify-api-reference
       fastify:
@@ -251,7 +251,7 @@ importers:
       '@hono/zod-openapi':
         specifier: ^0.8.6
         version: 0.8.6(hono@4.2.8)(zod@3.22.4)
-      '@scalar/hono-api-reference':
+      '@readyapi/hono-api-reference':
         specifier: workspace:*
         version: link:../../packages/hono-api-reference
       hono:
@@ -288,7 +288,7 @@ importers:
       '@nestjs/swagger':
         specifier: ^7.3.1
         version: 7.3.1(@nestjs/common@10.3.8)(@nestjs/core@10.3.8)(reflect-metadata@0.1.14)
-      '@scalar/nestjs-api-reference':
+      '@readyapi/nestjs-api-reference':
         specifier: workspace:*
         version: link:../../packages/nestjs-api-reference
       reflect-metadata:
@@ -379,7 +379,7 @@ importers:
       '@nestjs/swagger':
         specifier: ^7.3.1
         version: 7.3.1(@nestjs/common@10.3.8)(@nestjs/core@10.3.8)(reflect-metadata@0.1.14)
-      '@scalar/nestjs-api-reference':
+      '@readyapi/nestjs-api-reference':
         specifier: workspace:*
         version: link:../../packages/nestjs-api-reference
       reflect-metadata:
@@ -458,7 +458,7 @@ importers:
 
   examples/nextjs-api-reference:
     dependencies:
-      '@scalar/api-client-react':
+      '@readyapi/api-client-react':
         specifier: workspace:*
         version: link:../../packages/api-client-react
       '@scalar/nextjs-api-reference':
@@ -489,7 +489,7 @@ importers:
 
   examples/proxy-server:
     devDependencies:
-      '@scalar/build-tooling':
+      '@readyapi/build-tooling':
         specifier: workspace:*
         version: link:../../packages/build-tooling
       tsc-alias:
@@ -508,7 +508,7 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
     devDependencies:
-      '@scalar/api-reference-react':
+      '@readyapi/api-reference-react':
         specifier: workspace:*
         version: link:../../packages/api-reference-react
       '@types/react':
@@ -559,7 +559,7 @@ importers:
 
   examples/ssg:
     dependencies:
-      '@scalar/api-reference':
+      '@readyapi/api-reference':
         specifier: workspace:*
         version: link:../../packages/api-reference
       vue:
@@ -584,16 +584,16 @@ importers:
 
   examples/web:
     dependencies:
-      '@scalar/api-client':
+      '@readyapi/api-client':
         specifier: workspace:*
         version: link:../../packages/api-client
-      '@scalar/api-reference':
+      '@readyapi/api-reference':
         specifier: workspace:*
         version: link:../../packages/api-reference
-      '@scalar/galaxy':
+      '@readyapi/galaxy':
         specifier: workspace:*
         version: link:../../packages/galaxy
-      '@scalar/themes':
+      '@readyapi/themes':
         specifier: workspace:*
         version: link:../../packages/themes
       '@vueuse/core':
@@ -645,22 +645,22 @@ importers:
       '@headlessui/vue':
         specifier: ^1.7.20
         version: 1.7.20(vue@3.4.21)
-      '@scalar/components':
+      '@readyapi/components':
         specifier: workspace:*
         version: link:../components
       '@scalar/openapi-parser':
         specifier: ^0.3.2
         version: 0.3.2
-      '@scalar/themes':
+      '@readyapi/themes':
         specifier: workspace:*
         version: link:../themes
-      '@scalar/use-codemirror':
+      '@readyapi/use-codemirror':
         specifier: workspace:*
         version: link:../use-codemirror
-      '@scalar/use-modal':
+      '@readyapi/use-modal':
         specifier: workspace:*
         version: link:../use-modal
-      '@scalar/use-tooltip':
+      '@readyapi/use-tooltip':
         specifier: workspace:*
         version: link:../use-tooltip
       '@vueuse/core':
@@ -685,13 +685,13 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
     devDependencies:
-      '@scalar/api-client-proxy':
+      '@readyapi/api-client-proxy':
         specifier: workspace:*
         version: link:../api-client-proxy
-      '@scalar/echo-server':
+      '@readyapi/echo-server':
         specifier: workspace:*
         version: link:../echo-server
-      '@scalar/oas-utils':
+      '@readyapi/oas-utils':
         specifier: workspace:*
         version: link:../oas-utils
       '@types/content-type':
@@ -731,7 +731,7 @@ importers:
         specifier: ^4.19.2
         version: 4.19.2
     devDependencies:
-      '@scalar/echo-server':
+      '@readyapi/echo-server':
         specifier: workspace:*
         version: link:../echo-server
       '@types/cors':
@@ -767,7 +767,7 @@ importers:
 
   packages/api-client-react:
     dependencies:
-      '@scalar/api-client':
+      '@readyapi/api-client':
         specifier: workspace:*
         version: link:../api-client
     devDependencies:
@@ -804,13 +804,13 @@ importers:
       '@headlessui/vue':
         specifier: ^1.7.20
         version: 1.7.20(vue@3.4.21)
-      '@scalar/api-client':
+      '@readyapi/api-client':
         specifier: workspace:*
         version: link:../api-client
-      '@scalar/components':
+      '@readyapi/components':
         specifier: workspace:*
         version: link:../components
-      '@scalar/oas-utils':
+      '@readyapi/oas-utils':
         specifier: workspace:*
         version: link:../oas-utils
       '@scalar/openapi-parser':
@@ -819,16 +819,16 @@ importers:
       '@scalar/snippetz':
         specifier: ^0.1.6
         version: 0.1.6
-      '@scalar/themes':
+      '@readyapi/themes':
         specifier: workspace:*
         version: link:../themes
-      '@scalar/use-modal':
+      '@readyapi/use-modal':
         specifier: workspace:*
         version: link:../use-modal
-      '@scalar/use-toasts':
+      '@readyapi/use-toasts':
         specifier: workspace:*
         version: link:../use-toasts
-      '@scalar/use-tooltip':
+      '@readyapi/use-tooltip':
         specifier: workspace:*
         version: link:../use-tooltip
       '@unhead/schema':
@@ -901,7 +901,7 @@ importers:
       '@etchteam/storybook-addon-css-variables-theme':
         specifier: ^1.5.1
         version: 1.6.0(@types/react@18.2.60)(react-dom@18.2.0)(react@18.2.0)
-      '@scalar/galaxy':
+      '@readyapi/galaxy':
         specifier: workspace:*
         version: link:../galaxy
       '@storybook/addon-essentials':
@@ -979,7 +979,7 @@ importers:
 
   packages/api-reference-react:
     dependencies:
-      '@scalar/api-reference':
+      '@readyapi/api-reference':
         specifier: workspace:*
         version: link:../api-reference
     devDependencies:
@@ -1059,13 +1059,13 @@ importers:
       '@parcel/watcher':
         specifier: ^2.4.1
         version: 2.4.1
-      '@scalar/api-reference':
+      '@readyapi/api-reference':
         specifier: workspace:*
         version: link:../api-reference
-      '@scalar/mock-server':
+      '@readyapi/mock-server':
         specifier: workspace:*
         version: link:../mock-server
-      '@scalar/oas-utils':
+      '@readyapi/oas-utils':
         specifier: workspace:*
         version: link:../oas-utils
       '@scalar/openapi-parser':
@@ -1135,7 +1135,7 @@ importers:
       '@headlessui/vue':
         specifier: ^1.7.20
         version: 1.7.20(vue@3.4.21)
-      '@scalar/oas-utils':
+      '@readyapi/oas-utils':
         specifier: workspace:*
         version: link:../oas-utils
       '@storybook/test':
@@ -1163,7 +1163,7 @@ importers:
       '@rise8/tailwind-pixel-perfect-preset':
         specifier: ^1.0.1
         version: 1.0.1(tailwindcss@3.4.1)
-      '@scalar/themes':
+      '@readyapi/themes':
         specifier: workspace:*
         version: link:../themes
       '@storybook/addon-essentials':
@@ -1259,7 +1259,7 @@ importers:
 
   packages/docusaurus:
     dependencies:
-      '@scalar/api-reference-react':
+      '@readyapi/api-reference-react':
         specifier: workspace:*
         version: link:../api-reference-react
     devDependencies:
@@ -1348,7 +1348,7 @@ importers:
 
   packages/express-api-reference:
     dependencies:
-      '@scalar/api-reference':
+      '@readyapi/api-reference':
         specifier: workspace:*
         version: link:../api-reference
       express:
@@ -1374,7 +1374,7 @@ importers:
         specifier: ^4.5.1
         version: 4.5.1
     devDependencies:
-      '@scalar/api-reference':
+      '@readyapi/api-reference':
         specifier: workspace:*
         version: link:../api-reference
       '@vitest/coverage-v8':
@@ -1434,7 +1434,7 @@ importers:
 
   packages/hono-api-reference:
     dependencies:
-      '@scalar/api-reference':
+      '@readyapi/api-reference':
         specifier: workspace:*
         version: link:../api-reference
     devDependencies:
@@ -1456,7 +1456,7 @@ importers:
       '@hono/node-server':
         specifier: ^1.11.0
         version: 1.11.1
-      '@scalar/oas-utils':
+      '@readyapi/oas-utils':
         specifier: workspace:*
         version: link:../oas-utils
       '@scalar/openapi-parser':
@@ -1466,7 +1466,7 @@ importers:
         specifier: ^4.2.7
         version: 4.2.8
     devDependencies:
-      '@scalar/galaxy':
+      '@readyapi/galaxy':
         specifier: workspace:*
         version: link:../galaxy
       '@types/node':
@@ -1499,7 +1499,7 @@ importers:
 
   packages/nestjs-api-reference:
     dependencies:
-      '@scalar/api-reference':
+      '@readyapi/api-reference':
         specifier: workspace:*
         version: link:../api-reference
       express:
@@ -1524,7 +1524,7 @@ importers:
 
   packages/nextjs-api-reference:
     dependencies:
-      '@scalar/api-reference':
+      '@readyapi/api-reference':
         specifier: workspace:*
         version: link:../api-reference
     devDependencies:
@@ -1561,7 +1561,7 @@ importers:
       '@nuxt/kit':
         specifier: ^3.11.2
         version: 3.11.2(rollup@3.29.4)
-      '@scalar/api-reference':
+      '@readyapi/api-reference':
         specifier: workspace:*
         version: link:../api-reference
     devDependencies:
@@ -1602,7 +1602,7 @@ importers:
         specifier: ^2.4.1
         version: 2.4.1
     devDependencies:
-      '@scalar/build-tooling':
+      '@readyapi/build-tooling':
         specifier: workspace:*
         version: link:../build-tooling
       '@scalar/openapi-parser':
@@ -1626,23 +1626,23 @@ importers:
 
   packages/play-button:
     dependencies:
-      '@scalar/api-client':
+      '@readyapi/api-client':
         specifier: workspace:*
         version: link:../api-client
-      '@scalar/api-reference':
+      '@readyapi/api-reference':
         specifier: workspace:*
         version: link:../api-reference
       '@scalar/openapi-parser':
         specifier: ^0.3.2
         version: 0.3.2
-      '@scalar/themes':
+      '@readyapi/themes':
         specifier: workspace:*
         version: link:../themes
       '@vueuse/core':
         specifier: ^10.9.0
         version: 10.9.0(vue@3.4.21)
     devDependencies:
-      '@scalar/build-tooling':
+      '@readyapi/build-tooling':
         specifier: workspace:*
         version: link:../build-tooling
       '@vitejs/plugin-vue':

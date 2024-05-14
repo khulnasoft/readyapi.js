@@ -1,4 +1,4 @@
-import type { ReferenceConfiguration } from '@scalar/api-reference'
+import type { ReferenceConfiguration } from '@readyapi/api-reference'
 import type {
   FastifyBaseLogger,
   FastifyTypeProviderDefault,
@@ -13,7 +13,7 @@ export type FastifyApiReferenceOptions = {
    * If you’re prefixing Fastify with a path, you can set it here.
    * It’ll be added to the JavaScript URL and the route.
    *
-   * Example: ${publicPath}${routePrefix}/@scalar/fastify-api-reference/js/browser.js
+   * Example: ${publicPath}${routePrefix}/@readyapi/fastify-api-reference/js/browser.js
    */
   publicPath?: string
   /**
@@ -23,9 +23,9 @@ export type FastifyApiReferenceOptions = {
    */
   routePrefix?: string
   /**
-   * The universal configuration object for @scalar/api-reference.
+   * The universal configuration object for @readyapi/api-reference.
    *
-   * Read more: https://github.com/scalar/scalar
+   * Read more: https://github.com/khulnasoft/readyapi.js
    */
   configuration?: ReferenceConfiguration
 }
@@ -37,7 +37,7 @@ const schemaToHideRoute = {
 }
 
 const getJavaScriptUrl = (routePrefix?: string, publicPath?: string) =>
-  `${publicPath ?? ''}${routePrefix ?? ''}/@scalar/fastify-api-reference/js/browser.js`.replace(
+  `${publicPath ?? ''}${routePrefix ?? ''}/@readyapi/fastify-api-reference/js/browser.js`.replace(
     /\/\//g,
     '/',
   )
@@ -120,7 +120,7 @@ export const defaultCss = `
 `
 
 /**
- * The HTML to load the @scalar/api-reference JavaScript package.
+ * The HTML to load the @readyapi/api-reference JavaScript package.
  */
 export const javascript = (options: FastifyApiReferenceOptions) => {
   const { configuration } = options
@@ -150,7 +150,7 @@ export function htmlDocument(options: FastifyApiReferenceOptions) {
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Scalar API Reference</title>
+    <title>Readyapi API Reference</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -180,7 +180,7 @@ const fastifyApiReference = fp<
       !hasSwaggerPlugin
     ) {
       fastify.log.warn(
-        '[@scalar/fastify-api-reference] You didn’t provide a spec.content or spec.url, and @fastify/swagger could not be found. Please provide one of these options.',
+        '[@readyapi/fastify-api-reference] You didn’t provide a spec.content or spec.url, and @fastify/swagger could not be found. Please provide one of these options.',
       )
 
       return
@@ -242,7 +242,7 @@ const fastifyApiReference = fp<
     })
   },
   {
-    name: '@scalar/fastify-api-reference',
+    name: '@readyapi/fastify-api-reference',
   },
 )
 

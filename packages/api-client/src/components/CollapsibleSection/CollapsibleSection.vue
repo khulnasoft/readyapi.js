@@ -33,24 +33,24 @@ watch(
     v-slot="{ open }"
     :defaultOpen="defaultOpen">
     <div
-      class="scalar-api-client__item"
+      class="readyapi-api-client__item"
       :class="{ 'scalar-api-client__item--open': open }">
       <DisclosureButton
         ref="collapseButton"
-        class="scalar-api-client__toggle"
+        class="readyapi-api-client__toggle"
         @click="openCopy = !openCopy">
-        <div class="scalar-api-client__toggle-container">
-          <span class="scalar-api-client__item__title">
+        <div class="readyapi-api-client__toggle-container">
+          <span class="readyapi-api-client__item__title">
             {{ title }}
           </span>
           <div
             v-if="$slots.options && open"
-            class="scalar-api-client__item__options">
+            class="readyapi-api-client__item__options">
             <slot name="options" />
           </div>
         </div>
         <svg
-          class="scalar-api-client__toggle__icon"
+          class="readyapi-api-client__toggle__icon"
           fill="none"
           viewBox="0 0 12 12"
           xmlns="http://www.w3.org/2000/svg">
@@ -62,7 +62,7 @@ watch(
         </svg>
       </DisclosureButton>
       <DisclosurePanel>
-        <div class="scalar-api-client__item__content">
+        <div class="readyapi-api-client__item__content">
           <slot />
         </div>
       </DisclosurePanel>
