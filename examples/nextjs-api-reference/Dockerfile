@@ -7,8 +7,8 @@ COPY examples/nextjs-api-reference ./examples/nextjs-api-reference
 
 # Install and build the main package and its dependencies
 RUN --mount=type=cache,id=pnpm,target=~/.pnpm-store \
-    pnpm --filter "@scalar-examples/nextjs-api-reference" install && \
-    pnpm --filter "@scalar-examples/nextjs-api-reference" build
+    pnpm --filter "@readyapi-examples/nextjs-api-reference" install && \
+    pnpm --filter "@readyapi-examples/nextjs-api-reference" build
 
 
 FROM node:18-bullseye-slim AS runner

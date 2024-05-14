@@ -13,9 +13,6 @@ const __dirname = path.dirname(__filename)
 
 type PackageType = 'examples' | 'packages'
 
-// Set the new package name here
-const newPackageName = '@readyapi'
-
 /**
  * # Formatting script for package.json files
  * Sorts, defaults and overrides keys as specified in the definitions below
@@ -53,14 +50,13 @@ const sortKeys = ['dependencies', 'devDependencies', 'scripts']
 /** Provide hardcoded overrides for some fields */
 const overrides: Record<string, unknown> = {
   license: 'MIT',
-  author: 'KhulnaSoft (https://github.com/khulnasoft)',
-  bugs: `https://github.com/khulnasoft/${newPackageName.replace('@', '')}/issues/new/choose`,
-  homepage: `https://github.com/khulnasoft/${newPackageName.replace('@', '')}`,
+  author: 'Khulnasoft (https://github.com/khulnasoft)',
+  bugs: 'https://github.com/khulnasoft/readyapi.js/issues/new/choose',
+  homepage: 'https://github.com/khulnasoft/readyapi.js',
   repository: {
     type: 'git',
-    url: `https://github.com/khulnasoft/${newPackageName.replace('@', '')}.git`,
-    directory: 'packages/use-tooltip',
-  },
+    "url": "https://github.com/khulnasoft/readyapi.js.git",
+    },
 }
 
 /** Provide default values for some fields */
@@ -80,9 +76,6 @@ async function formatPackage(filepath: string) {
 
   const data = JSON.parse(file)
 
-  // Replace @scalar with @readyapi
-  const newData = replaceScalarWithReadyApi(data)
-
   if (data.type !== 'module') {
     printColor(
       'brightRed',
@@ -90,16 +83,16 @@ async function formatPackage(filepath: string) {
     )
   }
   if (
-    !newData.name.startsWith(`${newPackageName}/`) &&
-    !newData.name.startsWith(`${newPackageName}-examples/`)
+    !data.name.startsWith('@readyapi/') &&
+    !data.name.startsWith('@readyapi-examples/')
   ) {
     printColor(
       'yellow',
-      `Package ${newData.name} is not in the ${newPackageName}/* or ${newPackageName}-examples/* scope.`,
+      `Package ${data.name} is not in the @readyapi/* or @readyapi-examples/* scope.`,
     )
   }
 
-  const unsortedKeys = Object.keys(newData).filter(
+  const unsortedKeys = Object.keys(data).filter(
     (key) => !restrictedKeys.includes(key),
   )
 
@@ -109,11 +102,11 @@ async function formatPackage(filepath: string) {
     if (key === 'UNSORTED') {
       // Add in all unsorted keys at a designated sort point
       unsortedKeys.forEach((uKey) => {
-        formattedData[uKey] = newData[uKey]
+        formattedData[uKey] = data[uKey]
       })
     } else {
       // Either assign the override or the data in sorted order
-      const value = overrides[key] ?? newData[key] ?? fallbacks[key]
+      const value = overrides[key] ?? data[key] ?? fallbacks[key]
       if (value) {
         formattedData[key] = value
       }
@@ -197,16 +190,4 @@ function validatePackageScripts(
       return
     }
   })
-}
-
-/** Replace @scalar with @readyapi */
-function replaceScalarWithReadyApi(data: any) {
-  // Convert the data to string to perform the replacement
-  const newDataString = JSON.stringify(data)
-
-  // Perform the replacement using regular expression
-  const newString = newDataString.replace(/@scalar/g, '@readyapi')
-
-  // Parse the modified string back to JSON
-  return JSON.parse(newString)
 }

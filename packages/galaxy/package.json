@@ -1,53 +1,50 @@
 {
   "name": "@readyapi/galaxy",
-  "description": "OpenAPI example specification in YAML and JSON",
+  "description": "galaxy",
   "license": "MIT",
-  "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/khulnasoft/readyapi",
-  "bugs": "https://github.com/khulnasoft/readyapi/issues/new/choose",
+  "author": "Khulnasoft (https://github.com/khulnasoft)",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.git",
-    "directory": "packages/use-tooltip"
+    "url": "https://github.com/khulnasoft/readyapi.js.git"
   },
   "keywords": [
-    "openapi",
-    "example",
-    "swagger",
-    "petstore"
+    "galaxy"
   ],
-  "version": "0.1.2",
+  "version": "0.0.1",
   "engines": {
     "node": ">=18"
   },
   "scripts": {
-    "build": "vite build && pnpm build:format && pnpm types:build && tsc-alias -p tsconfig.build.json",
-    "build:format": "./scripts/format.sh",
+    "build": "vite build && pnpm types:build && tsc-alias -p tsconfig.build.json",
+    "dev": "vite",
     "lint:check": "eslint .",
     "lint:fix": "eslint .  --fix",
+    "preview": "vite preview",
     "test": "vitest",
-    "types:build": "tsc -p tsconfig.build.json",
-    "types:check": "tsc --noEmit --skipLibCheck"
+    "types:build": "vue-tsc -p tsconfig.build.json",
+    "types:check": "vue-tsc --noEmit --skipLibCheck --composite false"
   },
   "type": "module",
-  "main": "./dist/index.js",
+  "main": "dist/index.js",
   "exports": {
-    "./3.1.yaml": "./dist/3.1.yaml",
-    "./3.1.json": "./dist/3.1.json",
-    "./latest.yaml": "./dist/latest.yaml",
-    "./latest.json": "./dist/latest.json"
+    "import": "./dist/index.js"
   },
   "files": [
     "dist",
     "CHANGELOG.md"
   ],
-  "module": "./dist/index.js",
+  "module": "dist/index.js",
   "devDependencies": {
-    "@readyapi/openapi-parser": "^0.3.2",
-    "@vitest/coverage-v8": "^1.5.0",
+    "@readyapi/build-tooling": "workspace:*",
+    "@vitejs/plugin-vue": "^5.0.4",
     "tsc-alias": "^1.8.8",
     "vite": "^5.2.10",
-    "vite-plugin-static-copy": "^1.0.2",
-    "vitest": "^1.5.0"
+    "vite-svg-loader": "^5.1.0",
+    "vue": "^3.4.21"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.0"
   }
 }

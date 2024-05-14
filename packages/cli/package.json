@@ -1,45 +1,49 @@
 {
   "name": "@readyapi/cli",
-  "description": "A command-line interface to work with OpenAPI files",
+  "description": "readyapi js cli",
   "license": "MIT",
-  "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/khulnasoft/readyapi",
-  "bugs": "https://github.com/khulnasoft/readyapi/issues/new/choose",
+  "author": "Khulnasoft (https://github.com/khulnasoft)",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.git",
-    "directory": "packages/use-tooltip"
+    "url": "https://github.com/khulnasoft/readyapi.js.git"
   },
   "keywords": [
     "readyapi",
-    "openapi",
-    "swagger",
-    "cli"
+    "openapi"
   ],
-  "version": "0.2.75",
+  "version": "0.0.1",
   "engines": {
     "node": ">=18"
   },
   "scripts": {
-    "@readyapi/cli": "pnpm vite-node src/index.ts",
-    "build": "rm -Rf dist/ && tsc && rollup -c",
-    "cli:link": "pnpm run build && npm unlink -g && npm link",
-    "types:check": "tsc --noEmit --skipLibCheck"
+    "build": "vite build && pnpm types:build && tsc-alias -p tsconfig.build.json",
+    "dev": "vite",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint .  --fix",
+    "preview": "vite preview",
+    "test": "vitest",
+    "types:build": "vue-tsc -p tsconfig.build.json",
+    "types:check": "vue-tsc --noEmit --skipLibCheck --composite false"
   },
   "type": "module",
-  "files": [
-    "./dist"
-  ],
-  "bin": {
-    "readyapi": "./dist/index.js"
+  "main": "dist/index.js",
+  "exports": {
+    "import": "./dist/index.js"
   },
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ],
+  "module": "dist/index.js",
   "dependencies": {
     "@hono/node-server": "^1.11.0",
     "@parcel/watcher": "^2.4.1",
+    "@readyapi/openapi-parser": "^0.3.3",
     "@readyapi/api-reference": "workspace:*",
     "@readyapi/mock-server": "workspace:*",
     "@readyapi/oas-utils": "workspace:*",
-    "@readyapi/openapi-parser": "^0.3.2",
     "commander": "^12.0.0",
     "glob": "^10.3.10",
     "hono": "^4.2.7",

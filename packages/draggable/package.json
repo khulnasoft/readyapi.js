@@ -1,19 +1,18 @@
 {
   "name": "@readyapi/draggable",
-  "description": "A simple vue wrapper around html drag and drop",
+  "description": "draggable",
   "license": "MIT",
-  "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/khulnasoft/readyapi",
-  "bugs": "https://github.com/khulnasoft/readyapi/issues/new/choose",
+  "author": "Khulnasoft (https://github.com/khulnasoft)",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.git",
-    "directory": "packages/use-tooltip"
+    "url": "https://github.com/khulnasoft/readyapi.js.git"
   },
   "keywords": [
-    "vue drag and drop draggable html"
+    "draggable"
   ],
-  "version": "0.0.7",
+  "version": "0.0.1",
   "engines": {
     "node": ">=18"
   },
@@ -30,12 +29,7 @@
   "type": "module",
   "main": "dist/index.js",
   "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
-    },
-    "./*.css": "./dist/*.css"
+    "import": "./dist/index.js"
   },
   "files": [
     "dist",
@@ -43,13 +37,12 @@
   ],
   "module": "dist/index.js",
   "devDependencies": {
+    "@readyapi/build-tooling": "workspace:*",
     "@vitejs/plugin-vue": "^5.0.4",
     "tsc-alias": "^1.8.8",
     "vite": "^5.2.10",
-    "vite-plugin-dts": "^3.6.3",
     "vite-svg-loader": "^5.1.0",
-    "vue": "^3.4.21",
-    "vue-tsc": "^1.8.19"
+    "vue": "^3.4.21"
   },
   "peerDependencies": {
     "vue": "^3.3.0"

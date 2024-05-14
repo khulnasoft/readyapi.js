@@ -1,50 +1,37 @@
-import react from '@vitejs/plugin-react'
-import { resolve } from 'path'
+import { findEntryPoints } from '@readyapi/build-tooling'
+import vue from '@vitejs/plugin-vue'
+import { URL, fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
-import dts from 'vite-plugin-dts'
-import { libInjectCss } from 'vite-plugin-lib-inject-css'
+import svgLoader from 'vite-svg-loader'
+
+import pkg from './package.json'
 
 export default defineConfig({
-  plugins: [
-    react(),
-    libInjectCss(),
-    dts({ insertTypesEntry: true, rollupTypes: true }),
-  ],
+  plugins: [vue(), svgLoader()],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+    dedupe: ['vue'],
+  },
+  server: {
+    port: 9000,
+  },
   build: {
+    ssr: true,
+    minify: false,
+    target: 'esnext',
     lib: {
-      // Could also be a dictionary or array of multiple entry points
-      entry: './src/index.ts',
-      name: '@scalar/api-reference-react',
-      formats: ['es', 'cjs'],
-      fileName: 'index',
+      entry: await findEntryPoints({ allowCss: true }),
+      formats: ['es'],
     },
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'src/index.ts'),
-      },
-      // make sure to externalize deps that shouldn't be bundled
-      // into your library
-      external: ['react', 'react-dom'],
+      external: [...Object.keys((pkg as any).peerDependencies || {})],
       output: {
-        // Provide global variables to use in the UMD build
-        // for externalized deps
-        exports: 'named',
-        globals: {
-          'react': 'React',
-          'react-dom': 'react-dom',
-        },
+        // Create a separate file for the dependency bundle
+        manualChunks: (id) =>
+          id.includes('node_modules') ? 'vendor' : undefined,
       },
-    },
-  },
-  resolve: {
-    /**
-     * This is part of a temporary hack to allow this component to be used during
-     * SSR in next/docusaurus etc
-     * TODO remove this when we can point to the correct version of this by targeting server
-     */
-    alias: {
-      'decode-named-character-reference':
-        './node_modules/decode-named-character-reference/index.js',
     },
   },
 })

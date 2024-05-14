@@ -1,4 +1,4 @@
-# @scalar/echo-server
+# @readyapi/echo-server
 
 ## 0.6.4
 
@@ -28,7 +28,7 @@
 
 ### Minor Changes
 
-- 7fb8273: Migrate to @scalar/openapi-parser
+- 7fb8273: Migrate to @readyapi/openapi-parser
 
 ## 0.5.14
 
@@ -82,13 +82,13 @@
 
 ### Patch Changes
 
-- a1319e8b: Switched internal component library to use ScalarComponents instead
+- a1319e8b: Switched internal component library to use ReadyapiComponents instead
 
 ## 0.5.5
 
 ### Patch Changes
 
-- 35dffe4: chore: include @scalar dependencies in the bundle
+- 35dffe4: chore: include @readyapi dependencies in the bundle
 
 ## 0.5.4
 

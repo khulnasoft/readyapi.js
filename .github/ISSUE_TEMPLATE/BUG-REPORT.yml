@@ -30,5 +30,5 @@ body:
     id: env-link
     attributes:
       label: Swagger/OpenAPI Example
-      description: You can use https://sandbox.scalar.com to share an example with us.
-      placeholder: https://sandbox.scalar.com/…
+      description: You can use https://sandbox.khulnasoft.com to share an example with us.
+      placeholder: https://sandbox.khulnasoft.com/…

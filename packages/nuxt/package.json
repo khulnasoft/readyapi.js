@@ -1,68 +1,51 @@
 {
   "name": "@readyapi/nuxt",
-  "description": "Nuxt integration for Scalar API references",
+  "description": "nuxt",
   "license": "MIT",
-  "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/khulnasoft/readyapi",
-  "bugs": "https://github.com/khulnasoft/readyapi/issues/new/choose",
+  "author": "Khulnasoft (https://github.com/khulnasoft)",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.git",
-    "directory": "packages/use-tooltip"
+    "url": "https://github.com/khulnasoft/readyapi.js.git"
   },
   "keywords": [
-    "api",
-    "references",
-    "nuxt",
-    "docs",
-    "postman alternative",
-    "rest",
-    "testing",
-    "vue"
+    "nuxt"
   ],
-  "version": "0.0.45",
+  "version": "0.0.1",
   "engines": {
     "node": ">=18"
   },
   "scripts": {
-    "build": "nuxt-module-build build",
-    "dev": "nuxi dev playground",
-    "dev:build": "nuxi build playground",
-    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
+    "build": "vite build && pnpm types:build && tsc-alias -p tsconfig.build.json",
+    "dev": "vite",
     "lint:check": "eslint .",
     "lint:fix": "eslint .  --fix",
-    "prepack": "nuxt-module-build build",
-    "test:watch": "vitest watch",
-    "toist": "vitest run",
-    "types:check": "nuxi typecheck"
+    "preview": "vite preview",
+    "test": "vitest",
+    "types:build": "tsc -p tsconfig.build.json",
+    "types:check": "tsc --noEmit --skipLibCheck --composite false"
   },
   "type": "module",
-  "main": "./dist/module.cjs",
-  "types": "./dist/types.d.ts",
+  "main": "dist/index.js",
   "exports": {
-    ".": {
-      "types": "./dist/types.d.ts",
-      "import": "./dist/module.mjs",
-      "require": "./dist/module.cjs"
+    "./css/*.css": {
+      "import": "./dist/css/*.css",
+      "require": "./dist/css/*.css"
+    },
+    "./*.css": {
+      "import": "./dist/*.css",
+      "require": "./dist/*.css"
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "CHANGELOG.md"
   ],
-  "dependencies": {
-    "@nuxt/kit": "^3.11.2",
-    "@readyapi/api-reference": "workspace:*"
-  },
+  "module": "dist/index.js",
   "devDependencies": {
-    "@nuxt/devtools": "^1.1.5",
-    "@nuxt/eslint-config": "^0.3.4",
-    "@nuxt/module-builder": "^0.5.5",
-    "@nuxt/schema": "^3.11.2",
-    "@nuxt/test-utils": "^3.12.0",
-    "@types/node": "^20.8.4",
-    "changelogen": "^0.5.5",
-    "eslint": "^8.56.0",
-    "nuxt": "^3.11.2",
-    "vitest": "^1.5.0"
+    "@readyapi/build-tooling": "workspace:*",
+    "tsc-alias": "^1.8.8",
+    "vite": "^5.2.10"
   }
 }

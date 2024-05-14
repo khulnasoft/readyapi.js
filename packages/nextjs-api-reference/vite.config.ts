@@ -1,39 +1,37 @@
-import react from '@vitejs/plugin-react'
-import * as path from 'path'
+import { findEntryPoints } from '@readyapi/build-tooling'
+import vue from '@vitejs/plugin-vue'
+import { URL, fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
-import dts from 'vite-plugin-dts'
+import svgLoader from 'vite-svg-loader'
 
 import pkg from './package.json'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  build: {
-    lib: {
-      // Could also be a dictionary or array of multiple entry points
-      entry: './src/index.ts',
-      name: '@scalar/nextjs-api-reference',
-      formats: ['es', 'cjs', 'umd'],
-      fileName: 'index',
+  plugins: [vue(), svgLoader()],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
+    dedupe: ['vue'],
+  },
+  server: {
+    port: 9000,
+  },
+  build: {
+    ssr: true,
     minify: false,
+    target: 'esnext',
+    lib: {
+      entry: await findEntryPoints({ allowCss: true }),
+      formats: ['es'],
+    },
     rollupOptions: {
-      input: {
-        main: path.resolve(__dirname, 'src/index.ts'),
-      },
-      // make sure to externalize deps that shouldn't be bundled
-      // into your library
-      external: ['next', 'next/script', 'react', 'react-dom'],
+      external: [...Object.keys((pkg as any).peerDependencies || {})],
       output: {
-        // Provide global variables to use in the UMD build
-        // for externalized deps
-        exports: 'named',
-        globals: {
-          'react': 'React',
-          'react-dom': 'react-dom',
-          'next/script': 'Script',
-        },
+        // Create a separate file for the dependency bundle
+        manualChunks: (id) =>
+          id.includes('node_modules') ? 'vendor' : undefined,
       },
     },
   },
-  plugins: [react(), dts({ insertTypesEntry: true, rollupTypes: true })],
 })

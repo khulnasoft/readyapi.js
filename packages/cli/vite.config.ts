@@ -1,13 +1,37 @@
-import path from 'node:path'
-import { defineConfig } from 'vitest/config'
+import { findEntryPoints } from '@readyapi/build-tooling'
+import vue from '@vitejs/plugin-vue'
+import { URL, fileURLToPath } from 'node:url'
+import { defineConfig } from 'vite'
+import svgLoader from 'vite-svg-loader'
+
+import pkg from './package.json'
 
 export default defineConfig({
+  plugins: [vue(), svgLoader()],
   resolve: {
-    alias: [
-      {
-        find: '@scalar/mock-server',
-        replacement: path.resolve(__dirname, '../mock-server/src/index.ts'),
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+    dedupe: ['vue'],
+  },
+  server: {
+    port: 9000,
+  },
+  build: {
+    ssr: true,
+    minify: false,
+    target: 'esnext',
+    lib: {
+      entry: await findEntryPoints({ allowCss: true }),
+      formats: ['es'],
+    },
+    rollupOptions: {
+      external: [...Object.keys((pkg as any).peerDependencies || {})],
+      output: {
+        // Create a separate file for the dependency bundle
+        manualChunks: (id) =>
+          id.includes('node_modules') ? 'vendor' : undefined,
       },
-    ],
+    },
   },
 })

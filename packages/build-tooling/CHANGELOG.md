@@ -1,4 +1,4 @@
-# @scalar/build-tooling
+# @readyapi/build-tooling
 
 ## 0.1.4
 
@@ -28,7 +28,7 @@
 
 ### Minor Changes
 
-- 7fb8273: Migrate to @scalar/openapi-parser
+- 7fb8273: Migrate to @readyapi/openapi-parser
 
 ## 0.0.4
 

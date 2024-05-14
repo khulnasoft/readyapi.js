@@ -1,8 +1,8 @@
 # Go Proxy
 
-[![Discord](https://img.shields.io/discord/1135330207960678410?style=flat&color=5865F2)](https://discord.gg/scalar)
+[![Discord](https://img.shields.io/discord/1135330207960678410?style=flat&color=5865F2)](https://discord.gg/readyapi)
 
-The Scalar Proxy redirects requests to another server to avoid CORS issues. It’s made to work well with the Scalar API Client.
+The Readyapi Proxy redirects requests to another server to avoid CORS issues. It’s made to work well with the Readyapi API Client.
 
 ## Usage
 
@@ -24,7 +24,7 @@ go run main.go
 
 ```
 curl --request GET \
-     --url 'localhost:1337?scalar_url=https%3A%2F%2Fgalaxy.scalar.com%2Fplanets'
+     --url 'localhost:1337?readyapi_url=https%3A%2F%2Fgalaxy.readyapi.com%2Fplanets'
 ```
 
 ```json
@@ -34,11 +34,11 @@ curl --request GET \
       "id": 1,
       "name": "Mars",
       "description": "The red planet",
-      "image": "https://cdn.scalar.com/photos/mars.jpg",
+      "image": "https://cdn.readyapi.com/photos/mars.jpg",
       "creator": {
         "id": 1,
         "name": "Marc",
-        "email": "marc@scalar.com"
+        "email": "marc@readyapi.com"
       }
     }
   ],
@@ -57,4 +57,4 @@ You’re so right! We’re using the standard libraries. Isn’t that why we all
 
 ## License
 
-The source code in this repository is licensed under [MIT](https://github.com/scalar/scalar/blob/main/LICENSE).
+The source code in this repository is licensed under [MIT](https://github.com/readyapi/readyapi/blob/main/LICENSE).

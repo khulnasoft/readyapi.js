@@ -1,48 +1,37 @@
-import path from 'node:path'
-import { viteStaticCopy } from 'vite-plugin-static-copy'
-import { defineConfig } from 'vitest/config'
+import { findEntryPoints } from '@readyapi/build-tooling'
+import vue from '@vitejs/plugin-vue'
+import { URL, fileURLToPath } from 'node:url'
+import { defineConfig } from 'vite'
+import svgLoader from 'vite-svg-loader'
+
+import pkg from './package.json'
 
 export default defineConfig({
-  plugins: [
-    viteStaticCopy({
-      targets: [
-        {
-          src: 'src/specifications/3.1.yaml',
-          dest: './',
-        },
-        {
-          src: 'src/specifications/3.1.yaml',
-          dest: './',
-          rename: 'latest.yaml',
-        },
-      ],
-    }),
-  ],
+  plugins: [vue(), svgLoader()],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+    dedupe: ['vue'],
+  },
+  server: {
+    port: 9000,
+  },
   build: {
+    ssr: true,
+    minify: false,
+    target: 'esnext',
     lib: {
-      entry: ['src/index.ts'],
-      name: '@scalar/galaxy',
+      entry: await findEntryPoints({ allowCss: true }),
       formats: ['es'],
     },
-  },
-  resolve: {
-    alias: [
-      // Resolve the uncompiled source code for all @scalar packages
-      // It’s working with the alias, too. It’s just required to enable HMR.
-      // It also does not match components since we want the built version
-      {
-        // Resolve the uncompiled source code for all @scalar packages
-        // @scalar/* -> packages/*/
-        // (not @scalar/components/*/style.css)
-        find: /^@scalar\/(?!(openapi-parser|snippetz|galaxy|components\/style\.css|components\b))(.+)/,
-        replacement: path.resolve(__dirname, '../$2/src/index.ts'),
+    rollupOptions: {
+      external: [...Object.keys((pkg as any).peerDependencies || {})],
+      output: {
+        // Create a separate file for the dependency bundle
+        manualChunks: (id) =>
+          id.includes('node_modules') ? 'vendor' : undefined,
       },
-    ],
-  },
-  test: {
-    coverage: {
-      enabled: true,
-      reporter: 'text',
     },
   },
 })

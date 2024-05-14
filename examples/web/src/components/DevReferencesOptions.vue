@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ReferenceConfiguration } from '@scalar/api-reference'
-import { availableThemes } from '@scalar/themes'
+import type { ReferenceConfiguration } from '@readyapi/api-reference'
+import { availableThemes } from '@readyapi/themes'
 import { computed } from 'vue'
 
 const props = defineProps<{

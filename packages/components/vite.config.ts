@@ -1,53 +1,37 @@
+import { findEntryPoints } from '@readyapi/build-tooling'
 import vue from '@vitejs/plugin-vue'
-import * as path from 'path'
+import { URL, fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
-import dts from 'vite-plugin-dts'
-import { libInjectCss } from 'vite-plugin-lib-inject-css'
 import svgLoader from 'vite-svg-loader'
 
 import pkg from './package.json'
 
-// https://vitejs.dev/config/
 export default defineConfig({
+  plugins: [vue(), svgLoader()],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+    dedupe: ['vue'],
+  },
+  server: {
+    port: 9000,
+  },
   build: {
+    ssr: true,
+    minify: false,
+    target: 'esnext',
     lib: {
-      // Could also be a dictionary or array of multiple entry points
-      entry: './src/index.ts',
-      name: '@scalar/components',
-      formats: ['es', 'cjs'],
-      fileName: 'index',
-      // the proper extensions will be added
-      // fileName: 'my-lib',
+      entry: await findEntryPoints({ allowCss: true }),
+      formats: ['es'],
     },
     rollupOptions: {
-      input: {
-        main: path.resolve(__dirname, 'src/index.ts'),
+      external: [...Object.keys((pkg as any).peerDependencies || {})],
+      output: {
+        // Create a separate file for the dependency bundle
+        manualChunks: (id) =>
+          id.includes('node_modules') ? 'vendor' : undefined,
       },
-      // make sure to externalize deps that shouldn't be bundled
-      // into your library
-      external: ['vue', ...Object.keys(pkg.dependencies || {})],
     },
   },
-  plugins: [
-    vue(),
-    libInjectCss(),
-    dts({ insertTypesEntry: true, rollupTypes: true }),
-    // Ensure the viewBox is preserved
-    svgLoader({
-      svgoConfig: {
-        multipass: true,
-        plugins: [
-          {
-            name: 'preset-default',
-            params: {
-              overrides: {
-                // @see https://github.com/svg/svgo/issues/1128
-                removeViewBox: false,
-              },
-            },
-          },
-        ],
-      },
-    }),
-  ],
 })

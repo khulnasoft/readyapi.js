@@ -1,52 +1,37 @@
-import path from 'path'
-import { viteStaticCopy } from 'vite-plugin-static-copy'
-import { defineConfig } from 'vitest/config'
+import { findEntryPoints } from '@readyapi/build-tooling'
+import vue from '@vitejs/plugin-vue'
+import { URL, fileURLToPath } from 'node:url'
+import { defineConfig } from 'vite'
+import svgLoader from 'vite-svg-loader'
 
-import { nodeExternals } from './vite-plugins'
+import pkg from './package.json'
 
 export default defineConfig({
-  plugins: [
-    nodeExternals(),
-    viteStaticCopy({
-      targets: [
-        {
-          src: '../api-reference/dist/browser/standalone.js',
-          dest: './js',
-        },
-      ],
-    }),
-  ],
-  build: {
-    // If minify is enabled, the nodeShims extension doesn’t work.
-    minify: 'terser',
-    lib: {
-      entry: 'src/index.ts',
-      name: '@scalar/fastify-api-reference',
-      fileName: 'index',
-      formats: ['es', 'cjs'],
-    },
-    // We don’t have any production dependencies.
-    // rollupOptions: {
-    //   external: pkg.dependencies || {},
-    // },
-  },
+  plugins: [vue(), svgLoader()],
   resolve: {
-    alias: [
-      // Resolve the uncompiled source code for all @scalar packages
-      // It’s working with the alias, too. It’s just required to enable HMR.
-      {
-        // Resolve the uncompiled source code for all @scalar packages
-        // @scalar/* -> packages/*/
-        // (not @scalar/*/style.css)
-        find: /^@scalar\/(?!(openapi-parser|snippetz|galaxy|components\/style\.css|components\b))(.+)/,
-        replacement: path.resolve(__dirname, '../$2/src/index.ts'),
-      },
-    ],
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+    dedupe: ['vue'],
   },
-  test: {
-    coverage: {
-      enabled: true,
-      reporter: 'text',
+  server: {
+    port: 9000,
+  },
+  build: {
+    ssr: true,
+    minify: false,
+    target: 'esnext',
+    lib: {
+      entry: await findEntryPoints({ allowCss: true }),
+      formats: ['es'],
+    },
+    rollupOptions: {
+      external: [...Object.keys((pkg as any).peerDependencies || {})],
+      output: {
+        // Create a separate file for the dependency bundle
+        manualChunks: (id) =>
+          id.includes('node_modules') ? 'vendor' : undefined,
+      },
     },
   },
 })

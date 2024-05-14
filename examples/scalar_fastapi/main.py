@@ -1,6 +1,6 @@
 from typing import Union
 from fastapi import FastAPI
-from scalar_fastapi import get_scalar_api_reference
+from readyapi_fastapi import get_readyapi_api_reference
 
 app = FastAPI()
 
@@ -8,11 +8,11 @@ app = FastAPI()
 def read_root():
     return {"Hello": "World"}
 
-@app.get("/scalar", include_in_schema=False)
-async def scalar_html():
-    return get_scalar_api_reference(
+@app.get("/readyapi", include_in_schema=False)
+async def readyapi_html():
+    return get_readyapi_api_reference(
         openapi_url=app.openapi_url,
-        title=app.title + " - Scalar",
+        title=app.title + " - Readyapi",
     )
 
 

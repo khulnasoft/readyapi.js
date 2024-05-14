@@ -1,54 +1,51 @@
 {
   "name": "@readyapi/nestjs-api-reference",
-  "description": "A middleware for using the Scalar API reference with NestJS",
+  "description": "nestjs-api-reference",
   "license": "MIT",
-  "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/khulnasoft/readyapi",
-  "bugs": "https://github.com/khulnasoft/readyapi/issues/new/choose",
+  "author": "Khulnasoft (https://github.com/khulnasoft)",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.git",
-    "directory": "packages/use-tooltip"
+    "url": "https://github.com/khulnasoft/readyapi.js.git"
   },
-  "version": "0.3.35",
+  "keywords": [
+    "nestjs-api-reference",
+    "readyapi"
+  ],
+  "version": "0.0.1",
   "engines": {
     "node": ">=18"
   },
   "scripts": {
-    "build": "tsup ./src/index.ts --format esm,cjs --dts",
-    "test": "vitest run"
+    "build": "vite build && pnpm types:build && tsc-alias -p tsconfig.build.json",
+    "dev": "vite",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint .  --fix",
+    "preview": "vite preview",
+    "test": "vitest",
+    "types:build": "vue-tsc -p tsconfig.build.json",
+    "types:check": "vue-tsc --noEmit --skipLibCheck --composite false"
   },
   "type": "module",
-  "main": "dist/index.cjs",
-  "types": "dist/index.d.cts",
+  "main": "dist/index.js",
   "exports": {
-    ".": {
-      "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.js"
-      },
-      "require": {
-        "types": "./dist/index.d.cts",
-        "default": "./dist/index.cjs"
-      }
-    }
+    "import": "./dist/index.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "CHANGELOG.md"
   ],
   "module": "dist/index.js",
-  "dependencies": {
-    "@readyapi/api-reference": "workspace:*",
-    "express": "^4.19.2"
-  },
   "devDependencies": {
-    "@types/express": "^4.17.21",
-    "fastify": "^4.26.2",
-    "tsup": "^7.2.0",
+    "@readyapi/build-tooling": "workspace:*",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "tsc-alias": "^1.8.8",
     "vite": "^5.2.10",
-    "vitest": "^1.5.0"
+    "vite-svg-loader": "^5.1.0",
+    "vue": "^3.4.21"
   },
   "peerDependencies": {
-    "express": "^4.0.0"
+    "vue": "^3.3.0"
   }
 }

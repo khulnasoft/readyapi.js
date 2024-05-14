@@ -1,49 +1,37 @@
+import { findEntryPoints } from '@readyapi/build-tooling'
 import vue from '@vitejs/plugin-vue'
-import { libInjectCss } from 'vite-plugin-lib-inject-css'
-import { viteStaticCopy } from 'vite-plugin-static-copy'
-import { defineConfig } from 'vitest/config'
+import { URL, fileURLToPath } from 'node:url'
+import { defineConfig } from 'vite'
+import svgLoader from 'vite-svg-loader'
+
+import pkg from './package.json'
 
 export default defineConfig({
-  plugins: [
-    vue(),
-    libInjectCss(),
-    viteStaticCopy({
-      targets: [
-        {
-          src: 'src/base.css',
-          dest: './',
-        },
-        {
-          src: 'src/fonts.css',
-          dest: './',
-        },
-        {
-          src: 'src/scrollbar.css',
-          dest: './',
-        },
-        {
-          src: 'src/presets',
-          dest: './',
-        },
-      ],
-    }),
-  ],
+  plugins: [vue(), svgLoader()],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+    dedupe: ['vue'],
+  },
+  server: {
+    port: 9000,
+  },
   build: {
+    ssr: true,
+    minify: false,
+    target: 'esnext',
     lib: {
-      entry: ['src/index.ts'],
-      name: '@scalar/themes',
-      formats: ['es', 'cjs'],
+      entry: await findEntryPoints({ allowCss: true }),
+      formats: ['es'],
     },
     rollupOptions: {
-      external: ['vue'],
-    },
-    // Don't minify CSS so we can use it in stuff like the theme editor
-    cssMinify: false,
-  },
-  test: {
-    coverage: {
-      enabled: true,
-      reporter: 'text',
+      external: [...Object.keys((pkg as any).peerDependencies || {})],
+      output: {
+        // Create a separate file for the dependency bundle
+        manualChunks: (id) =>
+          id.includes('node_modules') ? 'vendor' : undefined,
+      },
     },
   },
 })

@@ -1,22 +1,18 @@
 {
   "name": "@readyapi/use-tooltip",
-  "description": "use tooltips with Vue",
+  "description": "use-tooltip",
   "license": "MIT",
-  "author": "KhulnaSoft (https://github.com/khulnasoft)",
-  "homepage": "https://github.com/khulnasoft/readyapi",
-  "bugs": "https://github.com/khulnasoft/readyapi/issues/new/choose",
+  "author": "Khulnasoft (https://github.com/khulnasoft)",
+  "homepage": "https://github.com/khulnasoft/readyapi.js",
+  "bugs": "https://github.com/khulnasoft/readyapi.js/issues/new/choose",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/readyapi.git",
-    "directory": "packages/use-tooltip"
+    "url": "https://github.com/khulnasoft/readyapi.js.git"
   },
   "keywords": [
-    "composable",
-    "tootltips",
-    "vue",
-    "vue3"
+    "use-tooltip"
   ],
-  "version": "0.6.2",
+  "version": "0.0.1",
   "engines": {
     "node": ">=18"
   },
@@ -41,14 +37,12 @@
   ],
   "module": "dist/index.js",
   "devDependencies": {
+    "@readyapi/build-tooling": "workspace:*",
     "@vitejs/plugin-vue": "^5.0.4",
-    "@vitest/coverage-v8": "^1.5.0",
-    "tippy.js": "^6.3.7",
     "tsc-alias": "^1.8.8",
     "vite": "^5.2.10",
-    "vitest": "^1.5.0",
-    "vue": "^3.4.21",
-    "vue-tsc": "^1.8.19"
+    "vite-svg-loader": "^5.1.0",
+    "vue": "^3.4.21"
   },
   "peerDependencies": {
     "vue": "^3.3.0"
