@@ -1,0 +1,82 @@
+/* basic theme */
+.light-mode {
+  --readyapi-background-1: #fff;
+  --readyapi-background-2: #f8fafc;
+  --readyapi-background-3: #e7e7e7;
+  --readyapi-background-accent: #8ab4f81f;
+
+  --readyapi-color-1: #000;
+  --readyapi-color-2: rgb(107, 114, 128);
+  --readyapi-color-3: rgb(156, 163, 175);
+
+  --readyapi-color-accent: rgba(0 193 106);
+  --readyapi-border-color: rgb(229 231 235);
+
+  --readyapi-color-green: #069061;
+  --readyapi-color-red: #ef4444;
+  --readyapi-color-yellow: rgb(245 158 11);
+  --readyapi-color-blue: rgb(29 78 216);
+  --readyapi-color-orange: #fb892c;
+  --readyapi-color-purple: rgb(109 40 217);
+
+  --readyapi-button-1: black;
+  --readyapi-button-1-hover: rgba(0, 0, 0, 0.9);
+  --readyapi-button-1-color: white;
+}
+
+.dark-mode {
+  --readyapi-background-1: #020420;
+  --readyapi-background-2: #121a31;
+  --readyapi-background-3: #1e293b;
+  --readyapi-background-accent: #8ab4f81f;
+
+  --readyapi-color-1: #fff;
+  --readyapi-color-2: rgb(203, 213, 225);
+  --readyapi-color-3: rgb(148, 163, 184);
+  --readyapi-color-accent: rgb(0 220 130);
+
+  --readyapi-border-color: rgb(30 41 59);
+
+  --readyapi-color-green: #069061;
+  --readyapi-color-red: #f87171;
+  --readyapi-color-yellow: rgb(253 230 138);
+  --readyapi-color-blue: #60a5fa;
+  --readyapi-color-orange: #fb892c;
+  --readyapi-color-purple: rgb(221 214 254);
+
+  --readyapi-button-1: rgba(255, 255, 255, 0.9);
+  --readyapi-button-1-hover: rgba(255, 255, 255, 0.8);
+  --readyapi-button-1-color: black;
+}
+
+.light-mode .t-doc__sidebar,
+.dark-mode .t-doc__sidebar {
+  --readyapi-sidebar-background-1: var(--readyapi-background-1);
+  --readyapi-sidebar-color-1: var(--readyapi-color-1);
+  --readyapi-sidebar-color-2: var(--readyapi-color-3);
+  --readyapi-sidebar-border-color: var(--readyapi-border-color);
+
+  --readyapi-sidebar-item-hover-background: transparent;
+  --readyapi-sidebar-item-hover-color: var(--readyapi-color-1);
+
+  --readyapi-sidebar-item-active-background: transparent;
+  --readyapi-sidebar-color-active: var(--readyapi-color-accent);
+
+  --readyapi-sidebar-search-background: transparent;
+  --readyapi-sidebar-search-color: var(--readyapi-color-3);
+  --readyapi-sidebar-search-border-color: var(--readyapi-border-color);
+
+  --readyapi-sidebar-indent-border: var(--readyapi-border-color);
+  --readyapi-sidebar-indent-border-hover: var(--readyapi-color-1);
+  --readyapi-sidebar-indent-border-active: var(--readyapi-color-accent);
+}
+/* cusotm theme */
+.readyapi-card .request-card-footer {
+  --readyapi-background-3: var(--readyapi-background-2);
+  --readyapi-button-1: rgb(15, 23, 42);
+  --readyapi-button-1-hover: rgba(30, 41, 59, 0.5);
+  --readyapi-button-1-color: white;
+}
+.readyapi-card .show-api-client-button {
+  border: 1px solid rgb(51 65 85) !important;
+}
