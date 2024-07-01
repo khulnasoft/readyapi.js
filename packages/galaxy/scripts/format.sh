@@ -1,6 +1,11 @@
-#!/bin/bash
+import { openapi } from '@readyapi/openapi-parser'
+import fs from 'node:fs'
 
-# The source file is just YAML. We transform it to JSON to have both formats available.
+const base = fs.readFileSync('dist/3.1.yaml', 'utf-8')
+const latest = fs.readFileSync('dist/latest.yaml', 'utf-8')
 
-pnpm dlx @readyapi/cli format ./dist/3.1.yaml --output ./dist/3.1.json
-pnpm dlx @readyapi/cli format ./dist/latest.yaml --output ./dist/latest.json
+const baseOut = await openapi().load(base).toJson()
+const latestOut = await openapi().load(latest).toJson()
+
+fs.writeFileSync('./dist/3.1.json', baseOut)
+fs.writeFileSync('./dist/latest.json', latestOut)
