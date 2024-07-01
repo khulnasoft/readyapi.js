@@ -1,16 +1,21 @@
 {
-    "$schema": "https://turbo.build/schema.json",
-    "pipeline": {
-      "lint:fix": {},
-      "build": {
-        "outputs": ["dist/**"],
-        "dependsOn": ["^build"]
-      },
-      "dev": {
-        "cache": false,
-        "persistent": true,
-        "dependsOn": ["^build"]
-      },
-      "types:check": {}
-    }
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "lint:fix": {},
+    "build": {
+      "outputs": ["dist/**"],
+      "dependsOn": ["^build"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": ["^build"]
+    },
+    "dev:modal": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": ["^build"]
+    },
+    "types:check": {}
   }
+}

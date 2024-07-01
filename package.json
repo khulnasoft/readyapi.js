@@ -8,55 +8,68 @@
     "@types/node": "^20.8.4",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
-    "@vitest/coverage-v8": "^1.5.0",
+    "@vitest/coverage-v8": "^1.6.0",
     "@vue/eslint-config-typescript": "^12.0.0",
     "concurrently": "^8.2.2",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-jsdoc": "^48.3.0",
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-storybook": "^0.6.15",
     "eslint-plugin-vue": "^9.21.1",
     "lefthook": "^1.6.1",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",
+    "remark-cli": "^12.0.1",
+    "remark-lint-no-dead-urls": "^1.1.0",
+    "remark-validate-links": "^13.0.1",
+    "start-server-and-test": "^2.0.3",
     "syncpack": "^12.3.0",
-    "turbo": "^1.12.3",
-    "typescript": "^5.4.3",
+    "turbo": "^2.0.1",
+    "typescript": "^5.5.2",
     "vite-node": "^1.3.1",
-    "vitest": "^1.5.0",
+    "vitest": "^1.6.0",
     "vue-eslint-parser": "^9.4.2"
   },
   "private": true,
   "scripts": {
     "build": "turbo build",
     "build:packages": "turbo --filter './packages/**' build",
-    "build:standalone": "pnpm --filter api-reference play-button build:standalone",
-    "bump": "CI=true pnpm run test && pnpm changeset version",
+    "build:standalone": "pnpm --filter api-reference --filter play-button build:standalone",
+    "bump": "pnpm test:ci && pnpm changeset version",
     "clean": "pnpm clean:nodeModules; pnpm clean:dist; pnpm clean:turbo; pnpm clean:nuxt",
     "clean:build": "pnpm clean ; pnpm i && pnpm build:packages",
     "clean:nodeModules": "find . -name node_modules -type d -exec rm -rf {} \\;",
     "clean:nuxt": "find . -name .nuxt -type d -exec rm -rf {} \\;",
     "clean:dist": "find . -name dist -type d -exec rm -rf {} \\;",
     "clean:turbo": "find . -name .turbo -type d -exec rm -rf {} \\;",
-    "dev": "turbo run dev --parallel --concurrency=100 --filter './examples/*' --filter=@readyapi/nuxt --filter=@readyapi/draggable",
+    "dev": "turbo dev --concurrency=100 --filter './examples/*' --filter=@readyapi/nuxt --filter=@readyapi/draggable --filter @readyapi/components --filter @readyapi/api-client",
+    "dev:app": "turbo dev --filter @readyapi/api-client",
+    "dev:modal": "turbo dev:modal --filter @readyapi/api-client",
+    "dev:proxy-server": "pnpm --filter @readyapi-examples/proxy-server dev",
+    "dev:reference": "turbo dev --filter @readyapi/api-reference",
+    "dev:echo-server": "pnpm --filter @readyapi-examples/echo-server dev",
+    "dev:web": "turbo dev --filter @readyapi-examples/web",
+    "@readyapi/cli": "pnpm --filter @readyapi/cli run @readyapi/cli",
     "format": "pnpm prettier --write .",
     "format:check": "pnpm prettier --check .",
     "format:packages": "pnpm syncpack fix-mismatches --types 'prod,dev' || true && pnpm syncpack set-semver-ranges && vite-node scripts/format-package.ts && pnpm install -r",
     "lint": "pnpm -r lint:check",
     "lint:fix": "pnpm -r lint:fix",
     "pack:packages": "./scripts/pack.sh",
-    "preview:standalone": "pnpm --filter api-reference preview:standalone",
     "playwright:install": "npx playwright install --with-deps",
-    "postinstall": "pnpm -r dev:prepare",
     "test": "vitest",
-    "test:ci": "CI=1 vitest --silent",
+    "test:ci": "start-server-and-test 'pnpm dev:proxy-server & pnpm dev:echo-server' 'http://127.0.0.1:5051/ping|http://127.0.0.1:5052' 'CI=1 vitest --silent'",
     "test:e2e": "pnpm --filter playwright test:e2e",
     "test:e2e:ui": "pnpm --filter playwright test:e2e:ui",
-    "test:e2e:cdn": "pnpm --filter playwright test:e2e cdn",
+    "test:e2e:jsdelivr": "pnpm --filter playwright test:e2e jsdelivr",
+    "test:e2e:local": "pnpm --filter playwright test:e2e local",
     "test:e2e:themes": "pnpm --filter playwright test:e2e themes",
-    "types:check": "pnpm -r types:check",
-    "bootstrap:package": "vite-node scripts/bootstrap-package/bootstrap-package.ts"
+    "test:e2e:nuxt": "pnpm --filter playwright test:e2e nuxt",
+    "types:check": "turbo --concurrency=100 types:check",
+    "bootstrap:package": "vite-node scripts/bootstrap-package/bootstrap-package.ts",
+    "markdown:check": "remark --frail ."
   },
   "exports": {
     "./css/*.css": {
@@ -68,5 +81,18 @@
       "require": "./dist/*.css"
     }
   },
-  "packageManager": "pnpm@9.1.1+sha512.14e915759c11f77eac07faba4d019c193ec8637229e62ec99eefb7cf3c3b75c64447882b7c485142451ee3a6b408059cdfb7b7fa0341b975f12d0f7629c71195"
+  "packageManager": "pnpm@9.2.0",
+  "remarkConfig": {
+    "plugins": [
+      "remark-validate-links",
+      [
+        "remark-lint-no-dead-urls",
+        {
+          "skipUrlPatterns": [
+            "http://localhost"
+          ]
+        }
+      ]
+    ]
+  }
 }

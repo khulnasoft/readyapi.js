@@ -17,17 +17,17 @@ info:
     <details>
       <summary>Examples</summary>
 
-      ### Blockquotes
+      **Blockquotes**
 
       > I love OpenAPI. <3
 
-      ### Tables
+      **Tables**
 
       | Feature          | Availability |
       | ---------------- | ------------ |
       | Markdown Support | ✓            |
 
-      ### Accordion
+      **Accordion**
 
       ```html
       <details>
@@ -36,7 +36,7 @@ info:
       </details>
       ```
 
-      ### Images
+      **Images**
 
       Yes, there’s support for images, too!
 
@@ -50,6 +50,8 @@ info:
     email: marc@readyapi.khulnasoft.com
 servers:
   - url: https://galaxy.readyapi.khulnasoft.com
+  - url: https://void.readyapi.khulnasoft.com
+    description: Responds with your request data
 security:
   - bearerAuth: []
   - basicAuth: []
@@ -487,6 +489,7 @@ components:
           format: int64
           examples:
             - 1
+          x-variable: planetId
         name:
           type: string
           examples:
