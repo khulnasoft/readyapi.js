@@ -1,13 +1,13 @@
-import typescript from '@rollup/plugin-typescript'
+import { addPackageFileExports, createRollupConfig } from './src'
 
-export default [
-  {
-    input: './src/index.ts',
-    output: {
-      file: 'dist/index.js',
-      format: 'esm',
-      sourcemap: false,
-    },
-    plugins: [typescript()],
+const entries = ['./src/index.ts']
+
+export default createRollupConfig({
+  options: {
+    input: entries,
+    external: ['url', 'fs/promises'],
   },
-]
+  typescript: true,
+})
+
+await addPackageFileExports({ entries })
